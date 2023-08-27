@@ -2,6 +2,7 @@
 //the store has saved the state of the editor
 
 import { EditorState } from "../interfaces/editor";
+<<<<<<< HEAD
 import { Node, NodeId } from "../interfaces/nodes";
 
 import { create } from "zustand";
@@ -9,6 +10,12 @@ import { createSelectors } from "./store-selectors";
 import ReactGridLayout from "react-grid-layout";
 
 const DROPPING_ELEMENT_ID = "__dropping-elem__";
+=======
+import { NodeId } from "../interfaces/nodes";
+
+import { create } from "zustand";
+import { createSelectors } from "./store-selectors";
+>>>>>>> ebc5858 (performance)
 
 const useEditorStoreBase = create<EditorState>((set, get) => ({
   nodes: {},
@@ -23,7 +30,11 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
     resolver: {},
   },
   actions: {
+<<<<<<< HEAD
     setProp: (id, cb) => {
+=======
+    setProp: (id: NodeId, cb) => {
+>>>>>>> ebc5858 (performance)
       set((state) => {
         const node = state.nodes[id];
 
@@ -40,6 +51,7 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
         return state;
       });
     },
+<<<<<<< HEAD
     select: (id, value: boolean = true) => {
       set((state) => {
         const currentNode = state.nodes[id];
@@ -57,6 +69,14 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
             ...state.nodes,
             [id]: currentNode,
           },
+=======
+    select: (id: NodeId) => {
+      set((state) => {
+        const selected = new Set(state.events.selected);
+        selected.add(id);
+
+        return {
+>>>>>>> ebc5858 (performance)
           events: {
             ...state.events,
             selected,
@@ -64,6 +84,7 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
         };
       });
     },
+<<<<<<< HEAD
     hover: (id, value: boolean = true) => {
       set((state) => {
         const currentNode = state.nodes[id];
@@ -81,6 +102,14 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
             ...state.nodes,
             [id]: currentNode,
           },
+=======
+    hover: (id: NodeId) => {
+      set((state) => {
+        const hovered = new Set(state.events.hovered);
+        hovered.add(id);
+
+        return {
+>>>>>>> ebc5858 (performance)
           events: {
             ...state.events,
             hovered,
@@ -88,6 +117,7 @@ const useEditorStoreBase = create<EditorState>((set, get) => ({
         };
       });
     },
+<<<<<<< HEAD
     drag: (id) => {},
     create: (node) => {
       set((state) => {
@@ -152,4 +182,10 @@ export const selectors = {
     });
   },
 };
+=======
+    drag: (id: NodeId) => {},
+  },
+}));
+
+>>>>>>> ebc5858 (performance)
 export const useEditorStore = createSelectors(useEditorStoreBase);

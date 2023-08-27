@@ -1,6 +1,7 @@
 import { z } from "zod";
-import { validDomainRegex } from "../domains/validDomainRegex";
 
+
+const validDomainRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export const createSiteInput = z.object({
     name: z.string(),

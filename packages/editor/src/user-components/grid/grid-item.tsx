@@ -54,7 +54,7 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
           }
         }}
         className={cn(
-          "overflow-visible border-2 border-transparent relative ",
+          "overflow-visible border-2 border-transparent relative z-popout ",
           {
             "border-transparent shadow-[0]": isTextBlock,
             "border-2 border-blue-500 ": isActive,

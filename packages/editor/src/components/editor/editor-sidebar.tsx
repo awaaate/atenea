@@ -54,7 +54,7 @@ const EditorSidebar: React.FC<EditorSidebarProps> = ({
   }, [element]);
   if (sidebarTab === null) return null;
   return (
-    <div className="w-full max-w-[300px] border-l h-full ">
+    <div className="w-full max-w-[300px] border-l h-full">
       <Tabs value={sidebarTab} onValueChange={setSidebar as any}>
         <TabsList>
           {element && <TabsTrigger value="widget">Styles</TabsTrigger>}

@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "packages/ui"
+	},
+	{
+		"path": "apps/docs"
+	},
+	{
+		"path": "packages/tailwind-config"
+	},
+	{
+		"path": "packages/eslint-config-custom"
+	},
+	{
+		"path": "packages/editor"
+	}
+],
+  "settings": {}
+}

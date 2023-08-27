@@ -4,7 +4,7 @@ import { Element, Frame } from "@craftjs/core";
 
 const DefaultFrame = () => {
   return (
-    <Frame json="">
+    <Frame>
       <UserComponents.Grid>
         <UserComponents.Text
           layout={{

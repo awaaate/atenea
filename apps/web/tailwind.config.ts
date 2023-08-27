@@ -8,6 +8,8 @@ const config = {
         "./components/**/*.{ts,tsx}",
         "./content/**/*.{md,mdx}",
         "./node_modules/@shared/ui/src/**/*.{ts,tsx}",
+        "./node_modules/@shared/editor/src/**/*.{ts,tsx}",
+        "./node_modules/@shared/templates/src/**/*.{ts,tsx}",
         "./node_modules/@shared/editor/node_modules/@tremor/**/*.{js,ts,jsx,tsx}"
     ],
     presets: [tremorPreset],

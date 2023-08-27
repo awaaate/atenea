@@ -5,6 +5,7 @@ import { db } from "../db";
 import { revalidateTag } from "next/cache";
 import { env } from "@/env.mjs";
 import { createSiteInput } from "./validations";
+import { workspaceSchema } from "@shared/templates";
 
 
 
@@ -23,10 +24,13 @@ export const createSite = async (formData: FormData) => {
 
     try {
 
-        const validated = createSiteInput.parse({
+        const validated = workspaceSchema.parse({
             name,
             description,
             subdomain,
+            isPublic: false,
+            accentColor: "default",
+
         });
 
 

@@ -1,4 +1,4 @@
-import { useMemo, useContext, useCallback } from "react";
+import { useMemo, useContext } from "react";
 import invariant from "tiny-invariant";
 
 import { NodeContext } from "./node-context";
@@ -19,53 +19,23 @@ export function useNode<S = null>(collect?: (node: Node) => S) {
       ...nodeCollected,
       actions: {
         ...state.actions,
-        deleteNode() {
-          state.actions.remove(id);
-        },
         setProp(cb: (node: Node) => Node) {
           state.actions.setProp(id, cb);
+        },
+        select() {
+          state.actions.select(id);
+        },
+        hover() {
+          state.actions.hover(id);
         },
       },
     };
   });
 
-  const connect = useCallback((ref: HTMLElement | null) => {
-    if (!ref) return;
-    ref && actions.setProp((node) => ({ ...node, dom: ref }));
-
-    const hoverHandler = (event: MouseEvent) => {
-      if (event.target === ref) {
-        actions.hover(id);
-      }
-    };
-    const hoverExitHandler = (event: MouseEvent) => {
-      if (event.target === ref) {
-        actions.hover(id, false);
-      }
-    };
-
-    const selectHandler = (event: MouseEvent) => {
-      if (event.target === ref) {
-        actions.select(id);
-      }
-    };
-
-    ref.addEventListener("mouseover", hoverHandler);
-    ref.addEventListener("mouseleave", hoverExitHandler);
-    ref.addEventListener("click", selectHandler);
-
-    /*     return () => {
-      actions.setProp((node) => ({ ...node, dom: null }));
-      ref.removeEventListener("mouseover", hoverHandler);
-      ref.removeEventListener("mouseleave", hoverExitHandler);
-      ref.removeEventListener("click", selectHandler);
-    }; */
-  }, []);
   return {
     ...collected,
     id,
     related,
-    connect,
     inNodeContext: !!context,
     actions,
   };

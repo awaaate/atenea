@@ -5,6 +5,8 @@ import { DashboardSidebar, DashboardTopbar } from "@/components/navbar";
 import { env } from "@/env.mjs";
 import { getSession } from "@/lib/auth/getSession";
 import { ScrollArea } from "@shared/ui";
+import { WorkspaceLayout } from "@shared/templates";
+import { db } from "@/lib/db";
 
 interface AdminLayoutProps {
   children: React.ReactNode;
@@ -29,24 +31,23 @@ export default async function AdminLayout({
   if (!session) {
     redirect("/sign-in");
   }
+  const sites = await db.site.findMany({
+    where: {
+      userId: session.user.id,
+    },
+    select: {
+      id: true,
+      name: true,
+    },
+  });
 
   /*   if (session.user.role !== "ADMIN") {
     redirect("/");
   } */
   console.log(params.siteId, "siteId root");
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="flex-1 items-start lg:grid lg:grid-cols-[240px_minmax(0,1fr)]">
-        <aside className="fixed z-30 h-[calc(100vh)] w-full shrink-0 overflow-y-hidden border-r lg:sticky lg:block">
-          <ScrollArea className="">
-            <DashboardSidebar siteId={params.siteId} />
-          </ScrollArea>
-        </aside>
-        <main className="flex w-full flex-col overflow-hidden h-full">
-          <DashboardTopbar session={session} />
-          {children}
-        </main>
-      </div>
-    </div>
+    <WorkspaceLayout siteId={params.siteId} session={session} sites={sites}>
+      {children}
+    </WorkspaceLayout>
   );
 }
