@@ -1,0 +1,47 @@
+.react-grid-item > .react-resizable-handle {
+  display: none;
+  width: var(--theme-size-icon-m);
+  height: var(--theme-size-icon-m);
+  background-color: white;
+  border-radius: 999px;
+  padding: 1px;
+  border: 3px solid rgb(59 130 246 / var(--tw-border-opacity));
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-n,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-ne,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-nw,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-sw {
+  z-index: 999;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  right: calc(-1 * var(--theme-size-icon-m) / 2);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s {
+  bottom: calc(-1 * var(--theme-size-icon-m) / 2);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-se {
+  bottom: calc(-1 * var(--theme-size-icon-m) / 2);
+  right: calc(-1 * var(--theme-size-icon-m) / 2);
+}
+.react-grid-item.active > .react-resizable-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-grid-item > .react-resizable-handle::after {
+  border: none;
+  content: none;
+}
+.react-grid-item.react-grid-placeholder {
+  background-color: rgba(59 130 246 / 100);
+  border-radius: var(--theme-border-radius);
+}
+.react-grid-item.grid-item-text
+  > .react-resizable-handle.react-resizable-handle-se,
+.react-grid-item.grid-item-text
+  > .react-resizable-handle.react-resizable-handle-s {
+  display: none;
+}
