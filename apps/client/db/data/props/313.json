@@ -1,0 +1,41 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "2.15",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Deploy L1Proxy and tokenbuyer on Optimism",
+                "description": "Setup phase"
+            },
+            {
+                "name": "Set the purchase price in the tokenbuyer and bridge ETH to the tokenbuyer",
+                "description": "Proposal phase"
+            },
+            {
+                "name": "Transfer protection tokens from the tokenbuyer to the L1Proxy",
+                "description": "Follow-up phase"
+            }
+        ]
+    },
+    "description": "NounsDAO aims to hedge against protocol risk for stETH by purchasing stETH depeg protection on Cozy v2 protocol. This will enable the DAO to execute transactions on L2, starting with Optimism, and proliferate Nouns. The DAO will use a proxy contract, L1Proxy, on Optimism to execute transactions. By trustlessly buying protections with the tokenbuyer contract, the DAO can further diversify and manage risks for other LSDs. The total budget required for the proposal is 13000 USD.",
+    "categories": [
+        {
+            "name": "Staking/Yield"
+        }
+    ],
+    "coverImage": "https://cozyfinance.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F368d12be-ce44-4b5b-a0e1-5c94020539f3%2FUntitled.png?id=a93f5bc8-605f-4728-8fad-fcf160832739&table=block&spaceId=2f87461d-478a-4b6b-8c56-3d60c2901f5c&width=1440&userId=&cache=v2",
+    "project": {
+        "name": "stETH peg protection",
+        "description": "Project to manage risk and integrate protocols for NounsDAO",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "stETH peg protection",
+    "id": "313"
+}

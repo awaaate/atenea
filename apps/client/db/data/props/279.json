@@ -1,0 +1,91 @@
+{
+    "team": [
+        {
+            "name": "mk",
+            "what": "Co-founder",
+            "socialmediaHandles": [
+                {
+                    "name": "Warpcast",
+                    "url": "https://warpcast.com/mk"
+                }
+            ],
+            "walletAddress": "markkat.eth"
+        },
+        {
+            "name": "markus",
+            "what": "Co-founder, Development Lead",
+            "socialmediaHandles": [
+                {
+                    "name": "Warpcast",
+                    "url": "https://warpcast.com/markus"
+                }
+            ],
+            "walletAddress": "mhaas.eth"
+        }
+    ],
+    "budget": {
+        "totalAmount": "41.45",
+        "items": [
+            {
+                "name": "Sourcing Devices",
+                "amount": "21.82",
+                "description": "Cost of sourcing current Pixel 7 devices",
+                "nouns": 20
+            },
+            {
+                "name": "Packing Materials",
+                "amount": "2.73",
+                "description": "Cost of packaging materials",
+                "nouns": 10
+            },
+            {
+                "name": "Shipping",
+                "amount": "2.73",
+                "description": "Cost of shipping devices",
+                "nouns": 5
+            },
+            {
+                "name": "Laser-Etching",
+                "amount": "1.64",
+                "description": "Cost of laser-etching Nounish Edition devices",
+                "nouns": 5
+            },
+            {
+                "name": "Developer Time",
+                "amount": "13",
+                "description": "Payment for three full-time engineers",
+                "nouns": 0
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Update ethOS for Pixel 7 Compatibility",
+                "description": "Make ethOS compatible with Pixel 7 devices"
+            },
+            {
+                "name": "Establish Delightful Sales and Quality Distribution Process",
+                "description": "Create a smooth process for ordering, sourcing, installation, branding, and fulfillment"
+            }
+        ]
+    },
+    "description": "The purpose of this proposal is to request a grant to launch ethOS devices for purchase. We have been building ethOS, a free and open source mobile OS that embraces Ethereum and makes Web3 delightful on mobile. Currently, using ethOS requires flashing an older Pixel device, which is a major impediment to adoption. With the grant, we plan to make ethOS available pre-installed on current Pixel 7s and establish a user-friendly sales process. The first ethOS device will also have a Nounish Edition to thank NounsDAO for their support.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://i.ibb.co/wsP4cTC/Clean-Shot-2023-04-27-at-20-51-41-2x.png",
+    "project": {
+        "name": "ethOS",
+        "description": "An open-source mobile operating system that embraces Ethereum and Web3.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "ethOS: A crypto-native, mobile OS",
+    "id": "279"
+}

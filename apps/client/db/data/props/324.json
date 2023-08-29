@@ -1,0 +1,24 @@
+{
+    "roadmap": {
+        "items": []
+    },
+    "budget": {
+        "totalAmount": 0,
+        "items": []
+    },
+    "team": [],
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "",
+    "title": "Temporarily Pause Auctions",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "id": "324",
+    "description": "Temporarily Pause Auctions"
+}

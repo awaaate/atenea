@@ -1,0 +1,54 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "107.49",
+        "items": [
+            {
+                "name": "Audit",
+                "amount": "106.41",
+                "description": "Code4rena audit and optional mitigations review",
+                "nouns": null
+            },
+            {
+                "name": "Unused Funds",
+                "amount": "1.07",
+                "description": "Any unused funds will be sent back to the DAO.",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Nouns Fork",
+                "description": "A new minority protection mechanism allowing Nouners to exit into a fork of Nouns DAO."
+            },
+            {
+                "name": "Proposal Editing",
+                "description": "Allowing proposers to update their proposal's transactions and text description during the new Updatable period."
+            },
+            {
+                "name": "Propose by Signature",
+                "description": "Allowing Nouners and delegates to pool their voting power towards submitting a proposal by submitting their signature."
+            },
+            {
+                "name": "Objection-only Period",
+                "description": "A conditional voting period that gets activated upon a last-minute proposal swing from defeated to successful."
+            },
+            {
+                "name": "Votes Snapshot After Voting Delay",
+                "description": "Moving votes snapshot up to provide Nouners with reaction time per proposal."
+            }
+        ]
+    },
+    "description": "Send 200K USDC to the Tech Grants Safe to fund the second audit of the upcoming DAO V3 upgrade proposal.",
+    "categories": [],
+    "coverImage": null,
+    "project": {
+        "name": "DAO V3 Upgrade",
+        "description": "Upcoming upgrade proposal for the DAO",
+        "proposals": []
+    },
+    "title": "Fund a code4rena audit for DAO V3",
+    "id": "302"
+}

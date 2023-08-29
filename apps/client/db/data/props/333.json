@@ -1,0 +1,31 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 10000,
+        "items": [
+            {
+                "name": "Ether Rock #0",
+                "amount": 10000,
+                "description": "Buying Ether Rock #0",
+                "nouns": 0
+            }
+        ]
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "To diversify the treasury in some other illiquid shit as the Nounders want, after the Alien Punk I propose to buy Ether Rock #0",
+    "categories": [
+        {
+            "name": "Other"
+        }
+    ],
+    "coverImage": "https://i.ibb.co/BNYMqdB/image.png",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Bid on Ether Rock #0",
+    "id": "333"
+}

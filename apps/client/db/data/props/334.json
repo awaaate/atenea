@@ -1,0 +1,71 @@
+{
+    "team": [
+        {
+            "name": "BiGSHOT",
+            "what": "Veteran manufacturer in the Nouns ecosystem",
+            "walletAddress": "0xd25912007EBC2527d4ED9DC536f928E550b0f02C,",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/bigshottoyworks"
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "34.32",
+        "items": [
+            {
+                "name": "Production and shipping",
+                "amount": "30.47",
+                "description": "Production and shipping of 25K Lo-Fi Noggles"
+            },
+            {
+                "name": "Warehousing, order processing, and communications",
+                "amount": "3.85",
+                "description": "6 months of warehousing, order processing, and communications"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Decide who gets what",
+                "description": "Survey groups, understand their needs, and allocate Lo-Fi Noggles"
+            },
+            {
+                "name": "Produce more Lo-Fi paper Noggles",
+                "description": "Factory produces Lo-Fi Noggles for worldwide distribution"
+            },
+            {
+                "name": "Ship worldwide",
+                "description": "Cases of Lo-Fi Noggles shipped directly to Nounish groups"
+            },
+            {
+                "name": "Remaining units held in USA for future use",
+                "description": "Extra units shipped to the USA warehouse for allocation and distribution as needed"
+            }
+        ]
+    },
+    "description": "The proposal is requesting funding to resubmit a project for creating and distributing Lo-Fi Noggles, a cardboard eyewear product, to various Noun builder communities and events globally. The adjustments in the proposal include focusing on allocation, on-demand distribution, and improved analytics. The plan involves determining the best allocation of 25,000 pieces for effective dispersal worldwide. On-demand distribution will utilize a US warehouse to store surplus stock and ship to individuals or props as needed. The proposal provides examples of product usage, including \"Party Packs\" and \"Proliferator Packs\" for events and contests. Improved analytics show successful proliferation of Nouns through QR code usage. The proposal outlines a four-step production and distribution plan, emphasizing the need for efficient proliferation. The requested funding is $64,200 USDC to cover production, shipping, and warehousing expenses. The next step will involve a follow-up proposal to fund continuous supply and distribution of Nounish merch to the global Nouns community.",
+    "categories": [
+        {
+            "name": "Community"
+        },
+        {
+            "name": "Physical"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_da71c01eead5f03943ae9f05f5598862.jpg?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690177033&Signature=MUcanCYTnBwPrz872McO%2FuAtmiQ%3D",
+    "project": {
+        "name": "NounsWorks",
+        "description": "As a veteran manufacturer in the Nouns ecosystem, NOUNWORKS has a proven pipeline for delivering quality products. We would like to place Noggles onto the faces of every Nounish person on the planet. We are requesting funding to create another run of Lo-Fi Noggles.",
+        "proposals": [
+            {
+                "proposalId": "334"
+            }
+        ]
+    },
+    "title": "[Resubmission] Expanding Global Distribution of Lo-Fi Noggles",
+    "id": "334"
+}

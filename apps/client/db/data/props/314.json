@@ -1,0 +1,36 @@
+{
+    "team": [
+        {
+            "name": "Wilsoncusack",
+            "what": "Creator and Developer",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/WilsonCusack"
+                }
+            ],
+            "walletAddress": "0x8a7C9b8C1A29875C04Be462AF49BbFd1CeABa500"
+        }
+    ],
+    "budget": {
+        "totalAmount": 10,
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "Two months ago, I started work on voter.wtf. I wanted to create speedy, vote-with-reason-focused governance client for Nouns. 30k+ lines of code later, it is minimally fully featured and well loved.\n\nvoter.wtf has pioneered several unique features\n\nHomepage features a timeline of all votes across proposals.\nProposal pages feature side by side FOR and AGAINST votes, for easy comparison and context setting.\nVotes can be \"liked\" via web3 wallet signature.\nNon delegates, in addition to delegates, can vote on any proposal.\nAt glance view of which props you have voted on and which you still need to.\nreVoteWithReason: quickly vote with reason by quoting someone else's reason in your vote.\n(Twitter roundup of these features, with images)\nThe code is open source and under MIT license. The site currently has no cost overhead: it runs on Vercel free tier and only relies on the Nouns DAO subgraph.",
+    "categories": [
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "voter.wtf",
+        "description": "A speedy, vote-with-reason-focused governance client for Nouns DAO.",
+        "proposals": []
+    },
+    "title": "Retro Fund Voter.wtf",
+    "id": "314"
+}

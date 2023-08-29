@@ -1,0 +1,66 @@
+{
+    "team": [
+        {
+            "name": "Dustin Yellin",
+            "what": "Brooklyn-based artist commissioned for Nouns Psychogeography Sculpture",
+            "socialmediaHandles": [],
+            "walletAddress": "0x0B789Ef2A2cda2fb5B5c7cdB278C2Cb8BdC96e4C"
+        }
+    ],
+    "budget": {
+        "totalAmount": "50",
+        "items": [
+            {
+                "name": "Send 50 ETH to Dustin Yellin Studio ",
+                "amount": 50,
+                "description": "Send 50 ETH to Dustin Yellin Studio if Proposal 327 fails"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Transfer Noun 252 to Dustin Yellin Studio",
+                "description": ""
+            },
+            {
+                "name": "Send 50 ETH to Dustin Yellin Studio if Proposal 327 fails",
+                "description": ""
+            },
+            {
+                "name": "Return any remaining ETH (140.85 or 90.85) to the Nouns treasury",
+                "description": ""
+            }
+        ]
+    },
+    "description": "In April 2022, the Nouns DAO voted on and executed Proposal 48, commissioning artist Dustin Yellin to create the Nouns Psychogeography Sculpture. The sculpture featured a new portrait layering each Nouns avatar into one fantastic body, updating the Leviathan image. Yellin hand-painted the 402 Nouns minted in Year One into a unique glass artwork to record the history of the Nouns DAO and serve as its emblem.\n\nAfter accepting the proposal, the Nouns DAO compensated Dustin Yellin with an initial deposit of 50 ETH and donated 100,000 USDC to Pioneer Works, a non-profit cultural center.\n\nThe current proposal requests the Nouns Acquisition Committee to transfer Noun 252 to Dustin Yellin Studio (Ethereum address: 0x0B789Ef2A2cda2fb5B5c7cdB278C2Cb8BdC96e4C), as shared in Proposal 327. If Proposal 327 fails, the proposal requires sending 50 ETH to the same Ethereum address.\n\nUpon completing the sculpture and its accompanying NFT, the Nouns DAO will make a second payment of 50 ETH and transfer Noun 252 from the Nouns treasury to Dustin Yellin Studio.\n\nAny remaining ETH (either 140.85 or 90.85) in the Nouns Acquisition Committee will be returned to the Nouns treasury.\n\nLinks to images of the finished sculpture and the NFT Psychoprogeny are provided.",
+    "categories": [
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "https://www.dustinyellin.com/d/6afb72",
+    "project": {
+        "name": " Nouns Psychogeography Sculpture with Dustin Yellin",
+        "description": "Nouns Psychogeography Sculpture with Dustin Yellin",
+        "proposals": [
+            {
+                "proposalId": "48"
+            },
+            {
+                "proposalId": "327"
+            },
+            {
+                "proposalId": "328"
+            }
+        ]
+    },
+    "title": "NAC to Pay Dustin Yellin & Return Remaining ETH to Treasury",
+    "id": "328"
+}

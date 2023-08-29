@@ -1,26 +1,31 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@shared/ui";
 
+import "@shared/tailwind-config/lib/global.css";
+import { Provider } from "@/components/provider";
 export const metadata = {
-  title: 'Vercel Postgres Demo with Drizzle',
-  description:
-    'A simple Next.js app with Vercel Postgres as the database and Drizzle as the ORM',
-}
+  title: "Atenea Client",
+  description: "",
+};
 
 const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-  display: 'swap',
-})
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.variable}>{children}</body>
-    </html>
-  )
+    <ThemeProvider>
+      <html lang="en">
+        <body className={inter.variable}>
+          <Provider>{children}</Provider>
+        </body>
+      </html>
+    </ThemeProvider>
+  );
 }

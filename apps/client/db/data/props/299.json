@@ -1,0 +1,66 @@
+{
+    "team": [
+        {
+            "name": "Marco Braunschweiler",
+            "what": "Designer with a background in art, and typeface maker",
+            "socialmediaHandles": [
+                {
+                    "name": "m-a-r-c-o.com",
+                    "url": "https://m-a-r-c-o.com/typefaces"
+                },
+                {
+                    "name": "Open Window Studio",
+                    "url": "https://openwindow.studio"
+                }
+            ],
+            "walletAddress": "0xa8f6380067cf7b42d6c0268ef6eee6035f27a32e"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": 18,
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Phase One – Complete",
+                "description": "Initial Sketches of Uppercase Letterforms"
+            },
+            {
+                "name": "Phase Two – Up Next",
+                "description": "Drawing all Latin Glyphs"
+            },
+            {
+                "name": "Phase Three – Finish Line",
+                "description": "Updates, Revision, Mastering"
+            }
+        ]
+    },
+    "description": "Why don’t we have a proper Nounish display font? Let’s make one that everybody can use. Recognizable, fun, CC0. For Nouns projects, products and beyond. Requesting 18 eth. See the draft letter drawings in use: nounsfonts.wtf...",
+    "categories": [
+        {
+            "name": "Art"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_41365e2bf267cc72c811dc4fea638e96.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690875125&Signature=Evs3%2FESBJlCQC4xU7evY3b2Vjbg%3D",
+    "project": {
+        "name": "Nounish Typeface Project",
+        "description": "Creating a unique, beautiful, functional Nounish display typeface with a CC0 license.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Nouns Display Font",
+    "id": "299"
+}

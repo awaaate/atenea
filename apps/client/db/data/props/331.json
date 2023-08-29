@@ -1,0 +1,36 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "12",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Part 2",
+                "description": "Set the bid price for stETH peg protection on the CozyMultiOraclePriceFeed to 2% and transfer 12 ETH to the TokenBuyer dedicated to buying protection"
+            }
+        ]
+    },
+    "description": "The proposal aims to complete the effort to obtain stETH peg protection for the DAO. Part 1, which involved auditing and deploying helper contracts on Layer 2, has been successfully completed. Part 2 involves setting a 2% bid price for stETH peg protection and transferring 12 ETH to the TokenBuyer contract. The DAO currently has access to around $1 million of available stETH peg protection on Cozy v2. The bid process involves third-party arbitrageurs selling protection tokens to the TokenBuyer in exchange for ETH, with any unspent ETH remaining available for DAO withdrawal. The pilot-scale protection is planned for a $26 million exposure to stETH. The deployed contracts have their ownership and admin configurations set to ensure secure execution.",
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "StETH Peg Protection",
+        "description": "Project for obtaining stETH Peg Protection",
+        "proposals": [
+            {
+                "proposalId": "313"
+            },
+            {
+                "proposalId": "331"
+            }
+        ]
+    },
+    "title": "stETH Peg Protection Execution",
+    "id": "331"
+}

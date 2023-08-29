@@ -1,0 +1,67 @@
+{
+    "team": [
+        {
+            "name": "Mrtn",
+            "what": "I’ve been in Nouns for over a year, and have worked on teams such as Builder, Agora, and most recently started and ran Explorer Grants and Hack Week! Before that I worked at Google and NBA Top Shot.",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/anquetil"
+                }
+            ],
+            "walletAddress": "vandelaytech.eth"
+        }
+    ],
+    "budget": {
+        "totalAmount": "15",
+        "items": [
+            {
+                "name": "Full-time development for 3 months",
+                "amount": 15,
+                "description": "Fund 3 months of full-time development of a Nounish explorer",
+                "nouns": 0
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Aggregated information",
+                "description": "Delegation history, address’ voting stats, etc.."
+            },
+            {
+                "name": "A variety of views",
+                "description": "Proposal pages, nouns pages, feeds, and filters"
+            },
+            {
+                "name": "Parsing non-Nouns transactions",
+                "description": "Mogu has the whole chain’s context available, not just Nouns things."
+            },
+            {
+                "name": "A comprehensive search",
+                "description": "For transaction content, props, nouns, etc.."
+            },
+            {
+                "name": "Other experimental features",
+                "description": "Potentially bookmarking transactions, transaction notes, user statuses"
+            }
+        ]
+    },
+    "description": "I’m asking for 15 ETH to go full-time on Mogu for 3 months. The goal by the end is for Mogu to be power users’ go-to tool, and for it to be the default linked block explorer across the Nouns ecosystem.",
+    "categories": [
+        {
+            "name": "Tech"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Mogu",
+        "description": "Nounish explorer",
+        "proposals": []
+    },
+    "title": "Mogu - a nounish explorer",
+    "id": "321"
+}

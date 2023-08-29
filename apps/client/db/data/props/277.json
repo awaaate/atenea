@@ -1,0 +1,90 @@
+{
+  "team": [
+    {
+      "name": "Tigris",
+      "what": "Creative Technologist and 3D Motion Designer",
+      "socialmediaHandles": [
+        {
+          "name": "Tik Tok",
+          "url": "https://www.tiktok.com/@tigrisli"
+        }
+      ],
+      "walletAddress": ""
+    }
+  ],
+  "budget": {
+    "totalAmount": 75,
+    "items": [
+      {
+        "name": "Manufacturing",
+        "amount": 14,
+        "description": "PCB Circuit Manufacturing, Enclosures, Keychains, Packaging, Shipping & Customs Charges"
+      },
+      {
+        "name": "Prototyping",
+        "amount": 6.5,
+        "description": "PCB Circuit, Enclosure, Packaging, Shipping & Customs Charges for Prototypes"
+      },
+      {
+        "name": "Shipping & Delivery",
+        "amount": 6.5,
+        "description": "Mailer Boxes, Worldwide delivery (from UK), UPS insurance"
+      },
+      {
+        "name": "Labour + Time",
+        "amount": 48,
+        "description": "Leading creative direction and development, Website design + coding, Custom Circuit Design, Enclosure design, Packaging design, Firmware development, Video production, Distribution and assembly, Potential trip to Shenzhen, China for direct work with Manufacturers"
+      }
+    ]
+  },
+  "roadmap": {
+    "items": [
+      {
+        "name": "PCB Circuit Design",
+        "description": "R&D for components, schematic design, PCB layout design, multiple prototypes for testing"
+      },
+      {
+        "name": "Software / Firmware",
+        "description": "Coding the firmware to run the circuit, integrating with hardware, testing and debugging"
+      },
+      {
+        "name": "Enclosure Design",
+        "description": "Mockup sketches, 3D models, CAD designs, and source materials for the enclosure, create and test three prototypes"
+      },
+      {
+        "name": "Packaging",
+        "description": "Design, prototype, and source packaging materials for the product"
+      },
+      {
+        "name": "Website",
+        "description": "Design and code the front-end and back-end with smart-contracts for NFTs, access to open-source files"
+      },
+      {
+        "name": "NFT for Noggles Keychain",
+        "description": "Design a 3D Animated NFT for purchase via crypto, can be redeemed for the DAO"
+      },
+      {
+        "name": "TikTok / Instagram Videos",
+        "description": "Filming, editing, and post-production of videos showing the making of the Noggles LED Keychain"
+      }
+    ]
+  },
+  "description": "Proposal to fund the development and production of 600 Artisanal Noggles LED keychains, including custom circuit design, enclosure, packaging, and firmware. The project aims to introduce Nouns to hardware enthusiasts and creative engineers, with a strong focus on open-source content and collaboration. The proposal includes a breakdown of costs, a roadmap of development stages, and deliverables.",
+  "categories": [
+    {
+      "name": "Physical"
+    }
+  ],
+  "coverImage": "https://i.postimg.cc/d3NKdZM3/NOUNS-PROP-GIF.gif",
+  "project": {
+    "name": "Noggles LED Keychain Project",
+    "description": "The Noggles LED Keychain project aims to create a low-cost, unique piece of hardware that serves as a daily-carry item and represents the Nouns identity. It will be open-source, hackable, and available for purchase with crypto or card payment.",
+    "proposals": [
+      {
+        "proposalId": ""
+      }
+    ]
+  },
+  "title": "Open Source Nounish Hardware + Production",
+  "id": "277"
+}

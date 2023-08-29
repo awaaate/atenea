@@ -1,0 +1,69 @@
+{
+  "team": [
+    {
+      "name": "necfas",
+      "what": "Nounish Creative Lead",
+      "walletAddress": "",
+      "socialmediaHandles": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/necfas"
+        }
+      ]
+    },
+    {
+      "name": "LEBLANCSTUDIOS",
+      "what": "",
+      "socialmediaHandles": [
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/leblancstudios/?hl=en"
+        }
+      ],
+      "walletAddress": ""
+    }
+  ],
+  "budget": {
+    "totalAmount": 41.27,
+    "items": [
+      {
+        "name": "Development of wears.wtf",
+        "amount": 41.27,
+        "description": "Allocate 75,800 USDC for the development of wears.wtf clothing brand"
+      }
+    ]
+  },
+  "roadmap": {
+    "items": [
+      {
+        "name": "[PROOF-OF-DEMAND]",
+        "description": "This phase aims to gauge the community's interest in the clothing line by producing a limited-edition, low-supply collection."
+      },
+      {
+        "name": "[PRODUCTION EXPANSION]",
+        "description": "The subsequent proposal will focus on funding a larger production and adopting a more targeted approach."
+      }
+    ]
+  },
+  "description": "Allocate 75,800 USDC for the development of wears.wtf clothing brand that transforms Nouns' incredible CC0 assets into distinctive, ready-to-wear clothing. The wears.wtf team, in collaboration with LEBLANCSTUDIOS, seeks to bring wears.wtf clothing to the market very smoothly. The initial collection marketing will be directed towards the Nounish Ecosystem, Twitter, and LEBLANCSTUDIOS' customer base (3500+ customers). This process will be divided into 2 phases: [PROOF-OF-DEMAND] and [PRODUCTION EXPANSION]. [PROOF-OF-DEMAND] includes a 100-200 piece test limited-edition drop to measure demand and other metrics. After the test drop, a 400 piece drop focused on the nounssentials line will be launched. [PRODUCTION EXPANSION] will be a future proposal.",
+  "title": "Clothing, Every Day, Forever",
+  "id": "283",
+  "project": {
+    "name": "Wears.wtf",
+    "description": "A clothing brand that transforms Nouns' incredible CC0 assets into distinctive, ready-to-wear clothing.",
+    "proposals": [
+      {
+        "proposalId": "proof-of-demand-proposal-123"
+      },
+      {
+        "proposalId": "production-expansion-proposal-456"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "name": "Physical"
+    }
+  ],
+  "coverImage": "https://i.imgur.com/BYTzO1m.png"
+}

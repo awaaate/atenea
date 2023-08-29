@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1693299296211,
+      "tag": "0000_previous_longshot",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1693299841409,
+      "tag": "0001_productive_golden_guardian",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1693301038044,
+      "tag": "0002_nervous_doctor_octopus",
+      "breakpoints": true
+    }
+  ]
+}

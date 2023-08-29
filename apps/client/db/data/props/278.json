@@ -1,0 +1,46 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "58.885",
+        "items": [
+            {
+                "name": "Donate to Gitcoin Crypto Advocacy Round",
+                "amount": "55",
+                "description": "Double the current matching grant to support the crypto community",
+                "nouns": null
+            },
+            {
+                "name": "Mint 5k \"Stand with Crypto\" NFT",
+                "amount": "3.885",
+                "description": "Attempt to claim the top spot on the leaderboard",
+                "nouns": 5000
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Mint 5k \"Stand with Crypto\" NFT",
+                "description": "Attempt to claim the top spot on the leaderboard"
+            },
+            {
+                "name": "Donate to Gitcoin Crypto Advocacy Round",
+                "description": "Double the current matching grant to support the crypto community"
+            }
+        ]
+    },
+    "description": "Proposing to mint 5k \"Stand with Crypto\" NFT and donate 55 ETH ($103k at the time of writing) to the Gitcoin Crypto Advocacy Round. The aim is to signal solidarity and support the important work being done by the organizations in the Gitcoin round during this crucial time for crypto. The proposed transactions will help Nouns DAO attract community members and gain goodwill in the crypto community.",
+    "categories": [
+        {
+            "name": "Charity"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Mint 5k \"Stand with Crypto\" NFTs and donate $100k to Gitcoin Crypto Advocacy Round",
+    "id": "278"
+}

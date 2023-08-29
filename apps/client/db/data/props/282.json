@@ -1,0 +1,24 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 0,
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "The proposal aims to reduce the maximum quorum percentage from 20% to 15% in a decentralized autonomous organization (DAO) called \"Prop 261\" that uses dynamic quorum parameter updates. The dynamic quorum was initially designed to ensure higher support for contentious proposals and protect the DAO from voter apathy as an attack vector. However, recent changes have been viewed as a misuse of the parameter to serve specific interests. The proposal seeks to revert to the original maximum quorum setting of 15% and encourages further discussion on whether to remove the dynamic quorum altogether. The proposed transaction will update the maximum quorum value in the DAO's system.",
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Dynamic Quorum",
+        "description": "Dynamic Quorum Parameter Updates",
+        "proposals": []
+    },
+    "title": "Dynamic Quorum Updates",
+    "id": "282"
+}

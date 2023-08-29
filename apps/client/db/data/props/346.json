@@ -1,0 +1,77 @@
+{
+    "team": [
+        {
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/nounsagora"
+                },
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "name": "Agora Team",
+            "what": "Developing and deploying the Drops Creator",
+            "walletAddress": "voteagora.eth"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "20",
+        "items": [
+            {
+                "name": "Development and Deployment",
+                "amount": "15",
+                "description": "Costs for developing and deploying the Drops Creator contract"
+            },
+            {
+                "name": "Marketing",
+                "amount": "6",
+                "description": "Promotional activities for the Droposals"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Create Drops Creator Contract",
+                "description": "Develop the smart contract for issuing drops and managing drop types"
+            },
+            {
+                "name": "Integrate with Nouns Frontends",
+                "description": "Update nounsagora.com and nouns.wtf to display droposal mints on the front page"
+            },
+            {
+                "name": "Collaborate with Other NFT Sites",
+                "description": "Work with other NFT platforms to feature Nouns Drops"
+            }
+        ]
+    },
+    "description": "The project aims to revolutionize the creation and promotion of Nouns media as NFTs through \"Droposals.\" These proposals, issued by the DAO, have already demonstrated early success, generating significant ETH sales. To make Droposals more accessible and impactful, the project will build a user-friendly Drops Creator and update Nouns platforms to feature approved Droposals prominently. The ultimate goal is to monetize and promote Nouns media, curate exceptional creations, and empower artists within the NFT ecosystem.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://example.com/cover_image.jpg",
+    "project": {
+        "name": "Agora",
+        "description": "Agora is the governance system of the Nouns DAO. It is a decentralized decision-making platform where Nouns token holders can propose, discuss, and vote on proposals that shape the future of the DAO. Agora allows the community to collectively make decisions on various aspects, such as funding projects, changing governance rules, or adding new features to the Nouns ecosystem. It provides a transparent and participatory process for Nouns holders to have a say in the DAO's direction and decision-making.",
+        "proposals": [
+            {
+                "proposalId": "346"
+            }
+        ]
+    },
+    "title": "Make Droposals Great Again",
+    "id": "346"
+}

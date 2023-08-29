@@ -1,0 +1,49 @@
+{
+    "team": [
+        {
+            "name": "Nouns Wallet Team",
+            "what": "Specialist in advanced cryptography and currently building a trustless bridge between non EVM chains.",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/teammember"
+                }
+            ],
+            "walletAddress": " 0xfc5850a6bb134a6c19d31743200929b5d534ed93"
+        }
+    ],
+    "budget": {
+        "totalAmount": "13.36",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Research and Development",
+                "description": "Conduct in-depth research on existing hot wallet solutions, 2FA, MultiSig, and threshold signing schemes.\nCollaborate with the Nouns community to gather feedback and insights on user preferences and pain points.\nDesign the architecture and security framework for the Nouns Wallet, taking into account privacy and transparency requirements.\nExplore and choose the most suitable audited libraries and cryptographic algorithms to build upon for enhanced security."
+            },
+            {
+                "name": "Round 1 Development",
+                "description": "Initiate development of the basic Threshold Signing wallet with a focus on backend cryptography and backend wizardry.\nCreate a user-friendly frontend interface that aligns with the captivating Nouns theme.\nImplement the threshold MPC system into the browser extension and web app hot wallets.\nConduct thorough testing and security audits to ensure the product meets the highest security standards.\nDemonstrate the threshold signing capability exclusively on laptops to showcase the initial functionality."
+            }
+        ]
+    },
+    "description": "The proposal aims to develop Nouns Wallet, a B2C hot wallet product that provides fully flexible threshold signing schemes, increasing users' asset allocation to hot wallets, and ensuring transparency and security. The project will generate revenue through swap fees, with a 90-10 split between the Nouns Treasury and the development team for the first three years.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://img.youtube.com/vi/uhbaVoQMKDU/0.jpg",
+    "project": {
+        "name": "Nouns Wallet Project",
+        "description": "A B2C hot wallet project that introduces fully flexible threshold signing schemes.",
+        "proposals": [
+            {
+                "proposalId": "335"
+            }
+        ]
+    },
+    "title": "Nouns Wallet - $3M to $5M a year in revenue for Nouns DAO",
+    "id": "335"
+}

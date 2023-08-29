@@ -1,0 +1,85 @@
+{
+    "team": [
+        {
+            "name": "Arash",
+            "what": "Video game and animation creator",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/arashcreator"
+                }
+            ],
+            "walletAddress": "0x1234567890ABCDEF"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "32.26",
+        "items": [
+            {
+                "name": "Animated educational music video production (4 videos)",
+                "amount": "8.60",
+                "description": "Each video estimated at $4000"
+            },
+            {
+                "name": "Promotion and marketing",
+                "amount": "2.15",
+                "description": "Social media and online advertising"
+            },
+            {
+                "name": "Other expenses",
+                "amount": "2.15",
+                "description": "Miscellaneous costs"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Create Nounish musical animations for kids",
+                "description": "Produce catchy tunes and colorful visuals"
+            },
+            {
+                "name": "Upload new animations regularly",
+                "description": "Consistently add content to the YouTube channel"
+            },
+            {
+                "name": "Promote the channel",
+                "description": "Utilize social media and online advertising"
+            },
+            {
+                "name": "Monetize the channel",
+                "description": "Reach 15 videos and achieve self-sustainability"
+            }
+        ]
+    },
+    "description": "We propose to create a YouTube channel that features Nounish musical animations for kids. Through musical animations about colors, the alphabet, numbers, shapes, and such, the channel will be a source of entertainment and also education for kids and will provide an opportunity for parents to introduce their children to the concept of Nouns.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_d73c0a7ba616987cb0990f012bc93db8.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690826532&Signature=oSYUMrbaJDFD6Mo%2BxwEluJHYQLQ%3D",
+    "project": {
+        "name": "Nounish Animations for Kids YouTube Channel",
+        "description": "Create a YouTube channel for Nounish musical animations targeted at children.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Nounish Animations for Kids on YouTube Channel",
+    "id": "310"
+}

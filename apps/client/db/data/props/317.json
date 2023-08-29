@@ -1,0 +1,104 @@
+{
+    "team": [
+        {
+            "name": "Team Atrium",
+            "what": "Creator of the Atrium crypto-native network",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/atrium"
+                }
+            ],
+            "walletAddress": "0x58...3357"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "201.65",
+        "items": [
+            {
+                "name": "Script for Episode 2",
+                "amount": "53.77",
+                "description": "Funds required to develop the script for Episode 2"
+            },
+            {
+                "name": "Preview Trailers",
+                "amount": "40.33",
+                "description": "Funds required for creating preview trailers throughout the proposal duration"
+            },
+            {
+                "name": "Finished Episode 2",
+                "amount": "107.54",
+                "description": "Funds required to complete Episode 2 as per the specified script, to be delivered at 100 days"
+            },
+            {
+                "name": "Changelog",
+                "amount": "26.89",
+                "description": "Funds required for publishing changelogs along the way"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Develop Episode 2",
+                "description": "Create and develop Episode 2 with a runtime of 10.5 - 11 mins"
+            },
+            {
+                "name": "DAO Decision",
+                "description": "After Episode 2 is revealed, the DAO will decide on further movie development"
+            },
+            {
+                "name": "Self-Distribution",
+                "description": "Continue building self-distribution channels to reach more audiences"
+            },
+            {
+                "name": "Engage Partners",
+                "description": "Further engage with potential partners to promote the movie"
+            },
+            {
+                "name": "Casting Calls",
+                "description": "Initiate casting calls to introduce more cross-over stories with nounish communities"
+            },
+            {
+                "name": "Expand Cinematic Universe",
+                "description": "Continue building the cinematic universe of Nouns"
+            }
+        ]
+    },
+    "description": "Atrium seeks funding of 375,000 USD for a time-period of 100 days to create Episode 2 of the Nouns Movie. The project involves developing the script, creating preview trailers, and producing the finished Episode 2 with a runtime of 10.5 - 11 mins. The team at Atrium is composed of independent artists and creators with experience from renowned studios like Pixar, Marvel, Sony, and Netflix. The movie is set in the floating cloud city of Blus and follows the protagonist Noun as he teams up with misfits to save the city from the plot of the ruthless frowns. The movie's genre is Action and Comedy.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://nouns.movie/cover.jpg",
+    "project": {
+        "name": "Nouns Movie",
+        "description": "The Nouns Movie project aims to produce cinematic content with veteran talent from various disciplines.",
+        "proposals": [
+            {
+                "proposalId": "245"
+            },
+            {
+                "proposalId": "317"
+            }
+        ]
+    },
+    "title": "Nouns : A Movie - Chapter 2 ⌐◨-◨",
+    "id": "317"
+}

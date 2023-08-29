@@ -1,0 +1,48 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "100",
+        "items": [
+            {
+                "name": "General Operations",
+                "amount": "69",
+                "description": "Funding for day-to-day activities and staff salaries"
+            },
+            {
+                "name": "License Infrastructure",
+                "amount": "30",
+                "description": "Maintenance and improvement of CC licenses and infrastructure"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Advocate for Open Content",
+                "description": "Promote the use and adoption of open content at all levels and in all arenas"
+            },
+            {
+                "name": "Innovate Licensing Infrastructure",
+                "description": "Steward and innovate the licensing infrastructure provided by CC"
+            },
+            {
+                "name": "Training Future Creators",
+                "description": "Provide training and support for future generations of creators and open advocates"
+            }
+        ]
+    },
+    "description": "Creative Commons is seeking 100 ETH to support general operations and license infrastructure to maintain and improve their tools that have unlocked access to 2 billion works over the past 20 years.",
+    "categories": [
+        {
+            "name": "Charity"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Creative Commons Funding Proposal",
+        "description": "Funding proposal for supporting Creative Commons operations and license infrastructure.",
+        "proposals": []
+    },
+    "title": "Creative Commons Funding Proposal",
+    "id": "349"
+}

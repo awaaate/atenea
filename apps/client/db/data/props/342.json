@@ -1,0 +1,36 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "5000",
+        "items": [
+            {
+                "name": "Buy Punk ",
+                "amount": 5000,
+                "description": "Buying punk #5905",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Buy Punk",
+                "description": "Buy Punk #5905."
+            }
+        ]
+    },
+    "description": "Bulls and Bears make money, Arbs get slaughtered. It's an excellent idea and I don't think 4156, or the original proposer should have canceled. I also think it's contradictory for the DeFi oriented DAO participants to advocate radical experimentation in the realm of financial engineering, governance pools, and so forth and then lambast culture-oriented participants as being irresponsible for making equally bold moves in the realm of cultural expertise. There are CT friends that I respect both FOR and AGAINST this prop, and I think we should put it to a vote and let the DAO decide. I also thought the previous proposals to make a bid was a 'one foot in, one foot out' position, so I'm resubmitting the proposal as a 'buyPunk' transaction. Good luck to all parties!",
+    "categories": [
+        {
+            "name": "Other"
+        }
+    ],
+    "coverImage": "https://cdn.discordapp.com/attachments/991432927260987423/1129084241486020760/big-punk.png",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Buy Alien Punk (#5905) v3",
+    "id": "342"
+}

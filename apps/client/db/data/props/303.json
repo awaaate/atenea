@@ -1,0 +1,122 @@
+{
+    "team": [
+        {
+            "name": "The SkatePark Project",
+            "what": "Nonprofit organization working to increase access to outdoor recreation and free play in underserved communities through the creation of safe and inclusive skateparks. ",
+            "socialmediaHandles": [
+                {
+                    "name": "Web",
+                    "url": "https://skatepark.org/"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                null,
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "88.29",
+        "items": [
+            {
+                "name": "Skatepark Reno",
+                "amount": "4.644",
+                "description": "Cost for renovating the skatepark"
+            },
+            {
+                "name": "Nouns Artwork",
+                "amount": "84.66",
+                "description": "Cost for the Nouns artwork and noggles rail"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Project Approval",
+                "description": "Obtain approval from City of Long Beach Councilmember Roberto Uranga and City of Long Beach Department of Parks, Recreation and Marine"
+            },
+            {
+                "name": "Construction",
+                "description": "Commence the construction of the skatepark during summer 2023"
+            },
+            {
+                "name": "Nouns Artwork and Noggles Rail Installation",
+                "description": "Coordinate with ASK and Van Eggers for Nouns artwork and Keen Ramps for the Noggles Rail installation"
+            }
+        ]
+    },
+    "description": "We seek funding to revitalize Silverado Park Skatepark in Long Beach, California, with new elements and relocate the ones that are still skateable. The area surrounding the skatepark is predominantly low-income, with many at-risk youths with few recreational opportunities. Together with the local Action Sports Kids (ASK) Foundation, we will unlock the potential of Silverado Skatepark to create a space that will benefit Long Beach area skaters, youth, and community members for generations to come.",
+    "categories": [
+        {
+            "name": "Community"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "Skatepark Pic",
+    "project": {
+        "name": "Silverado Skatepark Renovation",
+        "description": "Revitalization of Silverado Park Skatepark in Long Beach, California",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "TSP x ASK Long Beach: Silverado Skatepark",
+    "id": "303"
+}

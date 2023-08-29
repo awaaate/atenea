@@ -1,0 +1,24 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 0,
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "This proposal aims to increase the supply of proposals by reducing the proposal threshold to 9bps. Success of this proposal means only 1 Noun is required to submit a proposal to the DAO until Noun 1111. This is approximately ~367 days.\n\nBy increasing the proposal supply, we should expect an overall rise in the number of high-quality proposals that receive funding. While this may also lead to a higher number of rejected or low-quality proposals, recent voter turnout and controls like Dynamic Quorum sufficiently mitigate these concerns. Ultimately, more funded proposals would result in a greater influx of contributors, projects, attention, and as a result further overall expansion of Nouns as an organization and meme.\n\nIt may also be the case that the net value of an individual Noun should see an increase, given the improved governance right of having the ability to propose to the DAO without the additional coordination cost or acquisition cost of another Noun.\n\n— Nounlius\n\n^ At the time of this proposal it is currently Noun 707. The proposal threshold would be >1 at Noun 1111. There are 404 Nouns until then. At a minting rate of 1.1 a day (accounting the for the Nounder reward), this results in approximately 367 days.\n",
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": null,
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Increase Proposal Supply",
+    "id": "293"
+}

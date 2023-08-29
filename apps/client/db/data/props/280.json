@@ -1,0 +1,36 @@
+{
+    "team": [
+        {
+            "name": "Nouner DigitalOil",
+            "what": "Founder of NFTR",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "Web",
+                    "url": "https://www.nftr.name/#/robot-details/0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB/4901"
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": 0,
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "NFTR is the NFT identity registry on Ethereum. This proposal is about naming our recently acquired jellyfish Noun 687: JellO on NFTR. NFTR (pronounced Nifter) is the NFT identity protocol on Ethereum. Identity starts with naming, similar to ENS but for NFTs instead of wallets.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://i.ibb.co/0QXGxb3/Untitled.png",
+    "project": {
+        "name": "NFTR",
+        "description": "NFT identity registry on Ethereum",
+        "proposals": []
+    },
+    "title": "Name (recently acquired) Noun 687 on NFTR",
+    "id": "280"
+}

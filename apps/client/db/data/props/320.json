@@ -1,0 +1,33 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Launch TWAMM Protocol",
+                "description": "Successfully launch the TWAMM protocol with the $1M trade."
+            }
+        ]
+    },
+    "description": "This proposal outlines the implementation of TWAMM (Time-Weighted Average Market Maker) protocol for Nouns DAO treasury diversification. It presents the advantages, product design, incentives, risks, and competition. The proposal also includes a detailed budget and roadmap for the project.",
+    "categories": [
+        {
+            "name": "Staking/Yield"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "TWAMM ",
+        "description": "TWAMM is a time-weighted average market maker protocol designed to enable large token swaps on-chain.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Treasury Diversification: Swap 500 wstETH -> rETH via TWAMM",
+    "id": "320"
+}

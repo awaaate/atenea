@@ -1,0 +1,31 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 100,
+        "items": [
+            {
+                "name": "ETH Donation",
+                "amount": 100,
+                "description": "Substantial 100 ETH donation to the ultra sound relay",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "This proposal suggests making a substantial 100 ETH donation to recognize the incredible feat of the ultra sound relay and to express Nouns' alignment with Ethereum and its values. Additionally, funding the relay would help reach prospective DAO members who care about Ethereum and the onchain world.",
+    "categories": [
+        {
+            "name": "Charity"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_f1b77137c1ccd20ff00c8fe80f9fb76d.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690832439&Signature=GPHK%2FGeQ5q7%2FhMuij8CP2%2F39Dks%3D",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Nouns to fund a MEV relay that saved Ethereum from OFAC censorship dystopia (for now)",
+    "id": "304"
+}

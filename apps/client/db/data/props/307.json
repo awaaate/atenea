@@ -1,0 +1,126 @@
+{
+  "team": [
+    {
+      "name": "Gami",
+      "what": "Coordinator",
+      "socialmediaHandles": [
+        {
+          "name": "twitter",
+          "url": "https://twitter.com/0xigami"
+        }
+      ],
+      "walletAddress": "0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03"
+    },
+    {
+      "name": "Bones",
+      "what": "Media Partner",
+      "socialmediaHandles": [
+        null,
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/87B0nes"
+        }
+      ],
+      "walletAddress": ""
+    },
+    {
+      "name": "Mr Boney",
+      "what": "Media Partner",
+      "socialmediaHandles": [],
+      "walletAddress": ""
+    },
+    {
+      "name": "Bixbite",
+      "what": "Media Partner",
+      "socialmediaHandles": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/BixbiteOfficial"
+        }
+      ],
+      "walletAddress": ""
+    },
+    {
+      "name": "Goldy",
+      "what": "Media Partner",
+      "socialmediaHandles": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/Goldypix"
+        }
+      ],
+      "walletAddress": ""
+    },
+    {
+      "name": "Benbodhi",
+      "what": "Media Partner",
+      "socialmediaHandles": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/benbodhi"
+        }
+      ],
+      "walletAddress": ""
+    },
+    {
+      "name": "ThaSwami",
+      "what": "Media Partner",
+      "socialmediaHandles": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/tha_swami"
+        }
+      ],
+      "walletAddress": ""
+    }
+  ],
+  "budget": {
+    "totalAmount": 50,
+    "items": [
+      {
+        "name": "Nouniversary celebrations",
+        "amount": 50,
+        "description": "Funding for Nouniversary celebrations globally",
+        "nouns": 10
+      }
+    ]
+  },
+  "roadmap": {
+    "items": [
+      {
+        "name": "Prop House round",
+        "description": "Call for proposals and voting"
+      },
+      {
+        "name": "Events planning",
+        "description": "4+ weeks for planning the events"
+      },
+      {
+        "name": "Celebration",
+        "description": "Up to 1 week celebration starting 8 Aug"
+      },
+      {
+        "name": "Media production",
+        "description": "Media release within 2 weeks"
+      }
+    ]
+  },
+  "description": "Requesting 50 ETH (10 x 5 ETH) to fund a mandated Prop House round for an open, permissionless and decentralised celebration of nounish culture globally, during our second Nouniversary beginning 8 August 2023.",
+  "categories": [
+    {
+      "name": "Community"
+    }
+  ],
+  "coverImage": "https://ipfs.decentralized-content.com/ipfs/bafkreidykt52347b7idegfzypmtllmw3e7sp2r5g3l3oqvkxyywocxqwgi",
+  "project": {
+    "name": "Nouniversary Prop House Party",
+    "description": "An open, permissionless and decentralised celebration of nounish culture globally, during our second Nouniversary beginning 8 August 2023.",
+    "proposals": [
+      {
+        "proposalId": ""
+      }
+    ]
+  },
+  "title": "Nouniversary Prop House Party",
+  "id": "307"
+}

@@ -1,0 +1,88 @@
+{
+    "team": [
+        {
+            "name": "fiveoceans_dev",
+            "what": "Project Lead",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/fiveoceans_dev"
+                }
+            ],
+            "walletAddress": "0xDf6e59c6DF1E9500fd35A76FF4C62F9901E90019"
+        }
+    ],
+    "budget": {
+        "totalAmount": "599.96",
+        "items": [
+            {
+                "name": "Phase I - Prototyping Noun-Computer",
+                "amount": "109.08",
+                "description": "Noun-Computer prototype, stand with ports, and firmware development"
+            },
+            {
+                "name": "Phase II - Prototyping Noun-Breadbook",
+                "amount": "119.99",
+                "description": "Noun-Breadbook prototype development and manufacturing methods"
+            },
+            {
+                "name": "Phase III - Manufacturing",
+                "amount": "310.89",
+                "description": "Mass production of Noun-Computer and Noun-Breadbook"
+            },
+            {
+                "name": "Phase IV - Proliferation",
+                "amount": "60",
+                "description": "Nouns-Computers booth at 2023 Consumer Electronics Show, Las Vegas"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "May~Aug 2023",
+                "description": "Manufacture and test first 100 Noun-Computer prototypes"
+            },
+            {
+                "name": "Sep 2023",
+                "description": "Sponsor ETH global hackathon NY by providing Noun-Computers for hardware competitions"
+            },
+            {
+                "name": "Sep~Oct 2023",
+                "description": "Prototype v2"
+            },
+            {
+                "name": "Nov 2023",
+                "description": "Mass production"
+            },
+            {
+                "name": "Jan 2024",
+                "description": "Showcase Noun-Computers and Noun-Breadbook at CES and MWC, two of the most prestigious consumer electronics shows"
+            }
+        ]
+    },
+    "description": "I propose to grow a community of software and hardware developers around Noun-Computers and Noun-Breadbook (aka breadboard). The Noun-Devices will be available in the $40-$60 price range and distributed strictly using a fixed price policy to ensure that the end users do not overpay. NounsDAO can sponsor ETH Hackathons by providing the first 400 Noun-Computer kits. Also, 30% of the supply will be allocated to Nouns-Computer Fund any nouner will be able to request computers for Public Good via an on-chain proposal and send it to developing countries, minority groups, or other purposes.",
+    "categories": [
+        {
+            "name": "Tech"
+        },
+        {
+            "name": "Physical"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/BibDiu5.png",
+    "project": {
+        "name": "Noun Computers",
+        "description": "",
+        "proposals": [
+            {
+                "proposalId": "12345"
+            },
+            {
+                "proposalId": "67890"
+            }
+        ]
+    },
+    "title": "Introducing Noun Computers",
+    "id": "281"
+}

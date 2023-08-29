@@ -1,0 +1,88 @@
+{
+  "response": {
+    "shouldContinue": true,
+    "message": "",
+    "metadata": {
+      "proposals": [
+        {
+          "title": "Retroactive Funding and Small Grants Pool",
+          "description": "Encourage creators (artists and devs) to build with Nouns by having a pool of funds held in a Safe for this purpose. The Safe will be used immediately to recognize existing a few creators in our community while also allowing fast funding of small, one-off, or alpha version projects as they appear.",
+          "status": "EXECUTED",
+          "createdAt": "2021-10-19T20:37:54.000Z",
+          "forVotes": "20",
+          "againstVotes": "0",
+          "abstainVotes": "0",
+          "coverImage": "",
+          "budgetTotal": 20,
+          "budget": [
+            {
+              "name": "Pilot the pool",
+              "description": "A pool of capital sent to a Nouners controlled Safe",
+              "amount": 20
+            }
+          ],
+          "roadmap": [
+            {
+              "name": "Retroactive funding",
+              "description": "Acknowledging past contributions to the Nouns ecosystem"
+            },
+            {
+              "name": "Small project grants",
+              "description": "Funding for the development of small, one-off, or alpha version projects"
+            },
+            {
+              "name": "Encouraging retroactive funding",
+              "description": "Signaling that retroactive funding is a viable way to build on Nouns"
+            }
+          ],
+          "team": [
+            {
+              "name": "Noun 12",
+              "what": "Initial signing committee on the Safe",
+              "walletAddress": "",
+              "socialHandles": [
+                {
+                  "name": "Twitter",
+                  "url": "https://twitter.com/skilift_eth"
+                }
+              ]
+            },
+            {
+              "name": "Noun 16",
+              "what": "Initial signing committee on the Safe",
+              "walletAddress": "",
+              "socialHandles": [
+                {
+                  "name": "",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "name": "Noun 22",
+              "what": "Provide governance and an extra pair of eyes on all communications with the company",
+              "walletAddress": "",
+              "socialHandles": [
+                {
+                  "name": "Twitter",
+                  "url": "https://twitter.com/noun22"
+                }
+              ]
+            },
+            {
+              "name": "Noun 32",
+              "what": "Initial signing committee on the Safe",
+              "walletAddress": "",
+              "socialHandles": [
+                {
+                  "name": "",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

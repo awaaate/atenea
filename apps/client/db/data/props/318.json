@@ -1,0 +1,105 @@
+{
+    "team": [
+        {
+            "name": "Kwik",
+            "what": "Game Designer & Programmer",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/kerimbonia"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "kerimbonia",
+            "what": "Art Director",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "TheGrandEnnui",
+            "what": "Super fly Unity game programmer",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Yung TCarti",
+            "what": "Discord and community operator",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Gio4NFT",
+            "what": "Consiglieri and distinguished advisor",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 199,
+        "items": [
+            {
+                "name": "Gaming Website",
+                "amount": 20,
+                "description": "Design, build, and launch the nounsgames.wtf gaming website",
+                "nouns": null
+            },
+            {
+                "name": "Game Production",
+                "amount": 155,
+                "description": "Cost for developing the games",
+                "nouns": null
+            },
+            {
+                "name": "Marketing Fund",
+                "amount": 24,
+                "description": "Run measurable advertising experiments to inform design",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Part 1. Build Nouns Bowling as a Lead Title",
+                "description": "Nouns Bowling is a new 3D bowling game built with CC0 assets from the 3D Nouns and Noun Sounds projects. This game is LIVE on the iOS App Store today!"
+            },
+            {
+                "name": "Part 2. Establish the Nouns CC0 Gaming Toolkit",
+                "description": "As we build Nouns Bowling, we'll create the Nouns CCO Gaming Toolkit..."
+            },
+            {
+                "name": "Part 3. Fire Up a Game Publishing Pipeline",
+                "description": "Process for prototyping and shipping Nouns games..."
+            },
+            {
+                "name": "Part 4. Launch a Nouns gaming website",
+                "description": "First place to launch prototypes (early access for NFT holders)..."
+            },
+            {
+                "name": "Part 5. Publish and Evolve Nouns Games",
+                "description": "Marketing and Evolution..."
+            }
+        ]
+    },
+    "description": "Increasing the Value of Nouns with Games, by: Designing a set of Games for Nouns Communities... Hot take: Nouns games should AVOID play-to-earn cryptocurrency models. Gone wrong, they can do more damage to the Nouns brand than good. We don't plan on issuing a token or using play-to-earn tokenomics.",
+    "categories": [
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/NfGOCNb.jpeg",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Nouns Game Publisher: Changing the Game",
+    "id": "318"
+}

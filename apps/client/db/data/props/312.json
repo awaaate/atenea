@@ -1,0 +1,85 @@
+{
+    "team": [
+        {
+            "name": "CryptoForager81",
+            "what": "Co-founder and ex-head of innovation at the Bank of Montreal",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/CryptoForager81"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "CryptoDashi",
+            "what": "Co-founder with 10 years of experience in e-Commerce entrepreneurship",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/CryptoDashi"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Global Village Publishing",
+            "what": "Storied IRL coffee table book publisher with 30-years of experience",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 88.6815,
+        "items": [
+            {
+                "name": "Commission for NOUNS Limited Edition Cover",
+                "amount": 3,
+                "description": "Commissioning an artist for three different versions of the limited edition cover"
+            },
+            {
+                "name": "Production and Delivery of Books",
+                "amount": 85.6815,
+                "description": "Production and delivery of the NFT Yearbooks",
+                "nouns": 717
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Completion of Community Content",
+                "description": "Gather and review community submissions (including NOUNSDAO)"
+            },
+            {
+                "name": "Physical Printing of the Books",
+                "description": "Print the NFT Yearbook"
+            },
+            {
+                "name": "Shipping",
+                "description": "Prepare for shipping and begin shipping the NFT Yearbooks to customers"
+            }
+        ]
+    },
+    "description": "The NFT Yearbook project is an innovative initiative to preserve and celebrate the vibrant, diverse, and rapidly evolving web3 community. By incorporating NOUNS DAO into this historical chronicle and funding the placement of 100 books in strategic libraries around the world, we are not only recognizing the significant role of the DAO and its members in shaping the web3 landscape, but we are also furthering our commitment to diversity, equality, inclusivity and building a community driven narrative of the amazing world of web3.\n\nThe proposed budget of 88.6815 ETH will enable the production and delivery of a limited edition NFT Yearbook featuring a unique NOUNS DAO cover, both in digital and physical formats and placing an additional 100 NOUNS NFT Yearbooks in strategic locations around the world. This endeavor will help NOUNS DAO to have a tangible and lasting impact, reaching up to 3,075 new homes worldwide, and even prestigious institutions like Harvard Business School.\n\nBy supporting this project, NOUNS DAO will contribute to an important historical project, while also paving the way for the future of publishing in the web3 space. The NFT Yearbook not only represents a snapshot of the current state of the NFT community, but it also serves as a vision of what the community can accomplish in the future.\n\nWe appreciate your consideration of this proposal and look forward to the opportunity of working with NOUNS DAO on this significant project.",
+    "categories": [
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_626e03a90e9b672b2242d63b8bf0b6ad.jpg?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690825753&Signature=cIfwJUMGnptLFCaep7XmMBB%2Bo2k%3D",
+    "project": {
+        "name": "NFT Yearbook Project",
+        "description": "The NFT Yearbook is a pioneering project that combines the physical and digital realms of art and literature. It captures the web3 narrative from the perspective of those who are actively building it.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NFT Yearbook Prop",
+    "id": "312"
+}

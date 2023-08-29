@@ -1,0 +1,40 @@
+{
+    "team": [
+        {
+            "name": "nounish ⌐◨-◨",
+            "what": "Producer of the latest video - 100 Nounish Things",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/nounish"
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "0",
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "A music video featuring 100 things that Nouns DAO has funded and inspired. The music video highlights some of the greatest people, places, and things that Nouns has funded in the past year and a half. From crypto infrastructure Agora to Sofubi dolls, from 3D printed fashion to Esports teams, from naming a glassfrog species to creating this music video, the breadth of amazing things the Nouns is doing is inspirational.",
+    "categories": [
+        {
+            "name": "Droposal"
+        }
+    ],
+    "coverImage": "https://ucb6e7f28dce46ee574772657f8b.dl.dropboxusercontent.com/cd/0/inline/CA_4eJh5KVgMSqy4SjKDy231dF69vembrb0PKyo53rE7KCejgHgSI-UADia93kGc3bCVDrf5t3mtBXjIbcLDvfYh2-ZFJhs9thS0iy-N15Ymt--Zn0YzM_cVSdPJiofGh_6Sa-6uFlu7Wup27PCXo4p7/file#",
+    "project": {
+        "name": "nounish",
+        "description": "The Nounish team is a professional team with experience in producing high-quality content. ",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "100 Nounish Things: a nounish droposal ⌐◨-◨",
+    "id": "288"
+}

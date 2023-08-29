@@ -1,0 +1,120 @@
+{
+    "team": [
+        {
+            "name": "Gedoumaru",
+            "what": "Founder & Managing Director of SCG",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/gedoumaru"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "PINKTONG",
+            "what": "China Operations Lead at SCG",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Oni Apenoun",
+            "what": "Web3 Strategy, Creative Direction, Global Content Sourcing & Partnerships",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "63",
+        "items": [
+            {
+                "name": "RED Ad Spend",
+                "amount": "9.50",
+                "description": "Monthly advertising spend on RED platform",
+                "nouns": null
+            },
+            {
+                "name": "Weibo Ad Spend",
+                "amount": "8.52",
+                "description": "Monthly advertising spend on Weibo platform",
+                "nouns": null
+            },
+            {
+                "name": "Douyin Ad Spend",
+                "amount": "9.83",
+                "description": "Monthly advertising spend on Douyin platform",
+                "nouns": null
+            },
+            {
+                "name": "Extras",
+                "amount": "1.97",
+                "description": "Additional expenses for other platforms and micro-partnerships",
+                "nouns": null
+            },
+            {
+                "name": "Creative Direction & Content Curation",
+                "amount": "8.19",
+                "description": "Monthly expenses for creative direction and content curation",
+                "nouns": null
+            },
+            {
+                "name": "Strategic Localization & Content Editing",
+                "amount": "8.84",
+                "description": "Monthly expenses for strategic localization and content editing",
+                "nouns": null
+            },
+            {
+                "name": "Marketing Initiatives & Generation of new assets",
+                "amount": "11.14",
+                "description": "Monthly expenses for marketing initiatives and generating new assets",
+                "nouns": null
+            },
+            {
+                "name": "Travel expense",
+                "amount": "2.73",
+                "description": "One-time travel expense to China for Oni Apenoun",
+                "nouns": null
+            },
+            {
+                "name": "Physical Merchandise for Social Promos",
+                "amount": "3.28",
+                "description": "One-time expense for physical merchandise used in social promotions",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Social media account preparation",
+                "description": "Preparation of social media accounts across all platforms"
+            },
+            {
+                "name": "Soft start in May",
+                "description": "Preliminary activities including research and content preparation"
+            },
+            {
+                "name": "Official launch in June",
+                "description": "Official launch of the proposal and campaign"
+            },
+            {
+                "name": "Summary report in November",
+                "description": "Provision of a summary report with growth metrics to the DAO"
+            }
+        ]
+    },
+    "description": "Funding SCG Group, a digital agency with the goal to empower digital Chinese communities to learn about and actively contribute to the broader Nouns ecosystem...",
+    "categories": [
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Nouns DAO China",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Nouns Chinese Socials: 6 Month Pilot",
+    "id": "290"
+}

@@ -32,6 +32,7 @@ export * from "./components/popover"
 export * from "./components/form"
 export * from "./components/label"
 export * from "./components/accent-picker"
+export * from "./components/textarea"
 
 //lib
 export * from "./lib/hooks"

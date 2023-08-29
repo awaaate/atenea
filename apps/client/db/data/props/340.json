@@ -1,0 +1,163 @@
+{
+    "team": [
+        {
+            "name": "Marcello Laruccia",
+            "what": "Animation Director",
+            "socialmediaHandles": [
+                {
+                    "name": "Linkedin",
+                    "url": "https://www.linkedin.com/in/d2-ferrari-a90b822b/"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Bruno Tedesco",
+            "what": "Animation Supervisor",
+            "socialmediaHandles": [
+                {
+                    "name": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/brunotedesco/"
+                },
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Patrick Dias",
+            "what": "Creative Lead",
+            "socialmediaHandles": [
+                {
+                    "name": "Portfolio",
+                    "url": "INSERT_PORTFOLIO_URL_HERE"
+                },
+                {
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/patrickdias/"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "JukeBox (Audio Production)",
+            "what": "Audio Production",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Daniela Zschaber",
+            "what": "Writer",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Aurelio Ribeiro/TheBower",
+            "what": "Executive Producer",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Daniel Ferrari",
+            "what": "Producer",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "50.79",
+        "items": [
+            {
+                "name": "Pre-Production",
+                "amount": "6.19",
+                "description": "Pre-Production",
+                "nouns": null
+            },
+            {
+                "name": "Production",
+                "amount": "15",
+                "description": "Production"
+            },
+            {
+                "name": "Post-Production",
+                "amount": "3.07",
+                "description": "Post-Production"
+            },
+            {
+                "name": "Audio",
+                "amount": "4.87",
+                "description": "Audio"
+            },
+            {
+                "name": "Project Coordination & Management",
+                "amount": "10",
+                "description": "Project Coordination & Management"
+            },
+            {
+                "name": "Miscellaneous",
+                "amount": "3.10",
+                "description": "Miscellaneous\n"
+            },
+            {
+                "name": "Taxes And Fees",
+                "amount": "10.29",
+                "description": "Taxes And Fees"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Delivery of the first episode",
+                "description": "Within 4 months of proposal acceptance."
+            }
+        ]
+    },
+    "description": "The proposal seeks funding of $95,000 USDC to create the first episode of a 13-episode animated series centered around Nouns, featuring a thrilling and magical adventure within a school setting. The series follows five friends who, after the school day ends, discover a magical world filled with challenges, puzzles, and incredible adventures. Each episode will impart valuable lessons about friendship, courage, and teamwork, emphasizing the power of unity and trust.\n\nThe target audience for the series is children aged 7-11, aiming to inspire them through relatable characters, engaging stories, and meaningful dialogue. The show maintains a family-friendly atmosphere, exploring themes such as friendship, adventures, and romance. Additionally, it subtly introduces educational elements, including web3, blockchains, and DAOs, to familiarize young viewers with these complex topics.\n\nJux Animation Studio, an established animation company with a strong track record, will be responsible for the production, drawing upon a vast network of skilled professionals worldwide. The core team includes Marcello Laruccia (Animation Director), Victor Canela (Lead Writer), and Bruno Tedesco (Animation Supervisor). The production timeline targets the delivery of the first episode within four months after proposal acceptance, with subsequent episodes requiring shorter production periods due to groundwork already completed.\n\nDistribution plans involve uploading the series to a dedicated YouTube channel, aiming to capture a substantial viewership and fanbase within the children's content audience. Additionally, the first episode will be minted via a droposal, with all funds returning to the DAO through a community poll to determine the mint price. If successful, this approach could lead to significant revenue for the DAO.\n\nLooking to the future, the team envisions building the project into something bigger, exploring potential distribution deals with TV channels and streaming providers. They also plan to partner with established companies for merchandising and toys featuring the series characters, creating an additional revenue stream for the series and the DAO.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/P6anXPg.jpeg",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Nouns Animated Series - First Episode Creation",
+    "id": "340"
+}

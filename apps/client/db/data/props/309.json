@@ -1,0 +1,78 @@
+{
+    "team": [
+        {
+            "name": "Metaverse Publishing",
+            "what": "Publisher and creator of the NFT Yearbook",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/nft_yearbook"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": 88.6815,
+        "items": [
+            {
+                "name": "Commission for NOUNS Limited Edition Cover",
+                "amount": 3,
+                "description": "Allocation for commissioning an artist to create three different versions of the limited edition cover",
+                "nouns": null
+            },
+            {
+                "name": "Production and Delivery of Books",
+                "amount": 85.6815,
+                "description": "Allocation for the production and delivery of the NFT Yearbooks",
+                "nouns": 717
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Completion of Community Content (May 2023)",
+                "description": "Gather and review community submissions, including NOUNSDAO, and incorporate them into the book"
+            },
+            {
+                "name": "Physical Printing of the Books (June/July 2023)",
+                "description": "Print the NFT Yearbook"
+            },
+            {
+                "name": "Shipping (End of July 2023)",
+                "description": "Prepare for shipping and begin shipping the NFT Yearbooks to customers"
+            }
+        ]
+    },
+    "description": "The NFT Yearbook project is an innovative initiative to preserve and celebrate the vibrant, diverse, and rapidly evolving web3 community. By incorporating NOUNS DAO into this historical chronicle and funding the placement of 100 books in strategic libraries around the world, we are not only recognizing the significant role of the DAO and its members in shaping the web3 landscape, but we are also furthering our commitment to diversity, equality, inclusivity and building a community-driven narrative of the amazing world of web3.",
+    "categories": [
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_626e03a90e9b672b2242d63b8bf0b6ad.jpg?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690826768&Signature=sUTcnLPrhuR7WLMhBycI0zoEN%2FQ%3D",
+    "project": {
+        "name": "NFT Yearbook Project",
+        "description": "The NFT Yearbook is a pioneering project that captures the web3 narrative from the perspective of those actively building it.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NFT Yearbook Prop WORKING DRAFT",
+    "id": "309"
+}

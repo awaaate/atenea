@@ -1,0 +1,122 @@
+{
+    "team": [
+        {
+            "name": "Fabioseva",
+            "what": "Coordination and Design",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/eusou_jp"
+                }
+            ],
+            "walletAddress": "fabioseva.eth"
+        },
+        {
+            "name": "JP",
+            "what": "Operations and Marketing",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 47000,
+        "items": [
+            {
+                "name": "New regions 📍",
+                "amount": "14",
+                "description": "Label printing, marketing material, initial sample distribution, and post-production FOR EACH of our partners",
+                "nouns": 6
+            },
+            {
+                "name": "Proper marketing in Brazil 🇧🇷",
+                "amount": "9001",
+                "description": "Big impact at main and side events, including Public Good Beer distribution, marketing materials, activations, and professional quality media production",
+                "nouns": 2
+            },
+            {
+                "name": "New product categories 👀",
+                "amount": "5.92",
+                "description": "Budget to work on BBQ sauces and Sunscreen as the project progresses",
+                "nouns": 1
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Public Good brand development",
+                "description": "Brand development for Public Good beer"
+            },
+            {
+                "name": "Prospecting partners",
+                "description": "Searching for potential partners for the project"
+            },
+            {
+                "name": "cc0 beer recipe creation",
+                "description": "Creation of the cc0 beer recipe"
+            },
+            {
+                "name": "Label design and production",
+                "description": "Design and production of Public Good beer labels"
+            },
+            {
+                "name": "Canning of 3500 cans of Public Good IPA",
+                "description": "Canning of 3500 cans of Public Good IPA beer"
+            },
+            {
+                "name": "Website creation (access now)",
+                "description": "Creation of a website for Public Good beer"
+            },
+            {
+                "name": "Metaverse onboarding experience by Voidge (access now)",
+                "description": "Creating a metaverse onboarding experience by Voidge"
+            },
+            {
+                "name": "NFT airdrop for supporters and buyers",
+                "description": "Airdropping NFTs for supporters and buyers"
+            },
+            {
+                "name": "Lens handle airdrop for early supporters",
+                "description": "Airdropping Lens handles for early supporters"
+            },
+            {
+                "name": "Free technical consulting and upgrade of company e-commerce to accept cryptocurrencies",
+                "description": "Technical consulting and upgrade of e-commerce to accept cryptocurrencies"
+            },
+            {
+                "name": "Launch Campaign with influencers funded by Food Nouns (0.25 ETH) and Cryptoadz (0.25 ETH)",
+                "description": "Launching a campaign with influencers funded by Food Nouns and Cryptoadz"
+            },
+            {
+                "name": "2 main crypto events sponsorship in Brazil",
+                "description": "Sponsoring two main crypto events in Brazil"
+            }
+        ]
+    },
+    "description": "The proposal is about a brand called Public Good, which was born from the culture of cc0 (Creative Commons Zero) and public good. The brand aims to bring this culture into the world of consumer products. The first phase of the project has been completed successfully without funding from NounsDAO.",
+    "categories": [
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Public Good Beer Project",
+        "description": "A project to spread the CC0 culture and bring companies on board with Public Good Beer",
+        "proposals": [
+            {
+                "proposalId": "323"
+            }
+        ]
+    },
+    "title": "Public Good global expansion 🍺",
+    "id": "323"
+}

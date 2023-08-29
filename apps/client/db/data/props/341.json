@@ -1,0 +1,136 @@
+{
+    "team": [
+        {
+            "name": "Nouns Esports",
+            "what": "Established Nouns Esports in Proposal 68.",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/PartSasquatch"
+                }
+            ],
+            "walletAddress": "nounsesports.eth"
+        },
+        {
+            "name": "Brennen",
+            "what": "Contributor",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Maty.eth",
+            "what": "Contributor",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "maty.eth"
+        },
+        {
+            "name": "Oni",
+            "what": "Contributor",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "apenoun.eth"
+        },
+        {
+            "name": "Peter",
+            "what": "Contributor at Nouns Esports",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Sasquatch",
+            "what": "Founder & contributor at Nouns Esports",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "19.05",
+        "items": [
+            {
+                "name": "Player Funding",
+                "amount": "14.29",
+                "description": "Funding to sponsor players' travel and lodging",
+                "nouns": 810000
+            },
+            {
+                "name": "Pizza Party/Social Event",
+                "amount": "0",
+                "description": "Funding for the social event, including food, drinks, and venue",
+                "nouns": 108000
+            },
+            {
+                "name": "Operational Management and Support",
+                "amount": "3",
+                "description": "Costs for contributors, organizers' travel, and miscellaneous expenses",
+                "nouns": 162000
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Select Players",
+                "description": "Choose players through Prop House based on skill and needs"
+            },
+            {
+                "name": "Nouns Team-Building Event",
+                "description": "Organize a Pizza Party during EVO"
+            },
+            {
+                "name": "Planned Media Coverage",
+                "description": "Capture photos and videos to promote Nouns Esports"
+            },
+            {
+                "name": "start.gg Affiliation",
+                "description": "Encourage players to register with Nouns custom tag"
+            }
+        ]
+    },
+    "description": "Nouns Esports, an established esports organization, aims to expand its reach into the world of fighting games by sponsoring a group of 30-40 fighting game players to attend EVO, the world's largest fighting game tournament taking place from Aug 4th to the 6th, 2023. The organization is requesting 36,000 USDC to cover the sponsorship expenses.\n\nTheir plan includes providing Nouns-branded apparel, organizing a team-building/social event during EVO, planned media coverage, and affiliating with start.gg by using a custom tag. The proposed funding plan allocates approximately 75% of the budget for player funding (300 USDC for North American players and 800 USDC for international players), 10% for the social event (potentially in collaboration with PizzaDAO), and 15% for operational management and support.\n\nEVO is chosen as it is a massive event with thousands of participants and millions of viewers globally, offering an excellent opportunity to showcase the Nouns Esports brand and values to a new community. The organization aims to sponsor players based on their skill and needs, providing financial support to talented players who might not have the opportunity otherwise. Successful sponsorship could lead to positive PR and brand exposure.\n\nThe Nouns Esports team consists of several members, and they plan to use the existing multisig for financial operations.\n\nIn conclusion, Nouns Esports is eager to make a significant impact in the fighting game esports scene, building a strong relationship with the community and promoting their Nounish values to both players and viewers alike.",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://imgur.com/Xs9lUCU",
+    "project": {
+        "name": "Nouns Esports ",
+        "description": "Expanding Nouns Esports into the world of fighting games.",
+        "proposals": [
+            {
+                "proposalId": "68"
+            },
+            {
+                "proposalId": "91"
+            },
+            {
+                "proposalId": "112"
+            },
+            {
+                "proposalId": "119"
+            },
+            {
+                "proposalId": "343"
+            }
+        ]
+    },
+    "title": "Establish Nouns FGC (Fighting Game Community) at EVO 2023",
+    "id": "341"
+}

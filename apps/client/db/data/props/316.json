@@ -1,0 +1,85 @@
+{
+    "team": [
+        {
+            "name": "NOUNWORKS",
+            "what": "Veteran manufacturer in the Nouns ecosystem",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/nounworks"
+                }
+            ],
+            "walletAddress": "0xd97bcd9f47cee35c0a9ec1dc40c1269afc9e8e1d"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "30.65",
+        "items": [
+            {
+                "name": "Lo-Fi Noggles Production",
+                "amount": "11.83",
+                "description": "Production of 25,000 Lo-Fi Noggles",
+                "nouns": null
+            },
+            {
+                "name": "Shipping Costs",
+                "amount": "18.82",
+                "description": "Average shipping cost per carton of 1000 units",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Step 1",
+                "description": "Decide who gets what"
+            },
+            {
+                "name": "Step 2",
+                "description": "Produce more Lo-Fi paper Noggles"
+            },
+            {
+                "name": "Step 3",
+                "description": "Ship worldwide"
+            },
+            {
+                "name": "Step 4",
+                "description": "Remaining units held in USA for future use"
+            }
+        ]
+    },
+    "description": "NOUNWORKS is a veteran manufacturer in the Nouns ecosystem with a proven pipeline for delivering quality products. They are requesting funding to create another run of Lo-Fi Noggles, aiming to supply 25,000+ units for large-scale IRL events. The plan includes deciding who receives the Noggles, producing them in a flat-packed format, and shipping them worldwide to various Nounish communities.",
+    "categories": [
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Community"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_357e598839edb678388dd3119f050f69.jpeg?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690824305&Signature=4%2Fc1l2SZgOzU9TJtnix%2F%2BDZyumk%3D",
+    "project": {
+        "name": "Noggles for Nounish Events",
+        "description": "Project aimed at providing Lo-Fi Noggles to Nounish communities for their IRL events.",
+        "proposals": [
+            {
+                "proposalId": "316"
+            }
+        ]
+    },
+    "title": "Expanding Global Distribution of Lo-Fi Noggles",
+    "id": "316"
+}

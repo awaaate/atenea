@@ -1,0 +1,94 @@
+{
+    "team": [
+        {
+            "name": "Rafael Feitelberg",
+            "what": "CEO",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/rafaelfeitelberg"
+                }
+            ],
+            "walletAddress": "0x18b9D06c12c8b9aD87C1D069eAD058bFE3Be19d3"
+        },
+        {
+            "name": "Ben Tritt",
+            "what": "CCO",
+            "socialmediaHandles": [],
+            "walletAddress": "0x4f2acdc74f6941390d9b1804fabc3e780388cfe5"
+        }
+    ],
+    "budget": {
+        "totalAmount": "252.17",
+        "items": [
+            {
+                "name": "Hardware Development and Fabrication",
+                "amount": "44.61",
+                "description": "Development of a custom creative interface for Nouns DAO and the construction of a Nouns-sponsored Matr Labs rack"
+            },
+            {
+                "name": "Software & UI Development",
+                "amount": "49.47",
+                "description": ""
+            },
+            {
+                "name": "Web3 Development & Tokenization",
+                "amount": "15.06",
+                "description": ""
+            },
+            {
+                "name": "Team and Overhead",
+                "amount": "51.62",
+                "description": ""
+            },
+            {
+                "name": "Art Production Materials & Shipping/Handling",
+                "amount": "42.48",
+                "description": ""
+            },
+            {
+                "name": "Event Production",
+                "amount": "34.95",
+                "description": ""
+            },
+            {
+                "name": "Marketing and Comms",
+                "amount": "13.98",
+                "description": ""
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Summer Development",
+                "description": "Use community Nouns as test materials during the summer development process"
+            },
+            {
+                "name": "Launch Token-gated Nouns website",
+                "description": "Officially launch the token-gated Nouns website for the community to start generating works"
+            }
+        ]
+    },
+    "description": "Our proposal aims to MATR 1,001 Nouns and distribute them globally to their respective holders. Each Noun-holding wallet will be airdropped a Matr Labs token that can be redeemed for a physical. We will update the metadata of the token upon redemption with a hi-res image of the Matr'd Noun, which will provide a digital Certificate of Authenticity for each physical piece of art. We will promote this effort through social channels and allocate secondary royalties of the Matr Labs x Nouns token to the Nouns treasury.",
+    "categories": [
+        {
+            "name": "Art"
+        }
+    ],
+    "coverImage": "https://i.postimg.cc/bvysn37N/image15.png",
+    "project": {
+        "name": "Matr Labs Platform",
+        "description": "Newly developed art-making software and scaled-down versions of large machines.",
+        "proposals": [
+            {
+                "proposalId": "Prop 224"
+            },
+            {
+                "proposalId": "New Prop"
+            }
+        ]
+    },
+    "title": "Artmatr x Nouns - 1,001 Nouns",
+    "id": "301"
+}

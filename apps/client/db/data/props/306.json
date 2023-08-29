@@ -1,0 +1,101 @@
+{
+    "team": [
+        {
+            "name": "Danny Schlitz",
+            "what": "Nouns Town crew member",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/JoshuaFisher"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Adam",
+            "what": "Nouns Town crew member",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Bennet",
+            "what": "Nouns Town crew member",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Joshua Fisher",
+            "what": "Nouns Town crew member",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/joshua_nounstown"
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "30.93",
+        "items": [
+            {
+                "name": "Creating, Printing and Shipping 2,500 Nouns Sketch Books",
+                "amount": "8.07",
+                "description": "Nouns sketch books with pages from the Nouns comic book, coloring pages, how to draw Nouns, and blank pages."
+            },
+            {
+                "name": "Commission Payments for 100+ Commissions",
+                "amount": "16.14",
+                "description": "Payments for commissioned work from over 100 creators at the San Diego Comic Con."
+            },
+            {
+                "name": "Management and Facilitation by Adam, Josh, Danny & Bennet",
+                "amount": "6.72",
+                "description": "Travel and per diem costs for managing the facilitation of books and creators, as well as scanning the art pieces for the DAO afterward."
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Go to San Diego Comic Con",
+                "description": "Connect with as many creatives as possible, get them to do commissioned work in a special Nouns sketch book."
+            },
+            {
+                "name": "Aim for over 100 creators' commissions",
+                "description": "Obtain commissioned artwork from premier artists and traditional artists to introduce Nouns to a broader audience."
+            },
+            {
+                "name": "Create inroads for further exploration",
+                "description": "Establish connections with artists and lay the foundation for future collaborations."
+            }
+        ]
+    },
+    "description": "The Nouns Town crew will head to SD Comic Con to gift 2,500 Nouns Activity Books to artists and collectors, commission 100+ Nounish artworks from industry pros, and proliferate the meme through friends and peer collaborations. The total cost is $57,500.00.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Community"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Nouns Town Comic Con Project",
+        "description": "Promotion of Nouns through collaborations with creators at San Diego Comic Con.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "SNP - SD Comic Con: Connecting a Cornucopia of Creators",
+    "id": "306"
+}

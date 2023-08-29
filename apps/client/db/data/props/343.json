@@ -1,0 +1,85 @@
+{
+    "team": [
+        {
+            "name": "Voadz",
+            "what": "Design, Data & Operation",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/0xNeroOne"
+                }
+            ],
+            "walletAddress": "voadz.eth"
+        },
+        {
+            "name": "Nero",
+            "what": "Design & Engineering",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 25,
+        "items": [
+            {
+                "name": "3 months to continue the development (2 Full-timers, August '23 - October '23)",
+                "amount": 20,
+                "description": "Development of cc0-lib",
+                "nouns": null
+            },
+            {
+                "name": "Operational costs",
+                "amount": 5,
+                "description": "Operational costs of running the website",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Collect & Store",
+                "description": "Build a platform to gather all nounish cc0 materials & contents in one location for easy access and use.\nSupport a wide range of file types, including images, videos, audio, 3D models, figma files, and PDFs.\nProvide a sitemap for better information accessibility and an overview of the contents.\nUse the Arweave network for permanent storage due to its one-time fee structure.\nOrganize and categorize content, including cc0-lib-3d, cc0-lib-working-files, and cc0-lib-random.\nExpect a significant addition to the cc0 library by receiving open-source nounish hardware & schematics files from Tigris and other contributors, such as Noggles LED Keychain, Nouns Governance Wallet, USB E-Ink Displaying Daily Nouns & Props, Etch-A-Sketch, Noggles Speakers, and Nouns Camera, which will attract more builders to the platform."
+            },
+            {
+                "name": "Distribute ",
+                "description": "Offer an instant & user-friendly search feature for quick access to the content users need.\nAllow users to favorite contents for later use and easily access them on the main page.\nProvide a comment section on every content and integrate with Farcaster, a decentralized social network, to display responses from users.\nEnable search persistence, allowing users to retain their search history.\nProvide RSS feeds for easy content consumption and integration with external platforms.\nImplement features like cc0-lib-fav and cc0-lib-comment to enhance the user experience."
+            },
+            {
+                "name": "Contribute ",
+                "description": "Offer a submission page for builders and artists to share their project materials within the ecosystem.\nEncourage users to remix and shape new ideas using the materials in any medium they prefer.\nIntroduce a contributor's leaderboard to gamify the experience and encourage active participation in the ecosystem.\nPlan to create a token rewards system for contributors, providing incentives based on their level of contribution. This may involve tying unique NFTs to different contribution levels, organizing challenges or competitions, and distributing participation NFTs for special rounds."
+            },
+            {
+                "name": "Public API",
+                "description": "Announce the introduction of a public API under the /api/data endpoint.\nEnable developers to access a wide range of data, including images, videos, audio files, and more.\nEncourage integration of high-quality CC0 licensed content into various applications, websites, and creative projects with ease."
+            },
+            {
+                "name": "Upcoming Enhancements",
+                "description": "Integrate user profiles and Web3 connect for enhanced user engagement and identity.\nImplement bookmark/pin functionality to enable users to save and revisit their favorite content more conveniently.\nFurther develop the token rewards system for contributors to strengthen incentives and engagement.\nConsider open-sourcing the cc0-lib platform to foster community collaboration and growth.\nExplore the expansion of cc0-lib to include more CC0 communities and diverse content to cater to various interests and preferences."
+            }
+        ]
+    },
+    "description": "cc0-lib is a search engine and repository for cc0 media, focused on the Nouns DAO ecosystem. The platform aims to help artists and builders distribute their cc0 content within the Nouns ecosystem, while also benefiting others by allowing them to contribute, browse, remix, and use the content for their own projects. The platform offers various benefits, including access to a vast collection of CC0 resources, easy searchability, showcasing creativity from the Nouniverse, and incentivizing builders through token rewards.\n\nThe proposal requests 25 ETH to continue the development of cc0-lib for the next three months (August '23 - October '23), and outlines the platform's key features such as collecting and storing cc0 materials, offering a user-friendly search feature, providing a submission page for contributors, introducing a contributor's leaderboard, and implementing a token rewards system. Additionally, the platform has introduced a public API for developers to access CC0 licensed content.\n\nUpcoming enhancements include user profiles with Web3 connect, bookmark/pin functionality, open-sourcing, and integration with more cc0 communities. The team behind cc0-lib includes Voadz, Nouncillor, and Nero One.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "cc0-lib.wtf - A Nounish Public Goods CC0 Library",
+    "project": {
+        "name": "cc0-lib",
+        "description": "We are building a platform where we gather all nounish cc0 materials & contents in one location for easy access and use.",
+        "proposals": [
+            {
+                "proposalId": "343"
+            }
+        ]
+    },
+    "title": "cc0-lib.wtf - A Nounish Public Goods CC0 Library",
+    "id": "343"
+}

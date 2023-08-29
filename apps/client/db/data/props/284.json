@@ -1,0 +1,64 @@
+{
+    "team": [
+        {
+            "name": "Snax",
+            "what": "PizzaDAO Founder",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/snack_man"
+                }
+            ],
+            "walletAddress": "0xBA5E28a2D1C8cF67Ac9E0dfc850DC8b7b21A4DE2"
+        }
+    ],
+    "budget": {
+        "totalAmount": "22.91",
+        "items": [
+            {
+                "name": "Nouns Pizza Party Kits",
+                "amount": "2.84",
+                "description": "Plastic Noggles, Paper Noggles, Noggle Pins"
+            },
+            {
+                "name": "Pizzas",
+                "amount": "19",
+                "description": "Funds to purchase pizza for events"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Co-branding marketing materials, events, and media",
+                "description": "Reaching tens of thousands of participants globally"
+            },
+            {
+                "name": "Nounish Pizza Parties Proliferation",
+                "description": "Furthering Nouns OTG presence at PizzaDAO events through pizza"
+            },
+            {
+                "name": "Nounish Social Activation",
+                "description": "Nouns x PizzaDAO claimable NFT for event participants and online proliferators"
+            }
+        ]
+    },
+    "description": "We want to “Nounify” the world’s largest (decentralized) pizza party! We’re requesting $42,000 in funding to support PizzaDAO’s third global pizza party for Bitcoin Pizza Day on May 22, 2023. Through this grant, we’re seeking to co-brand Nouns x PizzaDAO’s Bitcoin Pizza Day events currently being organized in 90+ cities around the globe. All funds collected through this grant will go towards purchasing pizza from independent pizzerias on Bitcoin Pizza Day for our pizza parties all over the world.",
+    "categories": [
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://i.postimg.cc/8CgTFnjF/Group-10-1-1.png",
+    "project": {
+        "name": "PizzaDAO",
+        "description": "PizzaDAO is a cc0 project founded by the decentralized autonomous organization PizzaDAO. It aims to use crypto to empower pizzerias and build solutions for independent pizzerias through software, marketing, consulting, and more. They also conduct token-raises to enable communities to buy out their local pizzeria's landlord and sign a rental contract with the pizzeria.",
+        "proposals": [
+            {
+                "proposalId": "PizzaDAO2023Proposal"
+            }
+        ]
+    },
+    "title": "Let’s Throw a Global Pizza Party! Nouns x PizzaDAO",
+    "id": "284"
+}

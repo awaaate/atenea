@@ -1,0 +1,24 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 0,
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "This proposal increases the proposal threshold from 25 -> 30bps. Success of this proposal means 3 Nouns are required to submit a proposal to the DAO until Noun 1000. This is approximately ~263 days^.\n\nBy increasing the proposal threshold, we should expect an overall reduction in the number of proposals submitted. While this may lead to a lower number of submitted proposals, widespread use of delegation will allow the highest quality proposals to be submitted, and sufficiently mitigate these concerns. An additional benefit is a lower risk of voter fatigue.\n\n^ At the time of this proposal it is currently Noun 707. The proposal threshold would be >3 at Noun 1000. There are 293 Nouns until then. At a minting rate of 1.1 a day (accounting the for the Nounder reward), this results in approximately 263 days.",
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Set Proposal Threshold",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Set Proposal Threshold to 30bps",
+    "id": "294"
+}

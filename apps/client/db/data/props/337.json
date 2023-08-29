@@ -1,0 +1,92 @@
+{
+    "team": [
+        {
+            "name": "Nerman.js Development Team",
+            "what": "Development of Nerman.js and Nounish event feed Discord bot",
+            "socialmediaHandles": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/nerman"
+                }
+            ],
+            "walletAddress": "0x09b68020Fb9691C2c20687631EDCF16fdFCba277"
+        },
+        {
+            "name": "Joel Cares",
+            "what": "Part-time strategy & development",
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 26,
+        "items": [
+            {
+                "name": "Development Costs",
+                "amount": 20,
+                "description": "Funding for development work",
+                "nouns": null
+            },
+            {
+                "name": "Optimization and SEO",
+                "amount": 4,
+                "description": "SEO research and optimization",
+                "nouns": null
+            },
+            {
+                "name": "Additional Features",
+                "amount": 2,
+                "description": "BONUS: Development of additional features",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Continued Development of Nerman.js",
+                "description": "Continued development of Nerman.js library and its features"
+            },
+            {
+                "name": "Nounish Event Feed Discord Bot",
+                "description": "Enhancements and improvements to the Nounish event feed Discord bot"
+            },
+            {
+                "name": "Indexing On-chain Nouns Data",
+                "description": "Implementation of indexing on-chain Nouns data"
+            },
+            {
+                "name": "Documentation",
+                "description": "Creating comprehensive documentation on Nerman.wtf"
+            },
+            {
+                "name": "Discord Forum Integrations",
+                "description": "Integration of Discord forums for Nouns DAO proposals"
+            },
+            {
+                "name": "Additional Features (Bonus Points)",
+                "description": "BONUS: Implementation of additional features"
+            }
+        ]
+    },
+    "description": "This proposal aims to continue the development of Nerman.js and the Nounish event feed Discord bot for the Nouniverse. The team will focus on improving Nerman.js, indexing on-chain Nouns data, and providing comprehensive documentation on Nerman.wtf. Additionally, they will work on integrating Discord forums for Nouns DAO proposals and implement bonus features.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/bZhHfhr.png",
+    "project": {
+        "name": "Nerman.js - Nounish Event Feed Discord Bot",
+        "description": "Development of Nerman.js and the Nounish event feed Discord bot",
+        "proposals": []
+    },
+    "title": "Nerman.js - A Nouns SDK",
+    "id": "337"
+}

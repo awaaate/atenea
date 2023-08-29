@@ -1,0 +1,147 @@
+{
+    "team": [
+        {
+            "name": "Goldy",
+            "what": "Lead",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "142",
+            "what": "Lead",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "John",
+            "what": "Creative Director / Editor",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Haley",
+            "what": "Executive Producer",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Guy",
+            "what": "Writer / Director / Editor",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Becco",
+            "what": "Writer / Host",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Meline",
+            "what": "Producer / Editor",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Liam",
+            "what": "Editor & VFX",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "bk",
+            "what": "Social Media",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Freelance Helper 1",
+            "what": "Freelance Helper",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Freelance Helper 2",
+            "what": "Freelance Helper",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "528.51",
+        "items": [
+            {
+                "name": "Team Compensation + Fixed Costs",
+                "amount": "421.60",
+                "description": "",
+                "nouns": 0
+            },
+            {
+                "name": "Shoots",
+                "amount": "56.72",
+                "description": "",
+                "nouns": 0
+            },
+            {
+                "name": "Travel ",
+                "amount": "10.91",
+                "description": "",
+                "nouns": 0
+            },
+            {
+                "name": "Legal & Fees",
+                "amount": "7.96",
+                "description": "",
+                "nouns": 0
+            },
+            {
+                "name": "Distribution/growth",
+                "amount": "2.73",
+                "description": ""
+            },
+            {
+                "name": "Prop House",
+                "amount": "20",
+                "description": ""
+            },
+            {
+                "name": "Web development",
+                "amount": "9",
+                "description": ""
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Writing",
+                "description": "Nouns funding Crypto Infra Agora, Prop House, etc."
+            },
+            {
+                "name": "Filming",
+                "description": "Nouns Esports Xanadu"
+            },
+            {
+                "name": "Post production",
+                "description": "Danit Peleg Rose Parade Prop House"
+            }
+        ]
+    },
+    "description": "In the last prop, we turned Pixel, a boutique production company of 10 world-class storytellers, into \"nounish\" - a full-time video production agency working on Nouns. We are only getting started and are seeking to continue funding nounish with the same budget ($969K). ... (The rest of the text has been truncated for brevity.)",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Art"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/mM1n6tk.png",
+    "project": {
+        "name": "Nounish",
+        "description": "The Nounish team is a professional team with experience in producing high-quality content. ",
+        "proposals": []
+    },
+    "title": "Retain nounish for 6 months ⌐◨-◨",
+    "id": "289"
+}

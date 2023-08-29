@@ -1,0 +1,29 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 5678,
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Buy Alien Punk",
+                "description": "Buy Alien Punk"
+            }
+        ]
+    },
+    "description": "Buy Alien Punk",
+    "categories": [
+        {
+            "name": ""
+        }
+    ],
+    "coverImage": "https://i.imgur.com/Osw8GaD.png",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Bid on Alien Punk",
+    "id": "330"
+}

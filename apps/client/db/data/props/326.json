@@ -1,0 +1,98 @@
+{
+    "team": [
+        {
+            "name": "Necfas",
+            "what": "Strategy/Content Director/Event Planning",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/miagiulianag"
+                }
+            ],
+            "walletAddress": "necfas.eth"
+        },
+        {
+            "name": "mimix",
+            "what": "Payments/Logistics",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "0xabcdef1234567890"
+        },
+        {
+            "name": "Ruben A.",
+            "what": "Negotiations",
+            "socialmediaHandles": [],
+            "walletAddress": "0x0987654321fedcba"
+        },
+        {
+            "name": "Cristina R.",
+            "what": "Outreach",
+            "socialmediaHandles": [],
+            "walletAddress": "0x9876543210abcdef"
+        },
+        {
+            "name": "Marian J.",
+            "what": "Quotations",
+            "socialmediaHandles": [],
+            "walletAddress": "0xfedcba0987654321"
+        }
+    ],
+    "budget": {
+        "totalAmount": "85.59",
+        "items": [
+            {
+                "name": "MUCHO LOVE LED ACTIVATIONS",
+                "amount": "34.50",
+                "description": "Budget for Mucho Love-led social impact activations"
+            },
+            {
+                "name": "COLLABORATIVE ACTIVATIONS - TECHO",
+                "amount": "37.68",
+                "description": "Budget for collaborative activations with TECHO"
+            },
+            {
+                "name": "Media Production & Content Creation",
+                "amount": "13.46",
+                "description": "Budget for media team and content creation"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Collaborations",
+                "description": "Broadening Mucho Love's reach through strategic partnerships"
+            },
+            {
+                "name": "FULL-TIME MEDIA TEAM",
+                "description": "Establishing a dedicated, full-time media team"
+            },
+            {
+                "name": "EMPOWERING CONTRIBUTORS",
+                "description": "Empowering volunteers and members to take charge of activations"
+            }
+        ]
+    },
+    "description": "Proposal to keep funding Mucho Love over the next 6 months to ensure its sustained growth and expansion as a Nouns-Powered Social Impact Platform.",
+    "categories": [
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_eb5e6d3d33c422db36e5d39eccfe88d4.JPG?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690820132&Signature=NX9lMjSA2ypYOPXb%2B%2FQmIVDlBxk%3D",
+    "project": {
+        "name": "Mucho Love",
+        "description": "Mucho Love's mission is to elevate Nouns as a global beacon of positivity, igniting real change and crafting inspiring stories that touch hearts worldwide.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Mucho Love Funding Proposal",
+    "id": "326"
+}

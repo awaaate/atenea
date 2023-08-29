@@ -1,0 +1,45 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "406.39",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Research & Development",
+                "description": "Conducting research and development on TWAMM concept"
+            },
+            {
+                "name": "Protocol Launch",
+                "description": "Announcing the launch of TWAMM protocol"
+            },
+            {
+                "name": "Integration with Balancer V2 Vaults",
+                "description": "Building TWAMM as a custom pool on top of Balancer V2 Vaults"
+            },
+            {
+                "name": "Partnering with Arbitrageurs",
+                "description": "Teaming up with BloXRoute for dedicated arbitrage service"
+            }
+        ]
+    },
+    "description": "Proposal to fund and support the TWAMM protocol for executing treasury diversification of the Nouns DAO treasury.",
+    "categories": [
+        {
+            "name": "Staking/Yield"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "TWAMM Protocol",
+        "description": "A custom pool on Balancer V2 Vaults for executing large token swaps smoothly over time",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Treasury Diversification: Swap 400 wstETH -> rETH via TWAMM",
+    "id": "275"
+}

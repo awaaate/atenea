@@ -1,0 +1,20 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": "15",
+        "items": []
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "The voteRefund function is important for the health and integrity of the DAO as it helps maintain a diverse voter base and combat voter apathy.\n\nThe contract was initially funded ~7 months ago with 12 eth. At time of writing ~0.8eth remains, which implies an ongoing cost to the DAO of 1.6 eth per month.\n\nAs the DAO continues to grow, with more voters and more proposals, it is likely that the rate at which the voteRefund balance is depleted will also increase.\n\nI propose we top up the contract with another 15 eth.\n\nRecap of how this feature works:\n\nVote with Gas Refund allow Nouners and delegates to vote and receive a gas refund.\nRefunds are subject to certain constraints:\nGas base fee is capped at 200 gwei.\nGas priority fee is capped at 2 gwei.\nTotal gas is capped at 200K, supporting voting reason text up to roughly 9,190 characters.\nIf the contract’s balance is insufficient, voter will receive a partial refund.\nThis feature requires the DAO to maintain the DAO contract’s ETH balance, which should be done via periodic ETH transfer proposals from the treasury to the DAO contract (this proposal performs the first funding).\nThe DAO can choose to withdraw refund ETH back into the treasury at any time via a proposal.\nInitially implemented and funded here:\nhttps://nouns.wtf/vote/152",
+    "categories": [],
+    "coverImage": "",
+    "project": {
+        "name": "voteRefund",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Refill voteRefund balance",
+    "id": "292"
+}

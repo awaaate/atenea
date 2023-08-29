@@ -1,0 +1,58 @@
+{
+    "team": [
+        {
+            "name": "Arash Negahban",
+            "what": "Co-founder, Video Game Developer",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/ArashSlacker"
+                }
+            ]
+        },
+        {
+            "name": "Saeed Abbasi",
+            "what": "Co-founder, Video Game Developer",
+            "walletAddress": "",
+            "socialmediaHandles": []
+        }
+    ],
+    "budget": {
+        "totalAmount": "50",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Early Access Version Release",
+                "description": "Release the early access version of the game after 6 months"
+            },
+            {
+                "name": "Final Release",
+                "description": "Complete the development of the game after 6 months from the early access release"
+            }
+        ]
+    },
+    "description": "We're proposing to build a mobile platformer game with 700 levels in which we introduce players to nounish concepts and educate them on Nouns DAO and adjacent extensions while playing through fun and engaging maps.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/egqCNYh.jpeg",
+    "project": {
+        "name": "Nounish Playground Game",
+        "description": "Mobile platformer game with nounish concepts",
+        "proposals": [
+            {
+                "proposalId": "proposal123"
+            }
+        ]
+    },
+    "title": "Nounish Playground - The Game",
+    "id": "276"
+}

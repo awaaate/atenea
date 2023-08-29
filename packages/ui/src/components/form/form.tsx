@@ -136,7 +136,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn("text-sm text-text-weak", className)}
+      className={cn("text-sm text-text-weaker", className)}
       {...props}
     />
   );
@@ -166,7 +166,12 @@ const FormMessage = React.forwardRef<
 });
 FormMessage.displayName = "FormMessage";
 
-export { useForm, useFormContext } from "react-hook-form";
+export {
+  useForm,
+  useFormContext,
+  useFieldArray,
+  type Control,
+} from "react-hook-form";
 export { zodResolver } from "@hookform/resolvers/zod";
 export {
   useFormField,

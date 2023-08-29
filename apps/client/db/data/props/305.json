@@ -1,0 +1,139 @@
+{
+    "team": [
+        {
+            "name": "Borna Ćorić",
+            "what": "Co-founder",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/bornacoric"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Bruna Ćorić",
+            "what": "Co-founder & CCO",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Bruno Pliso",
+            "what": "Co-founder & CEO",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Nina Turudic",
+            "what": "Creative Director",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Ivan Turudic",
+            "what": "Finance & Operations",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Karlo Brdek",
+            "what": "CTO",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Sven Stanko",
+            "what": "CMO",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Fran Brajcic",
+            "what": "NFT Advisor, Dapper VP",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Shan Kumar",
+            "what": "Web3 Consultant",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "45.17",
+        "items": [
+            {
+                "name": "Noggles and NounsTennisFam (NTF) branded jerseys",
+                "amount": "10.75",
+                "description": "To be worn by co-founder Borna Ćorić in grand slams and other major events"
+            },
+            {
+                "name": "Develop the NounsTennisFam platform",
+                "amount": "16.13",
+                "description": "To support up-and-coming athletes through funding and issuance of digital collectibles"
+            },
+            {
+                "name": "Support underprivileged communities",
+                "amount": "4.30",
+                "description": "To ensure that economics do not stand in the way of talent"
+            },
+            {
+                "name": "Marketing and growth",
+                "amount": "8.60",
+                "description": "To increase brand awareness and user acquisition"
+            },
+            {
+                "name": "Roadmap and Milestones",
+                "amount": "5.38",
+                "description": "To achieve project goals and key objectives"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Platform development",
+                "description": "Start in Q2 2023, beta launch planned for Q4 2023"
+            },
+            {
+                "name": "Selection process for the talent program",
+                "description": "Start in Q4 2023"
+            },
+            {
+                "name": "Issuance of NFTs representing prospects",
+                "description": "Start in Q4 2023"
+            },
+            {
+                "name": "Signed prospect player and limited collection",
+                "description": "Q4 2023"
+            },
+            {
+                "name": "Sign established tennis pro and limited collection",
+                "description": "Q4 2023"
+            },
+            {
+                "name": "Community Event at the AO",
+                "description": "Q1 2024"
+            },
+            {
+                "name": "Community event at Meneghetti Wine Hotel and The Croatia Open",
+                "description": ""
+            },
+            {
+                "name": "Event & Exhibition at the Roland Garros",
+                "description": "Q3 2024"
+            }
+        ]
+    },
+    "description": "NounsTennisFam is set to revolutionize the tennis industry through blockchain technology and democratization of the sport by providing fair compensation for investors and talent. With the goal of becoming a cornerstone of the global tennis market valued at $5.6 billion, NounsTennisFam aims to represent athletes and connect fans under the NounsDAO banner in front of millions of fans worldwide. The collaboration presents a tremendous opportunity for NounsDAO to gain incredible exposure before a global audience and create lasting value for the brand while supporting emerging prospects and established professionals in the tennis industry.",
+    "categories": [],
+    "coverImage": "",
+    "project": {
+        "name": "NounsTennisFam",
+        "description": "A Web3 sports platform revolutionizing the tennis industry",
+        "proposals": []
+    },
+    "title": "NounsTennisFam - Revolutionizing Tennis on the Blockchain",
+    "id": "305"
+}

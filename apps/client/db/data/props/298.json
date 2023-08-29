@@ -1,0 +1,70 @@
+{
+    "team": [
+        {
+            "name": "fiveoceans_dev",
+            "what": "Initiator and proposer of Noun Computers",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/fiveoceans_dev"
+                }
+            ],
+            "walletAddress": "0xDf6e59c6DF1E9500fd35A76FF4C62F9901E90019"
+        }
+    ],
+    "budget": {
+        "totalAmount": "140",
+        "items": [
+            {
+                "name": "fiveoceans_dev's compensation",
+                "amount": "32.76",
+                "description": "Compensation for fiveoceans_dev to work full-time on Noun-Computers project",
+                "nouns": 0
+            },
+            {
+                "name": "Schematics peer review fees, bill of materials, test samples, and prototypes manufacturing cost",
+                "amount": "87.36",
+                "description": "Expenses for the peer review of schematics, bill of materials, test samples, and manufacturing prototypes of Noun Computers",
+                "nouns": 0
+            },
+            {
+                "name": "Prize money for ETH global hackathon",
+                "amount": "8.19",
+                "description": "Prize money for the best Ethereum app using Noun Computer at the ETH global hackathon",
+                "nouns": 0
+            },
+            {
+                "name": "Hackathon organizational expenses",
+                "amount": "8.19",
+                "description": "Expenses for travel and accommodation of competition organizers and judges for the ETH global hackathon",
+                "nouns": 0
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Prototyping",
+                "description": "Design and manufacture Noun-Computer prototypes from Jun to Aug 2023. Bring Noun Computers to ETH Global hackathon and organize a hacking competition from Sep to Nov 2023."
+            }
+        ]
+    },
+    "description": "Introducing Noun Computers! This proposal aims to fund the development of credit card-sized computers ideal for Ethereum staking. The project's focus is on the public good, aiming to unite like-minded developers and propel the nounish culture and memes. The Noun Computers will run Linux OS and be specifically designed for convenient Ethereum staking, blockchain development, and practical programming learning. The proposal outlines the deliverables, timeline, and budget for Phase I, including the compensation for the proposer, peer review fees, and manufacturing costs.",
+    "categories": [
+        {
+            "name": "Tech"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/BibDiu5.png",
+    "project": {
+        "name": "Noun Computers",
+        "description": "Project to develop credit card-sized computers for Ethereum staking and blockchain development",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "Introducing Noun Computers - An Ethereum Node Prototype",
+    "id": "298"
+}

@@ -1,0 +1,78 @@
+{
+    "team": [
+        {
+            "name": "Joel Cares",
+            "what": "Part-time team member",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/JoelCares_"
+                }
+            ],
+            "walletAddress": "0x09b68020Fb9691C2c20687631EDCF16fdFCba277"
+        },
+        {
+            "name": "Dev Team Member 1",
+            "what": "Full-time developer",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Dev Team Member 2",
+            "what": "Full-time developer",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 93,
+        "items": [
+            {
+                "name": "Funding for the team to continue developing Nerman up to Dec 31, 2023",
+                "amount": 93,
+                "description": "ETH funding for team salaries and expenses",
+                "nouns": 0
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Provide and maintain access to events across the Nouniverse",
+                "description": "Index on-chain Nouns data for complicated analysis"
+            },
+            {
+                "name": "Develop a way for automated Nouns DAO prop discussions using forums",
+                "description": "Automatically create new threads for each proposal"
+            },
+            {
+                "name": "Add all Nerman.js events to allow easy Discord notifications",
+                "description": "Experiment with different feed ideas using events"
+            }
+        ]
+    },
+    "description": "Nerman.js aims to continue development of Nerman's bots and libraries, focusing on Nerman.js (Nouns SDK) and Nounish event feeds for Discord. The proposal seeks funding to support the team's efforts up to Dec 31, 2023, and all code will be open source under a permissive license.",
+    "categories": [
+        {
+            "name": "Tech"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/bZhHfhr.png",
+    "project": {
+        "name": "Nerman.js",
+        "description": "Nerman was funded by Nouns DAO through Prop 77. The team has been programming Nerman's bots and libraries, providing type-safe access to Nouns DAO contract events, and custom events. The goal is to become a canonical source of knowledge about the Nouniverse and provide extensive documentation to help developers interact with Nouns contracts and projects.",
+        "proposals": [
+            {
+                "proposalId": "77"
+            },
+            {
+                "proposalId": "319"
+            }
+        ]
+    },
+    "title": "Nerman.js",
+    "id": "319"
+}

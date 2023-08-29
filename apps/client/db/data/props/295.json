@@ -1,0 +1,138 @@
+{
+    "team": [
+        {
+            "name": "Bob Burnquist",
+            "what": "NFT.Brasil Sponsorship",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Vlad (sktbrd.eth)",
+            "what": "Main stage speaker (Aubtoshi)",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Guiriba",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "JP.⌐◨-◨",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Ilustradora",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Debinvest",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "TheSmith",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Fabio Ema",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "Lcsant",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        },
+        {
+            "name": "MarcosX.eth",
+            "what": "Builder",
+            "socialmediaHandles": [],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "22.69",
+        "items": [
+            {
+                "name": "NFT.Brasil Sponsorship",
+                "amount": "8.17",
+                "description": "Sponsorship Package (-5k negotiated discount for ⌐◨-◨ only)",
+                "nouns": null
+            },
+            {
+                "name": "Street Galery",
+                "amount": "10.89",
+                "description": "Eletromedia (OOH media in São Paulo)\n13 days, NFT.Brasil will host the largest open-air NFT exhibition in the world\nOver 1 Million ⌐◨-◨ impressions .\nBig Surprise",
+                "nouns": null
+            },
+            {
+                "name": "Nouns Activation",
+                "amount": "0.91",
+                "description": "Booth Construction and Nounification Costs",
+                "nouns": null
+            },
+            {
+                "name": "Retro Pool",
+                "amount": "1.09",
+                "description": "(for community members who may help during the event)",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Addressing community requests",
+                "description": "We have carefully taken into account the feedback and incorporated changes accordingly."
+            },
+            {
+                "name": "Working within time constraints",
+                "description": "We have evaluated what is feasible within the given timeframe and made adjustments."
+            },
+            {
+                "name": "Lower the Metaverse Activation",
+                "description": "After considering community feedback, we have decided to lower the Metaverse Activation from the proposal."
+            },
+            {
+                "name": "Scaling down the lounge to a booth",
+                "description": "In response to community feedback on the sponsorship price, we have transformed the lounge into a booth. Additionally, we have adjusted the sponsorship package to align with the revised offering."
+            },
+            {
+                "name": "Collaboration with Aubtoshi for merchandise",
+                "description": "Instead of producing our own merchandise, we have decided to collaborate with Aubtoshis and feature their pre-made merchandise."
+            }
+        ]
+    },
+    "description": "Nouns leads the NFT movement in Brazil thanks to its community, but we are just getting started. We are proposing a huge Sao Paulo city takeover starting in NFT.Brasil event. Our goal is to achieve a massive and innovative onboarding experience for all attendees, and to do so, we will be present in five strategic areas throughout the event journey. These include the NFT Exhibition, Speaker Sessions, Booth, Metaverse, and Street Gallery (Eletromedia OOH advertising). NFT.Brasil is a pioneering conference celebrating the cutting-edge advancements and possibilities of the NFT world that is set to take place in Sao Paulo city, Brazil on June 2nd, 3rd, and 4th, 2023.\n\nNFT.Brasil is performed by the same organizers of NFT.Rio, Nouns Community builders (the same people behind Proposals #142, #118 #98) in partnership with MAAC Hub.",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Nouns Brasil",
+        "description": "",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NFT.Brasil Sao Paulo City Takeover",
+    "id": "295"
+}

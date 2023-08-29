@@ -1,0 +1,97 @@
+{
+    "team": [
+        {
+            "name": "Satoshi Nakajima",
+            "what": "Software architect of Windows95 and Founder of Xevo Inc. (Noun245 Owner)",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/nounsfes"
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": 47.1,
+        "items": [
+            {
+                "name": "Planning, Operation, Accounting",
+                "amount": 3.8,
+                "description": "",
+                "nouns": null
+            },
+            {
+                "name": "Website Development",
+                "amount": 7.5,
+                "description": "",
+                "nouns": null
+            },
+            {
+                "name": "Content Management",
+                "amount": 4.2,
+                "description": "",
+                "nouns": null
+            },
+            {
+                "name": "PR Activities",
+                "amount": 4.5,
+                "description": "",
+                "nouns": null
+            },
+            {
+                "name": "Event Expenses",
+                "amount": 3.8,
+                "description": "150,000 yen (theater), Travel and transportation expenses 300,000 yen (awardees), 500,000 yen (others)",
+                "nouns": null
+            },
+            {
+                "name": "Gift Expenses",
+                "amount": 1.3,
+                "description": "",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Announcement",
+                "description": "2023/7/1"
+            },
+            {
+                "name": "Submission Period",
+                "description": "2023/7/10 - 11/30"
+            },
+            {
+                "name": "Nominee Announcement",
+                "description": "2023/12/10"
+            },
+            {
+                "name": "Final Result Announcement (Screening)",
+                "description": "2023/12/21 (tentative)"
+            }
+        ]
+    },
+    "description": "The Nouns Art Festival (NounsFes) is an online film art contest and festival. The first event, held in 2022, was financed by the 5ETH Small Grant from Nouns DAO. Primarily successful in Japan, we're planning to host the second event in 2023. This year, we aim to expand globally and attract more participants than before. The main objectives of the festival include:\n\nSpreading awareness about the importance of a peaceful and sustainable Earth\nMaterializing the \"Public Good\" concept, which is integral to Nouns' principles\nBroadening Nouns' recognition to a wider audience\nIn this proposal, we request a budget of 47.1ETH to accomplish these goals. The details follow.",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://cdn.discordapp.com/attachments/1030992113799798801/1117063447700570234/NounsFesBanerpng.png",
+    "project": {
+        "name": "NounsFes",
+        "description": "NounsFes is an online art festival, conceived by the members of NounsDAO, aiming to educate as many people as possible about the importance of a peaceful and sustainable Earth.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NounsFes 2023",
+    "id": "308"
+}

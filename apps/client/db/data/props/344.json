@@ -1,0 +1,38 @@
+{
+    "team": [
+        {
+            "name": "Unknown",
+            "what": "",
+            "socialmediaHandles": [],
+            "walletAddress": "0x860b328060180b2a14ae5c018aba2dd42d7ab6ba"
+        }
+    ],
+    "budget": {
+        "totalAmount": 5000,
+        "items": [
+            {
+                "name": "Ether Rock Investment",
+                "amount": 5000,
+                "description": "Investment of DAO capital into Ether Rock",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "We have a phenomenal opportunity to invest our hard-earned DAO capital into something even more revolutionary than a punk: Ether Rock.\n\nLook at those misguided souls chasing after that Alien Punk. It's almost sad when we are hold the potential of being the proud stewards of the almost equally illiquid Ether Rock. By voting yes to the Punk and Ether Rock, we can ensure that Nouns' treasury is not only invested with superior illiquidity but also irreversibly lock away our DAO's value forever. It's a foolproof investment strategy.\n\nLet's show the world how truly experimental we are. Embrace the Punk, embrace the Ether Rock! It's not just an investment; it's a lifestyle, a statement, a monument to our collective wisdom.",
+    "categories": [
+        {
+            "name": "Other"
+        }
+    ],
+    "coverImage": "https://i.ibb.co/BNYMqdB/image.png",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Unknown",
+    "id": "344"
+}

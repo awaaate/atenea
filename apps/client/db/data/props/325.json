@@ -1,0 +1,58 @@
+{
+    "team": [
+        {
+            "name": "Luca Netz",
+            "what": "CEO",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/pudgypenguins"
+                }
+            ],
+            "walletAddress": "0x3f8cD3cc58391E704A2A0fab2482B8116Cb9D670"
+        }
+    ],
+    "budget": {
+        "totalAmount": 10,
+        "items": [
+            {
+                "name": "Gold Penguins",
+                "amount": 10,
+                "description": "Adding gold plating to these gold glasses",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "⌐◨-◨ x Pudgy Penguins Launch",
+                "description": "Create 499 Red Penguins and 499 Blue Penguins with the matching Nouns glasses. Retail it for $299 and add 10 total Penguins with Gold glasses treated as a golden ticket."
+            }
+        ]
+    },
+    "description": "NounsDAO x Pudgy Penguins collaboration for a high-end toy collection on NTWRK with a percentage of profits going towards the purchase of a Noun to bring the Huddle into the DAO.",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Physical"
+        },
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "https://pudgypenguins.com/cover.jpg",
+    "project": {
+        "name": "NounsDAO x Pudgy Penguins Collaboration",
+        "description": "Collaboration between NounsDAO and Pudgy Penguins to create a high-end toy collection.",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NounsDAO x Pudgy Penguins Collaboration Proposal",
+    "id": "325"
+}

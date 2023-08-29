@@ -1,0 +1,136 @@
+{
+    "team": [
+        {
+            "name": "Fiveoceans_dev",
+            "what": "T-shirts manufacturing and allocation",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/_duckhead"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Morph",
+            "what": "Onboard and work with coffee shops",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/morphmgmt/"
+                }
+            ],
+            "walletAddress": ""
+        },
+        {
+            "name": "Jhee",
+            "what": "T-shirts design",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "Wallet address of Jhee"
+        },
+        {
+            "name": "Duckhead",
+            "what": "Coffee shops decorations",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "27.80",
+        "items": [
+            {
+                "name": "Manufacture 1,500 t-shirts",
+                "amount": "13.90",
+                "description": "Custom tags with noggles, different styles, artwork press, packaging",
+                "nouns": null
+            },
+            {
+                "name": "Coffee shops' rental fees",
+                "amount": "5.35",
+                "description": "10 coffee shops, 3 months, $330 per month",
+                "nouns": null
+            },
+            {
+                "name": "Logistics & storage",
+                "amount": "1.34",
+                "description": "Ex. 100 t-shirts weight 22 kg or 48 pounds",
+                "nouns": null
+            },
+            {
+                "name": "Tax, signing contracts, outsourcing company's fees",
+                "amount": "1.34",
+                "description": "To conduct business etc",
+                "nouns": null
+            },
+            {
+                "name": "Decorations",
+                "amount": "1.60",
+                "description": "10 t-shirt stands, 100 posters, 10 noggle stamps, 27,000 coupon cards, and others",
+                "nouns": null
+            },
+            {
+                "name": "Photo & video production",
+                "amount": "1.07",
+                "description": "To document progress and share on SNS",
+                "nouns": null
+            },
+            {
+                "name": "Team's compensation",
+                "amount": "3.21",
+                "description": "Four people working with coffee shops, designs, and coordinating campaign",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Legal matters",
+                "description": "1 week"
+            },
+            {
+                "name": "Coffee shop recruitment",
+                "description": "1 week"
+            },
+            {
+                "name": "Decorations/logistics",
+                "description": "1 week"
+            },
+            {
+                "name": "Manufacture 1,500 t-shirts",
+                "description": "3 weeks"
+            }
+        ]
+    },
+    "description": "The proposed stamp-collecting campaign aims to nounify Korea by expanding the local Nouns community and establishing Nouns as a prominent pop culture brand. The campaign will run for three months and collaborate with ten coffee shops to educate people about Nouns and engage them in the process. Participants will collect \"noggle-stamps\" with coffee purchases and redeem coupon cards for stylish nounish t-shirts after collecting ten stamps. The campaign will also be present at two conferences, HelloWeb3 and ETHCon, to promote Nouns and offer t-shirt redemptions.\n\nThe budget for the campaign is $52,000, covering t-shirt manufacturing, coffee shop rental fees, logistics, decorations, photo/video production, and team compensation. The team plans to create high-quality t-shirts featuring nounish cc0 content, strategically targeting pop stars, actors, musicians, and models for increased visibility. The campaign's timeline spans from July to October, with preparations taking approximately 3-4 weeks.\n\nThe team's goal is to establish Nouns as a prominent pop culture brand in Korea and showcase the beautiful aspects of Nouns' art, culture, and governance. By leveraging the popularity of nounish items in Korea, the campaign aims to attract devoted fans and contribute to the advancement of nounish culture in the country. Transactions will be conducted through a multi-sig wallet, and the team is confident in their energy and talent to achieve success.\n\n\n\n\n",
+    "categories": [
+        {
+            "name": "Marketing"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_04b90343847be84ace435ac41703da97.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690175941&Signature=00QNr44hrJ4l5C3XoYFEN7ozbhM%3D",
+    "project": {
+        "name": "Nouns-Seoul",
+        "description": "Activation campaign for Nouns in Korea",
+        "proposals": []
+    },
+    "title": "Nounify Korea - stamp collection (revised)",
+    "id": "339"
+}

@@ -1,0 +1,95 @@
+{
+    "team": [
+        {
+            "name": "Maty.eth",
+            "what": "Fund maty to continue tracking all funded Nouns Proposals and writing weekly newsletter ",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/matyETH"
+                },
+                {
+                    "name": "",
+                    "url": ""
+                },
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "0x176159C8450686537E1a86C692b2855895D77fB7"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "Proposals Tracking ",
+                    "url": "proposal.wtf"
+                }
+            ],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                {
+                    "name": "Nouns DAO Newsletter",
+                    "url": "https://nouns.substack.com/"
+                }
+            ],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "19.05",
+        "items": [
+            {
+                "name": "May, June, and July funding",
+                "amount": "7.15",
+                "description": "Funding for the months of May, June, and July",
+                "nouns": null
+            },
+            {
+                "name": "August to December funding",
+                "amount": "11.91",
+                "description": "Funding from August until the end of December",
+                "nouns": null
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Tracking proposals",
+                "description": "Improve tracking of approved and funded projects in the Nouns Community."
+            },
+            {
+                "name": "Newsletter",
+                "description": "Publishing a weekly newsletter highlighting the biggest things happening around Nouns."
+            }
+        ]
+    },
+    "description": "The individual is part of the Nouns Community and has taken on the responsibility of tracking and promoting the progress of projects that have been approved and funded. They follow up with builders of funded projects and share their work with the community. Additionally, they try to salvage \"failed\" projects and recover assets that might otherwise go to waste. Through their efforts, they have contributed to the return of a significant amount of ETH to the DAO. They use interconnected Notion dashboards to store and organize project data, making it easier to search and filter based on different properties.\n\nTo address the issue of scattered information and enhance accountability, the individual has been publishing a weekly newsletter since February 2022. This newsletter serves as a comprehensive source of information about Nouns DAO, highlighting new and existing projects, proposals, art, and other relevant updates. They also create special posts for events like Prop House Rounds and Accountability specials. The newsletter has been well-received, with over 41,000 total reads and a steady increase in subscribers, currently around 660.\n\nOverall, the individual's active involvement in the Nouns Community, as a member of the Nouncil and Esports Pod, and their dedication to tracking proposal progress and publishing the weekly newsletter demonstrate their commitment to improving transparency, communication, and accountability within the Nouns DAO.",
+    "categories": [
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_bbd85e68100ca4b6383f0d21909ef2f0.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1690147258&Signature=p2AWeV5PCEP%2BiqTaaj6ZOBUBTHw%3D",
+    "project": {
+        "name": "Maty tracking and Newsletter",
+        "description": "Maty.eth is responsible for tracking proposals and curating the weekly newsletter for Nouns DAO.",
+        "proposals": [
+            {
+                "proposalId": "345"
+            }
+        ]
+    },
+    "title": "Extend maty's Nouns Proposals Tracking Work",
+    "id": "345"
+}

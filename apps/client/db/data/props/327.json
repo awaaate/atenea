@@ -1,0 +1,69 @@
+{
+    "team": [
+        {
+            "name": "Dustin Yellin",
+            "what": "Brooklyn-based artist commissioned to update the Leviathan image",
+            "socialmediaHandles": [
+                {
+                    "name": "Dustin Yellin Studio",
+                    "url": "https://www.dustinyellin.com/"
+                }
+            ],
+            "walletAddress": "0x0B789Ef2A2cda2fb5B5c7cdB278C2Cb8BdC96e4C"
+        }
+    ],
+    "budget": {
+        "totalAmount": 50,
+        "items": [
+            {
+                "name": "Initial deposit",
+                "amount": 50,
+                "description": "Initial deposit of 50ETH to compensate the artist",
+                "nouns": null
+            },
+            {
+                "name": "Second payment",
+                "amount": 50,
+                "description": "Second payment of 50ETH and 1 Noun NFT (Noun 252 from the Nouns treasury) upon completion of the sculpture and its accompanying NFT",
+                "nouns": 252
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Completion of Sculpture",
+                "description": "Complete the PERSON, PLACE, or THING sculpture and its accompanying NFT"
+            },
+            {
+                "name": "Installation",
+                "description": "Install the sculpture in the foyer of the main dining room of Zero Bond"
+            },
+            {
+                "name": "Exhibition",
+                "description": "Work on additional loan placements for the sculpture at museums and relevant cultural institutions worldwide"
+            }
+        ]
+    },
+    "description": "Proposal for the Nouns DAO to commission the Nouns Psychogeography Sculpture by Dustin Yellin, integrating the Nouns minted in Year One into a unique glass artwork.",
+    "categories": [
+        {
+            "name": "Art"
+        },
+        {
+            "name": "Community"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "PERSON, PLACE, or THING",
+        "description": "In April 2022, the Nouns DAO executed Proposal 48, commissioning artist Dustin Yellin to create a new sculptural portrait named \"PERSON, PLACE, or THING.\" The artwork integrated 402 Nouns avatars minted in Year One into a unique glass sculpture, symbolizing the collective history and unity of the DAO. This \"super-avatar\" snapshot serves as a representation of the shared vision and trust among all stakeholders, exemplifying the power of individuals coming together as a community to achieve seemingly impossible tasks. The sculpture acts as a rallying banner, crystallizing the strength and potential of collective resources and talents within the Nouns DAO.",
+        "proposals": [
+            {
+                "proposalId": "327"
+            }
+        ]
+    },
+    "title": "Dustin Yellin: PERSON, PLACE, or THING",
+    "id": "327"
+}

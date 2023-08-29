@@ -1,0 +1,181 @@
+{
+    "team": [
+        {
+            "name": "Co-founder Borna Ćorić",
+            "what": "ATP Rank 15 tennis player",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "LinkdIn",
+                    "url": "https://www.linkedin.com/checkpoint/challengesV2/AQHkndaLdik-MgAAAYms_9rqwpJ-z2pMCLWMGGILD96vQvsKzg6SuacSKEa3CRlVJzqfw1DFD9IkTzNInHID1nr6o9an7D8ccQ?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                }
+            ]
+        },
+        {
+            "name": "CEO Bruno Pliso",
+            "what": "CEO of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "Co-founder & CCO Bruna Ćorić",
+            "what": "Co-founder & CCO of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "Creative Director Nina Turudic",
+            "what": "Creative Director of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "Finance & Operations Ivan Turudic",
+            "what": "Finance & Operations of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "CTO Karlo Brdek",
+            "what": "CTO of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": []
+        },
+        {
+            "name": "CMO Sven Stanko",
+            "what": "CMO of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "NFT Advisor, Dapper VP Fran Brajcic",
+            "what": "NFT Advisor & Dapper VP of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "name": "Web3 Consultant Shan Kumar",
+            "what": "Web3 Consultant of NounsTennisFam",
+            "walletAddress": "",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "budget": {
+        "totalAmount": "107.54",
+        "items": [
+            {
+                "name": "Sponsorship of World no 20 tennis player Borna Coric",
+                "amount": "26.89",
+                "description": "Displaying Noggles and Nouns on his shirt in 4 grand slams and other major tennis events"
+            },
+            {
+                "name": "Development of a MVP platform",
+                "amount": "26.89",
+                "description": "Platform for public to purchase digital collectibles of up and coming Tennis players"
+            },
+            {
+                "name": "Spreading word about Nouns through top athlete social media",
+                "amount": "26.89",
+                "description": "Talks in international press conferences/interviews etc."
+            },
+            {
+                "name": "Expansion of the platform",
+                "amount": "27",
+                "description": "Expanding the platform while continuing with the same Nouns branding"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Platform development start",
+                "description": "Scheduled to start in Q2 2023"
+            },
+            {
+                "name": "Beta launch",
+                "description": "Planned for Q4 2023"
+            },
+            {
+                "name": "Selection process for the talent program",
+                "description": "Starting in Q4 2023"
+            },
+            {
+                "name": "Issuance of NFTs representing the prospects",
+                "description": "Starting in Q4 2023"
+            },
+            {
+                "name": "Signed prospect player and limited collection",
+                "description": "Q4 2023"
+            },
+            {
+                "name": "Sign established tennis pro and limited collection",
+                "description": "Q4 2023"
+            },
+            {
+                "name": "Community Event at the AO",
+                "description": "Q1 2024"
+            },
+            {
+                "name": "Community event at Meneghetti Wine Hotel and The Croatia Open",
+                "description": "Q1 2024"
+            },
+            {
+                "name": "Event & Exhibition at the Roland Garros",
+                "description": "Q3 2024"
+            }
+        ]
+    },
+    "description": "Collaboration between NounsTennisFam and NounsDAO to revolutionize the tennis industry through blockchain technology, democratize the sport, and introduce NounsDAO as a major brand and catalyst for positive change in professional sports.",
+    "categories": [
+        {
+            "name": "Marketing"
+        }
+    ],
+    "coverImage": "cover_image_url_here",
+    "project": {
+        "name": "NounsTennisFam",
+        "description": "Web3 sports platform revolutionizing the tennis industry",
+        "proposals": [
+            {
+                "proposalId": ""
+            }
+        ]
+    },
+    "title": "NounsTennisFam (Feature Nouns/Noggles in grand slams/major tennis events and fund upcoming athletes)",
+    "id": "315"
+}

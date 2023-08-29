@@ -1,0 +1,74 @@
+{
+    "team": [
+        {
+            "name": "Creative Commons",
+            "what": "Nonprofit organization dedicated to open access and copyright licensing",
+            "socialmediaHandles": [
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/creativecommons"
+                }
+            ],
+            "walletAddress": "0x72f7ab7cd03113bd4bc332d0859e5664c79646ee"
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        },
+        {
+            "socialmediaHandles": [
+                null,
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "100",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Advocate for Open Content",
+                "description": "Promote and encourage the use of open content at all levels and in all arenas"
+            },
+            {
+                "name": "Innovate Licensing Infrastructure",
+                "description": "Steward and innovate the licensing infrastructure provided"
+            },
+            {
+                "name": "Training Future Creators",
+                "description": "Train future generations of creators and open advocates"
+            }
+        ]
+    },
+    "description": "Creative Commons is seeking 100 ETH in funding to support the organization's general operations and license infrastructure. They are a nonprofit organization that manages CC licenses and public domain tools while running campaigns, programming, and training in various fields such as Open Education, Culture, Climate, and Journalism. Despite their significant impact in enabling a thriving commons and healthy public domain, CC licenses are challenging to fundraise for, as most funders are drawn to flashy new projects. Creative Commons aims to sustain their foundational work of advocating for open content adoption, innovating licensing infrastructure, and training future creators and open advocates. They see Nouns, a community-owned brand embracing CC0 in the NFT world, as an example of combining public interest tools with emerging technologies and hope for support from the Nouns community to continue their essential work.",
+    "categories": [
+        {
+            "name": "Charity"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/NK23nSz.png",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Support Creative Commons",
+    "id": "329"
+}

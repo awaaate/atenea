@@ -1,0 +1,36 @@
+{
+    "team": [
+        {
+            "socialmediaHandles": [],
+            "name": "",
+            "what": "",
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "",
+        "items": []
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Implement Fair Forking Mechanism",
+                "description": "Implementing the proposed changes to achieve a fair forking mechanism"
+            }
+        ]
+    },
+    "description": "In order to achieve a fair forking mechanism, the proposal suggests reducing the USDC amount held by the Payer contract from 500,000 USDC to 200,000 USDC. The TokenBuyer contract currently holds 114.73 ETH (approximately 213K USD), leaving some buffer after swapping ETH for 200,000 USDC. The proposal includes two actions: lowering the baseline USDC amount and withdrawing the current USDC balance of the Payer contract to the Nouns treasury address. It is believed that this compromise will not disrupt the DAO's smooth operation during the implementation period.",
+    "categories": [
+        {
+            "name": "Operational"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Lowering the USDC amount held by the Payer contract from the current 500,000 USDC to 200,000 USDC",
+    "id": "347"
+}

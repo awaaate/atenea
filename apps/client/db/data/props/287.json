@@ -1,0 +1,96 @@
+{
+    "team": [
+        {
+            "name": "Bigshot Klim",
+            "what": "",
+            "socialmediaHandles": [
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/bigshotklim/"
+                }
+            ],
+            "walletAddress": "0x1234567890abcdef"
+        },
+        {
+            "name": "noun12.eth",
+            "what": "Lead Designer",
+            "socialmediaHandles": [
+                null,
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": "0x9876543210fedcba"
+        },
+        {
+            "name": "sasqwash.eth",
+            "what": "Marketing Manager",
+            "socialmediaHandles": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "walletAddress": ""
+        }
+    ],
+    "budget": {
+        "totalAmount": "68.18",
+        "items": [
+            {
+                "name": "Production of 6,000 units (666 sets of toys)",
+                "amount": "35.45",
+                "description": "Manufacturing the mini-figures"
+            },
+            {
+                "name": "Project management, marketing, distribution",
+                "amount": "20",
+                "description": "Overhead costs and marketing expenses"
+            },
+            {
+                "name": "Logistics and warehousing",
+                "amount": "10",
+                "description": "Shipping and storage costs"
+            }
+        ]
+    },
+    "roadmap": {
+        "items": [
+            {
+                "name": "Finalize production and delivery schedule",
+                "description": "Prepare for mass production and distribution"
+            },
+            {
+                "name": "Secure retail and museum shop buyers",
+                "description": "Reach out to potential buyers"
+            },
+            {
+                "name": "Ship products worldwide by the end of the year",
+                "description": "Global distribution of mini-figures"
+            }
+        ]
+    },
+    "description": "These colorful 3” tall mini figures are meant to be a fun, stylish, low cost, and non-crypto-based entry point into the world of “NOUNs.” Nounish Friends are uniquely styled modular figures which are packed into mystery boxes, eye-catching counter displays positioned for museum shops, high end retail and lifestyle shops worldwide...",
+    "categories": [
+        {
+            "name": "Physical",
+            "description": "Proposal related to toys and collectibles"
+        }
+    ],
+    "coverImage": "https://i.imgur.com/dhXeIlA_d.webp?maxwidth=1520&fidelity=grand",
+    "project": {
+        "name": "Nounish Friends",
+        "description": "A project to release a series of colorful and stylish mini figures called Nounish Friends.",
+        "proposals": [
+            {
+                "proposalId": "141"
+            },
+            {
+                "proposalId": "72"
+            }
+        ]
+    },
+    "title": "NOUNISH FRIENDS mini-figures",
+    "id": "287"
+}

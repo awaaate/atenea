@@ -1,0 +1,31 @@
+{
+    "team": [],
+    "budget": {
+        "totalAmount": 10000,
+        "items": [
+            {
+                "name": "Staking",
+                "amount": "10000",
+                "description": "Staking",
+                "nouns": 50
+            }
+        ]
+    },
+    "roadmap": {
+        "items": []
+    },
+    "description": "This is a proposal to stake an additional 10000 ETH for the project.",
+    "categories": [
+        {
+            "name": "Staking/Yield"
+        }
+    ],
+    "coverImage": "",
+    "project": {
+        "name": "Lido",
+        "description": "",
+        "proposals": []
+    },
+    "title": "Stake 10000 ETH to Lido",
+    "id": "332"
+}

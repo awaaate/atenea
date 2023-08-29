@@ -1,0 +1,71 @@
+{
+  "team": [
+    {
+      "name": "Matthew",
+      "what": "5+ years as blockchain engineer who has worked on various protocols including Burrata.xyz",
+      "socialmediaHandles": [],
+      "walletAddress": "evav.eth"
+    },
+    {
+      "name": "Osama",
+      "what": "2+ years blockchain product/engineering and has helped build OlympusDAO.finance and Burrata.xyz",
+      "socialmediaHandles": [],
+      "walletAddress": "osamakhan.eth"
+    }
+  ],
+  "budget": {
+    "totalAmount": "16",
+    "items": [
+      {
+        "name": "Audit cost (US$25,000 ie ~14 eth)",
+        "amount": "13",
+        "description": "Cost of the audit completed by 0xMacro",
+        "nouns": 0
+      },
+      {
+        "name": "Contract deployment cost (US$5,000 ie ~2 eth)",
+        "amount": "2",
+        "description": "Cost of contract deployment across all networks",
+        "nouns": 0
+      }
+    ]
+  },
+  "roadmap": {
+    "items": [
+      {
+        "name": "Phased payments (milestone-based)",
+        "description": "Milestone-based payments where the funds are disbursed on fixed dates"
+      },
+      {
+        "name": "Periodic payments (regular intervals)",
+        "description": "Recurring payouts at fixed intervals defined in days or weeks"
+      },
+      {
+        "name": "Tipping mechanism",
+        "description": "Push payments to the receiving address if the payout is set up with a tip incentive"
+      },
+      {
+        "name": "Nouns Square Demo Day sessions",
+        "description": "Regular Demo Day sessions for projects to share progress against milestones"
+      }
+    ]
+  },
+  "description": "Nouns Stream is a public good for payments across Noun-ish DAOs and beyond. It is an open-source, free, permission-less protocol that enables Phased (milestone-based) or Periodic (recurring) payments...",
+  "categories": [
+    {
+      "name": "Tech"
+    }
+  ],
+  "coverImage": "https://i.imgur.com/9g5l0ZE.png",
+  "project": {
+    "name": "Nouns Stream",
+    "description": "Public good for payments across Noun-ish DAOs and beyond",
+    "proposals": [
+      {
+        "proposalId": ""
+      }
+    ]
+  },
+  "title": "Nouns Stream Proposal: Payments infrastructure public good by Nouns DAO",
+  "id": "291"
+}
