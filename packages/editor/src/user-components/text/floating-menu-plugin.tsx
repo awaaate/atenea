@@ -53,7 +53,6 @@ export function FloatingMenuPlugin({
 
     const selection = $getSelection();
 
-    console.log({ selection }, "$handleSelectionChange");
     if ($isRangeSelection(selection) && !selection.anchor.is(selection.focus)) {
       calculatePosition();
     } else {
@@ -64,7 +63,6 @@ export function FloatingMenuPlugin({
   const show = coords !== undefined;
 
   useEffect(() => {
-    console.log({ show }, "useEffect");
     if (isPointerReleased) {
       richEditor.getEditorState().read(() => $handleSelectionChange());
     }

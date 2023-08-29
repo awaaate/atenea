@@ -1,32 +1,11 @@
 "use client";
 
 import React, { HTMLAttributes } from "react";
-import { ROOT_NODE, useEditor, useNode } from "@craftjs/core";
 
-import {
-  Dialog,
-  DialogContent,
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
-  Icon,
-  ScrollArea,
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-  cn,
-} from "@shared/ui";
+import { Dialog, DialogContent, Icon, ScrollArea, cn } from "@shared/ui";
 
-import { type WidgetProps } from "./widget-types";
 import useSWR from "swr";
-import { nanoid } from "nanoid";
-import { query } from "../user-components/donuts/proposal-budget-widget-data-fetcher";
-import { WidgetMenu } from "./widget-menu";
+import { useNode, useNodeActions } from "../engine/nodes";
 
 interface WidgetRootProps<T> extends HTMLAttributes<HTMLDivElement> {
   overlay?: boolean;
@@ -47,29 +26,13 @@ function WidgetRoot<T>({
   ...props
 }: WidgetRootProps<T>) {
   const { data, isLoading, error } = useSWR(...dataFetcher);
-  const {
-    query,
-    actions: { add, delete: deleteNode, selectNode },
-  } = useEditor();
-  const {
-    connectors: { connect },
-    actions,
-    id,
-    isText,
-    parent,
-    borderRadius,
-    isFullScreen,
-  } = useNode((node) => {
-    const props = node.data.props as WidgetProps;
-    return {
-      isText: node.data.displayName === "Text",
-      id: node.id,
-      parent: node.data.parent,
-      isFullScreen: props.fullScreen,
-      borderRadius: props.borderRadius,
-    };
-  });
+  const isFullScreen = useNode((node) => node.data.props.fullScreen);
+  const isText = useNode((node) => node.data.displayName === "Text");
+  const borderRadius = useNode((node) => node.data.props.borderRadius);
+  const isActive = useNode((node) => node.events.selected);
+  const background = useNode((node) => node.data.props.background);
 
+  const { setNode } = useNodeActions();
   if (isLoading || !data) {
     return skeleton;
   }
@@ -77,12 +40,15 @@ function WidgetRoot<T>({
     return <div>Something wrong with the widget</div>;
   }
 
-  console.log({ isFullScreen }, "isFullScreen");
   return (
     <ScrollArea
       ref={(ref) => {
         if (!ref) return;
-        connect(ref);
+        //connect(ref);
+      }}
+      style={{
+        borderRadius,
+        background,
       }}
       className={cn(
         "h-full w-full",
@@ -91,17 +57,19 @@ function WidgetRoot<T>({
         },
         className
       )}
-      style={{
-        borderRadius,
-      }}
-      {...props}
     >
+      {isActive && (
+        <Icon
+          name="Grip"
+          className="draggable-handle absolute top-0 left-0 m-2 hover:text-icon-hover cursor-grab z-popout"
+        />
+      )}
       <Dialog
         open={isFullScreen}
         onOpenChange={(value) => {
-          actions.setProp((props: WidgetProps) => {
-            props.fullScreen = value;
-            return props;
+          setNode((node) => {
+            node.data.props.fullScreen = value;
+            return node;
           });
         }}
       >

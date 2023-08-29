@@ -9,7 +9,6 @@ import {
 } from "@shared/ui";
 import React from "react";
 import { CreateWidget } from "../create-widget/create-widget";
-import { useEditor } from "@craftjs/core";
 
 interface EditorTopbarProps {
   toggleSidebar: () => void;
@@ -18,12 +17,6 @@ interface EditorTopbarProps {
 export const EditorTopbar: React.FC<EditorTopbarProps> = ({
   toggleSidebar,
 }) => {
-  const {
-    actions: {
-      history: { undo, redo },
-    },
-  } = useEditor();
-
   return (
     <div className="flex border-b px-4 py-3  bg-background justify-between">
       <div className="flex gap-1">

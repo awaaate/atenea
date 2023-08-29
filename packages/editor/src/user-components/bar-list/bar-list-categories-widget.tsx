@@ -1,5 +1,4 @@
 "use client";
-import { UserComponent, useNode } from "@craftjs/core";
 import { BarList, Bold, Card, Flex, Text, Title } from "@tremor/react";
 import useSWR from "swr";
 
@@ -10,6 +9,8 @@ import { getCategoriesProposals } from "./bar-list-categories-widget-fecther";
 import { Skeleton } from "@shared/ui";
 import { Widget } from "../../widget/widget-types";
 import React from "react";
+import { useNode } from "../../engine/nodes";
+import { UserComponent } from "../../engine/interfaces";
 
 export interface BarListCategoriesWidgetProps {
   proposalId?: number;
@@ -39,10 +40,8 @@ const WidgetInner: Widget<BarListCategoriesWidgetProps> = ({ data }) => {
   );
 };
 
-export const BarListCategoriesWidget: UserComponent = () => {
-  const { props } = useNode((node) => ({
-    props: node.data.props as BarListCategoriesWidgetProps,
-  }));
+export const BarListCategoriesWidget: Widget = () => {
+  const props = useNode((node) => node.data.props);
   return (
     <WidgetRoot
       dataFetcher={["proposal-bar-categories/", getCategoriesProposals()]}
@@ -53,11 +52,16 @@ export const BarListCategoriesWidget: UserComponent = () => {
   );
 };
 
-BarListCategoriesWidget.craft = {
+BarListCategoriesWidget.node = {
   displayName: "Proposal Budget",
   defaultProps: {
-    proposalId: 4,
-    gridSpan: 4,
+    layout: {
+      w: 9,
+      h: 28,
+      x: 0,
+      y: 0,
+      i: "",
+    },
   },
   related: {
     toolbar: BarListCategoriesWidgetConfig,

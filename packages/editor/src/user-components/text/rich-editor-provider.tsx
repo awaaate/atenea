@@ -1,23 +1,13 @@
-import { useNode } from "@craftjs/core";
 import React from "react";
 import { ComponentWithRichEditor } from "../../hooks/rich-text/use-rich-editor";
+import { useNode } from "../../engine/nodes";
 
 interface RichEditorProviderProps {
   Comp: React.ComponentType<any>;
 }
 
 const RichEditorProvider: React.FC<RichEditorProviderProps> = ({ Comp }) => {
-  const { richEditor } = useNode((node) => {
-    const props = node.data.props as ComponentWithRichEditor;
-    if (!props.richEditor)
-      return {
-        richEditor: undefined,
-      };
-
-    return {
-      richEditor: props.richEditor,
-    };
-  });
+  const richEditor = useNode((node) => node.data.props.richEditor);
 
   if (!richEditor) return null;
 

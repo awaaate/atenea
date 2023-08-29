@@ -1,5 +1,5 @@
-import type { UserComponent } from "@craftjs/core";
 import { Layout } from "react-grid-layout";
+import { UserComponent } from "../engine/interfaces";
 export interface WidgetProps {
   width: number;
   height: number;
@@ -34,6 +34,7 @@ export const WIDGET_DEFAULT: WidgetProps = {
     y: 0,
     w: 3,
     h: 1,
+    isResizable: true,
   },
 };
 

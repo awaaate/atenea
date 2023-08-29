@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect } from "react";
-import { useNode } from "@craftjs/core";
 import { CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { ListItemNode, ListNode } from "@lexical/list";
@@ -23,6 +22,7 @@ import {
 import { CAN_USE_DOM } from "../../lib/can-use-dom";
 import useLayoutEffect from "../use-layout-effect";
 import { TextProps } from "../../user-components/text";
+import { useNode, useNodeActions } from "../../engine/nodes";
 
 export type ComponentWithRichEditor = {
   richEditor: LexicalEditor | null;
@@ -82,14 +82,11 @@ export type InitialConfigType = Readonly<{
 }>;
 
 export const useRichEditor = (initialConfig: InitialConfigType) => {
-  const {
-    props,
-    actions: { setProp },
-  } = useNode((node) => ({
-    props: node.data.props as ComponentWithRichEditor,
-  }));
-  const richEditor = props.richEditor;
+  const richEditor = useNode(
+    (node) => (node.data.props as ComponentWithRichEditor).richEditor
+  );
 
+  const { setNode } = useNodeActions();
   const setEditorRef = useCallback(
     (rootElement: null | HTMLElement) => {
       if (!richEditor) return;
@@ -108,9 +105,9 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
 
         const height = Math.ceil(size.height / 20);
 
-        setProp((props: TextProps) => {
-          props.layout.h = height;
-          return props;
+        setNode((node) => {
+          node.data.props.layout.h = height;
+          return node;
         });
       }
     );
@@ -135,8 +132,9 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
       initRichText(editor);
       initMarkdownShortCuts(editor);
 
-      setProp((props: ComponentWithRichEditor) => {
-        props.richEditor = editor;
+      setNode((node) => {
+        node.data.props.richEditor = editor;
+        return node;
       });
     }
   }, []);

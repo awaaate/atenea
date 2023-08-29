@@ -1,13 +1,12 @@
-import { useEditor } from "@craftjs/core";
 import {
+  BackgroundPicker,
   Tabs,
+  TabsContent,
   TabsList,
   TabsTrigger,
-  TabsContent,
-  BackgroundPicker,
-  BackgroundPickerTabs,
 } from "@shared/ui";
 import React, { useEffect, useMemo } from "react";
+import { selectors, useEditorStore } from "../../engine/editor";
 import { WidgetConfigSection } from "../../widget/widget-config-section";
 
 //drag with useDragStore
@@ -28,18 +27,7 @@ const EditorSidebar: React.FC<EditorSidebarProps> = ({
   coverImage,
   setCoverImage,
 }) => {
-  const { active, currentNode, related } = useEditor((state, query) => {
-    const currentlySelectedNodeId = query.getEvent("selected").first();
-
-    console.log("currentlySelectedNodeId", currentlySelectedNodeId);
-    return {
-      active: currentlySelectedNodeId,
-      currentNode:
-        currentlySelectedNodeId && state.nodes[currentlySelectedNodeId],
-      related:
-        currentlySelectedNodeId && state.nodes[currentlySelectedNodeId].related,
-    };
-  });
+  const { active, currentNode, related } = useEditorStore(selectors.toolbar);
   const hasToolbar = related && related.toolbar;
 
   const element = useMemo(() => {

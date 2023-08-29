@@ -1,10 +1,10 @@
 import React from "react";
-import { useNode } from "@craftjs/core";
 
 import { BackgroundPicker, Slider, cn } from "@shared/ui";
 import { WidgetProps } from "./widget-types";
 import { WidgetConfigSection } from "./widget-config-section";
 import { WidgetSizeButton } from "../components/widget-size-button/widget-size-button";
+import { useNode, useNodeActions } from "../engine/nodes";
 
 interface WidgetConfigProps {
   children?: React.ReactNode;
@@ -12,12 +12,13 @@ interface WidgetConfigProps {
 
 const SIZES = ["xs", "sm", "md", "lg"] as const;
 export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
-  const { props, actions } = useNode((node) => {
-    return {
-      props: node.data.props as WidgetProps,
-    };
-  });
+  const { setNode } = useNodeActions();
+  const background = useNode((node) => node.data.props.background);
+  const borderRadius = useNode((node) => node.data.props.borderRadius);
+  const paddingTop = useNode((node) => node.data.props.paddingTop);
+  const layout = useNode((node) => node.data.props.layout);
 
+  const w = useNode((node) => node.data.props.layout.w);
   const sizes = [3, 6, 9, 12];
 
   return (
@@ -25,25 +26,26 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
       {children}
       <WidgetConfigSection title="Layout">
         <BackgroundPicker
-          background={props.background}
+          background={background}
           setBackground={(background) => {
-            actions.setProp((props: WidgetProps) => {
-              props.background = background;
-              return props;
+            setNode((node) => {
+              node.data.props.background = background;
+              return node;
             });
           }}
         />
+        {JSON.stringify(layout)}
 
         <div className="flex gap-3 mt-4 px-2">
           <p className="text-text-weak ">Roudness</p>
           <Slider
             max={50}
             min={0}
-            defaultValue={[props.borderRadius]}
+            defaultValue={[borderRadius]}
             onValueChange={(value) => {
-              actions.setProp((props: WidgetProps) => {
-                props.borderRadius = value[0];
-                return props;
+              setNode((node) => {
+                node.data.props.borderRadius = value[0];
+                return node;
               });
             }}
           />
@@ -53,14 +55,11 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
           <Slider
             max={100}
             min={0}
-            defaultValue={[props.paddingTop]}
+            defaultValue={[paddingTop]}
             onValueChange={(value) => {
-              actions.setProp((props: WidgetProps) => {
-                props.paddingBottom = value[0];
-                props.paddingLeft = value[0];
-                props.paddingRight = value[0];
-                props.paddingTop = value[0];
-                return props;
+              setNode((node) => {
+                node.data.props.paddingTop = value[0];
+                return node;
               });
             }}
           />
@@ -74,12 +73,12 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
             <WidgetSizeButton
               size={SIZES[i]}
               className={cn({
-                "border-blue-500": sizes[props.gridSpan] === size,
+                "border-blue-500": sizes[w] === size,
               })}
               onClick={() =>
-                actions.setProp((props: WidgetProps) => {
-                  props.layout.w = size;
-                  return props;
+                setNode((node) => {
+                  node.data.props.layout.w = size;
+                  return node;
                 })
               }
             />

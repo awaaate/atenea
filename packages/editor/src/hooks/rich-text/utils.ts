@@ -91,7 +91,6 @@ export function formatNode(name: BlockType, editor: LexicalEditor, currentType?:
         return
     }
     if (name === "bullet") {
-        console.log("currentType", currentType)
         if (currentType !== 'bullet') {
             editor.dispatchCommand(INSERT_UNORDERED_LIST_COMMAND, undefined);
         } else {

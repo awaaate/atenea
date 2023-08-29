@@ -1,23 +1,12 @@
 "use client";
 
-import { Editor as CraftEditor } from "@craftjs/core";
 import { UserComponents } from "../../user-components";
 
 import React from "react";
+import { Grid } from "../../user-components/grid";
 
-const Editor = ({ ...props }: React.ComponentProps<typeof CraftEditor>) => {
-  return (
-    <CraftEditor
-      resolver={UserComponents as any}
-      indicator={{
-        thickness: 2,
-        success: "blue",
-        error: "transparent",
-        transition: "",
-      }}
-      {...props}
-    />
-  );
+const Editor = () => {
+  return <Grid />;
 };
 
 export { Editor };

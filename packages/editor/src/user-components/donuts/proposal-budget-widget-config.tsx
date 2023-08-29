@@ -1,10 +1,9 @@
-import { useNode } from "@craftjs/core";
-
 import { Input } from "@shared/ui";
 
 import { WidgetConfig } from "../../widget/widget-config";
 import { WidgetConfigSection } from "../../widget/widget-config-section";
 import { type ProposalBudgetWidgetProps } from "./proposal-budget-widget";
+import { useNode, useNodeActions } from "../../engine/nodes";
 
 function getLinkId(link: string) {
   const id = link.split("/").pop();
@@ -12,11 +11,7 @@ function getLinkId(link: string) {
 }
 
 export const ProposalBudgetWidgetConfig = () => {
-  const {
-    actions: { setProp },
-  } = useNode((node) => ({
-    props: node.data.props,
-  }));
+  const { setNode } = useNodeActions();
 
   return (
     <WidgetConfig>
@@ -29,11 +24,10 @@ export const ProposalBudgetWidgetConfig = () => {
 
             const id = getLinkId(value) || "";
 
-            setProp(
-              (props: ProposalBudgetWidgetProps) =>
-                (props.proposalId = parseInt(id)),
-              300
-            );
+            setNode((node) => {
+              node.data.props.proposalId = id;
+              return node;
+            });
           }}
         />
         <span className="mt-2 text-xs text-primary/60">

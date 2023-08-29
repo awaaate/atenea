@@ -1,4 +1,3 @@
-import React from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,33 +7,18 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
   Icon,
-  Tooltip,
-  TooltipContent,
   TooltipProvider,
-  TooltipTrigger,
 } from "@shared/ui";
-import { ROOT_NODE, useEditor, useNode } from "@craftjs/core";
 import { nanoid } from "nanoid";
-import { WidgetProps } from "./widget-types";
+import { useEditorStore } from "../engine/editor";
+import { useNode, useNodeActions } from "../engine/nodes";
 
-const WidgetMenu = ({ id }: { id: string }) => {
-  const {
-    query,
-    isActive,
-    parent,
-    isFullScreen,
-    isTextWidget,
+const WidgetMenu = () => {
+  const isTextWidget = useNode((node) => node.data.displayName === "Text");
+  const isActive = useNode((node) => node.events.selected);
+  const createNode = useEditorStore((state) => state.create);
 
-    actions: { add, delete: deleteNode, selectNode, setProp },
-  } = useEditor((state, query) => {
-    const node = query.node(id).get();
-    return {
-      isActive: state.events.selected.has(id),
-      parent: node.data.parent,
-      isFullScreen: node.data.props.fullScreen,
-      isTextWidget: node.data.displayName === "Text",
-    };
-  });
+  const { setNode, remove } = useNodeActions();
 
   if (!isActive) return null;
   return (
@@ -50,9 +34,9 @@ const WidgetMenu = ({ id }: { id: string }) => {
             <DropdownMenuItem
               onSelect={() => {
                 console.log("full screen");
-                setProp(id, (props: WidgetProps) => {
-                  props.fullScreen = true;
-                  return props;
+                setNode((node) => {
+                  node.data.props.fullScreen = true;
+                  return node;
                 });
               }}
             >
@@ -68,16 +52,9 @@ const WidgetMenu = ({ id }: { id: string }) => {
           </DropdownMenuItem>
           <DropdownMenuItem
             onSelect={() => {
-              const node = query.node(id).get();
-              const newId = nanoid();
-              add(
-                {
-                  ...node,
-                  id: newId,
-                },
-                parent || ROOT_NODE
-              );
-              selectNode(newId);
+              const id = nanoid();
+              const newNode = { ...useEditorStore.getState().nodes[id], id };
+              createNode(newNode);
             }}
           >
             <Icon name="Copy" className="mr-2" />
@@ -89,7 +66,7 @@ const WidgetMenu = ({ id }: { id: string }) => {
         <DropdownMenuGroup>
           <DropdownMenuItem
             onSelect={() => {
-              deleteNode(id);
+              remove();
             }}
           >
             <Icon name="Trash2" className="mr-2" />

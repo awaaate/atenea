@@ -52,7 +52,6 @@ export const FloatingMenu = forwardRef<HTMLDivElement, FloatingMenuProps>(
     const { editor, coords } = props;
 
     const shouldShow = coords !== undefined;
-    console.log({ shouldShow }, "shouldShow");
     const [state, setState] = useState<FloatingMenuState>({
       isBold: false,
       isCode: false,

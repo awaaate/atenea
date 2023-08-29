@@ -54,7 +54,7 @@ export default async function BoardView({
 
   return (
     <div>
-      <BoardsTab value={params.boardId} >
+      <BoardsTab value={params.boardId}>
         <BoardsTabList className="bg-accent">
           {board?.site?.boards.map((b) => (
             <BoardsTabTrigger

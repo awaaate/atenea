@@ -1,10 +1,13 @@
 "use client";
-import { useEditor } from "@craftjs/core";
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 
-import { Button, Card, Icon, cn } from "@shared/ui";
-import { WidgetProps } from "../../widget/widget-types";
-import { useFloating } from "@floating-ui/react";
+import { Card, Icon, cn } from "@shared/ui";
+import { useEditorStore } from "../../engine/editor";
+import {
+  NodeProvider,
+  RenderNodeToElement,
+  useNodeActions,
+} from "../../engine/nodes";
 import { WidgetMenu } from "../../widget/widget-menu";
 
 interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -13,67 +16,63 @@ interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
-  ({ className, style, ...props }, ref) => {
-    const {
-      nodeProps,
-      displayName,
-      query,
-      connectors: { select },
-      actions: { add, delete: deleteNode },
-      isActive,
-    } = useEditor((state, query) => {
-      return {
-        nodeProps: query.node(props.id).get().data.props as WidgetProps,
-        isActive: state.events.selected.has(props.id),
-        displayName: query.node(props.id).get().data.displayName,
-      };
-    });
+  ({ className, style, id, ...props }, ref) => {
+    const domRef = React.useRef<HTMLDivElement | null>(null);
 
-    const isTextBlock = displayName === "Text";
+    const select = useEditorStore.use.select();
+    const connect = useEditorStore.use.connectNode();
+
+    const isActive = useEditorStore((state) => state.events.selected.has(id));
+    const isText = useEditorStore(
+      useCallback((state) => state.nodes[id].data.displayName === "Text", [id])
+    );
+
+    useEffect(() => {
+      if (!domRef.current) return;
+
+      if (typeof ref === "function") ref(domRef.current);
+      if (ref && typeof ref !== "function") ref.current = domRef.current;
+
+      connect(id, domRef.current);
+
+      const onClick = (event: MouseEvent) => {
+        select(id);
+      };
+      domRef.current.addEventListener("click", onClick);
+
+      return () => {
+        domRef.current?.removeEventListener("click", onClick);
+        connect(id, null);
+      };
+    }, [id, domRef.current]);
+
     return (
-      <Card
+      <div
         {...props}
         style={{
           ...style,
-          background: nodeProps.background,
-          borderRadius: nodeProps.borderRadius,
-          paddingTop: nodeProps.paddingTop,
-          paddingBottom: nodeProps.paddingBottom,
-          paddingLeft: nodeProps.paddingLeft,
-          paddingRight: nodeProps.paddingRight,
         }}
         ref={(r) => {
-          if (!r) return;
-          select(r, props.id);
-
+          domRef.current = r;
           //cgeck if ref is a function
-          if (typeof ref === "function") {
-            ref(r);
-          } else if (ref) {
-            ref.current = r;
-          }
         }}
         className={cn(
-          "overflow-visible border-2 border-transparent relative z-popout ",
+          "overflow-visible border-2 border-transparent relative",
           {
-            "border-transparent shadow-[0]": isTextBlock,
+            "border-transparent shadow-[0]": isText,
             "border-2 border-blue-500 ": isActive,
 
             active: isActive,
-            "grid-item-text": isTextBlock,
+            "grid-item-text": isText,
           },
           className
         )}
       >
-        {isActive && (
-          <Icon
-            name="Grip"
-            className="draggable-handle absolute top-0 left-0 m-2 hover:text-icon-hover cursor-grab"
-          />
-        )}
-        <WidgetMenu id={props.id} />
+        <NodeProvider id={id}>
+          <RenderNodeToElement />
+        </NodeProvider>
         {props.children}
-      </Card>
+      </div>
     );
   }
 );

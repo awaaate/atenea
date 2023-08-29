@@ -1,10 +1,11 @@
-import { type UserComponent } from "@craftjs/core"
 
 import { ProposalBudgetWidget } from "./donuts/proposal-budget-widget"
 
 import { Text } from "./text"
 import { Grid } from "./grid"
 import { Widget } from "../widget/widget-types"
+import { UserComponent } from "../engine/interfaces"
+import { BarListCategoriesWidget } from "./bar-list/bar-list-categories-widget"
 
 
 type UserLayoutComponentsType =
@@ -13,7 +14,7 @@ type UserLayoutComponentsType =
 
 
 type UserWidgetComponentsType =
-    | "ProposalBudgetWidget"
+    | "ProposalBudgetWidget" | "BarListCategoriesWidget"
 
 const Layout = [
     {
@@ -26,6 +27,7 @@ const Layout = [
         component: Text,
         name: "Text",
     },
+
 ]
 
 export const Widgets = [
@@ -33,6 +35,11 @@ export const Widgets = [
         image: "https://picsum.photos/seed/sdfsdfshola/200/100",
         component: ProposalBudgetWidget,
         name: "ProposalBudgetWidget",
+    },
+    {
+        image: "https://picsum.photos/seed/sdfsdfshola/200/100",
+        component: BarListCategoriesWidget,
+        name: "BarListCategoriesWidget",
     },
 
 ]

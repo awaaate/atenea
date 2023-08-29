@@ -20,6 +20,7 @@ export function createNode(
         id,
         _hydrationTimestamp: Date.now(),
         data: {
+            ...newNode.data,
             type: actualType,
             name: getNodeTypeName(actualType),
             displayName: getNodeTypeName(actualType),
@@ -28,7 +29,6 @@ export function createNode(
             hidden: false,
             nodes: [],
             linkedNodes: {},
-            ...newNode.data,
         },
         related: {},
         events: {
@@ -86,7 +86,7 @@ export function createNode(
                     React.createElement(
                         NodeProvider,
                         relatedNodeContext,
-                        React.createElement(userComponentConfig.related[comp], props)
+                        React.createElement(userComponentConfig.related[comp] as any, props)
                     );
             });
         }

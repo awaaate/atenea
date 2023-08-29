@@ -1,4 +1,3 @@
-import { ROOT_NODE, useEditor } from "@craftjs/core";
 import { CommandMenu, Dialog, DialogTrigger, Icon } from "@shared/ui";
 import React from "react";
 import {
@@ -7,29 +6,23 @@ import {
   getComponentTypes,
 } from "../../user-components";
 import { nanoid } from "nanoid";
+import { useEditorStore } from "../../engine/editor";
+import { createNode } from "../../engine/nodes";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const {
-    actions: { add, selectNode },
-    query,
-  } = useEditor();
+  const selectNode = useEditorStore.use.select();
+  const add = useEditorStore.use.create();
 
   const creteNode = (name: UserComponentsType) => {
     const component = UserComponents[name];
-    const nodeToAdd = query
-      .parseFreshNode({
-        id: nanoid(),
-        data: {
-          type: component,
-          props: {
-            ...component.craft?.defaultProps,
-          },
-        },
-      })
-      .toNode();
+    const nodeToAdd = createNode({
+      data: {
+        type: component,
+      },
+    });
 
-    add(nodeToAdd, ROOT_NODE, 1);
+    add(nodeToAdd);
 
     selectNode(nodeToAdd.id);
     setIsOpen(false);
@@ -66,6 +59,15 @@ export const CreateWidget = () => {
             icon: "PieChart",
             id: "3",
             name: "Proposal Budget",
+            group: "Charts",
+          },
+          {
+            handler: () => {
+              creteNode("BarListCategoriesWidget");
+            },
+            icon: "BarChartHorizontal",
+            id: "4",
+            name: "Amount expent by Category",
             group: "Charts",
           },
           /*      {

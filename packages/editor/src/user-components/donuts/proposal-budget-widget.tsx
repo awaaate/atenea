@@ -1,5 +1,4 @@
 "use client";
-import { useNode } from "@craftjs/core";
 import { Card, DonutChart, List, ListItem } from "@tremor/react";
 import React, { useEffect, useMemo } from "react";
 
@@ -14,6 +13,7 @@ import {
   createWidgetProps,
 } from "../../widget/widget-types";
 import { getProposalBudget } from "./proposal-budget-widget-data-fetcher";
+import { useNode } from "../../engine/nodes";
 
 export interface ProposalBudgetWidgetProps extends WidgetProps {
   proposalId: number;
@@ -73,9 +73,7 @@ const WidgetInner: React.FC<WidgetInnerProps> = ({
 export const ProposalBudgetWidget: Widget<{
   proposalId: number;
 }> = () => {
-  const { props } = useNode((node) => ({
-    props: node.data.props as ProposalBudgetWidgetProps,
-  }));
+  const props = useNode((node) => node.data.props as ProposalBudgetWidgetProps);
   const ref = React.useRef<HTMLDivElement | null>(null);
 
   return (
@@ -91,7 +89,7 @@ export const ProposalBudgetWidget: Widget<{
   );
 };
 
-ProposalBudgetWidget.craft = {
+ProposalBudgetWidget.node = {
   displayName: "Proposal Budget",
   defaultProps: createWidgetProps({
     proposalId: 4,

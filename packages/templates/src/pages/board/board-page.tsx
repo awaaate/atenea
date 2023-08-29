@@ -12,7 +12,7 @@ export const BoardPage = () => {
   const { setSidebar, sidebarTab, background, coverImage, setBackground } =
     useGlobalStore();
   return (
-    <Editor>
+    <div>
       <div className="flex">
         <div className="h-full flex-1">
           <EditorTopbar
@@ -51,7 +51,7 @@ export const BoardPage = () => {
                   Edited 23 hours ago
                 </span>
               </div>
-              <DefaultFrame />
+              <Editor />
             </div>
           </div>
         </div>
@@ -62,6 +62,6 @@ export const BoardPage = () => {
           setBackground={setBackground}
         />
       </div>
-    </Editor>
+    </div>
   );
 };

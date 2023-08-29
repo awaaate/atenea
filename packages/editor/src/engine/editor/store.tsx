@@ -2,175 +2,189 @@
 //the store has saved the state of the editor
 
 import { EditorState } from "../interfaces/editor";
-<<<<<<< HEAD
-import { Node, NodeId } from "../interfaces/nodes";
-
-import { create } from "zustand";
-import { createSelectors } from "./store-selectors";
-import ReactGridLayout from "react-grid-layout";
-
-const DROPPING_ELEMENT_ID = "__dropping-elem__";
-=======
 import { NodeId } from "../interfaces/nodes";
 
-import { create } from "zustand";
+import { createWithEqualityFn } from "zustand/traditional";
+import { shallow } from "zustand/shallow";
 import { createSelectors } from "./store-selectors";
->>>>>>> ebc5858 (performance)
+import { createJSONStorage, persist } from "zustand/middleware";
 
-const useEditorStoreBase = create<EditorState>((set, get) => ({
-  nodes: {},
-  events: {
-    dragged: new Set<NodeId>(),
-    selected: new Set<NodeId>(),
-    hovered: new Set<NodeId>(),
-  },
-  options: {
-    enabled: true,
-    onRender: ({ render }) => render,
-    resolver: {},
-  },
-  actions: {
-<<<<<<< HEAD
-    setProp: (id, cb) => {
-=======
-    setProp: (id: NodeId, cb) => {
->>>>>>> ebc5858 (performance)
-      set((state) => {
-        const node = state.nodes[id];
+import { create } from "zustand";
+const useEditorStoreBase = createWithEqualityFn<EditorState>()(
+  persist(
+    (set, get) => ({
+      nodes: {},
+      events: {
+        dragged: new Set<NodeId>(),
+        selected: new Set<NodeId>(),
+        hovered: new Set<NodeId>(),
+      },
+      options: {
+        enabled: true,
+        onRender: ({ render }) => render,
+        resolver: {},
+      },
+      connectNode: (id, dom) => {
+        set((state) => {
+          const node = state.nodes[id];
 
-        if (node) {
-          const updatedNode = cb(node);
+          if (node) {
+            const updatedNode = {
+              ...node,
+              dom,
+            };
 
+            const newNodes = { ...state.nodes };
+            newNodes[id] = updatedNode;
+
+            return {
+              nodes: newNodes,
+            };
+          }
+          return state;
+        });
+      },
+      setNode: (id, cb) => {
+        set((state) => {
+          const node = state.nodes[id];
+
+          if (node) {
+            const updatedNode = cb(node);
+
+            const newNodes = { ...state.nodes };
+            newNodes[id] = updatedNode;
+
+            return {
+              nodes: newNodes,
+            };
+          }
+          return state;
+        });
+      },
+      select: (id, value: boolean = true) => {
+        set((state) => {
+          state.events.selected.forEach((selectedId) => {
+            const currentNode = state.nodes[selectedId];
+            currentNode.events.selected = false;
+          });
+
+          const currentNode = state.nodes[id];
+          currentNode.events.selected = value;
+
+          const selected = new Set<string>();
+          if (!value) {
+            //TODO: remove from selected, multiple selection
+            //selected.delete(id);
+          } else {
+            selected.add(id);
+          }
+
+          return {
+            nodes: {
+              ...state.nodes,
+              [id]: currentNode,
+            },
+            events: {
+              ...state.events,
+              selected,
+            },
+          };
+        });
+      },
+      hover: (id, value: boolean = true) => {
+        set((state) => {
+          const currentNode = state.nodes[id];
+          currentNode.events.hovered = value;
+
+          const hovered = new Set<string>();
+          if (!value) {
+            hovered.delete(id);
+          } else {
+            hovered.add(id);
+          }
+
+          return {
+            nodes: {
+              ...state.nodes,
+              [id]: currentNode,
+            },
+            events: {
+              ...state.events,
+              hovered,
+            },
+          };
+        });
+      },
+      drag: (id) => {},
+      create: (node) => {
+        set((state) => {
           const newNodes = { ...state.nodes };
-          newNodes[id] = updatedNode;
+          newNodes[node.id] = node;
 
           return {
             nodes: newNodes,
           };
-        }
-        return state;
-      });
-    },
-<<<<<<< HEAD
-    select: (id, value: boolean = true) => {
-      set((state) => {
-        const currentNode = state.nodes[id];
-        currentNode.events.selected = value;
+        });
+      },
+      remove: (id) => {
+        set((state) => {
+          const newNodes = { ...state.nodes };
+          delete newNodes[id];
 
-        const selected = new Set(state.events.selected);
-        if (!value) {
-          selected.delete(id);
-        } else {
-          selected.add(id);
-        }
+          return {
+            nodes: newNodes,
+          };
+        });
+      },
 
-        return {
-          nodes: {
-            ...state.nodes,
-            [id]: currentNode,
-          },
-=======
-    select: (id: NodeId) => {
-      set((state) => {
-        const selected = new Set(state.events.selected);
-        selected.add(id);
-
-        return {
->>>>>>> ebc5858 (performance)
-          events: {
-            ...state.events,
-            selected,
-          },
-        };
-      });
-    },
-<<<<<<< HEAD
-    hover: (id, value: boolean = true) => {
-      set((state) => {
-        const currentNode = state.nodes[id];
-        currentNode.events.hovered = value;
-
-        const hovered = new Set(state.events.hovered);
-        if (!value) {
-          hovered.delete(id);
-        } else {
-          hovered.add(id);
-        }
-
-        return {
-          nodes: {
-            ...state.nodes,
-            [id]: currentNode,
-          },
-=======
-    hover: (id: NodeId) => {
-      set((state) => {
-        const hovered = new Set(state.events.hovered);
-        hovered.add(id);
-
-        return {
->>>>>>> ebc5858 (performance)
-          events: {
-            ...state.events,
-            hovered,
-          },
-        };
-      });
-    },
-<<<<<<< HEAD
-    drag: (id) => {},
-    create: (node) => {
-      set((state) => {
-        const newNodes = { ...state.nodes };
-        newNodes[node.id] = node;
-
-        return {
-          nodes: newNodes,
-        };
-      });
-    },
-    remove: (id) => {
-      set((state) => {
-        const newNodes = { ...state.nodes };
-        delete newNodes[id];
-
-        return {
-          nodes: newNodes,
-        };
-      });
-    },
-  },
-
-  setLayout: (layout: ReactGridLayout.Layout[]) => {
-    //set the layout for each child
-    const nodes = layout
-      .filter((l) => l.i !== DROPPING_ELEMENT_ID)
-      .map((layoutItem) => {
-        return {
-          ...get().nodes[layoutItem.i],
-          data: {
-            ...get().nodes[layoutItem.i].data,
-            props: {
-              ...get().nodes[layoutItem.i].data.props,
-              layout: layoutItem,
+      setLayout: (layout: ReactGridLayout.Layout[]) => {
+        //set the layout for each child
+        const nodes = layout.map((layoutItem) => {
+          return {
+            ...get().nodes[layoutItem.i],
+            data: {
+              ...get().nodes[layoutItem.i].data,
+              props: {
+                ...get().nodes[layoutItem.i].data.props,
+                layout: layoutItem,
+              },
             },
-          },
-        };
-      });
+          };
+        });
 
-    set((state) => {
-      const newNodes = { ...state.nodes };
-      nodes.forEach((node) => {
-        newNodes[node.id] = node;
-      });
+        set((state) => {
+          const newNodes = { ...state.nodes };
+          nodes.forEach((node) => {
+            newNodes[node.id] = node;
+          });
 
-      return {
-        nodes: newNodes,
-      };
-    });
-  },
-}));
+          return {
+            nodes: newNodes,
+          };
+        });
+      },
+    }),
+    {
+      name: "editore", // unique name
+      storage: createJSONStorage(() => sessionStorage), // (}}
+    }
+  ),
+  shallow
+);
 export const selectors = {
+  toolbar: (state: EditorState) => {
+    const currentlySelectedNodeId = state.events.selected.values().next().value;
+    return {
+      active: currentlySelectedNodeId,
+      currentNode:
+        currentlySelectedNodeId && state.nodes[currentlySelectedNodeId],
+      related:
+        currentlySelectedNodeId && state.nodes[currentlySelectedNodeId].related,
+    };
+  },
+  nodesIds: (state: EditorState) => {
+    return Object.keys(state.nodes);
+  },
   layout: (state: EditorState) => {
     const nodes = state.nodes;
 
@@ -182,10 +196,4 @@ export const selectors = {
     });
   },
 };
-=======
-    drag: (id: NodeId) => {},
-  },
-}));
-
->>>>>>> ebc5858 (performance)
 export const useEditorStore = createSelectors(useEditorStoreBase);
