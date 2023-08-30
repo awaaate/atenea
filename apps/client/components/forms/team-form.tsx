@@ -129,11 +129,13 @@ const SocialMediaHandlesField: React.FC<{
   control: Control<z.infer<typeof formSchema>>;
   index: number;
 }> = ({ control, index }) => {
-  const { register } = useFormContext();
+  const { register, watch } = useFormContext();
   const { fields, append, remove } = useFieldArray({
     control,
     name: `team.${index}.socialmediaHandles`,
   });
+
+  console.log(watch(`team.${index}.socialmediaHandles`));
 
   return (
     <div className="mt-4">
@@ -153,7 +155,7 @@ const SocialMediaHandlesField: React.FC<{
           <Icon name="Plus" />
         </Button>
       </div>
-      {fields.map((socialLink, index) => (
+      {fields.map((socialLink, socialLinkIndex) => (
         <div
           key={socialLink.id}
           className="flex flex-col gap-2 justify-between mt-4"
@@ -162,7 +164,9 @@ const SocialMediaHandlesField: React.FC<{
             <FormLabel htmlFor="name">Name</FormLabel>
             <FormControl>
               <Input
-                {...register(`team.${index}.socialmediaHandles.${index}.name`)}
+                {...register(
+                  `team.${index}.socialmediaHandles.${socialLinkIndex}.name`
+                )}
               />
             </FormControl>
           </FormItem>
@@ -170,7 +174,9 @@ const SocialMediaHandlesField: React.FC<{
             <FormLabel htmlFor="url">URL</FormLabel>
             <FormControl>
               <Input
-                {...register(`team.${index}.socialmediaHandles.${index}.url`)}
+                {...register(
+                  `team.${index}.socialmediaHandles.${socialLinkIndex}.url`
+                )}
               />
             </FormControl>
           </FormItem>

@@ -20,6 +20,10 @@ import {
   Icon,
   Spinner,
   Link,
+  Banner,
+  BannerTitle,
+  BannerDescription,
+  BannerRoot,
 } from "@shared/ui";
 import { CoverImageInput } from "./cover-image-input";
 import { FormValues, defaultFormValues, formSchema } from "./form-schema";
@@ -30,6 +34,7 @@ import { BudgetField } from "./budget-field";
 import { RoadmapField } from "./roadmap-field";
 import { ProjectField } from "./project-field";
 import { trpc } from "@/lib/trpcClient";
+import PromptMaker from "../prompt-maker";
 
 export const proposalSchema = z.object({
   id: z.string(),
@@ -42,23 +47,32 @@ export const proposalSchema = z.object({
 interface ProposalFormProps extends Partial<FormValues> {}
 
 const ProposalForm: React.FC<ProposalFormProps> = ({ ...defaultValues }) => {
+  const [json, setJson] = React.useState<string>("");
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: defaultFormValues(defaultValues),
   });
+  console.log(form.watch("budget.totalAmount"));
 
-  const { mutate: updateProposal, isLoading } =
+  const { mutateAsync: updateProposal, isLoading } =
     trpc.updateProposal.useMutation();
 
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit((data) => updateProposal(data))}
+        onSubmit={form.handleSubmit(async (data) => {
+          console.log(data);
+          const response = await updateProposal(data);
+          console.log(response);
+        })}
         className="space-y-8"
       >
         <Tabs
           className="bg-surface-default rounded-default shadow-popout-dark"
           defaultValue="proposal"
+          onValueChange={() => {
+            setJson(JSON.stringify(form.getValues(), null, 4));
+          }}
         >
           <div className="border-b w-full py-2 px-6 flex  gap-4 justify-between items-center">
             <Button type="submit" className="float-right" variant={"ghost"}>
@@ -84,6 +98,8 @@ const ProposalForm: React.FC<ProposalFormProps> = ({ ...defaultValues }) => {
             <TabsTrigger value="budget">Budget</TabsTrigger>
             <TabsTrigger value="project">Project</TabsTrigger>
             <TabsTrigger value="roadmap">Roadamp</TabsTrigger>
+            <TabsTrigger value="json">JSON</TabsTrigger>
+            <TabsTrigger value="prompt">Prompt</TabsTrigger>
           </TabsList>
 
           <TabsContent value="proposal" className="p-6">
@@ -155,7 +171,39 @@ const ProposalForm: React.FC<ProposalFormProps> = ({ ...defaultValues }) => {
           <TabsContent value="project" className="p-6">
             <ProjectField control={form.control} />
           </TabsContent>
+          <TabsContent value="json">
+            <Textarea
+              value={json}
+              onChange={(e) => {
+                setJson(e.target.value);
+              }}
+            ></Textarea>
+
+            <Button
+              type="button"
+              onClick={() => {
+                const newData = JSON.parse(json);
+                console.log(newData);
+                form.reset(newData);
+              }}
+            >
+              Update json
+            </Button>
+          </TabsContent>
+          <TabsContent value="prompt">
+            <PromptMaker />
+          </TabsContent>
         </Tabs>
+        <BannerRoot variant={"danger"}>
+          <BannerTitle>Form error</BannerTitle>
+          <BannerDescription>
+            {Object.entries(form.formState.errors).map(([name, error]) => (
+              <li key={name}>
+                {name}: {error.message}
+              </li>
+            ))}
+          </BannerDescription>
+        </BannerRoot>
       </form>
     </Form>
   );

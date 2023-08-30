@@ -1,5 +1,5 @@
 import { relations } from "drizzle-orm";
-import { boolean, index, integer, pgTable, primaryKey, serial, text, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
+import { boolean, index, integer, json, pgTable, primaryKey, serial, text, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
 
 
 
@@ -14,6 +14,9 @@ export const proposal = pgTable("Proposal", {
 	budgetTotal: integer("budgetTotal").notNull(),
 	projectId: integer("projectId"),
 	revised: boolean("revised").default(true).notNull(),
+
+
+
 });
 
 export const category = pgTable("Category", {
@@ -33,6 +36,7 @@ export const project = pgTable("Project", {
 	updatedAt: timestamp("updatedAt", { precision: 3, mode: 'string' }).notNull(),
 	title: text("title").notNull(),
 	description: text("description").notNull(),
+
 });
 
 export const roadmapSection = pgTable("RoadmapSection", {
@@ -41,7 +45,8 @@ export const roadmapSection = pgTable("RoadmapSection", {
 	updatedAt: timestamp("updatedAt", { precision: 3, mode: 'string' }).notNull(),
 	name: text("name").notNull(),
 	description: text("description").notNull(),
-	proposalId: integer("proposalId").notNull()
+	proposalId: integer("proposalId").notNull().references(() => proposal.id, { onDelete: "cascade", onUpdate: "cascade" })
+
 });
 
 export const socialHandle = pgTable("SocialHandle", {
@@ -59,6 +64,8 @@ export const teamMember = pgTable("TeamMember", {
 	name: text("name").primaryKey().notNull(),
 	what: text("what").default('').notNull(),
 	walletAddress: text("walletAddress").default('').notNull(),
+	socialHandles: json("socialHandles").default('[]').notNull(),
+
 },
 	(table) => {
 		return {
@@ -73,7 +80,7 @@ export const budgetSection = pgTable("BudgetSection", {
 	name: text("name").notNull(),
 	description: text("description").notNull(),
 	amount: integer("amount").notNull(),
-	proposalId: integer("proposalId").notNull(),
+	proposalId: integer("proposalId").notNull().references(() => proposal.id, { onDelete: "cascade", onUpdate: "cascade" })
 });
 
 
@@ -98,51 +105,3 @@ export const proposalToTeamMember = pgTable("proposal_to_team_member", {
 		}
 	});
 
-export const proposalsRelations = relations(proposal, ({ many, one }) => ({
-	proposalToTeamMembers: many(proposalToTeamMember),
-	categoryToProposals: many(categoryToProposal),
-
-	project: one(project, {
-		fields: [proposal.projectId],
-		references: [project.id],
-	}),
-
-	roadmapSections: many(roadmapSection),
-	budgetSections: many(budgetSection),
-
-}))
-
-export const teamMemberRelations = relations(teamMember, ({ many, }) => ({
-	proposalToTeamMembers: many(proposalToTeamMember),
-	socialHandles: many(socialHandle),
-}))
-
-export const categoryRelations = relations(category, ({ many, }) => ({
-	categoryToProposals: many(categoryToProposal),
-}))
-
-
-export const projectRelations = relations(project, ({ many, }) => ({
-	proposals: many(proposal),
-}))
-
-export const roadmapSectionRelations = relations(roadmapSection, ({ many, one }) => ({
-	proposal: one(proposal, {
-		fields: [roadmapSection.proposalId],
-		references: [proposal.id],
-	}),
-}))
-
-export const budgetSectionRelations = relations(budgetSection, ({ many, one }) => ({
-	proposal: one(proposal, {
-		fields: [budgetSection.proposalId],
-		references: [proposal.id],
-	}),
-}))
-
-export const socialHandleRelations = relations(socialHandle, ({ many, one }) => ({
-	teamMember: one(teamMember, {
-		fields: [socialHandle.teamMemberName],
-		references: [teamMember.name],
-	}),
-}))

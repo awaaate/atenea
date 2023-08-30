@@ -5,6 +5,8 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { Button, Link } from "@shared/ui";
 import { ProposalForm } from "@/components/forms/proposal-form";
+import { trpc } from "@/lib/trpcClient";
+import { getUniqueProposal } from "@/server/getUniqueProposal";
 
 interface ProposalPageProps {
   params: {
@@ -12,83 +14,13 @@ interface ProposalPageProps {
   };
 }
 const ProposalPage = async ({ params }: ProposalPageProps) => {
-  const uniqueProposal = await db.query.proposal.findMany({
-    where(fields, operators) {
-      return operators.eq(fields.id, parseInt(params.id));
-    },
-    with: {
-      project: true,
-      budgetSections: true,
-      roadmapSections: true,
-    },
-  });
+  const uniqueProposal = await getUniqueProposal(parseInt(params.id));
+  console.log(JSON.stringify(uniqueProposal, null, 4));
 
   if (!uniqueProposal) return notFound();
-  const prop = uniqueProposal[0];
 
-  let proposalToTeamMember = await db.query.proposalToTeamMember.findMany({
-    where(fields, operators) {
-      return operators.eq(fields.proposalId, parseInt(params.id));
-    },
-  });
-
-  let categoryToProposal = await db.query.categoryToProposal.findMany({
-    where(fields, operators) {
-      return operators.eq(fields.proposalId, parseInt(params.id));
-    },
-  });
-
-  let team = await db.query.teamMember.findMany({
-    with: {
-      socialHandles: true,
-    },
-    where(fields, operators) {
-      return operators.or(
-        ...proposalToTeamMember.map((t) =>
-          operators.eq(fields.name, t.teamMemberName)
-        )
-      );
-    },
-  });
-
-  let categories = await db.query.category.findMany({
-    where(fields, operators) {
-      return operators.or(
-        ...categoryToProposal.map((c) =>
-          operators.eq(fields.name, c.categoryName)
-        )
-      );
-    },
-  });
-  let data = {
-    id: prop.id,
-    title: prop.title,
-    description: prop.description,
-    budget: {
-      totalAmount: prop.budgetTotal,
-      items: prop.budgetSections.map((b) => {
-        return {
-          name: b.name,
-          amount: b.amount,
-          description: b.description,
-          id: b.id,
-        };
-      }),
-    },
-    roadmap: {
-      items: prop.roadmapSections.map((r) => {
-        return {
-          name: r.name,
-          description: r.description,
-          id: r.id,
-        };
-      }),
-    },
-    team,
-    categories,
-    project: prop.project ? prop.project : undefined,
-  };
-  return <ProposalForm {...data} />;
+  //@ts-expect-error
+  return <ProposalForm {...uniqueProposal} />;
 };
 
 export default ProposalPage;

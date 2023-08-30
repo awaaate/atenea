@@ -4,6 +4,7 @@ import {
   FormItem,
   FormLabel,
   Icon,
+  Spinner,
   useFormContext,
 } from "@shared/ui";
 import React from "react";
@@ -18,31 +19,51 @@ const CoverImageInput = () => {
 
   if (form.watch("coverImage")) {
     return (
-      <div className="relative">
-        <Image
+      <div className="relative bg-surface-raised border p-2 rounded-default m-4">
+        <img
           src={form.getValues("coverImage")}
           alt="cover image"
+          className="w-full h-full rounded-default"
           width={500}
           height={500}
         />
         <Button
-          variant={"ghost"}
+          variant={"destructive"}
           onClick={() => form.setValue("coverImage", "")}
-          className="absolute top-0 right-0"
+          className="absolute top-0 right-0 rounded-full icon-xl p-1"
         >
-          <Icon name="Trash2" />
+          <Icon name="Trash2" className="text-current" />
         </Button>
       </div>
     );
   }
   return (
-    <FormItem>
+    <FormItem className="bg-s">
       <FormLabel>Cover Image</FormLabel>
       <UploadButton
         content={{
-          button: "Upload Image",
+          button(arg) {
+            return (
+              <Button
+                {...arg}
+                variant={"primary"}
+                className="pointer-events-none"
+              >
+                {arg.isUploading ? (
+                  <Spinner className=" text-black/20 fill-black icon-s" />
+                ) : (
+                  "Upload cover Image"
+                )}
+              </Button>
+            );
+          },
+          allowedContent({ ready, fileTypes, isUploading }) {
+            if (!ready) return "Checking what you allow";
+            if (isUploading) return "uploading...";
+            return `Stuff you can upload: ${fileTypes.join(", ")}`;
+          },
         }}
-        className="bg-surface-default p-8 ut-label:text-lg ut-allowed-content:ut-uploading:text-red-300 ut-button:p-2 ut-button:bg-accent border-2 rounded-default"
+        className="bg-surface-raised p-8 ut-label:text-lg ut-allowed-content:ut-uploading:text-red-300 border-2 rounded-default"
         appearance={{
           allowedContent: "image/*",
         }}
