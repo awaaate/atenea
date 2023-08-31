@@ -4,16 +4,24 @@
 import { EditorState } from "../interfaces/editor";
 import { NodeId } from "../interfaces/nodes";
 
-import { createWithEqualityFn } from "zustand/traditional";
-import { shallow } from "zustand/shallow";
-import { createSelectors } from "./store-selectors";
 import { createJSONStorage, persist } from "zustand/middleware";
+import { shallow } from "zustand/shallow";
+import { createWithEqualityFn } from "zustand/traditional";
+import { createSelectors } from "./store-selectors";
 
-import { create } from "zustand";
+import { debouncedSave, deserialize, serialize } from "./utils";
+
 const useEditorStoreBase = createWithEqualityFn<EditorState>()(
   persist(
     (set, get) => ({
+      editable: true,
+      lastDatabaseSync: new Date().toString(),
+      boardId: "",
       nodes: {},
+      pageBackground: "transparent",
+      sidebar: null,
+      title: "",
+      coverImage: "",
       events: {
         dragged: new Set<NodeId>(),
         selected: new Set<NodeId>(),
@@ -23,6 +31,18 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
         enabled: true,
         onRender: ({ render }) => render,
         resolver: {},
+      },
+      setCoverImage(coverImage) {
+        set({ coverImage });
+      },
+      setPageBackground: (background) => {
+        set({ pageBackground: background });
+      },
+      setSidebar(sidebar) {
+        set({ sidebar });
+      },
+      setTitle(title) {
+        set({ title });
       },
       connectNode: (id, dom) => {
         set((state) => {
@@ -63,9 +83,11 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       },
       select: (id, value: boolean = true) => {
         set((state) => {
+          if (!state.editable) return state;
           state.events.selected.forEach((selectedId) => {
             const currentNode = state.nodes[selectedId];
-            currentNode.events.selected = false;
+
+            if (currentNode) currentNode.events.selected = false;
           });
 
           const currentNode = state.nodes[id];
@@ -93,6 +115,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       },
       hover: (id, value: boolean = true) => {
         set((state) => {
+          if (!state.editable) return state;
           const currentNode = state.nodes[id];
           currentNode.events.hovered = value;
 
@@ -163,23 +186,58 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
           };
         });
       },
+      merge(prev) {
+        set((currentState) => {
+          console.log("merge", prev, currentState);
+          return deserialize(prev as EditorState, currentState as EditorState);
+        });
+      },
     }),
     {
-      name: "editore", // unique name
-      storage: createJSONStorage(() => sessionStorage), // (}}
+      name: "editor", // unique name
+      partialize: serialize,
+      merge: (prev, curr) => deserialize(prev as EditorState, curr),
+      onRehydrateStorage: (state) => {
+        console.log("hydration starts");
+
+        // optional
+        return (state, error) => {
+          if (error) {
+            console.log("an error happened during hydration", error);
+          } else {
+            console.log("hydration finished");
+          }
+        };
+      },
+      storage: createJSONStorage(() => {
+        return {
+          getItem: (key) => {
+            return null;
+          },
+          removeItem: (key) => {
+            debouncedSave();
+            // sessionStorage.removeItem(key);
+          },
+          setItem: (key, value) => {
+            debouncedSave();
+            //sessionStorage.setItem(key, value);
+          },
+        };
+      }),
     }
   ),
   shallow
 );
 export const selectors = {
   toolbar: (state: EditorState) => {
-    const currentlySelectedNodeId = state.events.selected.values().next().value;
+    const currentlySelectedNodeId = Array.from(state.events.selected)[0];
     return {
       active: currentlySelectedNodeId,
       currentNode:
         currentlySelectedNodeId && state.nodes[currentlySelectedNodeId],
       related:
-        currentlySelectedNodeId && state.nodes[currentlySelectedNodeId].related,
+        currentlySelectedNodeId &&
+        state.nodes[currentlySelectedNodeId]?.related,
     };
   },
   nodesIds: (state: EditorState) => {
@@ -197,3 +255,15 @@ export const selectors = {
   },
 };
 export const useEditorStore = createSelectors(useEditorStoreBase);
+
+export const saveEditorState = () => {
+  const state = useEditorStore.getState();
+
+  return serialize(state);
+};
+
+export const loadEditorState = (prevState: Partial<EditorState>) => {
+  useEditorStore.setState((current) => ({
+    ...deserialize(prevState as EditorState, current),
+  }));
+};

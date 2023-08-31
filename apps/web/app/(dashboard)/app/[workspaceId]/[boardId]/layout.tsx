@@ -11,13 +11,15 @@ import { env } from "@/env.mjs";
 import { getSession } from "@/lib/auth/getSession";
 import { Link, Icon } from "@shared/ui";
 
-import { db } from "@/lib/db";
 import CreateBoardButton from "../create-board-button";
+import BoardsList from "./board-list";
+import { db } from "@shared/db";
+import { createCaller } from "@/lib/trpc/createCaller";
 
 interface AdminLayoutProps {
   children: React.ReactNode;
   params: {
-    siteId: string;
+    workspaceId: string;
     boardId: string;
   };
 }
@@ -38,14 +40,10 @@ export default async function AdminLayout({
     redirect("/sign-in");
   }
 
-  const boards = await db.board.findMany({
-    where: {
-      siteId: params.siteId,
-    },
-    select: {
-      id: true,
-      name: true,
-    },
+  const caller = createCaller(session.user);
+
+  const { workspace } = await caller.boards.getSiblingBoards({
+    id: params.boardId,
   });
 
   /*   if (session.user.role !== "ADMIN") {
@@ -56,25 +54,16 @@ export default async function AdminLayout({
       <BoardsTab value={params.boardId}>
         <BoardsTabList>
           <BoardsTabTrigger value="home" className="text-text-weak">
-            <Link href={`/app/${params.siteId}`}>
+            <Link href={`/app/${params.workspaceId}`}>
               <Icon name="Home" className="mr-2 text-current" />
               <span className="">Home</span>
             </Link>
           </BoardsTabTrigger>
-          {boards.map((board) => (
-            <BoardsTabTrigger
-              key={board.id}
-              value={board.id}
-              className="text-text-weak"
-              asChild
-            >
-              <Link href={`/app/${params.siteId}/${board.id}`}>
-                <Icon name="LayoutDashboard" className="mr-2 text-current" />
-                <span className="">{board.name}</span>
-              </Link>
-            </BoardsTabTrigger>
-          ))}
-
+          <BoardsList
+            workspaceId={params.workspaceId}
+            boards={workspace.boards}
+            currentBoardId={params.boardId}
+          />
           <BoardsTabTrigger value="create" className="text-text-weak">
             <CreateBoardButton />
           </BoardsTabTrigger>

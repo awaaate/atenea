@@ -4,6 +4,7 @@ import { NodeElement } from "./node-element";
 import { useNode } from "./use-node";
 import { useEditorStore } from "../editor/store";
 import { NodeId } from "../interfaces";
+import { ProposalBudgetWidget } from "../../user-components/donuts/proposal-budget-widget";
 
 type RenderNodeToElementType = {
   render?: React.ReactElement;

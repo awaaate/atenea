@@ -14,7 +14,7 @@
     "@shared/editor": "workspace:^",
     "@shared/ui": "workspace:^",
     "framer-motion": "^10.16.0",
-    "react": "18.3.0-canary-98f3f14d2-20230818",
+    "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-type-animation": "^3.1.0",
     "zod": "^3.22.2",

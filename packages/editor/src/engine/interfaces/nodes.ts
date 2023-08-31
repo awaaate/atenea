@@ -4,17 +4,12 @@ import React from 'react';
 export type UserComponentConfig<T> = {
   displayName: string;
   related: Partial<NodeRelated>;
-  props: Partial<T>;
-  custom: Record<string, any>;
-  isCanvas: boolean;
 
-  // TODO: Deprecate
-  name: string;
   defaultProps: Partial<T>;
 };
 
 export type UserComponent<T = any> = React.ComponentType<T> & {
-  node?: Partial<UserComponentConfig<T>>;
+  node: UserComponentConfig<T>;
 };
 
 export type NodeId = string;

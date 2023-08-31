@@ -89,8 +89,10 @@ export const ProposalBudgetWidget: Widget<{
   );
 };
 
+ProposalBudgetWidget.displayName = "ProposalBudgetWidget";
+
 ProposalBudgetWidget.node = {
-  displayName: "Proposal Budget",
+  displayName: "ProposalBudgetWidget" as const,
   defaultProps: createWidgetProps({
     proposalId: 4,
     layout: {

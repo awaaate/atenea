@@ -6,6 +6,7 @@ import "./global.css";
 
 import { siteConfig } from "@/config";
 import { MainProvider } from "@/components/providers/main-provider";
+import { TRPCProvider } from "@/components/providers/trpc-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,7 +69,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MainProvider>{children}</MainProvider>
+        <TRPCProvider>
+          <MainProvider>{children}</MainProvider>
+        </TRPCProvider>
       </body>
     </html>
   );

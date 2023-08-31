@@ -1,28 +1,19 @@
-import { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { Metadata, NextPage } from "next";
+import { notFound } from "next/navigation";
 
+import { env } from "@/env.mjs";
 import {
   BoardsTab,
   BoardsTabContent,
   BoardsTabList,
   BoardsTabTrigger,
 } from "@shared/templates";
-import { env } from "@/env.mjs";
-import { getSession } from "@/lib/auth/getSession";
-import { Link, Icon, useForm } from "@shared/ui";
+import { Icon, Link } from "@shared/ui";
 
-import { db } from "@/lib/db";
-import WorkspaceForm from "@shared/templates/src/components/workspace-form/workspace-form";
-import { UpdateWorspaceForm } from "./update-form";
 import CreateBoardButton from "./create-board-button";
-
-interface AdminLayoutProps {
-  children: React.ReactNode;
-  params: {
-    siteId: string;
-    boardId: string;
-  };
-}
+import { UpdateWorspaceForm } from "./update-form";
+import { getSession } from "@/lib/auth/getSession";
+import { createCaller } from "@/lib/trpc/createCaller";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
@@ -31,23 +22,16 @@ export const metadata: Metadata = {
 };
 
 export default async function Workspace({
-  children,
   params,
-}: AdminLayoutProps) {
-  /*   if (session.user.role !== "ADMIN") {
-    redirect("/");
-  } */
+}: {
+  params: { workspaceId: string };
+}) {
+  const session = await getSession();
 
-  const workspace = await db.site.findFirst({
-    where: { id: params.siteId },
-    include: {
-      boards: {
-        select: {
-          name: true,
-          id: true,
-        },
-      },
-    },
+  const caller = createCaller(session.user);
+
+  const workspace = await caller.worksapce.getWorkspaceBoards({
+    id: params.workspaceId,
   });
 
   if (!workspace) notFound();
@@ -67,7 +51,7 @@ export default async function Workspace({
               className="text-text-weak"
               asChild
             >
-              <Link href={`/app/${params.siteId}/${board.id}`}>
+              <Link href={`/app/${params.workspaceId}/${board.id}`}>
                 <Icon name="LayoutDashboard" className="mr-2 text-current" />
                 <span className="">{board.name}</span>
               </Link>
@@ -79,7 +63,6 @@ export default async function Workspace({
           </BoardsTabTrigger>
         </BoardsTabList>
         <BoardsTabContent value={"home"}>
-          {children}
           <UpdateWorspaceForm
             accentColor="default"
             description={workspace.description || ""}

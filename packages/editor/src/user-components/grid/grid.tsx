@@ -14,7 +14,7 @@ export const Grid = () => {
   const nodeIds = useEditorStore(selectors.nodesIds);
   const layout = useEditorStore(selectors.layout);
   const setLayout = useEditorStore((satate) => satate.setLayout);
-
+  const editable = useEditorStore((state) => state.editable);
   const ResponsiveReactGridLayout = useMemo(
     () => WidthProvider(Responsive),
     []
@@ -37,6 +37,8 @@ export const Grid = () => {
           ]);
         }}
         resizeHandles={["se", "e", "s"]}
+        isDraggable={editable}
+        isResizable={editable}
       >
         {nodeIds.map((child: string, index: number) => {
           return <GridItem key={child} id={child} />;

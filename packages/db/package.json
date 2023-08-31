@@ -1,0 +1,34 @@
+{
+  "name": "@shared/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "introspect": "drizzle-kit introspect:pg",
+    "generate": "drizzle-kit generate:pg",
+    "seed": "vite-node ./db/seed.ts",
+    "push": "drizzle-kit push:pg",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/server": "^10.38.0",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.5",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^4.0.2",
+    "pg": "^8.11.3",
+    "postgres": "^3.3.5",
+    "superjson": "^1.13.1",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
+    "drizzle-kit": "^0.19.13",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.34.2"
+  }
+}

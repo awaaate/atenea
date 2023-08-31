@@ -13,6 +13,7 @@ const CreateBoardButton = () => {
     <Button
       className="py-0"
       onClick={() =>
+        //@ts-expect-error
         startTransition(async () => {
           const board = await createBoard(null, siteId, null);
           console.log(board);

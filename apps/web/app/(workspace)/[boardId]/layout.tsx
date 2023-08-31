@@ -10,7 +10,7 @@ import {
 } from "@shared/templates";
 import { Icon, Link } from "@shared/ui";
 
-import { db } from "@/lib/db";
+import { createCaller } from "@/lib/trpc/createCaller";
 
 interface AdminLayoutProps {
   children: React.ReactNode;
@@ -32,22 +32,9 @@ export default async function BoardView({
   /*   if (session.user.role !== "ADMIN") {
     redirect("/");
   } */
-
-  const board = await db.board.findFirst({
-    where: { id: params.boardId },
-
-    include: {
-      site: {
-        include: {
-          boards: {
-            select: {
-              name: true,
-              id: true,
-            },
-          },
-        },
-      },
-    },
+  const caller = createCaller();
+  const board = await caller.boards.getSiblingBoards({
+    id: params.boardId,
   });
 
   if (!board) notFound();
@@ -56,14 +43,14 @@ export default async function BoardView({
     <div>
       <BoardsTab value={params.boardId}>
         <BoardsTabList className="bg-accent">
-          {board?.site?.boards.map((b) => (
+          {board.workspace.boards.map((b) => (
             <BoardsTabTrigger
               key={b.id}
               value={b.id}
               className="text-text-weak"
               asChild
             >
-              <Link href={`/b/${b.id}`}>
+              <Link href={`/${b.id}`}>
                 <Icon name="LayoutDashboard" className="mr-2 text-current" />
                 <span className="">{b.name}</span>
               </Link>

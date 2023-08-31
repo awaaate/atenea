@@ -1,64 +1,32 @@
-"use client";
-import {
-  DefaultFrame,
-  Editor,
-  EditorSidebar,
-  EditorTopbar,
-} from "@shared/editor";
-import { Avatar } from "@shared/ui";
-import { useGlobalStore } from "@shared/templates";
+import { getSession } from "@/lib/auth/getSession";
+import { createCaller } from "@/lib/trpc/createCaller";
+import { BoardPage } from "@shared/templates";
+import { notFound } from "next/navigation";
+import { Board } from "../../../components/board/board";
 
-const BoardView = () => {
-  const { setSidebar, sidebarTab, background, coverImage, setBackground } =
-    useGlobalStore();
+interface BoardViewProps {
+  params: {
+    boardId: string;
+  };
+}
+
+const BoardView = async ({ params }: BoardViewProps) => {
+  const caller = createCaller();
+
+  const board = await caller.boards.get({
+    id: params.boardId,
+  });
+
+  if (!board) return notFound();
 
   return (
-    <Editor enabled={false}>
-      <div className="flex">
-        <div className="h-full flex-1">
-          <div
-            className="h-full w-full flex flex-col p-16"
-            style={{
-              background: background,
-            }}
-          >
-            <div className="bg-background-default rounded-default m-auto  ">
-              {coverImage && (
-                <div className="p-4">
-                  <div
-                    className="bg-cover bg-center bg-fixed rounded-lg"
-                    style={{
-                      height: "200px",
-                      backgroundImage: `url(${coverImage})`,
-                    }}
-                  ></div>
-                </div>
-              )}
-              <div className=" center p-8 ">
-                <input
-                  className="bg-transparent shadow-0 border-0 text-5xl text-text focus:outline-none "
-                  placeholder="My board"
-                />
-              </div>
-
-              <div className="w-full px-8 flex items-center">
-                <Avatar name="User" size="sm" />
-                <span className="text-sm text-text-weak ml-2">
-                  Edited 23 hours ago
-                </span>
-              </div>
-              <DefaultFrame />
-            </div>
-          </div>
-        </div>
-        <EditorSidebar
-          sidebarTab={sidebarTab}
-          setSidebar={setSidebar}
-          background={background}
-          setBackground={setBackground}
-        />
-      </div>
-    </Editor>
+    <Board
+      title={board.name}
+      background={board.background}
+      content={board.draft as any}
+      id={board.id}
+      editable={false}
+    />
   );
 };
 

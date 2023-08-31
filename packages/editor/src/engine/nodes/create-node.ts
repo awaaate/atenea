@@ -20,15 +20,15 @@ export function createNode(
         id,
         _hydrationTimestamp: Date.now(),
         data: {
-            ...newNode.data,
-            type: actualType,
-            name: getNodeTypeName(actualType),
-            displayName: getNodeTypeName(actualType),
             props: {},
             parent: null,
             hidden: false,
             nodes: [],
             linkedNodes: {},
+            ...newNode.data,
+            type: actualType,
+            name: getNodeTypeName(actualType),
+            displayName: getNodeTypeName(actualType),
         },
         related: {},
         events: {
@@ -63,11 +63,10 @@ export function createNode(
     if (userComponentConfig) {
         node.data.displayName =
             userComponentConfig.displayName ||
-            userComponentConfig.name ||
             node.data.displayName;
 
         node.data.props = {
-            ...(userComponentConfig.props || userComponentConfig.defaultProps || {}),
+            ...(userComponentConfig.defaultProps || {}),
             ...node.data.props,
         };
 

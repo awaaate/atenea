@@ -7,6 +7,7 @@ import { UserAccountDropdown } from "../user-account-dropdown";
 import { navItemType } from "@/types/item-types";
 import { ThemeToggle } from "../theme-toggle";
 import { Session } from "@/lib/auth/getSession";
+import Image from "next/image";
 
 const DashboardTopbar = ({ session }: { session: Session }) => {
   const navItems: navItemType[] = [];
@@ -22,7 +23,13 @@ const DashboardTopbar = ({ session }: { session: Session }) => {
               "text-md tracking-tighter"
             )}
           >
-            <img src="/logo.png" alt="logo" className="icon-l mr-2" />
+            <Image
+              width={50}
+              height={50}
+              src="/logo.png"
+              alt="logo"
+              className="icon-l mr-2"
+            />
           </Link>
         </div>
         <div className="flex items-center gap-x-4">

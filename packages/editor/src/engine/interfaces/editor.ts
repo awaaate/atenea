@@ -20,9 +20,16 @@ export interface Indicator {
 export type EditorEvents = Record<NodeEventTypes, Set<NodeId>>;
 
 export type EditorState = {
+    editable: boolean;
+    boardId: string;
+    sidebar: "node" | "page" | null;
+    title: string;
+    pageBackground: string;
+    coverImage: string;
     nodes: Nodes;
     events: EditorEvents;
     options: Options;
+    lastDatabaseSync: string,
     connectNode: (id: NodeId, dom: HTMLElement | null) => void;
     setNode: (id: NodeId, cb: (node: Node) => Node) => void
     select: (id: NodeId, value?: boolean) => void
@@ -30,5 +37,11 @@ export type EditorState = {
     drag: (id: NodeId) => void
     create: (node: Node) => void
     remove: (id: NodeId) => void
+    setSidebar: (sidebar: "node" | "page" | null) => void
+    setTitle: (title: string) => void
+    setPageBackground: (pageBackground: string) => void
+    setCoverImage: (coverImage: string) => void
     setLayout: (layout: ReactGridLayout.Layout[]) => void;
+    merge: (state: Partial<EditorState>) => void;
+
 };

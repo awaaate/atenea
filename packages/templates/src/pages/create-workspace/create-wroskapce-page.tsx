@@ -14,7 +14,7 @@ import WorkspaceForm from "../../components/workspace-form/workspace-form";
 import { WorkspacePreview } from "../../components/workspace-preview/workspace-preview";
 import { workspaceSchema } from "../../schemas/workspaceSchema";
 interface CreateBoardButton {
-  onSubmit: (data: any) => Promise<void>
+  onSubmit: (data: any) => Promise<void>;
 }
 export const CreateWorspacePage = () => {
   const form = useForm({
@@ -34,7 +34,7 @@ export const CreateWorspacePage = () => {
   return (
     <div className="h-screen w-screen bg-background-default flex gap-8 p-16 ">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} action>
+        <form onSubmit={form.handleSubmit(onSubmit)}>
           <WorkspaceForm />
         </form>
       </Form>

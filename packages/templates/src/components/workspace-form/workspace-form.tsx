@@ -44,7 +44,9 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
             <FormControl>
               <AccentPicker
                 value={field.value}
-                onValueChange={(color: any) => field.onChange(color as string)}
+                onValueChange={(color: string) => {
+                  form.setValue("accentColor", color);
+                }}
                 type="single"
               />
             </FormControl>

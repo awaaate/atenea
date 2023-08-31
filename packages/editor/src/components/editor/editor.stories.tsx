@@ -1,5 +1,5 @@
 import { Editor } from "./editor";
-import { EditorTopbar } from "./editor-topbar";
+import { EditorTopbar } from "../editor-topbar";
 
 export default {
   title: "Editor",

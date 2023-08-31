@@ -22,9 +22,22 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
     const select = useEditorStore.use.select();
     const connect = useEditorStore.use.connectNode();
 
-    const isActive = useEditorStore((state) => state.events.selected.has(id));
+    const isActive = useEditorStore((state) => {
+      console.log("state.events.selected", Object.keys(state.events.selected));
+      return state.events.selected.has(id);
+    });
     const isText = useEditorStore(
-      useCallback((state) => state.nodes[id].data.displayName === "Text", [id])
+      useCallback(
+        (state) => {
+          console.log(
+            "state.nodes[id].data.displayName",
+            state.nodes[id],
+            state
+          );
+          return state.nodes[id].data.displayName === "Text";
+        },
+        [id]
+      )
     );
 
     useEffect(() => {
@@ -70,6 +83,7 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
       >
         <NodeProvider id={id}>
           <RenderNodeToElement />
+          <WidgetMenu />
         </NodeProvider>
         {props.children}
       </div>

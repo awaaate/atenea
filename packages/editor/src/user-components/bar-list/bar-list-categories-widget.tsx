@@ -51,9 +51,10 @@ export const BarListCategoriesWidget: Widget = () => {
     />
   );
 };
+BarListCategoriesWidget.displayName = "BarListCategoriesWidget";
 
 BarListCategoriesWidget.node = {
-  displayName: "Proposal Budget",
+  displayName: "BarListCategoriesWidget",
   defaultProps: {
     layout: {
       w: 9,

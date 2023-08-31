@@ -7,8 +7,6 @@ import { $getSelection, $isRangeSelection, LexicalEditor } from "lexical";
 import { useList } from "../../hooks/rich-text/use-list";
 import { FloatingMenu, FloatingMenuCoords } from "./floating-menu";
 
-const DOM_ELEMENT = document.body;
-
 export function FloatingMenuPlugin({
   richEditor,
 }: {
@@ -73,8 +71,10 @@ export function FloatingMenuPlugin({
 
   useList(richEditor);
 
+  if (!typeof window) return null;
+
   return createPortal(
     <FloatingMenu ref={ref} editor={richEditor} coords={coords} />,
-    DOM_ELEMENT
+    document.body
   );
 }

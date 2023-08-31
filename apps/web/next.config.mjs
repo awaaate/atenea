@@ -1,4 +1,5 @@
 import "./env.mjs";
+import withBundleAnalyzer from "@next/bundle-analyzer";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,6 +8,7 @@ const nextConfig = {
   transpilePackages: [
     "@shared/tailwind-config",
     "@shared/editor",
+    "@shared/templates",
     "@shared/ui",
   ],
   images: {
@@ -28,7 +30,11 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  reactStrictMode: false,
 
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   webpack: (config) => {
     config.resolve.fallback = { fs: false, net: false, tls: false };
     config.externals.push("pino-pretty", "lokijs", "encoding");
@@ -37,4 +43,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default nextConfig /* withBundleAnalyzer() */;

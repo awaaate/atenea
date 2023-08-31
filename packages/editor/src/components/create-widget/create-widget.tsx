@@ -1,21 +1,17 @@
 import { CommandMenu, Dialog, DialogTrigger, Icon } from "@shared/ui";
 import React from "react";
-import {
-  UserComponents,
-  UserComponentsType,
-  getComponentTypes,
-} from "../../user-components";
-import { nanoid } from "nanoid";
 import { useEditorStore } from "../../engine/editor";
 import { createNode } from "../../engine/nodes";
+import { WidgetComponentsType, getWidget } from "../../user-components";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const selectNode = useEditorStore.use.select();
   const add = useEditorStore.use.create();
 
-  const creteNode = (name: UserComponentsType) => {
-    const component = UserComponents[name];
+  const creteNode = (name: WidgetComponentsType) => {
+    const component = getWidget(name)?.component;
+    if (!component) return console.error("Component not found");
     const nodeToAdd = createNode({
       data: {
         type: component,
