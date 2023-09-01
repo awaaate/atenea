@@ -22,7 +22,7 @@ const Spinner: React.FC<SpinnerProps> = ({ className, size = "md" }) => {
       <svg
         aria-hidden="true"
         className={cn(
-          "animate-spin z-spinner text-accent/20 fill-accent transion-slowly",
+          "animate-spin z-spinner text-black/20 fill-black transion-slowly",
           sizes[size],
           className
         )}

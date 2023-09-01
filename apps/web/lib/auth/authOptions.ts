@@ -1,6 +1,6 @@
 import { env } from "@/env.mjs";
 import { authProviders } from "@/lib/auth/authProviders";
-import { type AuthOptions } from "next-auth";
+import { type NextAuthConfig } from "next-auth";
 import { logServer } from "../utils/log";
 
 //TODO: fix this
@@ -8,7 +8,7 @@ import { logServer } from "../utils/log";
 const VERCEL_DEPLOYMENT = !!process.env.VERCEL_URL;
 
 
-export const authOptions: AuthOptions = {
+export const authOptions: NextAuthConfig = {
     providers: authProviders,
     pages: {
         signIn: `/login`,

@@ -11,7 +11,7 @@ import { env } from "@/env.mjs";
 import { getSession } from "@/lib/auth/getSession";
 import { Link, Icon } from "@shared/ui";
 
-import CreateBoardButton from "../create-board-button";
+import { CreateBoardButton } from "../create-board-button";
 import BoardsList from "./board-list";
 import { db } from "@shared/db";
 import { createCaller } from "@/lib/trpc/createCaller";
@@ -42,7 +42,7 @@ export default async function AdminLayout({
 
   const caller = createCaller(session.user);
 
-  const { workspace } = await caller.boards.getSiblingBoards({
+  const { boards } = await caller.boards.getSiblingBoards({
     id: params.boardId,
   });
 
@@ -61,10 +61,13 @@ export default async function AdminLayout({
           </BoardsTabTrigger>
           <BoardsList
             workspaceId={params.workspaceId}
-            boards={workspace.boards}
+            boards={boards}
             currentBoardId={params.boardId}
           />
-          <BoardsTabTrigger value="create" className="text-text-weak">
+          <BoardsTabTrigger
+            value="create"
+            className="text-text-weak flex items-center"
+          >
             <CreateBoardButton />
           </BoardsTabTrigger>
         </BoardsTabList>

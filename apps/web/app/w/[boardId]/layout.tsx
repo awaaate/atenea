@@ -33,17 +33,17 @@ export default async function BoardView({
     redirect("/");
   } */
   const caller = createCaller();
-  const board = await caller.boards.getSiblingBoards({
+  const { boards, workspaceId } = await caller.boards.getSiblingBoards({
     id: params.boardId,
   });
 
-  if (!board) notFound();
+  if (!workspaceId) notFound();
 
   return (
     <div>
       <BoardsTab value={params.boardId}>
         <BoardsTabList className="bg-accent">
-          {board.workspace.boards.map((b) => (
+          {boards.map((b) => (
             <BoardsTabTrigger
               key={b.id}
               value={b.id}

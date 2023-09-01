@@ -1,30 +1,29 @@
 "use client";
 import { createBoard } from "@/lib/actions/createBoard";
+import { trpc } from "@/lib/trpc";
 import { Button, Icon, Spinner } from "@shared/ui";
 import { useParams, useRouter } from "next/navigation";
 import React, { useTransition } from "react";
 
-const CreateBoardButton = () => {
+export const CreateBoardButton = () => {
   const router = useRouter();
-  const { siteId } = useParams() as { siteId: string };
-  const [isPending, startTransition] = useTransition();
-
+  const { workspaceId } = useParams() as { workspaceId: string };
+  const { isLoading, mutateAsync } = trpc.boards.create.useMutation();
   return (
     <Button
-      className="py-0"
-      onClick={() =>
-        //@ts-expect-error
-        startTransition(async () => {
-          const board = await createBoard(null, siteId, null);
-          console.log(board);
-          router.refresh();
-          router.push(`/app/${siteId}/${board.id}`);
-        })
-      }
+      className="py-0 flex items-center"
+      onClick={async () => {
+        const boards = await mutateAsync({
+          workspaceId,
+          name: "New Board",
+        });
+        const board = boards[0];
+        router.push(`/app/${workspaceId}/${board.id}`);
+      }}
       variant={"ghost"}
     >
-      {isPending ? (
-        <Spinner className="mr-2" />
+      {isLoading ? (
+        <Spinner className="mr-2" size="sm" />
       ) : (
         <Icon name={"Plus"} className="mr-2" />
       )}
@@ -32,5 +31,3 @@ const CreateBoardButton = () => {
     </Button>
   );
 };
-
-export default CreateBoardButton;

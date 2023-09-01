@@ -4,6 +4,7 @@ import { BoardPage } from "@shared/templates";
 import { notFound } from "next/navigation";
 import { Board } from "../../../components/board/board";
 
+export const dynamic = "force-dynamic";
 interface BoardViewProps {
   params: {
     boardId: string;

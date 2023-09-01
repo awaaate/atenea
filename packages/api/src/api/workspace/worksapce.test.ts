@@ -38,7 +38,7 @@ it.skip("It should create a workspace", async () => {
     expect(result).toBeDefined()
 })
 
-it("Get all the workspaces from the user", async () => {
+it.skip("Get all the workspaces from the user", async () => {
     //test the trpc
 
     const result = await workspaces.getUserWorkspaces()

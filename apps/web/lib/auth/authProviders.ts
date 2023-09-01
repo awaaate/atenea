@@ -2,9 +2,10 @@
 import { env } from '@/env.mjs';
 import { type Provider } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { getCsrfToken } from 'next-auth/react';
+import { getCsrfToken } from './getCsrfToken';
 import { SiweMessage } from 'siwe';
-import { db } from '../db';
+import { db } from '@shared/db';
+import { createCaller } from '../trpc/createCaller';
 
 export const authProviders: Provider[] = [
   CredentialsProvider({
@@ -27,6 +28,7 @@ export const authProviders: Provider[] = [
           JSON.parse(credentials?.message || '{}')
         );
 
+        console.log('siwe', siwe)
         const nextAuthUrl =
           env.NEXT_PUBLIC_APP_URL
         if (!nextAuthUrl) {
@@ -36,9 +38,15 @@ export const authProviders: Provider[] = [
         if (siwe.domain !== nextAuthHost) {
           return null;
         }
+        console.log('siwe.domain !== nextAuthHost', siwe.domain !== nextAuthHost)
 
         // let token = await getToken({req})
-        const token = await getCsrfToken({ req: { headers: req?.headers } })
+        const token = await getCsrfToken(req.headers.get('cookie') || '');
+
+        console.log("TOOOKEN")
+        console.log(token)
+
+        console.log('token', token)
         if (siwe.nonce !== token) {
           return null
         }
@@ -49,41 +57,12 @@ export const authProviders: Provider[] = [
         //fisrst we need to check if the user is already registered
         //if not we need to register it
 
-        try {
-          const currentUser = await db.user.findUnique({
-            where: {
-              walletAddress: siwe.address,
-            },
-          });
-          //get the image from https://avatars.jakerunzer.com/sdadasd
+        const caller = createCaller()
 
-          if (currentUser) {
-            return {
-              walletAddress: siwe.address,
-              id: currentUser.id,
-            };
-          } else {
-            const newUser = await db.user.create({
-              data: {
-                walletAddress: siwe.address,
-                image: '',
-              },
-            });
-            return {
-              walletAddress: siwe.address,
-              id: newUser.id,
-            };
-
-          }
-
-
-        } catch (error) {
-
-        }
-        return {
+        const user = await caller.users.signInWithWallet({
           walletAddress: siwe.address,
-          id: siwe.address,
-        };
+        })
+        return user;
       } catch (e) {
         return null;
       }

@@ -10,7 +10,7 @@ import {
 } from "@shared/templates";
 import { Icon, Link } from "@shared/ui";
 
-import CreateBoardButton from "./create-board-button";
+import { CreateBoardButton } from "./create-board-button";
 import { UpdateWorspaceForm } from "./update-form";
 import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
@@ -58,7 +58,10 @@ export default async function Workspace({
             </BoardsTabTrigger>
           ))}
 
-          <BoardsTabTrigger value="create" className="text-text-weak">
+          <BoardsTabTrigger
+            value="create"
+            className="text-text-weak flex items-center"
+          >
             <CreateBoardButton />
           </BoardsTabTrigger>
         </BoardsTabList>

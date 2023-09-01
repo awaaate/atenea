@@ -22,7 +22,7 @@ export const BoardsTabList = forwardRef<
   <TabsList
     ref={ref}
     className={cn(
-      "border-0 bg-accent/30   m-0  overflow-hidden h-[50px] items-end ",
+      "border-0 bg-accent/30   m-0  overflow-hidden h-[50px] items-end flex ",
       className
     )}
     {...props}

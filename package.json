@@ -14,5 +14,10 @@
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "atenea-mvp"
+  "name": "atenea-mvp",
+  "pnpm": {
+    "overrides": {
+      "@auth/core": "0.12.0"
+    }
+  }
 }

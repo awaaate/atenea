@@ -1,8 +1,8 @@
-import { config } from "dotenv"
-import * as z from "zod"
-import { Board, Workspace } from "@shared/db";
+import { Board } from "@shared/db";
 import { eq } from "drizzle-orm";
-import { publicProcedure, protectedProcedure, router } from "../../trpc";
+import { nanoid } from "nanoid";
+import * as z from "zod";
+import { protectedProcedure, publicProcedure, router } from "../../trpc";
 
 
 export const boardsRouter = router({
@@ -11,35 +11,30 @@ export const boardsRouter = router({
     })).query(async ({ input, ctx }) => {
         const { db } = ctx;
 
+        const workspace = await db.query.Board.findFirst({
+            where: eq(Board.id, input.id),
+            columns: {
+                workspaceId: true,
+            }
+        })
+        if (!workspace) throw new Error("Board not found")
+        const workspaceId = workspace.workspaceId
+        if (!workspaceId) throw new Error("Workspace not found")
 
-        return db.transaction(async (trx) => {
-            const board = await trx.query.Board.findFirst({
-                where(fields, { eq }) {
-                    return eq(fields.id, input.id)
-                },
-                columns: {
-                    accentColor: true,
-                    workspaceId: true,
-                }
-            })
-            if (!board) throw new Error("Board not found")
-            if (!board.workspaceId) throw new Error("Board not found")
-
-            const otherBoardsFromWorkspace = await trx.select({
-                boards: {
-                    id: Board.id,
-                    name: Board.name,
-                }
-            }).from(Board).where(eq(Board.workspaceId, board.workspaceId))
-            return {
-                accentColor: board.accentColor,
-                workspace: {
-                    boards: otherBoardsFromWorkspace.map(w => w.boards)
-                }
+        const boards = await db.query.Board.findMany({
+            where: eq(Board.workspaceId, workspaceId),
+            columns: {
+                id: true,
+                name: true,
             }
         })
 
+        return {
+            workspaceId,
+            boards
+        }
     }),
+
     getAll: protectedProcedure.query(({ ctx }) => {
         const { db } = ctx;
         const userId = ctx.user?.id
@@ -67,7 +62,8 @@ export const boardsRouter = router({
             background: input.background,
             accentColor: input.accentColor,
         }).where(eq(Board.id, input.id)).returning({
-            content: Board.draft,
+            draft: Board.draft,
+            name: Board.name,
         })
     }),
 
@@ -86,7 +82,7 @@ export const boardsRouter = router({
         })
     }),
 
-    get: protectedProcedure.input(z.object({
+    get: publicProcedure.input(z.object({
         id: z.string(),
     })).query(async ({ input, ctx }) => {
         const { db } = ctx;
@@ -102,17 +98,19 @@ export const boardsRouter = router({
         const { db } = ctx;
         const userId = ctx.user?.id
         if (!userId) throw new Error("User not found")
-        /*        return db.insert(Board).values({
-                   name: input.name,
-                   workspaceId: input.workspaceId,
-                   userId: userId,
-               }).returning({
-                   id: Board.id,
-                   name: Board.name,
-                   workspaceId: Board.workspaceId,
-                   userId: Board.userId,
-               }) */
-    }
-    ),
+        const board = {
+            id: nanoid(),
+            name: input.name,
+            workspaceId: input.workspaceId,
+            userId: userId,
+            createdAt: new Date().toISOString(), // convert Date to string
+            updatedAt: new Date().toISOString(), // convert Date to string
+        };
+        return db.insert(Board).values(board).returning({
+            id: Board.id,
+            name: Board.name,
+        })
+    })
+
 
 })

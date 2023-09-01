@@ -38,6 +38,7 @@ export default async function AdminLayout({
     (workspace) => workspace.id === params.workspaceId
   );
 
+  console.log("userOwns", workspaces);
   if (userOwns === -1) {
     //TODO: improve this
     return notFound();

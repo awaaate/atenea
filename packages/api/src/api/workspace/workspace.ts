@@ -1,9 +1,8 @@
-import { config } from "dotenv"
-import * as z from "zod"
-import { router, protectedProcedure } from '../../trpc'
 import { Board, Workspace } from "@shared/db";
 import { eq } from "drizzle-orm";
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
+import * as z from "zod";
+import { protectedProcedure, router } from '../../trpc';
 export const workspaceRouter = router({
 
     getAll: protectedProcedure.query(({ ctx }) => {

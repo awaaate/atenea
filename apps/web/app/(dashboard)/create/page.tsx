@@ -18,6 +18,8 @@ import {
 
 import { trpc } from "@/lib/trpc";
 import { useRouter } from "next/navigation";
+import { TRPCClientError } from "@trpc/client";
+import { AppRouter } from "@shared/api";
 
 export default function Page() {
   const { isLoading, mutateAsync: ceateWorkspace } =
@@ -39,24 +41,38 @@ export default function Page() {
     console.log(data);
     try {
       const res = await ceateWorkspace(data);
+
       const { id } = res[0];
-      router.refresh();
-      router.push(`/app/${id}`);
+      if (!id) {
+        console.log(res);
+        throw new Error("Something went wrong");
+      }
+      {
+        router.refresh();
+        router.push(`/app/${id}`);
+      }
 
       toast({
         title: "Success",
         description: "Successfully created site!",
       });
-    } catch (error) {
+    } catch (error: unknown) {
       console.log(error);
-      /*   if (error === "subdomain already exists") {
-        form.setError("subdomain", res.error);
-      } */
-      toast({
-        title: "Something went wrong.",
-        variant: "destructive",
-        description: error,
-      });
+      if (error instanceof TRPCClientError) {
+        if (
+          error.message ===
+          'duplicate key value violates unique constraint "Site_subdomain_key"'
+        ) {
+          form.setError("subdomain", {
+            message: "Subdomain is already taken",
+          });
+        }
+      } else {
+        toast({
+          title: "Something went wrong.",
+          variant: "destructive",
+        });
+      }
     }
   };
 
@@ -89,7 +105,7 @@ export default function Page() {
                 {isLoading ? (
                   <Spinner className="text-black/20 fill-black" />
                 ) : (
-                  "Create"
+                  "create"
                 )}
               </Button>
             </CardFooter>

@@ -1,0 +1,7 @@
+{
+  "name": "overrides",
+  "version": "1.0.0",
+  "dependencies": {
+    "@auth/core": "0.12.0"
+  }
+}

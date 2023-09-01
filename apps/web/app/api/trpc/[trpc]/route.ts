@@ -1,15 +1,20 @@
 
 import { env } from "@/env.mjs";
+import { getSession } from "@/lib/auth/getSession";
 import { appRouter, fetchRequestHandler, createContext } from "@shared/api";
 import { db } from "@shared/db";
 
+export const runtime = "edge"
 
 const handler = (req: Request) => fetchRequestHandler({
     endpoint: "/api/trpc",
     req,
     router: appRouter,
-    createContext: (opts) => {
-        return createContext(db, env.AUTH_SECRET, opts);
+    createContext: async (opts) => {
+        const session = await getSession();
+        return createContext(db, {
+            user: session?.user || null,
+        });
     }
 });
 

@@ -50,13 +50,7 @@ function WidgetRoot<T>({
         borderRadius,
         background,
       }}
-      className={cn(
-        "h-full w-full",
-        {
-          "bg-surface-default ": !isText,
-        },
-        className
-      )}
+      className={cn("h-full w-full bg-surface-default shadow-card", className)}
     >
       {isActive && (
         <Icon

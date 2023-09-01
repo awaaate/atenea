@@ -1,5 +1,4 @@
-import { getServerSession } from "next-auth";
-import { authOptions } from "./authOptions";
+import { auth } from ".";
 
 export type Session = {
     user: {
@@ -14,5 +13,5 @@ export type Session = {
 export function getSession() {
 
 
-    return getServerSession(authOptions) as Promise<Session>;
+    return auth() as unknown as Promise<Session>;
 }
