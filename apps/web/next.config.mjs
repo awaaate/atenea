@@ -43,4 +43,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig /* withBundleAnalyzer() */;
+export default withBundleAnalyzer()(nextConfig);

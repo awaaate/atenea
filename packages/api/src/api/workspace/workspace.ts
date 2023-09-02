@@ -1,4 +1,4 @@
-import { Board, Workspace } from "@shared/db";
+import { Board, Workspace } from "@shared/db/src/schema";
 import { eq } from "drizzle-orm";
 import { nanoid } from 'nanoid';
 import * as z from "zod";

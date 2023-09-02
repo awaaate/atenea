@@ -1,4 +1,4 @@
-import { User } from "@shared/db";
+import { User } from "@shared/db/src/schema";
 import { nanoid } from "nanoid";
 import * as z from "zod";
 import { publicProcedure, router } from "../../trpc";
