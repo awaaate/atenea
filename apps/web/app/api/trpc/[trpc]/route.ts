@@ -4,7 +4,7 @@ import { getSession } from "@/lib/auth/getSession";
 import { appRouter, fetchRequestHandler, createContext } from "@shared/api";
 import { db } from "@shared/db";
 
-export const runtime = "edge"
+//export const runtime = "edge"
 
 const handler = (req: Request) => fetchRequestHandler({
     endpoint: "/api/trpc",
