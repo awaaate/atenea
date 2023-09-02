@@ -8,7 +8,7 @@ import {
   BoardsTabList,
   BoardsTabTrigger,
 } from "@shared/templates";
-import { Icon, Link } from "@shared/ui";
+import { Icon, Link, TooltipProvider } from "@shared/ui";
 
 import { createCaller } from "@/lib/trpc/createCaller";
 
@@ -32,33 +32,12 @@ export default async function BoardView({
   /*   if (session.user.role !== "ADMIN") {
     redirect("/");
   } */
-  const caller = createCaller();
+  /*   const caller = //createCaller();
   const { boards, workspaceId } = await caller.boards.getSiblingBoards({
     id: params.boardId,
   });
 
-  if (!workspaceId) notFound();
+  if (!workspaceId) notFound(); */
 
-  return (
-    <div>
-      <BoardsTab value={params.boardId}>
-        <BoardsTabList className="bg-accent">
-          {boards.map((b) => (
-            <BoardsTabTrigger
-              key={b.id}
-              value={b.id}
-              className="text-text-weak"
-              asChild
-            >
-              <Link href={`/${b.id}`}>
-                <Icon name="LayoutDashboard" className="mr-2 text-current" />
-                <span className="">{b.name}</span>
-              </Link>
-            </BoardsTabTrigger>
-          ))}
-        </BoardsTabList>
-        <BoardsTabContent value={params.boardId}>{children}</BoardsTabContent>
-      </BoardsTab>
-    </div>
-  );
+  return <div>{children}</div>;
 }

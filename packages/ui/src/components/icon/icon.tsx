@@ -66,10 +66,14 @@ import {
   Wallet2,
   PanelLeftClose,
   PanelLeft,
+  Share,
+  DotIcon,
+  ExternalLink,
 } from "lucide-react";
 import React from "react";
 
 import { cn } from "../../lib/utils";
+import { cva, VariantProps } from "class-variance-authority";
 
 const Icons = {
   ArrowDown,
@@ -138,19 +142,36 @@ const Icons = {
   Wallet2,
   PanelLeft,
   PanelLeftClose,
+  Share,
+  ExternalLink,
+  DotIcon,
 };
 
 const IconNames = Object.keys(Icons) as (keyof typeof Icons)[];
 type IconName = keyof typeof Icons;
 
-interface IconProps extends LucideProps {
+const iconVariants = cva("inline-flex", {
+  variants: {
+    variant: {
+      default: "text-text-icon",
+      button:
+        "ring rounded-default ring-transparent transition-colors text-text-weakest  hover:ring-blue-500 text-current hover:text-text-weaker cursor-pointer",
+    },
+  },
+  defaultVariants: {
+    variant: "default",
+  },
+});
+interface IconProps extends LucideProps, VariantProps<typeof iconVariants> {
   name: IconName;
   size?: "xxs" | "xs" | "s" | "m" | "l" | "xl" | "xxl";
 }
 
 const Icon = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ name, className, size = "m", ...props }, ref) => {
+  ({ name, className, variant, size = "m", ...props }, ref) => {
     const IconComp = Icons[name];
+
+    if (!IconComp) throw new Error(`Icon ${name} not found`);
 
     const sizes = {
       xxs: "icon-xxs",
@@ -161,15 +182,16 @@ const Icon = React.forwardRef<SVGSVGElement, IconProps>(
       xl: "icon-xl",
       xxl: "icon-xxl",
     };
+
     return (
       <IconComp
         {...props}
-        className={cn("inline-block text-icon-default", sizes[size], className)}
+        className={cn(sizes[size], iconVariants({ variant }), className)}
         ref={ref}
       />
     );
   }
 );
-
+Icon.displayName = "Icon";
 export { Icon, IconNames };
 export type { IconProps, IconName };

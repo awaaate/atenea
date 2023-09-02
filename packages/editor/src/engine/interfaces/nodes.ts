@@ -1,4 +1,5 @@
 import React from 'react';
+import { Widget, WidgetProps } from '../../widget/widget-types';
 
 
 export type UserComponentConfig<T> = {
@@ -28,7 +29,7 @@ export type Node = {
 export type NodeRelated = Record<string, React.ElementType>;
 
 export type NodeData = {
-  props: Record<string, any>;
+  props: WidgetProps;
   type: string | React.ElementType;
   name: string;
   displayName: string;

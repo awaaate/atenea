@@ -2,10 +2,19 @@
 
 import React, { HTMLAttributes } from "react";
 
-import { Dialog, DialogContent, Icon, ScrollArea, cn } from "@shared/ui";
-
+import {
+  Card,
+  CardTitle,
+  Dialog,
+  DialogContent,
+  ScrollArea,
+  cn,
+} from "@shared/ui";
 import useSWR from "swr";
 import { useNode, useNodeActions } from "../engine/nodes";
+import { WidgetMenu } from "./widget-menu";
+import WidgetTitle from "./widget-title";
+import { useEditorStore } from "../engine/editor";
 
 interface WidgetRootProps<T> extends HTMLAttributes<HTMLDivElement> {
   overlay?: boolean;
@@ -27,12 +36,16 @@ function WidgetRoot<T>({
 }: WidgetRootProps<T>) {
   const { data, isLoading, error } = useSWR(...dataFetcher);
   const isFullScreen = useNode((node) => node.data.props.fullScreen);
-  const isText = useNode((node) => node.data.displayName === "Text");
+  const title = useNode((node) => node.data.props.title);
   const borderRadius = useNode((node) => node.data.props.borderRadius);
   const isActive = useNode((node) => node.events.selected);
   const background = useNode((node) => node.data.props.background);
+  const editable = useEditorStore.use.editable();
 
   const { setNode } = useNodeActions();
+
+  const showHeader = editable || title || isActive;
+
   if (isLoading || !data) {
     return skeleton;
   }
@@ -41,7 +54,7 @@ function WidgetRoot<T>({
   }
 
   return (
-    <ScrollArea
+    <div
       ref={(ref) => {
         if (!ref) return;
         //connect(ref);
@@ -50,29 +63,44 @@ function WidgetRoot<T>({
         borderRadius,
         background,
       }}
-      className={cn("h-full w-full bg-surface-default shadow-card", className)}
-    >
-      {isActive && (
-        <Icon
-          name="Grip"
-          className="draggable-handle absolute top-0 left-0 m-2 hover:text-icon-hover cursor-grab z-popout"
-        />
+      className={cn(
+        "h-full w-full bg-surface-default shadow-card flex-1",
+        className
       )}
-      <Dialog
-        open={isFullScreen}
-        onOpenChange={(value) => {
-          setNode((node) => {
-            node.data.props.fullScreen = value;
-            return node;
-          });
-        }}
-      >
-        <DialogContent>
-          <div className="w-full h-full">{fullScreen(data)}</div>
-        </DialogContent>
-      </Dialog>
-      {inner(data)}
-    </ScrollArea>
+    >
+      <Card className="w-full h-full flex flex-col ">
+        {showHeader && (
+          <CardTitle
+            className={cn(
+              "border-b  flex justify-between items-center px-2 py-2 mb-0  draggable-handle",
+              {
+                "cursor-grab": editable,
+              }
+            )}
+          >
+            <WidgetTitle />
+            <div className="flex gap-2 items-center z-popout bg-surface-lowered px-2 my-1 rounded-pill transition-all">
+              <WidgetMenu />
+            </div>
+          </CardTitle>
+        )}
+
+        <ScrollArea className="min-h-full">{inner(data)}</ScrollArea>
+        <Dialog
+          open={isFullScreen}
+          onOpenChange={(value) => {
+            setNode((node) => {
+              node.data.props.fullScreen = value;
+              return node;
+            });
+          }}
+        >
+          <DialogContent>
+            <div className="w-full h-full">{fullScreen(data)}</div>
+          </DialogContent>
+        </Dialog>
+      </Card>
+    </div>
   );
 }
 

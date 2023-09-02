@@ -40,6 +40,7 @@ export const workspaceRouter = router({
             boards: {
                 id: Board.id,
                 name: Board.name,
+                createdAt: Board.createdAt,
             },
             name: Workspace.name,
             description: Workspace.description,
@@ -53,6 +54,7 @@ export const workspaceRouter = router({
             boards: {
                 id: string,
                 name: string,
+                createdAt: string,
             }[]
         }
 
@@ -67,6 +69,7 @@ export const workspaceRouter = router({
                         acc.boards.push({
                             id: row.boards.id,
                             name: row.boards.name,
+                            createdAt: row.boards.createdAt,
                         })
                     }
 
@@ -79,7 +82,19 @@ export const workspaceRouter = router({
             }
         );
 
-        return result
+        return {
+            ...result,
+            boards: result.boards.sort((a, b) => {
+                //sort the boards by createdAt
+                return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+            }).map((board) => {
+                //remove the createdAt field
+                return {
+                    id: board.id,
+                    name: board.name,
+                }
+            })
+        }
     }),
 
     createWorkspace: protectedProcedure.input(z.object({
@@ -105,6 +120,22 @@ export const workspaceRouter = router({
         }).returning({
             id: Workspace.id,
         })
+    }),
+
+    getWorkspace: protectedProcedure.input(z.object({
+        id: z.string(),
+    })).query(async ({ input, ctx }) => {
+        const { db } = ctx;
+        const userId = ctx.user?.id
+        return db.query.Workspace.findFirst({
+            where(fields, { and, eq }) {
+                return and(
+                    eq(fields.id, input.id),
+                    eq(fields.userId, userId)
+                )
+            }
+        })
+
     }),
 
 })

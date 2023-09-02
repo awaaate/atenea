@@ -18,7 +18,7 @@ export const Board: React.FC<BoardWrapperProps> = ({
   id,
   title,
   background,
-  editable = true,
+  editable = false,
 }) => {
   useEffect(() => {
     loadEditorState({
@@ -33,7 +33,7 @@ export const Board: React.FC<BoardWrapperProps> = ({
       },
       title: title || "",
     });
-  }, [content, title, id]);
+  }, [content, title, id, background, editable]);
 
   return <BoardPage />;
 };

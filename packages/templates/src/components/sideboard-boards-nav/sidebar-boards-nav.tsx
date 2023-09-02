@@ -1,4 +1,6 @@
 import { NavItem, NavItemProps, SidebarNav } from "@shared/ui";
+import { useLayoutStore } from "../../stores/layoutStore";
+import { useMemo } from "react";
 
 const NAV: NavItemProps[] = [
   {
@@ -8,34 +10,23 @@ const NAV: NavItemProps[] = [
     icon: "Home",
     id: "home",
   },
-  {
-    children: "Notifications",
-    active: false,
-    href: "#",
-    icon: "Bell",
-    id: "notifications",
-  },
 ];
 
 export type BoardsList = { id: string; name: string | null }[];
 
 const SidebarBoardsNav = ({ siteId }: { siteId: string }) => {
-  return (
-    <SidebarNav className="h-full">
-      {[
-        ...NAV,
-        {
-          children: "Boards",
-          icon: "Folder" as const,
-          active: false,
-          id: "boards",
-          href: `/sites/${siteId}/boards`,
-        },
-      ].map((item) => (
-        <NavItem {...item} key={item.id} />
-      ))}
-    </SidebarNav>
-  );
+  const collapsedSidebar = useLayoutStore((state) => state.collapsedSidebar);
+
+  const navItems = useMemo(() => {
+    return NAV.map((item) => ({
+      ...item,
+      active: false,
+      href: `/sites/${siteId}/${item.id}`,
+      children: collapsedSidebar ? "" : item.children,
+    })).map((item, i) => <NavItem {...item} key={item.id} active={i === 0} />);
+  }, [siteId, collapsedSidebar]);
+
+  return <SidebarNav className="flex-1">{navItems}</SidebarNav>;
 };
 
 export { SidebarBoardsNav };

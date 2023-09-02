@@ -1,15 +1,11 @@
 "use client";
 
-import { useCallback, useEffect } from "react";
 import { CodeNode } from "@lexical/code";
 import { AutoLinkNode, LinkNode } from "@lexical/link";
 import { ListItemNode, ListNode } from "@lexical/list";
 import { TRANSFORMERS, registerMarkdownShortcuts } from "@lexical/markdown";
 import { HeadingNode, QuoteNode, registerRichText } from "@lexical/rich-text";
 import {
-  $createParagraphNode,
-  $getRoot,
-  $getSelection,
   createEditor,
   type CreateEditorArgs,
   type EditorState,
@@ -18,14 +14,17 @@ import {
   type LexicalEditor,
   type LexicalNode,
 } from "lexical";
+import { useCallback, useEffect } from "react";
 
-import { CAN_USE_DOM } from "../../lib/can-use-dom";
-import useLayoutEffect from "../use-layout-effect";
-import { TextProps } from "../../user-components/text";
 import { useNode, useNodeActions } from "../../engine/nodes";
+import { WidgetProps } from "../../widget/widget-types";
+import useLayoutEffect from "../use-layout-effect";
+import { initializeEditor } from "./initializeEditor";
+import { useEditorStore } from "../../engine/editor";
 
-export type ComponentWithRichEditor = {
+export type ComponentWithRichEditor = WidgetProps & {
   richEditor: LexicalEditor | null;
+  initialEditorState: EditorState;
 };
 
 export type InitialEditorStateType =
@@ -34,7 +33,7 @@ export type InitialEditorStateType =
   | EditorState
   | ((editor: LexicalEditor) => void);
 
-const HISTORY_MERGE_OPTIONS = { tag: "history-merge" };
+export const HISTORY_MERGE_OPTIONS = { tag: "history-merge" };
 
 function initRichText(editor: LexicalEditor) {
   return registerRichText(editor);
@@ -78,10 +77,12 @@ export type InitialConfigType = Readonly<{
   onError: (error: Error, editor: LexicalEditor) => void;
   editable?: boolean;
   theme?: EditorThemeClasses;
-  editorState?: InitialEditorStateType;
+  intialEditorState?: InitialEditorStateType;
 }>;
 
 export const useRichEditor = (initialConfig: InitialConfigType) => {
+  const editable = useEditorStore.use.editable();
+
   const richEditor = useNode(
     (node) => (node.data.props as ComponentWithRichEditor).richEditor
   );
@@ -94,6 +95,7 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
     },
     [richEditor]
   );
+
   useEffect(() => {
     if (!richEditor) return;
     const removeUpdateListener = richEditor.registerUpdateListener(
@@ -103,7 +105,7 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
         const size = richEditor.getRootElement()?.getBoundingClientRect();
         if (!size) return;
 
-        const height = Math.ceil(size.height / 20);
+        const height = Math.ceil(size.height / 20) + 3;
 
         setNode((node) => {
           node.data.props.layout.h = height;
@@ -117,10 +119,17 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
   }, [richEditor]);
 
   useEffect(() => {
+    if (!richEditor) return;
+
+    richEditor.setEditable(editable !== undefined ? editable : true);
+  }, [richEditor, editable]);
+
+  useEffect(() => {
     if (!richEditor) {
+      console.log("CREATING NEW EDITOR", richEditor);
       const editor = createEditor({
-        ...config,
         onError: (error) => {
+          console.error(error);
           initialConfig?.onError(error, editor);
         },
         namespace: initialConfig?.namespace ?? config.namespace,
@@ -128,12 +137,12 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
         editable: initialConfig?.editable,
         theme: initialConfig?.theme,
       });
-      initializeEditor(editor, initialConfig?.editorState);
+      initializeEditor(editor, initialConfig.intialEditorState);
       initRichText(editor);
       initMarkdownShortCuts(editor);
 
       setNode((node) => {
-        node.data.props.richEditor = editor;
+        (node.data.props as ComponentWithRichEditor).richEditor = editor;
         return node;
       });
     }
@@ -151,48 +160,3 @@ export const useRichEditor = (initialConfig: InitialConfigType) => {
     setEditorRef,
   };
 };
-
-function initializeEditor(
-  editor: LexicalEditor,
-  initialEditorState?: InitialEditorStateType
-): void {
-  if (initialEditorState === null) {
-    return;
-  } else if (initialEditorState === undefined) {
-    editor.update(() => {
-      const root = $getRoot();
-      if (root.isEmpty()) {
-        const paragraph = $createParagraphNode();
-        root.append(paragraph);
-        const activeElement = CAN_USE_DOM ? document.activeElement : null;
-        if (
-          $getSelection() !== null ||
-          (activeElement !== null && activeElement === editor.getRootElement())
-        ) {
-          paragraph.select();
-        }
-      }
-    }, HISTORY_MERGE_OPTIONS);
-  } else if (initialEditorState !== null) {
-    switch (typeof initialEditorState) {
-      case "string": {
-        const parsedEditorState = editor.parseEditorState(initialEditorState);
-        editor.setEditorState(parsedEditorState, HISTORY_MERGE_OPTIONS);
-        break;
-      }
-      case "object": {
-        editor.setEditorState(initialEditorState, HISTORY_MERGE_OPTIONS);
-        break;
-      }
-      case "function": {
-        editor.update(() => {
-          const root = $getRoot();
-          if (root.isEmpty()) {
-            initialEditorState(editor);
-          }
-        }, HISTORY_MERGE_OPTIONS);
-        break;
-      }
-    }
-  }
-}

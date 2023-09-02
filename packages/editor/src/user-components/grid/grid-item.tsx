@@ -70,7 +70,8 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
           //cgeck if ref is a function
         }}
         className={cn(
-          "overflow-visible border-2 border-transparent relative",
+          "grid-item-part",
+          "overflow-visible border-2 border-transparent relative w-full h-full flex",
           {
             "border-transparent shadow-[0]": isText,
             "border-2 border-blue-500 ": isActive,
@@ -83,10 +84,11 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
       >
         <NodeProvider id={id}>
           <RenderNodeToElement />
-          <WidgetMenu />
         </NodeProvider>
         {props.children}
       </div>
     );
   }
 );
+
+export const MemoizedGridItem = React.memo(GridItem);

@@ -30,9 +30,11 @@ export type EditorState = {
     events: EditorEvents;
     options: Options;
     lastDatabaseSync: string,
+    coverImageEnabled: boolean,
     connectNode: (id: NodeId, dom: HTMLElement | null) => void;
     setNode: (id: NodeId, cb: (node: Node) => Node) => void
     select: (id: NodeId, value?: boolean) => void
+    unSelectAll: () => void
     hover: (id: NodeId, value?: boolean) => void
     drag: (id: NodeId) => void
     create: (node: Node) => void

@@ -7,7 +7,7 @@ const Sidebar: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => {
   return (
     <div
-      className={cn("bg-nav-surface h-scfull  w-full max-w-[250px]", className)}
+      className={cn("bg-nav-surface h-full  w-full max-w-[200px]", className)}
       {...props}
     />
   );

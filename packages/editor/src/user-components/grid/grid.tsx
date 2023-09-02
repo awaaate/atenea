@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 
 import { Responsive, WidthProvider } from "react-grid-layout";
 
@@ -6,7 +6,9 @@ import "react-grid-layout/css/styles.css";
 import "./grid.css";
 
 import { selectors, useEditorStore } from "../../engine/editor";
-import { GridItem } from "./grid-item";
+import { GridItem, MemoizedGridItem } from "./grid-item";
+import { EDITOR_WIDTH, EDITOR_WIDTH_CLASSES } from "../../constants";
+import { cn } from "@shared/ui";
 
 const DROPPING_ELEMENT_ID = "__dropping-elem__";
 
@@ -14,11 +16,15 @@ export const Grid = () => {
   const nodeIds = useEditorStore(selectors.nodesIds);
   const layout = useEditorStore(selectors.layout);
   const setLayout = useEditorStore((satate) => satate.setLayout);
+  const sidebar = useEditorStore((state) => state.sidebar);
   const editable = useEditorStore((state) => state.editable);
-  const ResponsiveReactGridLayout = useMemo(
-    () => WidthProvider(Responsive),
-    []
-  );
+
+  useEffect(() => {
+    console.log("layout", layout);
+  }, [layout]);
+  const ResponsiveReactGridLayout = useMemo(() => {
+    return WidthProvider(Responsive);
+  }, [sidebar]);
 
   const gridLayout = useMemo(() => {
     return (
@@ -27,9 +33,20 @@ export const Grid = () => {
         rowHeight={10}
         draggableCancel=".react-resizable-handle"
         draggableHandle=".draggable-handle"
+        className={cn(
+          "h-full w-full min-h-[calc(100vh-100px)]",
+          EDITOR_WIDTH_CLASSES
+        )}
+        style={{
+          minHeight: "calc(100vh - 100px)",
+        }}
         layouts={{ lg: layout }}
-        breakpoints={{ lg: 1200, md: 996, sm: 768 }}
-        cols={{ sm: 3, md: 9, lg: 12 }}
+        breakpoints={{
+          lg: EDITOR_WIDTH.lg,
+          sm: EDITOR_WIDTH.sm,
+          md: EDITOR_WIDTH.md,
+        }}
+        cols={{ sm: 6, md: 12, lg: 24 }}
         isDroppable={true}
         onLayoutChange={(layout, layouts) => {
           setLayout([
@@ -41,11 +58,11 @@ export const Grid = () => {
         isResizable={editable}
       >
         {nodeIds.map((child: string, index: number) => {
-          return <GridItem key={child} id={child} />;
+          return <MemoizedGridItem key={child} id={child} />;
         })}
       </ResponsiveReactGridLayout>
     );
-  }, [nodeIds.length]);
+  }, [nodeIds.length, layout, sidebar]);
 
   return gridLayout;
 };

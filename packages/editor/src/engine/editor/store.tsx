@@ -14,14 +14,15 @@ import { debouncedSave, deserialize, serialize } from "./utils";
 const useEditorStoreBase = createWithEqualityFn<EditorState>()(
   persist(
     (set, get) => ({
-      editable: true,
+      editable: false,
+      coverImageEnabled: false,
       lastDatabaseSync: new Date().toString(),
       boardId: "",
       nodes: {},
       pageBackground: "transparent",
       sidebar: null,
       title: "",
-      coverImage: "",
+      coverImage: "/images/board-covers/Abstract-Gradient-1.png",
       events: {
         dragged: new Set<NodeId>(),
         selected: new Set<NodeId>(),
@@ -33,8 +34,10 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
         resolver: {},
       },
       setCoverImage(coverImage) {
+        console.log("setCoverImage", coverImage);
         set({ coverImage });
       },
+
       setPageBackground: (background) => {
         set({ pageBackground: background });
       },
@@ -43,6 +46,23 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       },
       setTitle(title) {
         set({ title });
+      },
+      unSelectAll() {
+        set((state) => {
+          const selected = new Set<string>();
+          Object.keys(state.nodes).forEach((id) => {
+            const currentNode = state.nodes[id];
+            currentNode.events.selected = false;
+          });
+
+          return {
+            nodes: state.nodes,
+            events: {
+              ...state.events,
+              selected,
+            },
+          };
+        });
       },
       connectNode: (id, dom) => {
         set((state) => {
@@ -83,7 +103,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       },
       select: (id, value: boolean = true) => {
         set((state) => {
-          if (!state.editable) return state;
+          if (!get().editable) return state;
           state.events.selected.forEach((selectedId) => {
             const currentNode = state.nodes[selectedId];
 
@@ -115,7 +135,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       },
       hover: (id, value: boolean = true) => {
         set((state) => {
-          if (!state.editable) return state;
+          if (!get().editable) return state;
           const currentNode = state.nodes[id];
           currentNode.events.hovered = value;
 

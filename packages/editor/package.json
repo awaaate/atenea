@@ -52,6 +52,8 @@
     "@tremor/react": "^3.6.5",
     "@trpc/client": "^10.38.0",
     "@types/react-grid-layout": "^1.3.2",
+    "@uploadthing/react": "^5.4.0",
+    "dayjs": "^1.11.9",
     "graphql-request": "^6.1.0",
     "lexical": "^0.12.0",
     "nanoid": "^4.0.2",

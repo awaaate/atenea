@@ -1,4 +1,5 @@
 import {
+  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
@@ -7,7 +8,11 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
   Icon,
+  Separator,
+  Tooltip,
+  TooltipContent,
   TooltipProvider,
+  TooltipTrigger,
 } from "@shared/ui";
 import { nanoid } from "nanoid";
 import { useEditorStore } from "../engine/editor";
@@ -15,20 +20,41 @@ import { useNode, useNodeActions } from "../engine/nodes";
 
 const WidgetMenu = () => {
   const isTextWidget = useNode((node) => node.data.displayName === "Text");
-  const isActive = useNode((node) => node.events.selected);
   const createNode = useEditorStore((state) => state.create);
+  const setSidebar = useEditorStore((state) => state.setSidebar);
+  const editable = useEditorStore((state) => state.editable);
+  const { setNode, remove, select } = useNodeActions();
 
-  const { setNode, remove } = useNodeActions();
+  if (!editable) return null;
 
-  if (!isActive) return null;
   return (
     <DropdownMenu>
       {/* TODO imrove tooltips */}
-      <TooltipProvider>
-        <DropdownMenuTrigger className="absolute top-0 right-0 border-0 shadow-[0] z-[2] m-1  rounded-full icon-xl  p-0 ring ring-blue-300 hover:ring-blue-500"></DropdownMenuTrigger>
-      </TooltipProvider>
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuSeparator />
+
+      <Icon
+        name="Settings2"
+        className="m-1 mr-2 text-text-weakest grid-item-part"
+        variant="button"
+        onClick={() => {
+          select();
+          setSidebar("node");
+        }}
+      />
+      <Separator orientation="vertical" className="h-[20px] " />
+      <Tooltip>
+        <TooltipTrigger>
+          <DropdownMenuTrigger className="border-0 shadow-[0] m-1   p-0">
+            <Icon
+              name="MoreHorizontal"
+              className="text-text-weakest"
+              size="m"
+              variant={"button"}
+            />
+          </DropdownMenuTrigger>
+        </TooltipTrigger>
+        <TooltipContent>Widget Options</TooltipContent>
+      </Tooltip>
+      <DropdownMenuContent className="w-56 grid-item-part">
         <DropdownMenuGroup>
           {!isTextWidget && (
             <DropdownMenuItem
@@ -42,13 +68,16 @@ const WidgetMenu = () => {
             >
               <Icon name="Maximize2" className="mr-2" />
               Full Screen
-              <DropdownMenuShortcut>⌘F</DropdownMenuShortcut>
             </DropdownMenuItem>
           )}
-          <DropdownMenuItem onSelect={() => {}}>
+          <DropdownMenuItem
+            onSelect={() => {
+              select();
+              setSidebar("node");
+            }}
+          >
             <Icon name="Settings2" className="mr-2" />
             Settings
-            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem
             onSelect={() => {
@@ -59,7 +88,6 @@ const WidgetMenu = () => {
           >
             <Icon name="Copy" className="mr-2" />
             Duplicate
-            <DropdownMenuShortcut>⌘D</DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
@@ -71,7 +99,6 @@ const WidgetMenu = () => {
           >
             <Icon name="Trash2" className="mr-2" />
             Delete
-            <DropdownMenuShortcut>⌘X</DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>

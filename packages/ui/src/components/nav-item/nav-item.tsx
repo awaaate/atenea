@@ -23,25 +23,27 @@ type NavItemProps =
       subnav: NavItemProps[];
     });
 
+export const navItemClasse =
+  "flex items-center hover:bg-nav-hover transition-colors py-2 px-3 rounded-default w-full text-sm font-medium text-text-weak";
 const NavItem = ({
   className,
   icon,
   active = false,
   ...props
 }: NavItemProps) => {
-  let children: ReactNode = props.children;
-
   const navItemClasses = cn(
-    "flex items-center hover:bg-nav-hover transition-colors py-2 px-3 rounded-default w-full",
-    { "bg-accent text-text-on-accent": active },
+    "flex items-center hover:bg-nav-hover transition-colors py-2 px-3 rounded-default w-full text-sm font-medium text-text-weak",
+    { "bg-surface-lowered": active },
     className
   );
+  let children: ReactNode = props.children;
 
   const IconComp = icon && (
     <Icon
       name={icon}
+      size="m"
       className={cn("mr-2", {
-        "text-text-on-accent": active,
+        "": active,
       })}
     />
   );

@@ -41,8 +41,8 @@ export const mockPageData = {
             avatarUrl: "https://avatars.githubusercontent.com/u/263385",
         },
     },
-    siteId: "cll7sfwmp0000fvqa83xdcnsu",
-    sites: [
+    workspaceId: "cll7sfwmp0000fvqa83xdcnsu",
+    workspaces: [
         {
             id: "cll7sfwmp0000fvqa83xdcnsu",
             name: "Workspace from the future",

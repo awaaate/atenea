@@ -83,7 +83,7 @@ export function BackgroundPicker({
           </div>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-64 p-0">
+      <PopoverContent className="w-[300px] p-0">
         <BackgroundPickerTabs
           background={background}
           setBackground={setBackground}
@@ -110,9 +110,9 @@ export const BackgroundPickerTabs: React.FC<BackgroundPickerProps> = ({
   return (
     <Tabs
       defaultValue={defaultTab}
-      className="w-full justify-center flex flex-col items-center"
+      className="w-full justify-center flex flex-col items-center w-[300px]"
     >
-      <TabsList className="w-full mb-2 ">
+      <TabsList className="w-[calc(100%-0.5rem)] my-2">
         <TabsTrigger className="flex-1" value="solid">
           Solid
         </TabsTrigger>

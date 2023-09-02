@@ -22,7 +22,7 @@ export const BoardsTabList = forwardRef<
   <TabsList
     ref={ref}
     className={cn(
-      "border-0 bg-accent/30   m-0  overflow-hidden h-[50px] items-end flex ",
+      "border-0 bg-surface-lowered   m-0  overflow-hidden h-[50px] items-end flex ",
       className
     )}
     {...props}
@@ -36,7 +36,7 @@ export const BoardsTabTrigger = forwardRef<
   <TabsTrigger
     ref={ref}
     className={cn(
-      "border-0 text-lg py-2 px-4 rounded-t-default text-text-on-accent  data-[state=active]:text-accent data-[state=active]:bg-background-default  ",
+      "border-0 text-lg py-2 px-4 rounded-t-default text-text-on-accent  data-[state=active]:text-text data-[state=active]:bg-surface-raised ",
       className
     )}
     {...props}

@@ -10,7 +10,9 @@ export const MainProvider = ({ children }: { children: React.ReactNode }) => {
     <>
       <NextAuthSessionProvider>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+          <TooltipProvider>
+            <>{children}</>
+          </TooltipProvider>
         </ThemeProvider>
         <Toaster />
         <Analytics />

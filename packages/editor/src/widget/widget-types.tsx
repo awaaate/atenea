@@ -1,5 +1,6 @@
 import { Layout } from "react-grid-layout";
 import { UserComponent } from "../engine/interfaces";
+import { ComponentWithRichEditor } from "../hooks/rich-text/use-rich-editor";
 export interface WidgetProps {
   width: number;
   height: number;
@@ -14,6 +15,7 @@ export interface WidgetProps {
   fullScreen: boolean;
   sidePannel: boolean;
   controls: "simple" | "full";
+  title: string;
 }
 export const WIDGET_DEFAULT: WidgetProps = {
   controls: "simple",
@@ -26,6 +28,7 @@ export const WIDGET_DEFAULT: WidgetProps = {
   sidePannel: false,
   fullScreen: false,
   background: "transparent",
+  title: "",
   borderRadius: 0,
   gridSpan: 1,
   layout: {
@@ -38,7 +41,9 @@ export const WIDGET_DEFAULT: WidgetProps = {
   },
 };
 
-export const createWidgetProps = <T extends Partial<WidgetProps> & object>(
+export const createWidgetProps = <
+  T extends Partial<ComponentWithRichEditor> & object
+>(
   props: T
 ) => {
   return {

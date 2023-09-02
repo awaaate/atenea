@@ -25,7 +25,7 @@ const BoardLayout: React.FC<DashboardLayout> = ({
 }) => {
   return (
     <>
-      <BoardsTab>
+      <BoardsTab value={currentBoardId}>
         <BoardsTabList>
           {boards.map((board) => (
             <BoardsTabTrigger
@@ -46,9 +46,10 @@ const BoardLayout: React.FC<DashboardLayout> = ({
             <span className="">Create Board</span>
           </BoardsTabTrigger>
         </BoardsTabList>
-        <BoardsTabContent value={currentBoardId}>{children}</BoardsTabContent>
+        <BoardsTabContent value={currentBoardId} className="w-full h-full">
+          {children}
+        </BoardsTabContent>
       </BoardsTab>
-      {children}
     </>
   );
 };

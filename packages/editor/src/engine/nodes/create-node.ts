@@ -20,7 +20,7 @@ export function createNode(
         id,
         _hydrationTimestamp: Date.now(),
         data: {
-            props: {},
+            props: {} as any,
             parent: null,
             hidden: false,
             nodes: [],
@@ -43,6 +43,7 @@ export function createNode(
     if (node.data.type === Element) {
         const mergedProps = {
             ...node.data.props,
+            title: node.data.props.title || "",
         };
 
         node.data.props = mergedProps;

@@ -20,8 +20,10 @@ export const BoardWrapper: React.FC<BoardWrapperProps> = ({
 }) => {
   useEffect(() => {
     loadEditorState({
+      editable: true,
       boardId: id,
       nodes: content?.nodes || {},
+      coverImage: "",
       pageBackground: background || "transparent",
       events: {
         selected: new Set(),
@@ -30,7 +32,7 @@ export const BoardWrapper: React.FC<BoardWrapperProps> = ({
       },
       title: title || "",
     });
-  }, [content, title, id]);
+  }, [content, title, id, background]);
 
   return <BoardPage />;
 };

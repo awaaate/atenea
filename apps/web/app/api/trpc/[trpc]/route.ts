@@ -15,7 +15,8 @@ const handler = (req: Request) => fetchRequestHandler({
         return createContext(db, {
             user: session?.user || null,
         });
-    }
+    },
+
 });
 
 export { handler as GET, handler as POST }

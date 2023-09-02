@@ -7,13 +7,16 @@ import {
   BoardsTabContent,
   BoardsTabList,
   BoardsTabTrigger,
+  WorkspaceLayout,
+  WorkspaceTobar,
 } from "@shared/templates";
-import { Icon, Link } from "@shared/ui";
+import { Icon, Link, ScrollArea } from "@shared/ui";
 
 import { CreateBoardButton } from "./create-board-button";
 import { UpdateWorspaceForm } from "./update-form";
 import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
+import { WorkspacePageProvider } from "./page-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
@@ -29,7 +32,6 @@ export default async function Workspace({
   const session = await getSession();
 
   const caller = createCaller(session.user);
-
   const workspace = await caller.worksapce.getWorkspaceBoards({
     id: params.workspaceId,
   });
@@ -37,43 +39,20 @@ export default async function Workspace({
   if (!workspace) notFound();
 
   return (
-    <div>
-      <BoardsTab value={"home"}>
-        <BoardsTabList>
-          <BoardsTabTrigger value="home" className="text-text-weak">
-            <Icon name="Home" className="mr-2 text-current" />
-            <span className="">Home</span>
-          </BoardsTabTrigger>
-          {workspace?.boards.map((board) => (
-            <BoardsTabTrigger
-              key={board.id}
-              value={board.id}
-              className="text-text-weak"
-              asChild
-            >
-              <Link href={`/app/${params.workspaceId}/${board.id}`}>
-                <Icon name="LayoutDashboard" className="mr-2 text-current" />
-                <span className="">{board.name}</span>
-              </Link>
-            </BoardsTabTrigger>
-          ))}
-
-          <BoardsTabTrigger
-            value="create"
-            className="text-text-weak flex items-center"
-          >
-            <CreateBoardButton />
-          </BoardsTabTrigger>
-        </BoardsTabList>
-        <BoardsTabContent value={"home"}>
-          <UpdateWorspaceForm
-            accentColor="default"
-            description={workspace.description || ""}
-            name={workspace.name || ""}
-            subdomain={workspace.subdomain || ""}
-          />
-        </BoardsTabContent>
-      </BoardsTab>
-    </div>
+    <ScrollArea className="w-full h-screen flex flex-col">
+      <WorkspaceTobar />
+      <div className="p-8">
+        <UpdateWorspaceForm
+          accentColor="default"
+          description={workspace.description || ""}
+          name={workspace.name || ""}
+          subdomain={workspace.subdomain || ""}
+        />
+      </div>
+      <WorkspacePageProvider
+        title={workspace.name || ""}
+        description={workspace.description || ""}
+      />
+    </ScrollArea>
   );
 }

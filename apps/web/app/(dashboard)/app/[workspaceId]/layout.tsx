@@ -32,22 +32,24 @@ export default async function AdminLayout({
   }
   const caller = createCaller(session.user);
   const workspaces = await caller.worksapce.getUserWorkspaces();
-
+  const worksapce = await caller.worksapce.getWorkspaceBoards({
+    id: params.workspaceId,
+  });
   //check if the current workspace is in the user's workspace list
   const userOwns = workspaces.findIndex(
     (workspace) => workspace.id === params.workspaceId
   );
 
-  console.log("userOwns", workspaces);
+  console.log("userOwns", worksapce.boards);
   if (userOwns === -1) {
     //TODO: improve this
     return notFound();
   }
   return (
     <WorkspaceLayoutWrapper
-      siteId={params.workspaceId}
-      session={session}
-      sites={workspaces}
+      workspaceId={params.workspaceId}
+      workspaces={workspaces}
+      boards={worksapce.boards}
     >
       {children}
     </WorkspaceLayoutWrapper>
