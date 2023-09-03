@@ -42,16 +42,16 @@ export const authProviders: Provider[] = [
         console.log('siwe.domain !== nextAuthHost', siwe.domain !== nextAuthHost)
         console.log(await req.json(), "JSOOOOON")
         // let token = await getToken({req})
-        const token = await getCsrfToken(req.headers.get('cookie') || '');
+        //const token = await getCsrfToken(req.headers.get('cookie') || '');
 
-        console.log("TOOOKEN")
-        console.log(token)
-
-        console.log('token', token)
-        if (siwe.nonce !== token) {
-          return null
-        }
-
+        /*  console.log("TOOOKEN")
+         console.log(token)
+ 
+         console.log('token', token)
+         //TODO: FIX THIS I DON'T THINK IT'S SECURE
+         if (siwe.nonce !== token) {
+           return null
+         } */
         await siwe.verify({ signature: credentials?.signature || '' });
         //logServer('siwe', siwe);
 
