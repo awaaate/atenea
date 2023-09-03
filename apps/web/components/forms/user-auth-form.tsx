@@ -7,6 +7,8 @@ import { Button } from "@shared/ui/src/button";
 import { Icon } from "@shared/ui/src/icon";
 import { Spinner } from "@shared/ui/src/spinner";
 import { cn } from "@shared/ui/src/utils";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -14,6 +16,14 @@ type LoadingState = "google" | "github";
 
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const { connectModalOpen, openConnectModal } = useConnectModal();
+  const session = useSession();
+  const router = useRouter();
+
+  React.useEffect(() => {git 
+    if (session.data?.user) {
+      router.push("/app");
+    }
+  }, [session]);
 
   return (
     <div className={cn("grid gap-y-4", className)} {...props}>

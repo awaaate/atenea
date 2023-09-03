@@ -2,8 +2,10 @@
 import { env } from '@/env.mjs';
 import { type Provider } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { getCsrfToken } from './getCsrfToken';
 import { SiweMessage } from 'siwe';
+//@ts-expect-error
+import { getCsrfToken } from "next-auth/react"
+
 
 export const authProviders: Provider[] = [
   CredentialsProvider({
