@@ -1,5 +1,5 @@
 "use client";
-import { Form, useForm, zodResolver } from "@shared/ui";
+import { Form, useForm, zodResolver } from "@shared/ui/src/form";
 
 import WorkspaceForm from "@shared/templates/src/components/workspace-form/workspace-form";
 import { workspaceSchema } from "@shared/templates/src/schemas/workspaceSchema";

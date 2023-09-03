@@ -1,8 +1,9 @@
 "use client";
-import { Analytics } from "@vercel/analytics/react";
 
 import { ThemeProvider } from "./theme-provider";
-import { Toaster, TooltipProvider } from "@shared/ui";
+import { TooltipProvider } from "@shared/ui/src/tooltip";
+import { Toaster } from "@shared/ui/src/toast";
+import dynamic from "next/dynamic";
 import { SessionProvider as NextAuthSessionProvider } from "next-auth/react";
 
 export const MainProvider = ({ children }: { children: React.ReactNode }) => {
@@ -15,7 +16,6 @@ export const MainProvider = ({ children }: { children: React.ReactNode }) => {
           </TooltipProvider>
         </ThemeProvider>
         <Toaster />
-        <Analytics />
       </NextAuthSessionProvider>
     </>
   );

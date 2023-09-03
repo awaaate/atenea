@@ -2,7 +2,7 @@
 import { createTRPCReact } from "@trpc/react-query";
 
 
-import { type AppRouter } from "@shared/api";
+import { type AppRouter } from "@shared/api/src/app-router";
 
 /**
  * The TRPC client instance for the app.

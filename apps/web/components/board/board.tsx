@@ -1,8 +1,15 @@
 "use client";
 
-import { loadEditorState, useEditorStore } from "@shared/editor";
-import { BoardPage } from "@shared/templates";
+import { loadEditorState } from "@shared/editor";
+import dynamic from "next/dynamic";
 import { useEffect } from "react";
+
+const BoardPage = dynamic(
+  () => import("@shared/templates/src/pages/board").then((m) => m.BoardPage),
+  {
+    ssr: false,
+  }
+);
 
 interface BoardWrapperProps {
   title?: string;
@@ -11,20 +18,21 @@ interface BoardWrapperProps {
     nodes: {};
   };
   id: string;
-  editable?: boolean;
+  editable: boolean;
 }
-export const Board: React.FC<BoardWrapperProps> = ({
+export const BoardWrapper: React.FC<BoardWrapperProps> = ({
   content,
   id,
   title,
   background,
-  editable = false,
+  editable = true,
 }) => {
   useEffect(() => {
     loadEditorState({
       editable,
       boardId: id,
       nodes: content?.nodes || {},
+      coverImage: "",
       pageBackground: background || "transparent",
       events: {
         selected: new Set(),
@@ -33,7 +41,7 @@ export const Board: React.FC<BoardWrapperProps> = ({
       },
       title: title || "",
     });
-  }, [content, title, id, background, editable]);
+  }, [content, title, id, background]);
 
   return <BoardPage />;
 };

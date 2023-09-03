@@ -2,21 +2,14 @@ import { Metadata, NextPage } from "next";
 import { notFound } from "next/navigation";
 
 import { env } from "@/env.mjs";
-import {
-  BoardsTab,
-  BoardsTabContent,
-  BoardsTabList,
-  BoardsTabTrigger,
-  WorkspaceLayout,
-  WorkspaceTobar,
-} from "@shared/templates";
-import { Icon, Link, ScrollArea } from "@shared/ui";
 
-import { CreateBoardButton } from "./create-board-button";
+import { WorkspaceTobar } from "@shared/templates/src/components/workspace-topbar";
+
 import { UpdateWorspaceForm } from "./update-form";
 import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
 import { WorkspacePageProvider } from "./page-provider";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),

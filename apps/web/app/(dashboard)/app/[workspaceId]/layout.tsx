@@ -3,9 +3,8 @@ import { notFound, redirect } from "next/navigation";
 
 import { env } from "@/env.mjs";
 import { getSession } from "@/lib/auth/getSession";
-import { db } from "@shared/db";
-import WorkspaceLayoutWrapper from "./layout-wrapper";
 import { createCaller } from "@/lib/trpc/createCaller";
+import WorkspaceLayoutWrapper from "./layout-wrapper";
 
 interface AdminLayoutProps {
   children: React.ReactNode;

@@ -1,20 +1,20 @@
 "use client";
 import { SiteSwitcher } from "@shared/templates/src/components/site-switcher/site-switcher";
 import { useLayoutStore } from "@shared/templates/src/stores/layoutStore";
-import {
-  Button,
-  Icon,
-  Sidebar,
-  SidebarFooter,
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@shared/ui";
+
 import { signOut } from "next-auth/react";
 
 import { useTheme } from "next-themes";
 import { BoardsSidebar } from "./board-sidebar";
 import { useEffect } from "react";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import { Sidebar, SidebarFooter } from "@shared/ui/src/sidebar";
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@shared/ui/src/tooltip";
 
 interface WorkspaceLayoutWrapperProps {
   children: React.ReactNode;

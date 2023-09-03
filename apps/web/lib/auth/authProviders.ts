@@ -4,8 +4,6 @@ import { type Provider } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { getCsrfToken } from './getCsrfToken';
 import { SiweMessage } from 'siwe';
-import { db } from '@shared/db';
-import { createCaller } from '../trpc/createCaller';
 
 export const authProviders: Provider[] = [
   CredentialsProvider({

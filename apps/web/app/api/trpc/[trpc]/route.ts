@@ -1,6 +1,9 @@
 
 import { getSession } from "@/lib/auth/getSession";
-import { appRouter, fetchRequestHandler, createContext } from "@shared/api";
+import { appRouter } from "@shared/api/src/app-router";
+
+import { createContext } from "@shared/api/src/context";
+import { fetchRequestHandler } from "@shared/api/src/fetch-handler";
 import { db } from "@shared/db";
 
 export const runtime = "edge"

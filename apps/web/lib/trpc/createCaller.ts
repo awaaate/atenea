@@ -1,7 +1,6 @@
-import { createTRPCReact } from "@trpc/react-query";
 
 
-import { appRouter, type AppRouter } from "@shared/api";
+import { appRouter } from "@shared/api/src/app-router";
 import { Session } from "@/lib/auth/getSession";
 import { db } from "@shared/db";
 

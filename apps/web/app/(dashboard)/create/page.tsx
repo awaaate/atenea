@@ -2,24 +2,23 @@
 import WorkspaceForm from "@shared/templates/src/components/workspace-form/workspace-form";
 import { WorkspacePreview } from "@shared/templates/src/components/workspace-preview/workspace-preview";
 import { workspaceSchema } from "@shared/templates/src/schemas/workspaceSchema";
+
+import { Button } from "@shared/ui/src/button";
 import {
-  Button,
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-  Form,
-  Spinner,
-  useForm,
-  useToast,
-  zodResolver,
-} from "@shared/ui";
+} from "@shared/ui/src/card";
+
+import { Form, useForm, zodResolver } from "@shared/ui/src/form";
+import { Spinner } from "@shared/ui/src/spinner";
+import { useToast } from "@shared/ui/src/toast";
 
 import { trpc } from "@/lib/trpc";
-import { useRouter } from "next/navigation";
 import { TRPCClientError } from "@trpc/client";
-import { AppRouter } from "@shared/api";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const { isLoading, mutateAsync: ceateWorkspace } =

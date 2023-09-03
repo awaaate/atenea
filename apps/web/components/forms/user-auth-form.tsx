@@ -2,8 +2,11 @@
 
 import * as React from "react";
 
-import { toast, Icon, Button, cn, Spinner } from "@shared/ui";
 import { useConnectModal } from "@rainbow-me/rainbowkit";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import { Spinner } from "@shared/ui/src/spinner";
+import { cn } from "@shared/ui/src/utils";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 

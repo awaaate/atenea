@@ -1,16 +1,7 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 import { env } from "@/env.mjs";
-import {
-  BoardsTab,
-  BoardsTabContent,
-  BoardsTabList,
-  BoardsTabTrigger,
-} from "@shared/templates";
-import { Icon, Link, TooltipProvider } from "@shared/ui";
 
-import { createCaller } from "@/lib/trpc/createCaller";
 
 interface AdminLayoutProps {
   children: React.ReactNode;

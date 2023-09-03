@@ -1,9 +1,9 @@
 "use client";
-import { createBoard } from "@/lib/actions/createBoard";
 import { trpc } from "@/lib/trpc";
-import { Button, Icon, Spinner } from "@shared/ui";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import { Spinner } from "@shared/ui/src/spinner";
 import { useParams, useRouter } from "next/navigation";
-import React, { useTransition } from "react";
 
 export const CreateBoardButton = () => {
   const router = useRouter();

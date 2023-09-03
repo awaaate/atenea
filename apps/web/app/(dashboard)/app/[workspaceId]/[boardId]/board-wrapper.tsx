@@ -1,8 +1,15 @@
 "use client";
 
 import { loadEditorState, useEditorStore } from "@shared/editor";
-import { BoardPage } from "@shared/templates";
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const BoardPage = dynamic(
+  () => import("@shared/templates/src/pages/board").then((m) => m.BoardPage),
+  {
+    ssr: false,
+  }
+);
 
 interface BoardWrapperProps {
   title?: string;

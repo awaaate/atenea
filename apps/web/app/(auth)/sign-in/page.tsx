@@ -9,9 +9,8 @@ import {
   AuthenticationPageHeadingWrapper,
   AuthenticationPageSubheading,
   AuthenticationPageTerms,
-} from "@shared/templates";
+} from "@shared/templates/src/pages/sign-in";
 
-import { Button } from "@shared/ui";
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
   title: "Sign In",

@@ -1,15 +1,13 @@
 "use client";
 import { trpc } from "@/lib/trpc";
 import { useLayoutStore } from "@shared/templates/src/stores/layoutStore";
-import {
-  Button,
-  Icon,
-  NavItem,
-  SidebarNav,
-  Spinner,
-  cn,
-  navItemClasse,
-} from "@shared/ui";
+import { SidebarNav } from "@shared/ui/src/sidebar";
+
+import { Icon } from "@shared/ui/src/icon";
+import { NavItem, navItemClasse } from "@shared/ui/src/nav-item";
+import { Spinner } from "@shared/ui/src/spinner";
+import { cn } from "@shared/ui/src/utils";
+
 import { usePathname, useRouter } from "next/navigation";
 import { useMemo } from "react";
 
