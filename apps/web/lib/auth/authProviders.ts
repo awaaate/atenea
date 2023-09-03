@@ -40,7 +40,7 @@ export const authProviders: Provider[] = [
           return null;
         }
         console.log('siwe.domain !== nextAuthHost', siwe.domain !== nextAuthHost)
-        console.log(req.headers.get('cookie'))
+        console.log(await req.json(), "JSOOOOON")
         // let token = await getToken({req})
         const token = await getCsrfToken(req.headers.get('cookie') || '');
 

@@ -11,9 +11,9 @@ const VERCEL_DEPLOYMENT = !!process.env.VERCEL_URL;
 export const authOptions: NextAuthConfig = {
     providers: authProviders,
     pages: {
-        signIn: `/login`,
-        verifyRequest: `/login`,
-        error: "/login", // Error code passed in query string as ?error=
+        signIn: `/sign-in`,
+        verifyRequest: `/sign-in`,
+        error: "/sign-in", // Error code passed in query string as ?error=
     },
     session: { strategy: "jwt" },
     secret: env.AUTH_SECRET,
