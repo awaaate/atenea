@@ -8,6 +8,16 @@ export async function getCsrfToken(cookies: string) {
         .split(";")
         .find((c: string) => c.trim().startsWith(`${name}=`))
     token = token?.split("=")[1].split("%")[0]
+
+    if (!token) {
+        //name __Host-next-auth.csrf-token
+        name = "__Host-next-auth.csrf-token"
+        token = cookies
+            .split(";")
+            .find((c: string) => c.trim().startsWith(`${name}=`))
+        token = token?.split("=")[1].split("%")[0]
+    }
+
     return token
 
 }

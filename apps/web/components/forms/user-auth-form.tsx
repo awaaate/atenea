@@ -19,9 +19,9 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const session = useSession();
   const router = useRouter();
 
-  React.useEffect(() => {git 
-    if (session.data?.user) {
-      router.push("/app");
+  React.useEffect(() => {
+    if (session.status === "authenticated") {
+      router.push("/create");
     }
   }, [session]);
 

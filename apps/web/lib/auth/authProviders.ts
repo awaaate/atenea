@@ -2,9 +2,10 @@
 import { env } from '@/env.mjs';
 import { type Provider } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { SiweMessage } from 'siwe';
 //@ts-expect-error
-import { getCsrfToken } from "next-auth/react"
+import { SiweMessage } from 'siwe';
+import { createCaller } from '../trpc/createCaller';
+import { getCsrfToken } from './getCsrfToken';
 
 
 export const authProviders: Provider[] = [
@@ -39,7 +40,7 @@ export const authProviders: Provider[] = [
           return null;
         }
         console.log('siwe.domain !== nextAuthHost', siwe.domain !== nextAuthHost)
-
+        console.log(req.headers.get('cookie'))
         // let token = await getToken({req})
         const token = await getCsrfToken(req.headers.get('cookie') || '');
 

@@ -24,7 +24,7 @@ const Page = async () => {
   const session = await getSession();
 
   if (session) {
-    redirect("/app");
+    redirect("/create");
   }
 
   return (
