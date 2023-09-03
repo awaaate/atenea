@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import { useEditorStore } from "../../engine/editor";
+import { useToast } from "@shared/ui/src/toast";
+import { cn } from "@shared/ui/src/utils";
+import { Icon } from "@shared/ui/src/icon";
 import {
-  Icon,
-  Separator,
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-  cn,
-  useToast,
-} from "@shared/ui";
+} from "@shared/ui/src/tooltip";
+import { Separator } from "@shared/ui/src/separator";
 
 import { generateReactHelpers } from "@uploadthing/react/hooks";
 

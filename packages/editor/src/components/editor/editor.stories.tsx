@@ -1,8 +1,7 @@
-import { Editor } from "./editor";
+import { useEffect } from "react";
+import { loadEditorState } from "../../engine/editor";
 import { EditorTopbar } from "../editor-topbar";
-import React, { useEffect } from "react";
-import { loadEditorState, useEditorStore } from "../../engine/editor";
-import { EditorState } from "../../engine/interfaces";
+import { Editor } from "./editor";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

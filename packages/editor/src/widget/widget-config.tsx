@@ -1,10 +1,11 @@
 import React from "react";
 
-import { BackgroundPicker, Slider, cn } from "@shared/ui";
-import { WidgetProps } from "./widget-types";
-import { WidgetConfigSection } from "./widget-config-section";
 import { WidgetSizeButton } from "../components/widget-size-button/widget-size-button";
 import { useNode, useNodeActions } from "../engine/nodes";
+import { WidgetConfigSection } from "./widget-config-section";
+import { BackgroundPicker } from "@shared/ui/src/background-picker";
+import { Slider } from "@shared/ui/src/slider";
+import { cn } from "@shared/ui/src/utils";
 
 interface WidgetConfigProps {
   children?: React.ReactNode;
@@ -18,7 +19,8 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
   const paddingTop = useNode((node) => node.data.props.paddingTop);
   const layout = useNode((node) => node.data.props.layout);
 
-  const w = useNode((node) => node.data.props.layout.w);
+  //TODO puede dar error si no esta definido
+  const w = useNode((node) => node.data.props.layout.w!);
   const sizes = [3, 6, 9, 12];
 
   return (

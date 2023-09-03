@@ -1,15 +1,17 @@
 "use client";
 import { FC } from "react";
+
+import { Avatar } from "@shared/ui/src/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-  Avatar,
-  Link,
-  Icon,
-} from "@shared/ui";
+} from "@shared/ui/src/dropdown-menu";
+import { Icon } from "@shared/ui/src/icon";
+import { Link } from "@shared/ui/src/link";
+
 import { Session, dropdownItemType } from "../../types";
 
 interface UserAccountDropdownProps {

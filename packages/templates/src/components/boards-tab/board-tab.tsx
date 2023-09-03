@@ -1,4 +1,6 @@
-import { Tabs, TabsList, TabsTrigger, cn, TabsContent } from "@shared/ui";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@shared/ui/src/tabs";
+import { cn } from "@shared/ui/src/utils";
+
 import { forwardRef } from "react";
 
 export const BoardsTabContent = forwardRef<

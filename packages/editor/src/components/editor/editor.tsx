@@ -3,7 +3,9 @@
 import React, { HTMLAttributes } from "react";
 import { Grid } from "../../user-components/grid";
 import { useEditorStore } from "../../engine/editor";
-import { ScrollArea, cn } from "@shared/ui";
+
+import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { cn } from "@shared/ui/src/utils";
 
 const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   children,

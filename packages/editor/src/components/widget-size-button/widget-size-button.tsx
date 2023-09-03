@@ -1,6 +1,6 @@
 import React from "react";
 
-import { cn } from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
 
 interface WidgetSizeButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   size: "xs" | "sm" | "md" | "lg";

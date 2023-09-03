@@ -1,7 +1,7 @@
 import React from "react";
 import { BoardsList } from "../../components/sideboard-boards-nav/sidebar-boards-nav";
 
-import { Icon, Link } from "@shared/ui";
+import { Icon } from "@shared/ui/src/icon";
 
 import {
   BoardsTab,
@@ -9,6 +9,7 @@ import {
   BoardsTabList,
   BoardsTabTrigger,
 } from "../../components/boards-tab/board-tab";
+import { Link } from "@shared/ui/src/link";
 
 interface DashboardLayout {
   children: React.ReactNode;

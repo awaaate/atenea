@@ -1,16 +1,11 @@
-import React from "react";
+import { ToogleGroup, ToogleItem } from "@shared/ui/src/toggle-group";
 import { WidgetConfigSection } from "../../widget/widget-config-section";
-import {
-  ToogleGroup,
-  ToogleItem,
-} from "@shared/ui/src/components/toggle-group";
-import {
-  BackgroundPicker,
-  BackgroundPickerTabs,
-  Icon,
-  Separator,
-  cn,
-} from "@shared/ui";
+
+import { BackgroundPickerTabs } from "@shared/ui/src/background-picker";
+import { Icon } from "@shared/ui/src/icon";
+import { Separator } from "@shared/ui/src/separator";
+import { cn } from "@shared/ui/src/utils";
+
 import { useEditorStore } from "../../engine/editor";
 
 const classes = {

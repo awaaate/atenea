@@ -1,14 +1,13 @@
 "use client";
 import React, { useCallback, useEffect } from "react";
 
-import { Card, Icon, cn } from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
+
 import { useEditorStore } from "../../engine/editor";
 import {
   NodeProvider,
-  RenderNodeToElement,
-  useNodeActions,
+  RenderNodeToElement
 } from "../../engine/nodes";
-import { WidgetMenu } from "../../widget/widget-menu";
 
 interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;

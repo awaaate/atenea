@@ -1,7 +1,7 @@
 "use client";
 import React, { type HTMLAttributes } from "react";
 
-import { cn } from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
 
 interface WidgetConfigSectionProps extends HTMLAttributes<HTMLDivElement> {
   title: string;

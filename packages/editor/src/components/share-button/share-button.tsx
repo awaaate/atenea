@@ -1,13 +1,13 @@
-import React from "react";
 import { useEditorStore } from "../../engine/editor";
+
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import { Link } from "@shared/ui/src/link";
 import {
-  Button,
-  Icon,
-  Link,
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@shared/ui";
+} from "@shared/ui/src/popover";
 
 export const ShareButton = () => {
   const boardId = useEditorStore.use.boardId();

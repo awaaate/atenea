@@ -1,19 +1,18 @@
 "use client";
-import { Card, DonutChart, List, ListItem } from "@tremor/react";
-import React, { useEffect, useMemo } from "react";
+import { DonutChart, List, ListItem } from "@tremor/react";
+import React, { useMemo } from "react";
 
 import { ProposalBudgetWidgetConfig } from "./proposal-budget-widget-config";
 
-import { Skeleton } from "@shared/ui";
+import { Skeleton } from "@shared/ui/src/skeleton";
+import { useNode } from "../../engine/nodes";
 import { WidgetRoot } from "../../widget/widget-root";
 import {
   Widget,
   WidgetProps,
-  WIDGET_DEFAULT,
   createWidgetProps,
 } from "../../widget/widget-types";
 import { getProposalBudget } from "./proposal-budget-widget-data-fetcher";
-import { useNode } from "../../engine/nodes";
 
 export interface ProposalBudgetWidgetProps extends WidgetProps {
   proposalId: number;

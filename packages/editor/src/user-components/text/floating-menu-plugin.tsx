@@ -1,5 +1,8 @@
 "use client";
-import { floatingUI, usePointerInteractions } from "@shared/ui";
+
+import { usePointerInteractions } from "@shared/ui/src/lib/hooks/usePointerInteractions";
+import { default as floatingUI } from "@shared/ui/src/lib/floating-ui";
+
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 

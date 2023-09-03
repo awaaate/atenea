@@ -1,11 +1,11 @@
-import type { UserComponent } from "@craftjs/core"
 import { create } from "zustand"
+import { UserComponent } from "../engine/interfaces"
 
 
 interface Node {
     id: string
     data: {
-        type: UserComponent<unknown>
+        type: UserComponent
         props: any
     }
 }

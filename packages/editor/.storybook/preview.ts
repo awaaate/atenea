@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/react";
 
 
 import '@shared/tailwind-config/lib/global.css';
-import { withTheme } from "@shared/ui"
+import { withTheme } from "@shared/ui/src/withTheme"
 
 export const globalTypes = {
   theme: {

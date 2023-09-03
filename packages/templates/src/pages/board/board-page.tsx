@@ -7,7 +7,8 @@ import {
   EditorTopbar,
   useEditorStore,
 } from "@shared/editor";
-import { ScrollArea, cn } from "@shared/ui";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { cn } from "@shared/ui/src/utils";
 
 export const BoardPage = () => {
   //get the editor data each 20s

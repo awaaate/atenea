@@ -1,4 +1,6 @@
-import { NavItem, NavItemProps, SidebarNav } from "@shared/ui";
+import { NavItem, NavItemProps } from "@shared/ui/src/nav-item";
+import { SidebarNav } from "@shared/ui/src/sidebar";
+
 import { useLayoutStore } from "../../stores/layoutStore";
 import { useMemo } from "react";
 

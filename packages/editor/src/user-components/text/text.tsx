@@ -16,12 +16,6 @@ import {
 import { FloatingMenuPlugin } from "./floating-menu-plugin";
 import RichEditorProvider from "./rich-editor-provider";
 import { TextWidgetConfig } from "./text-widget-config";
-import { createEditor } from "lexical";
-import { parseEditorState } from "lexical/LexicalUpdates";
-import {
-  createFreshEditorState,
-  initializeEditor,
-} from "../../hooks/rich-text/initializeEditor";
 
 export type TextProps = WidgetProps & ComponentWithRichEditor;
 

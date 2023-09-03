@@ -1,9 +1,7 @@
 {
   "name": "@shared/templates",
   "version": "0.0.1",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
-  "type": "module",
+  "main": "./src/*.ts",
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "storybook dev -p 6006",

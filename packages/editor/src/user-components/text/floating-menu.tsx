@@ -1,4 +1,3 @@
-import { forwardRef, useEffect, useState } from "react";
 import {
   $getSelection,
   $isRangeSelection,
@@ -6,29 +5,32 @@ import {
   FORMAT_TEXT_COMMAND,
   LexicalEditor,
 } from "lexical";
+import { forwardRef, useEffect, useState } from "react";
 
+import { $findMatchingParent } from "@lexical/utils";
+
+import { Icon } from "@shared/ui/src/icon";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuGroup,
-  DropdownMenuItem,
   DropdownMenuTrigger,
-  Icon,
+} from "@shared/ui/src/dropdown-menu";
+import {
   Toolbar,
   ToolbarButton,
   ToolbarSeparator,
   ToolbarToggleGroup,
   ToolbarToggleItem,
-} from "@shared/ui";
-import { $isListNode } from "@lexical/list";
-import { $findMatchingParent } from "@lexical/utils";
+} from "@shared/ui/src/toolbar";
+
 import {
   BlockType,
-  getNodeName,
   blockIcon,
   blockTypeToBlockName,
   formatNode,
+  getNodeName,
 } from "../../hooks/rich-text/utils";
 
 export type FloatingMenuCoords = { x: number; y: number } | undefined;

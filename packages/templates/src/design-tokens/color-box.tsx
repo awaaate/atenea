@@ -1,4 +1,4 @@
-import { cn } from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
 import { HTMLAttributes } from "react";
 
 export const ColorBox = ({

@@ -1,3 +1,6 @@
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import { Link } from "@shared/ui/src/link";
 import {
   AuthenticationPage,
   AuthenticationPageHeading,
@@ -6,17 +9,15 @@ import {
   AuthenticationPageTerms,
 } from "./sign-in-page";
 
-import { Button, Icon, Link } from "@shared/ui";
 import { Meta } from "@storybook/react";
-
 
 export default {
   title: "Pages/Signin",
   component: AuthenticationPage,
   parameters: {
     layout: "fullscreen",
-  }
-}  satisfies Meta<typeof AuthenticationPage>;
+  },
+} satisfies Meta<typeof AuthenticationPage>;
 
 export const Signin = () => (
   <AuthenticationPage>
@@ -28,8 +29,8 @@ export const Signin = () => (
     </AuthenticationPageHeadingWrapper>
 
     <Button>
-        <Icon name="Wallet2" className="mr-2" />
-        Connect wallet 
+      <Icon name="Wallet2" className="mr-2" />
+      Connect wallet
     </Button>
     <AuthenticationPageTerms />
   </AuthenticationPage>

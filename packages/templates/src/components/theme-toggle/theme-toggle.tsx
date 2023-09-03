@@ -1,6 +1,8 @@
 "use client";
 
-import { Button, Icon } from "@shared/ui";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+
 import { useTheme } from "../../../.storybook/decorators";
 
 export function ThemeToggle() {

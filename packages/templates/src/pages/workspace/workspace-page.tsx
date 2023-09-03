@@ -1,18 +1,14 @@
-import { ScrollArea } from "@shared/ui";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 import React from "react";
+import { WorkspaceTobar } from "../..";
 interface WorkspacePageProps {
   children: React.ReactNode;
   workspaceName: string;
 }
-export const WorkspacePage: React.FC<WorkspacePageProps> = ({
-  children,
-  workspaceName,
-}) => {
+export const WorkspacePage: React.FC<WorkspacePageProps> = ({ children }) => {
   return (
     <div className="flex w-full flex-col font-medium">
-      <div className=" w-full  border-b h-[50px] flex items-center px-4 font-semibold">
-        {workspaceName || "Workspace"}
-      </div>
+      <WorkspaceTobar />
       <ScrollArea>{children}</ScrollArea>
     </div>
   );

@@ -1,4 +1,7 @@
-import { Avatar, Icon, Skeleton } from "@shared/ui";
+import { Avatar } from "@shared/ui/src/avatar";
+import { Icon } from "@shared/ui/src/icon";
+import { Skeleton } from "@shared/ui/src/skeleton";
+
 import React from "react";
 import {
   BoardsTab,

@@ -1,7 +1,7 @@
 import { $isListNode, INSERT_CHECK_LIST_COMMAND, INSERT_ORDERED_LIST_COMMAND, INSERT_UNORDERED_LIST_COMMAND, ListNode, REMOVE_LIST_COMMAND } from "@lexical/list";
 import { $createHeadingNode, $isHeadingNode, HeadingTagType } from "@lexical/rich-text";
 import { $getNearestNodeOfType } from "@lexical/utils";
-import { IconName } from "@shared/ui";
+import { IconName } from "@shared/ui/src/icon";
 import { $createParagraphNode, $getSelection, $isRangeSelection, LexicalEditor, LexicalNode, RangeSelection } from "lexical";
 import { $setBlocksType } from "@lexical/selection"
 export const blockTypeToBlockName = {

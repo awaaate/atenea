@@ -1,15 +1,12 @@
 "use client";
 
-import React, { HTMLAttributes } from "react";
+import React, { HTMLAttributes, memo, useMemo } from "react";
 
-import {
-  Card,
-  CardTitle,
-  Dialog,
-  DialogContent,
-  ScrollArea,
-  cn,
-} from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
+import { Card, CardTitle } from "@shared/ui/src/card";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { Dialog, DialogContent } from "@shared/ui/src/dialog";
+
 import useSWR from "swr";
 import { useNode, useNodeActions } from "../engine/nodes";
 import { WidgetMenu } from "./widget-menu";
@@ -53,6 +50,8 @@ function WidgetRoot<T>({
     return <div>Something wrong with the widget</div>;
   }
 
+  const innerComponent = useMemo(() => inner(data), [data]);
+
   return (
     <div
       ref={(ref) => {
@@ -85,7 +84,7 @@ function WidgetRoot<T>({
           </CardTitle>
         )}
 
-        <ScrollArea className="min-h-full">{inner(data)}</ScrollArea>
+        <ScrollArea className="min-h-full">{innerComponent}</ScrollArea>
         <Dialog
           open={isFullScreen}
           onOpenChange={(value) => {

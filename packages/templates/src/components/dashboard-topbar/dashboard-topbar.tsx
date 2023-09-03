@@ -1,4 +1,7 @@
-import { Button, buttonVariants, cn, Link } from "@shared/ui";
+import { buttonVariants, Button } from "@shared/ui/src/button";
+import { cn } from "@shared/ui/src/utils";
+import { Link } from "@shared/ui/src/link";
+
 import { UserAccountDropdown } from "../user-account-dropdown";
 
 import React from "react";
@@ -24,7 +27,13 @@ const DashboardTopbar: React.FC<DashboardTopbarProps> = ({
   return (
     <div className="z-40 w-full my-0  bg-accent text-text-on-accent flex justify-between lg:space-around items-center py-2 px-8  relative">
       <div className="w-full flex gap-x-8 items-center">
-        <SiteSwitcher siteId={siteId} sites={sites} />{" "}
+        <SiteSwitcher
+          workspaceId={siteId}
+          workspaces={sites}
+          setTheme={() => {}}
+          onSignout={() => {}}
+          theme="dark"
+        />{" "}
         <div className="flex items-center gap-x-4">
           {navItems.map((item) => (
             <Link

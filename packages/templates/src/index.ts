@@ -1,4 +1,4 @@
-export * from "./components/boards-tab"
+/* export * from "./components/boards-tab"
 export * from "./components/dashboard-topbar"
 export * from "./components/user-account-dropdown"
 
@@ -15,3 +15,4 @@ export * from "./stores/globalStore"
 export * from "./pages/create-workspace"
 
 export * from "./schemas/workspaceSchema"
+ */

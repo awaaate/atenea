@@ -1,4 +1,4 @@
-import { NavItemProps } from "@shared/ui";
+import { NavItemProps } from "@shared/ui/src/nav-item";
 
 export const adminSidebarNavItems: NavItemProps[] = [
     {

@@ -1,8 +1,11 @@
-import { CommandMenu, Dialog, DialogTrigger, Icon } from "@shared/ui";
+import { CommandMenu } from "@shared/ui/src/command-menu";
+import { Dialog, DialogTrigger } from "@shared/ui/src/dialog";
+
 import React from "react";
 import { useEditorStore } from "../../engine/editor";
 import { createNode } from "../../engine/nodes";
 import { WidgetComponentsType, getWidget } from "../../user-components";
+import { Icon } from "@shared/ui/src/icon";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);

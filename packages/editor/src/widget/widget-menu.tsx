@@ -1,19 +1,19 @@
 import {
-  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuTrigger,
-  Icon,
-  Separator,
+} from "@shared/ui/src/dropdown-menu";
+import { Separator } from "@shared/ui/src/separator";
+
+import { Icon } from "@shared/ui/src/icon";
+import {
   Tooltip,
   TooltipContent,
-  TooltipProvider,
   TooltipTrigger,
-} from "@shared/ui";
+} from "@shared/ui/src/tooltip";
 import { nanoid } from "nanoid";
 import { useEditorStore } from "../engine/editor";
 import { useNode, useNodeActions } from "../engine/nodes";

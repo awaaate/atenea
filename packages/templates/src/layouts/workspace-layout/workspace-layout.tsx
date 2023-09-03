@@ -5,18 +5,17 @@ import {
   SitesList,
 } from "../../components/site-switcher/site-switcher";
 
-import {
-  Button,
-  Icon,
-  Sidebar,
-  SidebarFooter,
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@shared/ui";
 import { SidebarBoardsNav } from "../../components/sideboard-boards-nav/sidebar-boards-nav";
 import { useLayoutStore } from "../../stores/layoutStore";
 import type { Session } from "../../types";
+import { Sidebar, SidebarFooter } from "@shared/ui/src/sidebar";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@shared/ui/src/tooltip";
 
 interface DashboardLayout {
   children: React.ReactNode;

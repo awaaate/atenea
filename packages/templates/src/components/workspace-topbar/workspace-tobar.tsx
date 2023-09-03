@@ -1,6 +1,6 @@
 "use client";
-import { useEditorStore } from "@shared/editor";
-import { Icon, cn } from "@shared/ui";
+import { Icon } from "@shared/ui/src/icon";
+import { cn } from "@shared/ui/src/utils";
 import { HtmlHTMLAttributes } from "react";
 import { useLayoutStore } from "../../stores/layoutStore";
 

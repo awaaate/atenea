@@ -1,16 +1,16 @@
 import {
-  FormField,
+  FormDescription,
   FormItem,
   FormLabel,
-  FormControl,
-  Input,
-  FormDescription,
   FormMessage,
-  AccentPicker,
-  useForm,
-  zodResolver,
+  FormField,
+  FormControl,
   useFormContext,
-} from "@shared/ui";
+} from "@shared/ui/src/form";
+
+import { Input } from "@shared/ui/src/input";
+import { AccentPicker } from "@shared/ui/src/accent-picker";
+
 import React from "react";
 import { z } from "zod";
 import { workspaceSchema } from "../../schemas/workspaceSchema";

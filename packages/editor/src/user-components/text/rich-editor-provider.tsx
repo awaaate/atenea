@@ -7,7 +7,7 @@ interface RichEditorProviderProps {
 }
 
 const RichEditorProvider: React.FC<RichEditorProviderProps> = ({ Comp }) => {
-  const richEditor = useNode((node) => node.data.props.richEditor);
+  const richEditor = useNode((node: any) => node.data.props.richEditor);
 
   if (!richEditor) return null;
 

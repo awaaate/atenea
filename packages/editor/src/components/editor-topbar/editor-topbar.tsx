@@ -1,9 +1,13 @@
 "use client";
-import { Button, Icon, Separator, date } from "@shared/ui";
 import React from "react";
 import { useEditorStore } from "../../engine/editor";
 import { CreateWidget } from "../create-widget/create-widget";
 import { ShareButton } from "../share-button";
+
+import { Icon } from "@shared/ui/src/icon";
+import { Separator } from "@shared/ui/src/separator";
+import { Button } from "@shared/ui/src/button";
+import { date } from "@shared/ui/src/date";
 
 export interface EditorTopbarProps {}
 

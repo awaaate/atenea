@@ -1,8 +1,10 @@
 import { TypingMessage } from "../../components/typing-message";
 
-import { buttonVariants, cn, Link } from "@shared/ui";
 import React, { forwardRef, HTMLAttributes } from "react";
-import { quotes } from ".//sign-in-quotes";
+import { quotes } from "./sign-in-quotes";
+import { buttonVariants } from "@shared/ui/src/button";
+import { Link } from "@shared/ui/src/link";
+import { cn } from "@shared/ui/src/utils";
 
 const AuthenticationPageHeading = forwardRef<
   HTMLHeadingElement,

@@ -1,6 +1,7 @@
 "use client";
+
+import { Avatar } from "@shared/ui/src/avatar";
 import {
-  Avatar,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
@@ -13,10 +14,12 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-  Icon,
-  Link,
-  SidebarHeader,
-} from "@shared/ui";
+} from "@shared/ui/src/dropdown-menu";
+
+import { Icon } from "@shared/ui/src/icon";
+import { Link } from "@shared/ui/src/link";
+import { SidebarHeader } from "@shared/ui/src/sidebar";
+
 import { useEffect, useState } from "react";
 import { useLayoutStore } from "../../stores/layoutStore";
 

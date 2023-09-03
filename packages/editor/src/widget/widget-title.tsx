@@ -1,7 +1,12 @@
 import React from "react";
 import { useNode, useNodeActions } from "../engine/nodes";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@shared/ui";
 import { useEditorStore } from "../engine/editor";
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@shared/ui/src/tooltip";
 
 const classes = {
   title:

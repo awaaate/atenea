@@ -1,21 +1,18 @@
 "use client";
+
+import { Button } from "@shared/ui/src/button";
 import {
-  Button,
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-  Form,
-  useForm,
-  zodResolver,
-} from "@shared/ui";
+} from "@shared/ui/src/card";
+import { Form, useForm, zodResolver } from "@shared/ui/src/form";
 import WorkspaceForm from "../../components/workspace-form/workspace-form";
 import { WorkspacePreview } from "../../components/workspace-preview/workspace-preview";
 import { workspaceSchema } from "../../schemas/workspaceSchema";
-interface CreateBoardButton {
-  onSubmit: (data: any) => Promise<void>;
-}
+
 export const CreateWorspacePage = () => {
   const form = useForm({
     resolver: zodResolver(workspaceSchema),
@@ -27,7 +24,7 @@ export const CreateWorspacePage = () => {
     },
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: object) => {
     console.log(data);
   };
 

@@ -1,16 +1,13 @@
 "use client";
 import { BarList, Bold, Card, Flex, Text, Title } from "@tremor/react";
-import useSWR from "swr";
 
 import { WidgetRoot } from "../../widget/widget-root";
 import { BarListCategoriesWidgetConfig } from "./bar-list-categories-widget-config";
 import { getCategoriesProposals } from "./bar-list-categories-widget-fecther";
 
-import { Skeleton } from "@shared/ui";
-import { Widget } from "../../widget/widget-types";
-import React from "react";
+import { Skeleton } from "@shared/ui/src/skeleton";
 import { useNode } from "../../engine/nodes";
-import { UserComponent } from "../../engine/interfaces";
+import { Widget } from "../../widget/widget-types";
 
 export interface BarListCategoriesWidgetProps {
   proposalId?: number;

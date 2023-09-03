@@ -1,14 +1,8 @@
-import {
-  BackgroundPicker,
-  Icon,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@shared/ui";
-import React, { useEffect, useMemo } from "react";
+import { Icon } from "@shared/ui/src/icon";
+import { Tabs, TabsContent } from "@shared/ui/src/tabs";
+
+import React, { useMemo } from "react";
 import { selectors, useEditorStore } from "../../engine/editor";
-import { WidgetConfigSection } from "../../widget/widget-config-section";
 import PageStylePannel from "./page-style-pannel";
 
 //drag with useDragStore

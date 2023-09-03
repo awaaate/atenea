@@ -1,9 +1,8 @@
-import { Input } from "@shared/ui";
+import { Input } from "@shared/ui/src/input";
 
+import { useNodeActions } from "../../engine/nodes";
 import { WidgetConfig } from "../../widget/widget-config";
 import { WidgetConfigSection } from "../../widget/widget-config-section";
-import { type ProposalBudgetWidgetProps } from "./proposal-budget-widget";
-import { useNode, useNodeActions } from "../../engine/nodes";
 
 function getLinkId(link: string) {
   const id = link.split("/").pop();
@@ -24,7 +23,8 @@ export const ProposalBudgetWidgetConfig = () => {
 
             const id = getLinkId(value) || "";
 
-            setNode((node) => {
+            //todo: validate if id is a valid proposal id
+            setNode((node: any) => {
               node.data.props.proposalId = id;
               return node;
             });

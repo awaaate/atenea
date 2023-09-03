@@ -5,10 +5,11 @@ import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "./grid.css";
 
-import { selectors, useEditorStore } from "../../engine/editor";
-import { GridItem, MemoizedGridItem } from "./grid-item";
 import { EDITOR_WIDTH, EDITOR_WIDTH_CLASSES } from "../../constants";
-import { cn } from "@shared/ui";
+import { selectors, useEditorStore } from "../../engine/editor";
+import { MemoizedGridItem } from "./grid-item";
+
+import { cn } from "@shared/ui/src/utils";
 
 const DROPPING_ELEMENT_ID = "__dropping-elem__";
 
