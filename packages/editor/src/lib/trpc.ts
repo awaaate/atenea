@@ -13,8 +13,8 @@ function getCookie(name: string): string | undefined {
 export const trpc = createTRPCProxyClient<AppRouter>({
     links: [
         httpBatchLink({
-            url: process.env.NEXT_PUBLIC_APP_URL ? process.env.NEXT_PUBLIC_APP_UR + '/api/trpc' : '/api/trpc',
-
+            //TODO: change this to the real url in the env
+            url: "https://atenea-mvp.vercel.app/api/trpc",
             async headers(opts) {
                 return {
                     authorization: getCookie("next-auth.session-token") || "",

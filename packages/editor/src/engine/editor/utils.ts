@@ -5,7 +5,6 @@ import { createNode } from "../nodes";
 import { useEditorStore } from "./store";
 import { trpc } from "../../lib/trpc";
 import { ComponentWithRichEditor } from "../../hooks/rich-text/use-rich-editor";
-import { date } from "@shared/ui";
 
 export function serialize(state: EditorState) {
     console.log("SERIALIZING STATE", state)
