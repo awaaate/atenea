@@ -39,6 +39,13 @@ function WidgetRoot<T>({
   const background = useNode((node) => node.data.props.background);
   const editable = useEditorStore.use.editable();
 
+  const innerComponent = useMemo(() => {
+    if (data) {
+      return inner(data);
+    }
+    return null;
+  }, [data]);
+
   const { setNode } = useNodeActions();
 
   const showHeader = editable || title || isActive;
@@ -49,8 +56,6 @@ function WidgetRoot<T>({
   if (error) {
     return <div>Something wrong with the widget</div>;
   }
-
-  const innerComponent = useMemo(() => inner(data), [data]);
 
   return (
     <div

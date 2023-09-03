@@ -1,6 +1,6 @@
 import { createCaller } from "@/lib/trpc/createCaller";
 import { notFound } from "next/navigation";
-import { BoardWrapper } from "./board-wrapper";
+import { BoardWrapper } from "@/components/board";
 import { getSession } from "@/lib/auth/getSession";
 
 export default async function Page({
@@ -19,12 +19,12 @@ export default async function Page({
 
   if (!board) return notFound();
 
-  console.log(board);
   return (
     <BoardWrapper
       title={board.name}
       background={board.background}
       content={board.draft as any}
+      editable={true}
       id={board.id}
     />
   );

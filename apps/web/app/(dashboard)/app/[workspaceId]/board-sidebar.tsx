@@ -16,6 +16,7 @@ export const BoardsSidebar = () => {
   const { isLoading, mutateAsync, data } = trpc.boards.create.useMutation();
   const collapsedSidebar = useLayoutStore((state) => state.collapsedSidebar);
   const boards = useLayoutStore((state) => state.boards);
+  const setBoards = useLayoutStore((state) => state.setBoards);
 
   const workspaceId = useLayoutStore((state) => state.workspaceId);
 
@@ -53,6 +54,8 @@ export const BoardsSidebar = () => {
           });
 
           router.push(`/app/${workspaceId}/${board[0].id}`);
+
+          setBoards([...boards, board[0]]);
         }}
       >
         {isLoading ? (

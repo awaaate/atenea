@@ -1,10 +1,9 @@
-import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
-import { BoardPage } from "@shared/templates";
 import { notFound } from "next/navigation";
-import { Board } from "../../../components/board/board";
+import { BoardWrapper } from "@/components/board";
 
 export const dynamic = "force-dynamic";
+
 interface BoardViewProps {
   params: {
     boardId: string;
@@ -21,7 +20,7 @@ const BoardView = async ({ params }: BoardViewProps) => {
   if (!board) return notFound();
 
   return (
-    <Board
+    <BoardWrapper
       title={board.name}
       background={board.background}
       content={board.draft as any}

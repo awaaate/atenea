@@ -86,7 +86,7 @@ export const workspaceRouter = router({
             ...result,
             boards: result.boards.sort((a, b) => {
                 //sort the boards by createdAt
-                return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+                return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
             }).map((board) => {
                 //remove the createdAt field
                 return {

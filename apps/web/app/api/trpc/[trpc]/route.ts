@@ -6,7 +6,7 @@ import { createContext } from "@shared/api/src/context";
 import { fetchRequestHandler } from "@shared/api/src/fetch-handler";
 import { db } from "@shared/db";
 
-export const runtime = "edge"
+//export const runtime = "edge"
 
 const handler = (req: Request) => fetchRequestHandler({
     endpoint: "/api/trpc",

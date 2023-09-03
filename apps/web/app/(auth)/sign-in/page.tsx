@@ -18,9 +18,6 @@ export const metadata: Metadata = {
     "Join our community or log in to your account. Explore personalized features and content on our platform.",
 };
 
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
-
 const Page = () => {
   return (
     <AuthenticationPage>

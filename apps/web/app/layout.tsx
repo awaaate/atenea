@@ -21,44 +21,6 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
-  keywords: [
-    "Next.js",
-    "Tailwind CSS",
-    "NextAuth.js",
-    "TypeScript",
-    "Prisma",
-    "shadcn/ui",
-    "Server Components",
-    "Watchlist",
-    "Community",
-    "Post",
-    "Ratings",
-    "Leaderboard",
-    "Poll",
-    "Anime",
-  ],
-  authors: [
-    {
-      name: "Sukrit Saha",
-      url: "https://github.com/Sukrittt",
-    },
-  ],
-  creator: "Sukrittt",
-  openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/og.jpg`],
-    creator: "@SukritSaha11",
-  },
 };
 
 export default function RootLayout({
