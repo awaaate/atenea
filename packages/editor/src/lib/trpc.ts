@@ -13,7 +13,7 @@ function getCookie(name: string): string | undefined {
 export const trpc = createTRPCProxyClient<AppRouter>({
     links: [
         httpBatchLink({
-            url: 'http://localhost:3000/api/trpc',
+            url: process.env.NEXT_PUBLIC_APP_URL ? process.env.NEXT_PUBLIC_APP_UR + '/api/trpc' : '/api/trpc',
 
             async headers(opts) {
                 return {
