@@ -40,7 +40,7 @@ export const authProviders: Provider[] = [
           return null;
         }
         console.log('siwe.domain !== nextAuthHost', siwe.domain !== nextAuthHost)
-        console.log(await req.json(), "JSOOOOON")
+        const { csrfToken } = await req.json();
         // let token = await getToken({req})
         //const token = await getCsrfToken(req.headers.get('cookie') || '');
 
@@ -48,10 +48,11 @@ export const authProviders: Provider[] = [
          console.log(token)
  
          console.log('token', token)
-         //TODO: FIX THIS I DON'T THINK IT'S SECURE
-         if (siwe.nonce !== token) {
-           return null
-         } */
+         */
+
+        if (siwe.nonce !== csrfToken) {
+          return null
+        }
         await siwe.verify({ signature: credentials?.signature || '' });
         //logServer('siwe', siwe);
 
@@ -63,8 +64,11 @@ export const authProviders: Provider[] = [
         const user = await caller.users.signInWithWallet({
           walletAddress: siwe.address,
         })
+
+        console.log('user', user)
         return user;
       } catch (e) {
+        console.log('eeror', e)
         return null;
       }
     },
