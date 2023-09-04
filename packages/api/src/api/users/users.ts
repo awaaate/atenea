@@ -17,7 +17,7 @@ export const usersRouter = router({
                 return eq(fields.walletAddress, walletAddress)
             }
         })
-
+        console.log(userExists)
         if (userExists && userExists.id) return {
             id: userExists.id,
             email: userExists.email,
@@ -25,10 +25,10 @@ export const usersRouter = router({
         }
 
         //create user
-
+        const newId = nanoid()
 
         const newUser = db.insert(User).values({
-            id: nanoid(),
+            id: newId,
             walletAddress,
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString(),
@@ -39,11 +39,11 @@ export const usersRouter = router({
         })
 
         if (!newUser) throw new Error("User not created")
-
+        console.log(newUser, "new user")
         return {
-            id: newUser[0].id,
-            email: newUser[0].email,
-            walletAddress: newUser[0].walletAddress,
+            id: newId,
+            email: newUser[0]?.email || "",
+            walletAddress: newUser[0]?.walletAddress || "",
         }
 
 
