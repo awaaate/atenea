@@ -27,7 +27,7 @@ export const usersRouter = router({
         //create user
         const newId = nanoid()
 
-        const newUser = db.insert(User).values({
+        const newUser = await db.insert(User).values({
             id: newId,
             walletAddress,
             createdAt: new Date().toISOString(),
@@ -45,9 +45,6 @@ export const usersRouter = router({
             email: newUser[0]?.email || "",
             walletAddress: newUser[0]?.walletAddress || "",
         }
-
-
-
 
     }),
 
