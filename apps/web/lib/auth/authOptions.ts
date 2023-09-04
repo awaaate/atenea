@@ -11,27 +11,26 @@ const VERCEL_DEPLOYMENT = !!process.env.VERCEL_URL;
 export const authOptions: NextAuthConfig = {
     providers: authProviders,
     session: { strategy: "jwt" },
-    /*  secret: env.AUTH_SECRET,
-     cookies: {
-         sessionToken: {
-             name: `${VERCEL_DEPLOYMENT ? "__Secure-" : ""}next-auth.session-token`,
-             options: {
-                 httpOnly: true,
-                 sameSite: "lax",
-                 path: "/",
-                 // When working on localhost, the cookie domain must be omitted entirely (https://stackoverflow.com/a/1188145)
-                 domain: VERCEL_DEPLOYMENT
-                     //TODO: fix this to use env vars
-                     ? `atenea-mvp.vercel.app`
-                     : undefined,
-                 secure: VERCEL_DEPLOYMENT,
-             },
-         },
-     },
-  */
+    /*     secret: env.AUTH_SECRET,
+        cookies: {
+            sessionToken: {
+                name: `${VERCEL_DEPLOYMENT ? "__Secure-" : ""}next-auth.session-token`,
+                options: {
+                    httpOnly: true,
+                    sameSite: "lax",
+                    path: "/",
+                    // When working on localhost, the cookie domain must be omitted entirely (https://stackoverflow.com/a/1188145)
+                    domain: VERCEL_DEPLOYMENT
+                        //TODO: fix this to use env vars
+                        ? `atenea-mvp.vercel.app`
+                        : undefined,
+                    secure: VERCEL_DEPLOYMENT,
+                },
+            },
+        }, */
     callbacks: {
         session: async ({ session, token }) => {
-            logServer("jwt", { token, session });
+            logServer("session", { token, session });
             return {
                 ...session,
                 user: {
@@ -42,18 +41,13 @@ export const authOptions: NextAuthConfig = {
             };
         },
         jwt: ({ token, user }) => {
-            logServer("session", { token, user });
-            if (user) {
-                token.id = user.id;
-                //token.walletAddress = user.walletAddress;
-                const u = user as unknown as any;
-                return {
-                    ...token,
-                    id: u.id,
-                    walletAddress: u.walletAddress,
-                };
-            }
-            return token;
+            logServer("jwt", { token, user });
+            //token.walletAddress = user.walletAddress;
+            return {
+                ...token,
+                id: token.sub,
+                walletAddress: token.walletAddress,
+            };
         },
         signIn: async () => {
             //logServer("signIn", { user, account, profile, email, credentials });

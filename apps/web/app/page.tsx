@@ -5,9 +5,7 @@ export default function Page() {
     <>
       <div>
         <h1>Welcome atenea Preview</h1>
-        <Link href="/sign-in">
-          <a>Go to app</a>
-        </Link>
+        <Link href="/sign-in">Go to App</Link>
       </div>
     </>
   );

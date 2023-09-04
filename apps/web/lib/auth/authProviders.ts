@@ -5,7 +5,6 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 //@ts-expect-error
 import { SiweMessage } from 'siwe';
 import { createCaller } from '../trpc/createCaller';
-import { getCsrfToken } from './getCsrfToken';
 
 
 export const authProviders: Provider[] = [

@@ -52,4 +52,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig; //withBundleAnalyzer()(nextConfig);
+export default (nextConfig);

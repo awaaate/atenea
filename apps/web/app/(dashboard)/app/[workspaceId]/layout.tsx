@@ -25,7 +25,7 @@ export default async function AdminLayout({
   params,
 }: AdminLayoutProps) {
   const session = await getSession();
-
+  console.log("session", session);
   if (!session) {
     redirect("/sign-in");
   }
@@ -39,7 +39,7 @@ export default async function AdminLayout({
     (workspace) => workspace.id === params.workspaceId
   );
 
-  console.log("userOwns", worksapce.boards);
+  console.log("userOwns", workspaces, userOwns);
   if (userOwns === -1) {
     //TODO: improve this
     return notFound();

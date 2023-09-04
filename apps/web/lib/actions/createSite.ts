@@ -3,7 +3,7 @@
 import { env } from "@/env.mjs";
 import { getSession } from "@/lib/auth/getSession";
 import { db } from "@shared/db";
-import { appRouter } from "@shared/db/src/trpc";
+import { appRouter } from "@shared/api/src/app-router";
 import { revalidateTag } from "next/cache";
 
 
