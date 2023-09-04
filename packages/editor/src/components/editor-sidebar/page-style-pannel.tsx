@@ -13,7 +13,7 @@ const classes = {
     "flex flex-col py-4  h-min items-center justify-center flex-1 data-[state=on]:bg-active-default  data-[state=on]:border-accent",
   toggleItemText: "text-sm text-text-weaker",
 };
-const PageStylePannel = () => {
+export const PageStylePannel = () => {
   const background = useEditorStore.use.pageBackground();
   const setBackground = useEditorStore.use.setPageBackground();
 
@@ -53,5 +53,3 @@ const PageStylePannel = () => {
     </div>
   );
 };
-
-export default PageStylePannel;

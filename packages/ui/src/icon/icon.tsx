@@ -69,6 +69,7 @@ import {
   Share,
   DotIcon,
   ExternalLink,
+  Eye,
 } from "lucide-react";
 import React from "react";
 
@@ -144,6 +145,7 @@ const Icons = {
   PanelLeftClose,
   Share,
   ExternalLink,
+  Eye,
   DotIcon,
 };
 

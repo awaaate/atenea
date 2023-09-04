@@ -33,7 +33,7 @@ export function useNodeActions() {
     throw new Error("ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT");
   }
 
-  const { id, related } = context;
+  const { id } = context;
 
   const remove = useEditorStore.use.remove();
   const selectNode = useEditorStore.use.select();

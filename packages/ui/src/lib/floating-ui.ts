@@ -1,3 +1,1 @@
-import floatingUI from "@floating-ui/dom"
-
-export default floatingUI
+export { computePosition } from "@floating-ui/dom"

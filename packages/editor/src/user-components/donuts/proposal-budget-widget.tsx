@@ -21,16 +21,11 @@ export interface ProposalBudgetWidgetProps extends WidgetProps {
 type WidgetInnerProps = Awaited<
   ReturnType<ReturnType<typeof getProposalBudget>>
 > &
-  WidgetProps & {
-    ref: React.MutableRefObject<HTMLDivElement | null>;
-  };
+  WidgetProps & {};
 
 const valueFormatter = (number: number) => `${number} ETH`;
 
-const WidgetInner: React.FC<WidgetInnerProps> = ({
-  proposalCollection,
-  ref,
-}) => {
+const WidgetInner: React.FC<WidgetInnerProps> = ({ proposalCollection }) => {
   const proposal = proposalCollection?.edges[0];
   const chartData = useMemo(() => {
     if (!proposal) return [];
@@ -41,7 +36,7 @@ const WidgetInner: React.FC<WidgetInnerProps> = ({
   }, [proposal]);
 
   return (
-    <section className=" flex  h-full flex-wrap gap-4 p-6" ref={ref}>
+    <section className=" flex  h-full flex-wrap gap-4 p-6">
       <div className="w-[200px] bg-surface-default ">
         <DonutChart
           className="w-full flex-1"
@@ -82,8 +77,8 @@ export const ProposalBudgetWidget: Widget<{
         getProposalBudget(props.proposalId),
       ]}
       skeleton={<Skeleton />}
-      inner={(data) => <WidgetInner {...data} {...props} ref={ref} />}
-      fullScreen={(data) => <WidgetInner {...data} {...props} ref={ref} />}
+      inner={(data) => <WidgetInner {...data} {...props} />}
+      fullScreen={(data) => <WidgetInner {...data} {...props} />}
     />
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { HTMLAttributes, memo, useMemo } from "react";
+import React, { HTMLAttributes, Suspense, memo, useMemo } from "react";
 
 import { cn } from "@shared/ui/src/utils";
 import { Card, CardTitle } from "@shared/ui/src/card";
@@ -41,7 +41,7 @@ function WidgetRoot<T>({
 
   const innerComponent = useMemo(() => {
     if (data) {
-      return inner(data);
+      return <Suspense fallback={null}>{inner(data)}</Suspense>;
     }
     return null;
   }, [data]);

@@ -1,0 +1,9 @@
+{
+  "extends": "@shared/tsconfig/react-library.json",
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["dist", "build", "node_modules"]
+}

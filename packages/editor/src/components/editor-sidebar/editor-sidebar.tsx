@@ -1,9 +1,9 @@
-import { Icon } from "@shared/ui/src/icon";
-import { Tabs, TabsContent } from "@shared/ui/src/tabs";
-
 import React, { useMemo } from "react";
+
+import { Tabs, TabsContent } from "@shared/ui/src/tabs";
+import { Icon } from "@shared/ui/src/icon";
 import { selectors, useEditorStore } from "../../engine/editor";
-import PageStylePannel from "./page-style-pannel";
+import { PageStylePannel } from "./page-style-pannel";
 
 //drag with useDragStore
 interface EditorSidebarProps {}

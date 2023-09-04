@@ -1,7 +1,7 @@
 "use client";
 
 import { usePointerInteractions } from "@shared/ui/src/lib/hooks/usePointerInteractions";
-import { default as floatingUI } from "@shared/ui/src/lib/floating-ui";
+import { computePosition } from "@shared/ui/src/lib/floating-ui";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -26,8 +26,7 @@ export function FloatingMenuPlugin({
 
     if (!domRange || !ref.current || isPointerDown) return setCoords(undefined);
 
-    floatingUI
-      .computePosition(domRange, ref.current, { placement: "top" })
+    computePosition(domRange, ref.current, { placement: "top" })
       .then((pos) => {
         setCoords({ x: pos.x, y: pos.y - 10 });
       })

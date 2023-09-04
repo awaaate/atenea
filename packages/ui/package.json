@@ -11,9 +11,9 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "@shared/eslint-config": "workspace:*",
     "react": "18.2.0",
-    "tsconfig": "workspace:*",
+    "@shared/tsconfig": "workspace:*",
     "typescript": "^4.5.2"
   },
   "dependencies": {
@@ -43,7 +43,7 @@
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
     "dayjs": "^1.11.9",
-    "lucide-react": "^0.270.0",
+    "lucide-react": "^0.274.0",
     "next": "^13.4.19",
     "react-hook-form": "^7.45.4",
     "react-textarea-autosize": "^8.5.3",

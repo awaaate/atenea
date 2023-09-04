@@ -5,6 +5,7 @@ import { Node, FreshNode, UserComponentConfig } from '../interfaces';
 
 import { NodeProvider } from './node-context';
 import { nanoid } from 'nanoid';
+import { WidgetProps } from '../../widget/widget-types';
 
 const getNodeTypeName = (type: string | { name: string }) =>
     typeof type == 'string' ? type : type.name;
@@ -44,6 +45,7 @@ export function createNode(
         const mergedProps = {
             ...node.data.props,
             title: node.data.props.title || "",
+
         };
 
         node.data.props = mergedProps;
@@ -51,8 +53,10 @@ export function createNode(
         node.data.name = getNodeTypeName(actualType);
         node.data.displayName = getNodeTypeName(actualType);
 
+        //check if layout it's defined
 
     }
+
 
     if (normalize) {
         normalize(node);
@@ -69,7 +73,8 @@ export function createNode(
         node.data.props = {
             ...(userComponentConfig.defaultProps || {}),
             ...node.data.props,
-        };
+
+        } as WidgetProps;
 
 
 

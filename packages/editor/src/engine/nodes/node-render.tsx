@@ -1,10 +1,9 @@
 import React, { useMemo } from "react";
 
-import { NodeElement } from "./node-element";
-import { useNode } from "./use-node";
 import { useEditorStore } from "../editor/store";
 import { NodeId } from "../interfaces";
-import { ProposalBudgetWidget } from "../../user-components/donuts/proposal-budget-widget";
+import { NodeElement } from "./node-element";
+import { useNode } from "./use-node";
 
 type RenderNodeToElementType = {
   render?: React.ReactElement;

@@ -16,6 +16,7 @@ export interface WidgetProps {
   sidePannel: boolean;
   controls: "simple" | "full";
   title: string;
+  [key: string]: unknown
 }
 export const WIDGET_DEFAULT: WidgetProps = {
   controls: "simple",

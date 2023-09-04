@@ -1,6 +1,6 @@
 import { loadEditorState } from "@shared/editor";
 import { EditorState } from "@shared/editor/src/engine/interfaces";
-import { TooltipProvider } from "@shared/ui";
+import { TooltipProvider } from "@shared/ui/src/tooltip";
 import type { Meta } from "@storybook/react";
 import { useEffect } from "react";
 import { mockPageData } from "../../data";

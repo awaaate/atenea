@@ -1,9 +1,15 @@
 {
   "extends": "tsconfig/react-library.json",
-  "include": ["."],
+  "include": [
+    "./src"
+  ],
   "compilerOptions": {
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
 }

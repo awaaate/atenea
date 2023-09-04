@@ -1,8 +1,8 @@
 import { Decorator } from "@storybook/react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { create } from "zustand";
 
-import { cn } from "@shared/ui";
+import { cn } from "@shared/ui/src/utils";
 
 export const useTheme = create<{
   theme: "light" | "dark";

@@ -52,6 +52,7 @@ export const saveState = () => {
 
     //fetch("/api/save", { method: "POST", body: JSON.stringify(data) });
     console.log("SAVING DATA", data)
+
     trpc.boards.setDraft.mutate({
         id: data.boardId,
         name: data.title,

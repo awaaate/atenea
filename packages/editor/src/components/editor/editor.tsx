@@ -1,11 +1,13 @@
 "use client";
 
 import React, { HTMLAttributes } from "react";
-import { Grid } from "../../user-components/grid";
+import { Grid } from "../grid";
 import { useEditorStore } from "../../engine/editor";
 
 import { ScrollArea } from "@shared/ui/src/scroll-area";
 import { cn } from "@shared/ui/src/utils";
+import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
 
 const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   children,
@@ -15,6 +17,7 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   const background = useEditorStore.use.pageBackground();
   const setSidebar = useEditorStore.use.setSidebar();
   const unSelectAll = useEditorStore.use.unSelectAll();
+
   return (
     <div
       {...props}
@@ -36,6 +39,18 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
         {children}
         <Grid />
       </div>
+
+      <Button
+        onClick={() => {
+          useEditorStore.setState({
+            editable: !useEditorStore.getState().editable,
+          });
+        }}
+        className="fixed bottom-4 right-4"
+      >
+        Preview
+        <Icon name="Eye" className="ml-2" />
+      </Button>
     </div>
   );
 };

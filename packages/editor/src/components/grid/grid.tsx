@@ -7,7 +7,7 @@ import "./grid.css";
 
 import { EDITOR_WIDTH, EDITOR_WIDTH_CLASSES } from "../../constants";
 import { selectors, useEditorStore } from "../../engine/editor";
-import { MemoizedGridItem } from "./grid-item";
+import { MemoizedGridItem } from "../grid-item";
 
 import { cn } from "@shared/ui/src/utils";
 
@@ -26,6 +26,12 @@ export const Grid = () => {
   const ResponsiveReactGridLayout = useMemo(() => {
     return WidthProvider(Responsive);
   }, [sidebar]);
+
+  const children = useMemo(() => {
+    return nodeIds.map((child: string, index: number) => {
+      return <MemoizedGridItem key={child} id={child} />;
+    });
+  }, [nodeIds.length]);
 
   const gridLayout = useMemo(() => {
     return (
@@ -58,12 +64,10 @@ export const Grid = () => {
         isDraggable={editable}
         isResizable={editable}
       >
-        {nodeIds.map((child: string, index: number) => {
-          return <MemoizedGridItem key={child} id={child} />;
-        })}
+        {children}
       </ResponsiveReactGridLayout>
     );
-  }, [nodeIds.length, layout, sidebar]);
+  }, [sidebar, layout]);
 
   return gridLayout;
 };

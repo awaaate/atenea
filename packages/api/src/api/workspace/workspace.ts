@@ -106,7 +106,7 @@ export const workspaceRouter = router({
     })).mutation(async ({ input, ctx }) => {
         const { db } = ctx;
         const userId = ctx.user?.id
-
+        console.log(userId, "user id")
         return db.insert(Workspace).values({
             name: input.name,
             description: input.description,

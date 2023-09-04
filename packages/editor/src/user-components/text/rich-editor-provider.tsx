@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentWithRichEditor } from "../../hooks/rich-text/use-rich-editor";
 import { useNode } from "../../engine/nodes";
 
-interface RichEditorProviderProps {
+export interface RichEditorProviderProps {
   Comp: React.ComponentType<any>;
 }
 

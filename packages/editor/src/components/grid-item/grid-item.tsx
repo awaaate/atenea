@@ -4,10 +4,7 @@ import React, { useCallback, useEffect } from "react";
 import { cn } from "@shared/ui/src/utils";
 
 import { useEditorStore } from "../../engine/editor";
-import {
-  NodeProvider,
-  RenderNodeToElement
-} from "../../engine/nodes";
+import { NodeProvider, RenderNodeToElement } from "../../engine/nodes";
 
 interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -22,7 +19,6 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
     const connect = useEditorStore.use.connectNode();
 
     const isActive = useEditorStore((state) => {
-      console.log("state.events.selected", Object.keys(state.events.selected));
       return state.events.selected.has(id);
     });
     const isText = useEditorStore(

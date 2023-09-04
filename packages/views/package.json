@@ -1,0 +1,25 @@
+{
+  "name": "views",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shared/eslint-config": "workspace:^",
+    "@shared/tailwind-config": "workspace:^",
+    "@shared/tsconfig": "workspace:^",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "react": "18.2.0"
+  },
+  "dependencies": {
+    "@shared/editor": "workspace:^",
+    "@shared/ui": "workspace:^",
+    "@tremor/react": "^3.6.5"
+  }
+}
