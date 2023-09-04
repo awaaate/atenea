@@ -18,7 +18,7 @@ export const usersRouter = router({
             }
         })
 
-        if (userExists) return {
+        if (userExists && userExists.id) return {
             id: userExists.id,
             email: userExists.email,
             walletAddress: userExists.walletAddress,
