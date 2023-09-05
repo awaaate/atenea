@@ -10,11 +10,16 @@ function getCookie(name: string): string | undefined {
         return parts.pop()?.split(';').shift();
     }
 }
+
+const getApiRoot = () => {
+    const apiRoot = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+    return apiRoot;
+}
 export const sourceFetcher = createTRPCProxyClient<DataSourceRouter>({
     links: [
         httpBatchLink({
             //TODO: change this to the real url in the env
-            url: "http://localhost:3000/api/data-source",
+            url: `${getApiRoot()}/api/data-source`,
             fetch(url, options) {
                 return fetch(url, {
                     ...options,
