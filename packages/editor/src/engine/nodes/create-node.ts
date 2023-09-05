@@ -66,9 +66,9 @@ export function createNode(
     const userComponentConfig = actualType.node as WidgetComponentConfig<any>;
 
     if (userComponentConfig) {
-        node.data.displayName =
+        node.data.name =
             userComponentConfig.name ||
-            node.data.name;
+            node.data.name || node.data.displayName;
 
         node.data.props = {
             ...(userComponentConfig.defaultProps || {}),

@@ -12,7 +12,7 @@ function getCookie(name: string): string | undefined {
 }
 
 const getApiRoot = () => {
-    const apiRoot = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+    const apiRoot = process.env.NODE_ENV === 'production' ? 'https://atenea-mvp.vercel.app' : 'http://localhost:3000';
     return apiRoot;
 }
 export const sourceFetcher = createTRPCProxyClient<DataSourceRouter>({

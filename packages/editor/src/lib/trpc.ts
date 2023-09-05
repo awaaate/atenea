@@ -10,11 +10,17 @@ function getCookie(name: string): string | undefined {
         return parts.pop()?.split(';').shift();
     }
 }
+
+const getApiRoot = () => {
+    const apiRoot = process.env.NODE_ENV === 'production' ? 'https://atenea-mvp.vercel.app' : 'http://localhost:3000';
+    return apiRoot;
+}
+
 export const trpc = createTRPCProxyClient<AppRouter>({
     links: [
         httpBatchLink({
             //TODO: change this to the real url in the env
-            url: "https://atenea-mvp.vercel.app/api/trpc",
+            url: `${getApiRoot()}/api/trpc`,
             async headers(opts) {
                 return {
                     authorization: getCookie("next-auth.session-token") || "",

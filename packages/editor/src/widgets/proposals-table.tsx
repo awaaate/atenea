@@ -7,9 +7,8 @@ const BasicTableView = lazy(() =>
     default: module.BasicTableView,
   }))
 );
-export const name = "Proposals Table";
 export default WidgetFactory.createWidget({
-  name,
+  name: "Proposals Table",
   dataFetcher: {
     key: "proposals-table",
     collector: (props) => {
