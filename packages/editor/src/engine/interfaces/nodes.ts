@@ -2,15 +2,14 @@ import React from 'react';
 import { Widget, WidgetProps } from '../../widget/widget-types';
 
 
-export type UserComponentConfig<T> = {
-  displayName: string;
+export type WidgetComponentConfig<T> = {
+  name: string;
   related: Partial<NodeRelated>;
-
   defaultProps: Partial<T>;
 };
 
-export type UserComponent<T = any> = React.ComponentType<T> & {
-  node: UserComponentConfig<T>;
+export type WidgetComponent<T = any> = React.ComponentType<T> & {
+  node: WidgetComponentConfig<T>;
 };
 
 export type NodeId = string;

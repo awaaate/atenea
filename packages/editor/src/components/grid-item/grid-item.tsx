@@ -1,10 +1,11 @@
 "use client";
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useMemo } from "react";
 
 import { cn } from "@shared/ui/src/utils";
 
 import { useEditorStore } from "../../engine/editor";
 import { NodeProvider, RenderNodeToElement } from "../../engine/nodes";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 
 interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -24,11 +25,6 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
     const isText = useEditorStore(
       useCallback(
         (state) => {
-          console.log(
-            "state.nodes[id].data.displayName",
-            state.nodes[id],
-            state
-          );
           return state.nodes[id].data.displayName === "Text";
         },
         [id]
@@ -54,6 +50,15 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
       };
     }, [id, domRef.current]);
 
+    const nodeElement = useMemo(() => {
+      if (!id) return null;
+      return (
+        <NodeProvider id={id}>
+          <RenderNodeToElement />
+        </NodeProvider>
+      );
+    }, [id]);
+
     return (
       <div
         {...props}
@@ -77,9 +82,7 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
           className
         )}
       >
-        <NodeProvider id={id}>
-          <RenderNodeToElement />
-        </NodeProvider>
+        {nodeElement}
         {props.children}
       </div>
     );

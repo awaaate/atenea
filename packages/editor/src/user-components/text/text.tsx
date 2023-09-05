@@ -8,6 +8,8 @@ import {
   createWidgetProps,
 } from "../../widget/widget-types";
 import { TextWidgetConfig } from "./text-widget-config";
+import { WidgetFactory } from "../../widget/widget-factory";
+import { EditorState } from "lexical";
 
 export type TextProps = WidgetProps & ComponentWithRichEditor;
 
@@ -16,29 +18,37 @@ const TextInner = lazy(() =>
     default: module.TextInner,
   }))
 );
-export const Text: Widget<TextProps> = ({ ...props }) => {
-  return (
-    <WidgetRoot
-      dataFetcher={["text", () => Promise.resolve({})]}
-      inner={(data) => <TextInner />}
-      fullScreen={(data) => <TextInner />}
-    />
-  );
-};
 
-Text.node = {
-  defaultProps: createWidgetProps({
-    layout: {
-      w: Infinity,
-      h: 10,
-      x: 0,
-      y: 0,
-      i: "text",
+export const TextWidget = WidgetFactory.createWidget({
+  name: "Text",
+  View: TextInner,
+  Config: TextWidgetConfig,
+  FullScreenView: TextInner,
+  skeleton: <div className="bg-red-500 w-full h-full">Loading</div>,
+  dataFetcher: {
+    key: "text",
+    collector: (props) => {
+      return {
+        initialEditorState: props.initialEditorState as EditorState,
+      };
     },
-    initialEditorState: null as any, //createFreshEditorState(),
-  }),
-  related: {
-    toolbar: TextWidgetConfig,
+    fetcher: async (args) => {
+      if (!args)
+        return {
+          initialEditorState: null,
+        };
+      return {
+        initialEditorState: args.initialEditorState,
+      };
+    },
   },
-  displayName: "Text",
-};
+  initialProps: {
+    initialEditorState: null,
+    layout: {
+      h: 4,
+      w: Infinity,
+      x: 0,
+      y: Infinity,
+    },
+  },
+});

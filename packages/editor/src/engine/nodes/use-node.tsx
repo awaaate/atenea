@@ -1,16 +1,20 @@
 import { useMemo, useContext, useCallback } from "react";
-import invariant from "tiny-invariant";
 
 import { NodeContext } from "./node-context";
+import { useDebouncedCallback, useThrottledCallback } from "use-debounce";
 
 import { Node } from "../interfaces";
 import { useEditorStore } from "../editor/store";
+import { _debounce } from "../../lib/utils";
 
 export function useNode<S = undefined>(
   collect?: (node: Node) => S
 ): S extends undefined ? { id: string; related?: boolean } : S {
   const context = useContext(NodeContext);
-  invariant(context, "ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT");
+
+  if (!context.id) {
+    throw new Error("ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT");
+  }
 
   const { id, related } = context;
 
@@ -51,7 +55,7 @@ export function useNodeActions() {
         selectNode(id);
       },
       //set node
-      setNode: (cb: (node: Node) => Node) => {
+      setNode: (cb: (node: Node) => Node, debounce?: number) => {
         setNode(id, cb);
       },
     };

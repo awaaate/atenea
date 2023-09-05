@@ -36,7 +36,7 @@ export const DefaultRender = () => {
   }));
 
   return useMemo(() => {
-    let children = props.children;
+    let children = props.children as React.ReactNode;
 
     if (nodes && nodes.length > 0) {
       children = (

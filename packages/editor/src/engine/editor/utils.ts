@@ -1,10 +1,10 @@
 import { _debounce } from "../../lib/utils";
-import { WIDGET_NAMES, getWidget } from "../../user-components";
 import { EditorState, Nodes } from "../interfaces";
 import { createNode } from "../nodes";
 import { useEditorStore } from "./store";
 import { trpc } from "../../lib/trpc";
 import { ComponentWithRichEditor } from "../../hooks/rich-text/use-rich-editor";
+import { widgetFactory } from "../../widget/factory";
 
 export function serialize(state: EditorState) {
     console.log("SERIALIZING STATE", state)
@@ -44,9 +44,9 @@ export function serialize(state: EditorState) {
 export const saveState = () => {
 
     if (!useEditorStore.getState().editable) return;
-    useEditorStore.setState({
-        lastDatabaseSync: "saving",
-    });
+    /*     useEditorStore.setState({
+            lastDatabaseSync: "saving",
+        }); */
 
     const data = serialize(useEditorStore.getState());
 
@@ -66,9 +66,9 @@ export const saveState = () => {
         console.log(res)
     });
 
-    useEditorStore.setState({
-        lastDatabaseSync: new Date().toString(),
-    });
+    /*     useEditorStore.setState({
+            lastDatabaseSync: new Date().toString(),
+        }); */
 
 
 }
@@ -84,17 +84,12 @@ export function deserialize(prev: EditorState, currentState: EditorState) {
         ...prev,
         nodes: Object.keys(prev.nodes).reduce((acc, key) => {
             const node = prev.nodes[key];
-            console.log(
-                "node",
-                "displayName" in node.data ? node.data.displayName : "null",
-                WIDGET_NAMES
-            );
+
             const newNode = createNode({
                 data: {
                     ...node.data,
                     type:
-                        getWidget(WIDGET_NAMES[node.data.displayName])?.component ||
-                        "null",
+                        widgetFactory.getWidget(node.data.name) || ""
                 },
                 id: node.id,
             });

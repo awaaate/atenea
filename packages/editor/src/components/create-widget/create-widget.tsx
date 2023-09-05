@@ -4,16 +4,18 @@ import { Dialog, DialogTrigger } from "@shared/ui/src/dialog";
 import React from "react";
 import { useEditorStore } from "../../engine/editor";
 import { createNode } from "../../engine/nodes";
-import { WidgetComponentsType, getWidget } from "../../user-components";
 import { Icon } from "@shared/ui/src/icon";
+import { widgetFactory } from "../../widget/factory";
+import proposalsTable from "../../widgets/proposals-table";
+import proposalsAreaChart from "../../widgets/proposals-area-chart";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const selectNode = useEditorStore.use.select();
   const add = useEditorStore.use.create();
 
-  const creteNode = (name: WidgetComponentsType) => {
-    const component = getWidget(name)?.component;
+  const creteNode = (name: string) => {
+    const component = widgetFactory.getWidget(name);
     if (!component) return console.error("Component not found");
     const nodeToAdd = createNode({
       data: {
@@ -58,6 +60,33 @@ export const CreateWidget = () => {
             icon: "PieChart",
             id: "3",
             name: "Proposal Budget",
+            group: "Charts",
+          },
+          {
+            handler: () => {
+              creteNode("Donut Test");
+            },
+            icon: "PieChart",
+            id: "4",
+            name: "Donut test",
+            group: "Charts",
+          },
+          {
+            handler: () => {
+              creteNode(proposalsTable.node.name);
+            },
+            icon: "ScatterChart",
+            id: "5",
+            name: "Proposals Table",
+            group: "Charts",
+          },
+          {
+            handler: () => {
+              creteNode(proposalsAreaChart.node.name);
+            },
+            icon: "ScatterChart",
+            id: "4",
+            name: "Proposals Area Chart",
             group: "Charts",
           },
           {

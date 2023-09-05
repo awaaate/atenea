@@ -1,13 +1,14 @@
 "use client";
 
 import React, { HTMLAttributes } from "react";
-import { Grid } from "../grid";
 import { useEditorStore } from "../../engine/editor";
+import { Grid } from "../grid";
 
-import { ScrollArea } from "@shared/ui/src/scroll-area";
-import { cn } from "@shared/ui/src/utils";
 import { Button } from "@shared/ui/src/button";
 import { Icon } from "@shared/ui/src/icon";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { cn } from "@shared/ui/src/utils";
+import { useAutoSave } from "../../hooks/use-auto-save";
 
 const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   children,
@@ -18,6 +19,7 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   const setSidebar = useEditorStore.use.setSidebar();
   const unSelectAll = useEditorStore.use.unSelectAll();
 
+  useAutoSave();
   return (
     <div
       {...props}

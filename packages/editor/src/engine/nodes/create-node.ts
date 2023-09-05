@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Node, FreshNode, UserComponentConfig } from '../interfaces';
+import { Node, FreshNode, WidgetComponentConfig } from '../interfaces';
 
 
 import { NodeProvider } from './node-context';
@@ -21,12 +21,12 @@ export function createNode(
         id,
         _hydrationTimestamp: Date.now(),
         data: {
+            ...newNode.data,
             props: {} as any,
             parent: null,
             hidden: false,
             nodes: [],
             linkedNodes: {},
-            ...newNode.data,
             type: actualType,
             name: getNodeTypeName(actualType),
             displayName: getNodeTypeName(actualType),
@@ -63,12 +63,12 @@ export function createNode(
     }
 
     // TODO: use UserComponentConfig type
-    const userComponentConfig = actualType.node as UserComponentConfig<any>;
+    const userComponentConfig = actualType.node as WidgetComponentConfig<any>;
 
     if (userComponentConfig) {
         node.data.displayName =
-            userComponentConfig.displayName ||
-            node.data.displayName;
+            userComponentConfig.name ||
+            node.data.name;
 
         node.data.props = {
             ...(userComponentConfig.defaultProps || {}),

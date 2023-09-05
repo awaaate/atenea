@@ -1,4 +1,4 @@
-
+/* 
 import { ProposalBudgetWidget } from "./donuts/proposal-budget-widget"
 
 import { BarListCategoriesWidget } from "./bar-list/bar-list-categories-widget"
@@ -11,9 +11,9 @@ export type WidgetComponentsType =
 
 
 export const WIDGET_NAMES = {
-    [ProposalBudgetWidget.node.displayName]: "ProposalBudgetWidget",
-    [BarListCategoriesWidget.node.displayName]: "BarListCategoriesWidget",
-    [Text.node.displayName]: "Text",
+    [ProposalBudgetWidget.node.name]: "ProposalBudgetWidget",
+    [BarListCategoriesWidget.node.name]: "BarListCategoriesWidget",
+    [Text.node.name]: "Text",
 } as const
 
 
@@ -38,7 +38,7 @@ export const Widgets = [
 export function getWidget(name: WidgetComponentsType) {
     return Widgets.find((widget) => widget.name === name)
 }
-
+ */
 
 /* export const isLayout = (layout: UserLayoutComponentsType) => {
   return !!Layout[layout]

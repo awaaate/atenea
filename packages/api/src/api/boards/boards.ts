@@ -1,5 +1,5 @@
-import { Board, Workspace } from "@shared/db/src/schema";
-import { eq } from "drizzle-orm";
+import { eq } from "@shared/db/src/orm";
+import { Board } from "@shared/db/src/schema";
 import { nanoid } from "nanoid";
 import * as z from "zod";
 import { protectedProcedure, publicProcedure, router } from "../../trpc";

@@ -15,7 +15,7 @@ const ToogleItem = React.forwardRef<
     ref={ref}
     className={cn(
       buttonVariants({ size: "sm" }),
-      "data-[state=on]:bg-border-default",
+      "data-[state=on]:border-border-default",
       className
     )}
     {...props}

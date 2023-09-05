@@ -1,11 +1,11 @@
 import { create } from "zustand"
-import { UserComponent } from "../engine/interfaces"
+import { WidgetComponent } from "../engine/interfaces"
 
 
 interface Node {
     id: string
     data: {
-        type: UserComponent
+        type: WidgetComponent
         props: any
     }
 }

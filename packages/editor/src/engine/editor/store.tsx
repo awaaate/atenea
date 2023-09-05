@@ -229,21 +229,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
           }
         };
       },
-      storage: createJSONStorage(() => {
-        return {
-          getItem: (key) => {
-            return null;
-          },
-          removeItem: (key) => {
-            debouncedSave();
-            // sessionStorage.removeItem(key);
-          },
-          setItem: (key, value) => {
-            debouncedSave();
-            //sessionStorage.setItem(key, value);
-          },
-        };
-      }),
+      storage: createJSONStorage(() => sessionStorage),
     }
   ),
   shallow

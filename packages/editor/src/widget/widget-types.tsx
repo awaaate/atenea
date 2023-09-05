@@ -1,5 +1,5 @@
 import { Layout } from "react-grid-layout";
-import { UserComponent } from "../engine/interfaces";
+import { WidgetComponent } from "../engine/interfaces";
 import { ComponentWithRichEditor } from "../hooks/rich-text/use-rich-editor";
 export interface WidgetProps {
   width: number;
@@ -16,7 +16,7 @@ export interface WidgetProps {
   sidePannel: boolean;
   controls: "simple" | "full";
   title: string;
-  [key: string]: unknown
+  [key: string]: unknown;
 }
 export const WIDGET_DEFAULT: WidgetProps = {
   controls: "simple",
@@ -53,4 +53,4 @@ export const createWidgetProps = <
   };
 };
 
-export type Widget<T = unknown> = UserComponent<Partial<WidgetProps & T>>;
+export type Widget<T = unknown> = WidgetComponent<Partial<WidgetProps & T>>;

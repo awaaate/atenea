@@ -38,24 +38,23 @@ function WidgetRoot<T>({
   const isActive = useNode((node) => node.events.selected);
   const background = useNode((node) => node.data.props.background);
   const editable = useEditorStore.use.editable();
-
   const innerComponent = useMemo(() => {
+    console.log({
+      isLoading,
+      error,
+      data,
+    });
+    if (isLoading) return skeleton;
+    if (error) return <div>error</div>;
     if (data) {
       return <Suspense fallback={null}>{inner(data)}</Suspense>;
     }
     return null;
-  }, [data]);
+  }, [data, isLoading, error]);
 
   const { setNode } = useNodeActions();
 
   const showHeader = editable || title || isActive;
-
-  if (isLoading || !data) {
-    return skeleton;
-  }
-  if (error) {
-    return <div>Something wrong with the widget</div>;
-  }
 
   return (
     <div
@@ -88,8 +87,9 @@ function WidgetRoot<T>({
             </div>
           </CardTitle>
         )}
-
-        <ScrollArea className="min-h-full">{innerComponent}</ScrollArea>
+        <ScrollArea orientation={["vertical", "horizontal"]}>
+          {innerComponent}
+        </ScrollArea>
         <Dialog
           open={isFullScreen}
           onOpenChange={(value) => {
@@ -99,8 +99,10 @@ function WidgetRoot<T>({
             });
           }}
         >
-          <DialogContent>
-            <div className="w-full h-full">{fullScreen(data)}</div>
+          <DialogContent className="max-w-5xl w-full">
+            <ScrollArea>
+              <div className="w-full h-full">{fullScreen(data)}</div>
+            </ScrollArea>
           </DialogContent>
         </Dialog>
       </Card>

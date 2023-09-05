@@ -29,8 +29,18 @@ export const createWidget = ({
 }: CreateWidgetArgs) => {
   const component: UserComponent = () => (
     <WidgetRoot
-      dataFetcher={dataFetcher}
+      dataFetcher={[
+        "hello",
+        async () => {
+          return "hello";
+        },
+      ]}
       inner={(props: any) => (
+        <Suspense fallback={<div>Loading...</div>}>
+          <View {...props} />
+        </Suspense>
+      )}
+      fullScreen={(props: any) => (
         <Suspense fallback={<div>Loading...</div>}>
           <View {...props} />
         </Suspense>

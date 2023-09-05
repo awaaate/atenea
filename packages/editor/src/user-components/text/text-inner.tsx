@@ -9,6 +9,7 @@ import {
 } from "../../hooks/rich-text/use-rich-editor";
 
 import { lazy } from "react";
+import { EditorState } from "lexical";
 
 export const RichEditorProvider = lazy(() => import("./rich-editor-provider"));
 export const FloatingMenuPlugin = lazy(() =>
@@ -16,20 +17,22 @@ export const FloatingMenuPlugin = lazy(() =>
     default: module.FloatingMenuPlugin,
   }))
 );
-export function TextInner() {
-  const editableRef = useRef<HTMLDivElement | null>(null);
-  const isEditable = useEditorStore.use.editable();
-  const initialEditorState = useNode(
-    (node) => (node.data.props as ComponentWithRichEditor).initialEditorState
-  );
+interface TextInnerProps {
+  initialEditorState: EditorState | null;
+}
+
+export function TextInner({ initialEditorState }: TextInnerProps) {
   const { id } = useNode();
+  const editable = useEditorStore.use.editable();
+
+  const editableRef = useRef<HTMLDivElement | null>(null);
   const { setEditorRef } = useRichEditor({
     namespace: id,
     onError: (error) => {
       console.error(error, id);
     },
     intialEditorState: initialEditorState,
-    editable: isEditable,
+    editable: editable,
   });
 
   return (
@@ -40,12 +43,14 @@ export function TextInner() {
           editableRef.current = ref;
           setEditorRef(ref);
         }}
-        contentEditable={isEditable}
+        contentEditable={editable}
         className="prose cursor-text prose-default m-0 max-w-full prose-headings:text-text prose-p:px-4 py-6 focus:outline-none prose-headings:p-0 prose-headings:my-2 prose-p:my-1 px-4"
       ></div>
-      <Suspense fallback={null}>
-        <RichEditorProvider Comp={FloatingMenuPlugin} />
-      </Suspense>
+      {editable && (
+        <Suspense fallback={null}>
+          <RichEditorProvider Comp={FloatingMenuPlugin} />
+        </Suspense>
+      )}
     </>
   );
 }

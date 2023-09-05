@@ -1,5 +1,6 @@
 import { Database } from '@shared/db'
 import { type inferAsyncReturnType } from '@trpc/server'
+import { GraphQLClient } from 'graphql-request'
 
 
 export interface User {
@@ -8,7 +9,7 @@ export interface User {
 
 export interface ApiContextProps {
     user: User | null
-    db: Database
+    db: Database,
 }
 
 export const createContext = async (

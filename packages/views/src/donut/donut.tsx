@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import type { Color } from "@tremor/react";
+import { cn } from "@shared/ui/src/utils";
 
 const DonutChart = lazy(() =>
   import("@tremor/react").then((m) => ({ default: m.DonutChart }))
@@ -32,31 +33,34 @@ const cities = [
   },
 ];
 
-const valueFormatter = (number: number) =>
-  `$ ${Intl.NumberFormat("us").format(number).toString()}`;
+const valueFormatter = (number: number) => `$ ${number}`;
 
 export interface DonutProps {
   className?: string;
   colors?: Color[];
   data: Record<string, unknown>[];
   category: string;
+  index: string;
 }
 
-export const Donut: React.FC<DonutProps> = ({
-  className,
-  colors,
-  data,
-  category,
-}) => {
+export const Donut = ({ data, className, category, colors }: DonutProps) => {
+  console.log("dontu data", data);
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <div
+      className={cn("w-full ", className)}
+      /*      style={{
+        display: "ta",
+      }} */
+    >
       <DonutChart
-        className={className}
         data={data}
         category={category}
         colors={colors}
         valueFormatter={valueFormatter}
+        style={{
+          height: "200px",
+        }}
       />
-    </Suspense>
+    </div>
   );
 };
