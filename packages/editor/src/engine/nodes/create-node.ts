@@ -21,7 +21,6 @@ export function createNode(
         id,
         _hydrationTimestamp: Date.now(),
         data: {
-            ...newNode.data,
             props: {} as any,
             parent: null,
             hidden: false,
@@ -30,6 +29,7 @@ export function createNode(
             type: actualType,
             name: getNodeTypeName(actualType),
             displayName: getNodeTypeName(actualType),
+            ...newNode.data,
         },
         related: {},
         events: {
