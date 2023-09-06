@@ -5,7 +5,7 @@ import { BoardPage } from "@shared/templates/src/pages/board";
 import { EditorState } from "@shared/editor/src/engine/interfaces";
 
 export const dynamic = "force-dynamic";
-
+export const runtime = "edge"
 interface BoardViewProps {
   params: {
     boardId: string;
@@ -21,7 +21,7 @@ const BoardView = async ({ params }: BoardViewProps) => {
 
   if (!board) return notFound();
 
-  let editorState = {
+  let intialState = {
     boardId: board.id,
     nodes: board.draft ? (board.draft as any).nodes : {},
     coverImage: board.coverImage,
@@ -32,7 +32,7 @@ const BoardView = async ({ params }: BoardViewProps) => {
   return (
     <>
       <BoardPage />
-      <BoardInitializer {...editorState} />
+      <BoardInitializer {...intialState} />
     </>
   );
 };

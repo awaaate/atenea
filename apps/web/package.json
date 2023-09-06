@@ -32,15 +32,15 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@shared/eslint-config": "workspace:*",
     "@shared/tailwind-config": "workspace:^",
+    "@shared/tsconfig": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "autoprefixer": "^10.4.15",
-    "@shared/eslint-config": "workspace:*",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3",
-    "@shared/tsconfig": "workspace:*",
     "typescript": "^5.2.2"
   }
 }
