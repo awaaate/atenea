@@ -1,11 +1,15 @@
 import React from 'react';
 import { Widget, WidgetProps } from '../../widget/widget-types';
+import { IconName } from '@shared/ui/src/icon';
 
 
 export type WidgetComponentConfig<T> = {
   name: string;
   related: Partial<NodeRelated>;
   defaultProps: Partial<T>;
+  group?: string;
+  icon?: IconName,
+  displayName?: string;
 };
 
 export type WidgetComponent<T = any> = React.ComponentType<T> & {

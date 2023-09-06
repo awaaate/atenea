@@ -86,8 +86,8 @@ export const budgetSection = pgTable("BudgetSection", {
 
 
 export const categoryToProposal = pgTable("category_to_proposal", {
-	categoryName: text("category_name").notNull(),
-	proposalId: integer("proposal_id").notNull(),
+	categoryName: text("category_name").notNull().references(() => category.name, { onDelete: "cascade", onUpdate: "cascade" }),
+	proposalId: integer("proposal_id").notNull().references(() => proposal.id, { onDelete: "cascade", onUpdate: "cascade" })
 },
 	(t) => {
 		return {

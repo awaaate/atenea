@@ -1,5 +1,10 @@
 import { Suspense, useCallback } from "react";
-import { EditorState, Node, WidgetComponent } from "../engine/interfaces";
+import {
+  EditorState,
+  Node,
+  WidgetComponent,
+  WidgetComponentConfig,
+} from "../engine/interfaces";
 import { useNode } from "../engine/nodes";
 import { WidgetConfig } from "./widget-config";
 import { WidgetRoot } from "./widget-root";
@@ -10,6 +15,10 @@ interface TestProps {
   name: string;
 }
 
+type extraConfig = Omit<
+  WidgetComponentConfig<WidgetProps>,
+  "defaultProps" | "related"
+>;
 // [key, selector, dataFetcher]
 
 /**
@@ -20,7 +29,7 @@ interface TestProps {
 interface CreateWidgetArgs<
   TData extends {},
   TArgs extends Partial<WidgetProps> | undefined
-> {
+> extends extraConfig {
   name: string;
   View:
     | React.FunctionComponent<TData>
@@ -95,6 +104,9 @@ export class WidgetFactory {
       related: {
         toolbar: configComponent,
       },
+      displayName: args.name,
+      group: args.group,
+      icon: args.icon,
     };
     return component;
   }

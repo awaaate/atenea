@@ -5,6 +5,7 @@ import { Suspense, lazy } from "react";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
 import { cn } from "@shared/ui/src/utils";
 import { useEditorStore } from "@shared/editor/src/engine/editor";
+import { Spinner } from "@shared/ui/src/spinner";
 
 const EditorTopbar = lazy(() =>
   import("@shared/editor/src/components/editor-topbar").then((module) => ({
@@ -37,7 +38,13 @@ export const BoardPage = () => {
 
   const editable = useEditorStore.use.editable();
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="w-full h-[calc(100vh)] bg-background-default flex items-center justify-center">
+          <Spinner />
+        </div>
+      }
+    >
       <div className="w-full h-full">
         {editable && <EditorTopbar />}
         <ScrollArea

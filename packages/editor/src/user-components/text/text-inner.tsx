@@ -10,20 +10,21 @@ import {
 
 import { lazy } from "react";
 import { EditorState } from "lexical";
-
+import { Skeleton } from "@shared/ui/src/skeleton";
 export const RichEditorProvider = lazy(() => import("./rich-editor-provider"));
 export const FloatingMenuPlugin = lazy(() =>
   import("./floating-menu-plugin").then((module) => ({
     default: module.FloatingMenuPlugin,
   }))
 );
-interface TextInnerProps {
-  initialEditorState: EditorState | null;
-}
+interface TextInnerProps {}
 
-export function TextInner({ initialEditorState }: TextInnerProps) {
+export function TextInner() {
   const { id } = useNode();
   const editable = useEditorStore.use.editable();
+  const initialEditorState = useNode(
+    (node) => node.data.props.initialEditorState as EditorState | null
+  );
 
   const editableRef = useRef<HTMLDivElement | null>(null);
   const { setEditorRef } = useRichEditor({

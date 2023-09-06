@@ -5,6 +5,7 @@ import { ViewColorsConfig } from "@shared/views/src/view-config/view-colors";
 import proposalsTable from "../widgets/proposals-table";
 import proposalsAreaChart from "../widgets/proposals-area-chart";
 import proposalsBarChart from "../widgets/proposals-bar-chart";
+import categoriesBarChart from "../widgets/categories-bar-chart";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -13,3 +14,4 @@ widgetFactory.registerWidgetComponent(TextWidget);
 widgetFactory.registerWidgetComponent(proposalsTable);
 widgetFactory.registerWidgetComponent(proposalsAreaChart);
 widgetFactory.registerWidgetComponent(proposalsBarChart);
+widgetFactory.registerWidgetComponent(categoriesBarChart);

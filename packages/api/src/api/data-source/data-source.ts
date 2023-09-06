@@ -1,7 +1,10 @@
 import * as z from "zod";
+import { nounsSubgraph } from "../../lib/nouns-subgraph";
 import { publicProcedure, router } from "../../trpc";
-import * as proposalsMeta from "./proposals-meta"
-import { nounsSubgraph } from "../../lib/nounsSubgraph";
+import { mapReducer } from "../../utils/reducer";
+import * as categories from "./categories";
+import { getBudgetSections } from "./proposals-budget";
+import * as proposalsMeta from "./proposals-meta";
 import { ProposalMeta } from "./proposals-meta/types";
 
 export const dataSourceRouter = router({
@@ -25,7 +28,44 @@ export const dataSourceRouter = router({
         })
 
         return data.proposals
-    })
+    }),
+
+    categories: publicProcedure.query(async ({ ctx }) => {
+        try {
+
+            const categoriesEdges = await categories.fecthAllCategories()
+            const CategoriesMap: Record<string, { name: string, totalBudget: number }> = {}
+
+
+            const cleaned = mapReducer(CategoriesMap, (acc, curr) => {
+                const categoryName = curr?.node.category_name
+                if (!categoryName) return acc
+
+                if (!acc[categoryName]) {
+                    acc[categoryName] = {
+                        name: categoryName,
+                        totalBudget: 0
+                    }
+                }
+
+                acc[categoryName].totalBudget += curr.node.proposal.budgetTotal
+
+                return acc
+
+
+
+            }, categoriesEdges)
+
+            return Object.values(cleaned)
+        } catch (error) {
+            console.error(JSON.stringify(error.message, null, 2), "error")
+            throw error
+        }
+    }),
+
+    getProposalBudget: publicProcedure.input(z.string()).query(async ({ input, ctx }) => {
+        return getBudgetSections(input)
+    }),
 })
 
 

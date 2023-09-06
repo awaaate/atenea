@@ -39,18 +39,6 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
         {children}
         <Grid />
       </div>
-
-      <Button
-        onClick={() => {
-          useEditorStore.setState({
-            editable: !useEditorStore.getState().editable,
-          });
-        }}
-        className="fixed bottom-4 right-4"
-      >
-        Preview
-        <Icon name="Eye" className="ml-2" />
-      </Button>
     </div>
   );
 };

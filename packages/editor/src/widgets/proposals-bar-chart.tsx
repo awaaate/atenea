@@ -4,6 +4,7 @@ import { sourceFetcher } from "../lib/data-fetchers";
 import { lazy } from "react";
 import { date } from "@shared/ui/src/date";
 import { dataAdapter } from "../lib/utils";
+import { BAR_CHART_SKELETON } from "../widget/skeletons";
 
 const BarChartView = lazy(() =>
   import("@shared/views/src/bar-chart/bar-chart").then((module) => ({
@@ -13,8 +14,9 @@ const BarChartView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-bar-chart",
+  displayName: "Proposals Bar Chart",
   Config: () => <ViewColorsConfig />,
-  skeleton: <div>Proposals Ares Chart</div>,
+  skeleton: BAR_CHART_SKELETON,
   dataFetcher: {
     key: "proposals-bar-chart",
     collector(props) {

@@ -26,67 +26,8 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
   return (
     <div className="col-span-1">
       {children}
-      <WidgetConfigSection title="Layout">
-        <BackgroundPicker
-          background={background}
-          setBackground={(background) => {
-            setNode((node) => {
-              node.data.props.background = background;
-              return node;
-            });
-          }}
-        />
-        {JSON.stringify(layout)}
 
-        <div className="flex gap-3 mt-4 px-2">
-          <p className="text-text-weak ">Roudness</p>
-          <Slider
-            max={50}
-            min={0}
-            defaultValue={[borderRadius]}
-            onValueChange={(value) => {
-              setNode((node) => {
-                node.data.props.borderRadius = value[0];
-                return node;
-              });
-            }}
-          />
-        </div>
-        <div className="flex gap-3 mt-4 px-2">
-          <p className="text-text-weak ">Spacing</p>
-          <Slider
-            max={100}
-            min={0}
-            defaultValue={[paddingTop]}
-            onValueChange={(value) => {
-              setNode((node) => {
-                node.data.props.paddingTop = value[0];
-                return node;
-              });
-            }}
-          />
-        </div>
-      </WidgetConfigSection>
-      <WidgetConfigSection title="Widget Size">
-        <WidgetConfigSection.Title />
-
-        <div className="flex gap-3">
-          {sizes.map((size, i) => (
-            <WidgetSizeButton
-              size={SIZES[i]}
-              className={cn({
-                "border-blue-500": sizes[w] === size,
-              })}
-              onClick={() =>
-                setNode((node) => {
-                  node.data.props.layout.w = size;
-                  return node;
-                })
-              }
-            />
-          ))}
-        </div>
-      </WidgetConfigSection>
+      {process.env.NODE_ENV === "development" && JSON.stringify(layout)}
     </div>
   );
 };

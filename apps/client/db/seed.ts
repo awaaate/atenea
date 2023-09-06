@@ -37,6 +37,43 @@ async function getFileData(id: string): Promise<typeof PROP_DATA | null> {
   return JSON.parse(dataString) as typeof PROP_DATA
 
 }
+async function addCategory(db: any, categories: {
+  name: string
+}[], proposalId: number) {
+  for (const _category of categories) {
+    try {
+      await db.insert(category).values({
+        name: _category.name,
+        updatedAt: new Date().toDateString(),
+        createdAt: new Date().toDateString(),
+      }).onConflictDoNothing()
+
+
+      const res = await db.insert(categoryToProposal).values({
+        categoryName: _category.name,
+        proposalId: proposalId
+      }).returning({
+        categoryName: categoryToProposal.categoryName,
+        proposalId: categoryToProposal.proposalId
+      }).onConflictDoNothing()
+      if (res) {
+
+        console.log("added category", {
+          categoryName: _category.name,
+          proposalId: proposalId
+        })
+
+      }
+    } catch (error) {
+      console.log("error adding category", {
+        categoryName: _category.name,
+        proposalId: proposalId
+      })
+      console.log(error)
+      continue
+    }
+  }
+}
 async function main() {
   const rawfile = await fs.readFile(dataDir)
 
@@ -61,6 +98,10 @@ async function main() {
         console.log("no data for", proposalData.id)
         continue
       }
+
+      addCategory(db, moreData.categories, proposalId)
+      continue
+      //just add the categories
 
       const dataToInsert: InsertProposal = {
         budgetTotal: parseInt(moreData.budget.totalAmount) || 0,
@@ -180,6 +221,7 @@ async function main() {
       }
 
     }
+  }
   })
 
 
@@ -188,8 +230,7 @@ async function main() {
 
 
 
-
-  console.log("\n\n\n\n")
+console.log("\n\n\n\n")
 }
 
 

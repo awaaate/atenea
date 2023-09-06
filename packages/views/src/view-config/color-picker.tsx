@@ -40,7 +40,7 @@ const ViewColorsPicker: React.FC<ViewColorsPickerProps> = ({
               <Icon name="Paintbrush2" className="h-4 w-4" />
             )}
             <div className="flex-1 text-sm text-text-weak font-semibold">
-              {"color"}
+              {color}
             </div>
           </div>
         </Button>

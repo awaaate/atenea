@@ -44,6 +44,11 @@ function WidgetRoot<T>({
 
   const showHeader = editable || title || isActive;
 
+  const childComponent = useMemo(() => {
+    if (!data || isLoading) return skeleton;
+    return inner(data);
+  }, [data, skeleton, inner, isLoading]);
+
   return (
     <div
       ref={(ref) => {
@@ -76,7 +81,7 @@ function WidgetRoot<T>({
           </CardTitle>
         )}
         <ScrollArea orientation={["vertical", "horizontal"]}>
-          {isLoading ? skeleton : data ? inner(data) : null}
+          {childComponent}
         </ScrollArea>
         <Dialog
           open={isFullScreen}

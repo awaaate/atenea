@@ -9,15 +9,17 @@ import { widgetFactory } from "../../widget/factory";
 import proposalsTable from "../../widgets/proposals-table";
 import proposalsAreaChart from "../../widgets/proposals-area-chart";
 import proposalsBarChart from "../../widgets/proposals-bar-chart";
+import categoriesBarChart from "../../widgets/categories-bar-chart";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const selectNode = useEditorStore.use.select();
   const add = useEditorStore.use.create();
 
+  console.log(widgetFactory.widgets.entries, "widgets");
   const creteNode = (name: string) => {
     const component = widgetFactory.getWidget(name);
-    if (!component) return console.error("Component not found");
+    if (!component) throw new Error("Component not found");
     const nodeToAdd = createNode({
       data: {
         type: component,
@@ -36,79 +38,17 @@ export const CreateWidget = () => {
         Add section
       </DialogTrigger>
       <CommandMenu
-        items={[
-          /*           {
-            handler: () => {},
-            icon: "Search",
-            id: "1",
-            name: "Account",
-            group: "Basic",
-          }, */
-          {
-            group: "Suggested",
+        items={Array.from(widgetFactory.widgets.entries()).map(
+          ([ket, { node }]) => ({
+            grup: node.group || "Other",
             handler: () => {
-              creteNode("Text");
+              creteNode(node.name);
             },
-            icon: "Type",
-            id: "2",
-            name: "Text Block",
-          },
-
-          {
-            handler: () => {
-              creteNode("ProposalBudgetWidget");
-            },
-            icon: "PieChart",
-            id: "3",
-            name: "Proposal Budget",
-            group: "Charts",
-          },
-          {
-            handler: () => {
-              creteNode("Donut Test");
-            },
-            icon: "PieChart",
-            id: "4",
-            name: "Donut test",
-            group: "Charts",
-          },
-          {
-            handler: () => {
-              creteNode(proposalsTable.node.name);
-            },
-            icon: "ScatterChart",
-            id: "5",
-            name: "Proposals Table",
-            group: "Charts",
-          },
-          {
-            handler: () => {
-              creteNode(proposalsAreaChart.node.name);
-            },
-            icon: "ScatterChart",
-            id: "4",
-            name: "Proposals Area Chart",
-            group: "Charts",
-          },
-          {
-            handler: () => {
-              creteNode(proposalsBarChart.node.name);
-            },
-            icon: "BarChartHorizontal",
-            id: "4",
-            name: "Amount expent by Category",
-            group: "Charts",
-          },
-          /*      {
-            handler: () => {
-              creteNode("ProposalBudgetWidget");
-            },
-            icon: "PieChart",
-            id: "3",
-            name: "Proposal Budget",
-            group: "Charts",
-          }, */
-        ]}
+            icon: node.icon,
+            id: node.name,
+            name: node.displayName || node.name,
+          })
+        )}
         onDismiss={() => {}}
       />
     </Dialog>

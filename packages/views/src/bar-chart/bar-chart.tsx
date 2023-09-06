@@ -18,7 +18,7 @@ export function BarChartView(props: BarChartViewProps) {
   return (
     <BarChart
       className={cn("w-[calc(100%-1rem)]", className)}
-      colors={colors as string[]}
+      colors={colors as any}
       data={data}
       categories={categories}
       index={index}

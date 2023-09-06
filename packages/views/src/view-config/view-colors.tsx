@@ -67,7 +67,8 @@ export const ViewColorsConfig: React.FC<ViewColorsConfigProps> = ({
 
   console.log("colors", colors);
   return (
-    <WidgetConfigSection title="Colors">
+    <WidgetConfigSection title="Chart Colors">
+      <WidgetConfigSection.Title />
       <div className={className}>
         {colors?.map((color, index) => (
           <ViewColorsPicker
