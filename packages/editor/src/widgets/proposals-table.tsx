@@ -1,3 +1,4 @@
+import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
 import { sourceFetcher } from "../lib/data-fetchers";
 import { WidgetFactory } from "../widget/widget-factory";
 import { lazy } from "react";
@@ -9,17 +10,27 @@ const BasicTableView = lazy(() =>
 );
 export default WidgetFactory.createWidget({
   name: "Proposals Table",
-  displayName: "Lats proposals table",
-  icon: "List",
+  displayName: "proposals table",
+  icon: "Table",
   group: "General",
   dataFetcher: {
     key: "proposals-table",
     collector: (props) => {
-      return {};
+      return {
+        requestVariables: {
+          first: props.first as number,
+        },
+      };
     },
     fetcher: async (args) => {
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
+
       const proposalsMeta = await sourceFetcher.proposalsMeta.query({
-        first: 10,
+        first: args.requestVariables.first,
       });
 
       return {
@@ -28,19 +39,24 @@ export default WidgetFactory.createWidget({
           title: proposal.title,
           status: proposal.status,
         })),
-        headerMap: {
-          title: "Title",
-          status: "Status",
-        },
-        className: "",
       };
     },
   },
   View: BasicTableView,
   FullScreenView: BasicTableView,
-  Config: () => <div>Config</div>,
+  Config: () => (
+    <ViewPropsConfig
+      props={[{ name: "first", type: "number", label: "First" }]}
+    />
+  ),
   skeleton: <div>Proposals Table</div>,
   initialProps: {
+    first: 5,
+    headerMap: {
+      title: "Title",
+      status: "Status",
+    },
+    className: "",
     layout: {
       w: Infinity,
       h: 12,

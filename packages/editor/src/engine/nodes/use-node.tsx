@@ -43,12 +43,10 @@ export function useNodeActions() {
   const selectNode = useEditorStore.use.select();
   const setNode = useEditorStore.use.setNode();
 
-  const debouncedSetNode = useDebouncedCallback(
-    (cb: (node: Node) => Node, debounce?: number) => {
+  const debouncedSetNode = (ms: number) =>
+    useDebouncedCallback((cb: (node: Node) => Node, debounce?: number) => {
       setNode(id, cb);
-    },
-    100
-  );
+    }, ms);
   //memoise
 
   const actions = useMemo(() => {

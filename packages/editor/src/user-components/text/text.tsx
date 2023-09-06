@@ -15,6 +15,9 @@ const TextInner = lazy(() =>
 
 export const TextWidget = WidgetFactory.createWidget({
   name: "Text",
+  icon: "Text",
+  group: "Basic",
+  displayName: "Text",
   View: TextInner,
   Config: TextWidgetConfig,
   FullScreenView: TextInner,

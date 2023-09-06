@@ -39,15 +39,17 @@ export const CreateWidget = () => {
       </DialogTrigger>
       <CommandMenu
         items={Array.from(widgetFactory.widgets.entries()).map(
-          ([ket, { node }]) => ({
-            grup: node.group || "Other",
-            handler: () => {
-              creteNode(node.name);
-            },
-            icon: node.icon,
-            id: node.name,
-            name: node.displayName || node.name,
-          })
+          ([ket, { node }]) => {
+            return {
+              grup: node.group || "Other",
+              handler: () => {
+                creteNode(node.name);
+              },
+              icon: node.icon,
+              id: node.name,
+              name: node.displayName || node.name,
+            };
+          }
         )}
         onDismiss={() => {}}
       />

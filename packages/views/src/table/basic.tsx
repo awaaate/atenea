@@ -1,3 +1,4 @@
+import { useNode } from "@shared/editor/src/engine/nodes";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
 import { cn } from "@shared/ui/src/utils";
 import {
@@ -22,25 +23,18 @@ interface TableViewProps<TData> {
   /**
    * A map of headers to be used for the table.
    */
-  headerMap: Record<keyof TData, string>;
-  /**
-   * name: Name
-   * position: Position
-   * helloWorld: Hello world
-   */
 }
 
-export const BasicTableView = <
-  T extends {
-    id: string;
-    [key: string]: any;
-  }
->({
+export const BasicTableView = <TData extends {}>({
   data,
-  headerMap,
   className,
-}: TableViewProps<T>) => {
-  const headers = Object.keys(headerMap) as (keyof T)[];
+}: TableViewProps<TData>) => {
+  const headerMap = useNode((node) => node.data.props.headerMap) as Record<
+    keyof TData,
+    string
+  >;
+
+  const headers = Object.keys(headerMap) as (keyof TData)[];
 
   return (
     <div className="w-full h-full">

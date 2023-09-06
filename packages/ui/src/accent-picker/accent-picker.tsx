@@ -25,12 +25,12 @@ const COLORS = {
   },
 };
 
-function getColor(color: string) {
+export function getAccentColor(color: keyof typeof COLORS) {
   let c = COLORS[color as keyof typeof COLORS];
   if (!c) return `${COLORS.default.background}`;
   return `${c.background}`;
 }
-function getTextColor(color: string) {
+export function getTextAccentColor(color: keyof typeof COLORS) {
   let c = COLORS[color as keyof typeof COLORS];
   if (!c) return `${COLORS.default.text}`;
   return `${c.text}`;
@@ -47,27 +47,27 @@ export const AccentPicker = forwardRef<
       {...props}
       type="single"
       className={cn("flex gap-2", className)}
-      onValueChange={(color: string) => {
+      onValueChange={(color: keyof typeof COLORS) => {
         //set the css variables
         document.documentElement.style.setProperty(
           "--theme-color-accent",
-          getColor(color)
+          getAccentColor(color)
         );
         document.documentElement.style.setProperty(
           "--theme-color-accent-text",
-          getTextColor(color)
+          getTextAccentColor(color)
         );
         onValueChange && onValueChange(color as any);
       }}
     >
-      {Object.keys(COLORS).map((color) => (
+      {Object.keys(COLORS).map((color: keyof typeof COLORS) => (
         <ToogleItem
           key={color}
           value={color}
           className="icon-xl"
           style={{
-            backgroundColor: `rgb(${getColor(color)})`,
-            color: `rgb(${getTextColor(color)})`,
+            backgroundColor: `rgb(${getAccentColor(color)})`,
+            color: `rgb(${getTextAccentColor(color)})`,
           }}
         ></ToogleItem>
       ))}

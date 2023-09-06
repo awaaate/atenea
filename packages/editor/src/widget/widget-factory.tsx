@@ -109,7 +109,7 @@ export class WidgetFactory {
       related: {
         toolbar: configComponent,
       },
-      displayName: args.name,
+      displayName: args.displayName,
       group: args.group,
       icon: args.icon,
     };

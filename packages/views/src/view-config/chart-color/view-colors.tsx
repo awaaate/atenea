@@ -65,7 +65,6 @@ export const ViewColorsConfig: React.FC<ViewColorsConfigProps> = ({
   const colors = useNode((node) => node.data.props.colors as Color[]);
   const { setNode } = useNodeActions();
 
-  console.log("colors", colors);
   return (
     <WidgetConfigSection title="Chart Colors">
       <WidgetConfigSection.Title />

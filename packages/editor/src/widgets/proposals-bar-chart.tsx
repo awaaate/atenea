@@ -14,7 +14,7 @@ const BarChartView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-bar-chart",
-  displayName: "Proposals Distribution Bar Chart",
+  displayName: "Proposals Passed/Canceled Bar Chart",
   icon: "BarChart",
   group: "General",
   Config: () => <ViewColorsConfig />,

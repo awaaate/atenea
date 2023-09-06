@@ -3,49 +3,45 @@ import { WidgetConfigSection } from "@shared/editor/src/widget/widget-config-sec
 import { WidgetProps } from "@shared/editor/src/widget/widget-types";
 
 import { Input } from "@shared/ui/src/input";
-import React, { FormEvent, useCallback } from "react";
+import React, { FormEvent, useCallback, useEffect } from "react";
 import { getProperty } from "../../lib/getProperties";
 
-interface NumberFieldProps {
+interface TextFieldProps {
   name: keyof WidgetProps;
 }
-const NumberField: React.FC<NumberFieldProps> = ({ name }) => {
+const TextField: React.FC<TextFieldProps> = ({ name }) => {
   const value = useNode(
-    (node) => getProperty(node.data.props, name as string) as number
+    (node) => getProperty(node.data.props, name as string) as string
   );
   const { setNode } = useNodeActions();
-  console.log("key inside", name);
 
   return (
     <Input
       value={value}
       onChange={(event: FormEvent<HTMLInputElement>) => {
-        const newValue = Number(event.currentTarget.value);
-        if (!isNaN(newValue)) {
-          setNode((node) => {
-            node.data.props[name] = newValue;
-            console.log("node updated", node);
-            return node;
-          });
-        }
+        const newValue = event.currentTarget.value;
+        setNode((node) => {
+          node.data.props[name] = newValue;
+          console.log("node updated", node);
+          return node;
+        });
       }}
-      type="number"
+      type="text"
     />
   );
 };
 
-export function createNumberField({
+export function createTextField({
   name,
   label,
 }: {
   name: keyof WidgetProps;
   label?: string;
 }) {
-  console.log("key", name);
   return (
     <WidgetConfigSection key={name} title={label || (name as string)}>
       <WidgetConfigSection.Title />
-      <NumberField name={name} />
+      <TextField name={name} />
     </WidgetConfigSection>
   );
 }
