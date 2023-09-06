@@ -1,3 +1,4 @@
+import { useNode } from "@shared/editor/src/engine/nodes";
 import { cn } from "@shared/ui/src/utils";
 import { Card, Title, AreaChart, Color } from "@tremor/react";
 
@@ -42,22 +43,23 @@ interface AreaViewProps<TData> {
   data: TData[];
   categories: keyof TData[] extends string[] ? keyof TData[] : string[];
   index: keyof TData & string;
-  colors?: Color[];
 }
 
 export const AreaView = <TData extends Record<string, any>>({
-  colors,
   categories,
   data,
   index,
   className,
-}: AreaViewProps<TData>) => (
-  <AreaChart
-    className={cn("w-full min-h-72", className)}
-    data={data}
-    categories={categories}
-    index={index}
-    colors={colors}
-    valueFormatter={dataFormatter}
-  />
-);
+}: AreaViewProps<TData>) => {
+  const colors = useNode((node) => node.data.props.colors);
+  return (
+    <AreaChart
+      className={cn("w-full min-h-72", className)}
+      data={data}
+      categories={categories}
+      index={index}
+      colors={colors as any}
+      valueFormatter={dataFormatter}
+    />
+  );
+};

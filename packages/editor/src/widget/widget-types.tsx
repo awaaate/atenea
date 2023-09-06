@@ -15,6 +15,7 @@ export interface WidgetProps {
   fullScreen: boolean;
   sidePannel: boolean;
   controls: "simple" | "full";
+  colors?: string[];
   title: string;
   [key: string]: unknown;
 }

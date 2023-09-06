@@ -11,6 +11,15 @@ const VERCEL_DEPLOYMENT = !!process.env.VERCEL_URL;
 export const authOptions: NextAuthConfig = {
     providers: authProviders,
     session: { strategy: "jwt" },
+    useSecureCookies: VERCEL_DEPLOYMENT,
+    logger: {
+        debug: (...args) => logServer("debug", args),
+        error: (...args) => logServer("error", args),
+        warn: (...args) => logServer("warn", args),
+    },
+    pages: {
+        signIn: "/sign-in",
+    },
     /*     secret: env.AUTH_SECRET,
         cookies: {
             sessionToken: {
@@ -49,8 +58,9 @@ export const authOptions: NextAuthConfig = {
                 walletAddress: token.walletAddress,
             };
         },
-        signIn: async () => {
-            //logServer("signIn", { user, account, profile, email, credentials });
+        signIn: async (params) => {
+            logServer("signIn", params);
+
             return true;
 
             //return "/dashboard";

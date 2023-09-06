@@ -89,7 +89,7 @@ export function deserialize(prev: EditorState, currentState: EditorState) {
                 data: {
                     ...node.data,
                     type:
-                        widgetFactory.getWidget(node.data.name) || widgetFactory.getWidget(node.data.displayName)
+                        widgetFactory.getWidget(node.data.name) || widgetFactory.getWidget(node.data.displayName) || ""
                 },
                 id: node.id,
             });

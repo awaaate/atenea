@@ -4,6 +4,7 @@ import { Color } from "@tremor/react";
 import { forwardRef } from "react";
 import { ToogleGroup, ToogleItem } from "@shared/ui/src/toggle-group";
 import { cn } from "@shared/ui/src/utils";
+import ViewColorsPicker from "./color-picker";
 interface ViewColorsConfigProps {
   className?: string;
   availableColors?: Color[];
@@ -68,39 +69,25 @@ export const ViewColorsConfig: React.FC<ViewColorsConfigProps> = ({
   return (
     <WidgetConfigSection title="Colors">
       <div className={className}>
-        <ToogleGroup
-          type="multiple"
-          value={colors}
-          onValueChange={(newColors) => {
-            setNode((node) => {
-              node.data.props.colors = newColors;
-              return node;
-            });
-          }}
-          className="gap-2 flex flex-wrap"
-        >
-          {availableColors.map((color) => (
-            <ColorBox
-              key={color}
-              value={color}
-              className={cn(TW_COLORS_MAP[color])}
-            />
-          ))}
-        </ToogleGroup>
+        {colors?.map((color, index) => (
+          <ViewColorsPicker
+            key={index}
+            className="w-full"
+            color={color}
+            setColor={(color) => {
+              setNode((node) => {
+                console.log("newColors node", color);
+                node.data.props.colors = Array.from(
+                  node.data.props.colors || []
+                );
+                node.data.props.colors[index] = color;
+
+                return node;
+              });
+            }}
+          />
+        ))}
       </div>
     </WidgetConfigSection>
   );
 };
-const ColorBox = forwardRef<
-  React.ElementRef<typeof ToogleItem>,
-  React.ComponentPropsWithoutRef<typeof ToogleItem>
->(({ className, ...props }, ref) => (
-  <ToogleItem
-    ref={ref}
-    className={cn(
-      " icon-xl  rounded-md border-2  data-[state=on]:border-blue-500 data-[state=on]:border-2 hover:border-blue-500 hover:bg-inherit ",
-      className
-    )}
-    {...props}
-  />
-));

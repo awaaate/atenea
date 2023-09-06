@@ -55,7 +55,6 @@ export class WidgetFactory {
       );
 
       const dataFetcherArgs = useEditorStore(collectorFunc);
-
       const fetcherFunction = useCallback(() => {
         if (!dataFetcherArgs) return args.dataFetcher.fetcher(undefined);
         return args.dataFetcher.fetcher(dataFetcherArgs);
@@ -64,7 +63,8 @@ export class WidgetFactory {
       return (
         <WidgetRoot
           dataFetcher={[
-            args.dataFetcher.key + JSON.stringify(dataFetcherArgs),
+            args.dataFetcher.key +
+              JSON.stringify(dataFetcherArgs?.requestVariables as any),
             fetcherFunction,
           ]}
           inner={(data) => (

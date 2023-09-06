@@ -8,6 +8,7 @@ import { Icon } from "@shared/ui/src/icon";
 import { widgetFactory } from "../../widget/factory";
 import proposalsTable from "../../widgets/proposals-table";
 import proposalsAreaChart from "../../widgets/proposals-area-chart";
+import proposalsBarChart from "../../widgets/proposals-bar-chart";
 
 export const CreateWidget = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -91,7 +92,7 @@ export const CreateWidget = () => {
           },
           {
             handler: () => {
-              creteNode("BarListCategoriesWidget");
+              creteNode(proposalsBarChart.node.name);
             },
             icon: "BarChartHorizontal",
             id: "4",

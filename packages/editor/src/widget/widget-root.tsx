@@ -23,6 +23,7 @@ interface WidgetRootProps<T> extends HTMLAttributes<HTMLDivElement> {
   dataFetcher: [string, () => Promise<T>];
   dir?: "ltr" | "rtl";
 }
+
 function WidgetRoot<T>({
   dataFetcher,
   skeleton,
@@ -38,19 +39,6 @@ function WidgetRoot<T>({
   const isActive = useNode((node) => node.events.selected);
   const background = useNode((node) => node.data.props.background);
   const editable = useEditorStore.use.editable();
-  const innerComponent = useMemo(() => {
-    console.log({
-      isLoading,
-      error,
-      data,
-    });
-    if (isLoading) return skeleton;
-    if (error) return <div>error</div>;
-    if (data) {
-      return <Suspense fallback={null}>{inner(data)}</Suspense>;
-    }
-    return null;
-  }, [data, isLoading, error]);
 
   const { setNode } = useNodeActions();
 
@@ -88,7 +76,7 @@ function WidgetRoot<T>({
           </CardTitle>
         )}
         <ScrollArea orientation={["vertical", "horizontal"]}>
-          {innerComponent}
+          {isLoading ? skeleton : data ? inner(data) : null}
         </ScrollArea>
         <Dialog
           open={isFullScreen}
@@ -101,7 +89,7 @@ function WidgetRoot<T>({
         >
           <DialogContent className="max-w-5xl w-full">
             <ScrollArea>
-              <div className="w-full h-full">{fullScreen(data)}</div>
+              <div className="w-full h-full">{data && fullScreen(data)}</div>
             </ScrollArea>
           </DialogContent>
         </Dialog>

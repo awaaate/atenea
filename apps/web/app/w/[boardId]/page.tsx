@@ -1,6 +1,8 @@
 import { createCaller } from "@/lib/trpc/createCaller";
 import { notFound } from "next/navigation";
-import { BoardWrapper } from "@/components/board";
+import { BoardInitializer } from "@/components/board/board-initialitzer";
+import { BoardPage } from "@shared/templates/src/pages/board";
+import { EditorState } from "@shared/editor/src/engine/interfaces";
 
 export const dynamic = "force-dynamic";
 
@@ -19,14 +21,19 @@ const BoardView = async ({ params }: BoardViewProps) => {
 
   if (!board) return notFound();
 
+  let editorState = {
+    boardId: board.id,
+    nodes: board.draft ? (board.draft as any).nodes : {},
+    coverImage: board.coverImage,
+    pageBackground: board.background,
+    title: board.name,
+  };
+
   return (
-    <BoardWrapper
-      title={board.name}
-      background={board.background}
-      content={board.draft as any}
-      id={board.id}
-      editable={false}
-    />
+    <>
+      <BoardPage />
+      <BoardInitializer {...editorState} />
+    </>
   );
 };
 

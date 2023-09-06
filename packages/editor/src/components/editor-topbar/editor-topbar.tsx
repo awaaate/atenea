@@ -8,6 +8,7 @@ import { Icon } from "@shared/ui/src/icon";
 import { Separator } from "@shared/ui/src/separator";
 import { Button } from "@shared/ui/src/button";
 import { date } from "@shared/ui/src/date";
+import { useAutoSave } from "../../hooks/use-auto-save";
 
 export interface EditorTopbarProps {}
 
@@ -17,7 +18,7 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
 
   const editable = useEditorStore.use.editable();
   const title = useEditorStore.use.title();
-  const lastDatabaseSync = useEditorStore.use.lastDatabaseSync();
+  const lastDatabaseSync = useAutoSave();
 
   const toggleSidebarHandler = () => {
     if (sidebar === "node" || sidebar === "page") {

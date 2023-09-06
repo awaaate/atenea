@@ -23,6 +23,7 @@ export const authProviders: Provider[] = [
     },
     name: 'Ethereum',
     async authorize(credentials, req) {
+      console.log('credentials', credentials)
       try {
         const siwe = new SiweMessage(
           JSON.parse(credentials?.message || '{}')

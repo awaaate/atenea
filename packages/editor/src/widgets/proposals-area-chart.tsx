@@ -3,6 +3,7 @@ import { WidgetFactory } from "../widget/widget-factory";
 import { sourceFetcher } from "../lib/data-fetchers";
 import { lazy } from "react";
 import { date } from "@shared/ui/src/date";
+import { dataAdapter } from "../lib/utils";
 
 const AreaView = lazy(() =>
   import("@shared/views/src/area/area").then((module) => ({
@@ -11,15 +12,13 @@ const AreaView = lazy(() =>
 );
 
 export default WidgetFactory.createWidget({
-  name: "proposals-ares-chart",
+  name: "proposals-area-chart",
   Config: () => <ViewColorsConfig />,
   skeleton: <div>Proposals Ares Chart</div>,
   dataFetcher: {
     key: "proposals-ares-chart",
     collector(props) {
-      return {
-        colors: props.colors,
-      };
+      return {};
     },
     async fetcher(args) {
       const proposals = await sourceFetcher.proposalsMeta.query({
@@ -27,17 +26,29 @@ export default WidgetFactory.createWidget({
         orderBy: "createdTimestamp",
       });
 
-      console.log(proposals);
+      const acumulated = {
+        PENDING: 0,
+        ACTIVE: 0,
+        CANCELLED: 0,
+        VETOED: 0,
+        QUEUED: 0,
+        EXECUTED: 0,
+      };
+      const getValueFromProposal = (proposal: any) =>
+        proposal.values.reduce((acc, curr) => acc + Number(curr), 0);
+
       return {
-        data: proposals.map((proposal) => ({
-          date: date(new Date(Number(proposal.createdTimestamp) * 1000)).format(
-            "DD/MM/YYYY"
-          ),
-          [proposal.status]: proposal.values
-            .reduce((acc, curr) => acc + Number(curr), 0)
-            .toString(),
-        })),
-        colors: args?.colors as any,
+        data: proposals.map((proposal) => {
+          acumulated[proposal.status] =
+            getValueFromProposal(proposal) + acumulated[proposal.status];
+
+          return {
+            date: date(
+              new Date(Number(proposal.createdTimestamp) * 1000)
+            ).format("DD/MM/YYYY"),
+            [proposal.status]: acumulated[proposal.status],
+          };
+        }),
         index: "date",
         categories: [
           "PENDING",
@@ -51,7 +62,20 @@ export default WidgetFactory.createWidget({
     },
   },
   initialProps: {
-    colors: ["indigo" as const, "cyan" as const],
+    colors: [
+      "indigo" as const,
+      "cyan" as const,
+      "red" as const,
+      "green" as const,
+      "yellow" as const,
+      "purple" as const,
+    ],
+    layout: {
+      w: Infinity,
+      h: 12,
+      x: 0,
+      y: 0,
+    },
   },
   View: AreaView,
   FullScreenView: AreaView,

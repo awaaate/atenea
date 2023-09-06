@@ -37,5 +37,12 @@ export default WidgetFactory.createWidget({
   FullScreenView: BasicTableView,
   Config: () => <div>Config</div>,
   skeleton: <div>Proposals Table</div>,
-  initialProps: {},
+  initialProps: {
+    layout: {
+      w: Infinity,
+      h: 12,
+      x: 0,
+      y: 0,
+    },
+  },
 });
