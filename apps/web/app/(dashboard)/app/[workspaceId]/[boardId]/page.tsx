@@ -4,7 +4,8 @@ import { createCaller } from "@/lib/trpc/createCaller";
 import { EditorState } from "@shared/editor/src/engine/interfaces";
 import { notFound } from "next/navigation";
 import { BoardPreviewButton } from "./board-preview-button";
-export const runtime = "edge";
+import { BoardPage } from "@shared/templates/src/pages/board";
+
 export default async function Page({
   params,
 }: {
@@ -30,8 +31,9 @@ export default async function Page({
   };
   return (
     <>
-      <BoardInitializer {...intialEditorState} />
+      <BoardPage />
       <BoardPreviewButton />
+      <BoardInitializer {...intialEditorState} />
     </>
   );
 }

@@ -5,7 +5,7 @@ import { BoardPage } from "@shared/templates/src/pages/board";
 import { EditorState } from "@shared/editor/src/engine/interfaces";
 
 export const dynamic = "force-dynamic";
-export const runtime = "edge"
+
 interface BoardViewProps {
   params: {
     boardId: string;
