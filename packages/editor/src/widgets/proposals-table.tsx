@@ -9,6 +9,9 @@ const BasicTableView = lazy(() =>
 );
 export default WidgetFactory.createWidget({
   name: "Proposals Table",
+  displayName: "Lats proposals table",
+  icon: "List",
+  group: "General",
   dataFetcher: {
     key: "proposals-table",
     collector: (props) => {

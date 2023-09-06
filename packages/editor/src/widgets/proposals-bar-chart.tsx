@@ -14,7 +14,9 @@ const BarChartView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-bar-chart",
-  displayName: "Proposals Bar Chart",
+  displayName: "Proposals Distribution Bar Chart",
+  icon: "BarChart",
+  group: "General",
   Config: () => <ViewColorsConfig />,
   skeleton: BAR_CHART_SKELETON,
   dataFetcher: {
@@ -57,7 +59,7 @@ export default WidgetFactory.createWidget({
     },
   },
   initialProps: {
-    colors: ["indigo" as const, "cyan" as const],
+    colors: ["indigo" as const],
     layout: {
       w: Infinity,
       h: 12,

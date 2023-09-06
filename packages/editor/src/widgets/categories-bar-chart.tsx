@@ -13,7 +13,7 @@ const BarChartView = lazy(() =>
 export default WidgetFactory.createWidget({
   name: "categories-bar-chart",
   displayName: "Categories Bar Chart",
-  group: "Bar Chart",
+  group: "general",
   icon: "BarChart",
   Config: () => <ViewColorsConfig />,
   skeleton: BAR_CHART_SKELETON,
