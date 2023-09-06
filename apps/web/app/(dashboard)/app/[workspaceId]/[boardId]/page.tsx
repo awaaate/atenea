@@ -28,6 +28,7 @@ export default async function Page({
     coverImage: board.coverImage,
     pageBackground: board.background,
     title: board.name,
+    editable: true,
   };
   return (
     <>

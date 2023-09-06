@@ -1,8 +1,7 @@
-import { createCaller } from "@/lib/trpc/createCaller";
-import { notFound } from "next/navigation";
 import { BoardInitializer } from "@/components/board/board-initialitzer";
+import { createCaller } from "@/lib/trpc/createCaller";
 import { BoardPage } from "@shared/templates/src/pages/board";
-import { EditorState } from "@shared/editor/src/engine/interfaces";
+import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
@@ -27,6 +26,7 @@ const BoardView = async ({ params }: BoardViewProps) => {
     coverImage: board.coverImage,
     pageBackground: board.background,
     title: board.name,
+    editable: false,
   };
 
   return (
