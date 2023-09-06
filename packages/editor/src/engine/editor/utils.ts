@@ -6,6 +6,8 @@ import { trpc } from "../../lib/trpc";
 import { ComponentWithRichEditor } from "../../hooks/rich-text/use-rich-editor";
 import { widgetFactory } from "../../widget/factory";
 
+import { TextWidget } from "../../user-components/text"
+
 export function serialize(state: EditorState) {
     console.log("SERIALIZING STATE", state)
     return {
@@ -18,7 +20,7 @@ export function serialize(state: EditorState) {
                 dom: null,
             };
 
-            if (node.data.displayName === "Text") {
+            if (node.data.name === TextWidget.node.name) {
                 console.log("TEXT NODE", node.data)
                 const props = node.data.props as unknown as ComponentWithRichEditor
 
@@ -96,7 +98,7 @@ export function deserialize(prev: EditorState, currentState: EditorState) {
 
 
             //if the node is a text node, we need to clear the rich editor state
-            if (newNode.data.displayName === "Text") {
+            if (node.data.name === TextWidget.node.name) {
                 const props = newNode.data.props as ComponentWithRichEditor
                 if (!props.initialEditorState) return acc;
                 props.richEditor = null;
