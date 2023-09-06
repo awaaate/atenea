@@ -21,7 +21,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
   React.useEffect(() => {
     if (session.status === "authenticated") {
-      router.push("/create");
+      router.push("/app");
     }
   }, [session]);
 
