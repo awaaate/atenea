@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "Atenea",
     description:
-        "Join Next.js 13 based Anime Platform: Explore anime, join communities, manage watchlist, view leaderboards, and more!",
+        "Create, and share your clients",
     url: "https://otakusphere.in",
 };
 

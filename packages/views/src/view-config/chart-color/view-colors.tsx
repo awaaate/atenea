@@ -69,7 +69,7 @@ export const ViewColorsConfig: React.FC<ViewColorsConfigProps> = ({
   return (
     <WidgetConfigSection title="Chart Colors">
       <WidgetConfigSection.Title />
-      <div className={className}>
+      <div className={cn("flex flex-col gap-2", className)}>
         {colors?.map((color, index) => (
           <ViewColorsPicker
             key={index}

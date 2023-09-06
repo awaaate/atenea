@@ -39,7 +39,11 @@ interface CreateWidgetArgs<
   skeleton: React.ReactNode;
   dataFetcher: {
     key: string;
-    collector?: (props: WidgetProps) => TArgs;
+    collector?: (
+      props: WidgetProps & {
+        requestVariables?: object;
+      }
+    ) => TArgs;
     fetcher: (args: TArgs | undefined) => Promise<TData>;
   };
   initialProps: Partial<WidgetProps>;
@@ -69,11 +73,12 @@ export class WidgetFactory {
         return args.dataFetcher.fetcher(dataFetcherArgs);
       }, [dataFetcherArgs]);
 
+      console.log("dataFetcherArgs", dataFetcherArgs);
       return (
         <WidgetRoot
           dataFetcher={[
             args.dataFetcher.key +
-              JSON.stringify(dataFetcherArgs?.requestVariables as any),
+              JSON.stringify(dataFetcherArgs?.requestVariables),
             fetcherFunction,
           ]}
           inner={(data) => (

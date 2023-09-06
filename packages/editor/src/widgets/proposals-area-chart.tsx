@@ -1,4 +1,4 @@
-import { ViewColorsConfig } from "@shared/views/src/view-config/view-colors";
+import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
 import { WidgetFactory } from "../widget/widget-factory";
 import { sourceFetcher } from "../lib/data-fetchers";
 import { lazy } from "react";
@@ -13,6 +13,7 @@ const AreaView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-area-chart",
+
   Config: () => <ViewColorsConfig />,
   skeleton: <div>Proposals Ares Chart</div>,
   dataFetcher: {

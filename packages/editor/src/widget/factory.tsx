@@ -6,6 +6,7 @@ import proposalsTable from "../widgets/proposals-table";
 import proposalsAreaChart from "../widgets/proposals-area-chart";
 import proposalsBarChart from "../widgets/proposals-bar-chart";
 import categoriesBarChart from "../widgets/categories-bar-chart";
+import proposalBudget from "../widgets/proposal-budget";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -15,3 +16,4 @@ widgetFactory.registerWidgetComponent(proposalsTable);
 widgetFactory.registerWidgetComponent(proposalsAreaChart);
 widgetFactory.registerWidgetComponent(proposalsBarChart);
 widgetFactory.registerWidgetComponent(categoriesBarChart);
+widgetFactory.registerWidgetComponent(proposalBudget);

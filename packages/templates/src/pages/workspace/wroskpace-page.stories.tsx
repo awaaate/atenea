@@ -1,11 +1,9 @@
-import { BackgroundPickerTabs, useForm, zodResolver } from "@shared/ui";
+import { Form, useForm, zodResolver } from "@shared/ui/src/form";
 import { mockPageData } from "../../data";
 import { WorkspaceLayout } from "../../layouts/workspace-layout";
 import { WorkspacePage } from "./workspace-page";
 import { Meta } from "@storybook/react";
-import { CreateWorspacePage } from "../create-workspace/create-wroskapce-page";
 import { workspaceSchema } from "../../schemas/workspaceSchema";
-import { Form } from "@shared/ui";
 import WorkspaceForm from "../../components/workspace-form/workspace-form";
 
 export default {

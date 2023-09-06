@@ -43,6 +43,12 @@ export function useNodeActions() {
   const selectNode = useEditorStore.use.select();
   const setNode = useEditorStore.use.setNode();
 
+  const debouncedSetNode = useDebouncedCallback(
+    (cb: (node: Node) => Node, debounce?: number) => {
+      setNode(id, cb);
+    },
+    100
+  );
   //memoise
 
   const actions = useMemo(() => {
@@ -58,6 +64,7 @@ export function useNodeActions() {
       setNode: (cb: (node: Node) => Node, debounce?: number) => {
         setNode(id, cb);
       },
+      debouncedSetNode,
     };
   }, [id]);
 

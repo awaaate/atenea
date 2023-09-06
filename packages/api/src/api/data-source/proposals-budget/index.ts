@@ -18,7 +18,7 @@ query BudgetSectionCollection($filter: BudgetSectionFilter) {
 `
 
 
-export const getBudgetSections = async (id: string | number) => {
+export const getBudgetSections = async (id: number) => {
   const variables = {
     "filter": {
       "proposalId": {

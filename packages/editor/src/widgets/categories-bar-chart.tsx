@@ -1,4 +1,4 @@
-import { ViewColorsConfig } from "@shared/views/src/view-config/view-colors";
+import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
 import { lazy } from "react";
 import { sourceFetcher } from "../lib/data-fetchers";
 import { WidgetFactory } from "../widget/widget-factory";

@@ -63,7 +63,7 @@ export const dataSourceRouter = router({
         }
     }),
 
-    getProposalBudget: publicProcedure.input(z.string()).query(async ({ input, ctx }) => {
+    getProposalBudget: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
         return getBudgetSections(input)
     }),
 })
