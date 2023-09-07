@@ -62,7 +62,7 @@ export default WidgetFactory.createWidget({
           {
             name: "Total Executed Proposals",
             metric: `${totalExecutedProposals} Proposals`,
-            icon: "Checl" as const,
+            icon: "Check" as const,
           },
           {
             name: "Win Rate",
