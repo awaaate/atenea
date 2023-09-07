@@ -2,7 +2,7 @@ export const siteConfig = {
     name: "Atenea",
     description:
         "Create, and share your clients",
-    url: "https://otakusphere.in",
+    url: "https://atenea.wtf",
 };
 
 export const INFINITE_SCROLLING_PAGINATION_ANIME = 3;

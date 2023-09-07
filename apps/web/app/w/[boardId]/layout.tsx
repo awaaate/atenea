@@ -12,8 +12,8 @@ interface AdminLayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
-  title: "Board view",
-  description: "Admins are allowed to access this page and manage the site.",
+  title: "My Board",
+  description: "Check my board",
 };
 
 export default async function BoardView({

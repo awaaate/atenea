@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
   title: "Sign In",
   description:
-    "Join our community or log in to your account. Explore personalized features and content on our platform.",
+    "Join the beta version of atenea",
 };
 
 const Page = async () => {
