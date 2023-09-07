@@ -28,20 +28,20 @@ query ProposalCollection($filter: ProposalFilter) {
 `
 
 export const getProposalContent = async (proposalId: number) => {
-    const ateneaData = await ateneaGraph.request<GetProposalDescriptionAndTitle>(descriptionQuery, {
-        "filter": {
-            "id": {
-                "eq": 333
-            }
-        }
-    })
-    const nounsData = await nounsSubgraph.request<GetProposalContent>(contentQuery, {
-        "proposalId": proposalId
-    })
-
-    return {
-        content: nounsData.proposal.description,
-        description: ateneaData.proposalCollection.edges[0].node.description,
-        title: ateneaData.proposalCollection.edges[0].node.title,
+  const ateneaData = await ateneaGraph.request<GetProposalDescriptionAndTitle>(descriptionQuery, {
+    "filter": {
+      "id": {
+        "eq": proposalId
+      }
     }
+  })
+  const nounsData = await nounsSubgraph.request<GetProposalContent>(contentQuery, {
+    "proposalId": proposalId
+  })
+
+  return {
+    content: nounsData.proposal.description,
+    description: ateneaData.proposalCollection.edges[0].node.description,
+    title: ateneaData.proposalCollection.edges[0].node.title,
+  }
 }
