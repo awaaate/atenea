@@ -1,5 +1,5 @@
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
-import { sourceFetcher } from "../lib/data-fetchers";
+import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { lazy } from "react";
 

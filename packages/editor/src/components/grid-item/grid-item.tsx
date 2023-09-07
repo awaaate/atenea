@@ -6,6 +6,7 @@ import { cn } from "@shared/ui/src/utils";
 import { useEditorStore } from "../../engine/editor";
 import { NodeProvider, RenderNodeToElement } from "../../engine/nodes";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { TextWidget } from "../../user-components/text";
 
 interface GridItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -25,7 +26,7 @@ export const GridItem = React.forwardRef<HTMLDivElement, GridItemProps>(
     const isText = useEditorStore(
       useCallback(
         (state) => {
-          return state.nodes[id].data.displayName === "Text";
+          return state.nodes[id].data.name === TextWidget.node.name;
         },
         [id]
       )

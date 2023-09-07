@@ -5,7 +5,12 @@ import React, { HTMLAttributes, Suspense, memo, useMemo } from "react";
 import { cn } from "@shared/ui/src/utils";
 import { Card, CardTitle } from "@shared/ui/src/card";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
-import { Dialog, DialogContent } from "@shared/ui/src/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@shared/ui/src/dialog";
 
 import useSWR from "swr";
 import { useNode, useNodeActions } from "../engine/nodes";
@@ -80,9 +85,11 @@ function WidgetRoot<T>({
             </div>
           </CardTitle>
         )}
-        <ScrollArea orientation={["vertical", "horizontal"]}>
-          {childComponent}
-        </ScrollArea>
+        {!isFullScreen && (
+          <ScrollArea orientation={["vertical", "horizontal"]}>
+            {childComponent}
+          </ScrollArea>
+        )}
         <Dialog
           open={isFullScreen}
           onOpenChange={(value) => {
@@ -92,10 +99,11 @@ function WidgetRoot<T>({
             });
           }}
         >
-          <DialogContent className="max-w-5xl w-full">
-            <ScrollArea>
-              <div className="w-full h-full">{data && fullScreen(data)}</div>
-            </ScrollArea>
+          <DialogContent className="max-w-5xl h-[calc(100vh-2rem)]  w-full ">
+            <DialogHeader>
+              <DialogTitle>{title}</DialogTitle>
+            </DialogHeader>
+            <ScrollArea className="px-6">{data && fullScreen(data)}</ScrollArea>
           </DialogContent>
         </Dialog>
       </Card>

@@ -9,7 +9,7 @@ export const adminSidebarNavItems: NavItemProps[] = [
         href: "/",
     },
 ];
-
+const className = "text-2xl font-semibold leading-loose"
 export const dialogue = [
     {
         id: 1,

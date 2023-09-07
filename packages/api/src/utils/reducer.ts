@@ -1,5 +1,5 @@
 
-export function arraReducer<TData, TMapped>(
+export function arrayReducer<TData, TMapped>(
     inital: TMapped[],
     mapper: (acc: TMapped[], curr: TData) => TMapped,
     data: TData[],

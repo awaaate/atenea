@@ -1,9 +1,9 @@
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
 import { lazy } from "react";
-import { sourceFetcher } from "../lib/data-fetchers";
+import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { BAR_CHART_SKELETON } from "../widget/skeletons";
-import { arraReducer } from "@shared/api/src/utils/reducer";
+import { arrayReducer } from "@shared/api/src/utils/reducer";
 import { WidgetConfigSection } from "../widget/widget-config-section";
 const Donut = lazy(() =>
   import("@shared/views/src/donut/donut").then((module) => ({

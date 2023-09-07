@@ -1,6 +1,6 @@
 import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
 import { lazy } from "react";
-import { sourceFetcher } from "../lib/data-fetchers";
+import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { BAR_CHART_SKELETON } from "../widget/skeletons";
 

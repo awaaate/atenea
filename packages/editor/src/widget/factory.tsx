@@ -6,6 +6,11 @@ import proposalsTable from "../widgets/proposals-table";
 import proposalsBarChart from "../widgets/proposals-bar-chart";
 import categoriesBarChart from "../widgets/categories-bar-chart";
 import proposalBudget from "../widgets/proposal-budget";
+import nounsKpis from "../widgets/nouns-kpis";
+import proposalTeam from "../widgets/proposal-team";
+import proposalContentView from "../widgets/proposal-content-view";
+import proposalVotes from "../widgets/proposal-votes";
+import proposalKpi from "../widgets/proposal-kpi";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -16,3 +21,8 @@ widgetFactory.registerWidgetComponent(proposalsTable);
 widgetFactory.registerWidgetComponent(proposalsBarChart);
 widgetFactory.registerWidgetComponent(categoriesBarChart);
 widgetFactory.registerWidgetComponent(proposalBudget);
+widgetFactory.registerWidgetComponent(nounsKpis);
+widgetFactory.registerWidgetComponent(proposalTeam);
+widgetFactory.registerWidgetComponent(proposalVotes);
+widgetFactory.registerWidgetComponent(proposalContentView);
+widgetFactory.registerWidgetComponent(proposalKpi);

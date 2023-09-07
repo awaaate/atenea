@@ -59,7 +59,6 @@ export class WidgetFactory {
       const { id } = useNode();
       const collectorFunc = useCallback(
         (state: EditorState) => {
-          console.log("state.nodes[id]", state.nodes[id]);
           return args.dataFetcher.collector
             ? args.dataFetcher.collector(state.nodes[id].data.props)
             : undefined;
@@ -73,7 +72,6 @@ export class WidgetFactory {
         return args.dataFetcher.fetcher(dataFetcherArgs);
       }, [dataFetcherArgs]);
 
-      console.log("dataFetcherArgs", dataFetcherArgs);
       return (
         <WidgetRoot
           dataFetcher={[

@@ -1,6 +1,6 @@
 import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
 import { WidgetFactory } from "../widget/widget-factory";
-import { sourceFetcher } from "../lib/data-fetchers";
+import { sourceFetcher } from "../lib/source-fetcher";
 import { lazy } from "react";
 import { date } from "@shared/ui/src/date";
 import { dataAdapter } from "../lib/utils";
