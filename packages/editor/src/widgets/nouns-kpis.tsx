@@ -52,7 +52,7 @@ export default WidgetFactory.createWidget({
           {
             name: "Total Proposals",
             metric: `${totalProposals} Proposals`,
-            icon: "Start" as const,
+            icon: "Star" as const,
           },
           {
             name: "Total Active Proposals",

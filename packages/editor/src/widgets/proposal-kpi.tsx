@@ -7,6 +7,7 @@ import { trpc } from "../lib/trpc";
 import { arrayReducer, mapReducer } from "@shared/api/src/utils/reducer";
 import { sourceFetcher } from "../lib/source-fetcher";
 import {} from "@shared/api/src/utils/reducer";
+import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
 
 const CardAndMetricAndIcon = lazy(() =>
   import("@shared/views/src/kip-card/card-metric-icon").then((module) => ({
@@ -114,6 +115,10 @@ export default WidgetFactory.createWidget({
     },
   },
   FullScreenView: () => null,
-  Config: () => null,
+  Config: () => (
+    <ViewPropsConfig
+      props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}
+    />
+  ),
   skeleton: BAR_CHART_SKELETON,
 });
