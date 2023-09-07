@@ -11,7 +11,7 @@ const ProposalVotesView = lazy(() =>
 export default WidgetFactory.createWidget({
   name: "Proposal Votes",
   displayName: "Proposal Votes",
-  icon: "Users",
+  icon: "Check",
   group: "Proposal",
   View: ProposalVotesView,
   dataFetcher: {
@@ -44,8 +44,6 @@ export default WidgetFactory.createWidget({
       props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}
     />
   ),
-  FullScreenView: ProposalVotesView,
-  skeleton: <div>Proposal Team</div>,
   initialProps: {
     proposalId: 340,
     layout: {

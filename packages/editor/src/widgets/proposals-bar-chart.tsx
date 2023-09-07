@@ -18,7 +18,6 @@ export default WidgetFactory.createWidget({
   icon: "BarChart",
   group: "General",
   Config: () => <ViewColorsConfig />,
-  skeleton: BAR_CHART_SKELETON,
   dataFetcher: {
     key: "proposals-bar-chart",
     collector(props) {
@@ -68,5 +67,4 @@ export default WidgetFactory.createWidget({
     },
   },
   View: BarChartView,
-  FullScreenView: BarChartView,
 });

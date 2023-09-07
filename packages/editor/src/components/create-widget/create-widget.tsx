@@ -41,7 +41,7 @@ export const CreateWidget = () => {
         items={Array.from(widgetFactory.widgets.entries()).map(
           ([ket, { node }]) => {
             return {
-              grup: node.group || "Other",
+              group: node.group?.toUpperCase() || "Other",
               handler: () => {
                 creteNode(node.name);
               },

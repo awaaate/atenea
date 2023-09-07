@@ -10,6 +10,7 @@ import { WidgetConfig } from "./widget-config";
 import { WidgetRoot } from "./widget-root";
 import { WidgetProps, createWidgetProps } from "./widget-types";
 import { useEditorStore } from "../engine/editor";
+import { SPINNER_SKELETON } from "./skeletons";
 
 interface TestProps {
   name: string;
@@ -35,8 +36,10 @@ interface CreateWidgetArgs<
     | React.FunctionComponent<TData>
     | React.LazyExoticComponent<React.FunctionComponent<TData>>;
   Config: React.FunctionComponent;
-  FullScreenView: React.FunctionComponent<TData>;
-  skeleton: React.ReactNode;
+  FullScreenView?:
+    | React.FunctionComponent<TData>
+    | React.LazyExoticComponent<React.FunctionComponent<TData>>;
+  skeleton?: React.ReactNode;
   dataFetcher: {
     key: string;
     collector?: (
@@ -48,6 +51,9 @@ interface CreateWidgetArgs<
   };
   initialProps: Partial<WidgetProps>;
 }
+const defaultArgs = {
+  skeleton: SPINNER_SKELETON,
+};
 
 export class WidgetFactory {
   widgets: Map<string, WidgetComponent> = new Map();
@@ -55,6 +61,9 @@ export class WidgetFactory {
   static createWidget<TData extends {}, TArgs extends Partial<WidgetProps>>(
     args: CreateWidgetArgs<TData, TArgs>
   ) {
+    args.skeleton = args.skeleton || defaultArgs.skeleton;
+    args.FullScreenView = args.FullScreenView ? args.FullScreenView : args.View;
+
     const component: WidgetComponent = () => {
       const { id } = useNode();
       const collectorFunc = useCallback(
@@ -87,6 +96,7 @@ export class WidgetFactory {
           )}
           fullScreen={(data) => (
             <Suspense fallback={args.skeleton}>
+              {/* @ts-ignore */}
               <args.FullScreenView {...data} />
             </Suspense>
           )}

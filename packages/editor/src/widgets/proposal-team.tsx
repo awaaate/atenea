@@ -44,8 +44,6 @@ export default WidgetFactory.createWidget({
       props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}
     />
   ),
-  FullScreenView: TeamMembersViews,
-  skeleton: <div>Proposal Team</div>,
   initialProps: {
     proposalId: 340,
     layout: {

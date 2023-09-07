@@ -50,7 +50,9 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
                 type="single"
               />
             </FormControl>
-            <FormDescription>This is your public display name.</FormDescription>
+            <FormDescription>
+              This is the main color of your workspace.
+            </FormDescription>
             <FormMessage />
           </FormItem>
         )}
@@ -64,7 +66,10 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
             <FormControl>
               <Input placeholder="atenea" {...field} />
             </FormControl>
-            <FormDescription>This is your public display name.</FormDescription>
+            <FormDescription>
+              This is the base of the public board links you will be able to
+              share{" "}
+            </FormDescription>
             <FormMessage />
           </FormItem>
         )}
@@ -78,7 +83,9 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
             <FormControl>
               <Input placeholder="shadcn" {...field} />
             </FormControl>
-            <FormDescription>This is your public display name.</FormDescription>
+            <FormDescription>
+              A little description of your workspace.
+            </FormDescription>
             <FormMessage />
           </FormItem>
         )}

@@ -26,7 +26,6 @@ export default WidgetFactory.createWidget({
       />
     </>
   ),
-  skeleton: BAR_CHART_SKELETON,
   dataFetcher: {
     key: "proposal-budget",
     collector(props) {
@@ -66,5 +65,4 @@ export default WidgetFactory.createWidget({
     },
   },
   View: Donut,
-  FullScreenView: Donut,
 });

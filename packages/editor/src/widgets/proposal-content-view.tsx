@@ -16,7 +16,6 @@ export default WidgetFactory.createWidget({
   icon: "Eye",
   group: "Proposal",
   View: ProposalContentView,
-  FullScreenView: ProposalContentView,
   dataFetcher: {
     key: "proposal-view",
     collector(props) {
@@ -51,7 +50,6 @@ export default WidgetFactory.createWidget({
       props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}
     />
   ),
-  skeleton: <div>Proposal Team</div>,
   initialProps: {
     proposalId: 340,
     layout: {

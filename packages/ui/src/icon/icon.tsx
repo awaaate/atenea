@@ -1,5 +1,9 @@
 import {
   type LucideProps,
+  Star,
+  Check,
+  Ban,
+  Trophy,
   ArrowDown,
   ArrowUp,
   ArrowLeft,
@@ -149,6 +153,10 @@ const Icons = {
   Eye,
   DotIcon,
   Table,
+  Ban,
+  Star,
+  Trophy,
+  Check,
 };
 
 const IconNames = Object.keys(Icons) as (keyof typeof Icons)[];

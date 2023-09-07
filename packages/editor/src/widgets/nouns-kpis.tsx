@@ -24,12 +24,12 @@ const ComposedViews = joinViews(
 export default WidgetFactory.createWidget({
   name: "nouns-kpis",
   displayName: "Nouns KPIs",
-  group: "Nouns",
-  icon: "Bell",
+  group: "general",
+  icon: "Star",
 
   dataFetcher: {
     key: "nouns-kpis",
-
+    //@ts-expect-error
     async fetcher(args) {
       const data = await sourceFetcher.proposalsMeta.query({
         orderBy: "createdTimestamp",
@@ -52,29 +52,29 @@ export default WidgetFactory.createWidget({
           {
             name: "Total Proposals",
             metric: `${totalProposals} Proposals`,
-            icon: "Bell" as const,
+            icon: "Start" as const,
           },
           {
             name: "Total Active Proposals",
             metric: `${totalActiveProposals} Proposals`,
-            icon: "Bell" as const,
+            icon: "BarChart" as const,
           },
           {
             name: "Total Executed Proposals",
             metric: `${totalExecutedProposals} Proposals`,
-            icon: "Bell" as const,
+            icon: "Checl" as const,
           },
           {
             name: "Win Rate",
             metric: `${winRate} %`,
-            icon: "Bell" as const,
+            icon: "Trophy" as const,
           },
         ],
       };
     },
   },
   View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-4 my-4 mx-4">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-4 mx-4">
       <ComposedViews {...props} />
     </div>
   ),
@@ -86,7 +86,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  FullScreenView: () => null,
   Config: () => null,
-  skeleton: BAR_CHART_SKELETON,
 });

@@ -24,8 +24,8 @@ const ComposedViews = joinViews(
 export default WidgetFactory.createWidget({
   name: "proposal-kpi",
   displayName: "Proposals KPIs",
-  group: "proposals",
-  icon: "Bell",
+  group: "proposal",
+  icon: "Star",
 
   dataFetcher: {
     key: "nouns-kpis",
@@ -36,6 +36,7 @@ export default WidgetFactory.createWidget({
         },
       };
     },
+    //@ts-expect-error
     async fetcher(args) {
       if (!args) {
         return {
@@ -50,7 +51,6 @@ export default WidgetFactory.createWidget({
         args.requestVariables.proposalId
       );
 
-      const totalVotes = data.length;
       const mappedData = mapReducer(
         {
           against: 0,
@@ -75,17 +75,17 @@ export default WidgetFactory.createWidget({
           {
             name: "Total Votes",
             metric: `${mappedData.against + mappedData.for} votes`,
-            icon: "Bell" as const,
+            icon: "Star" as const,
           },
           {
             name: "For Votes",
             metric: `${mappedData.for} votes`,
-            icon: "Bell" as const,
+            icon: "Check" as const,
           },
           {
             name: "Against Votes",
             metric: `${mappedData.against} votes`,
-            icon: "Bell" as const,
+            icon: "Ban" as const,
           },
           {
             name: "Win Rate",
@@ -93,14 +93,14 @@ export default WidgetFactory.createWidget({
               mappedData.for /
               (mappedData.against + mappedData.for)
             ).toFixed(2)} %`,
-            icon: "Bell" as const,
+            icon: "Trophy" as const,
           },
         ],
       };
     },
   },
   View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-4 my-4 mx-4">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-4  mx-4">
       <ComposedViews {...props} />
     </div>
   ),

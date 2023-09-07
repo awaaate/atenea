@@ -43,13 +43,11 @@ export default WidgetFactory.createWidget({
     },
   },
   View: BasicTableView,
-  FullScreenView: BasicTableView,
   Config: () => (
     <ViewPropsConfig
       props={[{ name: "first", type: "number", label: "First" }]}
     />
   ),
-  skeleton: <div>Proposals Table</div>,
   initialProps: {
     first: 5,
     headerMap: {

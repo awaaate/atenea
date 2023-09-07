@@ -17,10 +17,16 @@ import {
 import { nanoid } from "nanoid";
 import { useEditorStore } from "../engine/editor";
 import { useNode, useNodeActions } from "../engine/nodes";
+import { TextWidget } from "../user-components/text";
 
 const WidgetMenu = () => {
-  const isTextWidget = useNode((node) => node.data.displayName === "Text");
+  const { id } = useNode();
+  const isTextWidget = useNode(
+    (node) => node.data.name === TextWidget.node.name
+  );
   const createNode = useEditorStore((state) => state.create);
+  const selectNode = useEditorStore((state) => state.select);
+
   const setSidebar = useEditorStore((state) => state.setSidebar);
   const editable = useEditorStore((state) => state.editable);
   const { setNode, remove, select } = useNodeActions();
@@ -81,9 +87,15 @@ const WidgetMenu = () => {
           </DropdownMenuItem>
           <DropdownMenuItem
             onSelect={() => {
-              const id = nanoid();
-              const newNode = { ...useEditorStore.getState().nodes[id], id };
-              createNode(newNode);
+              const nodeToDuplicate = useEditorStore.getState().nodes[id];
+              const newId = nanoid();
+
+              createNode({
+                ...nodeToDuplicate,
+                id: newId,
+              });
+
+              selectNode(newId);
             }}
           >
             <Icon name="Copy" className="mr-2" />

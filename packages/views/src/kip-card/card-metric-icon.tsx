@@ -15,7 +15,7 @@ export const CardAndMetricAndIcon: React.FC<CardAndMetricAndIconProps> = ({
 }) => {
   return (
     <>
-      <Card className="flex gap-2 p-4 border-t-4 border-accent ">
+      <div className="flex gap-2 p-4 border-t-4 border-accent ">
         <Icon
           name={icon}
           className="text-accent bg-accent/10 p-2 rounded-md"
@@ -24,7 +24,7 @@ export const CardAndMetricAndIcon: React.FC<CardAndMetricAndIconProps> = ({
         <div className="flex flex-col">
           <CardAndMetric name={name} metric={metric} />
         </div>
-      </Card>
+      </div>
     </>
   );
 };
