@@ -3,7 +3,8 @@ import { HTMLAttributes } from "react";
 import { useEditorStore } from "../..";
 
 const classes = {
-  title: "text-5xl text-text font-semibold focus:outline-none mb-2",
+  title:
+    "text-5xl text-text font-semibold focus:outline-none mb-2 w-full bg-surface-default p-2 text-center",
 };
 export const EditorTitle: React.FC<HTMLAttributes<HTMLInputElement>> = ({
   children,
@@ -25,10 +26,7 @@ export const EditorTitle: React.FC<HTMLAttributes<HTMLInputElement>> = ({
       value={title}
       onChange={(e) => setTitle(e.target.value)}
       disabled={!editable}
-      className={cn(
-        "bg-transparent shadow-0 border-0 text-5xl text-text focus:outline-none mb-2",
-        className
-      )}
+      className={cn(classes.title)}
       placeholder="My board"
     />
   );

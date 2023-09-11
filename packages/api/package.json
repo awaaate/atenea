@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nouns/assets": "^0.5.0",
     "@shared/db": "workspace:^",
     "@trpc/server": "^10.38.0",
     "dotenv": "^16.3.1",
@@ -19,6 +20,8 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@nouns": "link:@types/@nouns",
+    "sdk": "link:@types/@nouns/sdk",
     "vitest": "^0.34.2"
   }
 }

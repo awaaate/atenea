@@ -41,7 +41,7 @@ export const Grid = () => {
         draggableCancel=".react-resizable-handle"
         draggableHandle=".draggable-handle"
         className={cn(
-          "h-full w-full min-h-[calc(100vh-100px)]",
+          "h-full w-full min-h-[calc(100vh-100px)] ",
           EDITOR_WIDTH_CLASSES
         )}
         style={{

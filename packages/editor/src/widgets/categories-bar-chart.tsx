@@ -4,21 +4,20 @@ import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { BAR_CHART_SKELETON } from "../widget/skeletons";
 
-const BarChartView = lazy(() =>
-  import("@shared/views/src/bar-chart/bar-chart").then((module) => ({
-    default: module.BarChartView,
+const DonutView = lazy(() =>
+  import("@shared/views/src/donut/donut").then((module) => ({
+    default: module.Donut,
   }))
 );
 
 export default WidgetFactory.createWidget({
-  name: "categories-bar-chart",
-  displayName: "Categories Bar Chart",
+  name: "categories-donut-chart",
+  displayName: "Categories donut Chart",
   group: "general",
-  icon: "BarChart",
+  icon: "PieChart",
   Config: () => <ViewColorsConfig />,
-  skeleton: BAR_CHART_SKELETON,
   dataFetcher: {
-    key: "categories-bar-chart",
+    key: "categories-donut-chart",
     collector(props) {
       return {};
     },
@@ -28,12 +27,16 @@ export default WidgetFactory.createWidget({
       return {
         data,
         index: "name",
-        categories: ["totalBudget"],
+        category: "totalBudget",
+        valueFormatter(number) {
+          return `ETH${number}`;
+        },
       };
     },
   },
   initialProps: {
     colors: ["indigo" as const],
+    title: "Props founded by category",
     layout: {
       w: Infinity,
       h: 12,
@@ -41,6 +44,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  View: BarChartView,
-  FullScreenView: BarChartView,
+  View: DonutView,
 });

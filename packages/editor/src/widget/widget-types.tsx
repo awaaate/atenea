@@ -11,7 +11,12 @@ export interface WidgetProps {
   background: string;
   borderRadius: number;
   gridSpan: number;
-  layout: Partial<Layout>;
+  layout: Partial<Layout> & {
+    w: number;
+    h: number;
+    x: number;
+    y: number;
+  };
   fullScreen: boolean;
   sidePannel: boolean;
   controls: "simple" | "full";

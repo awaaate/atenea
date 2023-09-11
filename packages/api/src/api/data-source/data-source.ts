@@ -4,11 +4,12 @@ import { publicProcedure, router } from "../../trpc";
 import { mapReducer } from "../../utils/reducer";
 import * as categories from "./categories";
 import { getBudgetSections } from "./proposals-budget";
-import * as proposalsMeta from "./proposals-meta";
+import { getProposalMeta, input as getProposalMetaInput } from "./proposals-meta";
 import { ProposalMeta } from "./proposals-meta/types";
 import { getProposalTeamMembers } from "./team-members";
 import { getProposalContent } from "./proposal-content";
 import { getProposalVotes } from "./proposal-votes";
+import { getNounOfTheDay } from "./noun-of-day";
 
 
 export const dataSourceRouter = router({
@@ -18,19 +19,10 @@ export const dataSourceRouter = router({
         const { db } = ctx;
     }),
 
-    proposalsMeta: publicProcedure.input(proposalsMeta.input).query(async ({ input, ctx }) => {
-        const { proposer, status, descriptionContains, titleContains, ...params } = input;
-        const data = await nounsSubgraph.request<{ proposals: ProposalMeta[] }>(proposalsMeta.query, {
-            ...params,
-            where: {
-                proposer,
-                status,
-                description_contains_nocase: descriptionContains,
-                title_contains_nocase: titleContains,
-            },
-        })
+    proposalsMeta: publicProcedure.input(getProposalMetaInput).query(async ({ input, ctx }) => {
 
-        return data.proposals
+
+        return getProposalMeta(input)
     }),
 
     categories: publicProcedure.query(async ({ ctx }) => {
@@ -77,6 +69,11 @@ export const dataSourceRouter = router({
     getProposalVotes: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
         return getProposalVotes(input)
     }),
+
+    getNounOfTheDay: publicProcedure.query(async ({ ctx }) => {
+        return getNounOfTheDay()
+    }),
+
 })
 
 

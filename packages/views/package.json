@@ -15,9 +15,12 @@
     "@shared/tsconfig": "workspace:^",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "react": "18.2.0"
+    "postcss": "^8.4.29",
+    "react": "18.2.0",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@nouns/sdk": "^0.4.0",
     "@shared/editor": "workspace:^",
     "@shared/ui": "workspace:^",
     "@tremor/react": "^3.6.5"

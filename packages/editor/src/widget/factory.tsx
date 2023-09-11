@@ -2,7 +2,6 @@ import { lazy } from "react";
 import { TextWidget } from "../user-components/text/text";
 import { WidgetFactory } from "./widget-factory";
 
-import proposalsTable from "../widgets/proposals-table";
 import proposalsBarChart from "../widgets/proposals-bar-chart";
 import categoriesBarChart from "../widgets/categories-bar-chart";
 import proposalBudget from "../widgets/proposal-budget";
@@ -11,12 +10,17 @@ import proposalTeam from "../widgets/proposal-team";
 import proposalContentView from "../widgets/proposal-content-view";
 import proposalVotes from "../widgets/proposal-votes";
 import proposalKpi from "../widgets/proposal-kpi";
+import treasury from "../widgets/treasury";
+import nounOfDay from "../widgets/noun-of-day";
+import activeProposals from "../widgets/active-proposals";
+import incommingProposals from "../widgets/incomming-proposals";
 
 export const widgetFactory = new WidgetFactory();
 
 widgetFactory.registerWidgetComponent(TextWidget);
 
-widgetFactory.registerWidgetComponent(proposalsTable);
+widgetFactory.registerWidgetComponent(activeProposals);
+widgetFactory.registerWidgetComponent(incommingProposals);
 //widgetFactory.registerWidgetComponent(proposalsAreaChart);
 widgetFactory.registerWidgetComponent(proposalsBarChart);
 widgetFactory.registerWidgetComponent(categoriesBarChart);
@@ -26,3 +30,6 @@ widgetFactory.registerWidgetComponent(proposalTeam);
 widgetFactory.registerWidgetComponent(proposalVotes);
 widgetFactory.registerWidgetComponent(proposalContentView);
 widgetFactory.registerWidgetComponent(proposalKpi);
+widgetFactory.registerWidgetComponent(treasury);
+
+widgetFactory.registerWidgetComponent(nounOfDay);

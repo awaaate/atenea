@@ -35,44 +35,14 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
         setSidebar(null);
       }}
     >
-      <div className="mx-auto bg-surface-raised px-4 md:px-8 py-8 rounded-default shadow-card flex-1  ">
+      <div className="mx-auto bg-surface-raised/95 rounded-lg shadow-card flex-1  overflow-hidden ">
         {children}
-        <Grid />
+        <div className="px-6 py-4">
+          <Grid />
+        </div>
       </div>
     </div>
   );
 };
 
-const classes = {
-  title: "text-5xl text-text font-semibold focus:outline-none mb-2",
-};
-const EditorTitle: React.FC<HTMLAttributes<HTMLInputElement>> = ({
-  children,
-  className,
-  ...props
-}) => {
-  const title = useEditorStore.use.title();
-  const setTitle = useEditorStore.use.setTitle();
-  const editable = useEditorStore.use.editable();
-  const showTitle = editable || title;
-
-  if (!showTitle) return null;
-
-  if (!editable)
-    return <h1 className={cn(classes.title, className)}>{title}</h1>;
-  return (
-    <input
-      {...props}
-      value={title}
-      onChange={(e) => setTitle(e.target.value)}
-      disabled={!editable}
-      className={cn(
-        "bg-transparent shadow-0 border-0 text-5xl text-text focus:outline-none mb-2",
-        className
-      )}
-      placeholder="My board"
-    />
-  );
-};
-
-export { Editor, EditorTitle };
+export { Editor };

@@ -2,19 +2,21 @@ import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-conf
 import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { lazy } from "react";
+import { arrayReducer, mapReducer } from "@shared/api/src/utils/reducer";
+import { date } from "@shared/ui/src/date";
 
-const BasicTableView = lazy(() =>
-  import("@shared/views/src/table/basic").then((module) => ({
-    default: module.BasicTableView,
+const ProposalTable = lazy(() =>
+  import("@shared/views/src/table/proposal-table").then((module) => ({
+    default: module.ProposalTable,
   }))
 );
 export default WidgetFactory.createWidget({
-  name: "Proposals Table",
-  displayName: "proposals table",
+  name: "active-proposals",
+  displayName: "Executed Proposals",
   icon: "Table",
   group: "General",
   dataFetcher: {
-    key: "proposals-table",
+    key: "active-proposals",
     collector: (props) => {
       return {
         requestVariables: {
@@ -31,18 +33,26 @@ export default WidgetFactory.createWidget({
 
       const proposalsMeta = await sourceFetcher.proposalsMeta.query({
         first: args.requestVariables.first,
+        orderBy: "createdTimestamp",
+        orderDirection: "desc",
+        status: "EXECUTED",
       });
 
       return {
         data: proposalsMeta.map((proposal) => ({
           id: proposal.id,
+          nounId: proposal.nounId || undefined,
           title: proposal.title,
           status: proposal.status,
+          categories: proposal.categories,
+          budget: proposal.totalBudget,
+          endAt: date(proposal.endsAt).fromNow(),
+          startAt: date(proposal.startsAt).fromNow(),
         })),
       };
     },
   },
-  View: BasicTableView,
+  View: ProposalTable,
   Config: () => (
     <ViewPropsConfig
       props={[{ name: "first", type: "number", label: "First" }]}
@@ -50,9 +60,14 @@ export default WidgetFactory.createWidget({
   ),
   initialProps: {
     first: 5,
+    title: "Active Proposals",
     headerMap: {
+      nounId: "Builder",
       title: "Title",
       status: "Status",
+      categories: "Categories",
+      budget: "Budget",
+      startAt: "Starts In",
     },
     className: "",
     layout: {

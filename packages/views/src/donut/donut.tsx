@@ -34,13 +34,11 @@ const cities = [
   },
 ];
 
-const valueFormatter = (number: number) => `$ ${number}`;
-
 export interface DonutProps {
   data: Record<string, unknown>[];
   className?: string;
   index: string;
-
+  valueFormatter?: (number: number) => string;
   category: string;
 }
 /**
@@ -51,7 +49,13 @@ export interface DonutProps {
  * @param category - A string representing the category of the chart.
  * @returns A React component that displays a donut chart.
  */
-export const Donut = ({ data, className, index, category }: DonutProps) => {
+export const Donut = ({
+  data,
+  className,
+  index,
+  category,
+  valueFormatter,
+}: DonutProps) => {
   const colors = useNode((node) => node.data.props.colors!);
   const { setNode } = useNodeActions();
 

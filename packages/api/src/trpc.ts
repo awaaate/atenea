@@ -5,7 +5,7 @@ import superJson from 'superjson'
 const t = initTRPC.context<Context>().create({
     transformer: superJson,
     errorFormatter({ shape, error }) {
-        console.error(error)
+        console.error(error.message)
         return shape
     },
 })

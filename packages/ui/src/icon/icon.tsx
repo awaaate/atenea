@@ -75,6 +75,8 @@ import {
   ExternalLink,
   Eye,
   Table,
+  Clock,
+  CalendarClock,
 } from "lucide-react";
 import React from "react";
 
@@ -82,6 +84,8 @@ import { cn } from "../lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
 const Icons = {
+  Clock,
+  CalendarClock,
   ArrowDown,
   ArrowUp,
   ArrowLeft,
