@@ -245,7 +245,7 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
     }
     return {
       ...data,
-      categories: extraData ? extraData.Category.split(",") : [],
+      categories: extraData ? extraData.Category.split(",") : [] as string[],
       totalBudget: extraData ? extraData.ETH : "",
     }
   })

@@ -120,5 +120,4 @@ export default WidgetFactory.createWidget({
       props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}
     />
   ),
-  skeleton: BAR_CHART_SKELETON,
 });

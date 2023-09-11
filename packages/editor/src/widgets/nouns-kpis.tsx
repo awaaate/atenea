@@ -1,25 +1,17 @@
-import { ComponentPropsWithoutRef, lazy } from "react";
-import { widgetFactory } from "../widget/factory";
-import { WidgetFactory } from "../widget/widget-factory";
-import { joinViews } from "@shared/views/src/join-views";
-import { BAR_CHART_SKELETON } from "../widget/skeletons";
-import { trpc } from "../lib/trpc";
-import { dataSourceRouter } from "@shared/api/src/api/data-source";
-import { sourceFetcher } from "../lib/source-fetcher";
 import {} from "@shared/api/src/utils/reducer";
+import { joinViews } from "@shared/views/src/join-views";
+import { ComponentPropsWithoutRef, lazy } from "react";
+import { sourceFetcher } from "../lib/source-fetcher";
+import { WidgetFactory } from "../widget/widget-factory";
+import { ProposalStatus } from "@shared/api/src/api/data-source/proposals-meta/types";
 
-const CardAndMetricAndIcon = lazy(() =>
-  import("@shared/views/src/kip-card/card-metric-icon").then((module) => ({
-    default: module.CardAndMetricAndIcon,
+const CardAndMetric = lazy(() =>
+  import("@shared/views/src/kip-card/card-metric").then((module) => ({
+    default: module.MetricAndCard,
   }))
 );
 
-const ComposedViews = joinViews(
-  CardAndMetricAndIcon,
-  CardAndMetricAndIcon,
-  CardAndMetricAndIcon,
-  CardAndMetricAndIcon
-);
+const ComposedViews = joinViews(CardAndMetric, CardAndMetric, CardAndMetric);
 
 export default WidgetFactory.createWidget({
   name: "nouns-kpis",
@@ -33,48 +25,37 @@ export default WidgetFactory.createWidget({
     async fetcher(args) {
       const data = await sourceFetcher.proposalsMeta.query({
         orderBy: "createdTimestamp",
-        first: 100,
+        first: 1000,
       });
 
       const totalProposals = data.length;
-      const totalActiveProposals = data.filter(
-        (proposal) => proposal.status === "ACTIVE"
-      ).length;
 
       const totalExecutedProposals = data.filter(
-        (proposal) => proposal.status === "EXECUTED"
+        (proposal) => proposal.status === ProposalStatus.Succeeded
       ).length;
-
-      const winRate = totalExecutedProposals / totalProposals;
+      const hola = "hola";
 
       return {
         viewsProps: [
           {
             name: "Total Proposals",
             metric: `${totalProposals} Proposals`,
-            icon: "Star" as const,
           },
+
           {
-            name: "Total Active Proposals",
-            metric: `${totalActiveProposals} Proposals`,
-            icon: "BarChart" as const,
-          },
-          {
-            name: "Total Executed Proposals",
+            name: "Executed Proposals",
             metric: `${totalExecutedProposals} Proposals`,
-            icon: "Check" as const,
           },
           {
-            name: "Win Rate",
-            metric: `${winRate} %`,
-            icon: "Trophy" as const,
+            name: "Denied Proposals",
+            metric: `${totalProposals - totalExecutedProposals} Proposals`,
           },
         ],
       };
     },
   },
   View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-4 mx-4">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-3 mx-4">
       <ComposedViews {...props} />
     </div>
   ),

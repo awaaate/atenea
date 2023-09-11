@@ -1,6 +1,6 @@
 import { IconName, Icon } from "@shared/ui/src/icon";
 import React from "react";
-import { CardAndMetric } from "./card-metric";
+import { Metric } from "./card-metric";
 import { Card } from "@shared/ui/src/card";
 
 interface CardAndMetricAndIconProps {
@@ -22,7 +22,7 @@ export const CardAndMetricAndIcon: React.FC<CardAndMetricAndIconProps> = ({
           size="xl"
         />
         <div className="flex flex-col">
-          <CardAndMetric name={name} metric={metric} />
+          <Metric name={name} metric={metric} />
         </div>
       </div>
     </>
