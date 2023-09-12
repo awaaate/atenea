@@ -54,7 +54,7 @@ export const generateNounImage = async (nounId: string) => {
 
 
 
-  const svgBinary = buildSVG(parts, palette, background);
+  const svgBinary = buildSVG(parts, palette, "d5d7e1");
 
 
   return svgBinary

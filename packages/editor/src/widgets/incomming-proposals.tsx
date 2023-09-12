@@ -39,16 +39,22 @@ export default WidgetFactory.createWidget({
       });
 
       return {
-        data: proposalsMeta.map((proposal) => ({
-          id: proposal.id,
-          nounId: proposal.nounId || undefined,
-          title: proposal.title,
-          status: proposal.status,
-          categories: proposal.categories,
-          budget: proposal.totalBudget,
-          endAt: date(proposal.endsAt).fromNow(),
-          startAt: date(proposal.startsAt).fromNow(),
-        })),
+        data: proposalsMeta
+          .map((proposal) => ({
+            id: proposal.id,
+            nounId: proposal.nounId || undefined,
+            title: proposal.title,
+            status: proposal.status,
+            categories: proposal.categories,
+            budget: proposal.totalBudget + " ETH",
+            endAt: date(proposal.endsAt).fromNow(),
+            startAt: date(proposal.startsAt).fromNow(),
+          }))
+          .sort((a, b) => {
+            return (
+              new Date(a.startAt).getTime() - new Date(b.startAt).getTime()
+            );
+          }),
       };
     },
   },
@@ -60,7 +66,7 @@ export default WidgetFactory.createWidget({
   ),
   initialProps: {
     first: 5,
-    title: "Active Proposals",
+    title: "Incomming Proposals",
     headerMap: {
       nounId: "Builder",
       title: "Title",

@@ -17,7 +17,7 @@ interface ProposalTableProps {
   title: string;
   nounId?: number;
   status: string;
-  budget: number;
+  budget: number | string;
   categories: string[];
   startAt: string;
   endAt: string;

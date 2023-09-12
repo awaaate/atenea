@@ -240,13 +240,13 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
       return {
         ...data,
         categories: ["Uncategorized"],
-        totalBudget: data.values.reduce((acc, curr) => acc + curr, 0) / 1e18,
+        totalBudget: Number((data.values.reduce((acc, curr) => acc + curr, 0) / 1e18).toFixed(2)),
       }
     }
     return {
       ...data,
       categories: extraData ? extraData.Category.split(",") : [] as string[],
-      totalBudget: extraData ? extraData.ETH : "",
+      totalBudget: extraData ? Number(Number(extraData?.ETH || "0").toFixed(2)) : 0,
     }
   })
 }

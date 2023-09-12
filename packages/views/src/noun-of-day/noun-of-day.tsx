@@ -22,15 +22,15 @@ export const NounOfDay: React.FC<NounOfDayProps> = ({
       <div
         className="w-full flex item-center justify-center p-2  "
         style={{
-          background: "#e1d7d5",
+          background: "#d5d7e1",
         }}
       >
         <img
           src={image}
           alt=""
           style={{
-            width: "320px",
-            height: "320px",
+            width: "200px",
+            height: "200px",
           }}
         />
       </div>

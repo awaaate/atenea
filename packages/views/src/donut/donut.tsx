@@ -75,14 +75,14 @@ export const Donut = ({
   }, [colors]);
 
   return (
-    <div className=" h-full flex items-center justify-center flex-1">
+    <div className=" h-full flex items-center justify-center flex-1 ">
       <DonutChart
         data={data}
         category={category}
         colors={colors}
         valueFormatter={valueFormatter}
         index={index}
-        className="w-64 h-64"
+        className="w-[250px] h-[250px]"
       />
     </div>
   );

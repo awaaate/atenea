@@ -38,15 +38,15 @@ export const TreasuryView: React.FC = () => {
       <div className=" flex flex-wrap gap-2   mx-auto">
         {data.map((item) => {
           return (
-            <div className="p-4 min-w-min">
+            <div className="p-4 min-w-[200px] flex-1">
               <div className="flex items-center">
                 <img
                   src={"/images/treasury/" + item.image}
                   alt=""
                   className="icon-xl mr-2"
                 />
-                <div className="text-lg font-semibold mr-2">{item.value}</div>
-                <div className="text-lg font-semibold">{item.name}</div>
+                <div className="text-2xl font-semibold mr-2">{item.value}</div>
+                <div className="text-2xl font-semibold">{item.name}</div>
               </div>
             </div>
           );

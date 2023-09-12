@@ -18,7 +18,7 @@ export default WidgetFactory.createWidget({
   icon: "PieChart",
   Config: () => <ViewColorsConfig />,
   dataFetcher: {
-    key: "proposals-meta",
+    key: "proposals-meta-2",
     collector(props) {
       return {};
     },

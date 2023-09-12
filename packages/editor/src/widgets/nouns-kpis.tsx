@@ -15,9 +15,9 @@ const ComposedViews = joinViews(CardAndMetric, CardAndMetric, CardAndMetric);
 
 export default WidgetFactory.createWidget({
   name: "nouns-kpis",
-  displayName: "Nouns KPIs",
+  displayName: "Nouns Proposals Stats",
   group: "general",
-  icon: "Star",
+  icon: "BarChartHorizontal",
 
   dataFetcher: {
     key: "nouns-kpis",
@@ -55,14 +55,14 @@ export default WidgetFactory.createWidget({
     },
   },
   View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-3 mx-4">
+    <div className="flex gap-2">
       <ComposedViews {...props} />
     </div>
   ),
   initialProps: {
     layout: {
       w: Infinity,
-      h: 12,
+      h: 7,
       x: 0,
       y: 0,
     },

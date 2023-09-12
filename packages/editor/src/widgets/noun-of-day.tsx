@@ -17,10 +17,10 @@ export default WidgetFactory.createWidget({
   initialProps: {
     title: "Noun of Day",
     layout: {
-      w: 9,
+      w: 18,
       x: 0,
       y: 0,
-      h: 12,
+      h: 8,
     },
   },
   Config: () => null,

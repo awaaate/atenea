@@ -15,6 +15,7 @@ import activeProposals from "../widgets/active-proposals";
 import incommingProposals from "../widgets/incomming-proposals";
 import categoriesBudgetDonutChart from "../widgets/categories-budget-donut-chart";
 import categoriesDonutChart from "../widgets/categories-donut-chart";
+import popularTeams from "../widgets/popular-teams";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -24,6 +25,7 @@ widgetFactory.registerWidgetComponent(activeProposals);
 widgetFactory.registerWidgetComponent(incommingProposals);
 widgetFactory.registerWidgetComponent(categoriesBudgetDonutChart);
 widgetFactory.registerWidgetComponent(categoriesDonutChart);
+widgetFactory.registerWidgetComponent(popularTeams);
 //widgetFactory.registerWidgetComponent(proposalsAreaChart);
 widgetFactory.registerWidgetComponent(proposalsBarChart);
 widgetFactory.registerWidgetComponent(proposalBudget);

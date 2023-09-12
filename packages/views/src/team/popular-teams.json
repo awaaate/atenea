@@ -1,0 +1,301 @@
+{
+  "Verbs": {
+    "name": "Verbs",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "Elad",
+        "description": "Solidity developer working full time at Nouns as a member of Verbs. Has actively contributed as a builder since October 2021.",
+        "contact": "https://twitter.com/eladmallel"
+      },
+      {
+        "name": "davidbrai",
+        "description": "Developer working full time at Nouns as a member of Verbs. Has actively contributed as a builder since October 2021.",
+        "contact": "https://twitter.com/davidbrai"
+      }
+    ]
+  },
+  "Nounish": {
+    "name": "Nounish",
+    "category": "Marketing",
+    "members": [
+      {
+        "name": "BeCCO",
+        "description": "Creative part of the Nounish team.",
+        "contact": "https://twitter.com/Pixel_Becco"
+      },
+      {
+        "name": "Goldy",
+        "description": "He is the creator of Nouns Stories and Nounish, and is a part of the founding team of Shark DAO. He is a designer, filmmaker, and owns Noun 116.",
+        "contact": "https://twitter.com/goldypix"
+      },
+      {
+        "name": 142,
+        "description": "Community Lead at Nounish. Involved in the early stages of Verbs and cofounder of The Noun Square. Contributing as a builder since October 2021.",
+        "contact": "https://twitter.com/noun142"
+      },
+      {
+        "name": "Nate Mills",
+        "description": "He is an actor, musician, jingle writer, and visual artist, creator of \"The Sounds of Nouns Series\" and the theme song of Nounish.",
+        "contact": "https://twitter.com/natemillsart"
+      }
+    ]
+  },
+  "Nouns Fair": {
+    "name": "Nouns Fair",
+    "category": "Marketing",
+    "members": [
+      {
+        "name": "Mono",
+        "description": "Co-founder of Nouns Amigos and the Nouns Fair. Specialized in community building and organizing Nounish events. Builder since May 2022.",
+        "contact": "https://twitter.com/0xMonografia"
+      },
+      {
+        "name": "Lex",
+        "description": "Co-founder of Nouns Amigos and the Nouns Fair. Specialized in community building and organizing Nounish events. Builder since May 2022.",
+        "contact": "https://twitter.com/ale_pjimenez"
+      }
+    ]
+  },
+  "Nouns OTG": {
+    "name": "Nouns OTG",
+    "category": "Marketing",
+    "members": [
+      {
+        "name": "Aubtoshi",
+        "description": "Founder of Nouns OTG and a member of the founding team of The Noun Square. Focused on community and expanding Nouns at web 3.0 events worldwide.",
+        "contact": "https://twitter.com/aubtoshiOTG"
+      }
+    ]
+  },
+  "The Noun Square": {
+    "name": "The Noun Square",
+    "category": "Community",
+    "members": [
+      {
+        "name": "Toady Hawk",
+        "description": "Co-founder at The Noun Square and UglyDAO, and a member of the founding team of Nouncil. Focused on the growth of Nounish communities.",
+        "contact": "https://twitter.com/toady_hawk"
+      },
+      {
+        "name": "Aubtoshi",
+        "description": "Founder of Nouns OTG and a member of the founding team of The Noun Square. Focused on community and expanding Nouns at web 3.0 events worldwide.",
+        "contact": "https://twitter.com/aubtoshiOTG"
+      },
+      {
+        "name": "Benbodhi",
+        "description": "Creator of SVG Support, founder of Noun Press and Doing DAO, mod at Gnars, and a member of Nouncil. Backend developer and musician.",
+        "contact": "https://twitter.com/benbodhi"
+      },
+      {
+        "name": "Joshua Fisher",
+        "description": "Creative director specializing in turning ideas into reality. Involved in SharkDAO, Noun Tracks, Fun Noggles, and The Noun Square.",
+        "contact": "https://twitter.com/JoshuaFisher"
+      },
+      {
+        "name": "SuperTightWoody",
+        "description": "Musician and content creator involved in Noun Sounds, Nouns News, PropBox, The Noun Square, and Nouncil.",
+        "contact": "https://twitter.com/SuperTightWoody"
+      },
+      {
+        "name": 142,
+        "description": "Community Lead at Nounish. Involved in the early stages of Verbs and cofounder of The Noun Square. Contributing as a builder since October 2021.",
+        "contact": "https://twitter.com/noun142"
+      },
+      {
+        "name": "RobotFishGirl",
+        "description": "Community lead at Nouns University and a member of The Noun Square. Specializing in content creation and community building",
+        "contact": "https://twitter.com/RobotFishGirl"
+      },
+      {
+        "name": "xargs",
+        "description": "Involved in Nouns Blog, IntenatioNouns, Food Nouns, Nouns News, and The Nouns Square. Specializing in content creation.",
+        "contact": "https://twitter.com/mamaxargs"
+      }
+    ]
+  },
+  "Nerman": {
+    "name": "Nerman",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "JoelCares",
+        "description": "CEO of Lobal Global, video Director, founding member of Nouncil, creator of Nerman.",
+        "contact": "https://twitter.com/JoelCares_"
+      }
+    ]
+  },
+  "Nouns: A Movie": {
+    "name": "Nouns: A Movie",
+    "category": "Art",
+    "members": [
+      {
+        "name": "Zendoubt",
+        "description": "Over 10 years as an animator, ex-resident at Luma, involved in dozens of Marvel films (Black Panther, Doctor Strange...).",
+        "contact": "https://zendoubt.art/"
+      },
+      {
+        "name": "3dprintguy",
+        "description": "Two decades as an animator, former Pixar and Disney animator, YouTube channel with over 370,000 subscribers and more than 45 million views.",
+        "contact": "https://atrium.art/artist/3d-print-guy"
+      },
+      {
+        "name": "HKJay",
+        "description": "A decade as an animator, former Sony and Luma animator, worked on projects including Lego Batman, The Sea Beast, and His Dark Materials, among others.",
+        "contact": "https://twitter.com/its_willyu"
+      },
+      {
+        "name": "William Yu",
+        "description": "Rapped screenwriter featured in top writing fellowships such as the Sundance Episodic Lab and NBCU TV Writers Program.",
+        "contact": "https://twitter.com/its_willyu"
+      }
+    ]
+  },
+  "Nouns Running Club": {
+    "name": "Nouns Running Club",
+    "category": "Community",
+    "members": [
+      {
+        "name": "Adrianmcli",
+        "description": "Ecosystem Developer at Ethereum Foundation and Privacy Scaling. Founder of Nouns Running Club and ETH Vancouver.",
+        "contact": "https://twitter.com/adrianmcli"
+      },
+      {
+        "name": "Necfas",
+        "description": "Co-founder of Nouns Running Club and Nouns Amigos, and founder of Mucho Love.",
+        "contact": "https://twitter.com/necfas"
+      }
+    ]
+  },
+  "Nouns Esports": {
+    "name": "Nouns Esports",
+    "category": "Marketing",
+    "members": [
+      {
+        "name": "Sasquatch",
+        "description": "Founder and contributor of Nouns Esports and community lead at Shark DAO. Specialized in business and community development.",
+        "contact": "https://twitter.com/partsasquatch"
+      },
+      {
+        "name": "Peterpandam",
+        "description": "Currently a professional Dota player, winner of The International, and former CEO of Evil Geniuses. Member of the Nouns Esports team.",
+        "contact": "https://twitter.com/Peterpandam"
+      },
+      {
+        "name": "Maty",
+        "description": "One of the founding members of Nouncil, has been actively engaged with NounsDAO since late 2021.",
+        "contact": "https://twitter.com/matyETH"
+      },
+      {
+        "name": "Brennen",
+        "description": "Member of the Nouns Esports team",
+        "contact": "https://twitter.com/brennen_eth"
+      },
+      {
+        "name": "Oni",
+        "description": "Resident at Nouns, focusing on the Nouns Community Discord and onboarding, as well as a member of Nouns Esports",
+        "contact": "https://twitter.com/apenoun"
+      }
+    ]
+  },
+  "House of Nouns": {
+    "name": "House of Nouns",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "Dadkins",
+        "description": "Ex-Meta AI, ex-Bitpay and Cofounder of Collective XYZ. Team leader at House of Nouns.",
+        "contact": "https://twitter.com/dadkins_"
+      },
+      {
+        "name": "Wojciech Kocjan",
+        "description": "Developer at House of Nouns",
+        "contact": "https://twitter.com/w_kocjan"
+      }
+    ]
+  },
+  "NounsAI Pod": {
+    "name": "NounsAI Pod",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "TheHeroShep",
+        "description": "Product leader at NounsAI Pod",
+        "contact": "https://twitter.com/TheHeroShep"
+      },
+      {
+        "name": "Steve",
+        "description": "Developer at NounsAI Pod",
+        "contact": "https://twitter.com/hrdwrknvrstps"
+      },
+      {
+        "name": "Honkdiddly",
+        "description": "Senior Software & Machine Learning Engineer, member of NounsAI Pod and Nouner.",
+        "contact": "https://twitter.com/honkdiddly"
+      }
+    ]
+  },
+  "Proposals.wtf": {
+    "name": "Proposals.wtf",
+    "category": "Community",
+    "members": [
+      {
+        "name": "Maty",
+        "description": "One of the founding members of Nouncil, has been actively engaged with NounsDAO since late 2021.",
+        "contact": "https://twitter.com/matyETH"
+      }
+    ]
+  },
+  "Agora": {
+    "name": "Agora",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "Yitong",
+        "description": "Project lead and designer behind Vector DAO, also a co-founder, formerly held design and product roles at Coinbase.",
+        "contact": "https://twitter.com/zhayitong?lang=es"
+      },
+      {
+        "name": "0xcaff",
+        "description": "Previously engineer at Coinbase, part of Agora team.",
+        "contact": "https://twitter.com/0xcaff"
+      },
+      {
+        "name": "Tom Taubkin",
+        "description": "Previously engineer at Coinbase, part of Agora team.",
+        "contact": ""
+      },
+      {
+        "name": "Mrtn",
+        "description": "Delegate from nounlets, funded via Prop House as governance historian, deployed Agora on lil nouns, previously pm on nouns.builder, and pm at Google.",
+        "contact": "https://twitter.com/anquetil"
+      }
+    ]
+  },
+  "Prop House": {
+    "name": "Prop House",
+    "category": "Tech",
+    "members": [
+      {
+        "name": "Seneca",
+        "description": "Nounder and part of Prop House funding team.",
+        "contact": "https://twitter.com/cryptoseneca"
+      },
+      {
+        "name": "Cdt",
+        "description": "Developer at Nouns DAO and a member of the Prop House team.",
+        "contact": "https://twitter.com/cdt_eth"
+      },
+      {
+        "name": "devcarrot",
+        "description": "Nounder and part of Prop House funding team.",
+        "contact": "https://twitter.com/carrot_init"
+      },
+      {
+        "name": "Solimander",
+        "description": "Nounder and part of Prop House funding team.",
+        "contact": "https://twitter.com/_solimander_"
+      }
+    ]
+  }
+}
