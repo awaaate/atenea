@@ -62,7 +62,7 @@ export default WidgetFactory.createWidget({
     },
   },
   initialProps: {
-    colors: ["indigo", "blue", "red", "green", "yellow" as const],
+    colors: ["indigo", "blue", "green", "red", "stone" as const],
     title: "Proposals Passed/Canceled",
     layout: {
       w: Infinity,
