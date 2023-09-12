@@ -1,14 +1,12 @@
-import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
-import { WidgetFactory } from "../widget/widget-factory";
-import { sourceFetcher } from "../lib/source-fetcher";
-import { lazy } from "react";
 import { date } from "@shared/ui/src/date";
-import { dataAdapter } from "../lib/utils";
-import { BAR_CHART_SKELETON } from "../widget/skeletons";
+import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
+import { lazy } from "react";
+import { sourceFetcher } from "../lib/source-fetcher";
+import { WidgetFactory } from "../widget/widget-factory";
 
-const BarChartView = lazy(() =>
-  import("@shared/views/src/bar-chart/bar-chart").then((module) => ({
-    default: module.BarChartView,
+const AreaView = lazy(() =>
+  import("@shared/views/src/area/area").then((module) => ({
+    default: module.AreaView,
   }))
 );
 
@@ -25,40 +23,47 @@ export default WidgetFactory.createWidget({
     },
     async fetcher(args) {
       const proposals = await sourceFetcher.proposalsMeta.query({
-        first: 100,
+        first: 1000,
         orderBy: "createdTimestamp",
       });
+      const chardata = [] as Record<string, any>[];
 
-      const data = dataAdapter(
-        proposals,
-        (proposal) => ({
-          [proposal.status]: proposal.values.reduce(
-            (acc, curr) => acc + Number(curr),
-            0
-          ),
-        }),
-        {
-          PENDING: 0,
-          ACTIVE: 0,
-          CANCELLED: 0,
-          VETOED: 0,
-          QUEUED: 0,
-          EXECUTED: 0,
+      let acumulativeBudgetMap = {} as Record<string, number>;
+
+      for (let i = 0; i < proposals.length; i++) {
+        const proposal = proposals[i];
+
+        if (!acumulativeBudgetMap[proposal.status]) {
+          acumulativeBudgetMap[proposal.status] = 0;
         }
-      );
-      return {
-        data: Object.keys(data).map((key) => ({
-          name: key.toLowerCase(),
-          value: data[key],
-        })),
+        acumulativeBudgetMap[proposal.status] += proposal.totalBudget;
+        let acumulativeBudget = acumulativeBudgetMap[proposal.status];
 
-        index: "name",
-        categories: ["value"],
+        chardata.push({
+          date: date(proposal.createdTimestamp).format("YYYY:MM"),
+          acumulativeBudget,
+          ...acumulativeBudgetMap,
+        });
+      }
+
+      console.log("chardata: ", chardata);
+
+      return {
+        data: chardata.map((value) => ({
+          ...value,
+        })),
+        valueFormatter(number) {
+          return `${number.toLocaleString()} ETH`;
+        },
+
+        index: "date",
+        categories: ["Pending", "Voting", "Succeeded", "Defeated", "Cancelled"],
       };
     },
   },
   initialProps: {
-    colors: ["indigo" as const],
+    colors: ["indigo", "blue", "red", "green", "yellow" as const],
+    title: "Proposals Passed/Canceled",
     layout: {
       w: Infinity,
       h: 12,
@@ -66,5 +71,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  View: BarChartView,
+  View: AreaView,
 });

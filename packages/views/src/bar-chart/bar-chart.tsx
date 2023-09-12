@@ -8,6 +8,7 @@ interface BarChartViewProps {
   data: Record<string, unknown>[];
   categories: string[];
   index: string;
+  valueFormatter?: (number: number) => string;
 }
 
 export function BarChartView(props: BarChartViewProps) {
@@ -22,6 +23,7 @@ export function BarChartView(props: BarChartViewProps) {
       data={data}
       categories={categories}
       index={index}
+      valueFormatter={props.valueFormatter}
     />
   );
 }
