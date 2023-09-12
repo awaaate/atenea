@@ -16,7 +16,7 @@ export default WidgetFactory.createWidget({
   icon: "Table",
   group: "General",
   dataFetcher: {
-    key: "proposals-table",
+    key: "incomming-proposals",
     collector: (props) => {
       return {
         requestVariables: {
