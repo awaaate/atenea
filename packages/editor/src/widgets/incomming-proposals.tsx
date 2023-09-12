@@ -46,7 +46,7 @@ export default WidgetFactory.createWidget({
             title: proposal.title,
             status: proposal.status,
             categories: proposal.categories,
-            budget: proposal.totalBudget + " ETH",
+            budget: proposal.totalBudget.toLocaleString() + " ETH",
             endAt: date(proposal.endsAt).fromNow(),
             startAt: date(proposal.startsAt).fromNow(),
           }))
@@ -78,7 +78,7 @@ export default WidgetFactory.createWidget({
     className: "",
     layout: {
       w: Infinity,
-      h: 12,
+      h: 23,
       x: 0,
       y: 0,
     },

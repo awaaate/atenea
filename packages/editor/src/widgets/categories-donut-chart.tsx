@@ -66,8 +66,8 @@ export default WidgetFactory.createWidget({
     colors: ["stone" as const],
     title: "Props founded by category",
     layout: {
-      w: Infinity,
-      h: 12,
+      w: 7,
+      h: 16,
       x: 0,
       y: 0,
     },

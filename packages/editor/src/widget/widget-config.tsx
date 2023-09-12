@@ -1,11 +1,7 @@
 import React from "react";
 
-import { WidgetSizeButton } from "../components/widget-size-button/widget-size-button";
 import { useNode, useNodeActions } from "../engine/nodes";
-import { WidgetConfigSection } from "./widget-config-section";
-import { BackgroundPicker } from "@shared/ui/src/background-picker";
-import { Slider } from "@shared/ui/src/slider";
-import { cn } from "@shared/ui/src/utils";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 
 interface WidgetConfigProps {
   children?: React.ReactNode;
@@ -24,10 +20,10 @@ export const WidgetConfig: React.FC<WidgetConfigProps> = ({ children }) => {
   const sizes = [3, 6, 9, 12];
 
   return (
-    <div className="col-span-1">
+    <ScrollArea className="col-span-1 h-[calc(100vh-50px)] pb-8 ">
       {children}
 
       {process.env.NODE_ENV === "development" && JSON.stringify(layout)}
-    </div>
+    </ScrollArea>
   );
 };

@@ -31,15 +31,14 @@ export default WidgetFactory.createWidget({
         (acc, curr) => {
           if (!curr?.categories) {
             acc["Uncategorized"] = acc["Uncategorized"]
-              ? acc["Uncategorized"] + curr?.totalBudget || 0
+              ? acc["Uncategorized"] +
+                (curr && curr.totalBudget ? curr.totalBudget : 0)
               : 0;
             return acc;
           }
           curr.categories.forEach((category: string) => {
-            console.log("curr: ", curr);
             category = category.toLocaleLowerCase().trim() || "Uncategorized";
             const currentValue = acc[category];
-            console.log("currentValue: ", currentValue);
             acc[category] =
               typeof currentValue === "number"
                 ? currentValue + curr.totalBudget
@@ -49,29 +48,27 @@ export default WidgetFactory.createWidget({
         },
         data
       );
-      console.log("categories: ", categories);
       const finalData = Object.keys(categories).map((key) => ({
         name: key.trim() || "Uncategorized",
         Budget: categories[key],
       }));
-      console.log("finalData: ", finalData);
 
       return {
         data: finalData,
         index: "name",
         category: "Budget",
         valueFormatter(number) {
-          return `${number} Eth`;
+          return `${number.toLocaleString()} Eth`;
         },
       };
     },
   },
   initialProps: {
-    colors: ["stone" as const],
+    colors: ["gray" as const],
     title: "Props budget founded by category",
     layout: {
-      w: Infinity,
-      h: 12,
+      w: 7,
+      h: 16,
       x: 0,
       y: 0,
     },

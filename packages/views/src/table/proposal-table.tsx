@@ -32,6 +32,7 @@ export const ProposalTable: React.FC<{
   >;
 
   const headers = Object.keys(headerMap) as (keyof ProposalTableProps)[];
+
   return (
     <div className="w-full h-full">
       <Table className={cn("w-full h-full")}>
@@ -45,17 +46,18 @@ export const ProposalTable: React.FC<{
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row) => (
-            <TableRow key={row.id}>
-              {Object.keys(row).map((key: any) => {
+          {data.map((row, rowIndex) => (
+            <TableRow key={rowIndex}>
+              {headers.map((header) => {
                 //check if it's enabled by the headers map
-                if (!headers.includes(key)) {
-                  return null;
-                }
-                const value = row[key];
-                if (key === "status") {
+
+                const value = row[header];
+
+                console.log(header, "table  key");
+                console.log(value, "table  value");
+                if (header === "status") {
                   return (
-                    <TableCell key={key}>
+                    <TableCell key={header}>
                       <Badge
                         variant={
                           value === "Succeeded"
@@ -70,18 +72,17 @@ export const ProposalTable: React.FC<{
                     </TableCell>
                   );
                 }
-                if (key === "categories") {
+                if (header === "categories") {
                   return (
-                    <TableCell key={key}>
+                    <TableCell key={header}>
                       <Badge color="">{value}</Badge>
                     </TableCell>
                   );
                 }
-                if (key === "nounId") {
-                  console.log(value, " value");
+                if (header === "nounId") {
                   return (
                     <TableCell
-                      key={key}
+                      key={header}
                       className="flex item-center justify-center "
                     >
                       {value ? (
@@ -91,13 +92,17 @@ export const ProposalTable: React.FC<{
                           className="icon-xl rounded-full"
                         />
                       ) : (
-                        <Avatar key={key} name="Nounner" className="icon-xl" />
+                        <Avatar
+                          key={header}
+                          name="Nounner"
+                          className="icon-xl"
+                        />
                       )}
                     </TableCell>
                   );
                 }
 
-                return <TableCell key={key}>{value}</TableCell>;
+                return <TableCell key={header}>{value}</TableCell>;
               })}
             </TableRow>
           ))}

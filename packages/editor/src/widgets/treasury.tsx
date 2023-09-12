@@ -16,7 +16,7 @@ export default WidgetFactory.createWidget({
   initialProps: {
     title: "Treasury",
     layout: {
-      w: 9,
+      w: Infinity,
       x: 0,
       y: 0,
       h: 12,

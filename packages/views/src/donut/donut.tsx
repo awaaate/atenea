@@ -67,7 +67,7 @@ export const Donut = ({
       setNode((node) => {
         node.data.props.colors = Array.from(
           { length: pieElements },
-          (_, i) => "indigo" as const
+          (_, i) => "gray" as const
         );
         return node;
       });
