@@ -1,5 +1,277 @@
 [
   {
+    "No": 371,
+    "Name": "Noun en Scène (aka Mise en Scène with Noun 'Muppets')",
+    "ETH": 0,
+    "USDC": 90000,
+    "Total prop value": 90000,
+    "True cost": "",
+    "Nouns": "Yes",
+    "Has extra ETH": "No",
+    "Category": "Art, Droposal, Marketing",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 370,
+    "Name": "Nouns for sale (76, 81, and 208)",
+    "ETH": 0,
+    "USDC": 0,
+    "Total prop value": 0,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Other",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 369,
+    "Name": "Commercialization of the \"Noggle Changer\"!⌐◨-◨",
+    "ETH": 35,
+    "USDC": 0,
+    "Total prop value": 55675.2,
+    "True cost": 55675.2,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Marketing, Physical",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 368,
+    "Name": "Nouns iOS Gov Client",
+    "ETH": 67,
+    "USDC": 0,
+    "Total prop value": 106578.24,
+    "True cost": 106578.24,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Tech",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 367,
+    "Name": "Update Candidate Submission Fee",
+    "ETH": 0,
+    "USDC": 0,
+    "Total prop value": 0,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Operational",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 366,
+    "Name": "I would also like 200 ETH please",
+    "ETH": 200,
+    "USDC": "",
+    "Total prop value": 320882,
+    "True cost": "",
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Other",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 365,
+    "Name": "(w)stETH to rETH Treasury Diversification 🐮",
+    "ETH": 500,
+    "USDC": "",
+    "Total prop value": 802205,
+    "True cost": "",
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Staking/Yield",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 364,
+    "Name": "⌐◨-◨ Season 3 Grants: Bring Back the Builders",
+    "ETH": 230,
+    "USDC": "",
+    "Total prop value": 369014.3,
+    "True cost": 369014.3,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Community, Marketing",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 363,
+    "Name": "Bring a million shredders onchain",
+    "ETH": 200,
+    "USDC": "",
+    "Total prop value": 320882,
+    "True cost": 320882,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Community, Marketing",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 362,
+    "Name": "Place Dustin Yellin's Nouns Sculpture at Zero Bond (NYC)",
+    "ETH": 9,
+    "USDC": "",
+    "Total prop value": 14439.69,
+    "True cost": 14439.69,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Art, Marketing, Physical",
+    "Voting": "Passed",
+    "Status": "On-schedule",
+    "Team": "Dustin Yellin (https://www.notion.so/Dustin-Yellin-05891b67c7af489c8d25ef97b1abb040?pvs=21)",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 361,
+    "Name": "Withdraw from the TokenBuyer/Payer contracts",
+    "ETH": "",
+    "USDC": 168463.05,
+    "Total prop value": 168463.05,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Operational",
+    "Voting": "Passed",
+    "Status": "Completed",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 360,
+    "Name": "Prop House IRL Experience 💡",
+    "ETH": 9,
+    "USDC": 9500,
+    "Total prop value": 23940,
+    "True cost": 23940,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Community, Marketing",
+    "Voting": "Defeated",
+    "Status": "Cancelled",
+    "Team": "JP (https://www.notion.so/JP-60241cc8390c4f7c9006ed1a25ff1322?pvs=21), debinvest (https://www.notion.so/debinvest-3bc4c8bd6cf047e28e7e87b1a081dd02?pvs=21)",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 359,
+    "Name": "Nouns DAO V3 Upgrade follow up proposal",
+    "ETH": "",
+    "USDC": "",
+    "Total prop value": "",
+    "True cost": "",
+    "Nouns": "",
+    "Has extra ETH": "",
+    "Category": "",
+    "Voting": "",
+    "Status": "",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 358,
+    "Name": "Join NOUNS At Your Own Risk; a note on v3 for prospective members",
+    "ETH": 0,
+    "USDC": 0,
+    "Total prop value": 0,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "No",
+    "Category": "Other",
+    "Voting": "Canceled",
+    "Status": "Cancelled",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 357,
+    "Name": "Nouns DAO V3 migration cleanup",
+    "ETH": 0,
+    "USDC": 0,
+    "Total prop value": 0,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "Yes",
+    "Category": "Operational",
+    "Voting": "Canceled",
+    "Status": "Cancelled",
+    "Team": "",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
+    "No": 356,
+    "Name": "Nouns DAO V3 upgrade, including Nouns Fork (Will Not Cancel)",
+    "ETH": 0,
+    "USDC": 0,
+    "Total prop value": 0,
+    "True cost": 0,
+    "Nouns": "No",
+    "Has extra ETH": "Yes",
+    "Category": "Operational",
+    "Voting": "Passed",
+    "Status": "Completed",
+    "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
+    "Product": "",
+    "Discussion links": "",
+    "Press/media/social links": ""
+  },
+  {
     "No": 355,
     "Name": "Nounify Ethereum Singapore with Public Goods",
     "ETH": 0,
@@ -14,11 +286,7 @@
     "Team": "QZ (https://www.notion.so/QZ-b3b53984940e42a4a697c7db66493b48?pvs=21), wideeyekarl (https://www.notion.so/wideeyekarl-8dfe190f2862449ba3570bde8c94ce93?pvs=21), Pico (https://www.notion.so/Pico-9b0266b87e3d45e7bc1a5203754753bc?pvs=21), Angelhack (https://www.notion.so/Angelhack-b8ad16211b3143bd935dbc8e744d4f70?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 354,
@@ -35,11 +303,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 353,
@@ -56,11 +320,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 352,
@@ -77,11 +337,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 351,
@@ -98,11 +354,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21), amiyoko (https://www.notion.so/amiyoko-58ab721d20c54585be1e06828c401d3d?pvs=21), Facu Serif (https://www.notion.so/Facu-Serif-86998e4e814a42d0852b729c97352f0d?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21), tummlin (https://www.notion.so/tummlin-faed6203924b4dbdab8cdf36d55c90fc?pvs=21), modrovsky (https://www.notion.so/modrovsky-fa74144d6a6d4283a8b7e6f8952757b1?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 350,
@@ -119,11 +371,7 @@
     "Team": "Dustin Yellin (https://www.notion.so/Dustin-Yellin-05891b67c7af489c8d25ef97b1abb040?pvs=21), max-power (https://www.notion.so/max-power-74470f34717d485990ae98757ddca67f?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 349,
@@ -140,11 +388,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 348,
@@ -161,11 +405,7 @@
     "Team": "krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), modrovsky (https://www.notion.so/modrovsky-fa74144d6a6d4283a8b7e6f8952757b1?pvs=21), amiyoko (https://www.notion.so/amiyoko-58ab721d20c54585be1e06828c401d3d?pvs=21), tummlin (https://www.notion.so/tummlin-faed6203924b4dbdab8cdf36d55c90fc?pvs=21), Facu Serif (https://www.notion.so/Facu-Serif-86998e4e814a42d0852b729c97352f0d?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 347,
@@ -182,11 +422,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 346,
@@ -203,11 +439,7 @@
     "Team": "yitong (VectorDAO) (https://www.notion.so/yitong-VectorDAO-bdd2de42d14f40a3b27415614945ed2d?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 345,
@@ -224,11 +456,7 @@
     "Team": "maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "http://proposal.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 344,
@@ -245,11 +473,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 343,
@@ -266,11 +490,7 @@
     "Team": "WNX (Voadz) (https://www.notion.so/WNX-Voadz-3cb97d8645ec48bf950ed89df0a26855?pvs=21), Nero One (https://www.notion.so/Nero-One-e453012671d14d229b5776411ea7e402?pvs=21)",
     "Product": "https://cc0-lib.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 342,
@@ -287,11 +507,7 @@
     "Team": "beautifulnfts (https://www.notion.so/beautifulnfts-5e421c3786d54e22b003088c347afc2d?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 341,
@@ -308,11 +524,7 @@
     "Team": "Keolaization (https://www.notion.so/Keolaization-c25683fad29949f2b0acdd6c010fb80d?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 340,
@@ -329,11 +541,7 @@
     "Team": "TheBower (https://www.notion.so/TheBower-8d8c1bd3b1c443a5b4a0ed081f512754?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 339,
@@ -350,11 +558,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21), jhee (https://www.notion.so/jhee-2ad71711881f4111a7bb8646f992f7c3?pvs=21), duckhead (https://www.notion.so/duckhead-d8d5ad32b32b47a08077769e1cc7097b?pvs=21), Morph (https://www.notion.so/Morph-0c667fc2c1f04fb89c31cfe03adc970b?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 338,
@@ -371,11 +575,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 337,
@@ -392,11 +592,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 336,
@@ -413,11 +609,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 335,
@@ -434,11 +626,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 334,
@@ -455,11 +643,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 333,
@@ -476,11 +660,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 332,
@@ -497,11 +677,7 @@
     "Team": "",
     "Product": "https://etherscan.io/tx/0xdc47968e0f3e182027a3b59cac94b753153d5351152f6c5627e4f3ec2c6faa0a",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 331,
@@ -518,11 +694,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 330,
@@ -539,11 +711,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 329,
@@ -560,11 +728,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 328,
@@ -581,11 +745,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), max-power (https://www.notion.so/max-power-74470f34717d485990ae98757ddca67f?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 327,
@@ -602,11 +762,7 @@
     "Team": "Dustin Yellin (https://www.notion.so/Dustin-Yellin-05891b67c7af489c8d25ef97b1abb040?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 326,
@@ -623,11 +779,7 @@
     "Team": "necfas (https://www.notion.so/necfas-24a8c66cba8c47b5aeaefdbae10fda1a?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 325,
@@ -644,11 +796,7 @@
     "Team": "Luca Netz (https://www.notion.so/Luca-Netz-9befe360d74948bf9279c416ebad1f90?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 324,
@@ -665,11 +813,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 323,
@@ -686,11 +830,7 @@
     "Team": "fabioseva (https://www.notion.so/fabioseva-f1152596357d4a74bbc8c5b9bfff2994?pvs=21), JP (https://www.notion.so/JP-60241cc8390c4f7c9006ed1a25ff1322?pvs=21)",
     "Product": "https://www.cervejarianarcose.com.br/public-good-narcose\n(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 322,
@@ -707,11 +847,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 321,
@@ -728,11 +864,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 320,
@@ -749,11 +881,7 @@
     "Team": "",
     "Product": "https://twitter.com/0x70626a/status/1684936056443969536",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 319,
@@ -770,11 +898,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 318,
@@ -791,11 +915,7 @@
     "Team": "kerimbonia (https://www.notion.so/kerimbonia-02c6ade51c2d445294ea695817778cd4?pvs=21), Kwik (https://www.notion.so/Kwik-16d8e44cc0f045a2a30b161d87e8a504?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 317,
@@ -812,11 +932,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21)",
     "Product": "https://nouns.movie/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 316,
@@ -833,11 +949,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 315,
@@ -854,11 +966,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 314,
@@ -875,11 +983,7 @@
     "Team": "Wilson Cusack (https://www.notion.so/Wilson-Cusack-e4ad30bb12e349d9aa83d8cb0bf619bc?pvs=21)",
     "Product": "https://www.voter.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 313,
@@ -896,11 +1000,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 312,
@@ -917,11 +1017,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 311,
@@ -938,11 +1034,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 310,
@@ -959,11 +1051,7 @@
     "Team": "arash negahban (https://www.notion.so/arash-negahban-db456a870d7943fbb7a483705e6224ea?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 309,
@@ -980,11 +1068,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 308,
@@ -1001,11 +1085,7 @@
     "Team": "Nounsfes (https://www.notion.so/Nounsfes-4212515c887847f78740c3851e54dc84?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 307,
@@ -1022,11 +1102,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 306,
@@ -1043,11 +1119,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 305,
@@ -1064,11 +1136,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 304,
@@ -1085,11 +1153,7 @@
     "Team": "Noun 40 (https://www.notion.so/Noun-40-4de5d629ce3f4c41bdaad8f777be506b?pvs=21)",
     "Product": "https://relay.ultrasound.money/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 303,
@@ -1106,11 +1170,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 302,
@@ -1127,11 +1187,7 @@
     "Team": "",
     "Product": "https://code4rena.com/reports/2023-07-nounsdao",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "No",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 301,
@@ -1148,11 +1204,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 300,
@@ -1169,11 +1221,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 299,
@@ -1190,11 +1238,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 298,
@@ -1211,11 +1255,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 297,
@@ -1232,11 +1272,7 @@
     "Team": "WNX (Voadz) (https://www.notion.so/WNX-Voadz-3cb97d8645ec48bf950ed89df0a26855?pvs=21), Nero One (https://www.notion.so/Nero-One-e453012671d14d229b5776411ea7e402?pvs=21), Diqalurima (https://www.notion.so/Diqalurima-2c734d867fd248afb50b2483c5638def?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 296,
@@ -1253,11 +1289,7 @@
     "Team": "adrianmcli (https://www.notion.so/adrianmcli-84e23c956c5e4ded846a176f30d723f6?pvs=21), necfas (https://www.notion.so/necfas-24a8c66cba8c47b5aeaefdbae10fda1a?pvs=21)",
     "Product": "https://twitter.com/NounsRC",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 295,
@@ -1274,11 +1306,7 @@
     "Team": "JP (https://www.notion.so/JP-60241cc8390c4f7c9006ed1a25ff1322?pvs=21), Debussy (https://www.notion.so/Debussy-c820259c7a46460f8184b0f40609ef84?pvs=21), Guiriba (https://www.notion.so/Guiriba-45ff039879bf4272943b3eebd2b89a92?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 294,
@@ -1295,11 +1323,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 293,
@@ -1316,11 +1340,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 292,
@@ -1337,11 +1357,7 @@
     "Team": "krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 291,
@@ -1358,11 +1374,7 @@
     "Team": "Matthew (evav) (https://www.notion.so/Matthew-evav-12fa8981cc56408794fab1c22bcc44fd?pvs=21), Osama (https://www.notion.so/Osama-7bb2c7bdfac04ed182388fcb8e41237d?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "Audit report: https://0xmacro.com/library/audits/nouns-stream-1.html",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "Audit report: https://0xmacro.com/library/audits/nouns-stream-1.html"
   },
   {
     "No": 290,
@@ -1379,11 +1391,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 289,
@@ -1400,11 +1408,7 @@
     "Team": "Becco (https://www.notion.so/Becco-40bcf2dbb9bd4b70b657785e050b3cf8?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Nate Mills (https://www.notion.so/Nate-Mills-426428fc59e146c48529e727f8c6f016?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 288,
@@ -1421,11 +1425,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Nate Mills (https://www.notion.so/Nate-Mills-426428fc59e146c48529e727f8c6f016?pvs=21)",
     "Product": "https://www.nounish.world/mint",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 287,
@@ -1442,11 +1442,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "https://www.nounworks.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 286,
@@ -1463,11 +1459,7 @@
     "Team": "Noun 426 (https://www.notion.so/Noun-426-e4f5160a85f341de977a69d7aa8b52ff?pvs=21), Noun 587 (https://www.notion.so/Noun-587-c4e6135e55d1464d8b14ceee0fcdef8e?pvs=21)",
     "Product": "https://twitter.com/nounwipes/status/1684426715202985984",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/nounwipes\nhttps://www.instagram.com/nounwipes/https://www.facebook.com/nounwipes",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounwipes\nhttps://www.instagram.com/nounwipes/https://www.facebook.com/nounwipes"
   },
   {
     "No": 285,
@@ -1484,11 +1476,7 @@
     "Team": "JP (https://www.notion.so/JP-60241cc8390c4f7c9006ed1a25ff1322?pvs=21), Debussy (https://www.notion.so/Debussy-c820259c7a46460f8184b0f40609ef84?pvs=21), Guiriba (https://www.notion.so/Guiriba-45ff039879bf4272943b3eebd2b89a92?pvs=21), illustradora (https://www.notion.so/illustradora-06293f3e37304518a2f1fc94db5bca19?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 284,
@@ -1505,11 +1493,7 @@
     "Team": "Snax (https://www.notion.so/Snax-2d91687458064ccc8bab53859004ad0d?pvs=21)",
     "Product": "https://twitter.com/Pizza_DAO/status/1662201358156546049",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 283,
@@ -1526,11 +1510,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 282,
@@ -1547,11 +1527,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 281,
@@ -1568,11 +1544,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 280,
@@ -1589,11 +1561,7 @@
     "Team": "DigitalOil (https://www.notion.so/DigitalOil-9a34de8a37c945b980ff301d0e849896?pvs=21)",
     "Product": "https://www.nftr.name/#/robot-details/0x9c8ff314c9bc7f6e59a9d9225fb22946427edc03/687",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 279,
@@ -1610,11 +1578,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 278,
@@ -1631,11 +1595,7 @@
     "Team": "Wilson Cusack (https://www.notion.so/Wilson-Cusack-e4ad30bb12e349d9aa83d8cb0bf619bc?pvs=21)",
     "Product": "https://zora.co/collect/0x9d90669665607f08005cae4a7098143f554c59ef\n\nhttps://twitter.com/coinbase/status/1656352985935405056",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 277,
@@ -1652,11 +1612,7 @@
     "Team": "tigris (https://www.notion.so/tigris-dd31f8f9967d41ccbfe186724f28f635?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 276,
@@ -1673,11 +1629,7 @@
     "Team": "arash negahban (https://www.notion.so/arash-negahban-db456a870d7943fbb7a483705e6224ea?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 275,
@@ -1694,11 +1646,7 @@
     "Team": "cronfi (https://www.notion.so/cronfi-77f8cc7fc2bd41288adea352b4eb8fdd?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 274,
@@ -1715,11 +1663,7 @@
     "Team": "apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "https://discord.gg/pgWF7PX3hw",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 273,
@@ -1736,11 +1680,7 @@
     "Team": "jdagogo (https://www.notion.so/jdagogo-88bfd4abecb94fea8dab826d6dc0c8cb?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 272,
@@ -1757,11 +1697,7 @@
     "Team": "wiz (https://www.notion.so/wiz-dc0be9fdf95342eab1529628e2cf7d40?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 271,
@@ -1778,11 +1714,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 270,
@@ -1799,11 +1731,7 @@
     "Team": "WNX (Voadz) (https://www.notion.so/WNX-Voadz-3cb97d8645ec48bf950ed89df0a26855?pvs=21), Nero One (https://www.notion.so/Nero-One-e453012671d14d229b5776411ea7e402?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 269,
@@ -1820,11 +1748,7 @@
     "Team": "lilbubble (https://www.notion.so/lilbubble-d5c954a9aa824ff99be0d8869eb0687b?pvs=21), Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 268,
@@ -1841,11 +1765,7 @@
     "Team": "wiz (https://www.notion.so/wiz-dc0be9fdf95342eab1529628e2cf7d40?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 267,
@@ -1862,11 +1782,7 @@
     "Team": "mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21), dot (https://www.notion.so/dot-a3f68e1d331d45f38e07869b8550e94a?pvs=21), jihad (https://www.notion.so/jihad-3374b9fe666648c29cee65e99c57122d?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 266,
@@ -1883,11 +1799,7 @@
     "Team": "Profish (https://www.notion.so/Profish-cd4520f917fc4c638af0366d51ce2b8c?pvs=21), NextMech (https://www.notion.so/NextMech-eebe45b27d044be28c4287dd65371492?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 265,
@@ -1904,11 +1816,7 @@
     "Team": "Noun 426 (https://www.notion.so/Noun-426-e4f5160a85f341de977a69d7aa8b52ff?pvs=21), Noun 587 (https://www.notion.so/Noun-587-c4e6135e55d1464d8b14ceee0fcdef8e?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 264,
@@ -1925,11 +1833,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 263,
@@ -1946,11 +1850,7 @@
     "Team": "Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), PPD (https://www.notion.so/PPD-08c229866c4b4fddaa773a4b8487f1dd?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21), Mach (https://www.notion.so/Mach-b182ffca1b5d44f1b8756dc925c11703?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 262,
@@ -1967,11 +1867,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21)",
     "Product": "https://twitter.com/danitpeleg3d/status/1648418783508176899",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 261,
@@ -1988,11 +1884,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 260,
@@ -2009,11 +1901,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 259,
@@ -2030,11 +1918,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21), Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21)",
     "Product": "https://www.youtube.com/playlist?list=PL4hIUq6y1VpQmpMcoWzOC-GTNbCMsjy4y",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 258,
@@ -2051,11 +1935,7 @@
     "Team": "Bloomz (https://www.notion.so/Bloomz-70cb4c740938409c92701f587db360f1?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 257,
@@ -2072,11 +1952,7 @@
     "Team": "mono (https://www.notion.so/mono-0f14558e480f494aa431a88e3bcfce44?pvs=21), Alejandra Pérez (https://www.notion.so/Alejandra-P-rez-b90582897430497aadf5f489f5082c9e?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 256,
@@ -2093,11 +1969,7 @@
     "Team": "Noun 64 (https://www.notion.so/Noun-64-c62c7f0097e446c2a460815a88071748?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "No",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 255,
@@ -2114,11 +1986,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 254,
@@ -2135,11 +2003,7 @@
     "Team": "87bones (https://www.notion.so/87bones-41a358dd0f654f03ac2f8c9f785536e9?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/NounsDeli",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/NounsDeli"
   },
   {
     "No": 253,
@@ -2156,11 +2020,7 @@
     "Team": "isaac (https://www.notion.so/isaac-3145383c918945688eb68b8fdce0ed4a?pvs=21), Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), dot (https://www.notion.so/dot-a3f68e1d331d45f38e07869b8550e94a?pvs=21), mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21), jihad (https://www.notion.so/jihad-3374b9fe666648c29cee65e99c57122d?pvs=21), colin (https://www.notion.so/colin-572e1d77328a4d3f996ec970e917a2ee?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/ExplorerGrants",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/ExplorerGrants"
   },
   {
     "No": 252,
@@ -2177,11 +2037,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 251,
@@ -2198,11 +2054,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21)",
     "Product": "https://twitter.com/danitpeleg3d/status/1646882157229404168",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 250,
@@ -2219,11 +2071,7 @@
     "Team": "lsankar (https://www.notion.so/lsankar-fda5f889f087416ab8a4487dd47a45b5?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 249,
@@ -2240,11 +2088,7 @@
     "Team": "Noun 40 (https://www.notion.so/Noun-40-4de5d629ce3f4c41bdaad8f777be506b?pvs=21), gregskril.eth (https://www.notion.so/gregskril-eth-86c686d93885449a91dc650c8af30f5f?pvs=21), ripe (https://www.notion.so/ripe-a9c834340dfa41c1a694f57fc75c589c?pvs=21)",
     "Product": "https://nogglesgraffiti.wtf/",
     "Discussion links": "https://twitter.com/noun40__/status/1655942923421364227",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 248,
@@ -2261,11 +2105,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 247,
@@ -2282,11 +2122,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 246,
@@ -2303,11 +2139,7 @@
     "Team": "deployer (https://www.notion.so/deployer-59bb5c9e09fa4be3a28d82ceb5cfde3d?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 245,
@@ -2324,11 +2156,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21), 3dprintguy (https://www.notion.so/3dprintguy-23fe4fb878a542eda0735faa11aaab53?pvs=21), HKjay (https://www.notion.so/HKjay-13cd6a1b3e0a41338d80ec6ae79ae0d7?pvs=21), Zendoubt (https://www.notion.so/Zendoubt-3f24c90015214d28842b42d076467fec?pvs=21), William Yu (https://www.notion.so/William-Yu-ff2e9ec4ad9c4248a9bcef64132accd5?pvs=21)",
     "Product": "https://nouns.movie/",
     "Discussion links": "",
-    "Press/media/social links": "https://www.coindesk.com/web3/2023/06/21/web3-creative-studio-atrium-releases-pilot-episode-of-nouns-movie/?utm_campaign=coindesk_main&utm_term=organic&utm_source=twitter&utm_content=editorial&utm_medium=social\n\nhttps://nftnow.com/news/nouns-dao-and-atrium-launch-first-animated-movie-funded-by-a-dao/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.coindesk.com/web3/2023/06/21/web3-creative-studio-atrium-releases-pilot-episode-of-nouns-movie/?utm_campaign=coindesk_main&utm_term=organic&utm_source=twitter&utm_content=editorial&utm_medium=social\n\nhttps://nftnow.com/news/nouns-dao-and-atrium-launch-first-animated-movie-funded-by-a-dao/"
   },
   {
     "No": 244,
@@ -2345,11 +2173,7 @@
     "Team": "Adelidusiam (https://www.notion.so/Adelidusiam-fb8973394af74d11a657025f8bbb8011?pvs=21), Frog (https://www.notion.so/Frog-003dde35e8144347ab12fb7a96af7466?pvs=21), Tob (https://www.notion.so/Tob-567f86db194847b38c93ffdd862b4c71?pvs=21)",
     "Product": "https://nouns.proplot.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 243,
@@ -2366,11 +2190,7 @@
     "Team": "Adelidusiam (https://www.notion.so/Adelidusiam-fb8973394af74d11a657025f8bbb8011?pvs=21), Frog (https://www.notion.so/Frog-003dde35e8144347ab12fb7a96af7466?pvs=21), Tob (https://www.notion.so/Tob-567f86db194847b38c93ffdd862b4c71?pvs=21)",
     "Product": "https://nouns.proplot.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 242,
@@ -2387,11 +2207,7 @@
     "Team": "dadkins (https://www.notion.so/dadkins-3c4748ce5b7c41bc9195c85001d9bd49?pvs=21), Wojciech (https://www.notion.so/Wojciech-759de9b32b0e483a9955c6415c51d67f?pvs=21), rocketman (https://www.notion.so/rocketman-907dd94889584da0af13cc6e186e0c76?pvs=21), jac (https://www.notion.so/jac-4e80b98cf68c4c29afac9069179d776e?pvs=21)",
     "Product": "https://houseofnouns.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 241,
@@ -2408,11 +2224,7 @@
     "Team": "DigitalOil (https://www.notion.so/DigitalOil-9a34de8a37c945b980ff301d0e849896?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 240,
@@ -2429,11 +2241,7 @@
     "Team": "Brunes (https://www.notion.so/Brunes-2635da71bc694a14b2ab7a15bf80a563?pvs=21), Al409 (https://www.notion.so/Al409-e1c05111143e476b87a56e512fda1ac1?pvs=21), baba (https://www.notion.so/baba-9c1f375c3c8949a585e37f6256860477?pvs=21), volky (https://www.notion.so/volky-6e4c342e15bb4b369280fa70f6dc33a8?pvs=21), ripe (https://www.notion.so/ripe-a9c834340dfa41c1a694f57fc75c589c?pvs=21), Champion Score (https://www.notion.so/Champion-Score-b3805f98a9ae446a9f21b1eb8a146656?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 239,
@@ -2450,11 +2258,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 238,
@@ -2471,11 +2275,7 @@
     "Team": "DigitalOil (https://www.notion.so/DigitalOil-9a34de8a37c945b980ff301d0e849896?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 237,
@@ -2492,11 +2292,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21)",
     "Product": "https://zora.co/collections/0xf2c5a42ab4ade9a89552b812a9e1a6e36747c1b7",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 236,
@@ -2513,11 +2309,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21)",
     "Product": "https://www.premiere.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/nouns_stories",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nouns_stories"
   },
   {
     "No": 235,
@@ -2534,11 +2326,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 234,
@@ -2555,11 +2343,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 233,
@@ -2576,11 +2360,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 232,
@@ -2597,11 +2377,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 231,
@@ -2618,11 +2394,7 @@
     "Team": "MrSeaks (https://www.notion.so/MrSeaks-7bb363bd3dd94556a4f4a5299994f05b?pvs=21), Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "https://www.niftygateway.com/publisher/nounsglobal",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 230,
@@ -2639,11 +2411,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 229,
@@ -2660,11 +2428,7 @@
     "Team": "wiz (https://www.notion.so/wiz-dc0be9fdf95342eab1529628e2cf7d40?pvs=21)",
     "Product": "https://www.federation.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 228,
@@ -2681,11 +2445,7 @@
     "Team": "",
     "Product": "https://twitter.com/pNounsOFFICIAL/status/1660468384331620352",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 227,
@@ -2702,11 +2462,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 226,
@@ -2723,11 +2479,7 @@
     "Team": "Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), aubtoshi (https://www.notion.so/aubtoshi-abed47c3c19b4c1588f21c1cb578e593?pvs=21), Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21), Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21), SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21), xargs (https://www.notion.so/xargs-4caac2dc9bfd433689873368ce103fd3?pvs=21), RobotFishGirl (https://www.notion.so/RobotFishGirl-2d5db4d6d9944df58376cb27fcec7698?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21)",
     "Product": "https://twitter.com/thenounsquare",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 225,
@@ -2744,11 +2496,7 @@
     "Team": "SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21), Papaya (https://www.notion.so/Papaya-2b2c3f3db86d4240bee5af5d110fec1e?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 224,
@@ -2765,11 +2513,7 @@
     "Team": "",
     "Product": "https://twitter.com/artmatrco/status/1641086193516331010",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 223,
@@ -2786,11 +2530,7 @@
     "Team": "dadkins (https://www.notion.so/dadkins-3c4748ce5b7c41bc9195c85001d9bd49?pvs=21), whise (https://www.notion.so/whise-69a8bd33cf3d46c3985abd0936764bb9?pvs=21), Wojciech (https://www.notion.so/Wojciech-759de9b32b0e483a9955c6415c51d67f?pvs=21), Tim G (https://www.notion.so/Tim-G-eaaf3a6e98e844fdb3f7276a16070417?pvs=21), rocketman (https://www.notion.so/rocketman-907dd94889584da0af13cc6e186e0c76?pvs=21), jac (https://www.notion.so/jac-4e80b98cf68c4c29afac9069179d776e?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 222,
@@ -2807,11 +2547,7 @@
     "Team": "pinkglasses (https://www.notion.so/pinkglasses-fa913c29bcfe43378e76623fdfa3e919?pvs=21), ramenboy (https://www.notion.so/ramenboy-6e51f70d0fb0464d90cdd2954ac95d44?pvs=21), 0xpiney (https://www.notion.so/0xpiney-7715d2e8765c4509803f7aeff4b03479?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 221,
@@ -2828,11 +2564,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 220,
@@ -2849,11 +2581,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 219,
@@ -2870,11 +2598,7 @@
     "Team": "bkraaus (https://www.notion.so/bkraaus-757a4affac9f485eaa7f2d87e8430af2?pvs=21), mfrs (https://www.notion.so/mfrs-8341502d194d49d9ae204f73ece1e5fa?pvs=21), brook (https://www.notion.so/brook-3b79ebfbda3244ea9c817f6514327132?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 218,
@@ -2891,11 +2615,7 @@
     "Team": "Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21), ThaSwami (https://www.notion.so/ThaSwami-3ffc5a0f99d6415bb7a1d8a04edd9a20?pvs=21)",
     "Product": "https://about.alps.wtf/\n\nhttps://alps.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/bring-nouns-to-2m-people-over-15-months-at-japan-s-best-ski-resort-and-integrate-nouns-into-the-alpine-subculture/3677",
-    "Press/media/social links": "https://twitter.com/AlpsDAO",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/AlpsDAO"
   },
   {
     "No": 217,
@@ -2912,11 +2632,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 216,
@@ -2933,11 +2649,7 @@
     "Team": "verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 215,
@@ -2954,11 +2666,7 @@
     "Team": "Nick Dodson (https://www.notion.so/Nick-Dodson-834df928315d463c8ee4443e793e3dc4?pvs=21), Weez (https://www.notion.so/Weez-e0b67d14fcc146d3bb26f052f99b21e9?pvs=21)",
     "Product": "http://uplink.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-uplink-wtf-a-marketing-platform-for-all/3408",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 214,
@@ -2975,11 +2683,7 @@
     "Team": "TheHeroShep (https://www.notion.so/TheHeroShep-287881292029446bbc637f084c1c39b6?pvs=21), Steve (evets.eth) (https://www.notion.so/Steve-evets-eth-650b2425ce04406a93e73320be607b08?pvs=21), honkdiddly (https://www.notion.so/honkdiddly-8355638fc1f04283a8c5054407dd1785?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 213,
@@ -2996,11 +2700,7 @@
     "Team": "TheHeroShep (https://www.notion.so/TheHeroShep-287881292029446bbc637f084c1c39b6?pvs=21), Steve (evets.eth) (https://www.notion.so/Steve-evets-eth-650b2425ce04406a93e73320be607b08?pvs=21), honkdiddly (https://www.notion.so/honkdiddly-8355638fc1f04283a8c5054407dd1785?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 212,
@@ -3017,11 +2717,7 @@
     "Team": "beautifulnfts (https://www.notion.so/beautifulnfts-5e421c3786d54e22b003088c347afc2d?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 211,
@@ -3038,11 +2734,7 @@
     "Team": "wideeyekarl (https://www.notion.so/wideeyekarl-8dfe190f2862449ba3570bde8c94ce93?pvs=21), HashConfucius (Noun 74) (https://www.notion.so/HashConfucius-Noun-74-3722f41945444841a68d118790cb9bd5?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-presence-in-chinese-community/3594",
-    "Press/media/social links": "https://twitter.com/Nounscn",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/Nounscn"
   },
   {
     "No": 210,
@@ -3059,11 +2751,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://lilnouns.wtf/proplot/122",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 209,
@@ -3080,11 +2768,7 @@
     "Team": "necfas (https://www.notion.so/necfas-24a8c66cba8c47b5aeaefdbae10fda1a?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/mucho-love-v1-5-looking-for-feedback/3159",
-    "Press/media/social links": "https://twitter.com/mucholovedr",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/mucholovedr"
   },
   {
     "No": 208,
@@ -3101,11 +2785,7 @@
     "Team": "",
     "Product": "https://opensea.io/collection/nouns-whisky-barrels",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-whisky-12-jan-onchain-prop-sponsored-by-nouncil/3553",
-    "Press/media/social links": "https://twitter.com/Nouns_Whisky",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/Nouns_Whisky"
   },
   {
     "No": 207,
@@ -3122,11 +2802,7 @@
     "Team": "David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-studio-1-2023-extension/3301/2",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 206,
@@ -3143,11 +2819,7 @@
     "Team": "aubtoshi (https://www.notion.so/aubtoshi-abed47c3c19b4c1588f21c1cb578e593?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-on-the-ground-2023/3541",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 166.9
+    "Press/media/social links": ""
   },
   {
     "No": 205,
@@ -3164,11 +2836,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 204,
@@ -3185,11 +2853,7 @@
     "Team": "Robert Clarke (https://www.notion.so/Robert-Clarke-51c98bca7b2b412491940450d6b17185?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-enabling-a-zero-fee-nft-to-nft-exchange-for-nouns-by-atomic0-atomic-zero/3523",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 203,
@@ -3206,11 +2870,7 @@
     "Team": "voytech (https://www.notion.so/voytech-fae18f5ff07f4285ae2eec6bac02ced4?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 202,
@@ -3227,11 +2887,7 @@
     "Team": "jacob (https://www.notion.so/jacob-46b1f8cc53794a46ad914c4383cf4b28?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 201,
@@ -3248,11 +2904,7 @@
     "Team": "kerimbonia (https://www.notion.so/kerimbonia-02c6ade51c2d445294ea695817778cd4?pvs=21)",
     "Product": "https://spritesheetcenter.vercel.app/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-animated-sprite-sheets-and-game-asset-assembler/3382",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 200,
@@ -3269,11 +2921,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-mail-a-token-gated-email-address-draft/2996",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 199,
@@ -3290,11 +2938,7 @@
     "Team": "DigitalOil (https://www.notion.so/DigitalOil-9a34de8a37c945b980ff301d0e849896?pvs=21)",
     "Product": "https://nounsclaims.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 198,
@@ -3311,11 +2955,7 @@
     "Team": "",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-the-nounsvitational-tier-1-dota-2-esports-event/3331",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 197,
@@ -3332,11 +2972,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21)",
     "Product": "https://twitter.com/danitpeleg3d/status/1631400869286539266",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-3d-printed-fashion-collection-final-milestones-nft-paris/3188",
-    "Press/media/social links": "https://twitter.com/nftnow/status/1632054870298509313  \nhttps://twitter.com/danitpeleg3d/status/1629106351698837504\nhttps://www.coinspeaker.com/nft-3d-printed-collection-nouns/\nhttps://www.youtube.com/watch?v=gHauDW5BQQY",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nftnow/status/1632054870298509313  \nhttps://twitter.com/danitpeleg3d/status/1629106351698837504\nhttps://www.coinspeaker.com/nft-3d-printed-collection-nouns/\nhttps://www.youtube.com/watch?v=gHauDW5BQQY"
   },
   {
     "No": 196,
@@ -3353,11 +2989,7 @@
     "Team": "NickyG (https://www.notion.so/NickyG-988cccaf49a6403fa9a9463083ac1fcb?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-sports-pickem-before-going-on-chain/3288",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 195,
@@ -3374,11 +3006,7 @@
     "Team": "supriyo (https://www.notion.so/supriyo-2500a6024bef4c09a20152ce62b0a05e?pvs=21), Anaroth (https://www.notion.so/Anaroth-c80cc1c9a77a4ddba7ecac5236c21460?pvs=21)",
     "Product": "https://zora.co/collections/0xf2c5a42ab4ade9a89552b812a9e1a6e36747c1b7",
     "Discussion links": "https://discourse.nouns.wtf/t/atrium-x-nouns-a-lore-experiment/3260",
-    "Press/media/social links": "https://twitter.com/AtriumNft/status/1618266978397089797",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/AtriumNft/status/1618266978397089797"
   },
   {
     "No": 194,
@@ -3395,11 +3023,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21), krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 193,
@@ -3416,11 +3040,7 @@
     "Team": "vsvsvs (Victor Solomon) (https://www.notion.so/vsvsvs-Victor-Solomon-4d736fedbc3f45089d3f819a8d3c54b5?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 192,
@@ -3437,11 +3057,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 191,
@@ -3458,11 +3074,7 @@
     "Team": "necfas (https://www.notion.so/necfas-24a8c66cba8c47b5aeaefdbae10fda1a?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/mucho-love-v1-5-looking-for-feedback/3159",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 190,
@@ -3479,11 +3091,7 @@
     "Team": "Art of Conviction (https://www.notion.so/Art-of-Conviction-fec5fbf8236648938440655268a84112?pvs=21), jacob (https://www.notion.so/jacob-46b1f8cc53794a46ad914c4383cf4b28?pvs=21)",
     "Product": "https://www.thisisnouns.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 189,
@@ -3500,11 +3108,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 188,
@@ -3521,11 +3125,7 @@
     "Team": "Nick Dodson (https://www.notion.so/Nick-Dodson-834df928315d463c8ee4443e793e3dc4?pvs=21), Weez (https://www.notion.so/Weez-e0b67d14fcc146d3bb26f052f99b21e9?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-creator-contests-a-nounish-funding-middleware/3176/4",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 187,
@@ -3542,11 +3142,7 @@
     "Team": "heyjeff (https://www.notion.so/heyjeff-e0277febbfc6480d9509ef3c7439e95a?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-bring-nouns-to-life-nouns-animation-generator-interactive-app/3128\n\nhttps://discourse.nouns.wtf/t/proposal-add-nounish-collections-to-tinycitizen-an-indie-web3-browser-mobile-game/2814",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 186,
@@ -3563,11 +3159,7 @@
     "Team": "dadkins (https://www.notion.so/dadkins-3c4748ce5b7c41bc9195c85001d9bd49?pvs=21), whise (https://www.notion.so/whise-69a8bd33cf3d46c3985abd0936764bb9?pvs=21), Wojciech (https://www.notion.so/Wojciech-759de9b32b0e483a9955c6415c51d67f?pvs=21), Tim G (https://www.notion.so/Tim-G-eaaf3a6e98e844fdb3f7276a16070417?pvs=21), rocketman (https://www.notion.so/rocketman-907dd94889584da0af13cc6e186e0c76?pvs=21), jac (https://www.notion.so/jac-4e80b98cf68c4c29afac9069179d776e?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/house-of-nouns-extension-prop-draft/3166\n\nhttps://discord.com/channels/1034365088695599155/1051269585132851341/1051272045729677332",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 185,
@@ -3584,11 +3176,7 @@
     "Team": "Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21), Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "-",
     "Discussion links": "https://discourse.nouns.wtf/t/distributing-nouns-vision-noggles-for-proliferation-purposes/2571",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 184,
@@ -3605,11 +3193,7 @@
     "Team": "Noun 40 (https://www.notion.so/Noun-40-4de5d629ce3f4c41bdaad8f777be506b?pvs=21)",
     "Product": "https://investigations.notion.site/",
     "Discussion links": "https://twitter.com/hongkim__/status/1598084457596325888\n\nhttps://discord.com/channels/992462546860785778/1047639449716146261/1047696198858981377",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 183,
@@ -3626,11 +3210,7 @@
     "Team": "seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21), cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21), devcarrot (https://www.notion.so/devcarrot-da95fda2260f4f7f9938860024f32162?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "https://prop.house/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 182,
@@ -3647,11 +3227,7 @@
     "Team": "Coral Orca (https://www.notion.so/Coral-Orca-a3b5af886322484bbf9e69caee4217df?pvs=21)",
     "Product": "https://lensstudio.snapchat.com/creator/6y_fgP0Vr6RqaJt3jIJLRw",
     "Discussion links": "https://discord.com/channels/1034365088695599155/1051269381260333086/1051270292959400016",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 181,
@@ -3668,11 +3244,7 @@
     "Team": "0xHindsight (https://www.notion.so/0xHindsight-199fa64589264d39873cc8e1ccf2956e?pvs=21)",
     "Product": "https://prop.house/nouns/$200k-video-contest-final-votehttps://nounscontest.wtf/ website",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 180,
@@ -3689,11 +3261,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21), Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21), Walter Newman (https://www.notion.so/Walter-Newman-a1603f26a7db4f7b915fcacc2b43f3ee?pvs=21), townertime (https://www.notion.so/townertime-81020473943f4107ab7ce2f742e9b5c2?pvs=21), cpwozzie (https://www.notion.so/cpwozzie-2731a6b9f2424edda1caba57be164235?pvs=21)",
     "Product": "https://www.youtube.com/playlist?list=PL4hIUq6y1VpQmpMcoWzOC-GTNbCMsjy4y\n\nhttps://zora.co/collect/eth:0xd64ce3231839fed12c0ee132d6b33b4238ff9929",
     "Discussion links": "https://discord.com/channels/849745721544146955/917252751140982885/1019989277997801512\n\nhttps://discord.com/channels/992462546860785778/1048716871521808515/1048756013928566926",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "No",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 179,
@@ -3710,11 +3278,7 @@
     "Team": "marc horowitz (https://www.notion.so/marc-horowitz-d8755ed04d7e4519993987570ccd87dc?pvs=21)",
     "Product": "",
     "Discussion links": "https://discord.com/channels/992462546860785778/1044010760453505084/1044011650778415224\n\nhttps://discord.com/channels/992462546860785778/1048355935472603206/1048648005789691918",
-    "Press/media/social links": "https://twitter.com/worstdao",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 6.83
+    "Press/media/social links": "https://twitter.com/worstdao"
   },
   {
     "No": 178,
@@ -3731,11 +3295,7 @@
     "Team": "mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21), dot (https://www.notion.so/dot-a3f68e1d331d45f38e07869b8550e94a?pvs=21), jihad (https://www.notion.so/jihad-3374b9fe666648c29cee65e99c57122d?pvs=21)",
     "Product": "https://twitter.com/ExplorerGrants/status/1617662690251661312",
     "Discussion links": "https://discourse.nouns.wtf/t/explorer-grants-trial-2nd-draft/2854\n\nhttps://discourse.nouns.wtf/t/new-builder-grants-program-trial/2753\n\nhttps://discord.com/channels/992462546860785778/1048377929710698617/1048429984324272159",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 177,
@@ -3752,11 +3312,7 @@
     "Team": "Noun 40 (https://www.notion.so/Noun-40-4de5d629ce3f4c41bdaad8f777be506b?pvs=21)",
     "Product": "The proposer delegated his nouns to a third party before this proposal was executed, which allowed anyone to cancel the proposal (this is an anti-spam feature of the protocol), and someone used the opportunity and canceled the prop. https://twitter.com/noun40__/status/1600889013216235525",
     "Discussion links": "https://twitter.com/hongkim__/status/1598084457596325888\n\nhttps://discord.com/channels/992462546860785778/1047639449716146261/1047696198858981377",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 176,
@@ -3773,11 +3329,7 @@
     "Team": "WNX (Voadz) (https://www.notion.so/WNX-Voadz-3cb97d8645ec48bf950ed89df0a26855?pvs=21), Nero One (https://www.notion.so/Nero-One-e453012671d14d229b5776411ea7e402?pvs=21)",
     "Product": "https://nounsarchive.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-archive-expansion/2745\n\nhttps://discourse.nouns.wtf/t/nsfw-nouns-archive-center/2413",
-    "Press/media/social links": "https://twitter.com/thevoadz/status/1641034993798467593",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 5.9
+    "Press/media/social links": "https://twitter.com/thevoadz/status/1641034993798467593"
   },
   {
     "No": 175,
@@ -3794,11 +3346,7 @@
     "Team": "Andrew Laddusaw (https://www.notion.so/Andrew-Laddusaw-d533b219656a4a0db181a572d5ae2c6c?pvs=21), profwerder (https://www.notion.so/profwerder-a7838e34e82d4e0595a014ac15e4725e?pvs=21), Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), bradq (https://www.notion.so/bradq-a2b96d3d72a0459a89432d7f23702603?pvs=21), SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 174,
@@ -3815,11 +3363,7 @@
     "Team": "maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "Proposal Dashboard (https://www.notion.so/Proposal-Dashboard-39838dbdffa84184a436d4b562aaf55d?pvs=21) \nhttps://nouns.substack.com/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 173,
@@ -3836,11 +3380,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 22.69
+    "Press/media/social links": ""
   },
   {
     "No": 172,
@@ -3857,11 +3397,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 171,
@@ -3878,11 +3414,7 @@
     "Team": "beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21), apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21), eoj (https://www.notion.so/eoj-94a2af6801d14c8ea86e92bc8d07256f?pvs=21), Sam Ellis (https://www.notion.so/Sam-Ellis-3cc5293da23a47ed82f52f99a35e9b39?pvs=21), Juan (https://www.notion.so/Juan-4b330e7846264a98aee2e6586cbb132b?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/NounsDCS",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 22.95
+    "Press/media/social links": "https://twitter.com/NounsDCS"
   },
   {
     "No": 170,
@@ -3899,11 +3431,7 @@
     "Team": "Dom (https://www.notion.so/Dom-7ee9cd03f69542abae3152b1fc76685d?pvs=21)",
     "Product": "https://nns.xyz/",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/nnsprotocol",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nnsprotocol"
   },
   {
     "No": 169,
@@ -3920,11 +3448,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 168,
@@ -3941,11 +3465,7 @@
     "Team": "0xHindsight (https://www.notion.so/0xHindsight-199fa64589264d39873cc8e1ccf2956e?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 167,
@@ -3962,11 +3482,7 @@
     "Team": "jacob (https://www.notion.so/jacob-46b1f8cc53794a46ad914c4383cf4b28?pvs=21)",
     "Product": "https://nouns.build/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-builder-draft/2007\nhttps://discourse.nouns.wtf/t/discussion-1-click-nouns-dao-builder/1479/6",
-    "Press/media/social links": "https://dune.com/pandajackson42/nouns-builder-zora",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://dune.com/pandajackson42/nouns-builder-zora"
   },
   {
     "No": 166,
@@ -3983,11 +3499,7 @@
     "Team": "aubtoshi (https://www.notion.so/aubtoshi-abed47c3c19b4c1588f21c1cb578e593?pvs=21), emma (https://www.notion.so/emma-5a343e9a79aa4297b40b2a4e3d71e2c8?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/nounsotg-stoopid-buddy-rose-parade-otg-activation/2750/12",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 2.73
+    "Press/media/social links": ""
   },
   {
     "No": 165,
@@ -4004,11 +3516,7 @@
     "Team": "MrSeaks (https://www.notion.so/MrSeaks-7bb363bd3dd94556a4f4a5299994f05b?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-x-never-sit-still/2713",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 164,
@@ -4025,11 +3533,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21), Jarmen (https://www.notion.so/Jarmen-f210b53bcc994e4a8f3646698f047a0d?pvs=21), Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21), Mr.Boney (https://www.notion.so/Mr-Boney-3e3feb6435354924bd6819c9a5be7e9a?pvs=21), ThaSwami (https://www.notion.so/ThaSwami-3ffc5a0f99d6415bb7a1d8a04edd9a20?pvs=21)",
     "Product": "https://twitter.com/nounsAU/status/1597078275204882432",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 163,
@@ -4046,11 +3550,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21)",
     "Product": "https://twitter.com/nouncil",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/nouncil",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nouncil"
   },
   {
     "No": 162,
@@ -4067,11 +3567,7 @@
     "Team": "mono (https://www.notion.so/mono-0f14558e480f494aa431a88e3bcfce44?pvs=21)",
     "Product": "https://discourse.nouns.wtf/t/nsfw-nouns-fair-ethsanfrancisco/2709/4",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 161,
@@ -4088,11 +3584,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 160,
@@ -4109,11 +3601,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 159,
@@ -4130,11 +3618,7 @@
     "Team": "niftynaut (https://www.notion.so/niftynaut-5e688c7179564966b9620748c44de6af?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 158,
@@ -4151,11 +3635,7 @@
     "Team": "leoclark (https://www.notion.so/leoclark-d564ee90a2f64ae0b3c31e44043c7620?pvs=21), Nikki (https://www.notion.so/Nikki-9712ae850a604a57a71040a8968e5c17?pvs=21), Hypnos (https://www.notion.so/Hypnos-6e2aa9368105464ebf8a5b01ce7ff504?pvs=21), JP (https://www.notion.so/JP-60241cc8390c4f7c9006ed1a25ff1322?pvs=21), xargs (https://www.notion.so/xargs-4caac2dc9bfd433689873368ce103fd3?pvs=21), Messhup (https://www.notion.so/Messhup-437471b985044fc081635c14f8107f5d?pvs=21), Gushorn (https://www.notion.so/Gushorn-8806f0be3685474ca38af4bd3ad90a1e?pvs=21), metamonk (https://www.notion.so/metamonk-4583fa52bfe0416cb244c717f39f86e9?pvs=21), SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-news-extended-for-5-months/2560",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 157,
@@ -4172,11 +3652,7 @@
     "Team": "max-power (https://www.notion.so/max-power-74470f34717d485990ae98757ddca67f?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/saveartspace-x-nouns-billboard-exhibition-in-nyc/2567",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 156,
@@ -4193,11 +3669,7 @@
     "Team": "TheHeroShep (https://www.notion.so/TheHeroShep-287881292029446bbc637f084c1c39b6?pvs=21), honkdiddly (https://www.notion.so/honkdiddly-8355638fc1f04283a8c5054407dd1785?pvs=21), Steve (evets.eth) (https://www.notion.so/Steve-evets-eth-650b2425ce04406a93e73320be607b08?pvs=21)",
     "Product": "https://playground.nounsai.wtf/https://roko.dev/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 27.65
+    "Press/media/social links": ""
   },
   {
     "No": 155,
@@ -4214,11 +3686,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-cdt-work-continuation/2664",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 11.65
+    "Press/media/social links": ""
   },
   {
     "No": 154,
@@ -4235,11 +3703,7 @@
     "Team": "yitong (VectorDAO) (https://www.notion.so/yitong-VectorDAO-bdd2de42d14f40a3b27415614945ed2d?pvs=21), mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21), Tom Taubkin (https://www.notion.so/Tom-Taubkin-ebbec3b97c9b46d0a4ead369625586b6?pvs=21), 0xcaff (https://www.notion.so/0xcaff-d4c88d810e474cf5852f48a26601e279?pvs=21)",
     "Product": "https://www.nounsagora.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-agora-continuation/2478",
-    "Press/media/social links": "https://github.com/voteagora/agora",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 34
+    "Press/media/social links": "https://github.com/voteagora/agora"
   },
   {
     "No": 153,
@@ -4256,11 +3720,7 @@
     "Team": "niftynaut (https://www.notion.so/niftynaut-5e688c7179564966b9620748c44de6af?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 152,
@@ -4277,11 +3737,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/tech-grants-pod-szn-2-ideas-and-priorities/1806\n\nhttps://discourse.nouns.wtf/t/nouns-dao-v2-audit-summary/2525\n\nhttps://discourse.nouns.wtf/t/nouns-dao-v2-upgrade/2536",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 151,
@@ -4298,11 +3754,7 @@
     "Team": "",
     "Product": "NSFW - Nouns Strategic Funding Works (https://www.notion.so/68f80b714b8e49b29c43527fd5ebe0e8?pvs=21)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 150,
@@ -4319,11 +3771,7 @@
     "Team": "lsankar (https://www.notion.so/lsankar-fda5f889f087416ab8a4487dd47a45b5?pvs=21)",
     "Product": "https://www.heyanoun.xyz/",
     "Discussion links": "https://discourse.nouns.wtf/t/heyanoun-pseudonymous-messages-about-props-draft/2449\n\nhttps://discourse.nouns.wtf/t/heyanoun-pseudonymous-messages-about-props/2538",
-    "Press/media/social links": "https://twitter.com/HeyAnoun",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/HeyAnoun"
   },
   {
     "No": 149,
@@ -4340,11 +3788,7 @@
     "Team": "yitong (VectorDAO) (https://www.notion.so/yitong-VectorDAO-bdd2de42d14f40a3b27415614945ed2d?pvs=21), 0xcaff (https://www.notion.so/0xcaff-d4c88d810e474cf5852f48a26601e279?pvs=21), Tom Taubkin (https://www.notion.so/Tom-Taubkin-ebbec3b97c9b46d0a4ead369625586b6?pvs=21), mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-agora-continuation/2478",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 148,
@@ -4361,11 +3805,7 @@
     "Team": "yitong (VectorDAO) (https://www.notion.so/yitong-VectorDAO-bdd2de42d14f40a3b27415614945ed2d?pvs=21), 0xcaff (https://www.notion.so/0xcaff-d4c88d810e474cf5852f48a26601e279?pvs=21), Tom Taubkin (https://www.notion.so/Tom-Taubkin-ebbec3b97c9b46d0a4ead369625586b6?pvs=21), mrtn (https://www.notion.so/mrtn-8f34d2b887724925bf09ec70a087ff43?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-agora-continuation/2478",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 147,
@@ -4382,11 +3822,7 @@
     "Team": "krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), 9999 (https://www.notion.so/9999-78b681438a4e4616b97efa35ae851022?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-noundry-1-compensation-draft/2234\n\nhttps://discourse.nouns.wtf/t/proposal-noundry-season-0-compensation-2nd-draft/2395",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 146,
@@ -4403,11 +3839,7 @@
     "Team": "krel (https://www.notion.so/krel-5760dafa344f403ebee7b026611bb3aa?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), 9999 (https://www.notion.so/9999-78b681438a4e4616b97efa35ae851022?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-noundry-1-compensation-draft/2234\n\nhttps://discourse.nouns.wtf/t/proposal-noundry-season-0-compensation-2nd-draft/2395",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 145,
@@ -4424,11 +3856,7 @@
     "Team": "",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 144,
@@ -4445,11 +3873,7 @@
     "Team": "andreitr (https://www.notion.so/andreitr-d9ba0b78e7ef4dda9375414709818e43?pvs=21)",
     "Product": "https://botfrens.com/",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/BotFrens",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/BotFrens"
   },
   {
     "No": 143,
@@ -4466,11 +3890,7 @@
     "Team": "142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21)",
     "Product": "https://nounish.world/",
     "Discussion links": "https://discourse.nouns.wtf/t/nounish-marketing-studio-for-nouns/2329",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 150
+    "Press/media/social links": ""
   },
   {
     "No": 142,
@@ -4487,11 +3907,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21), beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21)",
     "Product": "https://twitter.com/bobburnquist/status/1604636743332159488",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 141,
@@ -4508,11 +3924,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nounish-friends-minifigures-series1-manufacturing/2095",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 140,
@@ -4529,11 +3941,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "https://prop.house/nouns/challenge:-make-nouns-go-viral\nhttps://prop.house/nouns/build-on-composables",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 139,
@@ -4550,11 +3958,7 @@
     "Team": "SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21)",
     "Product": "https://www.nounsounds.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/noun-sounds-building-an-audio-ecosystem-for-nouns/2132",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 138,
@@ -4571,11 +3975,7 @@
     "Team": "lej (https://www.notion.so/lej-acd20493ea7e455ca4b771d441c28a10?pvs=21), gmoney (https://www.notion.so/gmoney-c33f391b6db341f5b8e667a2b8d31d84?pvs=21)",
     "Product": "https://drive.google.com/file/d/1shuslhR1vItrkkQr3bY7X5q8k5Vdm8Oz/view",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-x-internet-game-season-2-w-gmoney/2251",
-    "Press/media/social links": "https://twitter.com/internet__game/status/1573346718829223937",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/internet__game/status/1573346718829223937"
   },
   {
     "No": 137,
@@ -4592,11 +3992,7 @@
     "Team": "necfas (https://www.notion.so/necfas-24a8c66cba8c47b5aeaefdbae10fda1a?pvs=21)",
     "Product": "https://twitter.com/mucholovedr/status/1583126328852697089",
     "Discussion links": "https://discourse.nouns.wtf/t/mucho-love-4-month-extension/2228",
-    "Press/media/social links": "https://twitter.com/mucholoveinfo\nhttps://www.instagram.com/mucholovedr/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/mucholoveinfo\nhttps://www.instagram.com/mucholovedr/"
   },
   {
     "No": 136,
@@ -4613,11 +4009,7 @@
     "Team": "Lennox Matsinde (https://www.notion.so/Lennox-Matsinde-50238338b87f47bf978af71739f6393e?pvs=21), Tessa Mero (https://www.notion.so/Tessa-Mero-eebb258c53db42768c117efd9da7ce86?pvs=21), Mark Robinson (https://www.notion.so/Mark-Robinson-dad83b24b4634aabbf34f2d0fa5f5a63?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nounding-partners-of-nft-seattle/1783\n\nhttps://discourse.nouns.wtf/t/proposal-founding-partners-of-nft-seattle/2158",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 135,
@@ -4634,11 +4026,7 @@
     "Team": "Cory (https://www.notion.so/Cory-b30a4ed8a0394af99714146b452683f4?pvs=21), Stephen (https://www.notion.so/Stephen-5d2f61812b154dd28bd1044b98c1ed00?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/xanadu-x-nouns-mega-episode-real-time-nouns-world-toolkit/2156",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 28.8
+    "Press/media/social links": ""
   },
   {
     "No": 134,
@@ -4655,11 +4043,7 @@
     "Team": "niftynaut (https://www.notion.so/niftynaut-5e688c7179564966b9620748c44de6af?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 133,
@@ -4676,11 +4060,7 @@
     "Team": "Nick Dodson (https://www.notion.so/Nick-Dodson-834df928315d463c8ee4443e793e3dc4?pvs=21), Cryptasha (https://www.notion.so/Cryptasha-9b71f82138514ebeaf1fd4b960be21fc?pvs=21), Marxistmillionaire (https://www.notion.so/Marxistmillionaire-94a3c55a4fe54f93bb16bea55f177a5f?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/shark-labs-a-nounish-initiative-by-sharkdao-contributors/1870",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 132,
@@ -4697,11 +4077,7 @@
     "Team": "apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "https://www.dopamine.xyz/drops/nouns",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-x-dopamine-xyz/1916",
-    "Press/media/social links": "https://twitter.com/dopamine",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "No",
-    "Leftover": 0
+    "Press/media/social links": "https://twitter.com/dopamine"
   },
   {
     "No": 131,
@@ -4718,11 +4094,7 @@
     "Team": "euwyn (https://www.notion.so/euwyn-be454c575ad341fea7564c345d05144d?pvs=21), fedja (https://www.notion.so/fedja-a68f8a258d794a64bd7b63624859ec26?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-animated-short-starring-a-noun/2047",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 130,
@@ -4739,11 +4111,7 @@
     "Team": "MintFace (https://www.notion.so/MintFace-62491c9812f14a22ab313f3e2a287895?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-almanac-2nd-edition-book-development/1555",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 129,
@@ -4760,11 +4128,7 @@
     "Team": "advisry (https://www.notion.so/advisry-8db8ebed128b4d97a915ffc14d695762?pvs=21)",
     "Product": "https://www.youtube.com/watch?v=0XPoehCLx0I&ab_channel=Advisry",
     "Discussion links": "https://discourse.nouns.wtf/t/nounify-new-york-fashion-week/1925",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 128,
@@ -4781,11 +4145,7 @@
     "Team": "142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), Ser Noadz (https://www.notion.so/Ser-Noadz-fd127bc7dddc468d9e75f501d0ed1cf7?pvs=21), SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21), Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21), Sam Ellis (https://www.notion.so/Sam-Ellis-3cc5293da23a47ed82f52f99a35e9b39?pvs=21), aubtoshi (https://www.notion.so/aubtoshi-abed47c3c19b4c1588f21c1cb578e593?pvs=21), xargs (https://www.notion.so/xargs-4caac2dc9bfd433689873368ce103fd3?pvs=21), Ryan Mac (https://www.notion.so/Ryan-Mac-086d36ce20894ee8970ad6a379947e72?pvs=21), Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "https://twitter.com/thenounsquare",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 127,
@@ -4802,11 +4162,7 @@
     "Team": "apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-x-dopamine-xyz/1916",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 126,
@@ -4823,11 +4179,7 @@
     "Team": "Coral Orca (https://www.notion.so/Coral-Orca-a3b5af886322484bbf9e69caee4217df?pvs=21)",
     "Product": "https://twitter.com/johnhamon_/status/1572498519159873537",
     "Discussion links": "https://discourse.nouns.wtf/t/john-hamon-x-nouns/1731",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 125,
@@ -4844,11 +4196,7 @@
     "Team": "",
     "Product": "-",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 124,
@@ -4865,11 +4213,7 @@
     "Team": "seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21)",
     "Product": "1- https://www.nounsagora.com/\n2- https://www.addressform.io/board/47a36175-ce5d-4d55-8ed1-0173150d16a0?q=AddressBoard%20Posts\n3- https://houseofnouns.xyz/\n4- https://nounsmetrics.wtf/\n5- https://www.federation.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/mandated-round-nouns-governance-clients/1858",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 123,
@@ -4886,11 +4230,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "FUN Noggles Stage 2 (https://www.notion.so/FUN-Noggles-Stage-2-e29ac09d748f4e5db0a1773c0608b223?pvs=21)",
     "Discussion links": "https://discourse.nouns.wtf/t/prop-56-eth-to-dollar-conversion-reevaluation/1789",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 11
+    "Press/media/social links": ""
   },
   {
     "No": 122,
@@ -4907,11 +4247,7 @@
     "Team": "davidphelps (https://www.notion.so/davidphelps-e39fd891628c4151b7768ab89aeeabbd?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-jokedao-for-nouns/1836",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 121,
@@ -4928,11 +4264,7 @@
     "Team": "Sam Ellis (https://www.notion.so/Sam-Ellis-3cc5293da23a47ed82f52f99a35e9b39?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-an-animated-pilot/1634",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 120,
@@ -4949,11 +4281,7 @@
     "Team": "mrrobbo (https://www.notion.so/mrrobbo-59531b5652194236b15e563dcd075f27?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-wellness-app-ios-android/1817",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 119,
@@ -4970,11 +4298,7 @@
     "Team": "Griff (https://www.notion.so/Griff-f28da0ada87e4f63a4cbddc47c08650b?pvs=21), PPD (https://www.notion.so/PPD-08c229866c4b4fddaa773a4b8487f1dd?pvs=21), Jason Oliver (https://www.notion.so/Jason-Oliver-e0ff00d1dcf84869a112cdc2dedd87a3?pvs=21), Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21), apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21), brian cho (https://www.notion.so/brian-cho-b49ed685d7f246e79681ae93fb388d23?pvs=21), deeze (https://www.notion.so/deeze-98d9bb1140074f75976195ac566021be?pvs=21), beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21), brax (https://www.notion.so/brax-98d37452ecfc4f28896d7590258a761e?pvs=21)",
     "Product": "https://nouns.gg/",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-esports-funding-the-nouns-esports-pod/1818",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 118,
@@ -4991,11 +4315,7 @@
     "Team": "beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21), Kome (https://www.notion.so/Kome-c36129eb860749119b5c7e4b38264067?pvs=21), QuijoteHorizon (https://www.notion.so/QuijoteHorizon-ab099bc34c854805b0e70410af030eed?pvs=21), akva (https://www.notion.so/akva-6e467a00056446f38cef472dd5a92006?pvs=21)",
     "Product": "https://nounsweek.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/nounsdao-brazil/1498",
-    "Press/media/social links": "https://twitter.com/nounsbr",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsbr"
   },
   {
     "No": 117,
@@ -5012,11 +4332,7 @@
     "Team": "wideeyekarl (https://www.notion.so/wideeyekarl-8dfe190f2862449ba3570bde8c94ce93?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/small-grants-on-the-ground-activation-comex-singapore/1821",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 116,
@@ -5033,11 +4349,7 @@
     "Team": "Defaulteduser (https://www.notion.so/Defaulteduser-dd4fe4a82ffd4328a1821c5740d40e25?pvs=21)",
     "Product": "https://titan-comics.com/c/1894-nouns/\n\nhttps://www.comicsdao.wtf/nouns",
     "Discussion links": "https://discourse.nouns.wtf/t/monthly-nouns-comics-for-mass-market-release-v2/1717",
-    "Press/media/social links": "https://www.coindesk.com/web3/2023/02/03/web3-community-nounsdao-is-creating-an-nft-comic-book-series/?utm_content=editorial&utm_campaign=coindesk_main&utm_term=organic&utm_source=twitter&utm_medium=social\n\nhttps://comicbook.com/comics/news/nouns-nountown-issue-1-preview-titan-comics-exclusive/#2",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 46
+    "Press/media/social links": "https://www.coindesk.com/web3/2023/02/03/web3-community-nounsdao-is-creating-an-nft-comic-book-series/?utm_content=editorial&utm_campaign=coindesk_main&utm_term=organic&utm_source=twitter&utm_medium=social\n\nhttps://comicbook.com/comics/news/nouns-nountown-issue-1-preview-titan-comics-exclusive/#2"
   },
   {
     "No": 115,
@@ -5054,11 +4366,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 114,
@@ -5075,11 +4383,7 @@
     "Team": "verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 113,
@@ -5096,11 +4400,7 @@
     "Team": "Art of Conviction (https://www.notion.so/Art-of-Conviction-fec5fbf8236648938440655268a84112?pvs=21)",
     "Product": "https://twitter.com/ordinaryfolkco/status/1603200528162656257",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 112,
@@ -5117,11 +4417,7 @@
     "Team": "Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21), brian cho (https://www.notion.so/brian-cho-b49ed685d7f246e79681ae93fb388d23?pvs=21), apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "https://nouns.gg/",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-esports-proposal-dota-team-extension-july-october/1712",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 30
+    "Press/media/social links": ""
   },
   {
     "No": 111,
@@ -5138,11 +4434,7 @@
     "Team": "Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21)",
     "Product": "(The continuation of Noun 22’s residency as community manager - working on small grants, onboarding calls and weekly nouner meetings.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 110,
@@ -5159,11 +4451,7 @@
     "Team": "aubtoshi (https://www.notion.so/aubtoshi-abed47c3c19b4c1588f21c1cb578e593?pvs=21)",
     "Product": "https://www.nounsotg.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-on-the-ground-6-month-proliferation-pod/1677",
-    "Press/media/social links": "https://twitter.com/NounsOTG",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 29
+    "Press/media/social links": "https://twitter.com/NounsOTG"
   },
   {
     "No": 109,
@@ -5180,11 +4468,7 @@
     "Team": "remixr (https://www.notion.so/remixr-604039d4deec417aa5fe82e26ce5a366?pvs=21)",
     "Product": "https://clothes.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-brand/1409",
-    "Press/media/social links": "https://twitter.com/nounsbrand",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsbrand"
   },
   {
     "No": 108,
@@ -5201,11 +4485,7 @@
     "Team": "",
     "Product": "https://clothes.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-funding-the-protocol-guild-pilot/1599",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 107,
@@ -5222,11 +4502,7 @@
     "Team": "Kiran (https://www.notion.so/Kiran-7fa34351ec14464cba7e6a8af3037d14?pvs=21)",
     "Product": "(Since the DAO did not find a safe way to invest in Verse, the investment has been cancelled and the ETH has been returned.}",
     "Discussion links": "https://discourse.nouns.wtf/t/nounsdao-investment-in-verse/1607",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 175
+    "Press/media/social links": ""
   },
   {
     "No": 106,
@@ -5243,11 +4519,7 @@
     "Team": "verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21)",
     "Product": "-",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "No",
-    "Leftover": 0
+    "Press/media/social links": ""
   },
   {
     "No": 105,
@@ -5264,11 +4536,7 @@
     "Team": "seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21), devcarrot (https://www.notion.so/devcarrot-da95fda2260f4f7f9938860024f32162?pvs=21), toastee (https://www.notion.so/toastee-640e561127ed4e6fa98ed5ae5d1ebbd4?pvs=21), cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21), vapeape (https://www.notion.so/vapeape-8f02e8916b0e4382a14259ad8198af34?pvs=21)",
     "Product": "https://prop.house/",
     "Discussion links": "https://discourse.nouns.wtf/t/prop-house-protocol-public-infrastructure-by-nouns-dao/1594",
-    "Press/media/social links": "https://twitter.com/nounsprophouse",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsprophouse"
   },
   {
     "No": 104,
@@ -5285,11 +4553,7 @@
     "Team": "Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/free-glasses-for-kids-v4/1589",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 19.76
+    "Press/media/social links": ""
   },
   {
     "No": 103,
@@ -5306,11 +4570,7 @@
     "Team": "seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21)",
     "Product": "1 - https://pronouns.gg/\n2 - https://www.nounoclock.app/\n3 - https://nouns.sh/\n4 - https://shenounigans.live/",
     "Discussion links": "https://discourse.nouns.wtf/t/mandated-round-nouns-governance-clients/1858",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 102,
@@ -5327,11 +4587,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21)",
     "Product": "https://twitter.com/fiveoceans_dev/status/1577873264315052032?s=20&t=AY3oKXw4mcmhln_C_aNAfw",
     "Discussion links": "https://discourse.nouns.wtf/t/sailing-pr-campaign-korea-blockchain-week-2022-6-7-august/1494",
-    "Press/media/social links": "https://www.hankyung.com/it/article/202209281223i",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.hankyung.com/it/article/202209281223i"
   },
   {
     "No": 101,
@@ -5348,11 +4604,7 @@
     "Team": "Toady Hawk (https://www.notion.so/Toady-Hawk-1500a05f228e4a42a5d233cc32355a44?pvs=21), 142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Ser Noadz (https://www.notion.so/Ser-Noadz-fd127bc7dddc468d9e75f501d0ed1cf7?pvs=21), SuperTightWoody (https://www.notion.so/SuperTightWoody-ef99343293fb4272b651cba6edf17c9c?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21), Benbodhi (https://www.notion.so/Benbodhi-a8b8696fdaf3415386a52f8dd0ff14c9?pvs=21)",
     "Product": "https://twitter.com/noun_o_clock",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-the-nouns-square-a-community-driven-daily-noun-o-clock-celebration/1570",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 100,
@@ -5369,11 +4621,7 @@
     "Team": "MGoPatio (https://www.notion.so/MGoPatio-a6d518ffc2e44756aa1020ded26ea164?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-make-nouns-visible-from-space-sponsorship-of-largest-charity-beer-garden-tailgate-in-the-country/1566",
-    "Press/media/social links": "https://twitter.com/BeerVsCancer/status/1571985049796345857\n\nhttps://www.mlive.com/news/ann-arbor/2022/10/tailgating-spot-offers-charity-beer-garden-close-to-big-house-for-michigan-vs-msu.html",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/BeerVsCancer/status/1571985049796345857\n\nhttps://www.mlive.com/news/ann-arbor/2022/10/tailgating-spot-offers-charity-beer-garden-close-to-big-house-for-michigan-vs-msu.html"
   },
   {
     "No": 99,
@@ -5390,11 +4638,7 @@
     "Team": "fiveoceans (5oc) (https://www.notion.so/fiveoceans-5oc-76f89dc820c743e2af1a4dd7a4ae9ec6?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/sailing-pr-campaign-korea-blockchain-week-2022-6-7-august/1494",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 98,
@@ -5411,11 +4655,7 @@
     "Team": "leoclark (https://www.notion.so/leoclark-d564ee90a2f64ae0b3c31e44043c7620?pvs=21), fabioseva (https://www.notion.so/fabioseva-f1152596357d4a74bbc8c5b9bfff2994?pvs=21)",
     "Product": "Pictures from the treasure hunt:\nhttps://photos.app.goo.gl/QZ3bNGMP89Nj7nSL6\n\nhttps://drive.google.com/drive/u/7/folders/1euqDNi4znsaewc6_9jklWmCWLjUfr_yz",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-in-rio-nouns-to-be-a-part-of-the-1st-brazilian-international-nft-exhibition/1475",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 97,
@@ -5432,11 +4672,7 @@
     "Team": "x00b (https://www.notion.so/x00b-124374fb68514e8cae0195990a36fe40?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/mooonbeans-web3-meets-fmcg-a-collaboration-proposal-between-nouns-and-sublime/1239\n\nhttp://mooonbeans.com/",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 96,
@@ -5453,11 +4689,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 95,
@@ -5474,11 +4706,7 @@
     "Team": "beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21)",
     "Product": "https://twitter.com/beautyandpunk/status/1537409600756015105",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 94,
@@ -5495,11 +4723,7 @@
     "Team": "CosmosAstroArt (https://www.notion.so/CosmosAstroArt-40752800bba54f3fad423c4c8991b8ca?pvs=21)",
     "Product": "http://cc0images.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-cc0-space-image-bank-for-artists/1283",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 93,
@@ -5516,11 +4740,7 @@
     "Team": "brkfstsndwch (https://www.notion.so/brkfstsndwch-4ced605fb0da4cb181f5ef8728f45e3b?pvs=21), Ser Noadz (https://www.notion.so/Ser-Noadz-fd127bc7dddc468d9e75f501d0ed1cf7?pvs=21), 0xDesigner (https://www.notion.so/0xDesigner-228ce860e5ba46ff9344ff2016215ecf?pvs=21), Plaid Shaman (https://www.notion.so/Plaid-Shaman-6c31156c784c49cdb57add13ada0f16e?pvs=21)",
     "Product": "https://nounspoap.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-bidder-poap-v2/1440",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 92,
@@ -5537,11 +4757,7 @@
     "Team": "David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21)",
     "Product": "https://www.studio1.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/david-horvath-nouns-studio-1-extension/1113",
-    "Press/media/social links": "https://toumart.biz/5855/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://toumart.biz/5855/"
   },
   {
     "No": 91,
@@ -5558,11 +4774,7 @@
     "Team": "sirsu (https://www.notion.so/sirsu-60e8caac732448b9a7054dd09c98b80c?pvs=21), Teelon (https://www.notion.so/Teelon-1db7c7df62624f89a2aec51fb0fe4f04?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), brax (https://www.notion.so/brax-98d37452ecfc4f28896d7590258a761e?pvs=21)",
     "Product": "https://liquipedia.net/pokemon/Nouns_Esports",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-esports-expansion-w-blvkhvnd-pokemon-unite/1349",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 90,
@@ -5579,11 +4791,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), tummlin (https://www.notion.so/tummlin-faed6203924b4dbdab8cdf36d55c90fc?pvs=21)",
     "Product": "https://twitter.com/goatclub116/status/1618004609347518469",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nounish-meme-factory-by-goat-club/1062",
-    "Press/media/social links": "Gifs:\nTenor https://t.co/akELq8oNOg\nGiphy https://t.co/yLCfSTYmo4\n\n\nStatic memes and templates:\nhttps://t.co/aLMlzzc52o",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "Gifs:\nTenor https://t.co/akELq8oNOg\nGiphy https://t.co/yLCfSTYmo4\n\n\nStatic memes and templates:\nhttps://t.co/aLMlzzc52o"
   },
   {
     "No": 89,
@@ -5600,11 +4808,7 @@
     "Team": "Rainman (https://www.notion.so/Rainman-bed39261574d42a0bd612b4a2d664579?pvs=21), Krish (https://www.notion.so/Krish-cfd84ac298ca496c8d087de09c691881?pvs=21), Ziad (https://www.notion.so/Ziad-fc636ceddf7a4c1685db9ba3982a282b?pvs=21), Shawn (https://www.notion.so/Shawn-bc3784f7bb7a4d48981d3c775e10e91e?pvs=21), Matt (https://www.notion.so/Matt-86e42b1282a642cc82bdfaca60205c21?pvs=21), mothecreator (https://www.notion.so/mothecreator-b1433621e8694576b94d8e5fe5f5eece?pvs=21), Doowop (https://www.notion.so/Doowop-02129ff1914f425b9fbf857d1739a549?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-irl-art-tour-nyc-edition/1270",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 88,
@@ -5621,11 +4825,7 @@
     "Team": "Rainman (https://www.notion.so/Rainman-bed39261574d42a0bd612b4a2d664579?pvs=21), Krish (https://www.notion.so/Krish-cfd84ac298ca496c8d087de09c691881?pvs=21), Ziad (https://www.notion.so/Ziad-fc636ceddf7a4c1685db9ba3982a282b?pvs=21), Shawn (https://www.notion.so/Shawn-bc3784f7bb7a4d48981d3c775e10e91e?pvs=21), Matt (https://www.notion.so/Matt-86e42b1282a642cc82bdfaca60205c21?pvs=21), mothecreator (https://www.notion.so/mothecreator-b1433621e8694576b94d8e5fe5f5eece?pvs=21), Doowop (https://www.notion.so/Doowop-02129ff1914f425b9fbf857d1739a549?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-irl-art-tour-nyc-edition/1270",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 87,
@@ -5642,11 +4842,7 @@
     "Team": "yitong (VectorDAO) (https://www.notion.so/yitong-VectorDAO-bdd2de42d14f40a3b27415614945ed2d?pvs=21)",
     "Product": "https://docs.google.com/document/d/1VIdPhhNC9qlyxnJm4oj8GnU4WxkaH_eJ-1K5NqoKx84/edit#",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-x-vector-dao-secret-nouns-1-1s-drop-at-nft-nyc/1313",
-    "Press/media/social links": "https://twitter.com/jonjyan/status/1539250723963162624",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 26.4
+    "Press/media/social links": "https://twitter.com/jonjyan/status/1539250723963162624"
   },
   {
     "No": 86,
@@ -5663,11 +4859,7 @@
     "Team": "andy8052 (https://www.notion.so/andy8052-29822e0536b84b4f8a476194b3fc32c1?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-mint-a-pooltogether-judge-nft/1294",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 85,
@@ -5684,11 +4876,7 @@
     "Team": "Noun 12 (https://www.notion.so/Noun-12-84f20435abaa491eafeeefe7bf735c09?pvs=21), Noun 16 (https://www.notion.so/Noun-16-91200ec94e184ffaaf031e40de9b1302?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), Noun 32 (skilift) (https://www.notion.so/Noun-32-skilift-ed714968ec8644cd86f59fdbefe5fc5a?pvs=21)",
     "Product": "NSFW - Nouns Strategic Funding Works (https://www.notion.so/68f80b714b8e49b29c43527fd5ebe0e8?pvs=21)",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/NounsGrants",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/NounsGrants"
   },
   {
     "No": 84,
@@ -5705,11 +4893,7 @@
     "Team": "brkfstsndwch (https://www.notion.so/brkfstsndwch-4ced605fb0da4cb181f5ef8728f45e3b?pvs=21)",
     "Product": "https://www.nouns.coffee/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-coffee/1289",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 83,
@@ -5726,11 +4910,7 @@
     "Team": "brandonmighty (https://www.notion.so/brandonmighty-bb26e2d0e1c3459b9f3cd6b9cc222286?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-children-s-book-development/1231",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 82,
@@ -5747,11 +4927,7 @@
     "Team": "142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), niftynaut (https://www.notion.so/niftynaut-5e688c7179564966b9620748c44de6af?pvs=21), beautyandpunk | B | Noun 137 (https://www.notion.so/beautyandpunk-B-Noun-137-c360aaebf42d4cd391806b457997ef38?pvs=21)",
     "Product": "https://etherscan.io/tx/0x3e5e9c168b44b16010e6e14c795cdd01a5d728b9fdc6422be88b57fa5cb96af6",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 81,
@@ -5768,11 +4944,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), worthalter / POAP (https://www.notion.so/worthalter-POAP-d5391f6ac64644b49b2c7ee5531d05cc?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 80,
@@ -5789,11 +4961,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), worthalter / POAP (https://www.notion.so/worthalter-POAP-d5391f6ac64644b49b2c7ee5531d05cc?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 79,
@@ -5810,11 +4978,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), worthalter / POAP (https://www.notion.so/worthalter-POAP-d5391f6ac64644b49b2c7ee5531d05cc?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 78,
@@ -5831,11 +4995,7 @@
     "Team": "MGoPatio (https://www.notion.so/MGoPatio-a6d518ffc2e44756aa1020ded26ea164?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/make-nouns-glasses-visible-from-space-part-of-the-permanent-record-google-earth-maps/1126",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 77,
@@ -5852,11 +5012,7 @@
     "Team": "Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21)",
     "Product": "https://nerman.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/nerman-a-nounish-community-bot/1152",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 76,
@@ -5873,11 +5029,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), worthalter / POAP (https://www.notion.so/worthalter-POAP-d5391f6ac64644b49b2c7ee5531d05cc?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 75,
@@ -5894,11 +5046,7 @@
     "Team": "Peiman (https://www.notion.so/Peiman-ffa90ac83868420ab25dd590a0dfefb6?pvs=21)",
     "Product": "https://twitter.com/nounish/status/1597288513216868353?lang=en",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-madhappy-for-nouns-dao/1137\n\nhttps://discourse.nouns.wtf/t/proposal-madhappy-for-nounsdao-updated-5-6-22-to-include-apparel-partnership-remove-charity-contribution/1163\n\nhttps://discourse.nouns.wtf/t/proposal-madhappy-for-nounsdao-updated-5-6-22-v2-to-include-apparel-partnership/1165",
-    "Press/media/social links": "https://discourse.nouns.wtf/t/proposal-madhappy-for-nounsdao-updated-5-6-22-v2-to-include-apparel-partnership/1165",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://discourse.nouns.wtf/t/proposal-madhappy-for-nounsdao-updated-5-6-22-v2-to-include-apparel-partnership/1165"
   },
   {
     "No": 74,
@@ -5915,11 +5063,7 @@
     "Team": "donjon (https://www.notion.so/donjon-6adfcb21b06547e0977d0ee2d2e61092?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/fia-world-rally-championship-x-nouns/1007\n\nhttps://discourse.nouns.wtf/t/revised-proposal-nouns-participate-in-world-rally-championship/1219",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 73,
@@ -5936,11 +5080,7 @@
     "Team": "cpwozzie (https://www.notion.so/cpwozzie-2731a6b9f2424edda1caba57be164235?pvs=21), townertime (https://www.notion.so/townertime-81020473943f4107ab7ce2f742e9b5c2?pvs=21)",
     "Product": "https://twitter.com/TownerTime/status/1591208248967049216",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-go-to-the-rose-parade-a-documentary-by-the-makers-of-robot-chicken/1046",
-    "Press/media/social links": "https://twitter.com/NounsDoc",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 26.6
+    "Press/media/social links": "https://twitter.com/NounsDoc"
   },
   {
     "No": 72,
@@ -5957,11 +5097,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "https://www.nounworks.wtf/nounish-friends-1",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nounish-friends-nouns-town-collectible-figures-and-more-by-bigshottoyworks/967\n\nhttps://discourse.nouns.wtf/t/proposal-nounish-friends-minifigures-series1-manufacturing/2095\n\nhttps://discourse.nouns.wtf/t/update-to-prop-72-nounish-friends-minifigure-collection-and-more/1879",
-    "Press/media/social links": "https://www.nounworks.wtf/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.nounworks.wtf/"
   },
   {
     "No": 71,
@@ -5978,11 +5114,7 @@
     "Team": "leoclark (https://www.notion.so/leoclark-d564ee90a2f64ae0b3c31e44043c7620?pvs=21)",
     "Product": "https://youtu.be/Qkw10-65jRc",
     "Discussion links": "https://discourse.nouns.wtf/t/non-fungible-aotearoa-documentary-about-the-artist-behind-noun-cats/1109/4",
-    "Press/media/social links": "https://twitter.com/Nf_Aotearoa",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/Nf_Aotearoa"
   },
   {
     "No": 70,
@@ -5999,11 +5131,7 @@
     "Team": "Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-cc0-story-foundations-development/1009",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 69,
@@ -6020,11 +5148,7 @@
     "Team": "niftynaut (https://www.notion.so/niftynaut-5e688c7179564966b9620748c44de6af?pvs=21)",
     "Product": "https://muc.xyz/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-sponsoring-muc-xyz-one-of-germany-s-first-ever-nft-events/860",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 68,
@@ -6041,11 +5165,7 @@
     "Team": "Sasquatch (https://www.notion.so/Sasquatch-54a3210160104b2e98798aa7999a6c15?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "https://twitter.com/nounsesports",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-esports-pod/1030",
-    "Press/media/social links": "https://esports.gg/news/dota-2/nouns-foundation-an-nft-organization-picks-up-4zoomers/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://esports.gg/news/dota-2/nouns-foundation-an-nft-organization-picks-up-4zoomers/"
   },
   {
     "No": 67,
@@ -6062,11 +5182,7 @@
     "Team": "",
     "Product": "https://nouncil.wtf/gov",
     "Discussion links": "https://discourse.nouns.wtf/t/nouncil-proposal-1/1024",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 66,
@@ -6083,11 +5199,7 @@
     "Team": "",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouncil-proposal-1/1024",
-    "Press/media/social links": "",
-    "Comments / issues": "Joel messed up the amount",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 65,
@@ -6104,11 +5216,7 @@
     "Team": "devin @ Mad Realities (https://www.notion.so/devin-Mad-Realities-4ec0f67df88c4499aa4fbc58eff23d26?pvs=21)",
     "Product": "https://www.madrealities.xyz/",
     "Discussion links": "https://discourse.nouns.wtf/t/mad-realities-x-nouns/1053",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 20
+    "Press/media/social links": ""
   },
   {
     "No": 64,
@@ -6125,11 +5233,7 @@
     "Team": "142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21)",
     "Product": "https://www.youtube.com/channel/UCP4kPIzNhpTGrn75XeLVVXg",
     "Discussion links": "https://discourse.nouns.wtf/t/nounish-marketing-studio-for-nouns/2329",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 63,
@@ -6146,11 +5250,7 @@
     "Team": "wag (https://www.notion.so/wag-6a2a2459d6df4ef5b2093d3069201541?pvs=21), Joel Cares (https://www.notion.so/Joel-Cares-ee12a6f140624b0b8c10248d99905edc?pvs=21), maty (https://www.notion.so/maty-95f4de41ece14f038d0597b5323d4903?pvs=21)",
     "Product": "https://mirror.xyz/blowned.eth/oPMeQS_dHAr88p4zhUoBjg6w-9irEehYI6qOu894XvY",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-pilot-coordinape-round-s-to-implement-retroactive-impact-rewards/929",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 62,
@@ -6167,11 +5267,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21), seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21), devcarrot (https://www.notion.so/devcarrot-da95fda2260f4f7f9938860024f32162?pvs=21), toastee (https://www.notion.so/toastee-640e561127ed4e6fa98ed5ae5d1ebbd4?pvs=21), jckbtchr (https://www.notion.so/jckbtchr-ae19599e1f514629907c2c2a0c724f22?pvs=21)",
     "Product": "https://prop.house/",
     "Discussion links": "https://discourse.nouns.wtf/t/prop-house-continuation/991",
-    "Press/media/social links": "https://twitter.com/nounsprophouse",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsprophouse"
   },
   {
     "No": 61,
@@ -6188,11 +5284,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21)",
     "Product": "-",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-cdt-residency/995",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 4.28
+    "Press/media/social links": ""
   },
   {
     "No": 60,
@@ -6209,11 +5301,7 @@
     "Team": "honkdiddly (https://www.notion.so/honkdiddly-8355638fc1f04283a8c5054407dd1785?pvs=21)",
     "Product": "(A successful test of the veto function.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 59,
@@ -6230,11 +5318,7 @@
     "Team": "Rage / Noun 219 (https://www.notion.so/Rage-Noun-219-80d023c356674a089b9891508ca03c8c?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/small-grants-infinite-auction-to-raise-funds-for-ukraine/775",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 58,
@@ -6251,11 +5335,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "(This proposal has been cancelled during on-chain voting.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 57,
@@ -6272,11 +5352,7 @@
     "Team": "Salvino Armati (https://www.notion.so/Salvino-Armati-cc72100331b5454aa37f2ec9591a3cf5?pvs=21)",
     "Product": "https://nounsvision.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/bring-luxury-noun-sunglasses-to-market/994",
-    "Press/media/social links": "https://twitter.com/nounsvision",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsvision"
   },
   {
     "No": 56,
@@ -6293,11 +5369,7 @@
     "Team": "Bigshot Klim (https://www.notion.so/Bigshot-Klim-755371af64dd445bac8fd26483c92873?pvs=21)",
     "Product": "https://discourse.nouns.wtf/t/proposal-funglasses-sage-2-tooling-molds/927",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-funglasses-sage-2-tooling-molds/927",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 55,
@@ -6314,11 +5386,7 @@
     "Team": "deez-nuts (https://www.notion.so/deez-nuts-8362a12972664c8e800a25fb79da285e?pvs=21)",
     "Product": "-",
     "Discussion links": "https://discourse.nouns.wtf/t/toadz-acquisition-committee/993",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 54,
@@ -6335,11 +5403,7 @@
     "Team": "brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21), vapeape (https://www.notion.so/vapeape-8f02e8916b0e4382a14259ad8198af34?pvs=21), solimander (https://www.notion.so/solimander-06f174bd858b4547a1675c77b6efc209?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "https://discourse.nouns.wtf/t/create-new-pod-nouns-technical-grants-committee/856",
     "Discussion links": "https://discourse.nouns.wtf/t/create-new-pod-nouns-technical-grants-committee/856",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 53,
@@ -6356,11 +5420,7 @@
     "Team": "apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21), miguelfaus (https://www.notion.so/miguelfaus-a072e480739942229e1a1f6e4e7f9aa4?pvs=21)",
     "Product": "https://www.calladitafilm.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-cameo-in-pioneering-web3-movie/808",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 52,
@@ -6377,11 +5437,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 51,
@@ -6398,11 +5454,7 @@
     "Team": "Gami (https://www.notion.so/Gami-3b1a7ec1b3aa44c2846e3444c31a8474?pvs=21)",
     "Product": "https://shred.wtf/\nhttps://twitter.com/nounsathletes\nhttps://discord.com/invite/cCR49gTksw",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-gnars-x-nouns-athletes/858",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 50,
@@ -6419,11 +5471,7 @@
     "Team": "Rage / Noun 219 (https://www.notion.so/Rage-Noun-219-80d023c356674a089b9891508ca03c8c?pvs=21)",
     "Product": "(Unfortunately, there was a problem in the proposed transactions that would cause it to fail if executed, and therefore the proposal has been cancelled during on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/small-grants-infinite-auction-to-raise-funds-for-ukraine/775",
-    "Press/media/social links": "https://rescuetoadz.xyz/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://rescuetoadz.xyz/"
   },
   {
     "No": 49,
@@ -6440,11 +5488,7 @@
     "Team": "vapeape (https://www.notion.so/vapeape-8f02e8916b0e4382a14259ad8198af34?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), rumi (https://www.notion.so/rumi-2f3c2f008969461aba1002d587e937f3?pvs=21)",
     "Product": "https://etherscan.io/address/0x9298b97de93784635900163e582a5d9e570f35a5",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 48,
@@ -6461,11 +5505,7 @@
     "Team": "Dustin Yellin (https://www.notion.so/Dustin-Yellin-05891b67c7af489c8d25ef97b1abb040?pvs=21)",
     "Product": "https://twitter.com/nounish/status/1675186193896722433",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-psychogeography-with-dustin-yellin-person-place-or-thing/664",
-    "Press/media/social links": "https://www.youtube.com/watch?v=eAenRhD8Whk",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.youtube.com/watch?v=eAenRhD8Whk"
   },
   {
     "No": 47,
@@ -6482,11 +5522,7 @@
     "Team": "rumi (https://www.notion.so/rumi-2f3c2f008969461aba1002d587e937f3?pvs=21), brennen (https://www.notion.so/brennen-2917b45bcdf64ac48e6bd99da809b8f2?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-events-committee/892",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 46,
@@ -6503,11 +5539,7 @@
     "Team": "jacob (https://www.notion.so/jacob-46b1f8cc53794a46ad914c4383cf4b28?pvs=21), blequity (https://www.notion.so/blequity-d58c3875f6504ba0934207b7faac88c4?pvs=21)",
     "Product": "https://noun.market/",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-marketplace-pod-proposal/755",
-    "Press/media/social links": "https://twitter.com/nounmarket",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounmarket"
   },
   {
     "No": 45,
@@ -6524,11 +5556,7 @@
     "Team": "brianj (https://www.notion.so/brianj-4f31bd95095e4abaafe26afc39b103cd?pvs=21)",
     "Product": "(Funding brianj to work on nouns.wtf.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-to-re-elect-brian-as-nouns-dao-engineer-resident/815",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 44,
@@ -6545,11 +5573,7 @@
     "Team": "vapeape (https://www.notion.so/vapeape-8f02e8916b0e4382a14259ad8198af34?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), rumi (https://www.notion.so/rumi-2f3c2f008969461aba1002d587e937f3?pvs=21)",
     "Product": "https://etherscan.io/address/0x9298b97de93784635900163e582a5d9e570f35a5",
     "Discussion links": "https://discourse.nouns.wtf/t/create-new-workstream-nouns-acquisition-committee/796",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 43,
@@ -6566,11 +5590,7 @@
     "Team": "Noun 12 (https://www.notion.so/Noun-12-84f20435abaa491eafeeefe7bf735c09?pvs=21), Noun 16 (https://www.notion.so/Noun-16-91200ec94e184ffaaf031e40de9b1302?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), Noun 32 (skilift) (https://www.notion.so/Noun-32-skilift-ed714968ec8644cd86f59fdbefe5fc5a?pvs=21)",
     "Product": "NSFW - Nouns Strategic Funding Works (https://www.notion.so/68f80b714b8e49b29c43527fd5ebe0e8?pvs=21)",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/NounsGrants",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/NounsGrants"
   },
   {
     "No": 42,
@@ -6587,11 +5607,7 @@
     "Team": "max-power (https://www.notion.so/max-power-74470f34717d485990ae98757ddca67f?pvs=21)",
     "Product": "https://etherscan.io/tx/0x1ee77d303ea6793d925765cb421b3f913c4edba68f0b08fd2485fe8aace72ec3",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 41,
@@ -6608,11 +5624,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21), zeeraffe (https://www.notion.so/zeeraffe-72e1e34156a240a6908d18c92817cc77?pvs=21)",
     "Product": "(Funding the R&D of nounish 3D printed clothes, more details and photos in discourse.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-3d-printed-fashion-collection-updates-follow-on-proposal/739",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 40,
@@ -6629,11 +5641,7 @@
     "Team": "apenoun/Oni (https://www.notion.so/apenoun-Oni-4eea8e3464294112b5cf9cd71c59bb67?pvs=21)",
     "Product": "https://twitter.com/skatepark/status/1562942392985985025?s=21&t=KVGpMsYKLV9cbyP8ZXVIeg",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 39,
@@ -6650,11 +5658,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "https://discourse.nouns.wtf/t/proposal-fund-nouns-foundation-setup-and-2022-operations/649",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-fund-nouns-foundation-setup-and-2022-operations/649",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 38,
@@ -6671,11 +5675,7 @@
     "Team": "Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21)",
     "Product": "(The continuation of Noun 22’s residency as community manager - working on small grants, onboarding calls and weekly nouner meetings.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 37,
@@ -6692,11 +5692,7 @@
     "Team": "wag (https://www.notion.so/wag-6a2a2459d6df4ef5b2093d3069201541?pvs=21)",
     "Product": "(This change enabled Noun owners or delegates to submit Nouns DAO proposals using a single vote until, and including, Noun 399.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 36,
@@ -6713,11 +5709,7 @@
     "Team": "hugothedoodle (https://www.notion.so/hugothedoodle-5dd1f7858c724ce5a738def49d566ee4?pvs=21)",
     "Product": "(Unfortunately Randy's rejected the ad placement in the end and the funds have been returned to Small Grants account.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-outdoor-advertising-placement-on-giant-donut-statue-in-los-angeles-randys-donuts/584",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 35,
@@ -6734,11 +5726,7 @@
     "Team": "",
     "Product": "https://www.youtube.com/watch?v=2rGOf_caxhQ&ab_channel=BudLight",
     "Discussion links": "",
-    "Press/media/social links": "Bud Light´s Beer Noun (179)",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "Bud Light´s Beer Noun (179)"
   },
   {
     "No": 34,
@@ -6755,11 +5743,7 @@
     "Team": "Messhup (https://www.notion.so/Messhup-437471b985044fc081635c14f8107f5d?pvs=21)",
     "Product": "https://nounsense.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/100-days-of-nouns-coloring-book/468",
-    "Press/media/social links": "https://twitter.com/nounsense_wtf",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsense_wtf"
   },
   {
     "No": 33,
@@ -6776,11 +5760,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "https://www.youtube.com/watch?v=2rGOf_caxhQ",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/budlight/status/1509320520084377602",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/budlight/status/1509320520084377602"
   },
   {
     "No": 32,
@@ -6797,11 +5777,7 @@
     "Team": "David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21)",
     "Product": "https://www.studio1.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "https://toumart.biz/5855/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://toumart.biz/5855/"
   },
   {
     "No": 31,
@@ -6818,11 +5794,7 @@
     "Team": "Noun 12 (https://www.notion.so/Noun-12-84f20435abaa491eafeeefe7bf735c09?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), Noun 32 (skilift) (https://www.notion.so/Noun-32-skilift-ed714968ec8644cd86f59fdbefe5fc5a?pvs=21), Noun 16 (https://www.notion.so/Noun-16-91200ec94e184ffaaf031e40de9b1302?pvs=21)",
     "Product": "NSFW - Nouns Strategic Funding Works (https://www.notion.so/68f80b714b8e49b29c43527fd5ebe0e8?pvs=21)",
     "Discussion links": "",
-    "Press/media/social links": "https://twitter.com/NounsGrants",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/NounsGrants"
   },
   {
     "No": 30,
@@ -6839,11 +5811,7 @@
     "Team": "willprice (https://www.notion.so/willprice-46967c86a40d4b28984c543eb8d54d56?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 29,
@@ -6860,11 +5828,7 @@
     "Team": "David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21)",
     "Product": "https://www.studio1.wtf/",
     "Discussion links": "",
-    "Press/media/social links": "https://toumart.biz/5855/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://toumart.biz/5855/"
   },
   {
     "No": 28,
@@ -6881,11 +5845,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21), Noun 53 (https://www.notion.so/Noun-53-a5ce9ca3cc8e46188261a5333d68c474?pvs=21)",
     "Product": "(Unfortunately, NASA shot down the proposal because it is connected to NFTs/crypto. Funds have been returned.)",
     "Discussion links": "https://discourse.nouns.wtf/t/send-a-noun-into-space/360",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "Yes",
-    "Leftover": 62.2
+    "Press/media/social links": ""
   },
   {
     "No": 27,
@@ -6902,11 +5862,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21)",
     "Product": "https://nouns.center/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-center/429",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 26,
@@ -6923,11 +5879,7 @@
     "Team": "Danit Peleg (https://www.notion.so/Danit-Peleg-2da214fb8f7142778bd7c466270c3df4?pvs=21)",
     "Product": "(Funding the R&D of nounish 3D printed clothes, more details and photos in discourse.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-3d-printed-fashion-collection/402",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 25,
@@ -6944,11 +5896,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21)",
     "Product": "(This proposal corrects a protocol misconfiguration by updating the auction house proxy admin from the NounsDAOExecutor contract to the NounsAuctionHouseProxyAdmin contract.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 24,
@@ -6965,11 +5913,7 @@
     "Team": "Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21)",
     "Product": "(Defeated in on-chain voting.)",
     "Discussion links": "https://discourse.nouns.wtf/t/noun-tracks-unlocking-the-sounds-of-nouns/370",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 23,
@@ -6986,11 +5930,7 @@
     "Team": "seneca (https://www.notion.so/seneca-520e92d6a5e94024a4c975340d3937e6?pvs=21)",
     "Product": "https://prop.house/",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-proposal-auction-house-prop-house/339",
-    "Press/media/social links": "https://twitter.com/nounsprophouse",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounsprophouse"
   },
   {
     "No": 22,
@@ -7007,11 +5947,7 @@
     "Team": "0x4680 (https://www.notion.so/0x4680-e844227b9a3e4716b80a360defb9a16a?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 21,
@@ -7028,11 +5964,7 @@
     "Team": "Noun 12 (https://www.notion.so/Noun-12-84f20435abaa491eafeeefe7bf735c09?pvs=21)",
     "Product": "https://gitcoin.co/blog/nouns-case-study/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-a-very-nounish-gitcoinmas-nft-crossover-event-169-eth-to-crypto-public-goods/369",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 20,
@@ -7049,11 +5981,7 @@
     "Team": "Goldy (https://www.notion.so/Goldy-f95ce8a5697e48c68e0e3c99fb254470?pvs=21), kenbot (https://www.notion.so/kenbot-a0ece22d64fd4b28bb817c257395293a?pvs=21)",
     "Product": "https://www.premiere.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-stories/308",
-    "Press/media/social links": "https://twitter.com/nouns_stories/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nouns_stories/"
   },
   {
     "No": 19,
@@ -7070,11 +5998,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21), David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21), brkfstsndwch (https://www.notion.so/brkfstsndwch-4ced605fb0da4cb181f5ef8728f45e3b?pvs=21), Bored UX (https://www.notion.so/Bored-UX-786089a94f3947819a17807557b590b6?pvs=21)",
     "Product": "https://nounspoap.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-bidder-poap/243",
-    "Press/media/social links": "https://twitter.com/nounspoap",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounspoap"
   },
   {
     "No": 18,
@@ -7091,11 +6015,7 @@
     "Team": "0x4680 (https://www.notion.so/0x4680-e844227b9a3e4716b80a360defb9a16a?pvs=21)",
     "Product": "https://etherscan.io/token/0xae7ab96520de3a18e5e111b5eaab095312d7fe84?a=0x0BC3807Ec262cB779b38D65b38158acC3bfedE10",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-stake-1-eth-in-lido/357",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 17,
@@ -7112,11 +6032,7 @@
     "Team": "brianj (https://www.notion.so/brianj-4f31bd95095e4abaafe26afc39b103cd?pvs=21), Pixelz (https://www.notion.so/Pixelz-f53f121ed22b4f199c0e11c17f3de044?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21)",
     "Product": "(This proposals funds 3 core contributors - a designer, an engineer and a community lead for the duration of 3 months.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 16,
@@ -7133,11 +6049,7 @@
     "Team": "Noun 53 (https://www.notion.so/Noun-53-a5ce9ca3cc8e46188261a5333d68c474?pvs=21)",
     "Product": "https://en.wikipedia.org/wiki/Hyalinobatrachium_nouns",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-name-a-newly-discovered-species-of-frog-after-a-noun/303",
-    "Press/media/social links": "https://www.nationalgeographic.com/animals/article/two-new-species-of-glassfrog-discovered",
-    "Comments / issues": "dysfunctional dropbox link in the prop",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.nationalgeographic.com/animals/article/two-new-species-of-glassfrog-discovered"
   },
   {
     "No": 15,
@@ -7154,11 +6066,7 @@
     "Team": "wag (https://www.notion.so/wag-6a2a2459d6df4ef5b2093d3069201541?pvs=21)",
     "Product": "(This change enabled Noun owners or delegates to submit Nouns DAO proposals using a single vote until, and including, Noun 199.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-setproposalthresholdbps-50/318",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 14,
@@ -7175,11 +6083,7 @@
     "Team": "4156 (https://www.notion.so/4156-341753729bc842cdae1fe707e664b8fb?pvs=21), lukas (https://www.notion.so/lukas-ea6a4c88133a40d6b32b209478572740?pvs=21)",
     "Product": "https://brave.com/nouns-dao/",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 13,
@@ -7196,11 +6100,7 @@
     "Team": "Noun 12 (https://www.notion.so/Noun-12-84f20435abaa491eafeeefe7bf735c09?pvs=21), Noun 22 (https://www.notion.so/Noun-22-d1b54542b9c54b4ba00b82c0805e5fc5?pvs=21), Noun 16 (https://www.notion.so/Noun-16-91200ec94e184ffaaf031e40de9b1302?pvs=21), Noun 32 (skilift) (https://www.notion.so/Noun-32-skilift-ed714968ec8644cd86f59fdbefe5fc5a?pvs=21)",
     "Product": "NSFW - Nouns Strategic Funding Works (https://www.notion.so/68f80b714b8e49b29c43527fd5ebe0e8?pvs=21)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-retroactive-funding-and-small-projects-pool/269",
-    "Press/media/social links": "https://twitter.com/NounsGrants",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/NounsGrants"
   },
   {
     "No": 12,
@@ -7217,11 +6117,7 @@
     "Team": "Joshua Fisher aka Jawshua (https://www.notion.so/Joshua-Fisher-aka-Jawshua-7e0e435025a44a36b5ff6da812795a77?pvs=21)",
     "Product": "https://www.youtube.com/watch?v=S_GgY3WAKAQ&ab_channel=nounish",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-12-perpetual-glasses-for-kids-in-need/226",
-    "Press/media/social links": "https://www.wkbn.com/news/local-news/project-changes-view-for-hundreds-of-valley-students/",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.wkbn.com/news/local-news/project-changes-view-for-hundreds-of-valley-students/"
   },
   {
     "No": 11,
@@ -7238,11 +6134,7 @@
     "Team": "The Oracle (https://www.notion.so/The-Oracle-286c9aafcdc746ba86d8ac4af1defdde?pvs=21)",
     "Product": "https://opensea.io/collection/nouns-comic",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-comic/279",
-    "Press/media/social links": "https://discord.com/channels/849745721544146955/875751366340005908/911614930564816896",
-    "Comments / issues": "- - - - - - - - - - - - - - - - - - \n19.11.2021  https://discord.com/channels/849745721544146955/875751366340005908/911309700702818354\nThe Oracle proposing   \n“I have delivered 3 comics so far and I'm considering returning 3 ETH ~ the equivalent of 6 comics ~ and end the contract early.”\n\nReasoning:\n”it started to become very obvious that Nouns Comic are being ignored and neglected by the community while they were meant to be cherished and shared to deliver fun-to-read stories every once in a while. If they are not being shared then they are not really living up to the very reason they were created for.”\n\nAfter a couple of nice messages Oracle proposed to keep the project alive and pivot to a different format. (”1-sheet comics, gifs, or other types of content”)\n\n18.12.2021  (month later)   https://discord.com/channels/849745721544146955/900756667124318269/921872696806105088\nAfter being asked about the comic, the Oracle responds: \n“I put an end to the Nouns Comic series early if that's what you had in mind, here's a thread on what happened: https://discord.com/channels/849745721544146955/875751366340005908/911309700702818354 . The small bits have been on-hold for a while (as i've been mostly afk for a couple of days and out of the loop for a short period of time) ~ that will return as soon as I find a story worth narrating” \n\nThis is the last update about the comic I was able to find in Discord.\nLast Discord message from The Oracle was on 9.3.2022\nI tried to get a response from The Oracle (tagged them in a discord message, DMs are closed) but have not heard back. https://www.notion.so/Nouns-Comic-6bf9e0def5204b8485870b7747dea3a1?pvs=21\n(written 13.5.2022)\n- - - - - - - - - - - - - - - - - -",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://discord.com/channels/849745721544146955/875751366340005908/911614930564816896"
   },
   {
     "No": 10,
@@ -7259,11 +6151,7 @@
     "Team": "Jonathan Mann (https://www.notion.so/Jonathan-Mann-3b70e5b06ae7418f9953c7a06201dbb9?pvs=21)",
     "Product": "https://twitter.com/songadaymann/status/1447240897813483522?s=20",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 9,
@@ -7280,11 +6168,7 @@
     "Team": "cdt (https://www.notion.so/cdt-cac08780ea4c45e88b11266e9f0fc35e?pvs=21), David Horvath (https://www.notion.so/David-Horvath-4219a28763c04b98b415cf1f754943b7?pvs=21), brkfstsndwch (https://www.notion.so/brkfstsndwch-4ced605fb0da4cb181f5ef8728f45e3b?pvs=21), Bored UX (https://www.notion.so/Bored-UX-786089a94f3947819a17807557b590b6?pvs=21)",
     "Product": "https://nounspoap.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-bidder-poap/243",
-    "Press/media/social links": "https://twitter.com/nounspoap",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://twitter.com/nounspoap"
   },
   {
     "No": 8,
@@ -7301,11 +6185,7 @@
     "Team": "forager (https://www.notion.so/forager-74d4a6c0ffa4435fb50c1ac38135ccfb?pvs=21), rayo (https://www.notion.so/rayo-844370bf83a24ec08c75ab3ccf288a32?pvs=21)",
     "Product": "https://fomonouns.wtf/",
     "Discussion links": "https://discourse.nouns.wtf/t/fomo-nouns-force-mint-our-nouns/117/10",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 7,
@@ -7322,11 +6202,7 @@
     "Team": "Thierry Noir (https://www.notion.so/Thierry-Noir-990cdda73283430da3ecdbbe7a831ea7?pvs=21)",
     "Product": "(The artist is busy with his other work and still looking for the best place for the nounish sculpture.)",
     "Discussion links": "https://discourse.nouns.wtf/t/nouns-x-noir-proposal/87",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 6,
@@ -7343,11 +6219,7 @@
     "Team": "Rainman (https://www.notion.so/Rainman-bed39261574d42a0bd612b4a2d664579?pvs=21), Krish (https://www.notion.so/Krish-cfd84ac298ca496c8d087de09c691881?pvs=21), Ziad (https://www.notion.so/Ziad-fc636ceddf7a4c1685db9ba3982a282b?pvs=21), Shawn (https://www.notion.so/Shawn-bc3784f7bb7a4d48981d3c775e10e91e?pvs=21), Matt (https://www.notion.so/Matt-86e42b1282a642cc82bdfaca60205c21?pvs=21), mothecreator (https://www.notion.so/mothecreator-b1433621e8694576b94d8e5fe5f5eece?pvs=21), Doowop (https://www.notion.so/Doowop-02129ff1914f425b9fbf857d1739a549?pvs=21)",
     "Product": "https://t.co/GKbSK0DFU7",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-nouns-ios-and-apple-watch-app/177",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 5,
@@ -7364,11 +6236,7 @@
     "Team": "Nounders (https://www.notion.so/Nounders-072becb4da944c81a1eb1eaa158079a0?pvs=21)",
     "Product": "(This change enabled Noun owners or delegates to submit Nouns DAO proposals using a single vote until, and including, Noun 99.)",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-5-update-governance-proposal-threshold-to-1/116",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 4,
@@ -7385,11 +6253,7 @@
     "Team": "142 (https://www.notion.so/142-b30066f08a6044de95e1882b190a3a90?pvs=21), verb-elad (https://www.notion.so/verb-elad-7f34c9d2b9854a458352c1698bdbb15e?pvs=21), verb-davidbrai (https://www.notion.so/verb-davidbrai-b7447b764ed94743be710775ebf13b2c?pvs=21)",
     "Product": "https://discourse.nouns.wtf/t/proposal-4-progress-updates-noun-oclock-automation-app/152?u=verb-d",
     "Discussion links": "https://discourse.nouns.wtf/t/proposal-4-progress-updates-noun-oclock-automation-app/152",
-    "Press/media/social links": "https://mobile.twitter.com/verbs_team",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://mobile.twitter.com/verbs_team"
   },
   {
     "No": 3,
@@ -7406,11 +6270,7 @@
     "Team": "devloper (https://www.notion.so/devloper-7ed64f7720bd4ef3882e37affcc266d7?pvs=21), 0xFloyd (https://www.notion.so/0xFloyd-73a2f0eade174cb8944247bbc0279ca0?pvs=21), hans_klaus (https://www.notion.so/hans_klaus-28edae2fdceb494bb4b885e639fea431?pvs=21), bstsrvdblb (https://www.notion.so/bstsrvdblb-8ec5ee72650842888134681119945d45?pvs=21)",
     "Product": "https://nouns.party/",
     "Discussion links": "",
-    "Press/media/social links": "https://www.notion.so/020ce483fef64391831eb69d3e71fa74?pvs=21",
-    "Comments / issues": "Last update 2.2.2022https://discord.com/channels/849745721544146955/890254170731479041/938211914293592084:\n\nThe team decided they “won't be adding new features to http://nouns.party”, due to lack of engagement/capital flow to this project, citing various reasons for what it might have been caused by (lack of product market fit, lack of awareness, lack of internal support, ...).\n\nAn important piece of info from the update: “In general, we're happy to maintain the site/code and even hand it off to an interested team”, meaning someone willing could take over the project.\n\n\nThe only Noun bought via nouns.party:\nhttps://fractional.art/vaults/0xEe72CA0cdaE499be75b87c0383b5C6ABc8129ab6",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": "https://www.notion.so/020ce483fef64391831eb69d3e71fa74?pvs=21"
   },
   {
     "No": 2,
@@ -7427,11 +6287,7 @@
     "Team": "Coral Orca (https://www.notion.so/Coral-Orca-a3b5af886322484bbf9e69caee4217df?pvs=21), 0xFloyd (https://www.notion.so/0xFloyd-73a2f0eade174cb8944247bbc0279ca0?pvs=21)",
     "Product": "https://3dnouns.com/",
     "Discussion links": "https://discourse.nouns.wtf/t/3d-nouns-proposal-updates/208",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
+    "Press/media/social links": ""
   },
   {
     "No": 1,
@@ -7448,31 +6304,6 @@
     "Team": "",
     "Product": "(As the first test of Nouns DAO governance and to demonstrate to the community how the ecosystem works, Nouns DAO donated 5 ETH each to 6 charities.)",
     "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "-",
-    "Leftover": ""
-  },
-  {
-    "No": "",
-    "Name": "",
-    "ETH": "",
-    "USDC": "",
-    "Total prop value": "",
-    "True cost": "",
-    "Nouns": "",
-    "Has extra ETH": "",
-    "Category": "",
-    "Voting": "",
-    "Status": "",
-    "Team": "",
-    "Product": "",
-    "Discussion links": "",
-    "Press/media/social links": "",
-    "Comments / issues": "",
-    "Date": "",
-    "Extra ETH returned": "",
-    "Leftover": ""
+    "Press/media/social links": ""
   }
 ]
