@@ -14,26 +14,26 @@ const data = [
   {
     id: 2,
     name: "stETH",
-    value: 14597.34,
+    value: 18.2,
     image: "steth.png",
   },
 
   {
     id: 3,
     name: "Nouns",
-    value: 847,
+    value: 157,
     image: "nouns.png",
   },
   {
     id: 4,
     name: "Lil Nouns",
-    value: 525699.2790701818,
+    value: 780,
     image: "lil-nouns.png",
   },
   {
     id: 5,
     name: "rETH",
-    value: 308.11,
+    value: 312.4,
     image: "rocket-eth.png",
   },
 ];
