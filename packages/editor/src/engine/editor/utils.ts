@@ -60,6 +60,7 @@ export const saveState = () => {
         name: data.title,
         background: data.pageBackground || "transparent",
         accentColor: "default",
+        coverImage: data.coverImage,
         draft: {
             nodes: data.nodes,
         },

@@ -12,6 +12,7 @@ import {
 import { Separator } from "@shared/ui/src/separator";
 
 import { generateReactHelpers } from "@uploadthing/react/hooks";
+import { API_URL } from "../../constants";
 
 const { useUploadThing } = generateReactHelpers();
 
@@ -30,7 +31,7 @@ export function EditorCoveImage({
   const coverImageEnabled = useEditorStore.use.coverImageEnabled();
   const editable = useEditorStore.use.editable();
 
-  const { startUpload } = useUploadThing("myUploadEndpoint", {
+  const { startUpload } = useUploadThing("boardCoverImage", {
     onClientUploadComplete: (file) => {
       if (!file || !file[0]) {
         toast({
@@ -44,7 +45,8 @@ export function EditorCoveImage({
       }
       setCoverImage(file[0].url);
     },
-    onUploadError: () => {
+    onUploadError: (error) => {
+      console.error(error);
       toast({
         title: "Error",
         description: "Something went wrong",

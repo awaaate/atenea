@@ -51,6 +51,7 @@ export const boardsRouter = router({
         name: z.string(),
         background: z.string(),
         accentColor: z.string(),
+        coverImage: z.string().optional(),
 
     })).mutation(({ input, ctx }) => {
         const { db } = ctx;
@@ -61,6 +62,8 @@ export const boardsRouter = router({
             name: input.name,
             background: input.background,
             accentColor: input.accentColor,
+            coverImage: input.coverImage,
+
         }).where(eq(Board.id, input.id)).returning({
             draft: Board.draft,
             name: Board.name,

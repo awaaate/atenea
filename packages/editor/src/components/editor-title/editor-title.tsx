@@ -4,7 +4,7 @@ import { useEditorStore } from "../..";
 
 const classes = {
   title:
-    "text-5xl text-text font-semibold focus:outline-none mb-2 w-full bg-surface-default p-2 text-center",
+    "text-5xl text-text focus:outline-none mb-2 w-full bg-surface-default p-2 text-center p-5",
 };
 export const EditorTitle: React.FC<HTMLAttributes<HTMLInputElement>> = ({
   children,
