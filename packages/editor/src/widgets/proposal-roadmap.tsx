@@ -21,7 +21,7 @@ export default WidgetFactory.createWidget({
     </>
   ),
   dataFetcher: {
-    key: "proposal-budget",
+    key: "proposal-roadmap",
     collector(props) {
       return {
         requestVariables: {

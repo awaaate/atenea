@@ -25,7 +25,7 @@ export default WidgetFactory.createWidget({
     },
   },
   dataFetcher: {
-    key: "treasury",
+    key: "popular-teams",
     async fetcher(args) {
       return {};
     },

@@ -28,7 +28,7 @@ export default WidgetFactory.createWidget({
   icon: "Star",
 
   dataFetcher: {
-    key: "nouns-kpis",
+    key: "proposal-kpis",
     collector(props) {
       return {
         requestVariables: {
