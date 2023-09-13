@@ -5,15 +5,9 @@ export const TeamMembersViews: React.FC<{
   teamMembers: TeamMemberViewProps[];
 }> = ({ teamMembers }) => {
   return (
-    <div className="flex gap-2 flex-col">
+    <div className="flex flex-wrap gap-1 p-2">
       {teamMembers.map((teamMember) => (
-        <>
-          <TeamMemberView {...teamMember} />
-          {/* Add separator if it's not the last */}
-          {teamMember !== teamMembers[teamMembers.length - 1] && (
-            <Separator orientation="horizontal" className=" " />
-          )}
-        </>
+        <TeamMemberView {...teamMember} key={teamMember.name} />
       ))}
     </div>
   );

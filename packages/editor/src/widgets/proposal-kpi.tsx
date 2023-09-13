@@ -18,7 +18,6 @@ const CardAndMetricAndIcon = lazy(() =>
 const ComposedViews = joinViews(
   CardAndMetricAndIcon,
   CardAndMetricAndIcon,
-  CardAndMetricAndIcon,
   CardAndMetricAndIcon
 );
 
@@ -87,14 +86,6 @@ export default WidgetFactory.createWidget({
             name: "Against Votes",
             metric: `${mappedData.against} votes`,
             icon: "Ban" as const,
-          },
-          {
-            name: "Win Rate",
-            metric: `${(
-              mappedData.for /
-              (mappedData.against + mappedData.for)
-            ).toFixed(2)} %`,
-            icon: "Trophy" as const,
           },
         ],
       };
