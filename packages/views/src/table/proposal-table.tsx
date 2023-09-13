@@ -53,8 +53,6 @@ export const ProposalTable: React.FC<{
 
                 const value = row[header];
 
-                console.log(header, "table  key");
-                console.log(value, "table  value");
                 if (header === "status") {
                   return (
                     <TableCell key={header}>

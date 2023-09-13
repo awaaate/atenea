@@ -11,6 +11,7 @@ export const input = z.object({
   idIn: z.array(z.string()).optional(),
   first: z.number().int().positive().optional(),
   skip: z.number().int().positive().optional(),
+  createdTimestamp: z.number().int().positive().optional(),
   orderBy: z
     .enum([
       'createdTimestamp',
@@ -154,6 +155,7 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
         description_contains_nocase: args.descriptionContains,
         title_contains_nocase: args.titleContains,
         id_in: args.idIn,
+        createdTimestamp_gte: args.createdTimestamp,
       },
     }
   }

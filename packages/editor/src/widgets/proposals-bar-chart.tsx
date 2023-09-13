@@ -12,7 +12,7 @@ const AreaView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-bar-chart",
-  displayName: "Last 100 Proposals Analysis",
+  displayName: "Last 2 Months Proposals Analysis",
   icon: "BarChart",
   group: "General",
   Config: () => <ViewColorsConfig />,
@@ -22,9 +22,18 @@ export default WidgetFactory.createWidget({
       return {};
     },
     async fetcher(args) {
+      const currentDate = new Date();
+
+      // Subtract 2 months from the current date
+      currentDate.setMonth(currentDate.getMonth() - 2);
+
+      // Get the timestamp for the date 2 months ago
+      const timestamp = currentDate.getTime();
+
       const proposals = await sourceFetcher.proposalsMeta.query({
         first: 1000,
         orderBy: "createdTimestamp",
+        createdTimestamp: parseInt((timestamp / 1000).toString()),
       });
       const chardata = [] as Record<string, any>[];
 
@@ -46,8 +55,6 @@ export default WidgetFactory.createWidget({
         });
       }
 
-      console.log("chardata: ", chardata);
-
       return {
         data: chardata.map((value) => ({
           ...value,
@@ -62,8 +69,8 @@ export default WidgetFactory.createWidget({
     },
   },
   initialProps: {
-    colors: ["indigo", "blue", "green", "red", "stone" as const],
-    title: "Last 100 Proposals Analysis",
+    colors: ["indigo", "blue", "green", "red", "gray" as const],
+    title: "Last 2 Months Proposals Analysis",
     layout: {
       w: Infinity,
       h: 12,
