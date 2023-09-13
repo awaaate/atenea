@@ -60,16 +60,16 @@ function WidgetRoot<T>({
         if (!ref) return;
         //connect(ref);
       }}
-      style={{
-        borderRadius,
-        background,
-      }}
-      className={cn(
-        "h-full w-full bg-surface-default  flex-1 rounded-lg border border-black/10",
-        className
-      )}
+      style={{}}
+      className={cn("h-full w-full bg-surface-default  flex-1 ", className)}
     >
-      <Card className="w-full h-full flex flex-col bg-transparent">
+      <Card
+        className="w-full h-full flex flex-col bg-transparent rounded-lg border border-black/10 overflow-hidden"
+        style={{
+          background,
+          borderRadius,
+        }}
+      >
         {showHeader && (
           <CardTitle
             className={cn(
