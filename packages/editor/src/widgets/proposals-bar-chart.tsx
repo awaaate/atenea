@@ -12,7 +12,7 @@ const AreaView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposals-bar-chart",
-  displayName: "Proposals Passed/Canceled Bar Chart",
+  displayName: "Last 100 Proposals Analysis",
   icon: "BarChart",
   group: "General",
   Config: () => <ViewColorsConfig />,
@@ -23,7 +23,7 @@ export default WidgetFactory.createWidget({
     },
     async fetcher(args) {
       const proposals = await sourceFetcher.proposalsMeta.query({
-        first: 1000,
+        first: 100,
         orderBy: "createdTimestamp",
       });
       const chardata = [] as Record<string, any>[];
@@ -63,7 +63,7 @@ export default WidgetFactory.createWidget({
   },
   initialProps: {
     colors: ["indigo", "blue", "green", "red", "stone" as const],
-    title: "Proposals Passed/Canceled",
+    title: "Last 100 Proposals Analysis",
     layout: {
       w: Infinity,
       h: 12,

@@ -64,7 +64,7 @@ export function EditorCoveImage({
         backgroundImage: `url(${coverImage})`,
       }}
       className={cn(
-        "w-full h-[200px] rounded-default overflow-hidden mb-4 bg-surface-lowered  bg-cover bg-center relative",
+        "w-full h-[200px] rounded-default overflow-hidden bg-surface-lowered  bg-cover bg-center relative",
         className
       )}
     >

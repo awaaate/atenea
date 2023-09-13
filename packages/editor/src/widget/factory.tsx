@@ -16,6 +16,9 @@ import incommingProposals from "../widgets/incomming-proposals";
 import categoriesBudgetDonutChart from "../widgets/categories-budget-donut-chart";
 import categoriesDonutChart from "../widgets/categories-donut-chart";
 import popularTeams from "../widgets/popular-teams";
+import proposalCategory from "../widgets/proposal-category";
+import proposalTimeframeEnd from "../widgets/proposal-timeframe-end";
+import proposalTimeframeStart from "../widgets/proposal-timeframe-start";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -36,4 +39,7 @@ widgetFactory.registerWidgetComponent(proposalContentView);
 widgetFactory.registerWidgetComponent(proposalKpi);
 widgetFactory.registerWidgetComponent(treasury);
 
+widgetFactory.registerWidgetComponent(proposalTimeframeEnd);
+widgetFactory.registerWidgetComponent(proposalTimeframeStart);
+widgetFactory.registerWidgetComponent(proposalCategory);
 widgetFactory.registerWidgetComponent(nounOfDay);

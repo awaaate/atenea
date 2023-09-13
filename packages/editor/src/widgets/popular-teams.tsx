@@ -6,6 +6,7 @@ const PopularTeamsView = lazy(() =>
     default: module.PopularTeamsView,
   }))
 );
+
 export default WidgetFactory.createWidget({
   name: "popular-teams",
   displayName: "Nouns Founded Teams",
@@ -13,6 +14,7 @@ export default WidgetFactory.createWidget({
   icon: "Users",
 
   View: PopularTeamsView,
+  Config: () => null,
   initialProps: {
     title: "Nouns Founded Teams",
     layout: {
@@ -22,7 +24,6 @@ export default WidgetFactory.createWidget({
       h: 12,
     },
   },
-  Config: () => null,
   dataFetcher: {
     key: "treasury",
     async fetcher(args) {
