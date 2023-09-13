@@ -1,15 +1,14 @@
 import * as z from "zod";
-import { nounsSubgraph } from "../../lib/nouns-subgraph";
 import { publicProcedure, router } from "../../trpc";
 import { mapReducer } from "../../utils/reducer";
 import * as categories from "./categories";
+import { getNounOfTheDay } from "./noun-of-day";
+import { getProposalContent } from "./proposal-content";
+import { getProposalRoadmap } from "./proposal-roadmap";
+import { getProposalVotes } from "./proposal-votes";
 import { getBudgetSections } from "./proposals-budget";
 import { getProposalMeta, input as getProposalMetaInput } from "./proposals-meta";
-import { ProposalMeta } from "./proposals-meta/types";
 import { getProposalTeamMembers } from "./team-members";
-import { getProposalContent } from "./proposal-content";
-import { getProposalVotes } from "./proposal-votes";
-import { getNounOfTheDay } from "./noun-of-day";
 
 
 export const dataSourceRouter = router({
@@ -72,6 +71,10 @@ export const dataSourceRouter = router({
 
     getNounOfTheDay: publicProcedure.query(async ({ ctx }) => {
         return getNounOfTheDay()
+    }),
+
+    getProposalRoadmap: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
+        return getProposalRoadmap(input)
     }),
 
 })

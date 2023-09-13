@@ -19,6 +19,7 @@ import popularTeams from "../widgets/popular-teams";
 import proposalCategory from "../widgets/proposal-category";
 import proposalTimeframeEnd from "../widgets/proposal-timeframe-end";
 import proposalTimeframeStart from "../widgets/proposal-timeframe-start";
+import proposalRoadmap from "../widgets/proposal-roadmap";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -43,3 +44,4 @@ widgetFactory.registerWidgetComponent(proposalTimeframeEnd);
 widgetFactory.registerWidgetComponent(proposalTimeframeStart);
 widgetFactory.registerWidgetComponent(proposalCategory);
 widgetFactory.registerWidgetComponent(nounOfDay);
+widgetFactory.registerWidgetComponent(proposalRoadmap);
