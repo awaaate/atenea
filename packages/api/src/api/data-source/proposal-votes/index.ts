@@ -24,6 +24,9 @@ id
   reason
   voter {
     id
+    nounsRepresented {
+      id
+    }
   }
   proposal {
     id
@@ -36,8 +39,8 @@ id
 `
 
 export const getProposalVotes = async (proposalId: number) => {
-    const data = await nounsSubgraph.request<GetProposalVotes>(query, {
-        proposalId: proposalId.toString(),
-    })
-    return data.votes
+  const data = await nounsSubgraph.request<GetProposalVotes>(query, {
+    proposalId: proposalId.toString(),
+  })
+  return data.votes
 };

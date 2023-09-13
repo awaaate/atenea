@@ -92,7 +92,7 @@ export default WidgetFactory.createWidget({
     },
   },
   View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-4  mx-4">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-3  mx-4">
       <ComposedViews {...props} />
     </div>
   ),

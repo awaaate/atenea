@@ -16,10 +16,14 @@ export interface Vote {
 
 export interface Voter {
     id: string
+    nounsRepresented: NounsRepresented[]
+}
+
+export interface NounsRepresented {
+    id: string
 }
 
 export interface Proposal {
     id: string
     title: string
 }
-
