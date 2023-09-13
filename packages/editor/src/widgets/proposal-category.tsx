@@ -1,9 +1,13 @@
-import { lazy } from "react";
-import { WidgetFactory } from "../widget/widget-factory";
-import { Badge } from "@shared/ui/src/badge";
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
+import { lazy } from "react";
 import { sourceFetcher } from "../lib/source-fetcher";
-import { ProposalCategoryView } from "@shared/views/src/proposals/proposal-category";
+import { WidgetFactory } from "../widget/widget-factory";
+
+const ProposalCategoryView = lazy(() =>
+  import("@shared/views/src/proposals/proposal-category").then((module) => ({
+    default: module.ProposalCategoryView,
+  }))
+);
 
 export default WidgetFactory.createWidget({
   name: "proposal-category",

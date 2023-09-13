@@ -3,10 +3,10 @@ import { WidgetFactory } from "../widget/widget-factory";
 import { Badge } from "@shared/ui/src/badge";
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
 import { sourceFetcher } from "../lib/source-fetcher";
-import { ProposalTimeFrameView } from "@shared/views/src/proposals/proposal-timeframe";
-const PopularTeamsView = lazy(() =>
-  import("@shared/views/src/team/popular-teams").then((module) => ({
-    default: module.PopularTeamsView,
+
+const ProposalTimeFrameView = lazy(() =>
+  import("@shared/views/src/proposals/proposal-timeframe").then((module) => ({
+    default: module.ProposalTimeFrameView,
   }))
 );
 
