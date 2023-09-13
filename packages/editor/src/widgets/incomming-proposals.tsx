@@ -67,6 +67,7 @@ export default WidgetFactory.createWidget({
   initialProps: {
     first: 5,
     title: "Incomming Proposals",
+    background: "#fffae1",
     headerMap: {
       nounId: "Builder",
       title: "Title",

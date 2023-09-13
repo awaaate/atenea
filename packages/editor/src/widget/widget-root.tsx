@@ -65,11 +65,11 @@ function WidgetRoot<T>({
         background,
       }}
       className={cn(
-        "h-full w-full bg-surface-default shadow-card flex-1",
+        "h-full w-full bg-surface-default  flex-1 rounded-lg border border-black/10",
         className
       )}
     >
-      <Card className="w-full h-full flex flex-col ">
+      <Card className="w-full h-full flex flex-col bg-transparent">
         {showHeader && (
           <CardTitle
             className={cn(
