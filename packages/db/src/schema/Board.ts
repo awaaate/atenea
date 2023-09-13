@@ -20,6 +20,7 @@ export const Board = pgTable("Board", {
     showTopbar: boolean("showTopbar").default(true).notNull(),
     background: text("background").default('transparent').notNull(),
     accentColor: text("accentColor").default('default').notNull(),
+    coverImageEnabled: boolean("coverImageEnabled").default(false).notNull(),
 
 },
     (table) => {

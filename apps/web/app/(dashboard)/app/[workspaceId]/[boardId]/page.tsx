@@ -22,10 +22,11 @@ export default async function Page({
 
   if (!board) return notFound();
 
-  let intialEditorState: Partial<EditorState> = {
+  let intialState = {
     boardId: board.id,
     nodes: board.draft ? (board.draft as any).nodes : {},
     coverImage: board.coverImage,
+    coverImageEnabled: board.coverImageEnabled,
     pageBackground: board.background,
     title: board.name,
     editable: true,
@@ -34,7 +35,7 @@ export default async function Page({
     <>
       <BoardPage />
       <BoardPreviewButton />
-      <BoardInitializer {...intialEditorState} />
+      <BoardInitializer {...intialState} />
     </>
   );
 }

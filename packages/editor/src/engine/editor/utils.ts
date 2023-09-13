@@ -61,6 +61,7 @@ export const saveState = () => {
         background: data.pageBackground || "transparent",
         accentColor: "default",
         coverImage: data.coverImage,
+        coverImageEnabled: data.coverImageEnabled,
         draft: {
             nodes: data.nodes,
         },
