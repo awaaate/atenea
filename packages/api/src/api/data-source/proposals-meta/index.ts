@@ -8,6 +8,7 @@ import DATA from "./extra-data.json"
 
 
 export const input = z.object({
+  idIn: z.array(z.string()).optional(),
   first: z.number().int().positive().optional(),
   skip: z.number().int().positive().optional(),
   orderBy: z
@@ -128,45 +129,6 @@ async function getCurrentBlockNumber(): Promise<number | null> {
   }
 }
 
-async function getBlockData(blockNumber: number): Promise<{ blockNumber: number; timestamp: number } | null> {
-  try {
-    console.log("BLOCK NUMBER",
-      blockNumber.toString(16))
-    const response = await fetch(INFURA_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        jsonrpc: '2.0',
-        method: 'eth_getBlockByNumber',
-        params: [`0x${blockNumber.toString(16)}`, true], // Convert blockNumber to hexadecimal
-        id: 1,
-      }),
-    });
-
-    const data = await response.json();
-
-    if (data.result) {
-      const blockData = data.result;
-      const blockNumber = parseInt(blockData.number, 16); // Convert from hexadecimal to decimal
-      const timestamp = parseInt(blockData.timestamp, 16); // Convert from hexadecimal to decimal
-
-      return { blockNumber, timestamp };
-    } else {
-      console.log("NO DATA")
-      return null
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    return null;
-  }
-}
-
-
-// Replace 'YOUR_INFURA_API_KEY' with your actual Infura API key
-
-
 export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => {
   const currentBlock = await getCurrentBlockNumber();
   if (!currentBlock) throw new Error('Unable to retrieve current block number')
@@ -191,6 +153,7 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
         status: status,
         description_contains_nocase: args.descriptionContains,
         title_contains_nocase: args.titleContains,
+        id_in: args.idIn,
       },
     }
   }

@@ -23,7 +23,7 @@ export default WidgetFactory.createWidget({
     },
     async fetcher(args) {
       const proposals = await sourceFetcher.proposalsMeta.query({
-        first: 100,
+        first: 1000,
         orderBy: "createdTimestamp",
       });
       const chardata = [] as Record<string, any>[];

@@ -8,7 +8,7 @@ interface NounOfDayProps {
   endTime: Date;
   id: number;
 }
-const getRemainingTime = (endTime: Date) => {
+export const getRemainingTime = (endTime: Date) => {
   return date(endTime.getTime() - Date.now()).format("hh:mm:ss");
 };
 export const NounOfDay: React.FC<NounOfDayProps> = ({
