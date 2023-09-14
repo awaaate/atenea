@@ -52,7 +52,7 @@ export default WidgetFactory.createWidget({
       return {
         viewsProps: [
           {
-            name: "Total Proposals",
+            name: "Total",
             metric: `${
               totalExecutedProposals +
               totalDeniedProposals +
@@ -61,15 +61,15 @@ export default WidgetFactory.createWidget({
           },
 
           {
-            name: "Executed Proposals",
+            name: "Executed",
             metric: `${totalExecutedProposals} Proposals`,
           },
           {
-            name: "Denied Proposals",
+            name: "Denied",
             metric: `${totalDeniedProposals} Proposals`,
           },
           {
-            name: "Canceled Proposals",
+            name: "Canceled",
             metric: `${totalCanceledProposals} Proposals`,
           },
         ],
