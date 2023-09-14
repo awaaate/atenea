@@ -19,7 +19,7 @@ const WidgetTitle = () => {
 
   if (!editable)
     return (
-      <h3 className="bg-transparent min-w-[20px] w-min h-full text-text ">
+      <h3 className="bg-transparent min-w-[20px] w-max h-full text-text ">
         {title}
       </h3>
     );
@@ -29,7 +29,7 @@ const WidgetTitle = () => {
         <input
           value={title}
           placeholder="Section title"
-          className="bg-transparent min-w-[20px] w-min h-full text-text/80 placeholder:text-text-weakest"
+          className="bg-transparent min-w-[20px] w-max h-full text-text/80 placeholder:text-text-weakest"
           onMouseDown={(e) => e.stopPropagation()}
           onChange={(e) => {
             setNode((node) => {

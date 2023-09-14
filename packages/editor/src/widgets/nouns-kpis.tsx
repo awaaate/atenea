@@ -11,11 +11,16 @@ const CardAndMetric = lazy(() =>
   }))
 );
 
-const ComposedViews = joinViews(CardAndMetric, CardAndMetric, CardAndMetric);
+const ComposedViews = joinViews(
+  CardAndMetric,
+  CardAndMetric,
+  CardAndMetric,
+  CardAndMetric
+);
 
 export default WidgetFactory.createWidget({
   name: "nouns-kpis",
-  displayName: "Nouns Proposals Stats",
+  displayName: "Nouns Proposals Stats from the last 2 months",
   group: "general",
   icon: "BarChartHorizontal",
 
@@ -23,23 +28,36 @@ export default WidgetFactory.createWidget({
     key: "nouns-kpis",
     //@ts-expect-error
     async fetcher(args) {
+      const currentDate = new Date();
+      currentDate.setMonth(currentDate.getMonth() - 2);
+
+      const createdTimestamp = Math.ceil(currentDate.getTime() / 1000);
       const data = await sourceFetcher.proposalsMeta.query({
         orderBy: "createdTimestamp",
         first: 1000,
+        createdTimestamp,
       });
-
-      const totalProposals = data.length;
 
       const totalExecutedProposals = data.filter(
         (proposal) => proposal.status === ProposalStatus.Succeeded
       ).length;
-      const hola = "hola";
 
+      const totalDeniedProposals = data.filter(
+        (proposal) => proposal.status === ProposalStatus.Defeated
+      ).length;
+
+      const totalCanceledProposals = data.filter(
+        (proposal) => proposal.status === ProposalStatus.Cancelled
+      ).length;
       return {
         viewsProps: [
           {
             name: "Total Proposals",
-            metric: `${totalProposals} Proposals`,
+            metric: `${
+              totalExecutedProposals +
+              totalDeniedProposals +
+              totalCanceledProposals
+            } Proposals`,
           },
 
           {
@@ -48,7 +66,11 @@ export default WidgetFactory.createWidget({
           },
           {
             name: "Denied Proposals",
-            metric: `${totalProposals - totalExecutedProposals} Proposals`,
+            metric: `${totalDeniedProposals} Proposals`,
+          },
+          {
+            name: "Canceled Proposals",
+            metric: `${totalCanceledProposals} Proposals`,
           },
         ],
       };
@@ -60,6 +82,7 @@ export default WidgetFactory.createWidget({
     </div>
   ),
   initialProps: {
+    title: "Nouns Proposals Stats from the last 2 months",
     layout: {
       w: Infinity,
       h: 7,
