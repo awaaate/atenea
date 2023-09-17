@@ -1,4 +1,4 @@
-import { Londrina_Solid } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import { env } from "@/env.mjs";
 
@@ -8,9 +8,9 @@ import { siteConfig } from "@/config";
 import { MainProvider } from "@/components/providers/main-provider";
 import { TRPCProvider } from "@/components/providers/trpc-provider";
 
-const londrina = Londrina_Solid({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={londrina.className}>
+      <body className={inter.className}>
         <TRPCProvider>
           <MainProvider>{children}</MainProvider>
         </TRPCProvider>
