@@ -46,9 +46,15 @@ export default WidgetFactory.createWidget({
             title: proposal.title,
             status: proposal.status,
             categories: proposal.categories,
-            budget: proposal.totalBudget.toLocaleString() + " ETH",
-            startAt: date(proposal.startsAt).fromNow(),
-            endAt: date(proposal.endsAt).fromNow(),
+            proposer: proposal.proposer,
+            budget: proposal.totalBudget,
+            votesFor: proposal.forVotes,
+            votesAgainst: proposal.againstVotes,
+            endAt: proposal.endsAt,
+            startAt: proposal.startsAt,
+            projectStatus: proposal.projectStatus,
+            budgetEth: proposal.budgetEth,
+            budgetUsd: proposal.budgetUsd,
           }))
           .sort((a, b) => {
             return new Date(b.endAt).getTime() - new Date(a.endAt).getTime();
@@ -65,15 +71,7 @@ export default WidgetFactory.createWidget({
   initialProps: {
     first: 5,
     title: "Last executed proposals",
-    background: "#ebf9eb",
-    headerMap: {
-      nounId: "Builder",
-      title: "Title",
-      status: "Status",
-      endAt: "Ended",
-      categories: "Categories",
-      budget: "Budget",
-    },
+
     className: "",
     layout: {
       w: Infinity,

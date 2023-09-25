@@ -36,7 +36,15 @@ function WidgetRoot<T>({
   fullScreen,
   ...props
 }: WidgetRootProps<T>) {
-  const { data, isLoading, error } = useSWR(...dataFetcher);
+  const { data, isLoading, error } = useSWR(dataFetcher[0], async () => {
+    try {
+      const data = await dataFetcher[1]();
+      return data;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  });
   const isFullScreen = useNode((node) => node.data.props.fullScreen);
   const title = useNode((node) => node.data.props.title);
   const borderRadius = useNode((node) => node.data.props.borderRadius);

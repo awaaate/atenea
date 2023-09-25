@@ -24,7 +24,7 @@ export const CardAndMetricAndIcon: React.FC<CardAndMetricAndIconProps> = ({
           className="text-accent bg-accent/10 p-2 rounded-md"
           size="xl"
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-status-danger">
           <Metric name={name} metric={metric} />
         </div>
       </div>

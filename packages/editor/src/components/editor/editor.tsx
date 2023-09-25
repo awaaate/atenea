@@ -21,7 +21,10 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
   return (
     <div
       {...props}
-      className={cn(className, "h-full overflow-hidden p-6 flex-1")}
+      className={cn(
+        className,
+        "h-full overflow-hidden p-6 flex-1 bg-surface-lowered"
+      )}
       style={{
         background: background,
       }}

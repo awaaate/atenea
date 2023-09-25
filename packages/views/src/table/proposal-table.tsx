@@ -12,15 +12,24 @@ import {
 import { Badge } from "@shared/ui/src/badge";
 import { Avatar } from "@shared/ui/src/avatar";
 import { API_URL } from "@shared/editor/src/constants";
+import { date } from "@shared/ui/src/date";
+import { Icon } from "@shared/ui/src/icon";
 
 interface ProposalTableProps {
   title: string;
   nounId?: number;
   status: string;
-  budget: number | string;
+  id: string;
+  proposer: string;
+  votesFor: number;
+  votesAgainst: number;
+  budget: number;
+  budgetEth?: number;
+  budgetUsd?: number;
+  noun?: string;
   categories: string[];
-  startAt: string;
-  endAt: string;
+  startAt: Date;
+  endAt: Date;
 }
 
 export const ProposalTable: React.FC<{
@@ -30,82 +39,173 @@ export const ProposalTable: React.FC<{
     string,
     string
   >;
+  console.log("THis jOse", data);
 
   const headers = Object.keys(headerMap) as (keyof ProposalTableProps)[];
 
   return (
-    <div className="w-full h-full">
-      <Table className={cn("w-full h-full")}>
-        <TableHead style={{ position: "sticky", top: 0 }}>
-          <TableRow>
-            {headers.map((header) => (
-              <TableHeaderCell key={header as string}>
-                {headerMap[header]}
-              </TableHeaderCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {data.map((row, rowIndex) => (
-            <TableRow key={rowIndex}>
-              {headers.map((header) => {
-                //check if it's enabled by the headers map
-
-                const value = row[header];
-
-                if (header === "status") {
-                  return (
-                    <TableCell key={header}>
-                      <Badge
-                        variant={
-                          value === "Succeeded"
-                            ? "success"
-                            : value === "Pending"
-                            ? "info"
-                            : "danger"
-                        }
-                      >
-                        {value}
-                      </Badge>
-                    </TableCell>
-                  );
+    <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card">
+      {/* HEADER */}
+      {/*       <div
+        className={"grid justify-start w-full "}
+        style={{
+          gridTemplateColumns: `repeat(${headers.length}, 1fr)`,
+        }}
+      >
+        {headers.map((header) => (
+          <div
+            key={header as string}
+            className="flex items-center justify-center"
+          >
+            {headerMap[header]}
+          </div>
+        ))}
+      </div> */}
+      {data.map((proposal, i) => (
+        <a
+          href={`https://nouns.wtf/vote/${proposal.id}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div
+            className={cn(
+              "grid grid-cols-8  gap-4 py-4 px-6 hover:bg-active-default",
+              {
+                "border-b": i !== data.length - 1,
+              }
+            )}
+          >
+            <div className="flex col-span-5 gap-2">
+              <Avatar
+                className="icon-xl rounded-full"
+                name={proposal.title}
+                src={`${API_URL}/noun-image/${proposal.nounId}`}
+              />
+              <div>
+                <p className="text-text-weaker text-sm">
+                  Prop <span className="font-bold mr-1">{proposal.id}</span>
+                  by {proposal.proposer.slice(0, 6)}...
+                  {proposal.proposer.slice(-4)}
+                </p>
+                <p>{proposal.title}</p>
+              </div>
+            </div>
+            <div className="flex justify-end flex-col items-end gap-2">
+              <p className="text-text-weaker text-sm">Status</p>
+              <Badge
+                className="text-sm"
+                variant={
+                  proposal.status === "Pending"
+                    ? "info"
+                    : proposal.status === "Succeeded"
+                    ? "success"
+                    : proposal.status === "Canceled" ||
+                      proposal.status === "Defeated"
+                    ? "danger"
+                    : "warning"
                 }
-                if (header === "categories") {
-                  return (
-                    <TableCell key={header}>
-                      <Badge color="">{value}</Badge>
-                    </TableCell>
-                  );
-                }
-                if (header === "nounId") {
-                  return (
-                    <TableCell
-                      key={header}
-                      className="flex item-center justify-center "
-                    >
-                      {value ? (
-                        <img
-                          src={`${API_URL}/noun-image/${value}`}
-                          alt=""
-                          className="icon-xl rounded-full"
-                        />
-                      ) : (
-                        <Avatar
-                          key={header}
-                          name="Nounner"
-                          className="icon-xl"
-                        />
-                      )}
-                    </TableCell>
-                  );
-                }
+              >
+                {proposal.status}
+              </Badge>
+            </div>
+            <div className="flex justify-end flex-col items-end gap-2">
+              <RequestingCell
+                budget={proposal.budget}
+                budgetEth={proposal.budgetEth}
+                budetUsd={proposal.budgetUsd}
+              />
+            </div>
 
-                return <TableCell key={header}>{value}</TableCell>;
-              })}
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+            <div className="flex justify-end  flex-col items-end gap-2">
+              <VotingCell
+                startAt={proposal.startAt}
+                endAt={proposal.endAt}
+                votesAgainst={proposal.votesAgainst}
+                votesFor={proposal.votesFor}
+              />
+            </div>
+          </div>
+        </a>
+      ))}
     </div>
   );
+};
+const RequestingCell: React.FC<{
+  budget: number;
+  budgetEth?: number;
+  budetUsd?: number;
+  noun?: number;
+}> = ({ budget, budgetEth, budetUsd }) => {
+  if (budetUsd)
+    return (
+      <>
+        <p className="text-text-weaker text-sm">Requesting</p>
+        <p className="text-m">
+          {budetUsd.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD",
+          })}
+        </p>
+      </>
+    );
+  const finalBudget = budgetEth || budget;
+  return (
+    <>
+      <p className="text-text-weaker text-sm">Requesting</p>
+      <p className="text-m whitespace-nowrap ">
+        {finalBudget.toLocaleString("en-US", {
+          currency: "ETH",
+          currencyDisplay: "symbol",
+        }) + " ETH"}
+      </p>
+    </>
+  );
+};
+const VotingCell: React.FC<{
+  startAt: Date;
+  endAt: Date;
+  votesFor: number;
+  votesAgainst: number;
+}> = ({ startAt, endAt, votesAgainst, votesFor }) => {
+  if (!startAt || !endAt) return null;
+
+  //check if it's now between start and end
+  const now = new Date();
+  const start = new Date(startAt);
+  const end = new Date(endAt);
+  if (now > start && now < end) {
+    return (
+      <>
+        <p>Voting</p>
+        <p className="text-sm text-text-weaker">
+          Ended {date(startAt).fromNow()}
+        </p>
+      </>
+    );
+  } else if (now < start) {
+    return (
+      <>
+        <p>Voting</p>
+        <p className="text-sm text-text-weaker">
+          Starts {date(startAt).fromNow()}
+        </p>
+      </>
+    );
+  } else if (now > end) {
+    return (
+      <>
+        <p className="text-sm text-text-weaker text-right ">
+          Voting ended {date(endAt).fromNow()}
+        </p>
+        <div className="flex gap-2">
+          <span className="flex items-center  gap-1 text-status-success">
+            {votesFor} <Icon name="ThumbsUp" />
+          </span>
+          <span className="flex items-center  gap-1 text-status-danger">
+            {votesAgainst} <Icon name="ThumbsDown" />
+          </span>
+        </div>
+      </>
+    );
+  }
 };

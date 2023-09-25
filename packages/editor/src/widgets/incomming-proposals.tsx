@@ -37,6 +37,7 @@ export default WidgetFactory.createWidget({
         orderDirection: "desc",
         status: "PENDING",
       });
+      console.log("proposalsMeta Jose", proposalsMeta);
 
       return {
         data: proposalsMeta
@@ -46,9 +47,15 @@ export default WidgetFactory.createWidget({
             title: proposal.title,
             status: proposal.status,
             categories: proposal.categories,
-            budget: proposal.totalBudget.toLocaleString() + " ETH",
-            endAt: date(proposal.endsAt).fromNow(),
-            startAt: date(proposal.startsAt).fromNow(),
+            proposer: proposal.proposer,
+            budget: proposal.totalBudget,
+            votesFor: proposal.forVotes,
+            votesAgainst: proposal.againstVotes,
+            endAt: proposal.endsAt,
+            startAt: proposal.startsAt,
+            projectStatus: proposal.projectStatus,
+            budgetEth: proposal.budgetEth,
+            budgetUsd: proposal.budgetUsd,
           }))
           .sort((a, b) => {
             return (
@@ -67,15 +74,6 @@ export default WidgetFactory.createWidget({
   initialProps: {
     first: 5,
     title: "Incomming Proposals",
-    background: "#fffae1",
-    headerMap: {
-      nounId: "Builder",
-      title: "Title",
-      status: "Status",
-      categories: "Categories",
-      budget: "Budget",
-      startAt: "Starts In",
-    },
     className: "",
     layout: {
       w: Infinity,

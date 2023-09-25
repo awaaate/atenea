@@ -19,7 +19,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       lastDatabaseSync: new Date().toString(),
       boardId: "",
       nodes: {},
-      pageBackground: "transparent",
+      pageBackground: "",
       sidebar: null,
       title: "",
       coverImage: "/images/board-covers/Abstract-Gradient-1.png",

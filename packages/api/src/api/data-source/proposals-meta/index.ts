@@ -1,10 +1,11 @@
 import { z } from "zod";
 import { gql } from "graphql-request";
 import { nounsSubgraph } from "../../../lib/nouns-subgraph";
-import { Proposal, ProposalMeta, ProposalStatus } from "./types";
+import { AteneaQuery, Proposal, ProposalMeta, ProposalStatus } from "./types";
 import { bigint } from "drizzle-orm/mysql-core";
 
 import DATA from "./extra-data.json";
+import { ateneaGraph } from "../../../lib/atenea-graph";
 
 export const input = z.object({
   idIn: z.array(z.string()).optional(),
@@ -82,6 +83,32 @@ export const query = gql`
   }
 `;
 
+const ateneaQuery = gql`
+  query Node($filter: ProposalFilter) {
+    proposalCollection(filter: $filter) {
+      edges {
+        node {
+          budgetEth
+          budgetUsd
+          category_to_proposalCollection {
+            edges {
+              node {
+                category_name
+              }
+            }
+          }
+          coverImage
+          description
+          extraEth
+          nouns
+          title
+          status
+        }
+      }
+    }
+  }
+`;
+
 const INFURA_API_URL = `https://mainnet.infura.io/v3/1b110eaa799744179ea12b0441c386ba`;
 async function getCurrentBlockNumber(): Promise<number | null> {
   try {
@@ -147,8 +174,26 @@ export const getProposalMeta = async (
   const data = await nounsSubgraph.request<{
     proposals: ProposalMeta[];
   }>(query, variables);
+  const ateneaData = await ateneaGraph.request<AteneaQuery>(ateneaQuery, {
+    first: null,
+    filter: {
+      status: null,
+      id: {
+        in: data.proposals.map((p) => parseInt(p.id)),
+      },
+    },
+  });
 
   const finalData = data.proposals.map((proposal) => {
+    const ateneaProposal = ateneaData.proposalCollection.edges.find(
+      (p) => p.node.title === proposal.title
+    );
+    const categories =
+      ateneaProposal?.node.category_to_proposalCollection.edges.map(
+        (e) => e.node.category_name
+      );
+
+    console.log("ateneaProposal", ateneaData);
     const rawData = {
       startBlock: parseInt(proposal.startBlock),
       endBlock: parseInt(proposal.endBlock),
@@ -162,6 +207,7 @@ export const getProposalMeta = async (
       maxQuorumVotesBPS: parseInt(proposal.maxQuorumVotesBPS),
       createdTimestamp: new Date(parseInt(proposal.createdTimestamp) * 1000),
       id: proposal.id,
+      proposer: proposal.proposer.id,
       nounId: proposal.proposer.nounsRepresented[0]
         ? parseInt(proposal.proposer.nounsRepresented[0].id)
         : null,
@@ -169,6 +215,16 @@ export const getProposalMeta = async (
       values: proposal.values.map((value) => parseInt(value)),
       title: proposal.title,
       status: proposal.status as ProposalStatus,
+      totalBudget:
+        proposal.values.reduce((acc, curr) => acc + parseInt(curr), 0) /
+        10 ** 18,
+      projectStatus: ateneaProposal?.node.status,
+      budgetEth: ateneaProposal?.node.budgetEth,
+      budgetUsd: ateneaProposal?.node.budgetUsd,
+      extraEth: ateneaProposal?.node.extraEth,
+      nouns: ateneaProposal?.node.nouns,
+      categories:
+        categories && categories.length > 0 ? categories : ["Uncategorized"],
     };
     const dynamicQuorum = computeProposalQuorumVotes(rawData);
 
@@ -179,26 +235,7 @@ export const getProposalMeta = async (
     };
   });
 
-  return finalData.map((data) => {
-    const extraData = DATA.find((d: any) => d.No == data.id);
-    if (!extraData) {
-      console.log("NO EXTRA DATA", data.id);
-      return {
-        ...data,
-        categories: ["Uncategorized"],
-        totalBudget: Number(
-          (data.values.reduce((acc, curr) => acc + curr, 0) / 1e18).toFixed(2)
-        ),
-      };
-    }
-    return {
-      ...data,
-      categories: extraData ? extraData.Category.split(",") : ([] as string[]),
-      totalBudget: extraData
-        ? Number(Number(extraData?.ETH || "0").toFixed(2))
-        : 0,
-    };
-  });
+  return finalData;
 };
 
 export const deriveProposalStatus = (
