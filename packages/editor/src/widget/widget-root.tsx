@@ -32,7 +32,6 @@ interface WidgetRootProps<T> extends HTMLAttributes<HTMLDivElement> {
 function WidgetRoot<T>({
   dataFetcher,
   skeleton,
-  className,
   inner,
   fullScreen,
   ...props
@@ -43,6 +42,7 @@ function WidgetRoot<T>({
   const borderRadius = useNode((node) => node.data.props.borderRadius);
   const isActive = useNode((node) => node.events.selected);
   const background = useNode((node) => node.data.props.background);
+  const className = useNode((node) => node.data.props.className);
   const editable = useEditorStore.use.editable();
 
   const { setNode } = useNodeActions();
@@ -61,10 +61,12 @@ function WidgetRoot<T>({
         //connect(ref);
       }}
       style={{}}
-      className={cn("h-full w-full bg-surface-default  flex-1 ", className)}
+      className={cn("h-full w-full   flex-1 overflow-hidden ", className, {
+        "bg-surface-default": editable,
+      })}
     >
       <Card
-        className="w-full h-full flex flex-col bg-transparent rounded-lg border border-black/10 overflow-hidden"
+        className="w-full h-full flex flex-col bg-transparent rounded-lg overflow-hidden shadow-sm"
         style={{
           background,
           borderRadius,
@@ -73,7 +75,7 @@ function WidgetRoot<T>({
         {showHeader && (
           <CardTitle
             className={cn(
-              "border-b  flex justify-between items-center px-2 py-2 mb-0  draggable-handle",
+              "flex justify-between items-center px-2 py-2 mb-0  draggable-handle",
               {
                 "cursor-grab": editable,
               }

@@ -1,11 +1,10 @@
 import { z } from "zod";
-import { gql } from "graphql-request"
+import { gql } from "graphql-request";
 import { nounsSubgraph } from "../../../lib/nouns-subgraph";
 import { Proposal, ProposalMeta, ProposalStatus } from "./types";
 import { bigint } from "drizzle-orm/mysql-core";
 
-import DATA from "./extra-data.json"
-
+import DATA from "./extra-data.json";
 
 export const input = z.object({
   idIn: z.array(z.string()).optional(),
@@ -14,102 +13,86 @@ export const input = z.object({
   createdTimestamp: z.number().int().positive().optional(),
   orderBy: z
     .enum([
-      'createdTimestamp',
-      'votes',
-      'forVotes',
-      'againstVotes',
-      'id',
-      'abstainVotes',
-      'quorumVotes',
-      'status',
+      "createdTimestamp",
+      "votes",
+      "forVotes",
+      "againstVotes",
+      "id",
+      "abstainVotes",
+      "quorumVotes",
+      "status",
     ])
     .optional(),
-  orderDirection: z.enum(['asc', 'desc']).optional(),
+  orderDirection: z.enum(["asc", "desc"]).optional(),
   status: z
-
-    .enum([
-      'PENDING',
-      'ACTIVE',
-      'CANCELLED',
-      'VETOED',
-      'QUEUED',
-      'EXECUTED',
-    ])
+    .enum(["PENDING", "ACTIVE", "CANCELLED", "VETOED", "QUEUED", "EXECUTED"])
     .optional(),
   proposer: z.string().optional(),
   titleContains: z
     .string()
     .optional()
-    .describe('Searches for a text match in the title of the proposal'),
+    .describe("Searches for a text match in the title of the proposal"),
   descriptionContains: z
     .string()
     .optional()
-    .describe(
-      'Searches for a text match in the description of the proposal'
-    ),
-})
-
-
+    .describe("Searches for a text match in the description of the proposal"),
+});
 
 export const query = gql`
-query proposals(
-  $skip: Int
-  $first: Int
-  $orderBy: Proposal_orderBy
-  $orderDirection: OrderDirection
-  $where: Proposal_filter
-  $block: Block_height
-
-) {
-  proposals(
-    skip: $skip
-    first: $first
-    orderBy: $orderBy
-    orderDirection: $orderDirection
-    where: $where
-    block: $block
+  query proposals(
+    $skip: Int
+    $first: Int
+    $orderBy: Proposal_orderBy
+    $orderDirection: OrderDirection
+    $where: Proposal_filter
+    $block: Block_height
   ) {
-    id
-    targets
-    values
-    quorumVotes
-    forVotes
-    againstVotes
-    abstainVotes
-    title
-    totalSupply
-    quorumCoefficient
-    minQuorumVotesBPS
-    maxQuorumVotesBPS
-    totalSupply
-    status
-    createdTimestamp
-    startBlock
-    endBlock
-    proposer {
-       id
-       nounsRepresented {
-         id
-       }
-       
+    proposals(
+      skip: $skip
+      first: $first
+      orderBy: $orderBy
+      orderDirection: $orderDirection
+      where: $where
+      block: $block
+    ) {
+      id
+      targets
+      values
+      quorumVotes
+      forVotes
+      againstVotes
+      abstainVotes
+      title
+      totalSupply
+      quorumCoefficient
+      minQuorumVotesBPS
+      maxQuorumVotesBPS
+      totalSupply
+      status
+      createdTimestamp
+      startBlock
+      endBlock
+      proposer {
+        id
+        nounsRepresented {
+          id
+        }
+      }
     }
   }
- 
-}
-
-`
+`;
 
 const INFURA_API_URL = `https://mainnet.infura.io/v3/1b110eaa799744179ea12b0441c386ba`;
 async function getCurrentBlockNumber(): Promise<number | null> {
   try {
     const response = await fetch(INFURA_API_URL, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        jsonrpc: '2.0',
-        method: 'eth_blockNumber',
+        jsonrpc: "2.0",
+        method: "eth_blockNumber",
         params: [],
         id: 1,
       }),
@@ -122,30 +105,32 @@ async function getCurrentBlockNumber(): Promise<number | null> {
       const blockNumber = parseInt(blockNumberHex, 16); // Convert from hexadecimal to decimal
       return blockNumber;
     } else {
-      throw new Error('Unable to retrieve block number');
+      throw new Error("Unable to retrieve block number");
     }
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
     return null;
   }
 }
 
-export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => {
+export const getProposalMeta = async (
+  inputVariables: z.infer<typeof input>
+) => {
   const currentBlock = await getCurrentBlockNumber();
-  if (!currentBlock) throw new Error('Unable to retrieve current block number')
+  if (!currentBlock) throw new Error("Unable to retrieve current block number");
 
-  const { status, ...args } = inputVariables
+  const { status, ...args } = inputVariables;
   let variables;
-  if (status === 'ACTIVE') {
+  if (status === "ACTIVE") {
     variables = {
       ...args,
       where: {
         endBlock_gte: currentBlock,
-        startBlock_lte: currentBlock + 100000
+        startBlock_lte: currentBlock + 100000,
       },
       orderBy: "endBlock",
       orderDirection: "asc",
-    }
+    };
   } else {
     variables = {
       ...args,
@@ -157,16 +142,13 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
         id_in: args.idIn,
         createdTimestamp_gte: args.createdTimestamp,
       },
-    }
+    };
   }
   const data = await nounsSubgraph.request<{
-    proposals: ProposalMeta[]
-  }>(query, variables
-  )
-
+    proposals: ProposalMeta[];
+  }>(query, variables);
 
   const finalData = data.proposals.map((proposal) => {
-
     const rawData = {
       startBlock: parseInt(proposal.startBlock),
       endBlock: parseInt(proposal.endBlock),
@@ -180,41 +162,44 @@ export const getProposalMeta = async (inputVariables: z.infer<typeof input>) => 
       maxQuorumVotesBPS: parseInt(proposal.maxQuorumVotesBPS),
       createdTimestamp: new Date(parseInt(proposal.createdTimestamp) * 1000),
       id: proposal.id,
-      nounId: proposal.proposer.nounsRepresented[0] ? parseInt(proposal.proposer.nounsRepresented[0].id) : null,
+      nounId: proposal.proposer.nounsRepresented[0]
+        ? parseInt(proposal.proposer.nounsRepresented[0].id)
+        : null,
       targets: proposal.targets,
       values: proposal.values.map((value) => parseInt(value)),
       title: proposal.title,
       status: proposal.status as ProposalStatus,
-
-
-    }
+    };
     const dynamicQuorum = computeProposalQuorumVotes(rawData);
-
 
     return {
       ...rawData,
       dynamicQuorum,
-      ...getProposalsDates(currentBlock, dynamicQuorum, rawData)
-    }
-  })
+      ...getProposalsDates(currentBlock, dynamicQuorum, rawData),
+    };
+  });
 
-  return finalData.map(data => {
-    const extraData = DATA.find((d: any) => d.No == data.id)
+  return finalData.map((data) => {
+    const extraData = DATA.find((d: any) => d.No == data.id);
     if (!extraData) {
-      console.log("NO EXTRA DATA", data.id)
+      console.log("NO EXTRA DATA", data.id);
       return {
         ...data,
         categories: ["Uncategorized"],
-        totalBudget: Number((data.values.reduce((acc, curr) => acc + curr, 0) / 1e18).toFixed(2)),
-      }
+        totalBudget: Number(
+          (data.values.reduce((acc, curr) => acc + curr, 0) / 1e18).toFixed(2)
+        ),
+      };
     }
     return {
       ...data,
-      categories: extraData ? extraData.Category.split(",") : [] as string[],
-      totalBudget: extraData ? Number(Number(extraData?.ETH || "0").toFixed(2)) : 0,
-    }
-  })
-}
+      categories: extraData ? extraData.Category.split(",") : ([] as string[]),
+      totalBudget: extraData
+        ? Number(Number(extraData?.ETH || "0").toFixed(2))
+        : 0,
+    };
+  });
+};
 
 export const deriveProposalStatus = (
   currentBlock: number,
@@ -222,7 +207,7 @@ export const deriveProposalStatus = (
   proposal: Proposal
 ): ProposalStatus => {
   // Calculate the dynamic quorum
-  if (proposal.status as any === "CANCELLED") {
+  if ((proposal.status as any) === "CANCELLED") {
     return ProposalStatus.Cancelled;
   } else if (currentBlock < proposal.startBlock) {
     return ProposalStatus.Pending;
@@ -241,7 +226,7 @@ export const deriveProposalStatus = (
       return ProposalStatus.Defeated;
     }
   } else {
-    throw new Error('Unable to determine proposal status');
+    throw new Error("Unable to determine proposal status");
   }
 };
 export const computeProposalQuorumVotes = (proposal: Proposal): number => {
@@ -263,11 +248,14 @@ export const getProposalsDates = (
 ): { status: ProposalStatus; endsAt: Date; startsAt: Date } => {
   const { startBlock, endBlock } = proposal;
 
-
   const blockDuration = 12; // seconds per block
   const now = new Date();
-  const endsAt = new Date(now.getTime() + (endBlock - currentBlock) * blockDuration * 1000);
-  const startsAt = new Date(now.getTime() + (startBlock - currentBlock) * blockDuration * 1000);
+  const endsAt = new Date(
+    now.getTime() + (endBlock - currentBlock) * blockDuration * 1000
+  );
+  const startsAt = new Date(
+    now.getTime() + (startBlock - currentBlock) * blockDuration * 1000
+  );
 
   const status = deriveProposalStatus(currentBlock, dynamicQuorum, proposal);
   if (status === ProposalStatus.Pending) {

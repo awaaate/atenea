@@ -1,8 +1,3 @@
-import { Button } from "@shared/ui";
-import Image from "next/image";
-import Link from "next/link";
-import { Suspense } from "react";
-
 export const preferredRegion = "home";
 export const dynamic = "force-dynamic";
 

@@ -1,67 +1,119 @@
-const data = [
-  {
-    id: 1,
-    name: "ETH",
-    value: 16871,
-    image: "eth.png",
-  },
-  {
-    id: 6,
-    name: "USDC",
-    value: 28229603.0,
-    image: "usdc.png",
-  },
-  {
-    id: 2,
-    name: "stETH",
-    value: 18.2,
-    image: "steth.png",
-  },
+import { useNodeActions } from "@shared/editor/src/engine/nodes";
+import { cn } from "@shared/ui/src/utils";
+import React from "react";
+export const TreasuryView: React.FC<{
+  data: {
+    id: string;
+    name: string;
+    current_usd_price: number;
+    quantity: number;
+    symbol: string;
+    logo: {
+      width: number;
+      height: number;
+      src: string;
+    };
+  }[];
+}> = ({ data }) => {
+  const filteredData = data
+    .filter((item) => item.current_usd_price > 0)
+    .sort((a, b) => {
+      if (a.current_usd_price > b.current_usd_price) return -1;
+      if (a.current_usd_price < b.current_usd_price) return 1;
+      return 0;
+    });
 
-  {
-    id: 3,
-    name: "Nouns",
-    value: 157,
-    image: "nouns.png",
-  },
-  {
-    id: 4,
-    name: "Lil Nouns",
-    value: 780,
-    image: "lil-nouns.png",
-  },
-  {
-    id: 5,
-    name: "rETH",
-    value: 312.4,
-    image: "rocket-eth.png",
-  },
-];
+  const totalUsd = data.reduce((acc, item) => {
+    return acc + item.current_usd_price;
+  }, 0);
 
-export const TreasuryView: React.FC = () => {
+  const { setNode } = useNodeActions();
+
+  React.useEffect(() => {
+    setNode((node) => {
+      node.data.props.className = "rounded-lg bg-red p-1 ";
+      return node;
+    });
+  }, [filteredData.length]);
   return (
-    <div className="w-full">
-      <div className=" flex flex-wrap gap-2   mx-auto ">
-        {data.map((item) => {
-          return (
-            <div className="p-4 min-w-[250px]  flex-1 border flex  bg-surface-lowered">
-              <div className="flex items-end">
-                <img
-                  src={"/images/treasury/" + item.image}
-                  alt=""
-                  className="icon-xl mr-2"
-                />
-                <div className="text-2xl font-semibold mr-2">
-                  {item.value.toLocaleString()}
+    <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card">
+      <div className="w-full border-b py-4 px-6 ">
+        <span>
+          <span className="text-2xl font-bold">
+            {totalUsd.toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}
+          </span>
+          <span>
+            <span className="text-sm font-medium text-gray-500">
+              {" "}
+              - {filteredData.length} Assets
+            </span>
+          </span>
+        </span>
+      </div>
+
+      <div className="grid grid-cols-3 w-full border-b">
+        <ColumnHeader title="Asset" className="px-6 py-2" />
+        <ColumnHeader title="Quantity" className="px-6 py-2" />
+        <ColumnHeader title="Value" className="px-6 py-2" />
+      </div>
+      {filteredData.map((item, i) => {
+        return (
+          <div
+            className={cn(
+              "grid grid-cols-3 w-full py-2",
+              i % 2 === 0 ? "bg-surface-default" : "bg-surface-raised"
+            )}
+            key={item.id}
+          >
+            <div className="px-6 py-2">
+              <div className="flex items-center">
+                <div className="flex-shrink-0 icon-l">
+                  <img
+                    className=" rounded-full icon-l"
+                    src={item.logo.src}
+                    alt=""
+                  />
                 </div>
-                <div className="text-lg text-text-weaker whitespace-nowrap w-full">
-                  {item.name}
+                <div className="ml-4">
+                  <div className="text-md font-medium text-text">
+                    {item.name}
+                  </div>
+                  <div className="text-sm text-text-weakest">{item.symbol}</div>
                 </div>
               </div>
             </div>
-          );
-        })}
-      </div>
+            <div className="px-6 py-2">
+              <div className="text-md font-medium text-text-weaker">
+                {item.quantity.toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}
+              </div>
+            </div>
+            <div className="px-6 py-2">
+              <div className="text-md font-medium text-text-weaker">
+                {item.current_usd_price.toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const ColumnHeader: React.FC<{
+  title: string;
+  className?: string;
+}> = ({ title, className }) => {
+  return (
+    <div className={`flex items-center ${className}`}>
+      <span className="text-md font-bold  ">{title}</span>
     </div>
   );
 };

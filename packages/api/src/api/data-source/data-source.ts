@@ -7,77 +7,93 @@ import { getProposalContent } from "./proposal-content";
 import { getProposalRoadmap } from "./proposal-roadmap";
 import { getProposalVotes } from "./proposal-votes";
 import { getBudgetSections } from "./proposals-budget";
-import { getProposalMeta, input as getProposalMetaInput } from "./proposals-meta";
+import {
+  getProposalMeta,
+  input as getProposalMetaInput,
+} from "./proposals-meta";
 import { getProposalTeamMembers } from "./team-members";
-
+import { getNounsBlance } from "./nouns-balance";
 
 export const dataSourceRouter = router({
-    votes: publicProcedure.input(z.object({
+  votes: publicProcedure
+    .input(
+      z.object({
         proposalId: z.string(),
-    })).query(async ({ input, ctx }) => {
-        const { db } = ctx;
+      })
+    )
+    .query(async ({ input, ctx }) => {
+      const { db } = ctx;
     }),
 
-    proposalsMeta: publicProcedure.input(getProposalMetaInput).query(async ({ input, ctx }) => {
-
-
-        return getProposalMeta(input)
+  proposalsMeta: publicProcedure
+    .input(getProposalMetaInput)
+    .query(async ({ input, ctx }) => {
+      return getProposalMeta(input);
     }),
 
-    categories: publicProcedure.query(async ({ ctx }) => {
+  categories: publicProcedure.query(async ({ ctx }) => {
+    const categoriesEdges = await categories.fecthAllCategories();
+    const CategoriesMap: Record<string, { name: string; totalBudget: number }> =
+      {};
 
-        const categoriesEdges = await categories.fecthAllCategories()
-        const CategoriesMap: Record<string, { name: string, totalBudget: number }> = {}
+    const cleaned = mapReducer(
+      CategoriesMap,
+      (acc, curr) => {
+        const categoryName = curr?.node.category_name;
+        if (!categoryName) return acc;
 
+        if (!acc[categoryName]) {
+          acc[categoryName] = {
+            name: categoryName,
+            totalBudget: 0,
+          };
+        }
 
-        const cleaned = mapReducer(CategoriesMap, (acc, curr) => {
-            const categoryName = curr?.node.category_name
-            if (!categoryName) return acc
+        acc[categoryName].totalBudget += curr.node.proposal.budgetTotal;
 
-            if (!acc[categoryName]) {
-                acc[categoryName] = {
-                    name: categoryName,
-                    totalBudget: 0
-                }
-            }
+        return acc;
+      },
+      categoriesEdges
+    );
 
-            acc[categoryName].totalBudget += curr.node.proposal.budgetTotal
+    return Object.values(cleaned);
+  }),
 
-            return acc
-
-
-
-        }, categoriesEdges)
-
-        return Object.values(cleaned)
-
+  getProposalBudget: publicProcedure
+    .input(z.number())
+    .query(async ({ input, ctx }) => {
+      return getBudgetSections(input);
     }),
 
-    getProposalBudget: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
-        return getBudgetSections(input)
+  getProposalTeamMembers: publicProcedure
+    .input(z.number())
+    .query(async ({ input, ctx }) => {
+      return getProposalTeamMembers(input);
+    }),
+  getProposalContent: publicProcedure
+    .input(z.number())
+    .query(async ({ input, ctx }) => {
+      return getProposalContent(input);
+    }),
+  getProposalVotes: publicProcedure
+    .input(z.number())
+    .query(async ({ input, ctx }) => {
+      return getProposalVotes(input);
     }),
 
-    getProposalTeamMembers: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
+  getNounOfTheDay: publicProcedure.query(async ({ ctx }) => {
+    return getNounOfTheDay();
+  }),
 
-        return getProposalTeamMembers(input)
-    }),
-    getProposalContent: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
-
-        return getProposalContent(input)
-    }),
-    getProposalVotes: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
-        return getProposalVotes(input)
+  getProposalRoadmap: publicProcedure
+    .input(z.number())
+    .query(async ({ input, ctx }) => {
+      return getProposalRoadmap(input);
     }),
 
-    getNounOfTheDay: publicProcedure.query(async ({ ctx }) => {
-        return getNounOfTheDay()
-    }),
-
-    getProposalRoadmap: publicProcedure.input(z.number()).query(async ({ input, ctx }) => {
-        return getProposalRoadmap(input)
-    }),
-
-})
-
+  getNounsBalance: publicProcedure.query(async ({ ctx }) => {
+    return getNounsBlance();
+  }),
+});
 
 export type DataSourceRouter = typeof dataSourceRouter;

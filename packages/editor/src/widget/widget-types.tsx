@@ -10,6 +10,7 @@ export interface WidgetProps {
   paddingBottom: number;
   background: string;
   borderRadius: number;
+  className?: string;
   gridSpan: number;
   layout: Partial<Layout> & {
     w: number;
