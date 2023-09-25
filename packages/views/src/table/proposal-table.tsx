@@ -39,28 +39,9 @@ export const ProposalTable: React.FC<{
     string,
     string
   >;
-  console.log("THis jOse", data);
-
-  const headers = Object.keys(headerMap) as (keyof ProposalTableProps)[];
 
   return (
     <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card">
-      {/* HEADER */}
-      {/*       <div
-        className={"grid justify-start w-full "}
-        style={{
-          gridTemplateColumns: `repeat(${headers.length}, 1fr)`,
-        }}
-      >
-        {headers.map((header) => (
-          <div
-            key={header as string}
-            className="flex items-center justify-center"
-          >
-            {headerMap[header]}
-          </div>
-        ))}
-      </div> */}
       {data.map((proposal, i) => (
         <a
           href={`https://nouns.wtf/vote/${proposal.id}`}
