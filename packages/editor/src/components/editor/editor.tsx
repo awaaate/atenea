@@ -35,7 +35,7 @@ const Editor: React.FC<React.ComponentProps<typeof ScrollArea>> = ({
         setSidebar(null);
       }}
     >
-      <div className="mx-auto bg-surface-raised/95 rounded-lg shadow-card flex-1  overflow-hidden ">
+      <div className="mx-auto bg-surface-raised rounded-lg shadow-card flex-1  overflow-hidden max-w-5xl ">
         {children}
         <div className="px-6 py-4">
           <Grid />

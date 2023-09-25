@@ -54,7 +54,9 @@ export const BoardPage = () => {
           })}
         >
           <Editor>
-            <EditorCoveImage />
+            <div className="p-8">
+              <EditorCoveImage />
+            </div>
             <EditorTitle />
           </Editor>
         </ScrollArea>
