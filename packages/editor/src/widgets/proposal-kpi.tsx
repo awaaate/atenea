@@ -9,17 +9,13 @@ import { sourceFetcher } from "../lib/source-fetcher";
 import {} from "@shared/api/src/utils/reducer";
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
 
-const CardAndMetricAndIcon = lazy(() =>
-  import("@shared/views/src/kip-card/card-metric-icon").then((module) => ({
-    default: module.CardAndMetricAndIcon,
+const MetricAndCard = lazy(() =>
+  import("@shared/views/src/kip-card/card-metric").then((module) => ({
+    default: module.MetricAndCard,
   }))
 );
 
-const ComposedViews = joinViews(
-  CardAndMetricAndIcon,
-  CardAndMetricAndIcon,
-  CardAndMetricAndIcon
-);
+const ComposedViews = joinViews(MetricAndCard, MetricAndCard, MetricAndCard);
 
 export default WidgetFactory.createWidget({
   name: "proposal-kpi",
@@ -75,17 +71,17 @@ export default WidgetFactory.createWidget({
           {
             name: "Total Votes",
             metric: `${mappedData.against + mappedData.for} votes`,
-            icon: "Star" as const,
+            className: "bg-accent/10 text-accent",
           },
           {
             name: "For Votes",
             metric: `${mappedData.for} votes`,
-            icon: "Check" as const,
+            className: "bg-status-success-weak text-status-success",
           },
           {
             name: "Against Votes",
             metric: `${mappedData.against} votes`,
-            icon: "Ban" as const,
+            className: "bg-status-danger-weak text-status-danger",
           },
         ],
       };

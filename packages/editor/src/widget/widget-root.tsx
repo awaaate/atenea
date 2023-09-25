@@ -66,7 +66,7 @@ function WidgetRoot<T>({
       })}
     >
       <Card
-        className="w-full h-full flex flex-col bg-transparent rounded-lg overflow-hidden shadow-sm"
+        className="w-full h-full flex flex-col bg-transparent rounded-lg overflow-hidden shadow-0"
         style={{
           background,
           borderRadius,
