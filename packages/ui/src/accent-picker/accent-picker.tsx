@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { ToogleGroup, ToogleItem } from "../toggle-group";
 import { cn } from "../lib/utils";
 
-const COLORS = {
+export const ACCENT_COLORS = {
   default: {
     text: "",
     background: "",
@@ -25,14 +25,14 @@ const COLORS = {
   },
 };
 
-export function getAccentColor(color: keyof typeof COLORS) {
-  let c = COLORS[color as keyof typeof COLORS];
-  if (!c) return `${COLORS.default.background}`;
+export function getAccentColor(color: keyof typeof ACCENT_COLORS) {
+  let c = ACCENT_COLORS[color as keyof typeof ACCENT_COLORS];
+  if (!c) return `${ACCENT_COLORS.default.background}`;
   return `${c.background}`;
 }
-export function getTextAccentColor(color: keyof typeof COLORS) {
-  let c = COLORS[color as keyof typeof COLORS];
-  if (!c) return `${COLORS.default.text}`;
+export function getTextAccentColor(color: keyof typeof ACCENT_COLORS) {
+  let c = ACCENT_COLORS[color as keyof typeof ACCENT_COLORS];
+  if (!c) return `${ACCENT_COLORS.default.text}`;
   return `${c.text}`;
 }
 
@@ -47,7 +47,7 @@ export const AccentPicker = forwardRef<
       {...props}
       type="single"
       className={cn("flex gap-2", className)}
-      onValueChange={(color: keyof typeof COLORS) => {
+      onValueChange={(color: keyof typeof ACCENT_COLORS) => {
         //set the css variables
         document.documentElement.style.setProperty(
           "--theme-color-accent",
@@ -60,7 +60,7 @@ export const AccentPicker = forwardRef<
         onValueChange && onValueChange(color as any);
       }}
     >
-      {Object.keys(COLORS).map((color: keyof typeof COLORS) => (
+      {Object.keys(ACCENT_COLORS).map((color: keyof typeof ACCENT_COLORS) => (
         <ToogleItem
           key={color}
           value={color}

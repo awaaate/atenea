@@ -44,7 +44,7 @@ export const ProposalTable: React.FC<{
     <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card">
       {data.map((proposal, i) => (
         <a
-          href={`https://nouns.wtf/vote/${proposal.id}`}
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/prop/${proposal.id}`}
           target="_blank"
           rel="noreferrer"
         >
