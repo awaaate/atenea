@@ -2,6 +2,7 @@ import { Metadata, ResolvingMetadata } from "next";
 
 import { env } from "@/env.mjs";
 import { createCaller } from "@/lib/trpc/createCaller";
+import { notFound } from "next/navigation";
 
 interface BoardLayoutProps {
   children: React.ReactNode;
@@ -19,7 +20,7 @@ export async function generateMetadata(
   const board = await caller.boards.get({
     id: params.boardId,
   });
-
+  if (!board) return notFound();
   return {
     title: board.name,
     description: board.description,
