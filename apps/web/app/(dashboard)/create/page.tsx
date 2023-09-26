@@ -53,7 +53,7 @@ export default function Page() {
 
       toast({
         title: "Success",
-        description: "Successfully created site!",
+        description: "Successfully created workspace!",
       });
     } catch (error: unknown) {
       console.log(error);

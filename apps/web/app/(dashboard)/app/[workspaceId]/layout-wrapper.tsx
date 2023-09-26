@@ -20,7 +20,7 @@ interface WorkspaceLayoutWrapperProps {
   children: React.ReactNode;
   workspaces: { id: string; name: string | null }[];
   boards: { id: string; name: string | null }[];
-
+  accentColor?: string;
   workspaceId: string;
 }
 export default function WorkspaceLayoutWrapper({

@@ -10,11 +10,6 @@ interface BoardLayoutProps {
   };
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
-  title: "My Board",
-  description: "Check my board",
-};
 export async function generateMetadata(
   { params }: BoardLayoutProps,
   parent: ResolvingMetadata
