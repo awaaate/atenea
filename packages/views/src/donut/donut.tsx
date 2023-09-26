@@ -1,3 +1,4 @@
+"use client";
 import { lazy, Suspense, useEffect } from "react";
 import type { Color } from "@tremor/react";
 import { cn } from "@shared/ui/src/utils";
@@ -6,33 +7,6 @@ import { useNode, useNodeActions } from "@shared/editor/src/engine/nodes";
 const DonutChart = lazy(() =>
   import("@tremor/react").then((m) => ({ default: m.DonutChart }))
 );
-
-const cities = [
-  {
-    name: "New York",
-    sales: 9800,
-  },
-  {
-    name: "London",
-    sales: 4567,
-  },
-  {
-    name: "Hong Kong",
-    sales: 3908,
-  },
-  {
-    name: "San Francisco",
-    sales: 2400,
-  },
-  {
-    name: "Singapore",
-    sales: 1908,
-  },
-  {
-    name: "Zurich",
-    sales: 1398,
-  },
-];
 
 export interface DonutProps {
   data: Record<string, unknown>[];

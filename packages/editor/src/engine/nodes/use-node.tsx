@@ -1,3 +1,4 @@
+"use client";
 import { useMemo, useContext, useCallback } from "react";
 
 import { NodeContext } from "./node-context";

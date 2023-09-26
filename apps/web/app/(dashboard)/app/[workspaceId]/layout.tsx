@@ -16,8 +16,8 @@ interface AdminLayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
-  title: "Admin Panel",
-  description: "Admins are allowed to access this page and manage the site.",
+  title: "Workspace Admin",
+  description: "Workspace mangement",
 };
 
 export default async function AdminLayout({
@@ -25,7 +25,6 @@ export default async function AdminLayout({
   params,
 }: AdminLayoutProps) {
   const session = await getSession();
-  console.log("session", session);
   if (!session) {
     redirect("/sign-in");
   }
@@ -39,7 +38,6 @@ export default async function AdminLayout({
     (workspace) => workspace.id === params.workspaceId
   );
 
-  console.log("userOwns", workspaces, userOwns);
   if (userOwns === -1) {
     //TODO: improve this
     return notFound();

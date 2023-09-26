@@ -1,3 +1,4 @@
+"use client";
 import { Icon } from "@shared/ui/src/icon";
 import { date } from "@shared/ui/src/date";
 import { useEffect, useRef, useState } from "react";

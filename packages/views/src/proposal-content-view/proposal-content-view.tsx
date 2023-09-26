@@ -1,9 +1,9 @@
+"use client";
 import { useNode, useNodeActions } from "@shared/editor/src/engine/nodes";
 import { Badge } from "@shared/ui/src/badge";
-import { Button } from "@shared/ui/src/button";
 import { Icon } from "@shared/ui/src/icon";
-import React, { useEffect } from "react";
 import { Markdown } from "@shared/ui/src/markdown";
+import React, { useEffect } from "react";
 
 interface ProposalContentViewProps {
   description: string;

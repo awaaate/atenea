@@ -15,7 +15,7 @@ export interface EditorTopbarProps {}
 export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
   const setSidebar = useEditorStore.use.setSidebar();
   const sidebar = useEditorStore.use.sidebar();
-
+  const setTitle = useEditorStore.use.setTitle();
   const editable = useEditorStore.use.editable();
   const title = useEditorStore.use.title();
   const lastDatabaseSync = useAutoSave();
@@ -32,7 +32,12 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
       <div className="flex items-center ">
         <h2 className="font-semibold text-xl ">
           <Icon name="Layout" className="mr-2 " size="s" />
-          {title}
+          <input
+            className="bg-transparent border-none outline-none"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            disabled={!editable}
+          />
         </h2>
         <Separator orientation="vertical" className="h-[25px] mx-2" />
         <Button size="sm" variant={"ghost"} onClick={() => {}}>

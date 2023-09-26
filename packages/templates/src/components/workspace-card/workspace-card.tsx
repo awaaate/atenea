@@ -34,7 +34,7 @@ export const WorkspaceCard: React.FC<WorkspaceCardProps> = ({
         }
         href={`/app/${id}`}
       >
-        <Icon name="LayoutDashboard" className="text-text-weakest " size="lg" />
+        <Icon name="LayoutDashboard" className="text-text-weakest " size="l" />
         <h3 className="text-text-weak font-semibold mt-4 mb-1">{title}</h3>
         <p className="text-text-weaker break-words ">
           {description.slice(0, 100)}
