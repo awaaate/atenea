@@ -88,7 +88,7 @@ export const BoardConfigForm: React.FC<BoardConfigFormProps> = ({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full px-4 space-y-2 max-w-5xl mx-auto mt-4"
+        className="w-full px-4 space-y-2 max-w-7xl mx-auto mt-4"
       >
         <BoardForm />
         <Button
