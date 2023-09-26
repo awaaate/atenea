@@ -156,10 +156,10 @@ const DuplicateButton = ({ id }: BoardButtonsProps) => {
   return (
     <DropdownMenuItem
       onSelect={async () => {
-        setBoards([...boards, newBoard[0]]);
         const newBoard = await mutateAsync({
           id,
         });
+        setBoards([...boards, newBoard[0]]);
 
         router.push(`/app/${workspaceId}/${newBoard[0].id}`);
       }}
