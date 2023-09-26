@@ -47,7 +47,6 @@
     "next": "^13.4.19",
     "react-hook-form": "^7.45.4",
     "react-markdown": "^8.0.7",
-    "react-textarea-autosize": "^8.5.3",
     "tailwind-merge": "^1.14.0",
     "zod": "^3.22.2"
   }

@@ -1,48 +1,45 @@
 import { gql } from "graphql-request";
-import { nounsSubgraph } from "../lib/nouns-subgraph"
-import { ImageData, getNounData } from '@nouns/assets';
-import { buildSVG } from '@nouns/sdk';
+import { nounsSubgraph } from "../lib/nouns-subgraph";
+import { ImageData, getNounData } from "@nouns/assets";
+import { buildSVG } from "@nouns/sdk";
 const { palette } = ImageData;
 
-
-
 const query = gql`
-query NounSeed($nounId: ID!) {
-  noun(id: $nounId) {
-    seed {
-      accessory
-      background
-      body
-      glasses
-      head
+  query NounSeed($nounId: ID!) {
+    noun(id: $nounId) {
+      seed {
+        accessory
+        background
+        body
+        glasses
+        head
+      }
     }
   }
-}
-
-`
-
+`;
 
 export interface NounSeedQUery {
-  noun: Noun
+  noun: Noun;
 }
 
 export interface Noun {
-  seed: Seed
+  seed: Seed;
 }
 
 export interface Seed {
-  accessory: string
-  background: string
-  body: string
-  glasses: string
-  head: string
+  accessory: string;
+  background: string;
+  body: string;
+  glasses: string;
+  head: string;
 }
 
 export const generateNounImage = async (nounId: string) => {
   const response = await nounsSubgraph.request<NounSeedQUery>(query, {
-    nounId
-  })
-  const seed = response.noun.seed
+    nounId,
+  });
+  if (!response.noun) return null;
+  const seed = response.noun.seed;
 
   const { parts, background } = getNounData({
     background: parseInt(seed.background),
@@ -52,10 +49,7 @@ export const generateNounImage = async (nounId: string) => {
     glasses: parseInt(seed.glasses),
   });
 
-
-
   const svgBinary = buildSVG(parts, palette, "d5d7e1");
 
-
-  return svgBinary
-}
+  return svgBinary;
+};

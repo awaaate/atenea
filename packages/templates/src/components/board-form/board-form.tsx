@@ -10,7 +10,7 @@ import {
 
 import { Input } from "@shared/ui/src/input";
 import { Textarea } from "@shared/ui/src/textarea";
-
+import { cn } from "@shared/ui/src/utils";
 import React from "react";
 import { z } from "zod";
 import { boardSchema } from "../../schemas/boardScheam";
@@ -26,11 +26,11 @@ export const BoardForm: React.FC<BoardFormProps> = () => {
         name="name"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Worksapce Name</FormLabel>
+            <FormLabel>Board Name</FormLabel>
             <FormControl>
               <Input placeholder="shadcn" {...field} />
             </FormControl>
-            <FormDescription>This is your public display name.</FormDescription>
+            <FormDescription></FormDescription>
             <FormMessage />
           </FormItem>
         )}
@@ -38,12 +38,23 @@ export const BoardForm: React.FC<BoardFormProps> = () => {
 
       <FormField
         control={form.control}
-        name="url"
+        name="id"
         render={({ field }) => (
           <FormItem>
-            <FormLabel>Subdomain</FormLabel>
+            <FormLabel>Board Url</FormLabel>
             <FormControl>
-              <Input placeholder="atenea" {...field} />
+              <div
+                className={cn(
+                  "flex items-center border rounded-md px-2 py-1 text-text-weak bg-background-default"
+                )}
+              >
+                <span>https://www.atenea.wtf/w/</span>
+                <input
+                  placeholder="my-board"
+                  {...field}
+                  className="bg-transparent"
+                />
+              </div>
             </FormControl>
             <FormDescription>
               This is the base of the public board links you will be able to

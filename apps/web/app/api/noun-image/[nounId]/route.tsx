@@ -6,6 +6,7 @@ export async function GET(
   const nounId = params.nounId;
 
   const image = await generateNounImage(nounId);
+  //fallback to default image
 
   return new Response(image, {
     headers: {

@@ -9,7 +9,12 @@ const Page = ({ ...props }: Partial<EditorState>) => {
   return (
     <TooltipProvider>
       <WorkspaceLayout {...mockPageData} onSignout={() => {}}>
-        <BoardConfigPage />
+        <BoardConfigPage
+          description="This is a description"
+          id="123"
+          name="Board Name"
+          {...props}
+        />
       </WorkspaceLayout>
     </TooltipProvider>
   );

@@ -1,6 +1,8 @@
 import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
+import { WorkspaceTobar } from "@shared/templates/src/components/workspace-topbar";
 import { notFound } from "next/navigation";
+import { BoardConfigForm } from "./board-config-form";
 
 async function BoardConfigPage({
   params,
@@ -20,9 +22,10 @@ async function BoardConfigPage({
   if (!board) return notFound();
 
   return (
-    <div>
-      <h1>Board Config</h1>
-      <pre>{JSON.stringify(board, null, 2)}</pre>
+    <div className="w-full">
+      <WorkspaceTobar />
+
+      <BoardConfigForm {...board} />
     </div>
   );
 }

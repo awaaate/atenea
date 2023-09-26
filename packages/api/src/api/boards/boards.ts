@@ -128,7 +128,7 @@ export const boardsRouter = router({
       if (!userId) throw new Error("User not found");
       const board = {
         id: nanoid(),
-
+        background: "",
         name: input.name,
         workspaceId: input.workspaceId,
         userId: userId,
@@ -183,5 +183,29 @@ export const boardsRouter = router({
         id: Board.id,
         name: Board.name,
       });
+    }),
+  setConfig: protectedProcedure
+    .input(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        description: z.string(),
+        newId: z.string(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      const { db } = ctx;
+
+      return db
+        .update(Board)
+        .set({
+          name: input.name,
+          description: input.description,
+          id: input.newId,
+        })
+        .where(eq(Board.id, input.id))
+        .returning({
+          id: Board.id,
+        });
     }),
 });

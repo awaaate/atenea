@@ -102,7 +102,7 @@ export default function Page() {
                 onClick={() => console.log(form.formState.errors)}
               >
                 {isLoading ? (
-                  <Spinner className="text-black/20 fill-black" />
+                  <Spinner className="text-black/20 fill-black" size="xs" />
                 ) : (
                   "create"
                 )}

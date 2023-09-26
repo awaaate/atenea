@@ -1,9 +1,9 @@
-import { Metadata } from "next";
+import { Metadata, ResolvingMetadata } from "next";
 
 import { env } from "@/env.mjs";
+import { createCaller } from "@/lib/trpc/createCaller";
 
-
-interface AdminLayoutProps {
+interface BoardLayoutProps {
   children: React.ReactNode;
   params: {
     boardId: string;
@@ -15,11 +15,35 @@ export const metadata: Metadata = {
   title: "My Board",
   description: "Check my board",
 };
+export async function generateMetadata(
+  { params }: BoardLayoutProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const caller = createCaller();
+
+  const board = await caller.boards.get({
+    id: params.boardId,
+  });
+
+  return {
+    title: board.name,
+    description: board.description,
+    openGraph: {
+      images: [
+        {
+          url: board.coverImage,
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
+  };
+}
 
 export default async function BoardView({
   children,
   params,
-}: AdminLayoutProps) {
+}: BoardLayoutProps) {
   /*   if (session.user.role !== "ADMIN") {
     redirect("/");
   } */

@@ -44,6 +44,7 @@ export const BoardsSidebar = () => {
   const collapsedSidebar = useLayoutStore((state) => state.collapsedSidebar);
   const boards = useLayoutStore((state) => state.boards);
   const setBoards = useLayoutStore((state) => state.setBoards);
+  const { boardId } = useParams();
 
   const workspaceId = useLayoutStore((state) => state.workspaceId);
 
@@ -52,7 +53,7 @@ export const BoardsSidebar = () => {
   const boardsNavs = useMemo(() => {
     return boards
       .map((board) => ({
-        active: pathName === `/app/${workspaceId}/${board.id}`,
+        active: boardId === board.id,
         href: `/app/${workspaceId}/${board.id}`,
         children: collapsedSidebar ? "" : board.name,
         icon: "Layout" as const,
@@ -60,7 +61,9 @@ export const BoardsSidebar = () => {
       }))
       .map((item, i) => (
         <button
-          className={cn(navItemClasse, "justify-between group")}
+          className={cn(navItemClasse, "justify-between group", {
+            "bg-active-default": item.active,
+          })}
           key={item.id}
         >
           <a
@@ -130,8 +133,10 @@ const DeleteButton = ({ id }: BoardButtonsProps) => {
   return (
     <DropdownMenuItem
       onSelect={async () => {
-        await mutateAsync({ id });
+        //TODO: optimisitc update
         setBoards(boards.filter((board) => board.id !== id));
+        await mutateAsync({ id });
+
         router.push(`/app/${workspaceId}`);
       }}
     >
@@ -151,11 +156,11 @@ const DuplicateButton = ({ id }: BoardButtonsProps) => {
   return (
     <DropdownMenuItem
       onSelect={async () => {
+        setBoards([...boards, newBoard[0]]);
         const newBoard = await mutateAsync({
           id,
         });
 
-        setBoards([...boards, newBoard[0]]);
         router.push(`/app/${workspaceId}/${newBoard[0].id}`);
       }}
     >
