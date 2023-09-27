@@ -8,20 +8,24 @@ import { Icon } from "@shared/ui/src/icon";
 import { Spinner } from "@shared/ui/src/spinner";
 import { cn } from "@shared/ui/src/utils";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-type LoadingState = "google" | "github";
 
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const { connectModalOpen, openConnectModal } = useConnectModal();
   const session = useSession();
   const router = useRouter();
-
+  const searchParams = useSearchParams();
   React.useEffect(() => {
     if (session.status === "authenticated") {
-      router.push("/app");
+      //check if next router is available
+      const next = searchParams.get("next");
+      if (next) {
+        router.push(next);
+      } else {
+        router.push("/app");
+      }
     }
   }, [session]);
 

@@ -11,18 +11,16 @@ import {
   AuthenticationPageTerms,
 } from "@shared/templates/src/pages/sign-in";
 import { getSession } from "@/lib/auth/getSession";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
   title: "Sign In",
-  description:
-    "Join the beta version of atenea",
+  description: "Join the beta version of atenea",
 };
 
 const Page = async () => {
   const session = await getSession();
-
   if (session) {
     redirect("/app");
   }
