@@ -77,7 +77,7 @@ export const StartFromTemplate = ({ templates }: StartFromTemplateProps) => {
           </CardHeader>
           <CardContent className="bg-surface-lowered">
             <Image
-              src={"/images/board-covers/Abstract-Gradient-1.png"}
+              src={template.image}
               alt={template.name}
               width={700}
               height={300}

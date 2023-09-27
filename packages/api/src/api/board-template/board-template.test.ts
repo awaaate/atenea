@@ -11,12 +11,12 @@ const boards = boardTemplateRouter.createCaller({
   },
 });
 
-it.skip("Should create a template", async () => {
+it("Should create a template", async () => {
   const result = await boards.create({
-    name: "Test",
+    name: "First Template",
     description: "Test",
-    image: "Test",
-    boardId: "xE60hq5unXtf-vpfMb1-f",
+    image: "/templates/first-template.png",
+    boardId: "XwR6voRLLf86sgp_X1X_K",
   });
 
   console.log(result);
@@ -30,7 +30,7 @@ it.skip("Should get all templates", async () => {
   expect(result).toBeDefined();
 });
 
-it("Should delete all templates", async () => {
+it.skip("Should delete all templates", async () => {
   const result = await boards.deleteAll();
 
   console.log(result);

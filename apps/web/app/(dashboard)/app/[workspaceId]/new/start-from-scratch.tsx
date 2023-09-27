@@ -58,7 +58,7 @@ export const StartFromScratch = () => {
       </CardHeader>
       <CardContent className="bg-surface-lowered">
         <Image
-          src={"/images/board-covers/Abstract-Gradient-1.png"}
+          src={"/templates/empty.png"}
           alt={"Start from scratch"}
           width={700}
           height={300}

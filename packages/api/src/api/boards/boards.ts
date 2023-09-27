@@ -160,7 +160,7 @@ export const boardsRouter = router({
     .input(
       z.object({
         id: z.string(),
-        workspaceId: z.string().nullable()
+        workspaceId: z.string().nullable(),
       })
     )
     .mutation(async ({ input, ctx }) => {
@@ -173,12 +173,13 @@ export const boardsRouter = router({
       const userId = ctx.user?.id;
       if (!userId) throw new Error("User not found");
       const newBoard = {
+        ...board,
         id: nanoid(),
         name: board.name + " (copy)",
         workspaceId: input.workspaceId || board.workspaceId,
-        userId: userId,
         createdAt: new Date().toISOString(), // convert Date to string
         updatedAt: new Date().toISOString(), // convert Date to string
+        userId: userId,
       };
       return db.insert(Board).values(newBoard).returning({
         id: Board.id,
