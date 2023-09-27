@@ -98,26 +98,13 @@ export const BoardsSidebar = () => {
         {collapsedSidebar ? "" : "Home"}
       </NavItem>
       {boardsNavs}
-      <button
+      <Link
         className={cn(navItemClasse, "justify-start inline-flex")}
-        onClick={async () => {
-          const board = await createMutatation({
-            name: "New Board",
-            workspaceId,
-          });
-
-          router.push(`/app/${workspaceId}/${board[0].id}`);
-
-          setBoards([...boards, board[0]]);
-        }}
+        href={`/app/${workspaceId}/new`}
       >
-        {isLoading ? (
-          <Spinner size="xxs" />
-        ) : (
-          <Icon name={"Plus"} className="mr-2" variant={"button"} size="s" />
-        )}
+        <Icon name="Plus" className="mr-2" variant={"button"} />
         {!collapsedSidebar && "Create Board"}
-      </button>
+      </Link>
     </SidebarNav>
   );
 };

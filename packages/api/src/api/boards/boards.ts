@@ -160,6 +160,7 @@ export const boardsRouter = router({
     .input(
       z.object({
         id: z.string(),
+        workspaceId: z.string().nullable()
       })
     )
     .mutation(async ({ input, ctx }) => {
@@ -174,7 +175,7 @@ export const boardsRouter = router({
       const newBoard = {
         id: nanoid(),
         name: board.name + " (copy)",
-        workspaceId: board.workspaceId,
+        workspaceId: input.workspaceId || board.workspaceId,
         userId: userId,
         createdAt: new Date().toISOString(), // convert Date to string
         updatedAt: new Date().toISOString(), // convert Date to string
