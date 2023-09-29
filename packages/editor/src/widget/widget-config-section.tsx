@@ -37,7 +37,7 @@ export const WidgetConfigSection: React.FC<WidgetConfigSectionProps> & {
         isExpanded,
       }}
     >
-      <div className={cn(className, "mt-2 px-4 py-2")} {...props}>
+      <div className={cn("mt-2 px-4 py-2", className)} {...props}>
         {children}
       </div>
     </WidgetSectionConfigContext.Provider>

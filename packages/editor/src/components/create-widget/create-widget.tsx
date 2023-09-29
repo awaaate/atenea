@@ -33,9 +33,9 @@ export const CreateWidget = () => {
   };
   return (
     <Dialog open={isOpen} onOpenChange={(v) => setIsOpen(v)}>
-      <DialogTrigger className="shadow-[0] bg-accent text-text-on-accent hover:bg-accent/70">
-        <Icon name="Plus" className="mr-2  text-text-on-accent h" />
-        Add section
+      <DialogTrigger className="text-text-weaker">
+        <Icon name="AreaChart" className="mr-2  h" />
+        <span>Add Widget</span>
       </DialogTrigger>
       <CommandMenu
         items={Array.from(widgetFactory.widgets.entries()).map(

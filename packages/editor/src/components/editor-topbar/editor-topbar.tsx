@@ -33,29 +33,22 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
         <h2 className="font-semibold text-xl ">
           <Icon name="Layout" className="mr-2 " size="s" />
           <input
-            className="bg-transparent border-none outline-none"
+            className="bg-transparent border-none outline-none w-max"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             disabled={!editable}
           />
         </h2>
         <Separator orientation="vertical" className="h-[25px] mx-2" />
-        <Button size="sm" variant={"ghost"} onClick={() => {}}>
-          <Icon name="Undo" className="text-text-weakest" />
-        </Button>
-        <Button size="sm" variant={"ghost"} onClick={() => {}}>
-          <Icon name="Redo" className="text-text-weakest" />
-        </Button>
-        <Button size={"sm"} onClick={toggleSidebarHandler} variant={"ghost"}>
-          <Icon name="Settings2" className="text-text-weakest" />
-        </Button>
+        <div className="flex gap-2 justify-center items-center">
+          <CreateWidget />
+        </div>
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-sm text-text-weaker">
+        <span className="text-sm text-text-weakest">
           Last saved {date(lastDatabaseSync).fromNow()}
         </span>
         <ShareButton />
-        <CreateWidget />
       </div>
     </div>
   );

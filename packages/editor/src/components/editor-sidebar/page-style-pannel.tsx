@@ -5,8 +5,10 @@ import { BackgroundPickerTabs } from "@shared/ui/src/background-picker";
 import { Icon } from "@shared/ui/src/icon";
 import { Separator } from "@shared/ui/src/separator";
 import { cn } from "@shared/ui/src/utils";
-
+import { Form, FormControl, FormLabel, useForm } from "@shared/ui/src/form";
 import { useEditorStore } from "../../engine/editor";
+import { Input } from "@shared/ui/src/input";
+import { Textarea } from "@shared/ui/src/textarea";
 
 const classes = {
   toogleItem:
@@ -16,11 +18,30 @@ const classes = {
 export const PageStylePannel = () => {
   const background = useEditorStore.use.pageBackground();
   const setBackground = useEditorStore.use.setPageBackground();
-
   const coverImageEnabled = useEditorStore.use.coverImageEnabled();
+  const title = useEditorStore.use.title();
+  const setTitle = useEditorStore.use.setTitle();
+  const description = useEditorStore.use.description();
+  const setDescription = useEditorStore.use.setDescription();
 
   return (
     <div className="flex flex-col gap-2">
+      <WidgetConfigSection title="Title" className="mb-0">
+        <WidgetConfigSection.Title />
+        <Input
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="My board"
+        />
+      </WidgetConfigSection>
+      <WidgetConfigSection title="Description" className="mt-0">
+        <WidgetConfigSection.Title />
+        <Textarea
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder="My board"
+        />
+      </WidgetConfigSection>
       <WidgetConfigSection title="Cover Image">
         <WidgetConfigSection.Title />
         <ToogleGroup

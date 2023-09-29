@@ -18,6 +18,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
       coverImageEnabled: false,
       lastDatabaseSync: new Date().toString(),
       boardId: "",
+      description: "",
       nodes: {},
       pageBackground: "",
       sidebar: null,
@@ -37,7 +38,9 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
         console.log("setCoverImage", coverImage);
         set({ coverImage });
       },
-
+      setDescription(description) {
+        set({ description });
+      },
       setPageBackground: (background) => {
         set({ pageBackground: background });
       },
@@ -122,6 +125,7 @@ const useEditorStoreBase = createWithEqualityFn<EditorState>()(
           }
 
           return {
+            sidebar: value ? "node" : null,
             nodes: {
               ...state.nodes,
               [id]: currentNode,

@@ -15,10 +15,12 @@ const PopoverTrigger = React.forwardRef<
   <PopoverPrimitive.Trigger
     ref={ref}
     {...props}
-    className={buttonVariants({
-      className,
-      size: "sm",
-    })}
+    className={cn(
+      buttonVariants({
+        size: "sm",
+      }),
+      className
+    )}
   />
 ));
 PopoverTrigger.displayName = PopoverPrimitive.Trigger.displayName;

@@ -88,7 +88,7 @@ export default function Page() {
             </CardContent>
           </Card>
 
-          <Card className="flex-1 flex flex-col">
+          <Card className="flex-1 flex flex-col ">
             <CardHeader>
               <CardTitle>Preview</CardTitle>
             </CardHeader>

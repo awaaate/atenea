@@ -55,6 +55,7 @@ export const boardsRouter = router({
         draft: z.any(),
         name: z.string(),
         background: z.string(),
+        description: z.string(),
         accentColor: z.string(),
         coverImage: z.string().optional(),
         coverImageEnabled: z.boolean().default(false).optional(),
@@ -72,6 +73,7 @@ export const boardsRouter = router({
           accentColor: input.accentColor,
           coverImage: input.coverImage,
           coverImageEnabled: input.coverImageEnabled,
+          description: input.description,
         })
         .where(eq(Board.id, input.id))
         .returning({

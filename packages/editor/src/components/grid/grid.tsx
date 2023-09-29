@@ -25,7 +25,7 @@ export const Grid = () => {
   }, [layout]);
   const ResponsiveReactGridLayout = useMemo(() => {
     return WidthProvider(Responsive);
-  }, [sidebar]);
+  }, []);
 
   const children = useMemo(() => {
     return nodeIds.map((child: string, index: number) => {

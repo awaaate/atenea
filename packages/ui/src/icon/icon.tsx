@@ -79,6 +79,7 @@ import {
   CalendarClock,
   ThumbsDown,
   Sparkle,
+  Loader2,
   ThumbsUp,
 } from "lucide-react";
 import React from "react";
@@ -89,6 +90,7 @@ import { cva, VariantProps } from "class-variance-authority";
 const Icons = {
   Clock,
   Sparkle,
+  Spinner: Loader2,
   ThumbsDown,
   ThumbsUp,
   CalendarClock,

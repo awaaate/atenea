@@ -64,6 +64,7 @@ export const FloatingMenu = forwardRef<HTMLDivElement, FloatingMenuProps>(
     });
 
     useEffect(() => {
+      if (!editor) return;
       const unregisterListener = editor.registerUpdateListener(
         ({ editorState }) => {
           editorState.read(() => {

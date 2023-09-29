@@ -13,14 +13,12 @@ export const ShareButton = () => {
   const boardId = useEditorStore.use.boardId();
   return (
     <Popover>
-      <PopoverTrigger asChild>
-        <Button variant={"primary"} className="m-2">
-          <Icon name="Share" className="mr-2" />
-          Share
-        </Button>
+      <PopoverTrigger className="bg-accent  text-text-on-accent hover:bg-accent/70">
+        <Icon name="Share" className="mr-2" />
+        Share
       </PopoverTrigger>
       <PopoverContent>
-        <p className="text-text-weak">
+        <p className="text-text-weak ">
           Share this board with anyone by sending them the link below.
         </p>
         <Link href={`/w/${boardId}`} targe="_blank">

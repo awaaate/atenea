@@ -18,12 +18,12 @@ export const ProposalRoadmapView: React.FC<ProposalRoadmapProps> = ({
   roadmap,
 }) => {
   return (
-    <div className="flex w-full gap-3 flex-col p-4">
+    <div className="flex w-full gap-3 flex-wrap">
       {roadmap.map((roadmapItem, index) => {
         return (
           <Dialog>
-            <DialogTrigger className="h-auto py-2 w-full justify-start ">
-              <span className="icon-xl rounded-full flex items-center justify-center bg-status-highlight mr-2">
+            <DialogTrigger className="h-auto py-2 flex-1 min-w-[300px] border-0 justify-start shadow-none  bg-surface-raised border rounded-pill">
+              <span className="icon-xl rounded-full flex items-center justify-center bg-accent mr-2 text-sm text-text-on-accent">
                 {index + 1}
               </span>
               {roadmapItem.name}
