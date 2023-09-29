@@ -21,14 +21,14 @@ export const ShareButton = () => {
         <p className="text-text-weak ">
           Share this board with anyone by sending them the link below.
         </p>
-        <Link href={`/w/${boardId}`} targe="_blank">
-          <div className="flex gap-2 p-2 items-center justify-between bg-nav-surface shadow-sm mt-2 group hover:shadow-popout">
+        <Link href={`/w/${boardId}`} target="_blank" rel="noopener noreferrer">
+          <span className="flex gap-2 p-2 items-center justify-between bg-nav-surface shadow-sm mt-2 group hover:shadow-popout rounded-pill border">
             <span className="text-text-weaker text-sm">{`https://www.atenea.wtf/w/${boardId}`}</span>
             <Icon
               name="ArrowRight"
               className="group-hover:text-accent transition-colors"
             />
-          </div>
+          </span>
         </Link>
       </PopoverContent>
     </Popover>

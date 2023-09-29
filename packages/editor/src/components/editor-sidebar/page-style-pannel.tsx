@@ -34,6 +34,7 @@ export const PageStylePannel = () => {
           placeholder="My board"
         />
       </WidgetConfigSection>
+      <Separator />
       <WidgetConfigSection title="Description" className="mt-0">
         <WidgetConfigSection.Title />
         <Textarea
@@ -42,6 +43,7 @@ export const PageStylePannel = () => {
           placeholder="My board"
         />
       </WidgetConfigSection>
+      <Separator />
       <WidgetConfigSection title="Cover Image">
         <WidgetConfigSection.Title />
         <ToogleGroup

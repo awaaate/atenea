@@ -1,6 +1,12 @@
 "use client";
 
-import React, { HTMLAttributes, Suspense, memo, useMemo } from "react";
+import React, {
+  HTMLAttributes,
+  Suspense,
+  memo,
+  useEffect,
+  useMemo,
+} from "react";
 
 import { cn } from "@shared/ui/src/utils";
 import { Card, CardTitle } from "@shared/ui/src/card";
@@ -53,7 +59,7 @@ function WidgetRoot<T>({
   const className = useNode((node) => node.data.props.className);
   const editable = useEditorStore.use.editable();
 
-  const { setNode } = useNodeActions();
+  const { setNode, remove } = useNodeActions();
 
   const showHeader = editable || title || isActive;
 
@@ -62,6 +68,19 @@ function WidgetRoot<T>({
     return inner(data);
   }, [data, skeleton, inner, isLoading]);
 
+  //listen delete event,delete key
+  useEffect(() => {
+    if (!isActive) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Delete" || e.key === "Backspace") {
+        remove();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isActive, remove]);
   return (
     <div
       ref={(ref) => {

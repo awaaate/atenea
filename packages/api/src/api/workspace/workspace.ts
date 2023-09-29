@@ -181,4 +181,17 @@ export const workspaceRouter = router({
         },
       });
     }),
+  deleteWorkspace: protectedProcedure
+    .input(
+      z.object({
+        id: z.string(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      const { db } = ctx;
+      const userId = ctx.user?.id;
+      return db.delete(Workspace).where(eq(Workspace.id, input.id)).returning({
+        id: Workspace.id,
+      });
+    }),
 });

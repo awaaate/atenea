@@ -10,6 +10,7 @@ import { getSession } from "@/lib/auth/getSession";
 import { createCaller } from "@/lib/trpc/createCaller";
 import { WorkspacePageProvider } from "./page-provider";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { DeleteWorkspaceSection } from "./delete-workspace-section";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
@@ -41,6 +42,7 @@ export default async function Workspace({
           name={workspace.name || ""}
           subdomain={workspace.subdomain || ""}
         />
+        <DeleteWorkspaceSection />
       </div>
       <WorkspacePageProvider
         title={workspace.name || ""}
