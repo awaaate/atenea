@@ -4,21 +4,22 @@ import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { BAR_CHART_SKELETON } from "../widget/skeletons";
 import { mapReducer } from "@shared/api/src/utils/reducer";
+import { IconName } from "@shared/ui/src/icon";
 
-const DonutView = lazy(() =>
-  import("@shared/views/src/donut/donut").then((module) => ({
-    default: module.Donut,
+const BarListView = lazy(() =>
+  import("@shared/views/src/bar-chart/bar-list").then((module) => ({
+    default: module.BarListView,
   }))
 );
 
 export default WidgetFactory.createWidget({
-  name: "categories-donut-chart",
+  name: "categories-bar-list-chart",
   displayName: "Props by category",
   group: "general",
-  icon: "PieChart",
+  icon: "BarChartHorizontal",
   Config: () => <ViewColorsConfig />,
   dataFetcher: {
-    key: "proposals-meta",
+    key: "categories-bar-list-chart",
     collector(props) {
       return {};
     },
@@ -26,9 +27,13 @@ export default WidgetFactory.createWidget({
       const data = await sourceFetcher.proposalsMeta.query({
         first: 1000,
       });
+      const countedProposals = new Set<string>();
       const categories = mapReducer(
         {} as Record<string, number>,
         (acc, curr) => {
+          if (!curr) return acc;
+          if (countedProposals.has(curr.id)) return acc;
+          countedProposals.add(curr.id);
           if (!curr?.categories) {
             acc["Uncategorized"] = acc["Uncategorized"]
               ? acc["Uncategorized"] + 1
@@ -44,26 +49,25 @@ export default WidgetFactory.createWidget({
         },
         data
       );
-      console.log("categories: ", categories);
-      const finalData = Object.keys(categories).map((key) => ({
-        name: key,
-        "Number of proposals": categories[key],
-      }));
-      console.log("finalData: ", finalData);
+      const finalData = Object.keys(categories)
+        .map((key) => ({
+          name: key,
+          value: categories[key],
+        }))
+        .sort((a, b) => b.value - a.value);
 
       return {
         data: finalData,
         index: "name",
-        category: "Number of proposals",
+        categories: ["Number of proposals"],
         valueFormatter(number) {
-          if (number > 350) return "350+ Proposals";
-          return ` ${number} Proposals`;
+          return ` ${number}`;
         },
       };
     },
   },
   initialProps: {
-    colors: ["stone" as const],
+    colors: ["lime" as const],
     title: "Props founded by category",
     layout: {
       w: 7,
@@ -72,5 +76,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  View: DonutView,
+  View: BarListView,
 });

@@ -39,7 +39,13 @@ export const ProposalContentView: React.FC<ProposalContentViewProps> = ({
 
   return (
     <div className="p-2 text-weak">
-      <p>{description}</p>
+      {description ? (
+        <p>{description}</p>
+      ) : (
+        <Markdown className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 max-w-full">
+          {content.slice(0, 200)}
+        </Markdown>
+      )}
       <Badge
         variant="highlight"
         className="mt-2"

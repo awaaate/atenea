@@ -12,7 +12,6 @@ import proposalKpi from "../widgets/proposal-kpi";
 import treasury from "../widgets/treasury";
 import nounOfDay from "../widgets/noun-of-day";
 import categoriesBudgetDonutChart from "../widgets/categories-budget-donut-chart";
-import categoriesDonutChart from "../widgets/categories-donut-chart";
 import popularTeams from "../widgets/popular-teams";
 import proposalCategory from "../widgets/proposal-category";
 import proposalTimeframeEnd from "../widgets/proposal-timeframe-end";
@@ -20,6 +19,7 @@ import proposalTimeframeStart from "../widgets/proposal-timeframe-start";
 import proposalRoadmap from "../widgets/proposal-roadmap";
 import executedProposals from "../widgets/executed-proposals";
 import activeProposals from "../widgets/active-proposals";
+import categoriesBarList from "../widgets/categories-bar-list";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -28,7 +28,7 @@ widgetFactory.registerWidgetComponent(TextWidget);
 widgetFactory.registerWidgetComponent(executedProposals);
 widgetFactory.registerWidgetComponent(activeProposals);
 widgetFactory.registerWidgetComponent(categoriesBudgetDonutChart);
-widgetFactory.registerWidgetComponent(categoriesDonutChart);
+widgetFactory.registerWidgetComponent(categoriesBarList);
 widgetFactory.registerWidgetComponent(popularTeams);
 //widgetFactory.registerWidgetComponent(proposalsAreaChart);
 widgetFactory.registerWidgetComponent(proposalsBarChart);

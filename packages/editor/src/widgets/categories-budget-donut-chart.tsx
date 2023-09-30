@@ -26,6 +26,7 @@ export default WidgetFactory.createWidget({
       const data = await sourceFetcher.proposalsMeta.query({
         first: 1000,
       });
+      const countedProposals = new Set<string>();
       const categories = mapReducer(
         {} as Record<string, number>,
         (acc, curr) => {
@@ -38,10 +39,12 @@ export default WidgetFactory.createWidget({
           }
           curr.categories.forEach((category: string) => {
             category = category.toLocaleLowerCase().trim() || "Uncategorized";
+            if (countedProposals.has(curr.id)) return;
+            countedProposals.add(curr.id);
             const currentValue = acc[category];
             acc[category] =
               typeof currentValue === "number"
-                ? currentValue + curr.budgetEth || curr.totalBudget
+                ? currentValue + (curr.budgetEth || curr.totalBudget)
                 : 0;
           });
           return acc;
