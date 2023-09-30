@@ -18,12 +18,18 @@ export function BarChartView(props: BarChartViewProps) {
 
   return (
     <BarChart
-      className={cn("w-[calc(100%-1rem)]", className)}
+      className={cn(
+        "w-[calc(100%-1rem)] bg-surface-default rounded-default border shadow-card",
+        className
+      )}
       colors={colors as any}
       data={data}
       categories={categories}
       index={index}
       valueFormatter={props.valueFormatter}
+      showYAxis={false}
+      showLegend={false}
+      showGridLines={false}
     />
   );
 }

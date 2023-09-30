@@ -4,18 +4,14 @@ import { ComponentPropsWithoutRef, lazy } from "react";
 import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { ProposalStatus } from "@shared/api/src/api/data-source/proposals-meta/types";
+import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
+import { ViewColorsConfig } from "@shared/views/src/view-config/chart-color/view-colors";
+import { date } from "@shared/ui/src/date";
 
-const CardAndMetric = lazy(() =>
-  import("@shared/views/src/kip-card/card-metric").then((module) => ({
-    default: module.MetricAndCard,
+const BarChartView = lazy(() =>
+  import("@shared/views/src/bar-chart/bar-chart").then((module) => ({
+    default: module.BarChartView,
   }))
-);
-
-const ComposedViews = joinViews(
-  CardAndMetric,
-  CardAndMetric,
-  CardAndMetric,
-  CardAndMetric
 );
 
 export default WidgetFactory.createWidget({
@@ -26,10 +22,9 @@ export default WidgetFactory.createWidget({
 
   dataFetcher: {
     key: "nouns-kpis",
-    //@ts-expect-error
     async fetcher(args) {
       const currentDate = new Date();
-      currentDate.setMonth(currentDate.getMonth() - 2);
+      currentDate.setUTCFullYear(currentDate.getUTCFullYear() - 1);
 
       const createdTimestamp = Math.ceil(currentDate.getTime() / 1000);
       const data = await sourceFetcher.proposalsMeta.query({
@@ -38,51 +33,66 @@ export default WidgetFactory.createWidget({
         createdTimestamp,
       });
 
-      const totalExecutedProposals = data.filter(
-        (proposal) => proposal.status === ProposalStatus.Succeeded
-      ).length;
+      //group by month
+      const groupedByMonth = data.reduce(
+        (acc, curr) => {
+          const month = curr.createdTimestamp.getMonth();
 
-      const totalDeniedProposals = data.filter(
-        (proposal) => proposal.status === ProposalStatus.Defeated
-      ).length;
+          if (!acc[month]) {
+            acc[month] = {
+              denied: 0,
+              executed: 0,
+              canceled: 0,
+              active: 0,
+              date: new Date(curr.createdTimestamp),
+            };
+          }
+          if (curr.status === ProposalStatus.Defeated) {
+            acc[month].denied++;
+          }
+          if (curr.status === ProposalStatus.Succeeded) {
+            acc[month].executed++;
+          }
+          if (curr.status === ProposalStatus.Cancelled) {
+            acc[month].canceled++;
+          }
+          if (curr.status === ProposalStatus.Pending) {
+            acc[month].active++;
+          }
 
-      const totalCanceledProposals = data.filter(
-        (proposal) => proposal.status === ProposalStatus.Cancelled
-      ).length;
+          return acc;
+        },
+        {} as Record<
+          number,
+          {
+            denied: number;
+            executed: number;
+            canceled: number;
+            active: number;
+            date: Date;
+          }
+        >
+      );
+
       return {
-        viewsProps: [
-          {
-            name: "Total",
-            metric: `${
-              totalExecutedProposals +
-              totalDeniedProposals +
-              totalCanceledProposals
-            } Proposals`,
-          },
-
-          {
-            name: "Executed",
-            metric: `${totalExecutedProposals} Proposals`,
-          },
-          {
-            name: "Denied",
-            metric: `${totalDeniedProposals} Proposals`,
-          },
-          {
-            name: "Canceled",
-            metric: `${totalCanceledProposals} Proposals`,
-          },
-        ],
+        data: Object.entries(groupedByMonth)
+          .map(([key, value]) => ({
+            name: date(value.date).format("MMMYY"),
+            ...value,
+          }))
+          .sort((a, b) => a.date.getTime() - b.date.getTime()),
+        index: "name",
+        categories: ["denied", "executed", "canceled", "active"],
+        valueFormatter(number) {
+          return `${number} Proposals`;
+        },
       };
     },
   },
-  View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="flex gap-2">
-      <ComposedViews {...props} />
-    </div>
-  ),
+  View: BarChartView,
   initialProps: {
     title: "Nouns Proposals Stats from the last 2 months",
+    colors: ["red", "green", "yellow", "blue"],
     layout: {
       w: Infinity,
       h: 7,
@@ -90,5 +100,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  Config: () => null,
+  Config: () => <ViewColorsConfig />,
 });

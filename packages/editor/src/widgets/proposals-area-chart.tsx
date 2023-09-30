@@ -4,6 +4,7 @@ import { sourceFetcher } from "../lib/source-fetcher";
 import { lazy } from "react";
 import { date } from "@shared/ui/src/date";
 import { dataAdapter } from "../lib/utils";
+import { joinViews } from "@shared/views/src/join-views";
 
 const AreaView = lazy(() =>
   import("@shared/views/src/area/area").then((module) => ({
@@ -11,6 +12,7 @@ const AreaView = lazy(() =>
   }))
 );
 
+const JoinedViews = joinViews(AreaView, AreaView, AreaView);
 export default WidgetFactory.createWidget({
   name: "proposals-area-chart",
 
@@ -28,12 +30,12 @@ export default WidgetFactory.createWidget({
       });
 
       const acumulated = {
-        PENDING: 0,
-        ACTIVE: 0,
-        CANCELLED: 0,
-        VETOED: 0,
-        QUEUED: 0,
-        EXECUTED: 0,
+        Succeed: 0,
+        Pending: 0,
+        Cancelled: 0,
+        Defeated: 0,
+        Active: 0,
+        Voting: 0,
       };
       const getValueFromProposal = (proposal: any) =>
         proposal.values.reduce((acc, curr) => acc + Number(curr), 0);
@@ -46,7 +48,7 @@ export default WidgetFactory.createWidget({
           return {
             date: date(
               new Date(Number(proposal.createdTimestamp) * 1000)
-            ).format("DD/MM/YYYY"),
+            ).format("MM"),
             [proposal.status]: acumulated[proposal.status],
           };
         }),
@@ -78,6 +80,6 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  View: AreaView,
+  View: JoinedViews,
   FullScreenView: AreaView,
 });

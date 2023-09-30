@@ -23,7 +23,7 @@ export const MetricAndCard: React.FC<Metric> = ({
   return (
     <div
       className={cn(
-        "flex flex-col p-2 bg-surface-raised rounded-default min-w-[200px] flex-1 ",
+        "flex flex-col p-2 bg-surface-raised rounded-default min-w-[200px] flex-1  border",
         className
       )}
     >

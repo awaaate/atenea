@@ -26,6 +26,9 @@ export const AreaView = <TData extends Record<string, any>>({
       index={index}
       colors={colors as any}
       valueFormatter={valueFormatter}
+      showXAxis={false}
+      showYAxis={false}
+      showGridLines={false}
     />
   );
 };
