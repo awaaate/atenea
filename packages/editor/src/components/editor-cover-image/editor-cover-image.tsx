@@ -13,6 +13,7 @@ import { Separator } from "@shared/ui/src/separator";
 
 import { generateReactHelpers } from "@uploadthing/react/hooks";
 import { API_URL } from "../../constants";
+import { Spinner } from "@shared/ui/src/spinner";
 
 const { useUploadThing } = generateReactHelpers();
 
@@ -31,7 +32,7 @@ export function EditorCoveImage({
   const coverImageEnabled = useEditorStore.use.coverImageEnabled();
   const editable = useEditorStore.use.editable();
 
-  const { startUpload } = useUploadThing("boardCoverImage", {
+  const { startUpload, isUploading } = useUploadThing("boardCoverImage", {
     onClientUploadComplete: (file) => {
       if (!file || !file[0]) {
         toast({
@@ -57,6 +58,23 @@ export function EditorCoveImage({
   });
   if (!coverImageEnabled) return null;
 
+  if (isUploading)
+    return (
+      <div
+        {...props}
+        style={{
+          backgroundImage: `url(${coverImage})`,
+        }}
+        className={cn(
+          "w-full h-[200px] rounded-default overflow-hidden bg-surface-lowered  bg-cover bg-center relative",
+          className
+        )}
+      >
+        <div className="absolute inset-0 bg-surface-default bg-opacity-70 flex items-center justify-center">
+          <Spinner size="sm" />
+        </div>
+      </div>
+    );
   return (
     <div
       {...props}
