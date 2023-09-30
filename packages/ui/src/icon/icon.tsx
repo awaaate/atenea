@@ -80,6 +80,7 @@ import {
   ThumbsDown,
   Sparkle,
   Loader2,
+  Play,
   ThumbsUp,
 } from "lucide-react";
 import React from "react";
@@ -94,6 +95,7 @@ const Icons = {
   ThumbsDown,
   ThumbsUp,
   CalendarClock,
+  Play,
   ArrowDown,
   ArrowUp,
   ArrowLeft,

@@ -15,7 +15,7 @@ export const DeleteWorkspaceSection = () => {
 
   const handleDelete = async () => {
     try {
-      await mutateAsync({ id: workspaceId });
+      await mutateAsync({ id: workspaceId as string });
       toast({
         title: "Workspace deleted",
         description: "Workspace has been deleted",

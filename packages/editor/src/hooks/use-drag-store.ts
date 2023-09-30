@@ -1,21 +1,20 @@
-import { create } from "zustand"
-import { WidgetComponent } from "../engine/interfaces"
-
+import { create } from "zustand";
+import { WidgetComponent } from "../engine/interfaces";
 
 interface Node {
-    id: string
-    data: {
-        type: WidgetComponent
-        props: any
-    }
+  id: string;
+  data: {
+    type: WidgetComponent;
+    props: any;
+  };
 }
 
 interface DragStore {
-    dragNode: Node | null
-    setDragNode: (node: Node | null) => void
+  dragNode: string | null;
+  setDragNode: (node: string | null) => void;
 }
 
 export const useDragStore = create<DragStore>((set) => ({
-    dragNode: null,
-    setDragNode: (node) => set({ dragNode: node }),
-}))
+  dragNode: null,
+  setDragNode: (node) => set({ dragNode: node }),
+}));

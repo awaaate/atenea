@@ -8,6 +8,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@shared/ui/src/popover";
+import React from "react";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 
 export const ShareButton = () => {
   const boardId = useEditorStore.use.boardId();
@@ -22,13 +24,16 @@ export const ShareButton = () => {
           Share this board with anyone by sending them the link below.
         </p>
         <Link href={`/w/${boardId}`} target="_blank" rel="noopener noreferrer">
-          <span className="flex gap-2 p-2 items-center justify-between bg-nav-surface shadow-sm mt-2 group hover:shadow-popout rounded-pill border">
+          <ScrollArea
+            orientation={["horizontal"]}
+            className="flex gap-2 p-2 items-center justify-between bg-nav-surface shadow-sm mt-2 group hover:shadow-popout rounded-pill border"
+          >
             <span className="text-text-weaker text-sm">{`https://www.atenea.wtf/w/${boardId}`}</span>
             <Icon
               name="ArrowRight"
-              className="group-hover:text-accent transition-colors"
+              className="group-hover:text-accent transition-colors ml-2"
             />
-          </span>
+          </ScrollArea>
         </Link>
       </PopoverContent>
     </Popover>

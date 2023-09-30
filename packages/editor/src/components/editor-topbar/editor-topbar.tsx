@@ -19,7 +19,6 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
   const editable = useEditorStore.use.editable();
   const title = useEditorStore.use.title();
   const lastDatabaseSync = useAutoSave();
-
   const toggleSidebarHandler = () => {
     if (sidebar === "node" || sidebar === "page") {
       setSidebar(null);
@@ -49,6 +48,19 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
           Last saved {date(lastDatabaseSync).fromNow()}
         </span>
         <ShareButton />
+        <Button>
+          <a
+            href={`https://www.atenea.wtf/w/${
+              useEditorStore.getState().boardId
+            }`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name="Play" className="mr-2" />
+
+            <span>Preview</span>
+          </a>
+        </Button>
       </div>
     </div>
   );

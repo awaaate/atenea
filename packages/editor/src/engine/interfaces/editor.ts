@@ -20,7 +20,7 @@ export type EditorEvents = Record<NodeEventTypes, Set<NodeId>>;
 export type EditorState = {
   editable: boolean;
   boardId: string;
-  sidebar: "node" | "page" | null;
+  sidebar: "node" | "page" | "create" | null;
   title: string;
   description: string;
   pageBackground: string;
@@ -39,7 +39,7 @@ export type EditorState = {
   drag: (id: NodeId) => void;
   create: (node: Node) => void;
   remove: (id: NodeId) => void;
-  setSidebar: (sidebar: "node" | "page" | null) => void;
+  setSidebar: (sidebar: "node" | "page" | "create" | null) => void;
   setTitle: (title: string) => void;
   setDescription: (description: string) => void;
   setPageBackground: (pageBackground: string) => void;

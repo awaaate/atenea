@@ -5,7 +5,7 @@ import { cn } from "../lib/utils";
 
 const className = "border-hover";
 const buttonVariants = cva(
-  "items-center justify-center  shadow inline-flex font-weight-default rounded-s font text-m border-border-strong ring-offset-background transition-colors transition-transform transition-slowly focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:opacity-90 active:scale-95",
+  "items-center justify-center  shadow inline-flex font-weight-default rounded-s font text-m border-border-strong ring-offset-background transition-colors transition-transform transition-slowly focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:opacity-90 active:scale-95 ",
   {
     variants: {
       variant: {
