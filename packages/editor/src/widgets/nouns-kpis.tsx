@@ -16,7 +16,7 @@ const BarChartView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "nouns-kpis",
-  displayName: "Nouns Proposals Stats from the last 2 months",
+  displayName: "Nouns Proposals Stats",
   group: "general",
   icon: "BarChartHorizontal",
 
@@ -91,7 +91,7 @@ export default WidgetFactory.createWidget({
   },
   View: BarChartView,
   initialProps: {
-    title: "Nouns Proposals Stats from the last 2 months",
+    title: "Nouns Proposals Stats",
     colors: ["red", "green", "yellow", "blue"],
     layout: {
       w: Infinity,
