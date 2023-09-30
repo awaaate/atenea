@@ -228,6 +228,7 @@ export const getProposalMeta = async (
       quorumVotes: parseInt(proposal.quorumVotes),
       totalSupply: parseInt(proposal.totalSupply),
       quorumCoefficient: parseInt(proposal.quorumCoefficient),
+      quorumVotes: parseInt(proposal.quorumVotes),
       minQuorumVotesBPS: parseInt(proposal.minQuorumVotesBPS),
       maxQuorumVotesBPS: parseInt(proposal.maxQuorumVotesBPS),
       createdTimestamp: new Date(parseInt(proposal.createdTimestamp) * 1000),
@@ -252,11 +253,11 @@ export const getProposalMeta = async (
         categories && categories.length > 0 ? categories : ["Uncategorized"],
     };
     const dynamicQuorum = computeProposalQuorumVotes(rawData);
-
+    console.log(rawData.id, dynamicQuorum, "STATUS", proposal.status);
     return {
       ...rawData,
       dynamicQuorum,
-      ...getProposalsDates(currentBlock, dynamicQuorum, rawData),
+      ...getProposalsDates(currentBlock, rawData.quorumVotes, rawData),
     };
   });
 
@@ -268,6 +269,7 @@ export const deriveProposalStatus = (
   dynamicQuorum: number,
   proposal: Proposal
 ): ProposalStatus => {
+  console.log();
   // Calculate the dynamic quorum
   if ((proposal.status as any) === "CANCELLED") {
     return ProposalStatus.Cancelled;

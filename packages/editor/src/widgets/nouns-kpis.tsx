@@ -47,6 +47,7 @@ export default WidgetFactory.createWidget({
               date: new Date(curr.createdTimestamp),
             };
           }
+          console.log(curr.status, "WSTTAUS");
           if (curr.status === ProposalStatus.Defeated) {
             acc[month].denied++;
           }
