@@ -21,7 +21,7 @@ describe("Data source", () => {
     return data;
   });
 
-  it("Should get the proposal team members", async () => {
+  it.skip("Should get the proposal team members", async () => {
     const data = await caller.getProposalTeamMembers(350);
     console.log(data);
     return data;

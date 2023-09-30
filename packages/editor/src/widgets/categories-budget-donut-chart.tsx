@@ -24,6 +24,7 @@ export default WidgetFactory.createWidget({
     },
     async fetcher(args) {
       const data = await sourceFetcher.proposalsMeta.query({
+        status: "EXECUTED",
         first: 1000,
       });
       const countedProposals = new Set<string>();
@@ -49,7 +50,7 @@ export default WidgetFactory.createWidget({
           });
           return acc;
         },
-        data
+        data.filter((d) => d.status === "Succeeded")
       );
       const finalData = Object.keys(categories).map((key) => ({
         name: key.trim() || "Uncategorized",
