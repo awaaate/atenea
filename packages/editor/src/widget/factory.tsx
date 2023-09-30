@@ -31,7 +31,7 @@ widgetFactory.registerWidgetComponent(categoriesBudgetDonutChart);
 widgetFactory.registerWidgetComponent(categoriesBarList);
 widgetFactory.registerWidgetComponent(popularTeams);
 //widgetFactory.registerWidgetComponent(proposalsAreaChart);
-widgetFactory.registerWidgetComponent(proposalsBarChart);
+//widgetFactory.registerWidgetComponent(proposalsBarChart);
 widgetFactory.registerWidgetComponent(proposalBudget);
 widgetFactory.registerWidgetComponent(nounsKpis);
 widgetFactory.registerWidgetComponent(proposalTeam);

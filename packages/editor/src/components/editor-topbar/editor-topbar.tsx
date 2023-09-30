@@ -27,7 +27,7 @@ export const EditorTopbar: React.FC<EditorTopbarProps> = () => {
     }
   };
   return (
-    <div className="flex border-b px-4 h-[50px] bg-background justify-between items-center ">
+    <div className="flex border-b px-4 h-[50px] bg-background-default justify-between items-center  ">
       <div className="flex items-center ">
         <h2 className="font-semibold text-xl ">
           <Icon name="Layout" className="mr-2 " size="s" />

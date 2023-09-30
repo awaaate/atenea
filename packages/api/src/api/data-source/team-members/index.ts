@@ -28,16 +28,23 @@ export const getProposalTeamMembers = async (id: number) => {
   });
 
   const parsedData = data.proposal_to_team_memberCollection.edges.map(
-    ({ node }) => ({
-      name: node.teamMember.name,
-      what: node.teamMember.what,
-      walletAddress: node.teamMember.walletAddress,
-      socialHandles:
-        (JSON.parse(JSON.parse(node.teamMember.socialHandles)) as {
-          name: string;
-          url: string;
-        }[]) || [],
-    })
+    ({ node }) => {
+      const data = {
+        name: node.teamMember.name,
+        what: node.teamMember.what,
+        walletAddress: node.teamMember.walletAddress,
+        socialHandles:
+          (JSON.parse(node.teamMember.socialHandles) as {
+            name: string;
+            url: string;
+          }[]) || [],
+      };
+
+      if (typeof data.socialHandles === "string") {
+        data.socialHandles = JSON.parse(data.socialHandles);
+      }
+      return data;
+    }
   );
 
   return parsedData;

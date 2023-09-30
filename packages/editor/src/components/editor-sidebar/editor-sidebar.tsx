@@ -28,7 +28,7 @@ const EditorSidebar: React.FC<EditorSidebarProps> = () => {
   }, [element]); */
 
   return (
-    <div className="w-full max-w-[250px] border-l h-full">
+    <div className="w-full max-w-[250px] border-l h-full bg-background-default ">
       <Tabs value={sidebar || "page"} onValueChange={setSidebar as any}>
         <div className="w-full h-[50px] flex items-center border-b  px-4">
           {sidebar === "node" ? (

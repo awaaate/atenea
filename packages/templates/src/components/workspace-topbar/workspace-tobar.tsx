@@ -16,7 +16,7 @@ export const WorkspaceTobar: React.FC<WorkspaceTobarProps> = ({
     <div
       {...props}
       className={cn(
-        "w-full  border-b h-[50px]  px-4 flex items-center",
+        "w-full  border-b h-[50px]  px-4 flex items-center bg-background-default",
         className
       )}
     >

@@ -23,7 +23,7 @@ describe("Data source", () => {
 
   it.skip("Should get the proposal team members", async () => {
     const data = await caller.getProposalTeamMembers(350);
-    console.log(data);
+    console.log(JSON.stringify(data, null, 2));
     return data;
   });
 });
