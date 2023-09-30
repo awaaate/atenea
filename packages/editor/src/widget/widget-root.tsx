@@ -72,6 +72,12 @@ function WidgetRoot<T>({
   useEffect(() => {
     if (!isActive) return;
     const handleKeyDown = (e: KeyboardEvent) => {
+      //check if focus on input
+      const element = document.activeElement as HTMLElement;
+      if (element.tagName === "INPUT") return;
+      //or contenteditable, or textarea
+      if (element.getAttribute("contenteditable")) return;
+      if (element.tagName === "TEXTAREA") return;
       if (e.key === "Delete" || e.key === "Backspace") {
         remove();
       }
