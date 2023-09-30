@@ -20,4 +20,10 @@ describe("Data source", () => {
     await fs.writeFile("./data.json", JSON.stringify(data, null, 2));
     return data;
   });
+
+  it("Should get the proposal team members", async () => {
+    const data = await caller.getProposalTeamMembers(350);
+    console.log(data);
+    return data;
+  });
 });

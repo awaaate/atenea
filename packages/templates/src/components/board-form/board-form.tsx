@@ -28,7 +28,7 @@ export const BoardForm: React.FC<BoardFormProps> = () => {
           <FormItem>
             <FormLabel>Board Name</FormLabel>
             <FormControl>
-              <Input placeholder="shadcn" {...field} />
+              <Input placeholder="Name" {...field} />
             </FormControl>
             <FormDescription></FormDescription>
             <FormMessage />
@@ -57,7 +57,7 @@ export const BoardForm: React.FC<BoardFormProps> = () => {
               </div>
             </FormControl>
             <FormDescription>
-              This is the base of the public board links you will be able to
+              This is the base of the public board link you will be able to
               share{" "}
             </FormDescription>
             <FormMessage />
@@ -71,7 +71,7 @@ export const BoardForm: React.FC<BoardFormProps> = () => {
           <FormItem>
             <FormLabel>Description</FormLabel>
             <FormControl>
-              <Textarea placeholder="shadcn" {...field} />
+              <Textarea placeholder="Description" {...field} />
             </FormControl>
             <FormDescription>
               A little description of your workspace.
