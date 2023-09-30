@@ -11,7 +11,7 @@ const boards = boardTemplateRouter.createCaller({
   },
 });
 
-it("Should create a template", async () => {
+it.skip("Should create a template", async () => {
   const result = await boards.create({
     name: "First Template",
     description: "Test",

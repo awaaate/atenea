@@ -37,16 +37,22 @@ const WidgetMenu = () => {
     <DropdownMenu>
       {/* TODO imrove tooltips */}
 
-      <Icon
-        name="Settings2"
-        className="m-1 mr-2 text-text-weakest grid-item-part"
-        variant="button"
-        onClick={() => {
-          select();
-          setSidebar("node");
-        }}
-      />
-      <Separator orientation="vertical" className="h-[20px] " />
+      {!isTextWidget && (
+        <>
+          <Icon
+            name="Maximize2"
+            className="m-1 mr-2 text-text-weakest grid-item-part"
+            variant="button"
+            onClick={() => {
+              setNode((node) => {
+                node.data.props.fullScreen = true;
+                return node;
+              });
+            }}
+          />
+          <Separator orientation="vertical" className="h-[20px] " />
+        </>
+      )}
       <Tooltip>
         <TooltipTrigger>
           <DropdownMenuTrigger className="border-0 shadow-[0] m-1   p-0">
@@ -62,20 +68,6 @@ const WidgetMenu = () => {
       </Tooltip>
       <DropdownMenuContent className="w-56 grid-item-part">
         <DropdownMenuGroup>
-          {!isTextWidget && (
-            <DropdownMenuItem
-              onSelect={() => {
-                console.log("full screen");
-                setNode((node) => {
-                  node.data.props.fullScreen = true;
-                  return node;
-                });
-              }}
-            >
-              <Icon name="Maximize2" className="mr-2" />
-              Full Screen
-            </DropdownMenuItem>
-          )}
           <DropdownMenuItem
             onSelect={() => {
               select();

@@ -9,3 +9,5 @@ export const ENV =
 
 export const API_URL =
   ENV === "development" ? "http://localhost:3000/api" : "/api";
+
+export const APP_URL = ENV === "development" ? "http://localhost:3000" : "/";

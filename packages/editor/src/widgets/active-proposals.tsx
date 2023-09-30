@@ -12,7 +12,7 @@ const ProposalTable = lazy(() =>
 );
 export default WidgetFactory.createWidget({
   name: "active-proposals",
-  displayName: "Executed Proposals",
+  displayName: "Active Proposals",
   icon: "Table",
   group: "General",
   dataFetcher: {
@@ -35,8 +35,9 @@ export default WidgetFactory.createWidget({
         first: args.requestVariables.first,
         orderBy: "createdTimestamp",
         orderDirection: "desc",
-        status: "EXECUTED",
+        status: "ACTIVE",
       });
+      console.log("proposalsMeta Jose", proposalsMeta);
 
       return {
         data: proposalsMeta
@@ -57,7 +58,9 @@ export default WidgetFactory.createWidget({
             budgetUsd: proposal.budgetUsd,
           }))
           .sort((a, b) => {
-            return new Date(b.endAt).getTime() - new Date(a.endAt).getTime();
+            return (
+              new Date(a.startAt).getTime() - new Date(b.startAt).getTime()
+            );
           }),
       };
     },
@@ -70,12 +73,11 @@ export default WidgetFactory.createWidget({
   ),
   initialProps: {
     first: 5,
-    title: "Last executed proposals",
-
+    title: "Active Proposals",
     className: "",
     layout: {
       w: Infinity,
-      h: 12,
+      h: 23,
       x: 0,
       y: 0,
     },

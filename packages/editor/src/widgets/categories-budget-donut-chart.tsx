@@ -41,7 +41,7 @@ export default WidgetFactory.createWidget({
             const currentValue = acc[category];
             acc[category] =
               typeof currentValue === "number"
-                ? currentValue + curr.totalBudget
+                ? currentValue + curr.budgetEth || curr.totalBudget
                 : 0;
           });
           return acc;

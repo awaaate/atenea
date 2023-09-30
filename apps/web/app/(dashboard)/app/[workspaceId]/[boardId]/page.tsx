@@ -34,7 +34,6 @@ export default async function Page({
   return (
     <>
       <BoardPage />
-      <BoardPreviewButton />
       <BoardInitializer {...intialState} />
     </>
   );

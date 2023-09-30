@@ -1,12 +1,23 @@
-import { it } from "vitest"
-import { dataSourceRouter } from "./data-source"
-import { db } from "@shared/db"
+import { describe, it } from "vitest";
+import { dataSourceRouter } from "./data-source";
+import { db } from "@shared/db";
+import fs from "fs/promises";
+const caller = dataSourceRouter.createCaller({ user: null });
 
-const caller = dataSourceRouter.createCaller({ user: null })
+describe("Data source", () => {
+  it.skip("Should get the proposal meta", async () => {
+    const data = await caller.proposalsMeta({
+      first: 1000,
+      orderBy: "createdTimestamp",
+      orderDirection: "desc",
+    });
+    //count with categories
+    const categories = data.filter((d) => d.categories.length > 0);
+    console.log(
+      `Total proposals: ${data.length}, proposals with categories: ${categories.length}`
+    );
 
-it.skip("Should get the proposal meta", async () => {
-    const data = await caller.proposalsMeta({ first: 20, orderBy: "createdTimestamp", orderDirection: "desc" })
-    console.log(data)
-    return data
-})
-
+    await fs.writeFile("./data.json", JSON.stringify(data, null, 2));
+    return data;
+  });
+});

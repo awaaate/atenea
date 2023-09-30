@@ -24,7 +24,6 @@ export default WidgetFactory.createWidget({
     },
     async fetcher(args) {
       const data = await sourceFetcher.proposalsMeta.query({
-        status: "EXECUTED",
         first: 1000,
       });
       const categories = mapReducer(
@@ -57,6 +56,7 @@ export default WidgetFactory.createWidget({
         index: "name",
         category: "Number of proposals",
         valueFormatter(number) {
+          if (number > 350) return "350+ Proposals";
           return ` ${number} Proposals`;
         },
       };

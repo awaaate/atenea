@@ -88,6 +88,7 @@ const ateneaQuery = gql`
     proposalCollection(filter: $filter) {
       edges {
         node {
+          id
           budgetEth
           budgetUsd
           category_to_proposalCollection {
@@ -140,6 +141,37 @@ async function getCurrentBlockNumber(): Promise<number | null> {
   }
 }
 
+export const getAteneaDataChunk = async (input: { ids: string[] }) => {
+  //the graphql it gets 30 proposals at a time, so we need to make multiple calls
+
+  const ateneaData = await ateneaGraph.request<AteneaQuery>(ateneaQuery, {
+    filter: {
+      id: {
+        in: input.ids.map((id) => parseInt(id)),
+      },
+    },
+  });
+  return ateneaData;
+};
+
+export const getAteneaData = async (input: { ids: string[] }) => {
+  const groupedIds = input.ids.reduce((acc, curr, i) => {
+    const index = Math.floor(i / 30);
+    if (!acc[index]) acc[index] = [] as string[];
+    acc[index].push(curr);
+    return acc;
+  }, [] as string[][]);
+  const grouppedData = await Promise.all(
+    groupedIds.map((ids) => getAteneaDataChunk({ ids }))
+  );
+  //flatten the data
+
+  const edges = grouppedData.reduce((acc, curr) => {
+    return [...acc, ...curr.proposalCollection.edges];
+  }, [] as AteneaQuery["proposalCollection"]["edges"]);
+
+  return edges;
+};
 export const getProposalMeta = async (
   inputVariables: z.infer<typeof input>
 ) => {
@@ -174,26 +206,19 @@ export const getProposalMeta = async (
   const data = await nounsSubgraph.request<{
     proposals: ProposalMeta[];
   }>(query, variables);
-  const ateneaData = await ateneaGraph.request<AteneaQuery>(ateneaQuery, {
-    first: null,
-    filter: {
-      status: null,
-      id: {
-        in: data.proposals.map((p) => parseInt(p.id)),
-      },
-    },
+
+  const ateneaData = await getAteneaData({
+    ids: data.proposals.map((p) => p.id),
   });
 
   const finalData = data.proposals.map((proposal) => {
-    const ateneaProposal = ateneaData.proposalCollection.edges.find(
-      (p) => p.node.title === proposal.title
+    const ateneaProposal = ateneaData.find(
+      (p) => Number(p.node.id) === Number(proposal.id)
     );
     const categories =
       ateneaProposal?.node.category_to_proposalCollection.edges.map(
         (e) => e.node.category_name
       );
-
-    console.log("ateneaProposal", ateneaData);
     const rawData = {
       startBlock: parseInt(proposal.startBlock),
       endBlock: parseInt(proposal.endBlock),

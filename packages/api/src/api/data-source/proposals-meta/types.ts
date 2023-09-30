@@ -89,6 +89,7 @@ export interface Edge {
 }
 
 export interface Node {
+  id: string;
   budgetEth: number;
   budgetUsd: number;
   category_to_proposalCollection: CategoryToProposalCollection;

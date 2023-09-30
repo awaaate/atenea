@@ -1,19 +1,12 @@
 import { useNode } from "@shared/editor/src/engine/nodes";
 import { cn } from "@shared/ui/src/utils";
-import {
-  Table,
-  TableHead,
-  TableRow,
-  TableHeaderCell,
-  TableBody,
-  TableCell,
-} from "@tremor/react";
 
 import { Badge } from "@shared/ui/src/badge";
 import { Avatar } from "@shared/ui/src/avatar";
 import { API_URL } from "@shared/editor/src/constants";
 import { date } from "@shared/ui/src/date";
 import { Icon } from "@shared/ui/src/icon";
+import { ScrollArea } from "@shared/ui/src/scroll-area";
 
 interface ProposalTableProps {
   title: string;
@@ -41,74 +34,80 @@ export const ProposalTable: React.FC<{
   >;
 
   return (
-    <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card">
-      {data.map((proposal, i) => (
-        <a
-          href={`${process.env.NEXT_PUBLIC_APP_URL}/prop/${proposal.id}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div
-            className={cn(
-              "grid grid-cols-8  gap-4 py-4 px-6 hover:bg-active-default",
-              {
-                "border-b": i !== data.length - 1,
-              }
-            )}
-          >
-            <div className="flex col-span-5 gap-2">
-              <Avatar
-                className="icon-xl rounded-full"
-                name={proposal.title}
-                src={`${API_URL}/noun-image/${proposal.nounId}`}
-              />
-              <div>
-                <p className="text-text-weaker text-sm">
-                  Prop <span className="font-bold mr-1">{proposal.id}</span>
-                  by {proposal.proposer.slice(0, 6)}...
-                  {proposal.proposer.slice(-4)}
-                </p>
-                <p>{proposal.title}</p>
+    <ScrollArea className="w-full h-full" orientation={["horizontal"]}>
+      <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card ">
+        {data.map((proposal, i) => (
+          <a href={`/prop/${proposal.id}`} target="_blank" rel="noreferrer">
+            <div
+              className={cn(
+                "grid md:grid-cols-8  gap-4 py-4 px-6 hover:bg-active-default grid-cols-1 ",
+                {
+                  "border-b": i !== data.length - 1,
+                }
+              )}
+            >
+              <div className="flex col-span-5 gap-2 flex-wrap">
+                <Avatar
+                  className="icon-xl rounded-full"
+                  name={proposal.title}
+                  src={`${API_URL}/noun-image/${proposal.nounId}`}
+                />
+                <div>
+                  <p className="text-text-weaker text-sm">
+                    Prop <span className="font-bold mr-1">{proposal.id}</span>
+                    by {proposal.proposer.slice(0, 6)}...
+                    {proposal.proposer.slice(-4)}
+                  </p>
+                  <p>{proposal.title}</p>
+                </div>
+              </div>
+              <div className="flex justify-end flex-col items-end gap-2">
+                <p className="text-text-weaker text-sm">Status</p>
+                <Badge
+                  className="text-sm"
+                  variant={
+                    proposal.status === "Pending"
+                      ? "info"
+                      : proposal.status === "Succeeded"
+                      ? "success"
+                      : proposal.status === "Canceled" ||
+                        proposal.status === "Defeated"
+                      ? "danger"
+                      : "warning"
+                  }
+                >
+                  {proposal.status}
+                </Badge>
+              </div>
+              <div className="flex justify-end flex-col items-end gap-2">
+                <RequestingCell
+                  budget={proposal.budget}
+                  budgetEth={proposal.budgetEth}
+                  budetUsd={proposal.budgetUsd}
+                />
+              </div>
+
+              <div className="flex justify-end  flex-col items-end gap-2">
+                <VotingCell
+                  startAt={proposal.startAt}
+                  endAt={proposal.endAt}
+                  votesAgainst={proposal.votesAgainst}
+                  votesFor={proposal.votesFor}
+                />
+                <div className="flex gap-2 justify-end  ">
+                  <span className="flex items-center  gap-1 text-status-success">
+                    {proposal.votesFor} <Icon name="ThumbsUp" />
+                  </span>
+                  <span className="flex items-center  gap-1 text-status-danger">
+                    {proposal.votesAgainst} <Icon name="ThumbsDown" />
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="flex justify-end flex-col items-end gap-2">
-              <p className="text-text-weaker text-sm">Status</p>
-              <Badge
-                className="text-sm"
-                variant={
-                  proposal.status === "Pending"
-                    ? "info"
-                    : proposal.status === "Succeeded"
-                    ? "success"
-                    : proposal.status === "Canceled" ||
-                      proposal.status === "Defeated"
-                    ? "danger"
-                    : "warning"
-                }
-              >
-                {proposal.status}
-              </Badge>
-            </div>
-            <div className="flex justify-end flex-col items-end gap-2">
-              <RequestingCell
-                budget={proposal.budget}
-                budgetEth={proposal.budgetEth}
-                budetUsd={proposal.budgetUsd}
-              />
-            </div>
-
-            <div className="flex justify-end  flex-col items-end gap-2">
-              <VotingCell
-                startAt={proposal.startAt}
-                endAt={proposal.endAt}
-                votesAgainst={proposal.votesAgainst}
-                votesFor={proposal.votesFor}
-              />
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
+          </a>
+        ))}
+      </div>
+    </ScrollArea>
   );
 };
 const RequestingCell: React.FC<{
@@ -159,7 +158,7 @@ const VotingCell: React.FC<{
       <>
         <p>Voting</p>
         <p className="text-sm text-text-weaker">
-          Ended {date(startAt).fromNow()}
+          Started {date(startAt).fromNow()}
         </p>
       </>
     );
@@ -176,16 +175,8 @@ const VotingCell: React.FC<{
     return (
       <>
         <p className="text-sm text-text-weaker text-right ">
-          Voting ended {date(endAt).fromNow()}
+          Ended {date(endAt).fromNow()}
         </p>
-        <div className="flex gap-2">
-          <span className="flex items-center  gap-1 text-status-success">
-            {votesFor} <Icon name="ThumbsUp" />
-          </span>
-          <span className="flex items-center  gap-1 text-status-danger">
-            {votesAgainst} <Icon name="ThumbsDown" />
-          </span>
-        </div>
       </>
     );
   }

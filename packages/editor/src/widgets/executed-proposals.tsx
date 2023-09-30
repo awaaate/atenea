@@ -2,8 +2,6 @@ import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-conf
 import { sourceFetcher } from "../lib/source-fetcher";
 import { WidgetFactory } from "../widget/widget-factory";
 import { lazy } from "react";
-import { arrayReducer, mapReducer } from "@shared/api/src/utils/reducer";
-import { date } from "@shared/ui/src/date";
 
 const ProposalTable = lazy(() =>
   import("@shared/views/src/table/proposal-table").then((module) => ({
@@ -11,12 +9,12 @@ const ProposalTable = lazy(() =>
   }))
 );
 export default WidgetFactory.createWidget({
-  name: "incomming-proposals",
-  displayName: "Incomming Proposals",
+  name: "executed-proposals",
+  displayName: "Executed Proposals",
   icon: "Table",
   group: "General",
   dataFetcher: {
-    key: "incomming-proposals",
+    key: "executed-proposals",
     collector: (props) => {
       return {
         requestVariables: {
@@ -35,9 +33,8 @@ export default WidgetFactory.createWidget({
         first: args.requestVariables.first,
         orderBy: "createdTimestamp",
         orderDirection: "desc",
-        status: "PENDING",
+        status: "EXECUTED",
       });
-      console.log("proposalsMeta Jose", proposalsMeta);
 
       return {
         data: proposalsMeta
@@ -57,10 +54,9 @@ export default WidgetFactory.createWidget({
             budgetEth: proposal.budgetEth,
             budgetUsd: proposal.budgetUsd,
           }))
+          .filter((proposal) => proposal.status === "Succeeded")
           .sort((a, b) => {
-            return (
-              new Date(a.startAt).getTime() - new Date(b.startAt).getTime()
-            );
+            return new Date(b.endAt).getTime() - new Date(a.endAt).getTime();
           }),
       };
     },
@@ -73,11 +69,12 @@ export default WidgetFactory.createWidget({
   ),
   initialProps: {
     first: 5,
-    title: "Incomming Proposals",
+    title: "Last executed proposals",
+
     className: "",
     layout: {
       w: Infinity,
-      h: 23,
+      h: 12,
       x: 0,
       y: 0,
     },
