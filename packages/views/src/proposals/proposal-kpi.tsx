@@ -11,25 +11,21 @@ export const ProposalKPIView: React.FC<{
       <Card
         title="Votes For"
         icon={<Icon name="ThumbsUp" />}
-        iconClassName="bg-status-success text-status-success-weak"
+        iconClassName="bg-status-success/20 "
       >
         <p className="text-sm font-medium ">{forVotes}</p>
       </Card>
       <Card
         title="Votes Against"
         icon={<Icon name="ThumbsDown" />}
-        iconClassName="bg-status-danger text-status-danger-weak"
+        iconClassName="bg-status-danger/20"
       >
         <p className="text-sm font-medium ">{againstVotes}</p>
       </Card>
       <Card title="Abstain" icon={<Icon name="Ban" />}>
         <p className="text-sm font-medium  ">{abstainVotes}</p>
       </Card>
-      <Card
-        title="Total Votes"
-        icon={<Icon name="Users" />}
-        iconClassName="bg-status-info text-status-info-weak"
-      >
+      <Card title="Total Votes" icon={<Icon name="Users" />}>
         <p className="text-sm font-medium ">
           {forVotes + againstVotes + abstainVotes}
         </p>
