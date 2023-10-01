@@ -19,14 +19,28 @@ export default WidgetFactory.createWidget({
   icon: "BarChartHorizontal",
   Config: () => <ViewColorsConfig />,
   dataFetcher: {
-    key: "categories-bar-list-chart",
+    key: "proposalsMeta",
     collector(props) {
-      return {};
+      return {
+        requestVariables: {
+          first: 1000,
+        },
+      };
     },
     async fetcher(args) {
-      const data = await sourceFetcher.proposalsMeta.query({
-        first: 1000,
-      });
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
+      const data = await sourceFetcher.proposalsMeta.query(
+        args.requestVariables
+      );
+      return {
+        data,
+      };
+    },
+    mapper({ data }) {
       const countedProposals = new Set<string>();
       const categories = mapReducer(
         {} as Record<string, number>,

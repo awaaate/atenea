@@ -16,12 +16,15 @@ export default WidgetFactory.createWidget({
   icon: "Table",
   group: "General",
   dataFetcher: {
-    key: "active-proposals",
+    key: "proposalsMeta",
     collector: (props) => {
       return {
         requestVariables: {
           first: props.first as number,
-        },
+          orderBy: "createdTimestamp",
+          orderDirection: "desc",
+          status: "ACTIVE",
+        } as const,
       };
     },
     fetcher: async (args) => {
@@ -31,13 +34,19 @@ export default WidgetFactory.createWidget({
         };
       }
 
-      const proposalsMeta = await sourceFetcher.proposalsMeta.query({
-        first: args.requestVariables.first,
-        orderBy: "createdTimestamp",
-        orderDirection: "desc",
-        status: "ACTIVE",
-      });
-      console.log("proposalsMeta Jose", proposalsMeta);
+      const proposalsMeta = await sourceFetcher.proposalsMeta.query(
+        args.requestVariables
+      );
+      return {
+        proposalsMeta,
+      };
+    },
+    mapper({ proposalsMeta }) {
+      if (!proposalsMeta) {
+        return {
+          data: [],
+        };
+      }
 
       return {
         data: proposalsMeta

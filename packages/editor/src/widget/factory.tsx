@@ -20,6 +20,7 @@ import proposalRoadmap from "../widgets/proposal-roadmap";
 import executedProposals from "../widgets/executed-proposals";
 import activeProposals from "../widgets/active-proposals";
 import categoriesBarList from "../widgets/categories-bar-list";
+import proposal4InOne from "../widgets/proposal-4-in-one";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -45,3 +46,4 @@ widgetFactory.registerWidgetComponent(proposalTimeframeStart);
 widgetFactory.registerWidgetComponent(proposalCategory);
 widgetFactory.registerWidgetComponent(nounOfDay);
 widgetFactory.registerWidgetComponent(proposalRoadmap);
+widgetFactory.registerWidgetComponent(proposal4InOne);

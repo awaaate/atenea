@@ -2,6 +2,7 @@
   "Verbs": {
     "name": "Verbs",
     "category": "Tech",
+    "image": "/images/founded-teams/Verbs.jpg",
     "members": [
       {
         "name": "Elad",
@@ -18,6 +19,7 @@
   "Nounish": {
     "name": "Nounish",
     "category": "Marketing",
+    "image": "/images/founded-teams/Nounish.jpg",
     "members": [
       {
         "name": "BeCCO",
@@ -44,6 +46,7 @@
   "Nouns Fair": {
     "name": "Nouns Fair",
     "category": "Marketing",
+    "image": "/images/founded-teams/Nouns Fair.jpg",
     "members": [
       {
         "name": "Mono",
@@ -60,6 +63,7 @@
   "Nouns OTG": {
     "name": "Nouns OTG",
     "category": "Marketing",
+    "image": "/images/founded-teams/Nouns OTG.jpg",
     "members": [
       {
         "name": "Aubtoshi",
@@ -70,6 +74,7 @@
   },
   "The Noun Square": {
     "name": "The Noun Square",
+    "image": "/images/founded-teams/The Noun Square.jpg",
     "category": "Community",
     "members": [
       {
@@ -117,6 +122,7 @@
   "Nerman": {
     "name": "Nerman",
     "category": "Tech",
+    "image": "/images/founded-teams/Nerman.jpg",
     "members": [
       {
         "name": "JoelCares",
@@ -127,6 +133,7 @@
   },
   "Nouns: A Movie": {
     "name": "Nouns: A Movie",
+    "image": "/images/founded-teams/Nouns A Movie.jpg",
     "category": "Art",
     "members": [
       {
@@ -153,6 +160,7 @@
   },
   "Nouns Running Club": {
     "name": "Nouns Running Club",
+    "image": "/images/founded-teams/Nouns Running Club.jpg",
     "category": "Community",
     "members": [
       {
@@ -170,6 +178,7 @@
   "Nouns Esports": {
     "name": "Nouns Esports",
     "category": "Marketing",
+    "image": "/images/founded-teams/Nouns Esports.jpg",
     "members": [
       {
         "name": "Sasquatch",
@@ -201,6 +210,7 @@
   "House of Nouns": {
     "name": "House of Nouns",
     "category": "Tech",
+    "image": "/images/founded-teams/House of Nouns.jpg",
     "members": [
       {
         "name": "Dadkins",
@@ -217,6 +227,7 @@
   "NounsAI Pod": {
     "name": "NounsAI Pod",
     "category": "Tech",
+    "image": "/images/founded-teams/NounsAI Pod.jpg",
     "members": [
       {
         "name": "TheHeroShep",
@@ -238,6 +249,7 @@
   "Proposals.wtf": {
     "name": "Proposals.wtf",
     "category": "Community",
+    "image": "/images/founded-teams/Proposals.wtf.jpg",
     "members": [
       {
         "name": "Maty",
@@ -249,6 +261,7 @@
   "Agora": {
     "name": "Agora",
     "category": "Tech",
+    "image": "/images/founded-teams/Agora.jpg",
     "members": [
       {
         "name": "Yitong",
@@ -275,6 +288,7 @@
   "Prop House": {
     "name": "Prop House",
     "category": "Tech",
+    "image": "/images/founded-teams/Prop House.png",
     "members": [
       {
         "name": "Seneca",

@@ -22,17 +22,34 @@ export default WidgetFactory.createWidget({
 
   dataFetcher: {
     key: "nouns-kpis",
+    collector(props) {
+      return {
+        requestVariables: {
+          first: 1000,
+          orderBy: "createdTimestamp" as const,
+          orderDirection: "desc" as const,
+        },
+      };
+    },
     async fetcher(args) {
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
       const currentDate = new Date();
       currentDate.setUTCFullYear(currentDate.getUTCFullYear() - 1);
 
       const createdTimestamp = Math.ceil(currentDate.getTime() / 1000);
       const data = await sourceFetcher.proposalsMeta.query({
-        orderBy: "createdTimestamp",
-        first: 1000,
+        ...args.requestVariables,
         createdTimestamp,
       });
-
+      return {
+        data,
+      };
+    },
+    mapper({ data }) {
       //group by month
       const groupedByMonth = data.reduce(
         (acc, curr) => {
@@ -47,7 +64,6 @@ export default WidgetFactory.createWidget({
               date: new Date(curr.createdTimestamp),
             };
           }
-          console.log(curr.status, "WSTTAUS");
           if (curr.status === ProposalStatus.Defeated) {
             acc[month].denied++;
           }
@@ -78,7 +94,10 @@ export default WidgetFactory.createWidget({
       return {
         data: Object.entries(groupedByMonth)
           .map(([key, value]) => ({
-            name: date(value.date).format("MMMYY"),
+            name: value.date.toLocaleDateString("en-US", {
+              month: "short",
+              year: "2-digit",
+            }),
             ...value,
           }))
           .sort((a, b) => a.date.getTime() - b.date.getTime()),

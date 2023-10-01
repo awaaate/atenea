@@ -24,7 +24,7 @@ export default WidgetFactory.createWidget({
   icon: "Star",
 
   dataFetcher: {
-    key: "proposal-kpis",
+    key: "getProposalVotes",
     collector(props) {
       return {
         requestVariables: {
@@ -32,7 +32,6 @@ export default WidgetFactory.createWidget({
         },
       };
     },
-    //@ts-expect-error
     async fetcher(args) {
       if (!args) {
         return {
@@ -46,7 +45,12 @@ export default WidgetFactory.createWidget({
       const data = await sourceFetcher.getProposalVotes.query(
         args.requestVariables.proposalId
       );
-
+      return {
+        data,
+      };
+    },
+    //@ts-expect-error
+    mapper({ data }) {
       const mappedData = mapReducer(
         {
           against: 0,

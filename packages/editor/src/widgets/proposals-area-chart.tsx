@@ -18,17 +18,33 @@ export default WidgetFactory.createWidget({
 
   Config: () => <ViewColorsConfig />,
   skeleton: <div>Proposals Ares Chart</div>,
+  displayName: "Proposals Area Chart",
+  icon: "AreaChart",
+  group: "Proposal",
   dataFetcher: {
-    key: "proposals-ares-chart",
+    key: "proposalsMeta",
     collector(props) {
-      return {};
+      return {
+        requestVariables: {
+          first: 100,
+          orderBy: "createdTimestamp" as const,
+        },
+      };
     },
     async fetcher(args) {
-      const proposals = await sourceFetcher.proposalsMeta.query({
-        first: 100,
-        orderBy: "createdTimestamp",
-      });
-
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
+      const proposals = await sourceFetcher.proposalsMeta.query(
+        args.requestVariables
+      );
+      return {
+        data: proposals,
+      };
+    },
+    mapper({ data }) {
       const acumulated = {
         Succeed: 0,
         Pending: 0,

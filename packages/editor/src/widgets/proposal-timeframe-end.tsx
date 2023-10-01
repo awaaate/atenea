@@ -38,7 +38,7 @@ export default WidgetFactory.createWidget({
     },
   },
   dataFetcher: {
-    key: "proposal-time-frame",
+    key: "proposalsMeta",
     collector(props) {
       return {
         requestVariables: {
@@ -50,8 +50,11 @@ export default WidgetFactory.createWidget({
       const proposalMeta = await sourceFetcher.proposalsMeta.query({
         idIn: [args?.requestVariables.proposalId.toString() || "320"],
       });
-
-      console.log("proposalMeta: ", proposalMeta);
+      return {
+        proposalMeta,
+      };
+    },
+    mapper({ proposalMeta }) {
       if (!proposalMeta)
         return {
           time: new Date(),

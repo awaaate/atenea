@@ -29,16 +29,17 @@ type extraConfig = Omit<
  */
 interface CreateWidgetArgs<
   TData extends {},
-  TArgs extends Partial<WidgetProps> | undefined
+  TArgs extends Partial<WidgetProps> | undefined,
+  TMappedData extends {}
 > extends extraConfig {
   name: string;
   View:
-    | React.FunctionComponent<TData>
-    | React.LazyExoticComponent<React.FunctionComponent<TData>>;
+    | React.FunctionComponent<TMappedData>
+    | React.LazyExoticComponent<React.FunctionComponent<TMappedData>>;
   Config: React.FunctionComponent;
   FullScreenView?:
-    | React.FunctionComponent<TData>
-    | React.LazyExoticComponent<React.FunctionComponent<TData>>;
+    | React.FunctionComponent<TMappedData>
+    | React.LazyExoticComponent<React.FunctionComponent<TMappedData>>;
   skeleton?: React.ReactNode;
   dataFetcher: {
     key: string;
@@ -48,6 +49,7 @@ interface CreateWidgetArgs<
       }
     ) => TArgs;
     fetcher: (args: TArgs | undefined) => Promise<TData>;
+    mapper?: (data: TData) => TMappedData;
   };
   initialProps: Partial<WidgetProps>;
 }
@@ -58,9 +60,11 @@ const defaultArgs = {
 export class WidgetFactory {
   widgets: Map<string, WidgetComponent> = new Map();
 
-  static createWidget<TData extends {}, TArgs extends Partial<WidgetProps>>(
-    args: CreateWidgetArgs<TData, TArgs>
-  ) {
+  static createWidget<
+    TData extends {},
+    TArgs extends Partial<WidgetProps>,
+    TMapped extends {}
+  >(args: CreateWidgetArgs<TData, TArgs, TMapped>) {
     args.skeleton = args.skeleton || defaultArgs.skeleton;
     args.FullScreenView = args.FullScreenView ? args.FullScreenView : args.View;
 
@@ -80,7 +84,14 @@ export class WidgetFactory {
         if (!dataFetcherArgs) return args.dataFetcher.fetcher(undefined);
         return args.dataFetcher.fetcher(dataFetcherArgs);
       }, [dataFetcherArgs]);
-
+      const mapperFunction = useCallback(
+        (data: TData) => {
+          console.log("MAPPER FUNCTION:", data);
+          if (!args.dataFetcher.mapper) return data as unknown as TMapped;
+          return args.dataFetcher.mapper(data);
+        },
+        [args.dataFetcher.mapper]
+      );
       return (
         <WidgetRoot
           dataFetcher={[
@@ -88,6 +99,7 @@ export class WidgetFactory {
               JSON.stringify(dataFetcherArgs?.requestVariables),
             fetcherFunction,
           ]}
+          mapper={mapperFunction}
           inner={(data) => (
             <Suspense fallback={args.skeleton}>
               {/* @ts-ignore */}

@@ -17,11 +17,8 @@ export default WidgetFactory.createWidget({
   group: "General",
   Config: () => <ViewColorsConfig />,
   dataFetcher: {
-    key: "proposals-bar-chart",
+    key: "proposalsMeta",
     collector(props) {
-      return {};
-    },
-    async fetcher(args) {
       const currentDate = new Date();
 
       // Subtract 2 months from the current date
@@ -29,12 +26,30 @@ export default WidgetFactory.createWidget({
 
       // Get the timestamp for the date 2 months ago
       const timestamp = currentDate.getTime();
+      return {
+        requestVariables: {
+          first: 1000,
+          orderBy: "createdTimestamp" as const,
+          createdTimestamp: parseInt((timestamp / 1000).toString()),
+        },
+      };
+    },
+    async fetcher(args) {
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
+      const proposals = await sourceFetcher.proposalsMeta.query(
+        args.requestVariables
+      );
+      return {
+        data: proposals,
+      };
+    },
+    mapper({ data }) {
+      const proposals = data;
 
-      const proposals = await sourceFetcher.proposalsMeta.query({
-        first: 1000,
-        orderBy: "createdTimestamp",
-        createdTimestamp: parseInt((timestamp / 1000).toString()),
-      });
       const chardata = [] as Record<string, any>[];
 
       let acumulativeBudgetMap = {} as Record<string, number>;

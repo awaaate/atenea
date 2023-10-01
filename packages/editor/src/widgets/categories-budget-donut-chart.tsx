@@ -18,15 +18,29 @@ export default WidgetFactory.createWidget({
   icon: "PieChart",
   Config: () => <ViewColorsConfig />,
   dataFetcher: {
-    key: "proposals-meta-2",
+    key: "proposalsMeta",
     collector(props) {
-      return {};
+      return {
+        requestVariables: {
+          first: 1000,
+          status: "EXECUTED",
+        } as const,
+      };
     },
     async fetcher(args) {
-      const data = await sourceFetcher.proposalsMeta.query({
-        status: "EXECUTED",
-        first: 1000,
-      });
+      if (!args) {
+        return {
+          data: [],
+        };
+      }
+      const data = await sourceFetcher.proposalsMeta.query(
+        args.requestVariables
+      );
+      return {
+        data,
+      };
+    },
+    mapper({ data }) {
       const countedProposals = new Set<string>();
       const categories = mapReducer(
         {} as Record<string, number>,

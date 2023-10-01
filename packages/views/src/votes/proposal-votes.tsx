@@ -13,7 +13,7 @@ export const ProposalVotesView: React.FC<{
     });
   }, [votes]);
   return (
-    <div className="flex flex-col gap-4 px-4 py-4">
+    <div className="flex flex-col gap-4 px-4 py-4 border shadow-card rounded-default bg-surface-default">
       {votes.map((vote) => {
         return <ProposalVoteView {...vote} key={vote.id} />;
       })}

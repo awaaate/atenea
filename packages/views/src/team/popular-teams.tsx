@@ -18,16 +18,17 @@ import {
 export const PopularTeamsView: React.FC = () => {
   return (
     <div className="flex flex-wrap gap-2">
-      {Object.values(PopularTeams).map(({ category, members, name }) => {
+      {Object.values(PopularTeams).map(({ category, members, image, name }) => {
         return (
           <Dialog>
             <DialogTrigger
               key={name}
-              className="p-2 rounded-default bg-surface-raised border min-w-[200px] h-min shadow-none flex-1 flex justify-center flex-col gap-2 items-center "
+              className="p-2 rounded-default shadow-card bg-surface-default border min-w-[200px] h-min shadow-none flex-1 flex justify-center flex-col gap-2 items-center "
             >
               <Avatar
                 name={name}
-                className="bg-status-highlight text-text-on-accent"
+                src={image}
+                className="bg-status-info text-text-on-accent"
               />
               <Badge variant={"info"}>{category}</Badge>
               <p>{name}</p>

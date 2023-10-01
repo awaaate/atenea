@@ -19,6 +19,9 @@ export default WidgetFactory.createWidget({
       return {
         requestVariables: {
           first: props.first as number,
+          orderBy: "createdTimestamp" as const,
+          orderDirection: "desc" as const,
+          status: "EXECUTED" as const,
         },
       };
     },
@@ -30,14 +33,17 @@ export default WidgetFactory.createWidget({
       }
 
       const proposalsMeta = await sourceFetcher.proposalsMeta.query({
-        first: args.requestVariables.first,
-        orderBy: "createdTimestamp",
-        orderDirection: "desc",
-        status: "EXECUTED",
+        ...args.requestVariables,
       });
 
       return {
-        data: proposalsMeta
+        data: proposalsMeta,
+      };
+    },
+
+    mapper({ data }) {
+      return {
+        data: data
           .map((proposal) => ({
             id: proposal.id,
             nounId: proposal.nounId || undefined,

@@ -15,7 +15,7 @@ export default WidgetFactory.createWidget({
   group: "Proposal",
   View: ProposalVotesView,
   dataFetcher: {
-    key: "proposal-votes",
+    key: "getProposalVotes",
     collector(props) {
       return {
         requestVariables: {
