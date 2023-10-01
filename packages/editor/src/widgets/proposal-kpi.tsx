@@ -1,21 +1,14 @@
-import { ComponentPropsWithoutRef, lazy } from "react";
-import { widgetFactory } from "../widget/factory";
-import { WidgetFactory } from "../widget/widget-factory";
-import { joinViews } from "@shared/views/src/join-views";
-import { BAR_CHART_SKELETON } from "../widget/skeletons";
-import { trpc } from "../lib/trpc";
-import { arrayReducer, mapReducer } from "@shared/api/src/utils/reducer";
-import { sourceFetcher } from "../lib/source-fetcher";
 import {} from "@shared/api/src/utils/reducer";
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
+import { lazy } from "react";
+import { sourceFetcher } from "../lib/source-fetcher";
+import { WidgetFactory } from "../widget/widget-factory";
 
-const MetricAndCard = lazy(() =>
-  import("@shared/views/src/kip-card/card-metric").then((module) => ({
-    default: module.MetricAndCard,
+const ProposalKPIView = lazy(() =>
+  import("@shared/views/src/proposals/proposal-kpi").then((module) => ({
+    default: module.ProposalKPIView,
   }))
 );
-
-const ComposedViews = joinViews(MetricAndCard, MetricAndCard, MetricAndCard);
 
 export default WidgetFactory.createWidget({
   name: "proposal-kpi",
@@ -24,7 +17,7 @@ export default WidgetFactory.createWidget({
   icon: "Star",
 
   dataFetcher: {
-    key: "getProposalVotes",
+    key: "proposalsMeta",
     collector(props) {
       return {
         requestVariables: {
@@ -35,63 +28,27 @@ export default WidgetFactory.createWidget({
     async fetcher(args) {
       if (!args) {
         return {
-          data: [],
+          proposalMeta: [],
         };
       }
-      const data = await sourceFetcher.getProposalVotes.query(
-        args.requestVariables.proposalId
-      );
+      const proposalMeta = await sourceFetcher.proposalsMeta.query({
+        idIn: [args?.requestVariables.proposalId.toString() || "320"],
+      });
       return {
-        data,
+        proposalMeta,
       };
     },
-    //@ts-expect-error
-    mapper({ data }) {
-      const mappedData = mapReducer(
-        {
-          against: 0,
-          for: 0,
-        },
-        (acc, vote) => {
-          if (!vote) return acc;
-
-          if (vote.support === true) {
-            acc.for += Number(vote.votes);
-          } else {
-            acc.against += Number(vote.votes);
-          }
-          return acc;
-        },
-
-        data
-      );
+    mapper({ proposalMeta }) {
+      const proposal = proposalMeta[0];
 
       return {
-        viewsProps: [
-          {
-            name: "Total Votes",
-            metric: `${mappedData.against + mappedData.for} votes`,
-            className: "bg-accent/10 text-accent",
-          },
-          {
-            name: "For Votes",
-            metric: `${mappedData.for} votes`,
-            className: "bg-status-success-weak text-status-success",
-          },
-          {
-            name: "Against Votes",
-            metric: `${mappedData.against} votes`,
-            className: "bg-status-danger-weak text-status-danger",
-          },
-        ],
+        abstainVotes: proposal?.abstainVotes,
+        forVotes: proposal?.forVotes,
+        againstVotes: proposal?.againstVotes,
       };
     },
   },
-  View: (props: ComponentPropsWithoutRef<typeof ComposedViews>) => (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-3  mx-4">
-      <ComposedViews {...props} />
-    </div>
-  ),
+  View: ProposalKPIView,
   initialProps: {
     proposalId: 340,
     layout: {
@@ -101,7 +58,7 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  FullScreenView: () => null,
+  FullScreenView: ProposalKPIView,
   Config: () => (
     <ViewPropsConfig
       props={[{ name: "proposalId", type: "number", label: "Proposal ID" }]}

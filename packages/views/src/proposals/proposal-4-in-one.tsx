@@ -1,6 +1,7 @@
 import { Badge } from "@shared/ui/src/badge";
 import { date } from "@shared/ui/src/date";
 import { Icon } from "@shared/ui/src/icon";
+import { cn } from "@shared/ui/src/utils";
 
 const EthIcon = () => {
   return (
@@ -86,16 +87,22 @@ const TimeCard: React.FC<{
   }
   return null;
 };
-const Card: React.FC<{
+export const Card: React.FC<{
   children: React.ReactNode;
   title: string;
   icon: React.ReactNode;
-}> = ({ children, title, icon }) => {
+  iconClassName?: string;
+}> = ({ children, title, icon, iconClassName }) => {
   return (
     <div className="flex flex-col gap-4 px-4 py-4 border shadow-card rounded-default bg-surface-default min-w-[150px] flex-1">
       <p className="text-sm font-medium text-text-weaker">{title}</p>
       <div className="flex items-center gap-2">
-        <span className="icon-xl rounded-full bg-accent/20  grid place-content-center">
+        <span
+          className={cn(
+            "icon-xl rounded-full bg-accent/20  grid place-content-center",
+            iconClassName
+          )}
+        >
           {icon}
         </span>
         <div className="ml-2">{children}</div>
