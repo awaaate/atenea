@@ -35,11 +35,7 @@ export default WidgetFactory.createWidget({
     async fetcher(args) {
       if (!args) {
         return {
-          viewsProps: Array.from({ length: 4 }, () => ({
-            name: "",
-            metric: "",
-            icon: "Bell" as const,
-          })),
+          data: [],
         };
       }
       const data = await sourceFetcher.getProposalVotes.query(

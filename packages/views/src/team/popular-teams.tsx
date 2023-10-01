@@ -1,7 +1,5 @@
 import { Avatar } from "@shared/ui/src/avatar";
 import { Badge } from "@shared/ui/src/badge";
-import { Icon } from "@shared/ui/src/icon";
-import PopularTeams from "./popular-teams.json";
 import {
   Dialog,
   DialogContent,
@@ -9,11 +7,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@shared/ui/src/dialog";
-import {
-  Tooltip,
-  TooltipTrigger,
-  TooltipContent,
-} from "@shared/ui/src/tooltip";
+import { Icon } from "@shared/ui/src/icon";
+import PopularTeams from "./popular-teams.json";
 
 export const PopularTeamsView: React.FC = () => {
   return (
@@ -23,7 +18,7 @@ export const PopularTeamsView: React.FC = () => {
           <Dialog>
             <DialogTrigger
               key={name}
-              className="p-2 rounded-default shadow-card bg-surface-default border min-w-[200px] h-min shadow-none flex-1 flex justify-center flex-col gap-2 items-center "
+              className="p-2 rounded-default bg-surface-default border min-w-[200px] h-min shadow-none flex-1 flex justify-center flex-col gap-2 items-center "
             >
               <Avatar
                 name={name}
