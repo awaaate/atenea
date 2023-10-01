@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Athena: Explore Nouns' Governance your way.",
+  name: "Atenea: Explore Nouns' Governance your way.",
   description:
     "Atenea is Nouns DAO's simplified client creation platform. Give the shape you want to governance without limits.",
   url: "https://atenea.wtf",
