@@ -1,5 +1,40 @@
 [
   {
+    "startBlock": 18287198,
+    "endBlock": 18323198,
+    "forVotes": 0,
+    "againstVotes": 0,
+    "abstainVotes": 0,
+    "quorumVotes": 39,
+    "totalSupply": 864,
+    "quorumCoefficient": 1000000,
+    "minQuorumVotesBPS": 1000,
+    "maxQuorumVotesBPS": 1500,
+    "createdTimestamp": "2023-09-30T21:26:35.000Z",
+    "id": "392",
+    "proposer": "0xf9fb122664d96e7f188a0c15b4f90f247e707567",
+    "nounId": null,
+    "targets": [
+      "0x73f13030371146ef53cf9b375b86c6701e50494d",
+      "0x0e18034b26018edbecedd824241746fcd28bb56b",
+      "0xf9fb122664d96e7f188a0c15b4f90f247e707567"
+    ],
+    "values": [
+      5000000000000000000,
+      1000000000000000000,
+      1000000000000000000
+    ],
+    "title": "Sensuality in Art: Proposal for Funding a Transformative Project",
+    "status": "Pending",
+    "totalBudget": 7,
+    "categories": [
+      "Uncategorized"
+    ],
+    "dynamicQuorum": 86.4,
+    "endsAt": "2023-10-10T21:33:25.305Z",
+    "startsAt": "2023-10-05T21:33:25.305Z"
+  },
+  {
     "startBlock": 18285770,
     "endBlock": 18321770,
     "forVotes": 0,
@@ -29,8 +64,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 86.4,
-    "endsAt": "2023-10-10T16:40:23.530Z",
-    "startsAt": "2023-10-05T16:40:23.530Z"
+    "endsAt": "2023-10-10T16:47:49.305Z",
+    "startsAt": "2023-10-05T16:47:49.305Z"
   },
   {
     "startBlock": 18284626,
@@ -60,8 +95,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 86.4,
-    "endsAt": "2023-10-10T12:51:35.534Z",
-    "startsAt": "2023-10-05T12:51:35.534Z"
+    "endsAt": "2023-10-10T12:59:01.305Z",
+    "startsAt": "2023-10-05T12:59:01.305Z"
   },
   {
     "startBlock": 18257189,
@@ -91,13 +126,13 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 85.9,
-    "endsAt": "2023-10-06T17:24:11.558Z",
-    "startsAt": "2023-10-01T17:24:11.558Z"
+    "endsAt": "2023-10-06T17:31:37.305Z",
+    "startsAt": "2023-10-01T17:31:37.305Z"
   },
   {
     "startBlock": 18245401,
     "endBlock": 18281401,
-    "forVotes": 1,
+    "forVotes": 12,
     "againstVotes": 1,
     "abstainVotes": 0,
     "quorumVotes": 39,
@@ -124,16 +159,16 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 86.7,
-    "endsAt": "2023-10-05T02:06:35.560Z",
-    "startsAt": "2023-09-30T02:06:35.560Z"
+    "endsAt": "2023-10-05T02:14:01.306Z",
+    "startsAt": "2023-09-30T02:14:01.306Z"
   },
   {
     "startBlock": 18242252,
     "endBlock": 18278252,
-    "forVotes": 15,
-    "againstVotes": 1,
+    "forVotes": 17,
+    "againstVotes": 2,
     "abstainVotes": 0,
-    "quorumVotes": 39,
+    "quorumVotes": 40,
     "totalSupply": 857,
     "quorumCoefficient": 1000000,
     "minQuorumVotesBPS": 1000,
@@ -154,15 +189,15 @@
     "categories": [
       "Uncategorized"
     ],
-    "dynamicQuorum": 86.7,
-    "endsAt": "2023-10-04T15:36:47.590Z",
-    "startsAt": "2023-09-29T15:36:47.590Z"
+    "dynamicQuorum": 87.7,
+    "endsAt": "2023-10-04T15:44:13.306Z",
+    "startsAt": "2023-09-29T15:44:13.306Z"
   },
   {
     "startBlock": 18237643,
     "endBlock": 18273643,
     "forVotes": 3,
-    "againstVotes": 51,
+    "againstVotes": 52,
     "abstainVotes": 0,
     "quorumVotes": 57,
     "totalSupply": 856,
@@ -190,8 +225,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 128.4,
-    "endsAt": "2023-10-04T00:14:59.606Z",
-    "startsAt": "2023-09-29T00:14:59.606Z"
+    "endsAt": "2023-10-04T00:22:25.306Z",
+    "startsAt": "2023-09-29T00:22:25.306Z"
   },
   {
     "startBlock": 18235060,
@@ -221,13 +256,13 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 85.6,
-    "endsAt": "2023-10-03T15:38:23.607Z",
-    "startsAt": "2023-09-28T15:38:23.607Z"
+    "endsAt": "2023-10-03T15:45:49.306Z",
+    "startsAt": "2023-09-28T15:45:49.306Z"
   },
   {
     "startBlock": 18230389,
     "endBlock": 18266389,
-    "forVotes": 46,
+    "forVotes": 70,
     "againstVotes": 14,
     "abstainVotes": 4,
     "quorumVotes": 52,
@@ -254,8 +289,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 99.50000000000001,
-    "endsAt": "2023-10-03T00:04:11.634Z",
-    "startsAt": "2023-09-28T00:04:11.634Z"
+    "endsAt": "2023-10-03T00:11:37.307Z",
+    "startsAt": "2023-09-28T00:11:37.307Z"
   },
   {
     "startBlock": 18228317,
@@ -285,13 +320,13 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 85.5,
-    "endsAt": "2023-10-02T17:09:47.638Z",
-    "startsAt": "2023-09-27T17:09:47.638Z"
+    "endsAt": "2023-10-02T17:17:13.307Z",
+    "startsAt": "2023-09-27T17:17:13.307Z"
   },
   {
     "startBlock": 18225041,
     "endBlock": 18261041,
-    "forVotes": 57,
+    "forVotes": 60,
     "againstVotes": 20,
     "abstainVotes": 0,
     "quorumVotes": 57,
@@ -318,8 +353,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 105.5,
-    "endsAt": "2023-10-02T06:14:35.640Z",
-    "startsAt": "2023-09-27T06:14:35.640Z"
+    "endsAt": "2023-10-02T06:22:01.308Z",
+    "startsAt": "2023-09-27T06:22:01.308Z"
   },
   {
     "startBlock": 18217796,
@@ -343,21 +378,21 @@
       0
     ],
     "title": "Elect 24 Nouns \"Gardeners\" as the Voting Body for Nouns' Prop House Open Rounds",
-    "status": "Voting",
+    "status": "Succeeded",
     "totalBudget": 0,
     "categories": [
       "Uncategorized"
     ],
     "dynamicQuorum": 96.4,
-    "endsAt": "2023-10-01T06:05:35.643Z",
-    "startsAt": "2023-09-26T06:05:35.643Z"
+    "endsAt": "2023-10-01T06:13:01.308Z",
+    "startsAt": "2023-09-26T06:13:01.308Z"
   },
   {
     "startBlock": 18216509,
     "endBlock": 18252509,
     "forVotes": 31,
     "againstVotes": 67,
-    "abstainVotes": 3,
+    "abstainVotes": 4,
     "quorumVotes": 57,
     "totalSupply": 853,
     "quorumCoefficient": 1000000,
@@ -374,14 +409,14 @@
       80000000000000000000
     ],
     "title": "NFTR: The First Ethereum Protocol Run by a Nounish DAO",
-    "status": "Voting",
+    "status": "Defeated",
     "totalBudget": 80,
     "categories": [
       "Uncategorized"
     ],
     "dynamicQuorum": 127.95,
-    "endsAt": "2023-10-01T01:48:11.658Z",
-    "startsAt": "2023-09-26T01:48:11.658Z"
+    "endsAt": "2023-10-01T01:55:37.308Z",
+    "startsAt": "2023-09-26T01:55:37.308Z"
   },
   {
     "startBlock": 18214066,
@@ -411,8 +446,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 127.95,
-    "endsAt": "2023-09-30T17:39:35.659Z",
-    "startsAt": "2023-09-25T17:39:35.659Z"
+    "endsAt": "2023-09-30T17:47:01.309Z",
+    "startsAt": "2023-09-25T17:47:01.309Z"
   },
   {
     "startBlock": 18213957,
@@ -444,8 +479,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 87.3,
-    "endsAt": "2023-09-30T17:17:47.667Z",
-    "startsAt": "2023-09-25T17:17:47.667Z"
+    "endsAt": "2023-09-30T17:25:13.309Z",
+    "startsAt": "2023-09-25T17:25:13.309Z"
   },
   {
     "startBlock": 18209571,
@@ -477,8 +512,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 127.8,
-    "endsAt": "2023-09-30T02:40:35.669Z",
-    "startsAt": "2023-09-25T02:40:35.669Z"
+    "endsAt": "2023-09-30T02:48:01.309Z",
+    "startsAt": "2023-09-25T02:48:01.309Z"
   },
   {
     "startBlock": 18207276,
@@ -512,8 +547,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 127.8,
-    "endsAt": "2023-09-29T19:01:35.670Z",
-    "startsAt": "2023-09-24T19:01:35.670Z"
+    "endsAt": "2023-09-29T19:09:01.309Z",
+    "startsAt": "2023-09-24T19:09:01.309Z"
   },
   {
     "startBlock": 18206316,
@@ -548,8 +583,8 @@
       ""
     ],
     "dynamicQuorum": 117.2,
-    "endsAt": "2023-09-29T15:49:35.687Z",
-    "startsAt": "2023-09-24T15:49:35.687Z"
+    "endsAt": "2023-09-29T15:57:01.309Z",
+    "startsAt": "2023-09-24T15:57:01.309Z"
   },
   {
     "startBlock": 18189307,
@@ -584,8 +619,8 @@
       "Other"
     ],
     "dynamicQuorum": 84.9,
-    "endsAt": "2023-09-27T07:07:47.688Z",
-    "startsAt": "2023-09-22T07:07:47.688Z"
+    "endsAt": "2023-09-27T07:15:13.309Z",
+    "startsAt": "2023-09-22T07:15:13.309Z"
   },
   {
     "startBlock": 18186818,
@@ -620,8 +655,8 @@
       "Community"
     ],
     "dynamicQuorum": 127.2,
-    "endsAt": "2023-09-26T22:49:59.688Z",
-    "startsAt": "2023-09-21T22:49:59.688Z"
+    "endsAt": "2023-09-26T22:57:25.309Z",
+    "startsAt": "2023-09-21T22:57:25.309Z"
   },
   {
     "startBlock": 18186215,
@@ -658,8 +693,8 @@
       "Art"
     ],
     "dynamicQuorum": 127.2,
-    "endsAt": "2023-09-26T20:49:23.688Z",
-    "startsAt": "2023-09-21T20:49:23.688Z"
+    "endsAt": "2023-09-26T20:56:49.310Z",
+    "startsAt": "2023-09-21T20:56:49.310Z"
   },
   {
     "startBlock": 18155473,
@@ -696,8 +731,8 @@
       "Art"
     ],
     "dynamicQuorum": 114.4,
-    "endsAt": "2023-09-22T14:20:59.691Z",
-    "startsAt": "2023-09-17T14:20:59.691Z"
+    "endsAt": "2023-09-22T14:28:25.310Z",
+    "startsAt": "2023-09-17T14:28:25.310Z"
   },
   {
     "startBlock": 18145050,
@@ -732,8 +767,8 @@
       "Other"
     ],
     "dynamicQuorum": 84.2,
-    "endsAt": "2023-09-21T03:36:23.694Z",
-    "startsAt": "2023-09-16T03:36:23.694Z"
+    "endsAt": "2023-09-21T03:43:49.310Z",
+    "startsAt": "2023-09-16T03:43:49.310Z"
   },
   {
     "startBlock": 18134843,
@@ -768,8 +803,8 @@
       "Physical"
     ],
     "dynamicQuorum": 86,
-    "endsAt": "2023-09-19T17:34:59.695Z",
-    "startsAt": "2023-09-14T17:34:59.695Z"
+    "endsAt": "2023-09-19T17:42:25.310Z",
+    "startsAt": "2023-09-14T17:42:25.310Z"
   },
   {
     "startBlock": 18131060,
@@ -804,8 +839,8 @@
       "Tech"
     ],
     "dynamicQuorum": 126,
-    "endsAt": "2023-09-19T04:58:23.695Z",
-    "startsAt": "2023-09-14T04:58:23.695Z"
+    "endsAt": "2023-09-19T05:05:49.310Z",
+    "startsAt": "2023-09-14T05:05:49.310Z"
   },
   {
     "startBlock": 18123359,
@@ -840,8 +875,8 @@
       "Operational"
     ],
     "dynamicQuorum": 125.7,
-    "endsAt": "2023-09-18T03:18:11.695Z",
-    "startsAt": "2023-09-13T03:18:11.695Z"
+    "endsAt": "2023-09-18T03:25:37.310Z",
+    "startsAt": "2023-09-13T03:25:37.310Z"
   },
   {
     "startBlock": 18122713,
@@ -876,8 +911,8 @@
       "Other"
     ],
     "dynamicQuorum": 83.8,
-    "endsAt": "2023-09-18T01:08:59.696Z",
-    "startsAt": "2023-09-13T01:08:59.696Z"
+    "endsAt": "2023-09-18T01:16:25.311Z",
+    "startsAt": "2023-09-13T01:16:25.311Z"
   },
   {
     "startBlock": 18122105,
@@ -922,8 +957,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 83.8,
-    "endsAt": "2023-09-17T23:07:23.696Z",
-    "startsAt": "2023-09-12T23:07:23.696Z"
+    "endsAt": "2023-09-17T23:14:49.311Z",
+    "startsAt": "2023-09-12T23:14:49.311Z"
   },
   {
     "startBlock": 18121895,
@@ -958,8 +993,8 @@
       "Community"
     ],
     "dynamicQuorum": 83.8,
-    "endsAt": "2023-09-17T22:25:23.696Z",
-    "startsAt": "2023-09-12T22:25:23.696Z"
+    "endsAt": "2023-09-17T22:32:49.311Z",
+    "startsAt": "2023-09-12T22:32:49.311Z"
   },
   {
     "startBlock": 18121076,
@@ -995,8 +1030,8 @@
       "Community"
     ],
     "dynamicQuorum": 125.7,
-    "endsAt": "2023-09-17T19:41:35.696Z",
-    "startsAt": "2023-09-12T19:41:35.696Z"
+    "endsAt": "2023-09-17T19:49:01.311Z",
+    "startsAt": "2023-09-12T19:49:01.311Z"
   },
   {
     "startBlock": 18050498,
@@ -1031,8 +1066,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 117.7,
-    "endsAt": "2023-09-08T00:25:59.696Z",
-    "startsAt": "2023-09-03T00:25:59.696Z"
+    "endsAt": "2023-09-08T00:33:25.311Z",
+    "startsAt": "2023-09-03T00:33:25.311Z"
   },
   {
     "startBlock": 18043678,
@@ -1069,8 +1104,8 @@
       "Operational"
     ],
     "dynamicQuorum": 123.9,
-    "endsAt": "2023-09-07T01:41:59.697Z",
-    "startsAt": "2023-09-02T01:41:59.697Z"
+    "endsAt": "2023-09-07T01:49:25.311Z",
+    "startsAt": "2023-09-02T01:49:25.311Z"
   },
   {
     "startBlock": 18039748,
@@ -1114,8 +1149,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 123.9,
-    "endsAt": "2023-09-06T12:35:59.697Z",
-    "startsAt": "2023-09-01T12:35:59.697Z"
+    "endsAt": "2023-09-06T12:43:25.311Z",
+    "startsAt": "2023-09-01T12:43:25.311Z"
   },
   {
     "startBlock": 18035042,
@@ -1166,8 +1201,8 @@
       "Operational"
     ],
     "dynamicQuorum": 85.49999999999999,
-    "endsAt": "2023-09-05T20:54:47.697Z",
-    "startsAt": "2023-08-31T20:54:47.697Z"
+    "endsAt": "2023-09-05T21:02:13.311Z",
+    "startsAt": "2023-08-31T21:02:13.311Z"
   },
   {
     "startBlock": 18022221,
@@ -1202,8 +1237,8 @@
       "Other"
     ],
     "dynamicQuorum": 102.3,
-    "endsAt": "2023-09-04T02:10:35.697Z",
-    "startsAt": "2023-08-30T02:10:35.697Z"
+    "endsAt": "2023-09-04T02:18:01.312Z",
+    "startsAt": "2023-08-30T02:18:01.312Z"
   },
   {
     "startBlock": 17962594,
@@ -1256,8 +1291,8 @@
       "Operational"
     ],
     "dynamicQuorum": 81.4,
-    "endsAt": "2023-08-26T19:25:11.697Z",
-    "startsAt": "2023-08-21T19:25:11.697Z"
+    "endsAt": "2023-08-26T19:32:37.312Z",
+    "startsAt": "2023-08-21T19:32:37.312Z"
   },
   {
     "startBlock": 17948465,
@@ -1310,8 +1345,8 @@
       "Operational"
     ],
     "dynamicQuorum": 121.8,
-    "endsAt": "2023-08-24T20:19:23.697Z",
-    "startsAt": "2023-08-19T20:19:23.697Z"
+    "endsAt": "2023-08-24T20:26:49.312Z",
+    "startsAt": "2023-08-19T20:26:49.312Z"
   },
   {
     "startBlock": 17904898,
@@ -1346,8 +1381,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 120.75,
-    "endsAt": "2023-08-18T19:05:59.698Z",
-    "startsAt": "2023-08-13T19:05:59.698Z"
+    "endsAt": "2023-08-18T19:13:25.312Z",
+    "startsAt": "2023-08-13T19:13:25.312Z"
   },
   {
     "startBlock": 17863589,
@@ -1400,8 +1435,8 @@
       "Operational"
     ],
     "dynamicQuorum": 109.8,
-    "endsAt": "2023-08-13T01:24:11.698Z",
-    "startsAt": "2023-08-08T01:24:11.698Z"
+    "endsAt": "2023-08-13T01:31:37.312Z",
+    "startsAt": "2023-08-08T01:31:37.312Z"
   },
   {
     "startBlock": 17862241,
@@ -1454,8 +1489,8 @@
       "Operational"
     ],
     "dynamicQuorum": 79.8,
-    "endsAt": "2023-08-12T20:54:35.698Z",
-    "startsAt": "2023-08-07T20:54:35.698Z"
+    "endsAt": "2023-08-12T21:02:01.312Z",
+    "startsAt": "2023-08-07T21:02:01.312Z"
   },
   {
     "startBlock": 17855382,
@@ -1490,8 +1525,8 @@
       "Other"
     ],
     "dynamicQuorum": 119.55,
-    "endsAt": "2023-08-11T22:02:47.698Z",
-    "startsAt": "2023-08-06T22:02:47.698Z"
+    "endsAt": "2023-08-11T22:10:13.312Z",
+    "startsAt": "2023-08-06T22:10:13.312Z"
   },
   {
     "startBlock": 17854392,
@@ -1526,8 +1561,8 @@
       "Art"
     ],
     "dynamicQuorum": 109.7,
-    "endsAt": "2023-08-11T18:44:47.698Z",
-    "startsAt": "2023-08-06T18:44:47.698Z"
+    "endsAt": "2023-08-11T18:52:13.312Z",
+    "startsAt": "2023-08-06T18:52:13.312Z"
   },
   {
     "startBlock": 17841969,
@@ -1562,8 +1597,8 @@
       "Art"
     ],
     "dynamicQuorum": 119.25,
-    "endsAt": "2023-08-10T01:20:11.698Z",
-    "startsAt": "2023-08-05T01:20:11.698Z"
+    "endsAt": "2023-08-10T01:27:37.312Z",
+    "startsAt": "2023-08-05T01:27:37.312Z"
   },
   {
     "startBlock": 17822608,
@@ -1598,8 +1633,8 @@
       "Charity"
     ],
     "dynamicQuorum": 118.95,
-    "endsAt": "2023-08-07T08:47:59.699Z",
-    "startsAt": "2023-08-02T08:47:59.699Z"
+    "endsAt": "2023-08-07T08:55:25.312Z",
+    "startsAt": "2023-08-02T08:55:25.312Z"
   },
   {
     "startBlock": 17821074,
@@ -1637,8 +1672,8 @@
       "Operational"
     ],
     "dynamicQuorum": 118.95,
-    "endsAt": "2023-08-07T03:41:11.699Z",
-    "startsAt": "2023-08-02T03:41:11.699Z"
+    "endsAt": "2023-08-07T03:48:37.312Z",
+    "startsAt": "2023-08-02T03:48:37.312Z"
   },
   {
     "startBlock": 17816274,
@@ -1675,8 +1710,8 @@
       "Operational"
     ],
     "dynamicQuorum": 118.8,
-    "endsAt": "2023-08-06T11:41:11.699Z",
-    "startsAt": "2023-08-01T11:41:11.699Z"
+    "endsAt": "2023-08-06T11:48:37.313Z",
+    "startsAt": "2023-08-01T11:48:37.313Z"
   },
   {
     "startBlock": 17774104,
@@ -1711,8 +1746,8 @@
       "Tech"
     ],
     "dynamicQuorum": 105.5,
-    "endsAt": "2023-07-31T15:07:11.735Z",
-    "startsAt": "2023-07-26T15:07:11.735Z"
+    "endsAt": "2023-07-31T15:14:37.313Z",
+    "startsAt": "2023-07-26T15:14:37.313Z"
   },
   {
     "startBlock": 17770517,
@@ -1751,8 +1786,8 @@
       "Community"
     ],
     "dynamicQuorum": 103.49999999999999,
-    "endsAt": "2023-07-31T03:09:47.736Z",
-    "startsAt": "2023-07-26T03:09:47.736Z"
+    "endsAt": "2023-07-31T03:17:13.313Z",
+    "startsAt": "2023-07-26T03:17:13.313Z"
   },
   {
     "startBlock": 17760627,
@@ -1787,8 +1822,8 @@
       "Other"
     ],
     "dynamicQuorum": 117.45,
-    "endsAt": "2023-07-29T18:11:47.737Z",
-    "startsAt": "2023-07-24T18:11:47.737Z"
+    "endsAt": "2023-07-29T18:19:13.313Z",
+    "startsAt": "2023-07-24T18:19:13.313Z"
   },
   {
     "startBlock": 17756051,
@@ -1823,8 +1858,8 @@
       "Tech"
     ],
     "dynamicQuorum": 117.45,
-    "endsAt": "2023-07-29T02:56:35.747Z",
-    "startsAt": "2023-07-24T02:56:35.747Z"
+    "endsAt": "2023-07-29T03:04:01.313Z",
+    "startsAt": "2023-07-24T03:04:01.313Z"
   },
   {
     "startBlock": 17752164,
@@ -1859,8 +1894,8 @@
       "Other"
     ],
     "dynamicQuorum": 96.19999999999999,
-    "endsAt": "2023-07-28T13:59:11.747Z",
-    "startsAt": "2023-07-23T13:59:11.747Z"
+    "endsAt": "2023-07-28T14:06:37.313Z",
+    "startsAt": "2023-07-23T14:06:37.313Z"
   },
   {
     "startBlock": 17748193,
@@ -1896,8 +1931,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 117,
-    "endsAt": "2023-07-28T00:44:59.748Z",
-    "startsAt": "2023-07-23T00:44:59.748Z"
+    "endsAt": "2023-07-28T00:52:25.313Z",
+    "startsAt": "2023-07-23T00:52:25.313Z"
   },
   {
     "startBlock": 17744220,
@@ -1933,8 +1968,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 117,
-    "endsAt": "2023-07-27T11:30:23.748Z",
-    "startsAt": "2023-07-22T11:30:23.748Z"
+    "endsAt": "2023-07-27T11:37:49.313Z",
+    "startsAt": "2023-07-22T11:37:49.313Z"
   },
   {
     "startBlock": 17737808,
@@ -1970,8 +2005,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 116.85,
-    "endsAt": "2023-07-26T14:07:59.748Z",
-    "startsAt": "2023-07-21T14:07:59.748Z"
+    "endsAt": "2023-07-26T14:15:25.313Z",
+    "startsAt": "2023-07-21T14:15:25.313Z"
   },
   {
     "startBlock": 17728982,
@@ -2006,8 +2041,8 @@
       "Other"
     ],
     "dynamicQuorum": 77.8,
-    "endsAt": "2023-07-25T08:42:47.748Z",
-    "startsAt": "2023-07-20T08:42:47.748Z"
+    "endsAt": "2023-07-25T08:50:13.313Z",
+    "startsAt": "2023-07-20T08:50:13.313Z"
   },
   {
     "startBlock": 17723947,
@@ -2046,8 +2081,8 @@
       "Tech"
     ],
     "dynamicQuorum": 114.7,
-    "endsAt": "2023-07-24T15:55:47.748Z",
-    "startsAt": "2023-07-19T15:55:47.748Z"
+    "endsAt": "2023-07-24T16:03:13.314Z",
+    "startsAt": "2023-07-19T16:03:13.314Z"
   },
   {
     "startBlock": 17721739,
@@ -2082,8 +2117,8 @@
       "Other"
     ],
     "dynamicQuorum": 77.7,
-    "endsAt": "2023-07-24T08:34:11.748Z",
-    "startsAt": "2023-07-19T08:34:11.748Z"
+    "endsAt": "2023-07-24T08:41:37.314Z",
+    "startsAt": "2023-07-19T08:41:37.314Z"
   },
   {
     "startBlock": 17719816,
@@ -2118,8 +2153,8 @@
       "Tech"
     ],
     "dynamicQuorum": 116.55,
-    "endsAt": "2023-07-24T02:09:35.748Z",
-    "startsAt": "2023-07-19T02:09:35.748Z"
+    "endsAt": "2023-07-24T02:17:01.314Z",
+    "startsAt": "2023-07-19T02:17:01.314Z"
   },
   {
     "startBlock": 17717012,
@@ -2155,8 +2190,8 @@
       "Physical"
     ],
     "dynamicQuorum": 116.4,
-    "endsAt": "2023-07-23T16:48:47.749Z",
-    "startsAt": "2023-07-18T16:48:47.749Z"
+    "endsAt": "2023-07-23T16:56:13.314Z",
+    "startsAt": "2023-07-18T16:56:13.314Z"
   },
   {
     "startBlock": 17716380,
@@ -2191,8 +2226,8 @@
       "Other"
     ],
     "dynamicQuorum": 77.6,
-    "endsAt": "2023-07-23T14:42:23.749Z",
-    "startsAt": "2023-07-18T14:42:23.749Z"
+    "endsAt": "2023-07-23T14:49:49.314Z",
+    "startsAt": "2023-07-18T14:49:49.314Z"
   },
   {
     "startBlock": 17716069,
@@ -2227,8 +2262,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 116.4,
-    "endsAt": "2023-07-23T13:40:11.749Z",
-    "startsAt": "2023-07-18T13:40:11.749Z"
+    "endsAt": "2023-07-23T13:47:37.314Z",
+    "startsAt": "2023-07-18T13:47:37.314Z"
   },
   {
     "startBlock": 17715866,
@@ -2265,8 +2300,8 @@
       "Operational"
     ],
     "dynamicQuorum": 116.4,
-    "endsAt": "2023-07-23T12:59:35.749Z",
-    "startsAt": "2023-07-18T12:59:35.749Z"
+    "endsAt": "2023-07-23T13:07:01.314Z",
+    "startsAt": "2023-07-18T13:07:01.314Z"
   },
   {
     "startBlock": 17715487,
@@ -2301,8 +2336,8 @@
       ""
     ],
     "dynamicQuorum": 77.6,
-    "endsAt": "2023-07-23T11:43:47.749Z",
-    "startsAt": "2023-07-18T11:43:47.749Z"
+    "endsAt": "2023-07-23T11:51:13.314Z",
+    "startsAt": "2023-07-18T11:51:13.314Z"
   },
   {
     "startBlock": 17700265,
@@ -2337,8 +2372,8 @@
       "Charity"
     ],
     "dynamicQuorum": 77.4,
-    "endsAt": "2023-07-21T08:59:23.749Z",
-    "startsAt": "2023-07-16T08:59:23.749Z"
+    "endsAt": "2023-07-21T09:06:49.314Z",
+    "startsAt": "2023-07-16T09:06:49.314Z"
   },
   {
     "startBlock": 17686187,
@@ -2375,8 +2410,8 @@
       "Physical"
     ],
     "dynamicQuorum": 115.8,
-    "endsAt": "2023-07-19T10:03:47.749Z",
-    "startsAt": "2023-07-14T10:03:47.749Z"
+    "endsAt": "2023-07-19T10:11:13.314Z",
+    "startsAt": "2023-07-14T10:11:13.314Z"
   },
   {
     "startBlock": 17686070,
@@ -2412,8 +2447,8 @@
       "Community"
     ],
     "dynamicQuorum": 77.2,
-    "endsAt": "2023-07-19T09:40:23.750Z",
-    "startsAt": "2023-07-14T09:40:23.750Z"
+    "endsAt": "2023-07-19T09:47:49.314Z",
+    "startsAt": "2023-07-14T09:47:49.314Z"
   },
   {
     "startBlock": 17665502,
@@ -2450,8 +2485,8 @@
       "Community"
     ],
     "dynamicQuorum": 115.2,
-    "endsAt": "2023-07-16T13:06:47.750Z",
-    "startsAt": "2023-07-11T13:06:47.750Z"
+    "endsAt": "2023-07-16T13:14:13.314Z",
+    "startsAt": "2023-07-11T13:14:13.314Z"
   },
   {
     "startBlock": 17665275,
@@ -2488,8 +2523,8 @@
       "Physical"
     ],
     "dynamicQuorum": 115.2,
-    "endsAt": "2023-07-16T12:21:23.750Z",
-    "startsAt": "2023-07-11T12:21:23.750Z"
+    "endsAt": "2023-07-16T12:28:49.314Z",
+    "startsAt": "2023-07-11T12:28:49.314Z"
   },
   {
     "startBlock": 17644670,
@@ -2524,8 +2559,8 @@
       "Operational"
     ],
     "dynamicQuorum": 76.5,
-    "endsAt": "2023-07-13T15:40:23.750Z",
-    "startsAt": "2023-07-08T15:40:23.750Z"
+    "endsAt": "2023-07-13T15:47:49.314Z",
+    "startsAt": "2023-07-08T15:47:49.314Z"
   },
   {
     "startBlock": 17630168,
@@ -2561,8 +2596,8 @@
       "Physical"
     ],
     "dynamicQuorum": 114.45,
-    "endsAt": "2023-07-11T15:19:59.750Z",
-    "startsAt": "2023-07-06T15:19:59.750Z"
+    "endsAt": "2023-07-11T15:27:25.315Z",
+    "startsAt": "2023-07-06T15:27:25.315Z"
   },
   {
     "startBlock": 17628582,
@@ -2601,8 +2636,8 @@
       "Physical"
     ],
     "dynamicQuorum": 114.45,
-    "endsAt": "2023-07-11T10:02:47.750Z",
-    "startsAt": "2023-07-06T10:02:47.750Z"
+    "endsAt": "2023-07-11T10:10:13.315Z",
+    "startsAt": "2023-07-06T10:10:13.315Z"
   },
   {
     "startBlock": 17626516,
@@ -2638,8 +2673,8 @@
       "Tech"
     ],
     "dynamicQuorum": 114.45,
-    "endsAt": "2023-07-11T03:09:35.751Z",
-    "startsAt": "2023-07-06T03:09:35.751Z"
+    "endsAt": "2023-07-11T03:17:01.315Z",
+    "startsAt": "2023-07-06T03:17:01.315Z"
   },
   {
     "startBlock": 17620805,
@@ -2682,8 +2717,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 114.3,
-    "endsAt": "2023-07-10T08:07:23.751Z",
-    "startsAt": "2023-07-05T08:07:23.751Z"
+    "endsAt": "2023-07-10T08:14:49.315Z",
+    "startsAt": "2023-07-05T08:14:49.315Z"
   },
   {
     "startBlock": 17614762,
@@ -2723,8 +2758,8 @@
       "Tech"
     ],
     "dynamicQuorum": 114,
-    "endsAt": "2023-07-09T11:58:47.760Z",
-    "startsAt": "2023-07-04T11:58:47.760Z"
+    "endsAt": "2023-07-09T12:06:13.315Z",
+    "startsAt": "2023-07-04T12:06:13.315Z"
   },
   {
     "startBlock": 17577432,
@@ -2759,8 +2794,8 @@
       "Community"
     ],
     "dynamicQuorum": 113.25,
-    "endsAt": "2023-07-04T07:32:47.761Z",
-    "startsAt": "2023-06-29T07:32:47.761Z"
+    "endsAt": "2023-07-04T07:40:13.315Z",
+    "startsAt": "2023-06-29T07:40:13.315Z"
   },
   {
     "startBlock": 17568989,
@@ -2798,8 +2833,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 113.1,
-    "endsAt": "2023-07-03T03:24:11.761Z",
-    "startsAt": "2023-06-28T03:24:11.761Z"
+    "endsAt": "2023-07-03T03:31:37.315Z",
+    "startsAt": "2023-06-28T03:31:37.315Z"
   },
   {
     "startBlock": 17567406,
@@ -2838,8 +2873,8 @@
       "Physical"
     ],
     "dynamicQuorum": 112.95,
-    "endsAt": "2023-07-02T22:07:35.762Z",
-    "startsAt": "2023-06-27T22:07:35.762Z"
+    "endsAt": "2023-07-02T22:15:01.316Z",
+    "startsAt": "2023-06-27T22:15:01.316Z"
   },
   {
     "startBlock": 17564523,
@@ -2874,8 +2909,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 112.95,
-    "endsAt": "2023-07-02T12:30:59.762Z",
-    "startsAt": "2023-06-27T12:30:59.762Z"
+    "endsAt": "2023-07-02T12:38:25.316Z",
+    "startsAt": "2023-06-27T12:38:25.316Z"
   },
   {
     "startBlock": 17546627,
@@ -2910,8 +2945,8 @@
       "Community"
     ],
     "dynamicQuorum": 111.9,
-    "endsAt": "2023-06-30T00:51:47.762Z",
-    "startsAt": "2023-06-25T00:51:47.762Z"
+    "endsAt": "2023-06-30T00:59:13.316Z",
+    "startsAt": "2023-06-25T00:59:13.316Z"
   },
   {
     "startBlock": 17530569,
@@ -2946,8 +2981,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 112.05,
-    "endsAt": "2023-06-27T19:20:11.762Z",
-    "startsAt": "2023-06-22T19:20:11.762Z"
+    "endsAt": "2023-06-27T19:27:37.316Z",
+    "startsAt": "2023-06-22T19:27:37.316Z"
   },
   {
     "startBlock": 17519618,
@@ -2983,8 +3018,8 @@
       "Physical"
     ],
     "dynamicQuorum": 111.9,
-    "endsAt": "2023-06-26T06:49:59.762Z",
-    "startsAt": "2023-06-21T06:49:59.762Z"
+    "endsAt": "2023-06-26T06:57:25.316Z",
+    "startsAt": "2023-06-21T06:57:25.316Z"
   },
   {
     "startBlock": 17517082,
@@ -3033,8 +3068,8 @@
       "Tech"
     ],
     "dynamicQuorum": 74.5,
-    "endsAt": "2023-06-25T22:22:47.762Z",
-    "startsAt": "2023-06-20T22:22:47.762Z"
+    "endsAt": "2023-06-25T22:30:13.316Z",
+    "startsAt": "2023-06-20T22:30:13.316Z"
   },
   {
     "startBlock": 17508136,
@@ -3070,8 +3105,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 111.6,
-    "endsAt": "2023-06-24T16:33:35.762Z",
-    "startsAt": "2023-06-19T16:33:35.762Z"
+    "endsAt": "2023-06-24T16:41:01.316Z",
+    "startsAt": "2023-06-19T16:41:01.316Z"
   },
   {
     "startBlock": 17501220,
@@ -3107,8 +3142,8 @@
       "Physical"
     ],
     "dynamicQuorum": 74.3,
-    "endsAt": "2023-06-23T17:30:23.762Z",
-    "startsAt": "2023-06-18T17:30:23.762Z"
+    "endsAt": "2023-06-23T17:37:49.316Z",
+    "startsAt": "2023-06-18T17:37:49.316Z"
   },
   {
     "startBlock": 17486256,
@@ -3144,8 +3179,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 111,
-    "endsAt": "2023-06-21T15:37:35.763Z",
-    "startsAt": "2023-06-16T15:37:35.763Z"
+    "endsAt": "2023-06-21T15:45:01.316Z",
+    "startsAt": "2023-06-16T15:45:01.316Z"
   },
   {
     "startBlock": 17475935,
@@ -3180,8 +3215,8 @@
       "Community"
     ],
     "dynamicQuorum": 110.85,
-    "endsAt": "2023-06-20T05:13:23.763Z",
-    "startsAt": "2023-06-15T05:13:23.763Z"
+    "endsAt": "2023-06-20T05:20:49.316Z",
+    "startsAt": "2023-06-15T05:20:49.316Z"
   },
   {
     "startBlock": 17460762,
@@ -3219,8 +3254,8 @@
       "Physical"
     ],
     "dynamicQuorum": 110.4,
-    "endsAt": "2023-06-18T02:38:47.763Z",
-    "startsAt": "2023-06-13T02:38:47.763Z"
+    "endsAt": "2023-06-18T02:46:13.316Z",
+    "startsAt": "2023-06-13T02:46:13.316Z"
   },
   {
     "startBlock": 17460004,
@@ -3255,8 +3290,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 73.6,
-    "endsAt": "2023-06-18T00:07:11.763Z",
-    "startsAt": "2023-06-13T00:07:11.763Z"
+    "endsAt": "2023-06-18T00:14:37.317Z",
+    "startsAt": "2023-06-13T00:14:37.317Z"
   },
   {
     "startBlock": 17459594,
@@ -3291,8 +3326,8 @@
       "Charity"
     ],
     "dynamicQuorum": 110.4,
-    "endsAt": "2023-06-17T22:45:11.764Z",
-    "startsAt": "2023-06-12T22:45:11.764Z"
+    "endsAt": "2023-06-17T22:52:37.317Z",
+    "startsAt": "2023-06-12T22:52:37.317Z"
   },
   {
     "startBlock": 17430929,
@@ -3330,8 +3365,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 109.8,
-    "endsAt": "2023-06-13T23:12:11.764Z",
-    "startsAt": "2023-06-08T23:12:11.764Z"
+    "endsAt": "2023-06-13T23:19:37.317Z",
+    "startsAt": "2023-06-08T23:19:37.317Z"
   },
   {
     "startBlock": 17423093,
@@ -3368,8 +3403,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 73,
-    "endsAt": "2023-06-12T21:04:59.764Z",
-    "startsAt": "2023-06-07T21:04:59.764Z"
+    "endsAt": "2023-06-12T21:12:25.317Z",
+    "startsAt": "2023-06-07T21:12:25.317Z"
   },
   {
     "startBlock": 17413806,
@@ -3406,8 +3441,8 @@
       "Art"
     ],
     "dynamicQuorum": 109.35,
-    "endsAt": "2023-06-11T14:07:35.765Z",
-    "startsAt": "2023-06-06T14:07:35.765Z"
+    "endsAt": "2023-06-11T14:15:01.317Z",
+    "startsAt": "2023-06-06T14:15:01.317Z"
   },
   {
     "startBlock": 17401340,
@@ -3443,8 +3478,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 109.05,
-    "endsAt": "2023-06-09T20:34:23.766Z",
-    "startsAt": "2023-06-04T20:34:23.766Z"
+    "endsAt": "2023-06-09T20:41:49.317Z",
+    "startsAt": "2023-06-04T20:41:49.317Z"
   },
   {
     "startBlock": 17377861,
@@ -3479,8 +3514,8 @@
       "Art"
     ],
     "dynamicQuorum": 108.6,
-    "endsAt": "2023-06-06T14:18:35.766Z",
-    "startsAt": "2023-06-01T14:18:35.766Z"
+    "endsAt": "2023-06-06T14:26:01.317Z",
+    "startsAt": "2023-06-01T14:26:01.317Z"
   },
   {
     "startBlock": 17370230,
@@ -3519,8 +3554,8 @@
       "Tech"
     ],
     "dynamicQuorum": 108.45,
-    "endsAt": "2023-06-05T12:52:23.766Z",
-    "startsAt": "2023-05-31T12:52:23.766Z"
+    "endsAt": "2023-06-05T12:59:49.317Z",
+    "startsAt": "2023-05-31T12:59:49.317Z"
   },
   {
     "startBlock": 17333967,
@@ -3555,8 +3590,8 @@
       "Community"
     ],
     "dynamicQuorum": 107.55,
-    "endsAt": "2023-05-31T11:59:47.767Z",
-    "startsAt": "2023-05-26T11:59:47.767Z"
+    "endsAt": "2023-05-31T12:07:13.317Z",
+    "startsAt": "2023-05-26T12:07:13.317Z"
   },
   {
     "startBlock": 17333775,
@@ -3591,8 +3626,8 @@
       "Community"
     ],
     "dynamicQuorum": 107.55,
-    "endsAt": "2023-05-31T11:21:23.767Z",
-    "startsAt": "2023-05-26T11:21:23.767Z"
+    "endsAt": "2023-05-31T11:28:49.317Z",
+    "startsAt": "2023-05-26T11:28:49.317Z"
   },
   {
     "startBlock": 17313057,
@@ -3628,8 +3663,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 107.1,
-    "endsAt": "2023-05-28T14:17:47.767Z",
-    "startsAt": "2023-05-23T14:17:47.767Z"
+    "endsAt": "2023-05-28T14:25:13.318Z",
+    "startsAt": "2023-05-23T14:25:13.318Z"
   },
   {
     "startBlock": 17280068,
@@ -3664,8 +3699,8 @@
       "Operational"
     ],
     "dynamicQuorum": 70.8,
-    "endsAt": "2023-05-24T00:19:59.767Z",
-    "startsAt": "2023-05-19T00:19:59.767Z"
+    "endsAt": "2023-05-24T00:27:25.318Z",
+    "startsAt": "2023-05-19T00:27:25.318Z"
   },
   {
     "startBlock": 17276392,
@@ -3700,8 +3735,8 @@
       "Operational"
     ],
     "dynamicQuorum": 70.8,
-    "endsAt": "2023-05-23T12:04:47.767Z",
-    "startsAt": "2023-05-18T12:04:47.767Z"
+    "endsAt": "2023-05-23T12:12:13.318Z",
+    "startsAt": "2023-05-18T12:12:13.318Z"
   },
   {
     "startBlock": 17271705,
@@ -3736,8 +3771,8 @@
       "Uncategorized"
     ],
     "dynamicQuorum": 115.7,
-    "endsAt": "2023-05-22T20:27:23.768Z",
-    "startsAt": "2023-05-17T20:27:23.768Z"
+    "endsAt": "2023-05-22T20:34:49.318Z",
+    "startsAt": "2023-05-17T20:34:49.318Z"
   },
   {
     "startBlock": 17269609,
@@ -3772,8 +3807,8 @@
       "Tech"
     ],
     "dynamicQuorum": 141.4,
-    "endsAt": "2023-05-22T13:28:11.781Z",
-    "startsAt": "2023-05-17T13:28:11.781Z"
+    "endsAt": "2023-05-22T13:35:37.318Z",
+    "startsAt": "2023-05-17T13:35:37.318Z"
   },
   {
     "startBlock": 17264212,
@@ -3812,8 +3847,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 141.2,
-    "endsAt": "2023-05-21T19:28:47.781Z",
-    "startsAt": "2023-05-16T19:28:47.781Z"
+    "endsAt": "2023-05-21T19:36:13.318Z",
+    "startsAt": "2023-05-16T19:36:13.318Z"
   },
   {
     "startBlock": 17260052,
@@ -3855,8 +3890,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 141,
-    "endsAt": "2023-05-21T05:36:47.782Z",
-    "startsAt": "2023-05-16T05:36:47.782Z"
+    "endsAt": "2023-05-21T05:44:13.318Z",
+    "startsAt": "2023-05-16T05:44:13.318Z"
   },
   {
     "startBlock": 17259338,
@@ -3891,8 +3926,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 115.5,
-    "endsAt": "2023-05-21T03:13:59.782Z",
-    "startsAt": "2023-05-16T03:13:59.782Z"
+    "endsAt": "2023-05-21T03:21:25.318Z",
+    "startsAt": "2023-05-16T03:21:25.318Z"
   },
   {
     "startBlock": 17252887,
@@ -3927,8 +3962,8 @@
       "Physical"
     ],
     "dynamicQuorum": 115.4,
-    "endsAt": "2023-05-20T05:43:47.782Z",
-    "startsAt": "2023-05-15T05:43:47.782Z"
+    "endsAt": "2023-05-20T05:51:13.319Z",
+    "startsAt": "2023-05-15T05:51:13.319Z"
   },
   {
     "startBlock": 17249055,
@@ -3965,8 +4000,8 @@
       "Physical"
     ],
     "dynamicQuorum": 140.8,
-    "endsAt": "2023-05-19T16:57:23.782Z",
-    "startsAt": "2023-05-14T16:57:23.782Z"
+    "endsAt": "2023-05-19T17:04:49.319Z",
+    "startsAt": "2023-05-14T17:04:49.319Z"
   },
   {
     "startBlock": 17240546,
@@ -4001,8 +4036,8 @@
       "Community"
     ],
     "dynamicQuorum": 140.6,
-    "endsAt": "2023-05-18T12:35:35.782Z",
-    "startsAt": "2023-05-13T12:35:35.782Z"
+    "endsAt": "2023-05-18T12:43:01.319Z",
+    "startsAt": "2023-05-13T12:43:01.319Z"
   },
   {
     "startBlock": 17210853,
@@ -4037,8 +4072,8 @@
       "Community"
     ],
     "dynamicQuorum": 132.7,
-    "endsAt": "2023-05-14T09:36:59.782Z",
-    "startsAt": "2023-05-09T09:36:59.782Z"
+    "endsAt": "2023-05-14T09:44:25.319Z",
+    "startsAt": "2023-05-09T09:44:25.319Z"
   },
   {
     "startBlock": 17209672,
@@ -4073,8 +4108,8 @@
       "Physical"
     ],
     "dynamicQuorum": 139.4,
-    "endsAt": "2023-05-14T05:40:47.783Z",
-    "startsAt": "2023-05-09T05:40:47.783Z"
+    "endsAt": "2023-05-14T05:48:13.319Z",
+    "startsAt": "2023-05-09T05:48:13.319Z"
   },
   {
     "startBlock": 17199196,
@@ -4109,8 +4144,8 @@
       "Operational"
     ],
     "dynamicQuorum": 139.2,
-    "endsAt": "2023-05-12T18:45:35.783Z",
-    "startsAt": "2023-05-07T18:45:35.783Z"
+    "endsAt": "2023-05-12T18:53:01.319Z",
+    "startsAt": "2023-05-07T18:53:01.319Z"
   },
   {
     "startBlock": 17194115,
@@ -4150,8 +4185,8 @@
       "Tech"
     ],
     "dynamicQuorum": 139,
-    "endsAt": "2023-05-12T01:49:23.783Z",
-    "startsAt": "2023-05-07T01:49:23.783Z"
+    "endsAt": "2023-05-12T01:56:49.320Z",
+    "startsAt": "2023-05-07T01:56:49.320Z"
   },
   {
     "startBlock": 17179647,
@@ -4186,8 +4221,8 @@
       "Tech"
     ],
     "dynamicQuorum": 111.3,
-    "endsAt": "2023-05-10T01:35:47.783Z",
-    "startsAt": "2023-05-05T01:35:47.783Z"
+    "endsAt": "2023-05-10T01:43:13.320Z",
+    "startsAt": "2023-05-05T01:43:13.320Z"
   },
   {
     "startBlock": 17177400,
@@ -4222,8 +4257,8 @@
       "Tech"
     ],
     "dynamicQuorum": 138.6,
-    "endsAt": "2023-05-09T18:06:23.783Z",
-    "startsAt": "2023-05-04T18:06:23.783Z"
+    "endsAt": "2023-05-09T18:13:49.320Z",
+    "startsAt": "2023-05-04T18:13:49.320Z"
   },
   {
     "startBlock": 17173962,
@@ -4260,8 +4295,8 @@
       "Charity"
     ],
     "dynamicQuorum": 138.4,
-    "endsAt": "2023-05-09T06:38:47.784Z",
-    "startsAt": "2023-05-04T06:38:47.784Z"
+    "endsAt": "2023-05-09T06:46:13.320Z",
+    "startsAt": "2023-05-04T06:46:13.320Z"
   },
   {
     "startBlock": 17169383,
@@ -4296,8 +4331,8 @@
       "Physical"
     ],
     "dynamicQuorum": 138.4,
-    "endsAt": "2023-05-08T15:22:59.784Z",
-    "startsAt": "2023-05-03T15:22:59.784Z"
+    "endsAt": "2023-05-08T15:30:25.320Z",
+    "startsAt": "2023-05-03T15:30:25.320Z"
   },
   {
     "startBlock": 17165965,
@@ -4333,8 +4368,8 @@
       "Community"
     ],
     "dynamicQuorum": 138,
-    "endsAt": "2023-05-08T03:59:23.784Z",
-    "startsAt": "2023-05-03T03:59:23.784Z"
+    "endsAt": "2023-05-08T04:06:49.320Z",
+    "startsAt": "2023-05-03T04:06:49.320Z"
   },
   {
     "startBlock": 17163230,
@@ -4373,8 +4408,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 69,
-    "endsAt": "2023-05-07T18:52:23.784Z",
-    "startsAt": "2023-05-02T18:52:23.784Z"
+    "endsAt": "2023-05-07T18:59:49.320Z",
+    "startsAt": "2023-05-02T18:59:49.320Z"
   },
   {
     "startBlock": 17157614,
@@ -4411,8 +4446,8 @@
       "Community"
     ],
     "dynamicQuorum": 137.8,
-    "endsAt": "2023-05-07T00:09:11.784Z",
-    "startsAt": "2023-05-02T00:09:11.784Z"
+    "endsAt": "2023-05-07T00:16:37.320Z",
+    "startsAt": "2023-05-02T00:16:37.320Z"
   },
   {
     "startBlock": 17156316,
@@ -4447,8 +4482,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 137.8,
-    "endsAt": "2023-05-06T19:49:35.785Z",
-    "startsAt": "2023-05-01T19:49:35.785Z"
+    "endsAt": "2023-05-06T19:57:01.321Z",
+    "startsAt": "2023-05-01T19:57:01.321Z"
   },
   {
     "startBlock": 17155064,
@@ -4487,8 +4522,8 @@
       "Operational"
     ],
     "dynamicQuorum": 137.8,
-    "endsAt": "2023-05-06T15:39:11.785Z",
-    "startsAt": "2023-05-01T15:39:11.785Z"
+    "endsAt": "2023-05-06T15:46:37.321Z",
+    "startsAt": "2023-05-01T15:46:37.321Z"
   },
   {
     "startBlock": 17153330,
@@ -4528,8 +4563,8 @@
       "Physical"
     ],
     "dynamicQuorum": 137.6,
-    "endsAt": "2023-05-06T09:52:23.785Z",
-    "startsAt": "2023-05-01T09:52:23.785Z"
+    "endsAt": "2023-05-06T09:59:49.321Z",
+    "startsAt": "2023-05-01T09:59:49.321Z"
   },
   {
     "startBlock": 17122628,
@@ -4564,8 +4599,8 @@
       "Community"
     ],
     "dynamicQuorum": 136.8,
-    "endsAt": "2023-05-02T03:31:59.785Z",
-    "startsAt": "2023-04-27T03:31:59.785Z"
+    "endsAt": "2023-05-02T03:39:25.321Z",
+    "startsAt": "2023-04-27T03:39:25.321Z"
   },
   {
     "startBlock": 17076600,
@@ -4606,8 +4641,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 135.4,
-    "endsAt": "2023-04-25T18:06:23.786Z",
-    "startsAt": "2023-04-20T18:06:23.786Z"
+    "endsAt": "2023-04-25T18:13:49.321Z",
+    "startsAt": "2023-04-20T18:13:49.321Z"
   },
   {
     "startBlock": 17063814,
@@ -4642,8 +4677,8 @@
       "Tech"
     ],
     "dynamicQuorum": 101.25,
-    "endsAt": "2023-04-23T23:29:11.786Z",
-    "startsAt": "2023-04-18T23:29:11.786Z"
+    "endsAt": "2023-04-23T23:36:37.321Z",
+    "startsAt": "2023-04-18T23:36:37.321Z"
   },
   {
     "startBlock": 17056850,
@@ -4678,8 +4713,8 @@
       "Community"
     ],
     "dynamicQuorum": 67.4,
-    "endsAt": "2023-04-23T00:16:23.786Z",
-    "startsAt": "2023-04-18T00:16:23.786Z"
+    "endsAt": "2023-04-23T00:23:49.321Z",
+    "startsAt": "2023-04-18T00:23:49.321Z"
   },
   {
     "startBlock": 17050274,
@@ -4715,8 +4750,8 @@
       "Physical"
     ],
     "dynamicQuorum": 100.95,
-    "endsAt": "2023-04-22T02:21:11.787Z",
-    "startsAt": "2023-04-17T02:21:11.787Z"
+    "endsAt": "2023-04-22T02:28:37.321Z",
+    "startsAt": "2023-04-17T02:28:37.321Z"
   },
   {
     "startBlock": 17030749,
@@ -4751,8 +4786,8 @@
       "Physical"
     ],
     "dynamicQuorum": 100.35,
-    "endsAt": "2023-04-19T09:16:11.787Z",
-    "startsAt": "2023-04-14T09:16:11.787Z"
+    "endsAt": "2023-04-19T09:23:37.321Z",
+    "startsAt": "2023-04-14T09:23:37.321Z"
   },
   {
     "startBlock": 16999179,
@@ -4790,8 +4825,8 @@
       "Physical"
     ],
     "dynamicQuorum": 99.75,
-    "endsAt": "2023-04-15T00:02:11.787Z",
-    "startsAt": "2023-04-10T00:02:11.787Z"
+    "endsAt": "2023-04-15T00:09:37.321Z",
+    "startsAt": "2023-04-10T00:09:37.321Z"
   },
   {
     "startBlock": 16993570,
@@ -4829,8 +4864,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 99.6,
-    "endsAt": "2023-04-14T05:20:23.788Z",
-    "startsAt": "2023-04-09T05:20:23.788Z"
+    "endsAt": "2023-04-14T05:27:49.321Z",
+    "startsAt": "2023-04-09T05:27:49.321Z"
   },
   {
     "startBlock": 16977941,
@@ -4865,8 +4900,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 99.3,
-    "endsAt": "2023-04-12T01:14:35.792Z",
-    "startsAt": "2023-04-07T01:14:35.792Z"
+    "endsAt": "2023-04-12T01:22:01.321Z",
+    "startsAt": "2023-04-07T01:22:01.321Z"
   },
   {
     "startBlock": 16977351,
@@ -4901,8 +4936,8 @@
       "Operational"
     ],
     "dynamicQuorum": 99.3,
-    "endsAt": "2023-04-11T23:16:35.794Z",
-    "startsAt": "2023-04-06T23:16:35.794Z"
+    "endsAt": "2023-04-11T23:24:01.321Z",
+    "startsAt": "2023-04-06T23:24:01.321Z"
   },
   {
     "startBlock": 16974514,
@@ -4938,8 +4973,8 @@
       "Tech"
     ],
     "dynamicQuorum": 99,
-    "endsAt": "2023-04-11T13:49:11.803Z",
-    "startsAt": "2023-04-06T13:49:11.803Z"
+    "endsAt": "2023-04-11T13:56:37.322Z",
+    "startsAt": "2023-04-06T13:56:37.322Z"
   },
   {
     "startBlock": 16965688,
@@ -4974,8 +5009,8 @@
       "Art"
     ],
     "dynamicQuorum": 94.9,
-    "endsAt": "2023-04-10T08:23:59.803Z",
-    "startsAt": "2023-04-05T08:23:59.803Z"
+    "endsAt": "2023-04-10T08:31:25.322Z",
+    "startsAt": "2023-04-05T08:31:25.322Z"
   },
   {
     "startBlock": 16922793,
@@ -5010,8 +5045,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 97.95,
-    "endsAt": "2023-04-04T09:24:59.804Z",
-    "startsAt": "2023-03-30T09:24:59.804Z"
+    "endsAt": "2023-04-04T09:32:25.322Z",
+    "startsAt": "2023-03-30T09:32:25.322Z"
   },
   {
     "startBlock": 16916482,
@@ -5048,8 +5083,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 77.2,
-    "endsAt": "2023-04-03T12:22:47.804Z",
-    "startsAt": "2023-03-29T12:22:47.804Z"
+    "endsAt": "2023-04-03T12:30:13.322Z",
+    "startsAt": "2023-03-29T12:30:13.322Z"
   },
   {
     "startBlock": 16906150,
@@ -5087,8 +5122,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 97.5,
-    "endsAt": "2023-04-02T01:56:23.804Z",
-    "startsAt": "2023-03-28T01:56:23.804Z"
+    "endsAt": "2023-04-02T02:03:49.322Z",
+    "startsAt": "2023-03-28T02:03:49.322Z"
   },
   {
     "startBlock": 16882798,
@@ -5123,8 +5158,8 @@
       "Tech"
     ],
     "dynamicQuorum": 96.9,
-    "endsAt": "2023-03-29T20:05:59.804Z",
-    "startsAt": "2023-03-24T20:05:59.804Z"
+    "endsAt": "2023-03-29T20:13:25.322Z",
+    "startsAt": "2023-03-24T20:13:25.322Z"
   },
   {
     "startBlock": 16878401,
@@ -5163,8 +5198,8 @@
       "Physical"
     ],
     "dynamicQuorum": 64.6,
-    "endsAt": "2023-03-29T05:26:35.805Z",
-    "startsAt": "2023-03-24T05:26:35.805Z"
+    "endsAt": "2023-03-29T05:34:01.322Z",
+    "startsAt": "2023-03-24T05:34:01.322Z"
   },
   {
     "startBlock": 16877892,
@@ -5199,8 +5234,8 @@
       "Community"
     ],
     "dynamicQuorum": 96.9,
-    "endsAt": "2023-03-29T03:44:47.805Z",
-    "startsAt": "2023-03-24T03:44:47.805Z"
+    "endsAt": "2023-03-29T03:52:13.322Z",
+    "startsAt": "2023-03-24T03:52:13.322Z"
   },
   {
     "startBlock": 16876821,
@@ -5240,8 +5275,8 @@
       "Physical"
     ],
     "dynamicQuorum": 96.9,
-    "endsAt": "2023-03-29T00:10:35.805Z",
-    "startsAt": "2023-03-24T00:10:35.805Z"
+    "endsAt": "2023-03-29T00:18:01.322Z",
+    "startsAt": "2023-03-24T00:18:01.322Z"
   },
   {
     "startBlock": 16876188,
@@ -5280,8 +5315,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 96.75,
-    "endsAt": "2023-03-28T22:03:59.805Z",
-    "startsAt": "2023-03-23T22:03:59.805Z"
+    "endsAt": "2023-03-28T22:11:25.322Z",
+    "startsAt": "2023-03-23T22:11:25.322Z"
   },
   {
     "startBlock": 16864654,
@@ -5318,8 +5353,8 @@
       "Tech"
     ],
     "dynamicQuorum": 67.4,
-    "endsAt": "2023-03-27T07:37:11.811Z",
-    "startsAt": "2023-03-22T07:37:11.811Z"
+    "endsAt": "2023-03-27T07:44:37.322Z",
+    "startsAt": "2023-03-22T07:44:37.322Z"
   },
   {
     "startBlock": 16821992,
@@ -5354,8 +5389,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 64.7,
-    "endsAt": "2023-03-21T09:24:47.811Z",
-    "startsAt": "2023-03-16T09:24:47.811Z"
+    "endsAt": "2023-03-21T09:32:13.322Z",
+    "startsAt": "2023-03-16T09:32:13.322Z"
   },
   {
     "startBlock": 16821224,
@@ -5394,8 +5429,8 @@
       "Operational"
     ],
     "dynamicQuorum": 95.55,
-    "endsAt": "2023-03-21T06:51:11.811Z",
-    "startsAt": "2023-03-16T06:51:11.811Z"
+    "endsAt": "2023-03-21T06:58:37.322Z",
+    "startsAt": "2023-03-16T06:58:37.322Z"
   },
   {
     "startBlock": 16817485,
@@ -5432,8 +5467,8 @@
       "Operational"
     ],
     "dynamicQuorum": 63.6,
-    "endsAt": "2023-03-20T18:23:23.811Z",
-    "startsAt": "2023-03-15T18:23:23.811Z"
+    "endsAt": "2023-03-20T18:30:49.322Z",
+    "startsAt": "2023-03-15T18:30:49.322Z"
   },
   {
     "startBlock": 16772277,
@@ -5469,8 +5504,8 @@
       "Tech"
     ],
     "dynamicQuorum": 87.9,
-    "endsAt": "2023-03-14T11:41:47.811Z",
-    "startsAt": "2023-03-09T11:41:47.811Z"
+    "endsAt": "2023-03-14T11:49:13.322Z",
+    "startsAt": "2023-03-09T11:49:13.322Z"
   },
   {
     "startBlock": 16770521,
@@ -5507,8 +5542,8 @@
       "Art"
     ],
     "dynamicQuorum": 64.9,
-    "endsAt": "2023-03-14T05:50:35.812Z",
-    "startsAt": "2023-03-09T05:50:35.812Z"
+    "endsAt": "2023-03-14T05:58:01.323Z",
+    "startsAt": "2023-03-09T05:58:01.323Z"
   },
   {
     "startBlock": 16765748,
@@ -5544,8 +5579,8 @@
       "Tech"
     ],
     "dynamicQuorum": 69.8,
-    "endsAt": "2023-03-13T13:55:59.812Z",
-    "startsAt": "2023-03-08T13:55:59.812Z"
+    "endsAt": "2023-03-13T14:03:25.323Z",
+    "startsAt": "2023-03-08T14:03:25.323Z"
   },
   {
     "startBlock": 16761759,
@@ -5581,8 +5616,8 @@
       "Tech"
     ],
     "dynamicQuorum": 62.7,
-    "endsAt": "2023-03-13T00:38:11.815Z",
-    "startsAt": "2023-03-08T00:38:11.815Z"
+    "endsAt": "2023-03-13T00:45:37.323Z",
+    "startsAt": "2023-03-08T00:45:37.323Z"
   },
   {
     "startBlock": 16759187,
@@ -5617,8 +5652,8 @@
       "Tech"
     ],
     "dynamicQuorum": 94.05,
-    "endsAt": "2023-03-12T16:03:47.815Z",
-    "startsAt": "2023-03-07T16:03:47.815Z"
+    "endsAt": "2023-03-12T16:11:13.323Z",
+    "startsAt": "2023-03-07T16:11:13.323Z"
   },
   {
     "startBlock": 16735985,
@@ -5653,8 +5688,8 @@
       "Tech"
     ],
     "dynamicQuorum": 93.6,
-    "endsAt": "2023-03-09T10:43:23.816Z",
-    "startsAt": "2023-03-04T10:43:23.816Z"
+    "endsAt": "2023-03-09T10:50:49.323Z",
+    "startsAt": "2023-03-04T10:50:49.323Z"
   },
   {
     "startBlock": 16722423,
@@ -5690,8 +5725,8 @@
       "Tech"
     ],
     "dynamicQuorum": 93.3,
-    "endsAt": "2023-03-07T13:30:59.816Z",
-    "startsAt": "2023-03-02T13:30:59.816Z"
+    "endsAt": "2023-03-07T13:38:25.323Z",
+    "startsAt": "2023-03-02T13:38:25.323Z"
   },
   {
     "startBlock": 16665618,
@@ -5728,8 +5763,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 91.95,
-    "endsAt": "2023-02-27T16:09:59.817Z",
-    "startsAt": "2023-02-22T16:09:59.817Z"
+    "endsAt": "2023-02-27T16:17:25.323Z",
+    "startsAt": "2023-02-22T16:17:25.323Z"
   },
   {
     "startBlock": 16650922,
@@ -5764,8 +5799,8 @@
       "Tech"
     ],
     "dynamicQuorum": 91.5,
-    "endsAt": "2023-02-25T15:10:47.817Z",
-    "startsAt": "2023-02-20T15:10:47.817Z"
+    "endsAt": "2023-02-25T15:18:13.323Z",
+    "startsAt": "2023-02-20T15:18:13.323Z"
   },
   {
     "startBlock": 16623340,
@@ -5801,8 +5836,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 60.6,
-    "endsAt": "2023-02-21T19:14:23.817Z",
-    "startsAt": "2023-02-16T19:14:23.817Z"
+    "endsAt": "2023-02-21T19:21:49.323Z",
+    "startsAt": "2023-02-16T19:21:49.323Z"
   },
   {
     "startBlock": 16622280,
@@ -5838,8 +5873,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 60.6,
-    "endsAt": "2023-02-21T15:42:23.817Z",
-    "startsAt": "2023-02-16T15:42:23.817Z"
+    "endsAt": "2023-02-21T15:49:49.323Z",
+    "startsAt": "2023-02-16T15:49:49.323Z"
   },
   {
     "startBlock": 16615872,
@@ -5877,8 +5912,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 60.5,
-    "endsAt": "2023-02-20T18:20:47.817Z",
-    "startsAt": "2023-02-15T18:20:47.817Z"
+    "endsAt": "2023-02-20T18:28:13.323Z",
+    "startsAt": "2023-02-15T18:28:13.323Z"
   },
   {
     "startBlock": 16615000,
@@ -5916,8 +5951,8 @@
       "Droposal"
     ],
     "dynamicQuorum": 60.5,
-    "endsAt": "2023-02-20T15:26:23.817Z",
-    "startsAt": "2023-02-15T15:26:23.817Z"
+    "endsAt": "2023-02-20T15:33:49.323Z",
+    "startsAt": "2023-02-15T15:33:49.323Z"
   },
   {
     "startBlock": 16614456,
@@ -5952,8 +5987,8 @@
       "Community"
     ],
     "dynamicQuorum": 81.5,
-    "endsAt": "2023-02-20T13:37:35.817Z",
-    "startsAt": "2023-02-15T13:37:35.817Z"
+    "endsAt": "2023-02-20T13:45:01.323Z",
+    "startsAt": "2023-02-15T13:45:01.323Z"
   },
   {
     "startBlock": 16612397,
@@ -5988,8 +6023,8 @@
       "Art"
     ],
     "dynamicQuorum": 90.6,
-    "endsAt": "2023-02-20T06:45:47.818Z",
-    "startsAt": "2023-02-15T06:45:47.818Z"
+    "endsAt": "2023-02-20T06:53:13.324Z",
+    "startsAt": "2023-02-15T06:53:13.324Z"
   },
   {
     "startBlock": 16611116,
@@ -6024,8 +6059,8 @@
       "Art"
     ],
     "dynamicQuorum": 60.4,
-    "endsAt": "2023-02-20T02:29:35.818Z",
-    "startsAt": "2023-02-15T02:29:35.818Z"
+    "endsAt": "2023-02-20T02:37:01.324Z",
+    "startsAt": "2023-02-15T02:37:01.324Z"
   },
   {
     "startBlock": 16608280,
@@ -6060,8 +6095,8 @@
       "Art"
     ],
     "dynamicQuorum": 60.4,
-    "endsAt": "2023-02-19T17:02:23.818Z",
-    "startsAt": "2023-02-14T17:02:23.818Z"
+    "endsAt": "2023-02-19T17:09:49.324Z",
+    "startsAt": "2023-02-14T17:09:49.324Z"
   },
   {
     "startBlock": 16600701,
@@ -6096,8 +6131,8 @@
       "Tech"
     ],
     "dynamicQuorum": 90.45,
-    "endsAt": "2023-02-18T15:46:35.818Z",
-    "startsAt": "2023-02-13T15:46:35.818Z"
+    "endsAt": "2023-02-18T15:54:01.324Z",
+    "startsAt": "2023-02-13T15:54:01.324Z"
   },
   {
     "startBlock": 16597519,
@@ -6133,8 +6168,8 @@
       "Physical"
     ],
     "dynamicQuorum": 90.3,
-    "endsAt": "2023-02-18T05:10:11.818Z",
-    "startsAt": "2023-02-13T05:10:11.818Z"
+    "endsAt": "2023-02-18T05:17:37.324Z",
+    "startsAt": "2023-02-13T05:17:37.324Z"
   },
   {
     "startBlock": 16579751,
@@ -6169,8 +6204,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 89.85,
-    "endsAt": "2023-02-15T17:56:35.818Z",
-    "startsAt": "2023-02-10T17:56:35.818Z"
+    "endsAt": "2023-02-15T18:04:01.324Z",
+    "startsAt": "2023-02-10T18:04:01.324Z"
   },
   {
     "startBlock": 16579547,
@@ -6207,8 +6242,8 @@
       "Community"
     ],
     "dynamicQuorum": 89.85,
-    "endsAt": "2023-02-15T17:15:47.819Z",
-    "startsAt": "2023-02-10T17:15:47.819Z"
+    "endsAt": "2023-02-15T17:23:13.324Z",
+    "startsAt": "2023-02-10T17:23:13.324Z"
   },
   {
     "startBlock": 16574025,
@@ -6243,8 +6278,8 @@
       "Art"
     ],
     "dynamicQuorum": 89.7,
-    "endsAt": "2023-02-14T22:51:23.819Z",
-    "startsAt": "2023-02-09T22:51:23.819Z"
+    "endsAt": "2023-02-14T22:58:49.324Z",
+    "startsAt": "2023-02-09T22:58:49.324Z"
   },
   {
     "startBlock": 16573906,
@@ -6281,8 +6316,8 @@
       "Art"
     ],
     "dynamicQuorum": 76.8,
-    "endsAt": "2023-02-14T22:27:35.819Z",
-    "startsAt": "2023-02-09T22:27:35.819Z"
+    "endsAt": "2023-02-14T22:35:01.324Z",
+    "startsAt": "2023-02-09T22:35:01.324Z"
   },
   {
     "startBlock": 16571818,
@@ -6317,8 +6352,8 @@
       "Tech"
     ],
     "dynamicQuorum": 89.7,
-    "endsAt": "2023-02-14T15:29:59.819Z",
-    "startsAt": "2023-02-09T15:29:59.819Z"
+    "endsAt": "2023-02-14T15:37:25.324Z",
+    "startsAt": "2023-02-09T15:37:25.324Z"
   },
   {
     "startBlock": 16565598,
@@ -6356,8 +6391,8 @@
       "Tech"
     ],
     "dynamicQuorum": 89.55,
-    "endsAt": "2023-02-13T18:45:59.819Z",
-    "startsAt": "2023-02-08T18:45:59.819Z"
+    "endsAt": "2023-02-13T18:53:25.324Z",
+    "startsAt": "2023-02-08T18:53:25.324Z"
   },
   {
     "startBlock": 16559392,
@@ -6394,8 +6429,8 @@
       "Operational"
     ],
     "dynamicQuorum": 89.4,
-    "endsAt": "2023-02-12T22:04:47.819Z",
-    "startsAt": "2023-02-07T22:04:47.819Z"
+    "endsAt": "2023-02-12T22:12:13.324Z",
+    "startsAt": "2023-02-07T22:12:13.324Z"
   },
   {
     "startBlock": 16559366,
@@ -6434,8 +6469,8 @@
       "Operational"
     ],
     "dynamicQuorum": 59.6,
-    "endsAt": "2023-02-12T21:59:35.820Z",
-    "startsAt": "2023-02-07T21:59:35.820Z"
+    "endsAt": "2023-02-12T22:07:01.324Z",
+    "startsAt": "2023-02-07T22:07:01.324Z"
   },
   {
     "startBlock": 16557559,
@@ -6470,8 +6505,8 @@
       "Community"
     ],
     "dynamicQuorum": 81.6,
-    "endsAt": "2023-02-12T15:58:11.820Z",
-    "startsAt": "2023-02-07T15:58:11.820Z"
+    "endsAt": "2023-02-12T16:05:37.324Z",
+    "startsAt": "2023-02-07T16:05:37.324Z"
   },
   {
     "startBlock": 16517211,
@@ -6507,8 +6542,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 88.35,
-    "endsAt": "2023-02-07T01:28:35.820Z",
-    "startsAt": "2023-02-02T01:28:35.820Z"
+    "endsAt": "2023-02-07T01:36:01.325Z",
+    "startsAt": "2023-02-02T01:36:01.325Z"
   },
   {
     "startBlock": 16506824,
@@ -6543,8 +6578,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 80.8,
-    "endsAt": "2023-02-05T14:51:11.821Z",
-    "startsAt": "2023-01-31T14:51:11.821Z"
+    "endsAt": "2023-02-05T14:58:37.325Z",
+    "startsAt": "2023-01-31T14:58:37.325Z"
   },
   {
     "startBlock": 16480284,
@@ -6581,8 +6616,8 @@
       "Tech"
     ],
     "dynamicQuorum": 87.6,
-    "endsAt": "2023-02-01T22:23:11.821Z",
-    "startsAt": "2023-01-27T22:23:11.821Z"
+    "endsAt": "2023-02-01T22:30:37.325Z",
+    "startsAt": "2023-01-27T22:30:37.325Z"
   },
   {
     "startBlock": 16478073,
@@ -6617,8 +6652,8 @@
       "Tech"
     ],
     "dynamicQuorum": 87.6,
-    "endsAt": "2023-02-01T15:00:59.821Z",
-    "startsAt": "2023-01-27T15:00:59.821Z"
+    "endsAt": "2023-02-01T15:08:25.325Z",
+    "startsAt": "2023-01-27T15:08:25.325Z"
   },
   {
     "startBlock": 16473459,
@@ -6656,8 +6691,8 @@
       "Tech"
     ],
     "dynamicQuorum": 64.3,
-    "endsAt": "2023-01-31T23:38:11.822Z",
-    "startsAt": "2023-01-26T23:38:11.822Z"
+    "endsAt": "2023-01-31T23:45:37.325Z",
+    "startsAt": "2023-01-26T23:45:37.325Z"
   },
   {
     "startBlock": 16472974,
@@ -6695,8 +6730,8 @@
       "Tech"
     ],
     "dynamicQuorum": 58.3,
-    "endsAt": "2023-01-31T22:01:11.822Z",
-    "startsAt": "2023-01-26T22:01:11.822Z"
+    "endsAt": "2023-01-31T22:08:37.325Z",
+    "startsAt": "2023-01-26T22:08:37.325Z"
   },
   {
     "startBlock": 16463682,
@@ -6731,8 +6766,8 @@
       "Other"
     ],
     "dynamicQuorum": 58.2,
-    "endsAt": "2023-01-30T15:02:47.822Z",
-    "startsAt": "2023-01-25T15:02:47.822Z"
+    "endsAt": "2023-01-30T15:10:13.325Z",
+    "startsAt": "2023-01-25T15:10:13.325Z"
   },
   {
     "startBlock": 16462464,
@@ -6769,8 +6804,8 @@
       "Community"
     ],
     "dynamicQuorum": 87.3,
-    "endsAt": "2023-01-30T10:59:11.829Z",
-    "startsAt": "2023-01-25T10:59:11.829Z"
+    "endsAt": "2023-01-30T11:06:37.325Z",
+    "startsAt": "2023-01-25T11:06:37.325Z"
   },
   {
     "startBlock": 16450199,
@@ -6805,8 +6840,8 @@
       "Other"
     ],
     "dynamicQuorum": 86.85,
-    "endsAt": "2023-01-28T18:06:11.832Z",
-    "startsAt": "2023-01-23T18:06:11.832Z"
+    "endsAt": "2023-01-28T18:13:37.325Z",
+    "startsAt": "2023-01-23T18:13:37.325Z"
   },
   {
     "startBlock": 16449247,
@@ -6842,8 +6877,8 @@
       "Community"
     ],
     "dynamicQuorum": 57.9,
-    "endsAt": "2023-01-28T14:55:47.832Z",
-    "startsAt": "2023-01-23T14:55:47.832Z"
+    "endsAt": "2023-01-28T15:03:13.325Z",
+    "startsAt": "2023-01-23T15:03:13.325Z"
   },
   {
     "startBlock": 16444455,
@@ -6878,8 +6913,8 @@
       "Physical"
     ],
     "dynamicQuorum": 86.7,
-    "endsAt": "2023-01-27T22:57:23.833Z",
-    "startsAt": "2023-01-22T22:57:23.833Z"
+    "endsAt": "2023-01-27T23:04:49.325Z",
+    "startsAt": "2023-01-22T23:04:49.325Z"
   },
   {
     "startBlock": 16435410,
@@ -6917,8 +6952,8 @@
       "Physical"
     ],
     "dynamicQuorum": 58.7,
-    "endsAt": "2023-01-26T16:48:23.834Z",
-    "startsAt": "2023-01-21T16:48:23.834Z"
+    "endsAt": "2023-01-26T16:55:49.326Z",
+    "startsAt": "2023-01-21T16:55:49.326Z"
   },
   {
     "startBlock": 16416971,
@@ -6954,8 +6989,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 86.1,
-    "endsAt": "2023-01-24T03:20:35.834Z",
-    "startsAt": "2023-01-19T03:20:35.834Z"
+    "endsAt": "2023-01-24T03:28:01.326Z",
+    "startsAt": "2023-01-19T03:28:01.326Z"
   },
   {
     "startBlock": 16415781,
@@ -6990,8 +7025,8 @@
       "Operational"
     ],
     "dynamicQuorum": 61.4,
-    "endsAt": "2023-01-23T23:22:35.834Z",
-    "startsAt": "2023-01-18T23:22:35.834Z"
+    "endsAt": "2023-01-23T23:30:01.326Z",
+    "startsAt": "2023-01-18T23:30:01.326Z"
   },
   {
     "startBlock": 16407907,
@@ -7026,8 +7061,8 @@
       "Tech"
     ],
     "dynamicQuorum": 85.95,
-    "endsAt": "2023-01-22T21:07:47.834Z",
-    "startsAt": "2023-01-17T21:07:47.834Z"
+    "endsAt": "2023-01-22T21:15:13.326Z",
+    "startsAt": "2023-01-17T21:15:13.326Z"
   },
   {
     "startBlock": 16404428,
@@ -7062,8 +7097,8 @@
       "Community"
     ],
     "dynamicQuorum": 85.95,
-    "endsAt": "2023-01-22T09:31:59.834Z",
-    "startsAt": "2023-01-17T09:31:59.834Z"
+    "endsAt": "2023-01-22T09:39:25.326Z",
+    "startsAt": "2023-01-17T09:39:25.326Z"
   },
   {
     "startBlock": 16402183,
@@ -7100,8 +7135,8 @@
       "Operational"
     ],
     "dynamicQuorum": 85.8,
-    "endsAt": "2023-01-22T02:02:59.835Z",
-    "startsAt": "2023-01-17T02:02:59.835Z"
+    "endsAt": "2023-01-22T02:10:25.326Z",
+    "startsAt": "2023-01-17T02:10:25.326Z"
   },
   {
     "startBlock": 16357505,
@@ -7136,8 +7171,8 @@
       "Art"
     ],
     "dynamicQuorum": 72.5,
-    "endsAt": "2023-01-15T21:07:23.835Z",
-    "startsAt": "2023-01-10T21:07:23.835Z"
+    "endsAt": "2023-01-15T21:14:49.326Z",
+    "startsAt": "2023-01-10T21:14:49.326Z"
   },
   {
     "startBlock": 16347404,
@@ -7172,8 +7207,8 @@
       "Tech"
     ],
     "dynamicQuorum": 84.6,
-    "endsAt": "2023-01-14T11:27:11.835Z",
-    "startsAt": "2023-01-09T11:27:11.835Z"
+    "endsAt": "2023-01-14T11:34:37.327Z",
+    "startsAt": "2023-01-09T11:34:37.327Z"
   },
   {
     "startBlock": 16333528,
@@ -7211,8 +7246,8 @@
       "Physical"
     ],
     "dynamicQuorum": 65.2,
-    "endsAt": "2023-01-12T13:11:59.835Z",
-    "startsAt": "2023-01-07T13:11:59.835Z"
+    "endsAt": "2023-01-12T13:19:25.327Z",
+    "startsAt": "2023-01-07T13:19:25.327Z"
   },
   {
     "startBlock": 16309457,
@@ -7247,8 +7282,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 83.55,
-    "endsAt": "2023-01-09T04:57:47.836Z",
-    "startsAt": "2023-01-04T04:57:47.836Z"
+    "endsAt": "2023-01-09T05:05:13.327Z",
+    "startsAt": "2023-01-04T05:05:13.327Z"
   },
   {
     "startBlock": 16256541,
@@ -7288,8 +7323,8 @@
       "Physical"
     ],
     "dynamicQuorum": 64.3,
-    "endsAt": "2023-01-01T20:34:35.836Z",
-    "startsAt": "2022-12-27T20:34:35.836Z"
+    "endsAt": "2023-01-01T20:42:01.327Z",
+    "startsAt": "2022-12-27T20:42:01.327Z"
   },
   {
     "startBlock": 16242005,
@@ -7324,8 +7359,8 @@
       "Tech"
     ],
     "dynamicQuorum": 82.5,
-    "endsAt": "2022-12-30T20:07:23.836Z",
-    "startsAt": "2022-12-25T20:07:23.836Z"
+    "endsAt": "2022-12-30T20:14:49.327Z",
+    "startsAt": "2022-12-25T20:14:49.327Z"
   },
   {
     "startBlock": 16241591,
@@ -7361,8 +7396,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 55,
-    "endsAt": "2022-12-30T18:44:35.836Z",
-    "startsAt": "2022-12-25T18:44:35.836Z"
+    "endsAt": "2022-12-30T18:52:01.327Z",
+    "startsAt": "2022-12-25T18:52:01.327Z"
   },
   {
     "startBlock": 16220341,
@@ -7397,8 +7432,8 @@
       "Operational"
     ],
     "dynamicQuorum": 54.7,
-    "endsAt": "2022-12-27T19:54:35.837Z",
-    "startsAt": "2022-12-22T19:54:35.837Z"
+    "endsAt": "2022-12-27T20:02:01.328Z",
+    "startsAt": "2022-12-22T20:02:01.328Z"
   },
   {
     "startBlock": 16214542,
@@ -7437,8 +7472,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 81.9,
-    "endsAt": "2022-12-27T00:34:47.837Z",
-    "startsAt": "2022-12-22T00:34:47.837Z"
+    "endsAt": "2022-12-27T00:42:13.328Z",
+    "startsAt": "2022-12-22T00:42:13.328Z"
   },
   {
     "startBlock": 16213420,
@@ -7477,8 +7512,8 @@
       "Tech"
     ],
     "dynamicQuorum": 62.6,
-    "endsAt": "2022-12-26T20:50:23.837Z",
-    "startsAt": "2022-12-21T20:50:23.837Z"
+    "endsAt": "2022-12-26T20:57:49.328Z",
+    "startsAt": "2022-12-21T20:57:49.328Z"
   },
   {
     "startBlock": 16209470,
@@ -7516,8 +7551,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 81.9,
-    "endsAt": "2022-12-26T07:40:23.838Z",
-    "startsAt": "2022-12-21T07:40:23.838Z"
+    "endsAt": "2022-12-26T07:47:49.328Z",
+    "startsAt": "2022-12-21T07:47:49.328Z"
   },
   {
     "startBlock": 16207117,
@@ -7553,8 +7588,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 55.5,
-    "endsAt": "2022-12-25T23:49:47.838Z",
-    "startsAt": "2022-12-20T23:49:47.838Z"
+    "endsAt": "2022-12-25T23:57:13.328Z",
+    "startsAt": "2022-12-20T23:57:13.328Z"
   },
   {
     "startBlock": 16194159,
@@ -7589,8 +7624,8 @@
       "Community"
     ],
     "dynamicQuorum": 81.6,
-    "endsAt": "2022-12-24T04:38:11.843Z",
-    "startsAt": "2022-12-19T04:38:11.843Z"
+    "endsAt": "2022-12-24T04:45:37.328Z",
+    "startsAt": "2022-12-19T04:45:37.328Z"
   },
   {
     "startBlock": 16191654,
@@ -7625,8 +7660,8 @@
       "Tech"
     ],
     "dynamicQuorum": 81.45,
-    "endsAt": "2022-12-23T20:17:11.844Z",
-    "startsAt": "2022-12-18T20:17:11.844Z"
+    "endsAt": "2022-12-23T20:24:37.328Z",
+    "startsAt": "2022-12-18T20:24:37.328Z"
   },
   {
     "startBlock": 16187121,
@@ -7661,8 +7696,8 @@
       "Art"
     ],
     "dynamicQuorum": 81.45,
-    "endsAt": "2022-12-23T05:10:35.846Z",
-    "startsAt": "2022-12-18T05:10:35.846Z"
+    "endsAt": "2022-12-23T05:18:01.328Z",
+    "startsAt": "2022-12-18T05:18:01.328Z"
   },
   {
     "startBlock": 16168429,
@@ -7702,8 +7737,8 @@
       "Tech"
     ],
     "dynamicQuorum": 80.85,
-    "endsAt": "2022-12-20T14:52:11.846Z",
-    "startsAt": "2022-12-15T14:52:11.846Z"
+    "endsAt": "2022-12-20T14:59:37.328Z",
+    "startsAt": "2022-12-15T14:59:37.328Z"
   },
   {
     "startBlock": 16155847,
@@ -7744,8 +7779,8 @@
       "Community"
     ],
     "dynamicQuorum": 53.7,
-    "endsAt": "2022-12-18T20:55:47.847Z",
-    "startsAt": "2022-12-13T20:55:47.847Z"
+    "endsAt": "2022-12-18T21:03:13.329Z",
+    "startsAt": "2022-12-13T21:03:13.329Z"
   },
   {
     "startBlock": 16155738,
@@ -7780,8 +7815,8 @@
       "Other"
     ],
     "dynamicQuorum": 55.7,
-    "endsAt": "2022-12-18T20:33:59.847Z",
-    "startsAt": "2022-12-13T20:33:59.847Z"
+    "endsAt": "2022-12-18T20:41:25.329Z",
+    "startsAt": "2022-12-13T20:41:25.329Z"
   },
   {
     "startBlock": 16149901,
@@ -7816,8 +7851,8 @@
       "Tech"
     ],
     "dynamicQuorum": 80.4,
-    "endsAt": "2022-12-18T01:06:35.847Z",
-    "startsAt": "2022-12-13T01:06:35.847Z"
+    "endsAt": "2022-12-18T01:14:01.329Z",
+    "startsAt": "2022-12-13T01:14:01.329Z"
   },
   {
     "startBlock": 16144888,
@@ -7852,8 +7887,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 80.4,
-    "endsAt": "2022-12-17T08:23:59.847Z",
-    "startsAt": "2022-12-12T08:23:59.847Z"
+    "endsAt": "2022-12-17T08:31:25.329Z",
+    "startsAt": "2022-12-12T08:31:25.329Z"
   },
   {
     "startBlock": 16128466,
@@ -7892,8 +7927,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 57.3,
-    "endsAt": "2022-12-15T01:39:35.847Z",
-    "startsAt": "2022-12-10T01:39:35.847Z"
+    "endsAt": "2022-12-15T01:47:01.329Z",
+    "startsAt": "2022-12-10T01:47:01.329Z"
   },
   {
     "startBlock": 16121460,
@@ -7929,8 +7964,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 53.2,
-    "endsAt": "2022-12-14T02:18:23.848Z",
-    "startsAt": "2022-12-09T02:18:23.848Z"
+    "endsAt": "2022-12-14T02:25:49.329Z",
+    "startsAt": "2022-12-09T02:25:49.329Z"
   },
   {
     "startBlock": 16114325,
@@ -7966,8 +8001,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 61,
-    "endsAt": "2022-12-13T02:31:23.848Z",
-    "startsAt": "2022-12-08T02:31:23.848Z"
+    "endsAt": "2022-12-13T02:38:49.329Z",
+    "startsAt": "2022-12-08T02:38:49.329Z"
   },
   {
     "startBlock": 16114122,
@@ -8002,8 +8037,8 @@
       "Community"
     ],
     "dynamicQuorum": 79.5,
-    "endsAt": "2022-12-13T01:50:47.848Z",
-    "startsAt": "2022-12-08T01:50:47.848Z"
+    "endsAt": "2022-12-13T01:58:13.329Z",
+    "startsAt": "2022-12-08T01:58:13.329Z"
   },
   {
     "startBlock": 16100164,
@@ -8039,8 +8074,8 @@
       "Other"
     ],
     "dynamicQuorum": 72.8,
-    "endsAt": "2022-12-11T03:19:11.848Z",
-    "startsAt": "2022-12-06T03:19:11.848Z"
+    "endsAt": "2022-12-11T03:26:37.330Z",
+    "startsAt": "2022-12-06T03:26:37.330Z"
   },
   {
     "startBlock": 16052148,
@@ -8076,8 +8111,8 @@
       "Tech"
     ],
     "dynamicQuorum": 65.2,
-    "endsAt": "2022-12-04T11:15:59.848Z",
-    "startsAt": "2022-11-29T11:15:59.848Z"
+    "endsAt": "2022-12-04T11:23:25.330Z",
+    "startsAt": "2022-11-29T11:23:25.330Z"
   },
   {
     "startBlock": 16051584,
@@ -8112,8 +8147,8 @@
       "Community"
     ],
     "dynamicQuorum": 78.3,
-    "endsAt": "2022-12-04T09:23:11.849Z",
-    "startsAt": "2022-11-29T09:23:11.849Z"
+    "endsAt": "2022-12-04T09:30:37.330Z",
+    "startsAt": "2022-11-29T09:30:37.330Z"
   },
   {
     "startBlock": 16033833,
@@ -8154,8 +8189,8 @@
       "Community"
     ],
     "dynamicQuorum": 52.8,
-    "endsAt": "2022-12-01T22:12:59.849Z",
-    "startsAt": "2022-11-26T22:12:59.849Z"
+    "endsAt": "2022-12-01T22:20:25.330Z",
+    "startsAt": "2022-11-26T22:20:25.330Z"
   },
   {
     "startBlock": 16005898,
@@ -8191,8 +8226,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 74.4,
-    "endsAt": "2022-11-28T01:05:59.849Z",
-    "startsAt": "2022-11-23T01:05:59.849Z"
+    "endsAt": "2022-11-28T01:13:25.330Z",
+    "startsAt": "2022-11-23T01:13:25.330Z"
   },
   {
     "startBlock": 15998477,
@@ -8227,8 +8262,8 @@
       "Tech"
     ],
     "dynamicQuorum": 52.3,
-    "endsAt": "2022-11-27T00:21:47.849Z",
-    "startsAt": "2022-11-22T00:21:47.849Z"
+    "endsAt": "2022-11-27T00:29:13.330Z",
+    "startsAt": "2022-11-22T00:29:13.330Z"
   },
   {
     "startBlock": 15985114,
@@ -8263,8 +8298,8 @@
       "Community"
     ],
     "dynamicQuorum": 53,
-    "endsAt": "2022-11-25T03:49:11.849Z",
-    "startsAt": "2022-11-20T03:49:11.849Z"
+    "endsAt": "2022-11-25T03:56:37.330Z",
+    "startsAt": "2022-11-20T03:56:37.330Z"
   },
   {
     "startBlock": 15978444,
@@ -8300,8 +8335,8 @@
       "Tech"
     ],
     "dynamicQuorum": 76.5,
-    "endsAt": "2022-11-24T05:35:11.850Z",
-    "startsAt": "2022-11-19T05:35:11.850Z"
+    "endsAt": "2022-11-24T05:42:37.330Z",
+    "startsAt": "2022-11-19T05:42:37.330Z"
   },
   {
     "startBlock": 15953029,
@@ -8336,8 +8371,8 @@
       "Operational"
     ],
     "dynamicQuorum": 50.6,
-    "endsAt": "2022-11-20T16:52:11.850Z",
-    "startsAt": "2022-11-15T16:52:11.850Z"
+    "endsAt": "2022-11-20T16:59:37.330Z",
+    "startsAt": "2022-11-15T16:59:37.330Z"
   },
   {
     "startBlock": 15926193,
@@ -8373,8 +8408,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 75.3,
-    "endsAt": "2022-11-16T23:24:59.850Z",
-    "startsAt": "2022-11-11T23:24:59.850Z"
+    "endsAt": "2022-11-16T23:32:25.331Z",
+    "startsAt": "2022-11-11T23:32:25.331Z"
   },
   {
     "startBlock": 15891023,
@@ -8410,8 +8445,8 @@
       "Tech"
     ],
     "dynamicQuorum": 74.4,
-    "endsAt": "2022-11-12T02:10:59.850Z",
-    "startsAt": "2022-11-07T02:10:59.850Z"
+    "endsAt": "2022-11-12T02:18:25.331Z",
+    "startsAt": "2022-11-07T02:18:25.331Z"
   },
   {
     "startBlock": 15862088,
@@ -8446,8 +8481,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 49.2,
-    "endsAt": "2022-11-08T01:43:59.851Z",
-    "startsAt": "2022-11-03T01:43:59.851Z"
+    "endsAt": "2022-11-08T01:51:25.331Z",
+    "startsAt": "2022-11-03T01:51:25.331Z"
   },
   {
     "startBlock": 15850693,
@@ -8483,8 +8518,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 73.5,
-    "endsAt": "2022-11-04T05:26:59.851Z",
-    "startsAt": "2022-11-01T11:44:59.851Z"
+    "endsAt": "2022-11-04T05:34:25.331Z",
+    "startsAt": "2022-11-01T11:52:25.331Z"
   },
   {
     "startBlock": 15845271,
@@ -8519,8 +8554,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 48.9,
-    "endsAt": "2022-11-03T11:22:35.851Z",
-    "startsAt": "2022-10-31T17:40:35.851Z"
+    "endsAt": "2022-11-03T11:30:01.331Z",
+    "startsAt": "2022-10-31T17:48:01.331Z"
   },
   {
     "startBlock": 15833428,
@@ -8555,8 +8590,8 @@
       "Community"
     ],
     "dynamicQuorum": 50.8,
-    "endsAt": "2022-11-01T19:53:59.852Z",
-    "startsAt": "2022-10-30T02:11:59.852Z"
+    "endsAt": "2022-11-01T20:01:25.331Z",
+    "startsAt": "2022-10-30T02:19:25.331Z"
   },
   {
     "startBlock": 15811106,
@@ -8591,8 +8626,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 48.4,
-    "endsAt": "2022-10-29T17:29:35.852Z",
-    "startsAt": "2022-10-26T23:47:35.852Z"
+    "endsAt": "2022-10-29T17:37:01.331Z",
+    "startsAt": "2022-10-26T23:55:01.331Z"
   },
   {
     "startBlock": 15805690,
@@ -8629,8 +8664,8 @@
       "Operational"
     ],
     "dynamicQuorum": 48.4,
-    "endsAt": "2022-10-28T23:26:23.852Z",
-    "startsAt": "2022-10-26T05:44:23.852Z"
+    "endsAt": "2022-10-28T23:33:49.331Z",
+    "startsAt": "2022-10-26T05:51:49.331Z"
   },
   {
     "startBlock": 15805225,
@@ -8665,8 +8700,8 @@
       "Operational"
     ],
     "dynamicQuorum": 48.4,
-    "endsAt": "2022-10-28T21:53:23.852Z",
-    "startsAt": "2022-10-26T04:11:23.852Z"
+    "endsAt": "2022-10-28T22:00:49.331Z",
+    "startsAt": "2022-10-26T04:18:49.331Z"
   },
   {
     "startBlock": 15804563,
@@ -8701,8 +8736,8 @@
       "Operational"
     ],
     "dynamicQuorum": 72.6,
-    "endsAt": "2022-10-28T19:40:59.853Z",
-    "startsAt": "2022-10-26T01:58:59.853Z"
+    "endsAt": "2022-10-28T19:48:25.331Z",
+    "startsAt": "2022-10-26T02:06:25.331Z"
   },
   {
     "startBlock": 15796690,
@@ -8737,8 +8772,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 72.3,
-    "endsAt": "2022-10-27T17:26:23.853Z",
-    "startsAt": "2022-10-24T23:44:23.853Z"
+    "endsAt": "2022-10-27T17:33:49.331Z",
+    "startsAt": "2022-10-24T23:51:49.331Z"
   },
   {
     "startBlock": 15789017,
@@ -8773,8 +8808,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 72,
-    "endsAt": "2022-10-26T15:51:47.854Z",
-    "startsAt": "2022-10-23T22:09:47.854Z"
+    "endsAt": "2022-10-26T15:59:13.331Z",
+    "startsAt": "2022-10-23T22:17:13.331Z"
   },
   {
     "startBlock": 15785594,
@@ -8809,8 +8844,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-26T04:27:11.855Z",
-    "startsAt": "2022-10-23T10:45:11.855Z"
+    "endsAt": "2022-10-26T04:34:37.331Z",
+    "startsAt": "2022-10-23T10:52:37.331Z"
   },
   {
     "startBlock": 15783745,
@@ -8845,8 +8880,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-25T22:17:23.855Z",
-    "startsAt": "2022-10-23T04:35:23.855Z"
+    "endsAt": "2022-10-25T22:24:49.332Z",
+    "startsAt": "2022-10-23T04:42:49.332Z"
   },
   {
     "startBlock": 15762243,
@@ -8882,8 +8917,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-22T22:36:59.855Z",
-    "startsAt": "2022-10-20T04:54:59.855Z"
+    "endsAt": "2022-10-22T22:44:25.332Z",
+    "startsAt": "2022-10-20T05:02:25.332Z"
   },
   {
     "startBlock": 15754805,
@@ -8918,8 +8953,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-21T21:49:23.855Z",
-    "startsAt": "2022-10-19T04:07:23.855Z"
+    "endsAt": "2022-10-21T21:56:49.332Z",
+    "startsAt": "2022-10-19T04:14:49.332Z"
   },
   {
     "startBlock": 15737719,
@@ -8958,8 +8993,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-19T12:52:11.855Z",
-    "startsAt": "2022-10-16T19:10:11.855Z"
+    "endsAt": "2022-10-19T12:59:37.332Z",
+    "startsAt": "2022-10-16T19:17:37.332Z"
   },
   {
     "startBlock": 15695815,
@@ -8994,8 +9029,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-13T17:11:23.856Z",
-    "startsAt": "2022-10-10T23:29:23.856Z"
+    "endsAt": "2022-10-13T17:18:49.332Z",
+    "startsAt": "2022-10-10T23:36:49.332Z"
   },
   {
     "startBlock": 15689329,
@@ -9030,8 +9065,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-12T19:34:11.857Z",
-    "startsAt": "2022-10-10T01:52:11.857Z"
+    "endsAt": "2022-10-12T19:41:37.332Z",
+    "startsAt": "2022-10-10T01:59:37.332Z"
   },
   {
     "startBlock": 15684162,
@@ -9066,8 +9101,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-12T02:20:47.857Z",
-    "startsAt": "2022-10-09T08:38:47.857Z"
+    "endsAt": "2022-10-12T02:28:13.332Z",
+    "startsAt": "2022-10-09T08:46:13.332Z"
   },
   {
     "startBlock": 15670826,
@@ -9102,8 +9137,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-10T05:53:35.857Z",
-    "startsAt": "2022-10-07T12:11:35.857Z"
+    "endsAt": "2022-10-10T06:01:01.332Z",
+    "startsAt": "2022-10-07T12:19:01.332Z"
   },
   {
     "startBlock": 15647025,
@@ -9153,8 +9188,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-06T22:33:23.858Z",
-    "startsAt": "2022-10-04T04:51:23.858Z"
+    "endsAt": "2022-10-06T22:40:49.332Z",
+    "startsAt": "2022-10-04T04:58:49.332Z"
   },
   {
     "startBlock": 15647019,
@@ -9192,8 +9227,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-06T22:32:11.858Z",
-    "startsAt": "2022-10-04T04:50:11.858Z"
+    "endsAt": "2022-10-06T22:39:37.332Z",
+    "startsAt": "2022-10-04T04:57:37.332Z"
   },
   {
     "startBlock": 15640383,
@@ -9228,8 +9263,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-06T00:24:59.863Z",
-    "startsAt": "2022-10-03T06:42:59.863Z"
+    "endsAt": "2022-10-06T00:32:25.332Z",
+    "startsAt": "2022-10-03T06:50:25.332Z"
   },
   {
     "startBlock": 15640075,
@@ -9265,8 +9300,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-10-05T23:23:23.864Z",
-    "startsAt": "2022-10-03T05:41:23.864Z"
+    "endsAt": "2022-10-05T23:30:49.332Z",
+    "startsAt": "2022-10-03T05:48:49.332Z"
   },
   {
     "startBlock": 15580396,
@@ -9301,8 +9336,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-27T16:27:35.864Z",
-    "startsAt": "2022-09-24T22:45:35.864Z"
+    "endsAt": "2022-09-27T16:35:01.333Z",
+    "startsAt": "2022-09-24T22:53:01.333Z"
   },
   {
     "startBlock": 15569557,
@@ -9338,8 +9373,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-26T04:19:47.864Z",
-    "startsAt": "2022-09-23T10:37:47.864Z"
+    "endsAt": "2022-09-26T04:27:13.333Z",
+    "startsAt": "2022-09-23T10:45:13.333Z"
   },
   {
     "startBlock": 15549135,
@@ -9374,8 +9409,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-23T08:15:23.865Z",
-    "startsAt": "2022-09-20T14:33:23.865Z"
+    "endsAt": "2022-09-23T08:22:49.333Z",
+    "startsAt": "2022-09-20T14:40:49.333Z"
   },
   {
     "startBlock": 15535972,
@@ -9410,8 +9445,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-21T12:22:47.869Z",
-    "startsAt": "2022-09-18T18:40:47.869Z"
+    "endsAt": "2022-09-21T12:30:13.333Z",
+    "startsAt": "2022-09-18T18:48:13.333Z"
   },
   {
     "startBlock": 15506668,
@@ -9447,8 +9482,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-17T10:41:59.870Z",
-    "startsAt": "2022-09-14T16:59:59.870Z"
+    "endsAt": "2022-09-17T10:49:25.333Z",
+    "startsAt": "2022-09-14T17:07:25.333Z"
   },
   {
     "startBlock": 15504931,
@@ -9483,8 +9518,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-17T04:54:35.871Z",
-    "startsAt": "2022-09-14T11:12:35.871Z"
+    "endsAt": "2022-09-17T05:02:01.333Z",
+    "startsAt": "2022-09-14T11:20:01.333Z"
   },
   {
     "startBlock": 15498796,
@@ -9520,8 +9555,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-16T08:27:35.871Z",
-    "startsAt": "2022-09-13T14:45:35.871Z"
+    "endsAt": "2022-09-16T08:35:01.333Z",
+    "startsAt": "2022-09-13T14:53:01.333Z"
   },
   {
     "startBlock": 15468434,
@@ -9556,8 +9591,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-12T03:15:11.871Z",
-    "startsAt": "2022-09-09T09:33:11.871Z"
+    "endsAt": "2022-09-12T03:22:37.333Z",
+    "startsAt": "2022-09-09T09:40:37.333Z"
   },
   {
     "startBlock": 15464278,
@@ -9593,8 +9628,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-11T13:23:59.871Z",
-    "startsAt": "2022-09-08T19:41:59.871Z"
+    "endsAt": "2022-09-11T13:31:25.334Z",
+    "startsAt": "2022-09-08T19:49:25.334Z"
   },
   {
     "startBlock": 15462290,
@@ -9629,8 +9664,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-11T06:46:23.871Z",
-    "startsAt": "2022-09-08T13:04:23.871Z"
+    "endsAt": "2022-09-11T06:53:49.334Z",
+    "startsAt": "2022-09-08T13:11:49.334Z"
   },
   {
     "startBlock": 15389531,
@@ -9665,8 +9700,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-09-01T04:14:35.872Z",
-    "startsAt": "2022-08-29T10:32:35.872Z"
+    "endsAt": "2022-09-01T04:22:01.334Z",
+    "startsAt": "2022-08-29T10:40:01.334Z"
   },
   {
     "startBlock": 15375953,
@@ -9702,8 +9737,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-30T06:58:59.872Z",
-    "startsAt": "2022-08-27T13:16:59.872Z"
+    "endsAt": "2022-08-30T07:06:25.334Z",
+    "startsAt": "2022-08-27T13:24:25.334Z"
   },
   {
     "startBlock": 15372985,
@@ -9738,8 +9773,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-29T21:05:23.872Z",
-    "startsAt": "2022-08-27T03:23:23.872Z"
+    "endsAt": "2022-08-29T21:12:49.334Z",
+    "startsAt": "2022-08-27T03:30:49.334Z"
   },
   {
     "startBlock": 15357830,
@@ -9774,8 +9809,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-27T18:34:23.872Z",
-    "startsAt": "2022-08-25T00:52:23.872Z"
+    "endsAt": "2022-08-27T18:41:49.334Z",
+    "startsAt": "2022-08-25T00:59:49.334Z"
   },
   {
     "startBlock": 15334795,
@@ -9811,8 +9846,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-24T13:47:23.872Z",
-    "startsAt": "2022-08-21T20:05:23.872Z"
+    "endsAt": "2022-08-24T13:54:49.334Z",
+    "startsAt": "2022-08-21T20:12:49.334Z"
   },
   {
     "startBlock": 15324163,
@@ -9847,8 +9882,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-23T02:20:59.873Z",
-    "startsAt": "2022-08-20T08:38:59.873Z"
+    "endsAt": "2022-08-23T02:28:25.334Z",
+    "startsAt": "2022-08-20T08:46:25.334Z"
   },
   {
     "startBlock": 15318620,
@@ -9883,8 +9918,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-22T07:52:23.873Z",
-    "startsAt": "2022-08-19T14:10:23.873Z"
+    "endsAt": "2022-08-22T07:59:49.334Z",
+    "startsAt": "2022-08-19T14:17:49.334Z"
   },
   {
     "startBlock": 15295213,
@@ -9922,8 +9957,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-19T01:50:59.873Z",
-    "startsAt": "2022-08-16T08:08:59.873Z"
+    "endsAt": "2022-08-19T01:58:25.334Z",
+    "startsAt": "2022-08-16T08:16:25.334Z"
   },
   {
     "startBlock": 15270299,
@@ -9963,8 +9998,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-15T14:48:11.873Z",
-    "startsAt": "2022-08-12T21:06:11.873Z"
+    "endsAt": "2022-08-15T14:55:37.334Z",
+    "startsAt": "2022-08-12T21:13:37.334Z"
   },
   {
     "startBlock": 15252770,
@@ -10000,8 +10035,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-13T04:22:23.873Z",
-    "startsAt": "2022-08-10T10:40:23.873Z"
+    "endsAt": "2022-08-13T04:29:49.335Z",
+    "startsAt": "2022-08-10T10:47:49.335Z"
   },
   {
     "startBlock": 15251711,
@@ -10037,8 +10072,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-13T00:50:35.873Z",
-    "startsAt": "2022-08-10T07:08:35.873Z"
+    "endsAt": "2022-08-13T00:58:01.335Z",
+    "startsAt": "2022-08-10T07:16:01.335Z"
   },
   {
     "startBlock": 15247687,
@@ -10073,8 +10108,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-12T11:25:47.874Z",
-    "startsAt": "2022-08-09T17:43:47.874Z"
+    "endsAt": "2022-08-12T11:33:13.335Z",
+    "startsAt": "2022-08-09T17:51:13.335Z"
   },
   {
     "startBlock": 15247454,
@@ -10110,8 +10145,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-12T10:39:11.874Z",
-    "startsAt": "2022-08-09T16:57:11.874Z"
+    "endsAt": "2022-08-12T10:46:37.335Z",
+    "startsAt": "2022-08-09T17:04:37.335Z"
   },
   {
     "startBlock": 15241747,
@@ -10147,8 +10182,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-11T15:37:47.874Z",
-    "startsAt": "2022-08-08T21:55:47.874Z"
+    "endsAt": "2022-08-11T15:45:13.335Z",
+    "startsAt": "2022-08-08T22:03:13.335Z"
   },
   {
     "startBlock": 15239820,
@@ -10184,8 +10219,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-11T09:12:23.874Z",
-    "startsAt": "2022-08-08T15:30:23.874Z"
+    "endsAt": "2022-08-11T09:19:49.336Z",
+    "startsAt": "2022-08-08T15:37:49.336Z"
   },
   {
     "startBlock": 15233541,
@@ -10221,8 +10256,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-10T12:16:35.874Z",
-    "startsAt": "2022-08-07T18:34:35.874Z"
+    "endsAt": "2022-08-10T12:24:01.336Z",
+    "startsAt": "2022-08-07T18:42:01.336Z"
   },
   {
     "startBlock": 15231913,
@@ -10257,8 +10292,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-10T06:50:59.875Z",
-    "startsAt": "2022-08-07T13:08:59.875Z"
+    "endsAt": "2022-08-10T06:58:25.336Z",
+    "startsAt": "2022-08-07T13:16:25.336Z"
   },
   {
     "startBlock": 15196838,
@@ -10295,8 +10330,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-05T09:55:59.878Z",
-    "startsAt": "2022-08-02T16:13:59.878Z"
+    "endsAt": "2022-08-05T10:03:25.336Z",
+    "startsAt": "2022-08-02T16:21:25.336Z"
   },
   {
     "startBlock": 15182450,
@@ -10331,8 +10366,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-08-03T09:58:23.880Z",
-    "startsAt": "2022-07-31T16:16:23.880Z"
+    "endsAt": "2022-08-03T10:05:49.336Z",
+    "startsAt": "2022-07-31T16:23:49.336Z"
   },
   {
     "startBlock": 15162307,
@@ -10367,8 +10402,8 @@
       "Other"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-31T14:49:47.883Z",
-    "startsAt": "2022-07-28T21:07:47.883Z"
+    "endsAt": "2022-07-31T14:57:13.336Z",
+    "startsAt": "2022-07-28T21:15:13.336Z"
   },
   {
     "startBlock": 15161228,
@@ -10404,8 +10439,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-31T11:13:59.887Z",
-    "startsAt": "2022-07-28T17:31:59.887Z"
+    "endsAt": "2022-07-31T11:21:25.336Z",
+    "startsAt": "2022-07-28T17:39:25.336Z"
   },
   {
     "startBlock": 15150687,
@@ -10441,8 +10476,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-30T00:05:47.888Z",
-    "startsAt": "2022-07-27T06:23:47.888Z"
+    "endsAt": "2022-07-30T00:13:13.336Z",
+    "startsAt": "2022-07-27T06:31:13.336Z"
   },
   {
     "startBlock": 15141388,
@@ -10477,8 +10512,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-28T17:05:59.888Z",
-    "startsAt": "2022-07-25T23:23:59.888Z"
+    "endsAt": "2022-07-28T17:13:25.336Z",
+    "startsAt": "2022-07-25T23:31:25.336Z"
   },
   {
     "startBlock": 15137191,
@@ -10514,8 +10549,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-28T03:06:35.888Z",
-    "startsAt": "2022-07-25T09:24:35.888Z"
+    "endsAt": "2022-07-28T03:14:01.337Z",
+    "startsAt": "2022-07-25T09:32:01.337Z"
   },
   {
     "startBlock": 15136910,
@@ -10552,8 +10587,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-28T02:10:23.888Z",
-    "startsAt": "2022-07-25T08:28:23.888Z"
+    "endsAt": "2022-07-28T02:17:49.337Z",
+    "startsAt": "2022-07-25T08:35:49.337Z"
   },
   {
     "startBlock": 15129250,
@@ -10588,8 +10623,8 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-27T00:38:23.888Z",
-    "startsAt": "2022-07-24T06:56:23.888Z"
+    "endsAt": "2022-07-27T00:45:49.337Z",
+    "startsAt": "2022-07-24T07:03:49.337Z"
   },
   {
     "startBlock": 15115558,
@@ -10624,8 +10659,8 @@
       "Investment"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-25T02:59:59.889Z",
-    "startsAt": "2022-07-22T09:17:59.889Z"
+    "endsAt": "2022-07-25T03:07:25.337Z",
+    "startsAt": "2022-07-22T09:25:25.337Z"
   },
   {
     "startBlock": 15103690,
@@ -10660,8 +10695,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-23T11:26:23.889Z",
-    "startsAt": "2022-07-20T17:44:23.889Z"
+    "endsAt": "2022-07-23T11:33:49.337Z",
+    "startsAt": "2022-07-20T17:51:49.337Z"
   },
   {
     "startBlock": 15093500,
@@ -10697,8 +10732,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-22T01:28:23.890Z",
-    "startsAt": "2022-07-19T07:46:23.890Z"
+    "endsAt": "2022-07-22T01:35:49.337Z",
+    "startsAt": "2022-07-19T07:53:49.337Z"
   },
   {
     "startBlock": 15074461,
@@ -10734,8 +10769,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-19T10:00:35.890Z",
-    "startsAt": "2022-07-16T16:18:35.890Z"
+    "endsAt": "2022-07-19T10:08:01.337Z",
+    "startsAt": "2022-07-16T16:26:01.337Z"
   },
   {
     "startBlock": 15072018,
@@ -10771,8 +10806,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-19T01:51:59.890Z",
-    "startsAt": "2022-07-16T08:09:59.890Z"
+    "endsAt": "2022-07-19T01:59:25.337Z",
+    "startsAt": "2022-07-16T08:17:25.337Z"
   },
   {
     "startBlock": 15065352,
@@ -10807,8 +10842,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-18T03:38:47.890Z",
-    "startsAt": "2022-07-15T09:56:47.890Z"
+    "endsAt": "2022-07-18T03:46:13.337Z",
+    "startsAt": "2022-07-15T10:04:13.337Z"
   },
   {
     "startBlock": 15044257,
@@ -10845,8 +10880,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-15T05:19:47.890Z",
-    "startsAt": "2022-07-12T11:37:47.890Z"
+    "endsAt": "2022-07-15T05:27:13.337Z",
+    "startsAt": "2022-07-12T11:45:13.337Z"
   },
   {
     "startBlock": 15042935,
@@ -10881,8 +10916,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-15T00:55:23.891Z",
-    "startsAt": "2022-07-12T07:13:23.891Z"
+    "endsAt": "2022-07-15T01:02:49.337Z",
+    "startsAt": "2022-07-12T07:20:49.337Z"
   },
   {
     "startBlock": 15021300,
@@ -10918,8 +10953,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-12T00:48:23.891Z",
-    "startsAt": "2022-07-09T07:06:23.891Z"
+    "endsAt": "2022-07-12T00:55:49.338Z",
+    "startsAt": "2022-07-09T07:13:49.338Z"
   },
   {
     "startBlock": 15010055,
@@ -10955,8 +10990,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-10T11:19:23.891Z",
-    "startsAt": "2022-07-07T17:37:23.891Z"
+    "endsAt": "2022-07-10T11:26:49.338Z",
+    "startsAt": "2022-07-07T17:44:49.338Z"
   },
   {
     "startBlock": 14990115,
@@ -10994,8 +11029,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-07T16:51:23.891Z",
-    "startsAt": "2022-07-04T23:09:23.891Z"
+    "endsAt": "2022-07-07T16:58:49.338Z",
+    "startsAt": "2022-07-04T23:16:49.338Z"
   },
   {
     "startBlock": 14966692,
@@ -11030,8 +11065,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-04T10:46:47.897Z",
-    "startsAt": "2022-07-01T17:04:47.897Z"
+    "endsAt": "2022-07-04T10:54:13.338Z",
+    "startsAt": "2022-07-01T17:12:13.338Z"
   },
   {
     "startBlock": 14954606,
@@ -11066,8 +11101,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-02T18:29:35.897Z",
-    "startsAt": "2022-06-30T00:47:35.897Z"
+    "endsAt": "2022-07-02T18:37:01.338Z",
+    "startsAt": "2022-06-30T00:55:01.338Z"
   },
   {
     "startBlock": 14943038,
@@ -11103,8 +11138,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-01T03:55:59.898Z",
-    "startsAt": "2022-06-28T10:13:59.898Z"
+    "endsAt": "2022-07-01T04:03:25.338Z",
+    "startsAt": "2022-06-28T10:21:25.338Z"
   },
   {
     "startBlock": 14942061,
@@ -11141,8 +11176,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-07-01T00:40:35.898Z",
-    "startsAt": "2022-06-28T06:58:35.898Z"
+    "endsAt": "2022-07-01T00:48:01.338Z",
+    "startsAt": "2022-06-28T07:06:01.338Z"
   },
   {
     "startBlock": 14935258,
@@ -11179,8 +11214,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-30T01:59:59.898Z",
-    "startsAt": "2022-06-27T08:17:59.898Z"
+    "endsAt": "2022-06-30T02:07:25.338Z",
+    "startsAt": "2022-06-27T08:25:25.338Z"
   },
   {
     "startBlock": 14935241,
@@ -11216,8 +11251,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-30T01:56:35.898Z",
-    "startsAt": "2022-06-27T08:14:35.898Z"
+    "endsAt": "2022-06-30T02:04:01.338Z",
+    "startsAt": "2022-06-27T08:22:01.338Z"
   },
   {
     "startBlock": 14930744,
@@ -11253,8 +11288,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-29T10:57:11.899Z",
-    "startsAt": "2022-06-26T17:15:11.899Z"
+    "endsAt": "2022-06-29T11:04:37.338Z",
+    "startsAt": "2022-06-26T17:22:37.338Z"
   },
   {
     "startBlock": 14916896,
@@ -11290,8 +11325,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-27T12:47:35.899Z",
-    "startsAt": "2022-06-24T19:05:35.899Z"
+    "endsAt": "2022-06-27T12:55:01.338Z",
+    "startsAt": "2022-06-24T19:13:01.338Z"
   },
   {
     "startBlock": 14907048,
@@ -11327,8 +11362,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-26T03:57:59.899Z",
-    "startsAt": "2022-06-23T10:15:59.899Z"
+    "endsAt": "2022-06-26T04:05:25.338Z",
+    "startsAt": "2022-06-23T10:23:25.338Z"
   },
   {
     "startBlock": 14882359,
@@ -11364,8 +11399,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-22T17:40:11.899Z",
-    "startsAt": "2022-06-19T23:58:11.899Z"
+    "endsAt": "2022-06-22T17:47:37.338Z",
+    "startsAt": "2022-06-20T00:05:37.338Z"
   },
   {
     "startBlock": 14868387,
@@ -11400,8 +11435,8 @@
       "Other"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-20T19:05:47.899Z",
-    "startsAt": "2022-06-18T01:23:47.899Z"
+    "endsAt": "2022-06-20T19:13:13.339Z",
+    "startsAt": "2022-06-18T01:31:13.339Z"
   },
   {
     "startBlock": 14862331,
@@ -11436,8 +11471,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-19T22:54:35.904Z",
-    "startsAt": "2022-06-17T05:12:35.904Z"
+    "endsAt": "2022-06-19T23:02:01.339Z",
+    "startsAt": "2022-06-17T05:20:01.339Z"
   },
   {
     "startBlock": 14861967,
@@ -11473,8 +11508,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-19T21:41:47.905Z",
-    "startsAt": "2022-06-17T03:59:47.905Z"
+    "endsAt": "2022-06-19T21:49:13.339Z",
+    "startsAt": "2022-06-17T04:07:13.339Z"
   },
   {
     "startBlock": 14825518,
@@ -11511,8 +11546,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-14T20:11:59.905Z",
-    "startsAt": "2022-06-12T02:29:59.905Z"
+    "endsAt": "2022-06-14T20:19:25.339Z",
+    "startsAt": "2022-06-12T02:37:25.339Z"
   },
   {
     "startBlock": 14817752,
@@ -11551,8 +11586,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-13T18:18:47.905Z",
-    "startsAt": "2022-06-11T00:36:47.905Z"
+    "endsAt": "2022-06-13T18:26:13.339Z",
+    "startsAt": "2022-06-11T00:44:13.339Z"
   },
   {
     "startBlock": 14814114,
@@ -11591,8 +11626,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-13T06:11:11.905Z",
-    "startsAt": "2022-06-10T12:29:11.905Z"
+    "endsAt": "2022-06-13T06:18:37.339Z",
+    "startsAt": "2022-06-10T12:36:37.339Z"
   },
   {
     "startBlock": 14813432,
@@ -11631,8 +11666,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-13T03:54:47.906Z",
-    "startsAt": "2022-06-10T10:12:47.906Z"
+    "endsAt": "2022-06-13T04:02:13.339Z",
+    "startsAt": "2022-06-10T10:20:13.339Z"
   },
   {
     "startBlock": 14813274,
@@ -11667,8 +11702,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-13T03:23:11.906Z",
-    "startsAt": "2022-06-10T09:41:11.906Z"
+    "endsAt": "2022-06-13T03:30:37.339Z",
+    "startsAt": "2022-06-10T09:48:37.339Z"
   },
   {
     "startBlock": 14807625,
@@ -11704,8 +11739,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-12T08:33:23.906Z",
-    "startsAt": "2022-06-09T14:51:23.906Z"
+    "endsAt": "2022-06-12T08:40:49.339Z",
+    "startsAt": "2022-06-09T14:58:49.339Z"
   },
   {
     "startBlock": 14802548,
@@ -11748,8 +11783,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-11T15:37:59.918Z",
-    "startsAt": "2022-06-08T21:55:59.918Z"
+    "endsAt": "2022-06-11T15:45:25.339Z",
+    "startsAt": "2022-06-08T22:03:25.339Z"
   },
   {
     "startBlock": 14800581,
@@ -11784,8 +11819,8 @@
       ""
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-11T09:04:35.919Z",
-    "startsAt": "2022-06-08T15:22:35.919Z"
+    "endsAt": "2022-06-11T09:12:01.339Z",
+    "startsAt": "2022-06-08T15:30:01.339Z"
   },
   {
     "startBlock": 14771837,
@@ -11821,8 +11856,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-07T09:15:47.919Z",
-    "startsAt": "2022-06-04T15:33:47.919Z"
+    "endsAt": "2022-06-07T09:23:13.340Z",
+    "startsAt": "2022-06-04T15:41:13.340Z"
   },
   {
     "startBlock": 14762737,
@@ -11859,8 +11894,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-06T02:55:47.920Z",
-    "startsAt": "2022-06-03T09:13:47.920Z"
+    "endsAt": "2022-06-06T03:03:13.340Z",
+    "startsAt": "2022-06-03T09:21:13.340Z"
   },
   {
     "startBlock": 14757174,
@@ -11898,8 +11933,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-05T08:23:11.920Z",
-    "startsAt": "2022-06-02T14:41:11.920Z"
+    "endsAt": "2022-06-05T08:30:37.340Z",
+    "startsAt": "2022-06-02T14:48:37.340Z"
   },
   {
     "startBlock": 14730615,
@@ -11935,8 +11970,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-06-01T15:51:23.920Z",
-    "startsAt": "2022-05-29T22:09:23.920Z"
+    "endsAt": "2022-06-01T15:58:49.340Z",
+    "startsAt": "2022-05-29T22:16:49.340Z"
   },
   {
     "startBlock": 14720403,
@@ -11972,8 +12007,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-31T05:48:59.920Z",
-    "startsAt": "2022-05-28T12:06:59.920Z"
+    "endsAt": "2022-05-31T05:56:25.340Z",
+    "startsAt": "2022-05-28T12:14:25.340Z"
   },
   {
     "startBlock": 14664755,
@@ -12008,8 +12043,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-23T12:19:23.920Z",
-    "startsAt": "2022-05-20T18:37:23.920Z"
+    "endsAt": "2022-05-23T12:26:49.340Z",
+    "startsAt": "2022-05-20T18:44:49.340Z"
   },
   {
     "startBlock": 14663075,
@@ -12045,8 +12080,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-23T06:43:23.921Z",
-    "startsAt": "2022-05-20T13:01:23.921Z"
+    "endsAt": "2022-05-23T06:50:49.340Z",
+    "startsAt": "2022-05-20T13:08:49.340Z"
   },
   {
     "startBlock": 14663020,
@@ -12082,8 +12117,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-23T06:32:23.921Z",
-    "startsAt": "2022-05-20T12:50:23.921Z"
+    "endsAt": "2022-05-23T06:39:49.340Z",
+    "startsAt": "2022-05-20T12:57:49.340Z"
   },
   {
     "startBlock": 14655347,
@@ -12118,8 +12153,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-22T04:57:47.921Z",
-    "startsAt": "2022-05-19T11:15:47.921Z"
+    "endsAt": "2022-05-22T05:05:13.340Z",
+    "startsAt": "2022-05-19T11:23:13.340Z"
   },
   {
     "startBlock": 14650779,
@@ -12154,8 +12189,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-21T13:44:11.921Z",
-    "startsAt": "2022-05-18T20:02:11.921Z"
+    "endsAt": "2022-05-21T13:51:37.340Z",
+    "startsAt": "2022-05-18T20:09:37.340Z"
   },
   {
     "startBlock": 14650010,
@@ -12190,8 +12225,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-21T11:10:23.922Z",
-    "startsAt": "2022-05-18T17:28:23.922Z"
+    "endsAt": "2022-05-21T11:17:49.340Z",
+    "startsAt": "2022-05-18T17:35:49.340Z"
   },
   {
     "startBlock": 14649113,
@@ -12228,8 +12263,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-21T08:10:59.922Z",
-    "startsAt": "2022-05-18T14:28:59.922Z"
+    "endsAt": "2022-05-21T08:18:25.340Z",
+    "startsAt": "2022-05-18T14:36:25.340Z"
   },
   {
     "startBlock": 14645045,
@@ -12264,8 +12299,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-20T18:37:23.922Z",
-    "startsAt": "2022-05-18T00:55:23.922Z"
+    "endsAt": "2022-05-20T18:44:49.341Z",
+    "startsAt": "2022-05-18T01:02:49.341Z"
   },
   {
     "startBlock": 14624201,
@@ -12301,8 +12336,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-17T21:08:35.922Z",
-    "startsAt": "2022-05-15T03:26:35.922Z"
+    "endsAt": "2022-05-17T21:16:01.341Z",
+    "startsAt": "2022-05-15T03:34:01.341Z"
   },
   {
     "startBlock": 14623443,
@@ -12338,8 +12373,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-17T18:36:59.922Z",
-    "startsAt": "2022-05-15T00:54:59.922Z"
+    "endsAt": "2022-05-17T18:44:25.341Z",
+    "startsAt": "2022-05-15T01:02:25.341Z"
   },
   {
     "startBlock": 14622610,
@@ -12374,8 +12409,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-17T15:50:23.922Z",
-    "startsAt": "2022-05-14T22:08:23.922Z"
+    "endsAt": "2022-05-17T15:57:49.341Z",
+    "startsAt": "2022-05-14T22:15:49.341Z"
   },
   {
     "startBlock": 14599075,
@@ -12422,8 +12457,8 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-14T09:23:23.922Z",
-    "startsAt": "2022-05-11T15:41:23.922Z"
+    "endsAt": "2022-05-14T09:30:49.341Z",
+    "startsAt": "2022-05-11T15:48:49.341Z"
   },
   {
     "startBlock": 14597722,
@@ -12460,8 +12495,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-14T04:52:47.923Z",
-    "startsAt": "2022-05-11T11:10:47.923Z"
+    "endsAt": "2022-05-14T05:00:13.341Z",
+    "startsAt": "2022-05-11T11:18:13.341Z"
   },
   {
     "startBlock": 14593484,
@@ -12498,8 +12533,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-13T14:45:11.923Z",
-    "startsAt": "2022-05-10T21:03:11.923Z"
+    "endsAt": "2022-05-13T14:52:37.341Z",
+    "startsAt": "2022-05-10T21:10:37.341Z"
   },
   {
     "startBlock": 14586605,
@@ -12535,8 +12570,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-12T15:49:23.923Z",
-    "startsAt": "2022-05-09T22:07:23.923Z"
+    "endsAt": "2022-05-12T15:56:49.342Z",
+    "startsAt": "2022-05-09T22:14:49.342Z"
   },
   {
     "startBlock": 14579607,
@@ -12571,8 +12606,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-11T16:29:47.923Z",
-    "startsAt": "2022-05-08T22:47:47.923Z"
+    "endsAt": "2022-05-11T16:37:13.342Z",
+    "startsAt": "2022-05-08T22:55:13.342Z"
   },
   {
     "startBlock": 14579057,
@@ -12607,8 +12642,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-11T14:39:47.924Z",
-    "startsAt": "2022-05-08T20:57:47.924Z"
+    "endsAt": "2022-05-11T14:47:13.342Z",
+    "startsAt": "2022-05-08T21:05:13.342Z"
   },
   {
     "startBlock": 14562958,
@@ -12646,8 +12681,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-09T08:59:59.924Z",
-    "startsAt": "2022-05-06T15:17:59.924Z"
+    "endsAt": "2022-05-09T09:07:25.342Z",
+    "startsAt": "2022-05-06T15:25:25.342Z"
   },
   {
     "startBlock": 14559805,
@@ -12682,8 +12717,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-08T22:29:23.924Z",
-    "startsAt": "2022-05-06T04:47:23.924Z"
+    "endsAt": "2022-05-08T22:36:49.342Z",
+    "startsAt": "2022-05-06T04:54:49.342Z"
   },
   {
     "startBlock": 14556873,
@@ -12719,8 +12754,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-08T12:42:59.924Z",
-    "startsAt": "2022-05-05T19:00:59.924Z"
+    "endsAt": "2022-05-08T12:50:25.342Z",
+    "startsAt": "2022-05-05T19:08:25.342Z"
   },
   {
     "startBlock": 14534602,
@@ -12767,8 +12802,8 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-05T10:28:47.924Z",
-    "startsAt": "2022-05-02T16:46:47.924Z"
+    "endsAt": "2022-05-05T10:36:13.342Z",
+    "startsAt": "2022-05-02T16:54:13.342Z"
   },
   {
     "startBlock": 14520286,
@@ -12804,8 +12839,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-03T10:45:35.925Z",
-    "startsAt": "2022-04-30T17:03:35.925Z"
+    "endsAt": "2022-05-03T10:53:01.342Z",
+    "startsAt": "2022-04-30T17:11:01.342Z"
   },
   {
     "startBlock": 14508636,
@@ -12844,8 +12879,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-01T19:55:35.925Z",
-    "startsAt": "2022-04-29T02:13:35.925Z"
+    "endsAt": "2022-05-01T20:03:01.342Z",
+    "startsAt": "2022-04-29T02:21:01.342Z"
   },
   {
     "startBlock": 14503798,
@@ -12881,8 +12916,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-05-01T03:47:59.925Z",
-    "startsAt": "2022-04-28T10:05:59.925Z"
+    "endsAt": "2022-05-01T03:55:25.342Z",
+    "startsAt": "2022-04-28T10:13:25.342Z"
   },
   {
     "startBlock": 14464053,
@@ -12918,8 +12953,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-25T15:18:59.925Z",
-    "startsAt": "2022-04-22T21:36:59.925Z"
+    "endsAt": "2022-04-25T15:26:25.343Z",
+    "startsAt": "2022-04-22T21:44:25.343Z"
   },
   {
     "startBlock": 14452235,
@@ -12959,8 +12994,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-23T23:55:23.925Z",
-    "startsAt": "2022-04-21T06:13:23.925Z"
+    "endsAt": "2022-04-24T00:02:49.343Z",
+    "startsAt": "2022-04-21T06:20:49.343Z"
   },
   {
     "startBlock": 14415153,
@@ -12996,8 +13031,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-18T20:18:59.926Z",
-    "startsAt": "2022-04-16T02:36:59.926Z"
+    "endsAt": "2022-04-18T20:26:25.343Z",
+    "startsAt": "2022-04-16T02:44:25.343Z"
   },
   {
     "startBlock": 14367763,
@@ -13032,8 +13067,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-12T06:20:59.926Z",
-    "startsAt": "2022-04-09T12:38:59.926Z"
+    "endsAt": "2022-04-12T06:28:25.343Z",
+    "startsAt": "2022-04-09T12:46:25.343Z"
   },
   {
     "startBlock": 14328967,
@@ -13068,8 +13103,8 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-06T21:01:47.940Z",
-    "startsAt": "2022-04-04T03:19:47.940Z"
+    "endsAt": "2022-04-06T21:09:13.343Z",
+    "startsAt": "2022-04-04T03:27:13.343Z"
   },
   {
     "startBlock": 14316599,
@@ -13105,8 +13140,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-04-05T03:48:11.941Z",
-    "startsAt": "2022-04-02T10:06:11.941Z"
+    "endsAt": "2022-04-05T03:55:37.343Z",
+    "startsAt": "2022-04-02T10:13:37.343Z"
   },
   {
     "startBlock": 14286531,
@@ -13146,8 +13181,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-03-31T23:34:35.944Z",
-    "startsAt": "2022-03-29T05:52:35.944Z"
+    "endsAt": "2022-03-31T23:42:01.343Z",
+    "startsAt": "2022-03-29T06:00:01.343Z"
   },
   {
     "startBlock": 14225558,
@@ -13182,8 +13217,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-03-23T12:19:59.944Z",
-    "startsAt": "2022-03-20T18:37:59.944Z"
+    "endsAt": "2022-03-23T12:27:25.343Z",
+    "startsAt": "2022-03-20T18:45:25.343Z"
   },
   {
     "startBlock": 14199054,
@@ -13222,8 +13257,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-03-19T19:59:11.945Z",
-    "startsAt": "2022-03-17T02:17:11.945Z"
+    "endsAt": "2022-03-19T20:06:37.343Z",
+    "startsAt": "2022-03-17T02:24:37.343Z"
   },
   {
     "startBlock": 14143764,
@@ -13258,8 +13293,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-03-12T03:41:11.945Z",
-    "startsAt": "2022-03-09T09:59:11.945Z"
+    "endsAt": "2022-03-12T03:48:37.343Z",
+    "startsAt": "2022-03-09T10:06:37.343Z"
   },
   {
     "startBlock": 14082156,
@@ -13296,8 +13331,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-03-03T14:19:35.945Z",
-    "startsAt": "2022-02-28T20:37:35.945Z"
+    "endsAt": "2022-03-03T14:27:01.343Z",
+    "startsAt": "2022-02-28T20:45:01.343Z"
   },
   {
     "startBlock": 14051106,
@@ -13332,8 +13367,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-27T06:49:35.945Z",
-    "startsAt": "2022-02-24T13:07:35.945Z"
+    "endsAt": "2022-02-27T06:57:01.344Z",
+    "startsAt": "2022-02-24T13:15:01.344Z"
   },
   {
     "startBlock": 13999881,
@@ -13371,8 +13406,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-20T04:04:35.945Z",
-    "startsAt": "2022-02-17T10:22:35.945Z"
+    "endsAt": "2022-02-20T04:12:01.344Z",
+    "startsAt": "2022-02-17T10:30:01.344Z"
   },
   {
     "startBlock": 13998686,
@@ -13408,8 +13443,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-20T00:05:35.946Z",
-    "startsAt": "2022-02-17T06:23:35.946Z"
+    "endsAt": "2022-02-20T00:13:01.344Z",
+    "startsAt": "2022-02-17T06:31:01.344Z"
   },
   {
     "startBlock": 13960827,
@@ -13446,8 +13481,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-14T17:53:47.946Z",
-    "startsAt": "2022-02-12T00:11:47.946Z"
+    "endsAt": "2022-02-14T18:01:13.344Z",
+    "startsAt": "2022-02-12T00:19:13.344Z"
   },
   {
     "startBlock": 13959337,
@@ -13484,8 +13519,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-14T12:55:47.946Z",
-    "startsAt": "2022-02-11T19:13:47.946Z"
+    "endsAt": "2022-02-14T13:03:13.344Z",
+    "startsAt": "2022-02-11T19:21:13.344Z"
   },
   {
     "startBlock": 13902855,
@@ -13520,8 +13555,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-06T16:39:23.946Z",
-    "startsAt": "2022-02-03T22:57:23.946Z"
+    "endsAt": "2022-02-06T16:46:49.344Z",
+    "startsAt": "2022-02-03T23:04:49.344Z"
   },
   {
     "startBlock": 13888363,
@@ -13562,8 +13597,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-02-04T16:20:59.947Z",
-    "startsAt": "2022-02-01T22:38:59.947Z"
+    "endsAt": "2022-02-04T16:28:25.344Z",
+    "startsAt": "2022-02-01T22:46:25.344Z"
   },
   {
     "startBlock": 13810627,
@@ -13599,8 +13634,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-24T21:13:47.947Z",
-    "startsAt": "2022-01-22T03:31:47.947Z"
+    "endsAt": "2022-01-24T21:21:13.344Z",
+    "startsAt": "2022-01-22T03:39:13.344Z"
   },
   {
     "startBlock": 13762779,
@@ -13636,8 +13671,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-18T05:44:11.974Z",
-    "startsAt": "2022-01-15T12:02:11.974Z"
+    "endsAt": "2022-01-18T05:51:37.345Z",
+    "startsAt": "2022-01-15T12:09:37.345Z"
   },
   {
     "startBlock": 13745359,
@@ -13673,8 +13708,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-15T19:40:11.975Z",
-    "startsAt": "2022-01-13T01:58:11.975Z"
+    "endsAt": "2022-01-15T19:47:37.345Z",
+    "startsAt": "2022-01-13T02:05:37.345Z"
   },
   {
     "startBlock": 13737934,
@@ -13709,8 +13744,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-14T18:55:11.975Z",
-    "startsAt": "2022-01-12T01:13:11.975Z"
+    "endsAt": "2022-01-14T19:02:37.345Z",
+    "startsAt": "2022-01-12T01:20:37.345Z"
   },
   {
     "startBlock": 13734876,
@@ -13749,8 +13784,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-14T08:43:35.975Z",
-    "startsAt": "2022-01-11T15:01:35.975Z"
+    "endsAt": "2022-01-14T08:51:01.345Z",
+    "startsAt": "2022-01-11T15:09:01.345Z"
   },
   {
     "startBlock": 13725563,
@@ -13786,8 +13821,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-13T01:40:59.975Z",
-    "startsAt": "2022-01-10T07:58:59.975Z"
+    "endsAt": "2022-01-13T01:48:25.345Z",
+    "startsAt": "2022-01-10T08:06:25.345Z"
   },
   {
     "startBlock": 13693953,
@@ -13822,8 +13857,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-08T16:18:59.975Z",
-    "startsAt": "2022-01-05T22:36:59.975Z"
+    "endsAt": "2022-01-08T16:26:25.345Z",
+    "startsAt": "2022-01-05T22:44:25.345Z"
   },
   {
     "startBlock": 13686518,
@@ -13859,8 +13894,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-07T15:31:59.976Z",
-    "startsAt": "2022-01-04T21:49:59.976Z"
+    "endsAt": "2022-01-07T15:39:25.365Z",
+    "startsAt": "2022-01-04T21:57:25.365Z"
   },
   {
     "startBlock": 13679128,
@@ -13897,8 +13932,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-06T14:53:59.976Z",
-    "startsAt": "2022-01-03T21:11:59.976Z"
+    "endsAt": "2022-01-06T15:01:25.365Z",
+    "startsAt": "2022-01-03T21:19:25.365Z"
   },
   {
     "startBlock": 13673247,
@@ -13935,8 +13970,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2022-01-05T19:17:47.976Z",
-    "startsAt": "2022-01-03T01:35:47.976Z"
+    "endsAt": "2022-01-05T19:25:13.365Z",
+    "startsAt": "2022-01-03T01:43:13.365Z"
   },
   {
     "startBlock": 13637374,
@@ -13971,8 +14006,8 @@
       "Staking/Yield"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-31T19:43:11.976Z",
-    "startsAt": "2021-12-29T02:01:11.976Z"
+    "endsAt": "2021-12-31T19:50:37.365Z",
+    "startsAt": "2021-12-29T02:08:37.365Z"
   },
   {
     "startBlock": 13635903,
@@ -14019,8 +14054,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-31T14:48:59.976Z",
-    "startsAt": "2021-12-28T21:06:59.976Z"
+    "endsAt": "2021-12-31T14:56:25.365Z",
+    "startsAt": "2021-12-28T21:14:25.365Z"
   },
   {
     "startBlock": 13567995,
@@ -14055,8 +14090,8 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-22T04:27:23.976Z",
-    "startsAt": "2021-12-19T10:45:23.976Z"
+    "endsAt": "2021-12-22T04:34:49.365Z",
+    "startsAt": "2021-12-19T10:52:49.365Z"
   },
   {
     "startBlock": 13565312,
@@ -14091,8 +14126,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-21T19:30:47.977Z",
-    "startsAt": "2021-12-19T01:48:47.977Z"
+    "endsAt": "2021-12-21T19:38:13.365Z",
+    "startsAt": "2021-12-19T01:56:13.365Z"
   },
   {
     "startBlock": 13512803,
@@ -14129,8 +14164,8 @@
       "Marketing"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-14T12:28:59.977Z",
-    "startsAt": "2021-12-11T18:46:59.977Z"
+    "endsAt": "2021-12-14T12:36:25.366Z",
+    "startsAt": "2021-12-11T18:54:25.366Z"
   },
   {
     "startBlock": 13463528,
@@ -14179,8 +14214,8 @@
       "Community"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-07T16:13:59.977Z",
-    "startsAt": "2021-12-04T22:31:59.977Z"
+    "endsAt": "2021-12-07T16:21:25.366Z",
+    "startsAt": "2021-12-04T22:39:25.366Z"
   },
   {
     "startBlock": 13460459,
@@ -14216,8 +14251,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-12-07T06:00:11.977Z",
-    "startsAt": "2021-12-04T12:18:11.977Z"
+    "endsAt": "2021-12-07T06:07:37.366Z",
+    "startsAt": "2021-12-04T12:25:37.366Z"
   },
   {
     "startBlock": 13393590,
@@ -14252,8 +14287,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-27T23:06:23.977Z",
-    "startsAt": "2021-11-25T05:24:23.977Z"
+    "endsAt": "2021-11-27T23:13:49.366Z",
+    "startsAt": "2021-11-25T05:31:49.366Z"
   },
   {
     "startBlock": 13386506,
@@ -14288,8 +14323,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-26T23:29:35.977Z",
-    "startsAt": "2021-11-24T05:47:35.977Z"
+    "endsAt": "2021-11-26T23:37:01.367Z",
+    "startsAt": "2021-11-24T05:55:01.367Z"
   },
   {
     "startBlock": 13335288,
@@ -14326,8 +14361,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-19T20:45:59.978Z",
-    "startsAt": "2021-11-17T03:03:59.978Z"
+    "endsAt": "2021-11-19T20:53:25.368Z",
+    "startsAt": "2021-11-17T03:11:25.368Z"
   },
   {
     "startBlock": 13303556,
@@ -14373,8 +14408,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-15T10:59:35.978Z",
-    "startsAt": "2021-11-12T17:17:35.978Z"
+    "endsAt": "2021-11-15T11:07:01.368Z",
+    "startsAt": "2021-11-12T17:25:01.368Z"
   },
   {
     "startBlock": 13282499,
@@ -14410,8 +14445,8 @@
       "Physical"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-12T12:48:11.978Z",
-    "startsAt": "2021-11-09T19:06:11.978Z"
+    "endsAt": "2021-11-12T12:55:37.368Z",
+    "startsAt": "2021-11-09T19:13:37.368Z"
   },
   {
     "startBlock": 13269867,
@@ -14447,8 +14482,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-10T18:41:47.978Z",
-    "startsAt": "2021-11-08T00:59:47.978Z"
+    "endsAt": "2021-11-10T18:49:13.368Z",
+    "startsAt": "2021-11-08T01:07:13.368Z"
   },
   {
     "startBlock": 13237930,
@@ -14483,8 +14518,8 @@
       "Operational"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-11-06T08:14:23.978Z",
-    "startsAt": "2021-11-03T14:32:23.978Z"
+    "endsAt": "2021-11-06T08:21:49.368Z",
+    "startsAt": "2021-11-03T14:39:49.368Z"
   },
   {
     "startBlock": 13166887,
@@ -14519,8 +14554,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-10-27T11:25:47.978Z",
-    "startsAt": "2021-10-24T17:43:47.978Z"
+    "endsAt": "2021-10-27T11:33:13.368Z",
+    "startsAt": "2021-10-24T17:51:13.368Z"
   },
   {
     "startBlock": 13155118,
@@ -14562,8 +14597,8 @@
       "Tech"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-10-25T20:11:59.979Z",
-    "startsAt": "2021-10-23T02:29:59.979Z"
+    "endsAt": "2021-10-25T20:19:25.368Z",
+    "startsAt": "2021-10-23T02:37:25.368Z"
   },
   {
     "startBlock": 13108132,
@@ -14598,8 +14633,8 @@
       "Art"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-10-19T07:34:47.979Z",
-    "startsAt": "2021-10-16T13:52:47.979Z"
+    "endsAt": "2021-10-19T07:42:13.369Z",
+    "startsAt": "2021-10-16T14:00:13.369Z"
   },
   {
     "startBlock": 13070188,
@@ -14644,7 +14679,7 @@
       "Charity"
     ],
     "dynamicQuorum": 0,
-    "endsAt": "2021-10-14T01:05:59.979Z",
-    "startsAt": "2021-10-11T07:23:59.979Z"
+    "endsAt": "2021-10-14T01:13:25.369Z",
+    "startsAt": "2021-10-11T07:31:25.369Z"
   }
 ]

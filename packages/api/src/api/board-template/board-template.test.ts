@@ -13,10 +13,10 @@ const boards = boardTemplateRouter.createCaller({
 
 it.skip("Should create a template", async () => {
   const result = await boards.create({
-    name: "First Template",
-    description: "Test",
-    image: "/templates/first-template.png",
-    boardId: "XwR6voRLLf86sgp_X1X_K",
+    name: "Proposal Template",
+    description: "This is a template for proposals",
+    image: "/templates/proposal-template.png",
+    boardId: "proposal-template",
   });
 
   console.log(result);

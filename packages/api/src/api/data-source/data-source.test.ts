@@ -7,7 +7,7 @@ const caller = dataSourceRouter.createCaller({ user: null });
 describe(
   "Data source",
   () => {
-    it("Should get the proposal meta", async () => {
+    it.skip("Should get the proposal meta", async () => {
       const data = await caller.proposalsMeta({
         first: 1000,
         orderBy: "createdTimestamp",

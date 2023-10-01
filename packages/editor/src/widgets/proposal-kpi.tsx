@@ -12,7 +12,7 @@ const ProposalKPIView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposal-kpi",
-  displayName: "Proposals KPIs",
+  displayName: "Proposal Votation",
   group: "proposal",
   icon: "Star",
 

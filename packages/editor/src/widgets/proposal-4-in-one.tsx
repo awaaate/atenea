@@ -17,7 +17,7 @@ const Proposal4InOneView = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposal-4-in-one",
-  displayName: "Proposal for in one",
+  displayName: "Proposal overview",
   group: "proposal",
   icon: "Star",
 

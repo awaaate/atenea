@@ -48,7 +48,7 @@ export const StartFromScratch = () => {
   };
   return (
     <Card
-      className="flex-1 min-w-[300px] w-full "
+      className="flex-1 min-w-[300px] w-full  flex flex-col"
       style={{
         maxWidth: 300,
       }}
@@ -56,17 +56,21 @@ export const StartFromScratch = () => {
       <CardHeader>
         <CardTitle>Start from scratch</CardTitle>
       </CardHeader>
-      <CardContent className="bg-surface-lowered">
+      <CardContent className="bg-surface-lowered flex-1 h-full grid place-content-center p-0">
         <Image
           src={"/templates/empty.png"}
           alt={"Start from scratch"}
           width={700}
           height={300}
-          className="rouned-default"
+          className="rouned-default w-full h-full bg-cover"
         />
       </CardContent>
       <CardFooter>
-        <Button variant="ghost" onClick={() => handleNewBoard()}>
+        <Button
+          variant="ghost"
+          onClick={() => handleNewBoard()}
+          className="w-full"
+        >
           {isLoading ? (
             <Spinner size="xs" className="mr-2" />
           ) : (

@@ -67,7 +67,7 @@ export const StartFromTemplate = ({ templates }: StartFromTemplateProps) => {
     <>
       {templates.map((template) => (
         <Card
-          className="flex-1 min-w-[300px] w-full "
+          className="flex-1 min-w-[300px] w-full  flex flex-col"
           style={{
             maxWidth: 300,
           }}
@@ -75,26 +75,27 @@ export const StartFromTemplate = ({ templates }: StartFromTemplateProps) => {
           <CardHeader>
             <CardTitle>{template.name}</CardTitle>
           </CardHeader>
-          <CardContent className="bg-surface-lowered">
+          <CardContent className="bg-surface-lowered flex-1 h-full grid place-content-center p-0">
             <Image
               src={template.image}
               alt={template.name}
               width={700}
               height={300}
-              className="rouned-default"
+              className="rouned-lg w-full h-full bg-cover"
             />
           </CardContent>
           <CardFooter>
             <Button
               variant="ghost"
               onClick={() => handleDuplicate(template.boardId)}
+              className="w-full"
             >
               {selectedTemplate === template.boardId ? (
                 <Spinner size="xs" className="mr-2" />
               ) : (
                 <>
                   <Icon name="Plus" className="mr-2" />
-                  Duplicate board
+                  Use template
                 </>
               )}
             </Button>
