@@ -15,9 +15,6 @@ describe(
       });
       //count with categories
       const categories = data.filter((d) => d.categories.length > 0);
-      console.log(
-        `Total proposals: ${data.length}, proposals with categories: ${categories.length}`
-      );
 
       await fs.writeFile("./data.json", JSON.stringify(data, null, 2));
       return data;

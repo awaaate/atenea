@@ -23,6 +23,6 @@
     "@nouns/sdk": "^0.4.0",
     "@shared/editor": "workspace:^",
     "@shared/ui": "workspace:^",
-    "@tremor/react": "3.8.2"
+    "@tremor/react": "^3.8.2"
   }
 }
