@@ -26,7 +26,7 @@ export default WidgetFactory.createWidget({
     async fetcher(args) {
       if (!args) {
         return {
-          votes: [],
+          data: [],
         };
       }
 
@@ -35,7 +35,12 @@ export default WidgetFactory.createWidget({
       );
 
       return {
-        votes: proposalVotes,
+        data: proposalVotes,
+      };
+    },
+    mapper({ data }) {
+      return {
+        votes: data,
       };
     },
   },

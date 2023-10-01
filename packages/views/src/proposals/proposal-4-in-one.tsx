@@ -43,10 +43,9 @@ export interface Prposal4inOneViewProps {
   teamMembers: number;
 }
 export const Proposal4InOneView: React.FC<Prposal4inOneViewProps> = (props) => {
-  console.log("MAPPER", props);
   const { categories, teamMembers } = props;
   return (
-    <div className="grid grid-cols-4 gap-4 px-4  rounded-default bg-surface-default">
+    <div className="flex flex-wrap gap-4 px-4  rounded-default ">
       <Card title="Categories" icon={<Icon name="FileText" />}>
         <div className="flex gap-2 flex-wrap">
           {categories.map((category) => {
@@ -93,10 +92,12 @@ const Card: React.FC<{
   icon: React.ReactNode;
 }> = ({ children, title, icon }) => {
   return (
-    <div className="flex flex-col gap-4 px-4 py-4 border shadow-card rounded-default bg-surface-default">
+    <div className="flex flex-col gap-4 px-4 py-4 border shadow-card rounded-default bg-surface-default min-w-[150px] flex-1">
       <p className="text-sm font-medium text-text-weaker">{title}</p>
       <div className="flex items-center gap-2">
-        {icon}
+        <span className="icon-xl rounded-full bg-accent/20  grid place-content-center">
+          {icon}
+        </span>
         <div className="ml-2">{children}</div>
       </div>
     </div>
