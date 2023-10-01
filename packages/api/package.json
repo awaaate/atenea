@@ -23,6 +23,7 @@
   "devDependencies": {
     "@nouns": "link:@types/@nouns",
     "sdk": "link:@types/@nouns/sdk",
-    "vitest": "^0.34.2"
+    "vitest": "^0.34.2",
+    "@types/node": "20.8.0"
   }
 }
