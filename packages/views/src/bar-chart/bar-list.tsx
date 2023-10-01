@@ -30,6 +30,7 @@ export function BarListView(props: BarListViewProps) {
       data={data.map((d) => ({
         ...d,
         color: colors[0],
+
         icon: d.icon
           ? () => {
               return <Icon name={d.icon as IconName} />;
