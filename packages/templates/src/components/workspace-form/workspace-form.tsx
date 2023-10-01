@@ -28,7 +28,7 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
           <FormItem>
             <FormLabel>Worksapce Name</FormLabel>
             <FormControl>
-              <Input placeholder="shadcn" {...field} />
+              <Input placeholder="Name" {...field} />
             </FormControl>
             <FormDescription>This is your public display name.</FormDescription>
             <FormMessage />
@@ -81,7 +81,7 @@ const WorkspaceForm: React.FC<WorkspaceFormProps> = () => {
           <FormItem>
             <FormLabel>Description</FormLabel>
             <FormControl>
-              <Input placeholder="shadcn" {...field} />
+              <Input placeholder="Description" {...field} />
             </FormControl>
             <FormDescription>
               A little description of your workspace.

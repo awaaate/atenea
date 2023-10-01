@@ -114,6 +114,7 @@ export const workspaceRouter = router({
         subdomain: z.string(),
         image: z.string().optional(),
         accentColor: z.string().optional(),
+        id: z.string().optional(),
       })
     )
     .mutation(async ({ input, ctx }) => {
@@ -131,7 +132,7 @@ export const workspaceRouter = router({
           userId: userId,
           updatedAt: new Date().toDateString(),
           createdAt: new Date().toDateString(),
-          id: nanoid(),
+          id: input.id || nanoid(),
         })
         .returning({
           id: Workspace.id,

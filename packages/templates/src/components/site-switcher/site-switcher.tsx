@@ -30,6 +30,7 @@ interface SiteSwitcherProps {
   onSignout: () => void;
   theme: "light" | "dark";
   setTheme: (theme: "light" | "dark") => void;
+  createWorkspace: () => void;
 }
 const SiteSwitcher = ({
   workspaceId,
@@ -37,6 +38,7 @@ const SiteSwitcher = ({
   onSignout,
   setTheme,
   theme,
+  createWorkspace,
 }: SiteSwitcherProps) => {
   const collapsedSidebar = useLayoutStore((state) => state.collapsedSidebar);
   const [mounted, setMounted] = useState(false);
@@ -83,11 +85,9 @@ const SiteSwitcher = ({
               </DropdownMenuRadioItem>
             ))}
           </DropdownMenuRadioGroup>
-          <DropdownMenuItem asChild>
-            <Link href={`/create`}>
-              <Icon name="Plus" className="mr-2" />
-              Create a Workspace
-            </Link>
+          <DropdownMenuItem onSelect={createWorkspace}>
+            <Icon name="Plus" className="mr-2" />
+            Create a Workspace
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuSub>
