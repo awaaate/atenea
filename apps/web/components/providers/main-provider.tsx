@@ -6,6 +6,8 @@ import { Toaster } from "@shared/ui/src/toast";
 import { SessionProvider as NextAuthSessionProvider } from "next-auth/react";
 import { Suspense } from "react";
 import { Spinner } from "@shared/ui/src/spinner";
+import { Analytics } from "@vercel/analytics/react";
+
 export const MainProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
@@ -22,6 +24,7 @@ export const MainProvider = ({ children }: { children: React.ReactNode }) => {
               <>{children}</>
             </Suspense>
           </TooltipProvider>
+          <Analytics />
         </ThemeProvider>
         <Toaster />
       </NextAuthSessionProvider>
