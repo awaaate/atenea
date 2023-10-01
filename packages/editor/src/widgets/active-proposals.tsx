@@ -77,7 +77,7 @@ export default WidgetFactory.createWidget({
   View: ProposalTable,
   Config: () => (
     <ViewPropsConfig
-      props={[{ name: "first", type: "number", label: "First" }]}
+      props={[{ name: "first", type: "number", label: "Show me last" }]}
     />
   ),
   initialProps: {

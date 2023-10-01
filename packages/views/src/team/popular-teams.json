@@ -2,7 +2,7 @@
   "Verbs": {
     "name": "Verbs",
     "category": "Tech",
-    "image": "/images/founded-teams/Verbs.jpg",
+    "image": "/images/founded-teams/Verbs.png",
     "members": [
       {
         "name": "Elad",
@@ -63,7 +63,7 @@
   "Nouns OTG": {
     "name": "Nouns OTG",
     "category": "Marketing",
-    "image": "/images/founded-teams/Nouns OTG.jpg",
+    "image": "/images/founded-teams/NounsOTG.jpg",
     "members": [
       {
         "name": "Aubtoshi",
@@ -74,7 +74,7 @@
   },
   "The Noun Square": {
     "name": "The Noun Square",
-    "image": "/images/founded-teams/The Noun Square.jpg",
+    "image": "/images/founded-teams/The Nouns Square.jpg",
     "category": "Community",
     "members": [
       {
@@ -133,7 +133,7 @@
   },
   "Nouns: A Movie": {
     "name": "Nouns: A Movie",
-    "image": "/images/founded-teams/Nouns A Movie.jpg",
+    "image": "/images/founded-teams/Nouns A movie.jpg",
     "category": "Art",
     "members": [
       {
@@ -224,32 +224,10 @@
       }
     ]
   },
-  "NounsAI Pod": {
-    "name": "NounsAI Pod",
-    "category": "Tech",
-    "image": "/images/founded-teams/NounsAI Pod.jpg",
-    "members": [
-      {
-        "name": "TheHeroShep",
-        "description": "Product leader at NounsAI Pod",
-        "contact": "https://twitter.com/TheHeroShep"
-      },
-      {
-        "name": "Steve",
-        "description": "Developer at NounsAI Pod",
-        "contact": "https://twitter.com/hrdwrknvrstps"
-      },
-      {
-        "name": "Honkdiddly",
-        "description": "Senior Software & Machine Learning Engineer, member of NounsAI Pod and Nouner.",
-        "contact": "https://twitter.com/honkdiddly"
-      }
-    ]
-  },
   "Proposals.wtf": {
     "name": "Proposals.wtf",
     "category": "Community",
-    "image": "/images/founded-teams/Proposals.wtf.jpg",
+    "image": "/images/founded-teams/proposals.wtf.jpg",
     "members": [
       {
         "name": "Maty",

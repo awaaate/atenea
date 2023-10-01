@@ -20,10 +20,9 @@ export const WorkspaceCard: React.FC<WorkspaceCardProps> = ({
     <span
       ref={(el) => {
         if (el) {
-          console.log(el.getBoundingClientRect());
           el.style.setProperty(
             "--theme-color-accent",
-            getAccentColor(accentColor)
+            getAccentColor(accentColor as any)
           );
         }
       }}
@@ -44,16 +43,18 @@ export const WorkspaceCard: React.FC<WorkspaceCardProps> = ({
   );
 };
 
-export const CreateWorkspaceCard: React.FC = () => {
+export const CreateWorkspaceCard: React.FC<{
+  clickHandler: () => void;
+}> = ({ clickHandler }) => {
   return (
-    <Link
+    <div
       className={
         " transition-all bg-accent/5 p-2 rounded-default border-2 border-accent/10 hover:bg-accent/20 cursor-pointer  flex flex-col items-center justify-center"
       }
-      href="/create"
+      onClick={clickHandler}
     >
       <Icon name="Plus" className="text-text-weakest " variant={"button"} />
       <span>New Workspace</span>
-    </Link>
+    </div>
   );
 };

@@ -13,9 +13,11 @@ interface WorkspacesPageProps {
     accentColor: string;
     id: string;
   }[];
+  createWorkspace: () => void;
 }
 export const WorkspacesPage: React.FC<WorkspacesPageProps> = ({
   workspaces,
+  createWorkspace,
 }) => {
   return (
     <div className="w-screen h-screen  ">
@@ -35,7 +37,7 @@ export const WorkspacesPage: React.FC<WorkspacesPageProps> = ({
         {workspaces.map((workspace) => {
           return <WorkspaceCard {...workspace} />;
         })}
-        <CreateWorkspaceCard />
+        <CreateWorkspaceCard clickHandler={createWorkspace} />
       </div>
     </div>
   );

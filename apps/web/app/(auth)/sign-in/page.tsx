@@ -28,14 +28,15 @@ const Page = async () => {
   return (
     <AuthenticationPage>
       <AuthenticationPageHeadingWrapper>
-        <AuthenticationPageHeading>Sign in to your 3</AuthenticationPageHeading>
+        <AuthenticationPageHeading>
+          Sign in with your wallet
+        </AuthenticationPageHeading>
         <AuthenticationPageSubheading>
-          Or <Link href="/sign-up">create a new account</Link>
+          Or <Link href="/sign-in">create a new account</Link>
         </AuthenticationPageSubheading>
       </AuthenticationPageHeadingWrapper>
 
       <UserAuthForm />
-      <AuthenticationPageTerms />
     </AuthenticationPage>
   );
 };

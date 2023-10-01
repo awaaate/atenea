@@ -168,7 +168,7 @@ const BoardConfig = ({ id }) => {
       >
         <Icon name="Settings" className="mr-2" variant={"button"} size="m" />
 
-        <span>Config</span>
+        <span>Configuration</span>
       </DropdownMenuItem>
     </>
   );

@@ -38,7 +38,7 @@ const BoardView = async ({ params }: BoardViewProps) => {
       <BoardInitializer {...intialState} />
       <Button className="fixed bottom-0 right-0 m-2">
         <a href={`/remix/${params.boardId}`}>
-          Make yours this client
+          Make this client yours
           <Icon name="Sparkle" className="ml-2 h-4 w-4" />
         </a>
       </Button>
