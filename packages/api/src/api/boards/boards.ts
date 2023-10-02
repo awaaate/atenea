@@ -212,4 +212,36 @@ export const boardsRouter = router({
           id: Board.id,
         });
     }),
+  //generate
+  generate: protectedProcedure
+    .input(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        description: z.string(),
+        content: z.any(),
+        workspaceId: z.string(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      const { db, user } = ctx;
+      const userId = user?.id;
+      if (!userId) throw new Error("User not found");
+      const board = {
+        id: input.id,
+        background: "",
+        name: input.name,
+        workspaceId: input.workspaceId,
+        userId: userId,
+        description: input.description,
+        createdAt: new Date().toISOString(), // convert Date to string
+        updatedAt: new Date().toISOString(), // convert Date to string
+        draft: input.content,
+      };
+      return db.insert(Board).values(board).returning({
+        id: Board.id,
+        name: Board.name,
+        draft: Board.draft,
+      });
+    }),
 });

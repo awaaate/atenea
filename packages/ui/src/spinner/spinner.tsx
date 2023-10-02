@@ -23,7 +23,7 @@ const Spinner: React.FC<SpinnerProps> = ({ className, size = "md" }) => {
         name="Spinner"
         aria-hidden="true"
         className={cn(
-          "animate-spin z-spinner text-black/20 transion-slowly",
+          "animate-spin z-spinner text-text-weaker",
           sizes[size],
           className
         )}

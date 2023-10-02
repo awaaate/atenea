@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { WidgetFactory } from "../widget/widget-factory";
 import { sourceFetcher } from "../lib/source-fetcher";
 import { ViewPropsConfig } from "@shared/views/src/view-config/fields/props-config";
+import { date } from "@shared/ui/src/date";
 
 const ProposalContentView = lazy(() =>
   import("@shared/views/src/proposal-content-view/proposal-content-view").then(
@@ -38,10 +39,16 @@ export default WidgetFactory.createWidget({
         args.requestVariables.proposalId
       );
 
+      const proposalMeta = await sourceFetcher.proposalsMeta.query({
+        idIn: [args?.requestVariables.proposalId.toString() || "320"],
+      });
+
       return {
         content: proposalTeam.content,
         title: proposalTeam.title,
         description: proposalTeam.description,
+        status: proposalMeta[0].status,
+        createdAt: date(proposalMeta[0].createdTimestamp).format("DD/MM/YYYY"),
       };
     },
   },
