@@ -24,12 +24,12 @@ export const ProposalContentView: React.FC<ProposalContentViewProps> = ({
   const proposalId = useNode((node) => node.data.props.proposalId as number);
   const isFullScreen = useNode((node) => node.data.props.fullScreen);
   const { setNode } = useNodeActions();
-  useEffect(() => {
+  /*   useEffect(() => {
     setNode((node) => {
       node.data.props.title = title;
       return node;
     });
-  }, [proposalId]);
+  }, [proposalId]); */
 
   if (isFullScreen) {
     return (
