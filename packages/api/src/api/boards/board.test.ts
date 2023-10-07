@@ -30,7 +30,7 @@ it.skip("It should get all the board from the user", async () => {
   expect(result).toBeDefined();
 });
 
-it.skip(
+it(
   "It should generate all the boards",
   async () => {
     //test the trpc
@@ -41,6 +41,13 @@ it.skip(
       }
     );
     const all = await Promise.all(
+      //delete all
+      /*       proposalsList.map(async (id) => {
+        const result = await boards.delete({
+          id,
+        });
+        console.log(result);
+      }) */
       proposalsList.map(async (id) => {
         const result = await boards.generate({
           name: `Proposal ${id}`,

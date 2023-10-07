@@ -51,6 +51,15 @@ const images = [
   "url(https://images.unsplash.com/photo-1688822863426-8c5f9b257090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=90)",
   "url(https://images.unsplash.com/photo-1691225850735-6e4e51834cad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=90)",
   "url(/images/bg/knw.jpg)",
+  "url(/images/bg/img1.jpg)",
+  "url(/images/bg/img2.jpg)",
+  "url(/images/bg/img3.jpg)",
+  "url(/images/bg/img4.jpg)",
+  "url(/images/bg/img5.jpg)",
+  "url(/images/bg/img6.jpg)",
+  "url(/images/bg/img7.jpg)",
+  "url(/images/bg/img8.jpg)",
+  "url(/images/bg/img9.jpg)",
 ];
 
 export function BackgroundPicker({

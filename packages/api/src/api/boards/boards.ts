@@ -229,7 +229,6 @@ export const boardsRouter = router({
       if (!userId) throw new Error("User not found");
       const board = {
         id: input.id,
-        background: "",
         name: input.name,
         workspaceId: input.workspaceId,
         userId: userId,
@@ -237,6 +236,10 @@ export const boardsRouter = router({
         createdAt: new Date().toISOString(), // convert Date to string
         updatedAt: new Date().toISOString(), // convert Date to string
         draft: input.content,
+        coverImage:
+          "https://utfs.io/f/ad40a950-e6e3-4b60-98a9-964466aae9d3-v6celk.jpg",
+        coverImageEnabled: true,
+        background: "rgb(226, 226, 226)",
       };
       return db.insert(Board).values(board).returning({
         id: Board.id,
