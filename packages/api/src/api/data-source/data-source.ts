@@ -13,6 +13,7 @@ import {
 } from "./proposals-meta";
 import { getProposalTeamMembers } from "./team-members";
 import { getNounsBlance } from "./nouns-balance";
+import { getAllPropUpdates, getPropUpdates } from "./prop-updates";
 
 export const dataSourceRouter = router({
   votes: publicProcedure
@@ -93,6 +94,14 @@ export const dataSourceRouter = router({
 
   getNounsBalance: publicProcedure.query(async ({ ctx }) => {
     return getNounsBlance();
+  }),
+  getPropUpdates: publicProcedure
+    .input(z.array(z.string()))
+    .query(async (ctx) => {
+      return getPropUpdates(ctx.input);
+    }),
+  getAllPropUpdates: publicProcedure.query(async (ctx) => {
+    return getAllPropUpdates();
   }),
 });
 

@@ -1,8 +1,8 @@
-import { describe, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { dataSourceRouter } from "./data-source";
 import { db } from "@shared/db";
 import fs from "fs/promises";
-const caller = dataSourceRouter.createCaller({ user: null });
+const caller = dataSourceRouter.createCaller({ user: null, db });
 
 describe(
   "Data source",
@@ -28,3 +28,17 @@ describe(
   },
   { timeout: 100000 }
 );
+
+describe("Testing prop updates", () => {
+  it.skip("Should get All prop updated", async () => {
+    const data = await caller.getAllPropUpdates();
+    console.log(JSON.stringify(data, null, 2));
+    expect(data).toBeDefined();
+  });
+
+  it.skip("Should get prop updated", async () => {
+    const data = await caller.getPropUpdates(["314"]);
+    console.log(JSON.stringify(data, null, 2));
+    expect(data).toBeDefined();
+  });
+});

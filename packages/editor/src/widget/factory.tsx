@@ -21,6 +21,7 @@ import executedProposals from "../widgets/executed-proposals";
 import activeProposals from "../widgets/active-proposals";
 import categoriesBarList from "../widgets/categories-bar-list";
 import proposal4InOne from "../widgets/proposal-4-in-one";
+import proposalUpdates from "../widgets/proposal-updates";
 
 export const widgetFactory = new WidgetFactory();
 
@@ -47,3 +48,4 @@ widgetFactory.registerWidgetComponent(proposalCategory);
 widgetFactory.registerWidgetComponent(nounOfDay);
 widgetFactory.registerWidgetComponent(proposalRoadmap);
 widgetFactory.registerWidgetComponent(proposal4InOne);
+widgetFactory.registerWidgetComponent(proposalUpdates);

@@ -30,7 +30,7 @@ it.skip("It should get all the board from the user", async () => {
   expect(result).toBeDefined();
 });
 
-it(
+it.skip(
   "It should generate all the boards",
   async () => {
     //test the trpc

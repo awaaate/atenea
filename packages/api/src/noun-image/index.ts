@@ -53,3 +53,42 @@ export const generateNounImage = async (nounId: string) => {
 
   return svgBinary;
 };
+
+export interface Root {
+  data: Data;
+}
+
+export interface Data {
+  account: Account;
+}
+
+export interface Account {
+  nouns: Noun[];
+}
+
+export interface Noun {
+  id: string;
+}
+
+const accountQuery = gql`
+  query Account($accountId: ID!) {
+    account(id: $accountId) {
+      nouns {
+        id
+      }
+    }
+  }
+`;
+export const getAccountNouns = async (account: string) => {
+  const response = await nounsSubgraph.request<{
+    account: {
+      nouns?: {
+        id: string;
+      }[];
+    };
+  }>(accountQuery, {
+    accountId: account,
+  });
+
+  return response.account?.nouns ? response.account.nouns[0] : null;
+};
