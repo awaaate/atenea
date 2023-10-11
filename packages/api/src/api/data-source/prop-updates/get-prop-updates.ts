@@ -1,5 +1,6 @@
 import { gql } from "graphql-request";
 import { propUpdatesClient } from "./client";
+import { z } from "zod";
 
 const query = gql`
   query getPropUpdate($where: Proposal_filter) {
@@ -44,12 +45,23 @@ export interface Update {
   admin: string;
   blockTimestamp: string;
 }
+export const getPropupdatedInput = z.object({
+  ids: z.array(z.string()).optional(),
+  first: z.number().optional(),
+  skip: z.number().optional(),
+  executed: z.boolean().optional(),
+});
 
-export const getPropUpdates = async (ids: string[]) => {
+export const getPropUpdates = async (input: z.infer<typeof getPropupdatedInput>) => {
   const data = await propUpdatesClient.request<GetPropUpdates>(query, {
-    where: {
-      id_in: ids,
+
+    "where": {
+      "id_in": input.ids,
+      "executed": input.executed,
     },
+    "first": input.first,
+    orderBy: "id",
+    orderDirection: "desc",
   });
   return data.proposals.map((proposal) => {
     return {

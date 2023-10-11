@@ -11,9 +11,9 @@ const PropUpdates = lazy(() =>
 
 export default WidgetFactory.createWidget({
   name: "proposal-updates",
-  displayName: "Proposal Updated",
-  group: "proposal",
-  icon: "Code",
+  displayName: "Proposal Updates",
+  group: "Prop updates",
+  icon: "Eye",
   Config: () => (
     <>
       <ViewPropsConfig
@@ -38,10 +38,10 @@ export default WidgetFactory.createWidget({
           isCompleted: false,
         };
       }
-
-      const data = await sourceFetcher.getPropUpdates.query([
-        args.requestVariables.proposalId.toString(),
-      ]);
+      const input = {
+        ids: [args.requestVariables.proposalId.toString()],
+      }
+      const data = await sourceFetcher.getPropUpdates.query(input);
 
       const prop = data[0];
       return {
@@ -52,8 +52,7 @@ export default WidgetFactory.createWidget({
     },
   },
   initialProps: {
-    proposalId: "314",
-    title: "Proposal Updates",
+    proposalId: "376",
     layout: {
       w: Infinity,
       h: 12,

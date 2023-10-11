@@ -49,7 +49,7 @@ interface CreateWidgetArgs<
       }
     ) => TArgs;
     fetcher: (args: TArgs | undefined) => Promise<TData>;
-    mapper?: (data: TData) => TMappedData;
+    mapper?: (data: TData, args: TArgs) => TMappedData;
   };
   initialProps: Partial<WidgetProps>;
 }
@@ -85,12 +85,12 @@ export class WidgetFactory {
         return args.dataFetcher.fetcher(dataFetcherArgs);
       }, [dataFetcherArgs]);
       const mapperFunction = useCallback(
-        (data: TData) => {
+        (data: TData, ) => {
           console.log("MAPPER FUNCTION:", data);
           if (!args.dataFetcher.mapper) return data as unknown as TMapped;
-          return args.dataFetcher.mapper(data);
+          return args.dataFetcher.mapper(data, dataFetcherArgs as TArgs);
         },
-        [args.dataFetcher.mapper]
+        [args.dataFetcher.mapper, dataFetcherArgs]
       );
       return (
         <WidgetRoot

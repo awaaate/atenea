@@ -1,2 +1,2 @@
 export { getAllPropUpdates } from "./get-all";
-export { getPropUpdates } from "./get-prop-update";
+export { getPropUpdates, getPropupdatedInput } from "./get-prop-updates";

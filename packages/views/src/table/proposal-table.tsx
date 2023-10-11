@@ -7,6 +7,7 @@ import { API_URL } from "@shared/editor/src/constants";
 import { date } from "@shared/ui/src/date";
 import { Icon } from "@shared/ui/src/icon";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
+import { Link } from "@shared/ui/src/link";
 
 interface ProposalTableProps {
   title: string;
@@ -37,7 +38,7 @@ export const ProposalTable: React.FC<{
     <ScrollArea className="w-full h-full" orientation={["horizontal"]}>
       <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card ">
         {data.map((proposal, i) => (
-          <a href={`/prop/${proposal.id}`} target="_blank" rel="noreferrer">
+          <Link href={`/prop/${proposal.id}`} target="_blank" rel="noreferrer">
             <div
               className={cn(
                 "grid md:grid-cols-8  gap-4 py-4 px-6 hover:bg-active-default grid-cols-1 ",
@@ -104,7 +105,7 @@ export const ProposalTable: React.FC<{
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </ScrollArea>

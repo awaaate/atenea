@@ -45,5 +45,14 @@ const query = gql`
 
 export const getAllPropUpdates = async () => {
   const data = await propUpdatesClient.request<GetAllQuery>(query);
-  return data.propUpdates;
+  return data.propUpdates.map((update) => {
+    return {
+      ...update,
+      date: new Date(parseInt(update.blockTimestamp) * 1000).toLocaleString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      }),
+    }
+  })
 };

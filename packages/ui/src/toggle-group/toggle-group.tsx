@@ -2,7 +2,7 @@
 import * as TogglePrimitive from "@radix-ui/react-toggle-group";
 import React from "react";
 
-const ToogleGroup = TogglePrimitive.ToggleGroup;
+const ToggleGroup = TogglePrimitive.ToggleGroup;
 
 import { cn } from "../lib/utils";
 import { buttonVariants } from "../button";
@@ -24,4 +24,4 @@ const ToogleItem = React.forwardRef<
 
 ToogleItem.displayName = "ToogleItem";
 
-export { ToogleGroup, ToogleItem };
+export { ToggleGroup, ToogleItem };

@@ -22,11 +22,17 @@ import activeProposals from "../widgets/active-proposals";
 import categoriesBarList from "../widgets/categories-bar-list";
 import proposal4InOne from "../widgets/proposal-4-in-one";
 import proposalUpdates from "../widgets/proposal-updates";
+import completedProps from "../widgets/completed-props";
+import lastUpdates from "../widgets/last-updates";
+import propUpdatesLeaderboard from "../widgets/prop-updates-leaderboard";
 
 export const widgetFactory = new WidgetFactory();
 
 widgetFactory.registerWidgetComponent(TextWidget);
 
+widgetFactory.registerWidgetComponent(completedProps);
+widgetFactory.registerWidgetComponent(lastUpdates);
+widgetFactory.registerWidgetComponent(propUpdatesLeaderboard);
 widgetFactory.registerWidgetComponent(executedProposals);
 widgetFactory.registerWidgetComponent(activeProposals);
 widgetFactory.registerWidgetComponent(categoriesBudgetDonutChart);
