@@ -7,7 +7,7 @@ const ToggleGroup = TogglePrimitive.ToggleGroup;
 import { cn } from "../lib/utils";
 import { buttonVariants } from "../button";
 
-const ToogleItem = React.forwardRef<
+const ToggleItem = React.forwardRef<
   React.ElementRef<typeof TogglePrimitive.ToggleGroupItem>,
   React.ComponentPropsWithoutRef<typeof TogglePrimitive.ToggleGroupItem>
 >(({ className, ...props }, ref) => (
@@ -22,6 +22,6 @@ const ToogleItem = React.forwardRef<
   />
 ));
 
-ToogleItem.displayName = "ToogleItem";
+ToggleItem.displayName = "ToggleItem";
 
-export { ToggleGroup, ToogleItem };
+export { ToggleGroup, ToggleItem };

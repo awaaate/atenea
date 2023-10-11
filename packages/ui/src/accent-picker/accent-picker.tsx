@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { ToogleGroup, ToogleItem } from "../toggle-group";
+import { ToggleGroup, ToggleItem } from "../toggle-group";
 import { cn } from "../lib/utils";
 
 export const ACCENT_COLORS = {
@@ -37,12 +37,12 @@ export function getTextAccentColor(color: keyof typeof ACCENT_COLORS) {
 }
 
 export const AccentPicker = forwardRef<
-  React.ElementRef<typeof ToogleGroup>,
-  React.ComponentPropsWithoutRef<typeof ToogleGroup>
+  React.ElementRef<typeof ToggleGroup>,
+  React.ComponentPropsWithoutRef<typeof ToggleGroup>
 >(({ type, className, onValueChange, ...props }, ref) => {
   return (
     //@ts-expect-error
-    <ToogleGroup
+    <ToggleGroup
       ref={ref}
       {...props}
       type="single"
@@ -61,7 +61,7 @@ export const AccentPicker = forwardRef<
       }}
     >
       {Object.keys(ACCENT_COLORS).map((color: keyof typeof ACCENT_COLORS) => (
-        <ToogleItem
+        <ToggleItem
           key={color}
           value={color}
           className="icon-xl"
@@ -69,8 +69,8 @@ export const AccentPicker = forwardRef<
             backgroundColor: `rgb(${getAccentColor(color)})`,
             color: `rgb(${getTextAccentColor(color)})`,
           }}
-        ></ToogleItem>
+        ></ToggleItem>
       ))}
-    </ToogleGroup>
+    </ToggleGroup>
   );
 });

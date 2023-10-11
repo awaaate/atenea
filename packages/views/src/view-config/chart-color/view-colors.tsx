@@ -2,7 +2,7 @@ import { useNode, useNodeActions } from "@shared/editor/src/engine/nodes";
 import { WidgetConfigSection } from "@shared/editor/src/widget/widget-config-section";
 import { Color } from "@tremor/react";
 import { forwardRef } from "react";
-import { ToogleGroup, ToogleItem } from "@shared/ui/src/toggle-group";
+import { ToggleGroup, ToggleItem } from "@shared/ui/src/toggle-group";
 import { cn } from "@shared/ui/src/utils";
 import ViewColorsPicker from "./color-picker";
 interface ViewColorsConfigProps {

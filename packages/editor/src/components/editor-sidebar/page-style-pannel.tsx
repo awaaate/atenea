@@ -1,4 +1,4 @@
-import { ToogleGroup, ToogleItem } from "@shared/ui/src/toggle-group";
+import { ToggleGroup, ToggleItem } from "@shared/ui/src/toggle-group";
 import { WidgetConfigSection } from "../../widget/widget-config-section";
 
 import { BackgroundPickerTabs } from "@shared/ui/src/background-picker";
@@ -11,7 +11,7 @@ import { Input } from "@shared/ui/src/input";
 import { Textarea } from "@shared/ui/src/textarea";
 
 const classes = {
-  toogleItem:
+  ToggleItem:
     "flex flex-col py-4  h-min items-center justify-center flex-1 data-[state=on]:bg-active-default  data-[state=on]:border-accent",
   toggleItemText: "text-sm text-text-weaker",
 };
@@ -46,7 +46,7 @@ export const PageStylePannel = () => {
       <Separator />
       <WidgetConfigSection title="Cover Image">
         <WidgetConfigSection.Title />
-        <ToogleGroup
+        <ToggleGroup
           type="single"
           className="flex gap-2"
           value={coverImageEnabled ? "true" : "false"}
@@ -54,15 +54,15 @@ export const PageStylePannel = () => {
             useEditorStore.setState({ coverImageEnabled: value === "true" });
           }}
         >
-          <ToogleItem value="false" className={cn(classes.toogleItem)}>
+          <ToggleItem value="false" className={cn(classes.ToggleItem)}>
             <Icon name="Layout" className="mb-1" />
             <span className="text-sm text-text-weaker">No cover</span>
-          </ToogleItem>
-          <ToogleItem value="true" className={cn(classes.toogleItem)}>
+          </ToggleItem>
+          <ToggleItem value="true" className={cn(classes.ToggleItem)}>
             <Icon name="Layout" className="mb-1" />
             <span className="text-sm text-text-weaker">Cover Image</span>
-          </ToogleItem>
-        </ToogleGroup>
+          </ToggleItem>
+        </ToggleGroup>
       </WidgetConfigSection>
       <Separator />
 

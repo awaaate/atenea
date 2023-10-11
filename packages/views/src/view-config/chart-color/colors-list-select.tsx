@@ -2,7 +2,7 @@ import { useNode, useNodeActions } from "@shared/editor/src/engine/nodes";
 import { WidgetConfigSection } from "@shared/editor/src/widget/widget-config-section";
 import { Color } from "@tremor/react";
 import { forwardRef } from "react";
-import { ToogleGroup, ToogleItem } from "@shared/ui/src/toggle-group";
+import { ToggleGroup, ToggleItem } from "@shared/ui/src/toggle-group";
 import { cn } from "@shared/ui/src/utils";
 import { getBackgroundColor } from "./utils";
 import {
@@ -49,7 +49,7 @@ export const ColorsListSelect: React.FC<ColorsListSelectProps> = ({
 }) => {
   return (
     <div className={className}>
-      <ToogleGroup
+      <ToggleGroup
         type="single"
         value={color as unknown as string}
         onValueChange={(newColors) => {
@@ -65,17 +65,17 @@ export const ColorsListSelect: React.FC<ColorsListSelectProps> = ({
             className={cn(getBackgroundColor(color), "")}
           />
         ))}
-      </ToogleGroup>
+      </ToggleGroup>
     </div>
   );
 };
 const ColorBox = forwardRef<
-  React.ElementRef<typeof ToogleItem>,
-  React.ComponentPropsWithoutRef<typeof ToogleItem>
+  React.ElementRef<typeof ToggleItem>,
+  React.ComponentPropsWithoutRef<typeof ToggleItem>
 >(({ className, ...props }, ref) => (
   <Tooltip>
     <TooltipTrigger>
-      <ToogleItem
+      <ToggleItem
         ref={ref}
         className={cn(
           " icon-xl  rounded-pill border-2  data-[state=on]:border-blue-500 data-[state=on]:border-2 hover:border-blue-500  data-[state=on]:scale-125",

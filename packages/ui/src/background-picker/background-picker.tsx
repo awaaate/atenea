@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../tabs";
 import { ToggleGroup } from "@radix-ui/react-toggle-group";
 import React, { forwardRef, useMemo } from "react";
 import { Icon } from "../icon";
-import { ToogleItem } from "../toggle-group";
+import { ToggleItem } from "../toggle-group";
 
 interface BackgroundPickerProps {
   background: string;
@@ -160,10 +160,10 @@ export const BackgroundPickerTabs: React.FC<BackgroundPickerProps> = ({
   );
 };
 const BackgroundBox = forwardRef<
-  React.ElementRef<typeof ToogleItem>,
-  React.ComponentPropsWithoutRef<typeof ToogleItem>
+  React.ElementRef<typeof ToggleItem>,
+  React.ComponentPropsWithoutRef<typeof ToggleItem>
 >(({ className, ...props }, ref) => (
-  <ToogleItem
+  <ToggleItem
     ref={ref}
     className={cn(
       " icon-xl  rounded-md border-2  data-[state=on]:border-blue-500 ",
