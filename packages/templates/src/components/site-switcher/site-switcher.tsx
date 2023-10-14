@@ -71,8 +71,12 @@ const SiteSwitcher = ({
         <DropdownMenuContent className="w-[300px]">
           <DropdownMenuRadioGroup value={currentSite.id}>
             {workspaces.map((workspace) => (
-              <DropdownMenuRadioItem key={workspace.id} value={workspace.id}>
-                <Link href={`/app/${workspace.id}`}>
+              <Link
+                href={`/app/${workspace.id}`}
+                key={workspace.id}
+                className="w-full cursor-pointer"
+              >
+                <DropdownMenuRadioItem value={workspace.id}>
                   <div className="flex items-center gap-2 pl-2 data-[]:">
                     <Avatar
                       size="sm"
@@ -81,8 +85,8 @@ const SiteSwitcher = ({
                     />
                     {workspace.name}
                   </div>
-                </Link>
-              </DropdownMenuRadioItem>
+                </DropdownMenuRadioItem>
+              </Link>
             ))}
           </DropdownMenuRadioGroup>
           <DropdownMenuItem onSelect={createWorkspace}>
