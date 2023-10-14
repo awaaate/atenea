@@ -85,7 +85,7 @@ export class WidgetFactory {
         return args.dataFetcher.fetcher(dataFetcherArgs);
       }, [dataFetcherArgs]);
       const mapperFunction = useCallback(
-        (data: TData, ) => {
+        (data: TData) => {
           console.log("MAPPER FUNCTION:", data);
           if (!args.dataFetcher.mapper) return data as unknown as TMapped;
           return args.dataFetcher.mapper(data, dataFetcherArgs as TArgs);
@@ -132,6 +132,7 @@ export class WidgetFactory {
       displayName: args.displayName,
       group: args.group,
       icon: args.icon,
+      image: args.image,
     };
     return component;
   }

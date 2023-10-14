@@ -1,14 +1,14 @@
-import React from 'react';
-import { Widget, WidgetProps } from '../../widget/widget-types';
-import { IconName } from '@shared/ui/src/icon';
-
+import React from "react";
+import { Widget, WidgetProps } from "../../widget/widget-types";
+import { IconName } from "@shared/ui/src/icon";
 
 export type WidgetComponentConfig<T> = {
   name: string;
   related: Partial<NodeRelated>;
   defaultProps: Partial<T>;
   group?: string;
-  icon?: IconName,
+  icon?: IconName;
+  image?: string;
   displayName?: string;
 };
 
@@ -17,7 +17,7 @@ export type WidgetComponent<T = any> = React.ComponentType<T> & {
 };
 
 export type NodeId = string;
-export type NodeEventTypes = 'selected' | 'dragged' | 'hovered';
+export type NodeEventTypes = "selected" | "dragged" | "hovered";
 
 export type Node = {
   id: NodeId;
@@ -27,7 +27,6 @@ export type Node = {
   related: Record<string, React.ElementType>;
   _hydrationTimestamp: number;
 };
-
 
 export type NodeRelated = Record<string, React.ElementType>;
 
@@ -44,14 +43,14 @@ export type NodeData = {
 
 export type FreshNode = {
   id?: NodeId;
-  data: Partial<NodeData> & Required<Pick<NodeData, 'type'>>;
+  data: Partial<NodeData> & Required<Pick<NodeData, "type">>;
 };
 
 export type ReduceCompType =
   | string
   | {
-    resolvedName: string;
-  };
+      resolvedName: string;
+    };
 
 export type ReducedComp = {
   type: ReduceCompType;
@@ -61,7 +60,7 @@ export type ReducedComp = {
 
 export type SerializedNode = Omit<
   NodeData,
-  'type' | 'subtype' | 'name' | 'event'
+  "type" | "subtype" | "name" | "event"
 > &
   ReducedComp;
 
@@ -93,13 +92,12 @@ export enum NodeSelectorType {
   Obj,
 }
 
-export type NodeSelector<
-  T extends NodeSelectorType = NodeSelectorType.Any
-> = T extends NodeSelectorType.Id
-  ? NodeIdSelector
-  : T extends NodeSelectorType.Obj
-  ? NodeObjSelector
-  : NodeIdSelector | NodeObjSelector;
+export type NodeSelector<T extends NodeSelectorType = NodeSelectorType.Any> =
+  T extends NodeSelectorType.Id
+    ? NodeIdSelector
+    : T extends NodeSelectorType.Obj
+    ? NodeObjSelector
+    : NodeIdSelector | NodeObjSelector;
 
 export type NodeSelectorWrapper = {
   node: Node;

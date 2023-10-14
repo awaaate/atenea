@@ -18,6 +18,7 @@ export const TextWidget = WidgetFactory.createWidget({
   icon: "Text",
   group: "Basic",
   displayName: "Text",
+  image: "/images/widgets/text.png",
   View: TextInner,
   Config: TextWidgetConfig,
   FullScreenView: TextInner,

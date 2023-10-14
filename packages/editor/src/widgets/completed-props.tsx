@@ -31,7 +31,7 @@ export default WidgetFactory.createWidget({
       if (!args) {
         return {
           data: [] as any[],
-        }
+        };
       }
       const data = await sourceFetcher.getPropUpdates.query({
         first: 500,
@@ -48,11 +48,12 @@ export default WidgetFactory.createWidget({
           .map((p) => ({
             proposer: p.proposer,
             title: p.title,
-            id: parseInt(p.id)
-          })).sort((a, b) => b.id - a.id).slice(0, first)
+            id: parseInt(p.id),
+          }))
+          .sort((a, b) => b.id - a.id)
+          .slice(0, first),
       };
-    }
-
+    },
   },
   initialProps: {
     first: 5,
@@ -64,5 +65,5 @@ export default WidgetFactory.createWidget({
       y: 0,
     },
   },
-  View: CompletedPropsList
+  View: CompletedPropsList,
 });

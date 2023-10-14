@@ -28,7 +28,8 @@ interface ProposalTableProps {
 
 export const ProposalTable: React.FC<{
   data: ProposalTableProps[];
-}> = ({ data }) => {
+  lilNouns?: boolean;
+}> = ({ data, lilNouns }) => {
   const headerMap = useNode((node) => node.data.props.headerMap) as Record<
     string,
     string
@@ -38,7 +39,15 @@ export const ProposalTable: React.FC<{
     <ScrollArea className="w-full h-full" orientation={["horizontal"]}>
       <div className="border rounded-lg w-full  mx-auto bg-surface-default shadow-card ">
         {data.map((proposal, i) => (
-          <Link href={`/prop/${proposal.id}`} target="_blank" rel="noreferrer">
+          <Link
+            href={
+              lilNouns
+                ? `https://lilnouns.wtf/vote/${proposal.id}`
+                : `/prop/${proposal.id}`
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
             <div
               className={cn(
                 "grid md:grid-cols-8  gap-4 py-4 px-6 hover:bg-active-default grid-cols-1 ",
@@ -69,6 +78,8 @@ export const ProposalTable: React.FC<{
                   variant={
                     proposal.status === "Pending"
                       ? "info"
+                      : proposal.status === "Voting"
+                      ? "highlight"
                       : proposal.status === "Succeeded"
                       ? "success"
                       : proposal.status === "Canceled" ||

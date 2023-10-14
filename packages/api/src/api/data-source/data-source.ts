@@ -14,6 +14,9 @@ import {
 import { getProposalTeamMembers } from "./team-members";
 import { getNounsBlance } from "./nouns-balance";
 import { getAllPropUpdates, getPropUpdates, getPropupdatedInput } from "./prop-updates";
+import * as lilNounsMeta from "./lilnouns/proposal-meta";
+
+
 
 export const dataSourceRouter = router({
   votes: publicProcedure
@@ -104,6 +107,11 @@ export const dataSourceRouter = router({
   getAllPropUpdates: publicProcedure.query(async () => {
     return getAllPropUpdates();
   }),
+  getLilNounsProposalsMeta: publicProcedure
+    .input(lilNounsMeta.input)
+    .query(async ({ input }) => {
+      return lilNounsMeta.getLilNounsProposalMeta(input);
+    })
 });
 
 export type DataSourceRouter = typeof dataSourceRouter;

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { dataSourceRouter } from "./data-source";
 import { db } from "@shared/db";
 import fs from "fs/promises";
-const caller = dataSourceRouter.createCaller({ user: null, db });
+const caller = dataSourceRouter.createCaller({ user: null });
 
 describe(
   "Data source",
@@ -37,8 +37,22 @@ describe("Testing prop updates", () => {
   });
 
   it.skip("Should get prop updated", async () => {
-    const data = await caller.getPropUpdates(["314"]);
+    const data = await caller.getPropUpdates({ ids: ["350"] });
     console.log(JSON.stringify(data, null, 2));
     expect(data).toBeDefined();
   });
 });
+
+
+describe("Testing lilnouns", () => {
+  it("Should get recent proposals", async () => {
+    const data = await caller.getLilNounsProposalsMeta({
+      orderBy: "createdTimestamp",
+      first: 4,
+      orderDirection: "desc",
+    });
+    console.log(JSON.stringify(data, null, 2));
+    expect(data).toBeDefined();
+  });
+});
+

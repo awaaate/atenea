@@ -1,9 +1,10 @@
 import { z } from "zod";
 import { gql } from "graphql-request";
 import { nounsSubgraph } from "../../../lib/nouns-subgraph";
-import { AteneaQuery, Proposal, ProposalMeta, ProposalStatus } from "./types";
+import { AteneaQuery, Proposal, ProposalMeta, ProposalStatus } from "../proposals-meta/types";
 
 import { ateneaGraph } from "../../../lib/atenea-graph";
+import { lilNounsSubgraph } from "../../../lib/lilnouns-subgraph";
 
 export const input = z.object({
   idIn: z.array(z.string()).optional(),
@@ -81,32 +82,6 @@ export const query = gql`
   }
 `;
 
-const ateneaQuery = gql`
-  query Node($filter: ProposalFilter) {
-    proposalCollection(filter: $filter) {
-      edges {
-        node {
-          id
-          budgetEth
-          budgetUsd
-          category_to_proposalCollection {
-            edges {
-              node {
-                category_name
-              }
-            }
-          }
-          coverImage
-          description
-          extraEth
-          nouns
-          title
-          status
-        }
-      }
-    }
-  }
-`;
 
 const INFURA_API_URL = `https://mainnet.infura.io/v3/1b110eaa799744179ea12b0441c386ba`;
 async function getCurrentBlockNumber(): Promise<number | null> {
@@ -139,38 +114,7 @@ async function getCurrentBlockNumber(): Promise<number | null> {
   }
 }
 
-export const getAteneaDataChunk = async (input: { ids: string[] }) => {
-  //the graphql it gets 30 proposals at a time, so we need to make multiple calls
-
-  const ateneaData = await ateneaGraph.request<AteneaQuery>(ateneaQuery, {
-    filter: {
-      id: {
-        in: input.ids.map((id) => parseInt(id)),
-      },
-    },
-  });
-  return ateneaData;
-};
-
-export const getAteneaData = async (input: { ids: string[] }) => {
-  const groupedIds = input.ids.reduce((acc, curr, i) => {
-    const index = Math.floor(i / 30);
-    if (!acc[index]) acc[index] = [] as string[];
-    acc[index].push(curr);
-    return acc;
-  }, [] as string[][]);
-  const grouppedData = await Promise.all(
-    groupedIds.map((ids) => getAteneaDataChunk({ ids }))
-  );
-  //flatten the data
-
-  const edges = grouppedData.reduce((acc, curr) => {
-    return [...acc, ...curr.proposalCollection.edges];
-  }, [] as AteneaQuery["proposalCollection"]["edges"]);
-
-  return edges;
-};
-export const getProposalMeta = async (
+export const getLilNounsProposalMeta = async (
   inputVariables: z.infer<typeof input>
 ) => {
   const currentBlock = await getCurrentBlockNumber();
@@ -201,23 +145,14 @@ export const getProposalMeta = async (
       },
     };
   }
-  const data = await nounsSubgraph.request<{
+  const data = await lilNounsSubgraph.request<{
     proposals: ProposalMeta[];
   }>(query, variables);
 
-  const ateneaData = await getAteneaData({
-    ids: data.proposals.map((p) => p.id),
-  });
+ 
 
   const finalData = data.proposals.map((proposal) => {
-    const ateneaProposal = ateneaData.find(
-      (p) => Number(p.node.id) === Number(proposal.id)
-    );
-    const categories =
-      ateneaProposal?.node.category_to_proposalCollection.edges.map(
-        (e) => e.node.category_name
-      );
-    const rawData = {
+       const rawData = {
       startBlock: parseInt(proposal.startBlock),
       endBlock: parseInt(proposal.endBlock),
       forVotes: parseInt(proposal.forVotes),
@@ -241,13 +176,9 @@ export const getProposalMeta = async (
       totalBudget:
         proposal.values.reduce((acc, curr) => acc + parseInt(curr), 0) /
         10 ** 18,
-      projectStatus: ateneaProposal?.node.status,
-      budgetEth: ateneaProposal?.node.budgetEth,
-      budgetUsd: ateneaProposal?.node.budgetUsd,
-      extraEth: ateneaProposal?.node.extraEth,
-      nouns: ateneaProposal?.node.nouns,
-      categories:
-        categories && categories.length > 0 ? categories : ["Uncategorized"],
+      projectStatus: "",
+      budgetEth: proposal.values.reduce((acc, curr) => acc + parseInt(curr), 0) / 10 ** 18,
+      categories: ["Uncategorized"],
     };
     const dynamicQuorum = computeProposalQuorumVotes(rawData);
     console.log(rawData.id, dynamicQuorum, "STATUS", proposal.status);

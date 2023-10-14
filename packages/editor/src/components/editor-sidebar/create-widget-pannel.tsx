@@ -1,24 +1,13 @@
-import { CommandMenu } from "@shared/ui/src/command-menu";
-import { Dialog, DialogTrigger } from "@shared/ui/src/dialog";
-
-import React from "react";
-import { useEditorStore } from "../../engine/editor";
-import { createNode } from "../../engine/nodes";
-import { Icon } from "@shared/ui/src/icon";
-import { widgetFactory } from "../../widget/factory";
-import proposalsTable from "../../widgets/proposals-table";
-import proposalsAreaChart from "../../widgets/proposals-area-chart";
-import proposalsBarChart from "../../widgets/proposals-bar-chart";
-import categoriesBarChart from "../../widgets/categories-bar-chart";
-import { useDragStore } from "../../hooks/use-drag-store";
 import { Button } from "@shared/ui/src/button";
+import { Icon } from "@shared/ui/src/icon";
 import { ScrollArea } from "@shared/ui/src/scroll-area";
-import {
-  WidgetComponent,
-  WidgetComponentConfig,
-} from "../../engine/interfaces";
-import { WidgetConfigSection } from "../../widget/widget-config-section";
 import { Separator } from "@shared/ui/src/separator";
+import { useEditorStore } from "../../engine/editor";
+import { WidgetComponentConfig } from "../../engine/interfaces";
+import { createNode } from "../../engine/nodes";
+import { useDragStore } from "../../hooks/use-drag-store";
+import { widgetFactory } from "../../widget/factory";
+import { WidgetConfigSection } from "../../widget/widget-config-section";
 
 export const CreateWidgetPannel = () => {
   const selectNode = useEditorStore.use.select();
@@ -53,6 +42,9 @@ export const CreateWidgetPannel = () => {
   console.log(groupedWidgets, "groupedWidgets");
   return (
     <ScrollArea className=" h-[calc(100vh-50px)]">
+      <p className="p-4 text-text-weaker text-sm">
+        You can drag and drop widgets from here to the editor or click
+      </p>
       <div className="flex flex-col gap-2">
         {Object.entries(groupedWidgets).map(([key, value]) => {
           console.log(key, value, "key, value");
@@ -61,6 +53,34 @@ export const CreateWidgetPannel = () => {
               <WidgetConfigSection title={key} className="flex flex-col gap-2">
                 <WidgetConfigSection.Title />
                 {value.map((node: WidgetComponentConfig<any>) => {
+                  if (node.image) {
+                    return (
+                      <div
+                        className="flex cursor-grabbing flex-col gap-2 shadow-card-default rounded-default p-2 w-full h-auto borde bg-surface-lowered"
+                        draggable
+                        onDragStart={(e) => {
+                          e.dataTransfer.setData("text/plain", node.name);
+                          setDragNode(node.name);
+                        }}
+                        onClick={() => {
+                          creteNode(node.name);
+                        }}
+                      >
+                        <div className="w-full h-auto bg-background-default rounded-default flex items-center justify-center">
+                          <img
+                            src={node.image}
+                            className="w-full rounded-md"
+                            draggable
+                            onDragStart={(e) => {
+                              e.stopPropagation();
+                              e.dataTransfer.setData("text/plain", node.name);
+                              setDragNode(node.name);
+                            }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  }
                   return (
                     <Button
                       className="justify-between rounded-default w-full h-auto"

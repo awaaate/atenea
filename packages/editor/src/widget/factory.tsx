@@ -25,14 +25,16 @@ import proposalUpdates from "../widgets/proposal-updates";
 import completedProps from "../widgets/completed-props";
 import lastUpdates from "../widgets/last-updates";
 import propUpdatesLeaderboard from "../widgets/prop-updates-leaderboard";
+import lilnounsActiveProposals from "../widgets/lilnouns-active-proposals";
 
 export const widgetFactory = new WidgetFactory();
 
 widgetFactory.registerWidgetComponent(TextWidget);
 
 widgetFactory.registerWidgetComponent(completedProps);
+widgetFactory.registerWidgetComponent(lilnounsActiveProposals);
 widgetFactory.registerWidgetComponent(lastUpdates);
-widgetFactory.registerWidgetComponent(propUpdatesLeaderboard);
+//widgetFactory.registerWidgetComponent(propUpdatesLeaderboard);
 widgetFactory.registerWidgetComponent(executedProposals);
 widgetFactory.registerWidgetComponent(activeProposals);
 widgetFactory.registerWidgetComponent(categoriesBudgetDonutChart);
