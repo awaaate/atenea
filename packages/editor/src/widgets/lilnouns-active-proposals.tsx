@@ -75,7 +75,7 @@ export default WidgetFactory.createWidget({
   ),
   initialProps: {
     first: 5,
-    title: "Active Proposals",
+    title: "Lil Nouns Proposals",
     className: "",
     layout: {
       w: Infinity,
