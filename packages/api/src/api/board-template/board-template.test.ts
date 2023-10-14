@@ -36,3 +36,15 @@ it.skip("Should delete all templates", async () => {
   console.log(result);
   expect(result).toBeDefined();
 });
+
+
+it("Should create a template", async () => {
+  const result = await boards.create({
+    name: "Complete Client",
+    description: "This is a template for complete clients",
+    image: "/templates/complete-client.png",
+    boardId: "createyourclientwithatenea",
+  })
+  console.log(result);
+  expect(result).toBeDefined();
+})
