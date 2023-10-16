@@ -38,7 +38,14 @@ export const getProposalContent = async (proposalId: number) => {
   const nounsData = await nounsSubgraph.request<GetProposalContent>(contentQuery, {
     "proposalId": proposalId
   })
+  if(!ateneaData.proposalCollection.edges[0]) {
+    return {
+      content: nounsData.proposal.description,
+      description: "",
 
+      title: nounsData.proposal.title,
+    }
+  }
   return {
     content: nounsData.proposal.description,
     description: ateneaData.proposalCollection.edges[0].node.description,
